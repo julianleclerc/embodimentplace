@@ -85,6 +85,15 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   and a drop-shadow on the head and hat, instead of one filter on the whole figure, which phones dropped while walking
   diagonally (the page scrolls to follow). Left and right walking use the same step as up and down (`ep-step`).
   Closing a card lets that character walk again.
+- 2026-11-19: cards everywhere and the account page (CSS block `epCards`). Tapping any walking character on any page
+  opens its card (`epCardOpen`, `epCardNode`, `GET /api/community/card?u=` or `?me=1`, built by `epCardItem` like
+  Place). Walkers now carry the username (`u` in the live presence) so the card finds the right member. Place has a
+  wall and a floor (top 30% is wall) and characters only stand on the floor. Account: the Byline is now the Card,
+  edited in Overview (`epCardEdit`: position, company, info, + Add social; action `card`), with "Who sees your card"
+  and "Show my character in Place" beside it (`epVisEdit`). Email moved to Security (`epEmailEdit`): type the new
+  address twice, a 6-digit code goes to it (actions `email_start`, `email_confirm`, `email_cancel`, token kind
+  `email_change`, 15 minutes), and the address only changes once the code is entered; the old address gets a notice.
+  The Settings tab and the + Create and Settings buttons are gone from Account (`/account/settings` shows Overview).
 
 ## How it stays in sync
 

@@ -28,7 +28,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#PRNUM Watchlist looks like the rest of the site; "Send to me now" says what happened; digest from newsletter@.**
+- **#24 Watchlist looks like the rest of the site; "Send to me now" says what happened; digest from newsletter@.**
   - **Same layout as the home feed.** All three Watchlist tabs now use the home page layout (`.home2`): a 760px
     content column and the right-hand side panel. Cards are the same size as on the home feed (they were 980px
     wide). The side panel shows what you're watching and your digest schedule (`epWlSide`, worker

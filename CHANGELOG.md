@@ -25,12 +25,16 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#19 Card placement correction.** The "card on the left" request was meant for the Lounge, not for characters.
+- **#19 Card placement correction, phone walkers in the middle on PC.** The "card on the left" request was meant for the Lounge, not for characters.
   - Character cards in Place and for walkers are back to how they were before #16, above the character on desktop
     and phones. The phone bottom sheet (`.epp-sheet`) is no longer used.
   - On desktop, tapping a name in the Lounge opens the card to the left of the Lounge panel, level with the name,
     with the arrow pointing at the panel (`epCardPos` uses `epSideOf` only for `.cw-who` above 760px). On phones the
     Lounge card still opens above or below the name.
+  - **Phone walkers on wide screens.** A walker's position is a fraction of its own page width, so a phone walker
+    crossing its 390px screen used to dash across a whole PC screen. The client now also sends its page width
+    (`w` in `POST /api/walk`, kept by `WalkWorld` and sent back by `pub`). When the sender's width is 820px or less and
+    narrower than the viewer's, the viewer shows that walker in a centred column of the sender's width (`he`).
 - **#18 Username label colour, quieter locked hats, curse words become animal noises.**
   - The look creator has a Name colour row. It sets the background of the username label above your character, and
     everyone sees it on walkers, in Place and on the preview. Default keeps the old look (black, or the accent colour

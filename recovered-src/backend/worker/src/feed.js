@@ -21,6 +21,8 @@ function feedDateOf(r) {
 function formatCursor(r) {
 	return `${feedDateOf(r)}_${r.id}`;
 }
+// Posts shown per page in the home feed and post/paper lists (used by public.js too); the rest load with "Load more" or on scroll.
+const FEED_PAGE_SIZE = 6;
 async function feedPage(db, opts = {}) {
 	const limit = opts.limit ?? 20;
 	const binds = [];

@@ -18137,6 +18137,14 @@ async function epWatchSuggest(db, uid, src) {
 	const orgs = (await ranked(ORG_TYPES_LIST, 12)).filter((r) => !have.has(r.slug)).slice(0, 12).map(epSuggestCard);
 	return { orgs, robots: [], topics: [] };
 }
+// epWatchFind: organisation search for Watchlist Sources, returned as follow tiles.
+async function epWatchFind(c) {
+	const q = String(c.req.query("q") || "").trim();
+	if (q.length < 2) return c.json([]);
+	const hits = await searchHits(c.env.DB, q, 12, ORG_TYPES_LIST);
+	const rows = await allByIds(c.env.DB, hits.map((h) => h.id));
+	return c.json(hits.map((h) => rows.get(h.id)).filter((r) => r && !Number(r.private || 0)).map(epSuggestCard));
+}
 async function epWatchIds(c) {
 	const u = c.get("auth").user;
 	if (!u) return c.json({ slugs: [], user: false });
@@ -18170,6 +18178,7 @@ async function sourcesPayload(c) {
 	const src = await wlSources(c.env.DB, c.get("auth").user.id);
 	return {
 		tab: "sources",
+		following: src.orgs.map(epSuggestCard),
 		sources: src,
 		digest: epDigestInfo(c.get("auth").user),
 		suggest: await epWatchSuggest(c.env.DB, c.get("auth").user.id, src),
@@ -21035,6 +21044,7 @@ api.get("/watchlist/sources", async (c) => {
 	return d instanceof Response ? d : c.json(d);
 });
 api.get("/watchlist/ids", epWatchIds);
+api.get("/watchlist/find", epWatchFind);
 api.post("/watchlist/toggle", epWatchToggle);
 api.get("/watchlist/newsletter", async (c) => {
 	const d = await newsletterPayload(c);

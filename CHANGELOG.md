@@ -49,6 +49,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     Sections are News, Research, Videos and Jobs, all from followed organisations (`WL_SECTIONS` in the catalog).
     Old rows in `watch_sources` and `user_follows` (2 record watches live, no people or topics) are left in D1 but
     ignored.
+  - **Sources works like "Start your watchlist".** Search results, the organisations you follow and a list of
+    suggested organisations are all tiles with a logo, summary and one-tap Follow/Following button (`epSugTile`).
+    Search uses the new `GET /api/watchlist/find` (organisations only, returned as tiles); `sourcesPayload` adds
+    `following` tiles. CSS block after `epDSep` (`.ep-src2`).
 
 - **#23 Automatic updates for organisations: admin toggle and a daily news job.**
   - **Toggle.** On a company, university or lab page, admins see "Auto updates off / on" next to "Pin to home".

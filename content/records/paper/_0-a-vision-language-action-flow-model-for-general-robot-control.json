@@ -1,0 +1,28 @@
+{
+  "id": 51,
+  "type": "paper",
+  "slug": "π0-a-vision-language-action-flow-model-for-general-robot-control",
+  "name": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+  "summary": "Physical Intelligence's first generalist policy.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "VLA / foundation models",
+        "Manipulation"
+      ]
+    },
+    "date": {
+      "v": "2024-10-31"
+    },
+    "authors_text": {
+      "v": "Kevin Black, Noah Brown, Danny Driess, et al."
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2410.24164"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2024-10-31"
+}

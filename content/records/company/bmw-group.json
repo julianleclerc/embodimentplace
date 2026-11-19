@@ -1,0 +1,45 @@
+{
+  "id": 16,
+  "type": "company",
+  "slug": "bmw-group",
+  "name": "BMW Group",
+  "summary": "Munich carmaker; runs humanoid programmes at Plant Spartanburg.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Customer"
+      ],
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "stage": {
+      "v": "Public"
+    },
+    "website": {
+      "v": "https://www.bmwgroup.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.1351,
+          "lon": 11.582,
+          "src": "https://bmwgroup.jobs/de/en/location/location-munich.html"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/bmw-group.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

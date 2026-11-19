@@ -1,0 +1,57 @@
+{
+  "id": 14,
+  "type": "company",
+  "slug": "skild-ai",
+  "name": "Skild AI",
+  "summary": "Pittsburgh lab building Skild Brain, a general-purpose robot foundation model.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "hq": {
+      "v": "Pittsburgh, PA",
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "founded": {
+      "v": 2023,
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "stage": {
+      "v": "Series C",
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.skild.ai/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pittsburgh, PA, United States",
+          "lat": 40.4406,
+          "lon": -79.9959,
+          "src": "https://www.cbinsights.com/company/skild-ai"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/skild-ai.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

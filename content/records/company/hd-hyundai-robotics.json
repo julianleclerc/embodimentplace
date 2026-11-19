@@ -1,0 +1,41 @@
+{
+  "id": 207,
+  "type": "company",
+  "slug": "hd-hyundai-robotics",
+  "name": "HD Hyundai Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/hd-hyundai-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.hd-hyundairobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Daegu"
+    },
+    "country": {
+      "v": "South Korea"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Daegu, South Korea",
+          "lat": 35.8713,
+          "lon": 128.6018
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:21",
+  "feed_at": null
+}

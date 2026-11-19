@@ -1,0 +1,45 @@
+{
+  "id": 22,
+  "type": "company",
+  "slug": "softbank-group",
+  "name": "SoftBank Group",
+  "summary": "Japanese investment group; led Skild AI's Series C.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "stage": {
+      "v": "Public"
+    },
+    "website": {
+      "v": "https://group.softbank/en"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.6762,
+          "lon": 139.6503,
+          "src": "https://group.softbank/en/about/profile"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/softbank-group.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

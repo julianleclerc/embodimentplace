@@ -1,0 +1,41 @@
+{
+  "id": 123,
+  "type": "company",
+  "slug": "exotec",
+  "name": "Exotec",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/exotec.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.exotec.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Wasquehal"
+    },
+    "country": {
+      "v": "France"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Wasquehal, France",
+          "lat": 50.669158,
+          "lon": 3.131245
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:44",
+  "feed_at": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": 103,
+  "type": "company",
+  "slug": "denso-robotics",
+  "name": "DENSO Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/denso-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.densorobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Kariya"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kariya, Japan",
+          "lat": 34.974678,
+          "lon": 137.002791
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:35",
+  "feed_at": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": 120,
+  "type": "company",
+  "slug": "locus-robotics",
+  "name": "Locus Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/locus-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.locusrobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Wilmington"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Wilmington, MA, United States",
+          "lat": 42.546483,
+          "lon": -71.173667
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:42",
+  "feed_at": null
+}

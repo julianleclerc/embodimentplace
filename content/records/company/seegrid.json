@@ -1,0 +1,41 @@
+{
+  "id": 131,
+  "type": "company",
+  "slug": "seegrid",
+  "name": "Seegrid",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/seegrid.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.seegrid.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Pittsburgh"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pittsburgh, PA, United States",
+          "lat": 40.440697,
+          "lon": -80.002567
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:47",
+  "feed_at": null
+}

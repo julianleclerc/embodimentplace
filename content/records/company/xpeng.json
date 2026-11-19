@@ -1,0 +1,41 @@
+{
+  "id": 86,
+  "type": "company",
+  "slug": "xpeng",
+  "name": "XPeng",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/xpeng.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.xpeng.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Guangzhou"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Guangzhou, China",
+          "lat": 23.128843,
+          "lon": 113.258958
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:28",
+  "feed_at": null
+}

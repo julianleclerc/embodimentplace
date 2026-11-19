@@ -1,0 +1,33 @@
+{
+  "id": 64,
+  "type": "funding",
+  "slug": "skild-ai-series-c",
+  "name": "Skild AI Series C",
+  "summary": "About $1.4B led by SoftBank at a valuation above $14B.",
+  "body": "Valuation reported as over $14B; the field shows the stated floor.",
+  "data": {
+    "date": {
+      "v": "2026-01-14",
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1400,
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "valuation_usd_m": {
+      "v": 14000,
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-01-14"
+}

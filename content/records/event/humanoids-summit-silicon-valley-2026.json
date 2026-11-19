@@ -1,0 +1,37 @@
+{
+  "id": 70,
+  "type": "event",
+  "slug": "humanoids-summit-silicon-valley-2026",
+  "name": "Humanoids Summit Silicon Valley 2026",
+  "summary": "Two-day summit focused on humanoid robotics.",
+  "body": "",
+  "data": {
+    "status": {
+      "v": "Upcoming"
+    },
+    "date": {
+      "v": "2026-12-01",
+      "src": "https://humanoidssummit.com/silicon-valley-2026",
+      "asof": "2026-11"
+    },
+    "end_date": {
+      "v": "2026-12-02",
+      "src": "https://humanoidssummit.com/silicon-valley-2026",
+      "asof": "2026-11"
+    },
+    "venue": {
+      "v": "San Mateo County Event Center",
+      "src": "https://humanoidssummit.com/silicon-valley-2026",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Mateo, CA"
+    },
+    "url": {
+      "v": "https://humanoidssummit.com/silicon-valley-2026"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-12-01"
+}

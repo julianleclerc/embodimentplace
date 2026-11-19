@@ -1,0 +1,41 @@
+{
+  "id": 145,
+  "type": "company",
+  "slug": "aurora",
+  "name": "Aurora",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/aurora.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://aurora.tech/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Pittsburgh"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pittsburgh, PA, United States",
+          "lat": 40.440697,
+          "lon": -80.002567
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:53",
+  "feed_at": null
+}

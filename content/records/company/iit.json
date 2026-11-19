@@ -1,0 +1,41 @@
+{
+  "id": 192,
+  "type": "company",
+  "slug": "iit",
+  "name": "Italian Institute of Technology",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/iit.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.iit.it/"
+    },
+    "roles": {
+      "v": [
+        "Research lab"
+      ]
+    },
+    "city": {
+      "v": "Genoa"
+    },
+    "country": {
+      "v": "Italy"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Genoa, Italy",
+          "lat": 44.40726,
+          "lon": 8.933862
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:15",
+  "feed_at": null
+}

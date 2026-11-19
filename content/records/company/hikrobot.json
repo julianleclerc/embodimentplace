@@ -1,0 +1,42 @@
+{
+  "id": 138,
+  "type": "company",
+  "slug": "hikrobot",
+  "name": "Hikrobot",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/hikrobot.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.hikrobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ]
+    },
+    "city": {
+      "v": "Hangzhou"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hangzhou, China",
+          "lat": 30.248963,
+          "lon": 120.205234
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:50",
+  "feed_at": null
+}

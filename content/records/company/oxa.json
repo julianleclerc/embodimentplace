@@ -1,0 +1,41 @@
+{
+  "id": 155,
+  "type": "company",
+  "slug": "oxa",
+  "name": "Oxa",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/oxa.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://oxa.tech/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    },
+    "city": {
+      "v": "Oxford"
+    },
+    "country": {
+      "v": "United Kingdom"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Oxford, United Kingdom",
+          "lat": 51.752013,
+          "lon": -1.25785
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:57",
+  "feed_at": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": 187,
+  "type": "company",
+  "slug": "berkeley-bair",
+  "name": "Berkeley Artificial Intelligence Research",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/berkeley-bair.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://bair.berkeley.edu/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Berkeley"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Berkeley, CA, United States",
+          "lat": 37.870839,
+          "lon": -122.272863
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:12",
+  "feed_at": null
+}

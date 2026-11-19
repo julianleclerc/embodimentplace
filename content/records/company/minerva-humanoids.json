@@ -1,0 +1,41 @@
+{
+  "id": 211,
+  "type": "company",
+  "slug": "minerva-humanoids",
+  "name": "Minerva Humanoids",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/minerva-humanoids.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.minervahumanoids.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "San Francisco"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:23",
+  "feed_at": null
+}

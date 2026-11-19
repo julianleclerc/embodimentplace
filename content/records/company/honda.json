@@ -1,0 +1,42 @@
+{
+  "id": 83,
+  "type": "company",
+  "slug": "honda",
+  "name": "Honda",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/honda.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://global.honda/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Customer"
+      ]
+    },
+    "city": {
+      "v": "Tokyo"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.67686,
+          "lon": 139.763895
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:26",
+  "feed_at": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": 152,
+  "type": "company",
+  "slug": "wayve",
+  "name": "Wayve",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/wayve.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://wayve.ai/"
+    },
+    "roles": {
+      "v": [
+        "Model lab"
+      ]
+    },
+    "city": {
+      "v": "London"
+    },
+    "country": {
+      "v": "United Kingdom"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:56",
+  "feed_at": null
+}

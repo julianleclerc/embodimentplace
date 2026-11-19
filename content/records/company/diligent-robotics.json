@@ -1,0 +1,41 @@
+{
+  "id": 168,
+  "type": "company",
+  "slug": "diligent-robotics",
+  "name": "Diligent Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/diligent-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.diligentrobots.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Austin"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, TX, United States",
+          "lat": 30.264926,
+          "lon": -97.747409
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:03",
+  "feed_at": null
+}

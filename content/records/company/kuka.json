@@ -1,0 +1,41 @@
+{
+  "id": 98,
+  "type": "company",
+  "slug": "kuka",
+  "name": "KUKA",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/kuka.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.kuka.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Augsburg"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Augsburg, Germany",
+          "lat": 48.369034,
+          "lon": 10.897952
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:33",
+  "feed_at": null
+}

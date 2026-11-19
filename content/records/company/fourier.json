@@ -1,0 +1,54 @@
+{
+  "id": 10,
+  "type": "company",
+  "slug": "fourier",
+  "name": "Fourier",
+  "summary": "Shanghai maker of the GRx humanoid series, including the GR-3 care robot.",
+  "body": "Also known as Fourier Intelligence.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.fftai.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China"
+    },
+    "hq": {
+      "v": "Shanghai",
+      "src": "https://mikekalil.com/blog/fourier-gr3-carebot/",
+      "asof": "2026-11"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://www.fftai.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fftai.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.2304,
+          "lon": 121.4737,
+          "src": "https://www.fftai.com/newsroom-newintech/16"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/fourier.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

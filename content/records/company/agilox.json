@@ -1,0 +1,41 @@
+{
+  "id": 175,
+  "type": "company",
+  "slug": "agilox",
+  "name": "Agilox",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/agilox.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.agilox.net/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Neukirchen bei Lambach"
+    },
+    "country": {
+      "v": "Austria"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Neukirchen bei Lambach, Austria",
+          "lat": 48.098852,
+          "lon": 13.814166
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:06",
+  "feed_at": null
+}

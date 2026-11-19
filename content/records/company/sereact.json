@@ -1,0 +1,41 @@
+{
+  "id": 94,
+  "type": "company",
+  "slug": "sereact",
+  "name": "Sereact",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/sereact.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.sereact.ai/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    },
+    "city": {
+      "v": "Stuttgart"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Stuttgart, Germany",
+          "lat": 48.778449,
+          "lon": 9.180013
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:31",
+  "feed_at": null
+}

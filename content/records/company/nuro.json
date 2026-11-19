@@ -1,0 +1,41 @@
+{
+  "id": 141,
+  "type": "company",
+  "slug": "nuro",
+  "name": "Nuro",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/nuro.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.nuro.ai/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Mountain View"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mountain View, CA, United States",
+          "lat": 37.389389,
+          "lon": -122.08321
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:51",
+  "feed_at": null
+}

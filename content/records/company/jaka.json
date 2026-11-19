@@ -1,0 +1,41 @@
+{
+  "id": 119,
+  "type": "company",
+  "slug": "jaka",
+  "name": "JAKA",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/jaka.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.jaka.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Shanghai"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:42",
+  "feed_at": null
+}

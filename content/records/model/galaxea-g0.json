@@ -1,0 +1,72 @@
+{
+  "id": 46,
+  "type": "model",
+  "slug": "galaxea-g0",
+  "name": "Galaxea G0",
+  "summary": "Dual-system VLA from Galaxea, trained with the Galaxea Open-World Dataset.",
+  "body": "Galaxea's site now lists G0.5 as its current model.",
+  "data": {
+    "kind": {
+      "v": "VLA",
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "released": {
+      "v": "2025-08-30",
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "weights": {
+      "v": "Open",
+      "src": "https://github.com/OpenGalaxea/G0",
+      "asof": "2026-11"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2509.00576"
+    },
+    "design": {
+      "v": "Dual system (planner + controller)",
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "backbone": {
+      "v": "G0-VLM from Qwen2.5-VL (planner); G0-VLA from PaliGemma (controller)",
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "action_head": {
+      "v": "Flow matching",
+      "src": "https://opengalaxea.github.io/GalaxeaVLA/",
+      "asof": "2026-11"
+    },
+    "inputs": {
+      "v": [
+        "RGB images",
+        "Language",
+        "Proprioception"
+      ],
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "robot_hours": {
+      "v": 500,
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "training_data": {
+      "v": "Galaxea Open-World Dataset: 500 hours, 50 scenes at 11 sites, over 150 tasks on one robot (Galaxea R1 Lite), after cross-embodiment pre-training",
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "embodiments": {
+      "v": [
+        "Mobile manipulator"
+      ],
+      "src": "https://opengalaxea.github.io/GalaxeaVLA/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

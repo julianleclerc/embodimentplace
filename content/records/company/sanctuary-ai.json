@@ -1,0 +1,42 @@
+{
+  "id": 74,
+  "type": "company",
+  "slug": "sanctuary-ai",
+  "name": "Sanctuary AI",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/sanctuary-ai.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://sanctuary.ai/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ]
+    },
+    "city": {
+      "v": "Vancouver"
+    },
+    "country": {
+      "v": "Canada"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Vancouver, Canada",
+          "lat": 49.260872,
+          "lon": -123.113952
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:22",
+  "feed_at": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": 144,
+  "type": "company",
+  "slug": "zoox",
+  "name": "Zoox",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/zoox.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://zoox.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Foster City"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Foster City, CA, United States",
+          "lat": 37.560034,
+          "lon": -122.268852
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:52",
+  "feed_at": null
+}

@@ -1,0 +1,40 @@
+name: Export site content
+
+# Every night, copy the site's public content (records, links, schema) from D1 into content/
+# and commit it if anything changed. Personal data (users, sessions, emails, chat) is never exported.
+on:
+  schedule:
+    - cron: "17 10 * * *" # 10:17 UTC, about 2 AM in California
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: export-content
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Export from D1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node scripts/export-content.mjs
+      - name: Commit changes
+        run: |
+          git add content
+          if git diff --cached --quiet; then
+            echo "No content changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Content export $(date -u +%Y-%m-%d)"
+          git push

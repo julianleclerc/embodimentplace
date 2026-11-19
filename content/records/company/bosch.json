@@ -1,0 +1,41 @@
+{
+  "id": 181,
+  "type": "company",
+  "slug": "bosch",
+  "name": "Bosch",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/bosch.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.bosch.com/"
+    },
+    "roles": {
+      "v": [
+        "Supplier"
+      ]
+    },
+    "city": {
+      "v": "Gerlingen"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Gerlingen, Germany",
+          "lat": 48.798395,
+          "lon": 9.062439
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:09",
+  "feed_at": null
+}

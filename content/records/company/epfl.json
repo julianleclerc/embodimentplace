@@ -1,0 +1,41 @@
+{
+  "id": 197,
+  "type": "company",
+  "slug": "epfl",
+  "name": "EPFL",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/epfl.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.epfl.ch/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Lausanne"
+    },
+    "country": {
+      "v": "Switzerland"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Lausanne, Switzerland",
+          "lat": 46.520278,
+          "lon": 6.565556
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:17",
+  "feed_at": null
+}

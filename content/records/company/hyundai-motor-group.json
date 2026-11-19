@@ -1,0 +1,45 @@
+{
+  "id": 19,
+  "type": "company",
+  "slug": "hyundai-motor-group",
+  "name": "Hyundai Motor Group",
+  "summary": "Korean car group; parent of Boston Dynamics.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Customer"
+      ],
+      "src": "https://www.pulse.bot/robotics/video/the-beginning-of-your-tomorrow-i-boston-dynamics-6b41f2f6-6c96-466c-b4cf-b5c5e48a3f8e",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea"
+    },
+    "stage": {
+      "v": "Corporate"
+    },
+    "website": {
+      "v": "https://www.hyundaimotorgroup.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.5665,
+          "lon": 126.978,
+          "src": "https://robotics.hyundai.com/en/story/media/view.do?seq=294"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/hyundai-motor-group.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

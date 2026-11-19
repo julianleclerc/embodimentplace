@@ -1,0 +1,41 @@
+{
+  "id": 204,
+  "type": "company",
+  "slug": "playground-global",
+  "name": "Playground Global",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/playground-global.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://playground.global/"
+    },
+    "roles": {
+      "v": [
+        "Investor"
+      ]
+    },
+    "city": {
+      "v": "Palo Alto"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Palo Alto, CA, United States",
+          "lat": 37.444329,
+          "lon": -122.159847
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:20",
+  "feed_at": null
+}

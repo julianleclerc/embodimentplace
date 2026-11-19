@@ -1,0 +1,41 @@
+{
+  "id": 166,
+  "type": "company",
+  "slug": "ecovacs",
+  "name": "Ecovacs",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/ecovacs.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.ecovacs.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Suzhou"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Suzhou, China",
+          "lat": 31.311123,
+          "lon": 120.621288
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:02",
+  "feed_at": null
+}

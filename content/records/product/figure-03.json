@@ -1,0 +1,80 @@
+{
+  "id": 30,
+  "type": "product",
+  "slug": "figure-03",
+  "name": "Figure 03",
+  "summary": "Third-generation Figure humanoid, built for Helix, the home and mass manufacturing.",
+  "body": "Height listed by Figure as 5'8\" (173 cm). Charges wirelessly through its feet.",
+  "data": {
+    "status": {
+      "v": "Pilot",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    },
+    "announced": {
+      "v": "2025-10-09",
+      "src": "https://www.figure.ai/news/introducing-figure-03",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 173,
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 61,
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 20,
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 5,
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "speed_mps": {
+      "v": 1.2,
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "charging": {
+      "v": "Wireless inductive charging, 2 kW",
+      "src": "https://www.figure.ai/news/introducing-figure-03",
+      "asof": "2026-11"
+    },
+    "onboard_model": {
+      "v": "Helix",
+      "src": "https://www.figure.ai/news/introducing-figure-03",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Home",
+        "Industrial"
+      ],
+      "src": "https://www.figure.ai/news/introducing-figure-03",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "https://images.ctfassets.net/qx5k8y1u9drj/2z6qCDWh945rVDLS2cRRfk/60ed52a56bf8f72a0d43e161aaf23a04/Launch_-_Open_Graph_Image.jpg",
+      "src": "https://www.figure.ai/news/introducing-figure-03",
+      "fit": "cover",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

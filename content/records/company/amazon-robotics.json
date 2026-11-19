@@ -1,0 +1,41 @@
+{
+  "id": 136,
+  "type": "company",
+  "slug": "amazon-robotics",
+  "name": "Amazon Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/amazon-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.amazon.jobs/content/en/teams/amazon-robotics"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Westborough"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Westborough, MA, United States",
+          "lat": 42.269431,
+          "lon": -71.612991
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:49",
+  "feed_at": null
+}

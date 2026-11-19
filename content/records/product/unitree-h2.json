@@ -1,0 +1,139 @@
+{
+  "id": 27,
+  "type": "product",
+  "slug": "unitree-h2",
+  "name": "Unitree H2",
+  "summary": "Full-size humanoid, 180 cm and 70 kg, unveiled October 2025.",
+  "body": "Height and weight are from Unitree's launch statement. Unitree's current H2 parameter table lists 1820 mm ([unitree.com/H2](https://www.unitree.com/H2)); this record keeps the launch figure until it is checked.\n\nVersions and what's included follow Unitree's H2 / H2 EDU table: the H2 EDU adds secondary development, dexterous hand options and a high-power computing module option. Unitree lists \"multiple model options\" for the hands without naming them; Dex5-1 and Dex3-1 are named by [Robozaps](https://blog.robozaps.com/b/unitree-h2-review), not by Unitree. Payload is the rated arm payload (peak about 15 kg).",
+  "data": {
+    "announced": {
+      "v": "2025-10-20",
+      "src": "https://interestingengineering.com/innovation/china-new-humanoid-robot-unitree-h2",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://interestingengineering.com/innovation/china-new-humanoid-robot-unitree-h2",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 180,
+      "src": "https://interestingengineering.com/innovation/china-new-humanoid-robot-unitree-h2",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 70,
+      "src": "https://interestingengineering.com/innovation/china-new-humanoid-robot-unitree-h2",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 31,
+      "src": "https://www.notebookcheck.com/Unitrees-neuester-humanoider-Roboter-kann-zwar-kein-Geschirr-spuelen-aber-ordentlich-zuschlagen.1430280.0.html",
+      "asof": "2026-11"
+    },
+    "price_usd": {
+      "v": 29900,
+      "src": "https://www.unitree.com/H2",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 3,
+      "src": "https://www.unitree.com/H2",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 7,
+      "src": "https://www.unitree.com/H2",
+      "asof": "2026-11"
+    },
+    "battery": {
+      "v": "15 Ah (0.972 kWh), quick-release smart battery",
+      "src": "https://www.unitree.com/H2",
+      "asof": "2026-11"
+    },
+    "sensors": {
+      "v": [
+        "Wide field-of-view binocular camera"
+      ],
+      "src": "https://www.unitree.com/H2",
+      "asof": "2026-11"
+    },
+    "versions": {
+      "v": [
+        {
+          "name": "H2",
+          "price": 29900,
+          "default": true,
+          "note": "Platform version. 8-month warranty."
+        },
+        {
+          "name": "H2 EDU",
+          "note": "Adds secondary development, dexterous hand options and a high-power computing module option. 12-month warranty. Price: contact sales."
+        }
+      ],
+      "src": "https://www.unitree.com/H2",
+      "asof": "2026-11"
+    },
+    "options": {
+      "v": [
+        {
+          "group": "In the box",
+          "name": "Smart battery (quick release)",
+          "kind": "included"
+        },
+        {
+          "group": "In the box",
+          "name": "Charger",
+          "kind": "included"
+        },
+        {
+          "group": "In the box",
+          "name": "Manual controller",
+          "kind": "included"
+        },
+        {
+          "group": "Hand / gripper",
+          "name": "Dex5-1",
+          "link": "Unitree Dex5-1",
+          "kind": "optional",
+          "versions": [
+            "H2 EDU"
+          ],
+          "note": "Five-finger hand with tactile sensing"
+        },
+        {
+          "group": "Hand / gripper",
+          "name": "Dex3-1",
+          "link": "Unitree Dex3-1",
+          "kind": "optional",
+          "versions": [
+            "H2 EDU"
+          ],
+          "note": "Three-finger force-controlled hand with tactile sensing"
+        },
+        {
+          "group": "Compute",
+          "name": "High-power computing module (e.g. NVIDIA Jetson AGX Thor)",
+          "kind": "optional",
+          "versions": [
+            "H2 EDU"
+          ],
+          "note": "Multiple brands and models offered"
+        },
+        {
+          "group": "Software",
+          "name": "Upgraded intelligent OTA",
+          "kind": "included"
+        }
+      ],
+      "src": "https://www.unitree.com/H2",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

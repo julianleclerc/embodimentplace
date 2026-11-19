@@ -1,0 +1,28 @@
+{
+  "id": 63,
+  "type": "funding",
+  "slug": "apptronik-series-a-x",
+  "name": "Apptronik Series A-X",
+  "summary": "$520M extension of the Series A, bringing the Series A total above $935M.",
+  "body": "Apptronik named existing investors B Capital, Google, Mercedes-Benz and PEAK6 and new investors including AT&T Ventures. Valuation is left empty: Apptronik did not disclose it, and reports range from about $5B to over $5.5B.",
+  "data": {
+    "date": {
+      "v": "2026-02-11",
+      "src": "https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 520,
+      "src": "https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-02-11"
+}

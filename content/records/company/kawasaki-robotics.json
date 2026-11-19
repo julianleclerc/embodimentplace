@@ -1,0 +1,41 @@
+{
+  "id": 104,
+  "type": "company",
+  "slug": "kawasaki-robotics",
+  "name": "Kawasaki Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/kawasaki-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://kawasakirobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Tokyo"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.67686,
+          "lon": 139.763895
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:36",
+  "feed_at": null
+}

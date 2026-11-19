@@ -1,0 +1,41 @@
+{
+  "id": 80,
+  "type": "company",
+  "slug": "pal-robotics",
+  "name": "PAL Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/pal-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://pal-robotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Barcelona"
+    },
+    "country": {
+      "v": "Spain"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Barcelona, Spain",
+          "lat": 41.38258,
+          "lon": 2.177073
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:25",
+  "feed_at": null
+}

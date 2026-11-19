@@ -1,0 +1,41 @@
+{
+  "id": 160,
+  "type": "company",
+  "slug": "dji",
+  "name": "DJI",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/dji.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.dji.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Shenzhen"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:59",
+  "feed_at": null
+}

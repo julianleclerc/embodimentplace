@@ -1,0 +1,668 @@
+[
+  {
+    "id": 1,
+    "src": 6,
+    "rel": "partners",
+    "dst": 13,
+    "note": "Gemini Robotics collaboration",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 2,
+    "src": 8,
+    "rel": "partners",
+    "dst": 19,
+    "note": "Parent group; Atlas field pilot",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 3,
+    "src": 13,
+    "rel": "partners",
+    "dst": 6,
+    "note": "Humanoids with Gemini Robotics",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 4,
+    "src": 26,
+    "rel": "maker",
+    "dst": 3,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 5,
+    "src": 27,
+    "rel": "maker",
+    "dst": 3,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 6,
+    "src": 28,
+    "rel": "maker",
+    "dst": 3,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 7,
+    "src": 29,
+    "rel": "maker",
+    "dst": 3,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 8,
+    "src": 30,
+    "rel": "maker",
+    "dst": 4,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 9,
+    "src": 30,
+    "rel": "uses",
+    "dst": 44,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 10,
+    "src": 31,
+    "rel": "maker",
+    "dst": 4,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 11,
+    "src": 32,
+    "rel": "maker",
+    "dst": 5,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 12,
+    "src": 33,
+    "rel": "maker",
+    "dst": 6,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 13,
+    "src": 33,
+    "rel": "uses",
+    "dst": 43,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 14,
+    "src": 34,
+    "rel": "maker",
+    "dst": 7,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 15,
+    "src": 35,
+    "rel": "maker",
+    "dst": 8,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 16,
+    "src": 36,
+    "rel": "maker",
+    "dst": 9,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 17,
+    "src": 37,
+    "rel": "maker",
+    "dst": 10,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 18,
+    "src": 38,
+    "rel": "maker",
+    "dst": 11,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 19,
+    "src": 39,
+    "rel": "maker",
+    "dst": 15,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 20,
+    "src": 40,
+    "rel": "developer",
+    "dst": 2,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 21,
+    "src": 41,
+    "rel": "developer",
+    "dst": 2,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 22,
+    "src": 41,
+    "rel": "trained_on",
+    "dst": 40,
+    "note": "Based on π0",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 23,
+    "src": 42,
+    "rel": "developer",
+    "dst": 12,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 24,
+    "src": 43,
+    "rel": "developer",
+    "dst": 13,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 25,
+    "src": 44,
+    "rel": "developer",
+    "dst": 4,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 26,
+    "src": 45,
+    "rel": "developer",
+    "dst": 13,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 27,
+    "src": 46,
+    "rel": "developer",
+    "dst": 15,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 28,
+    "src": 46,
+    "rel": "trained_on",
+    "dst": 50,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 29,
+    "src": 47,
+    "rel": "developer",
+    "dst": 14,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 30,
+    "src": 48,
+    "rel": "provider",
+    "dst": 13,
+    "note": "Coordinated with 21 institutions",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 31,
+    "src": 50,
+    "rel": "provider",
+    "dst": 15,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 32,
+    "src": 51,
+    "rel": "orgs",
+    "dst": 2,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 33,
+    "src": 51,
+    "rel": "about",
+    "dst": 40,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 34,
+    "src": 52,
+    "rel": "orgs",
+    "dst": 2,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 35,
+    "src": 52,
+    "rel": "about",
+    "dst": 41,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 36,
+    "src": 53,
+    "rel": "orgs",
+    "dst": 12,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 37,
+    "src": 53,
+    "rel": "about",
+    "dst": 42,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 38,
+    "src": 54,
+    "rel": "orgs",
+    "dst": 13,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 39,
+    "src": 54,
+    "rel": "about",
+    "dst": 43,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 40,
+    "src": 55,
+    "rel": "orgs",
+    "dst": 13,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 41,
+    "src": 56,
+    "rel": "orgs",
+    "dst": 13,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 42,
+    "src": 56,
+    "rel": "about",
+    "dst": 45,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 45,
+    "src": 59,
+    "rel": "company",
+    "dst": 2,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 46,
+    "src": 59,
+    "rel": "investors",
+    "dst": 20,
+    "note": "Lead",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 47,
+    "src": 60,
+    "rel": "company",
+    "dst": 4,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 48,
+    "src": 60,
+    "rel": "investors",
+    "dst": 21,
+    "note": "Lead",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 49,
+    "src": 61,
+    "rel": "company",
+    "dst": 6,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 50,
+    "src": 61,
+    "rel": "investors",
+    "dst": 23,
+    "note": "Co-lead",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 51,
+    "src": 61,
+    "rel": "investors",
+    "dst": 24,
+    "note": "Co-lead",
+    "pos": 2,
+    "source": ""
+  },
+  {
+    "id": 52,
+    "src": 62,
+    "rel": "company",
+    "dst": 6,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 53,
+    "src": 62,
+    "rel": "investors",
+    "dst": 18,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 54,
+    "src": 63,
+    "rel": "company",
+    "dst": 6,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 55,
+    "src": 63,
+    "rel": "investors",
+    "dst": 23,
+    "note": "Existing investor",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 56,
+    "src": 63,
+    "rel": "investors",
+    "dst": 18,
+    "note": "Existing investor",
+    "pos": 2,
+    "source": ""
+  },
+  {
+    "id": 57,
+    "src": 64,
+    "rel": "company",
+    "dst": 14,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 58,
+    "src": 64,
+    "rel": "investors",
+    "dst": 22,
+    "note": "Lead",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 59,
+    "src": 65,
+    "rel": "vendor",
+    "dst": 5,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 60,
+    "src": 65,
+    "rel": "customer",
+    "dst": 17,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 61,
+    "src": 65,
+    "rel": "robots",
+    "dst": 32,
+    "note": "",
+    "pos": 2,
+    "source": ""
+  },
+  {
+    "id": 62,
+    "src": 66,
+    "rel": "vendor",
+    "dst": 4,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 63,
+    "src": 66,
+    "rel": "customer",
+    "dst": 16,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 64,
+    "src": 66,
+    "rel": "robots",
+    "dst": 31,
+    "note": "",
+    "pos": 2,
+    "source": ""
+  },
+  {
+    "id": 65,
+    "src": 67,
+    "rel": "vendor",
+    "dst": 4,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 66,
+    "src": 67,
+    "rel": "customer",
+    "dst": 16,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 67,
+    "src": 67,
+    "rel": "robots",
+    "dst": 30,
+    "note": "",
+    "pos": 2,
+    "source": ""
+  },
+  {
+    "id": 68,
+    "src": 67,
+    "rel": "models",
+    "dst": 44,
+    "note": "",
+    "pos": 3,
+    "source": ""
+  },
+  {
+    "id": 69,
+    "src": 68,
+    "rel": "vendor",
+    "dst": 6,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 70,
+    "src": 68,
+    "rel": "customer",
+    "dst": 18,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 71,
+    "src": 68,
+    "rel": "robots",
+    "dst": 33,
+    "note": "",
+    "pos": 2,
+    "source": ""
+  },
+  {
+    "id": 72,
+    "src": 69,
+    "rel": "vendor",
+    "dst": 8,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 73,
+    "src": 69,
+    "rel": "customer",
+    "dst": 19,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  },
+  {
+    "id": 74,
+    "src": 69,
+    "rel": "robots",
+    "dst": 35,
+    "note": "",
+    "pos": 2,
+    "source": ""
+  },
+  {
+    "id": 75,
+    "src": 58,
+    "rel": "orgs",
+    "dst": 15,
+    "note": "",
+    "pos": 0,
+    "source": ""
+  },
+  {
+    "id": 76,
+    "src": 58,
+    "rel": "about",
+    "dst": 46,
+    "note": "",
+    "pos": 1,
+    "source": ""
+  }
+]

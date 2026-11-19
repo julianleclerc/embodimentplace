@@ -1,0 +1,41 @@
+{
+  "id": 208,
+  "type": "company",
+  "slug": "opentrons",
+  "name": "Opentrons",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/opentrons.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://opentrons.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Long Island City"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Long Island City, NY, United States",
+          "lat": 40.745532,
+          "lon": -73.948499
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:22",
+  "feed_at": null
+}

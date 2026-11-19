@@ -1,0 +1,41 @@
+{
+  "id": 150,
+  "type": "company",
+  "slug": "pony-ai",
+  "name": "Pony.ai",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/pony-ai.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://pony.ai/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Fremont"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Fremont, CA, United States",
+          "lat": 37.54827,
+          "lon": -121.988571
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:55",
+  "feed_at": null
+}

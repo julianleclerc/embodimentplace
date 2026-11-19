@@ -1,0 +1,41 @@
+{
+  "id": 102,
+  "type": "company",
+  "slug": "comau",
+  "name": "Comau",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/comau.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.comau.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Turin"
+    },
+    "country": {
+      "v": "Italy"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Turin, Italy",
+          "lat": 45.067755,
+          "lon": 7.682489
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:35",
+  "feed_at": null
+}

@@ -1,0 +1,28 @@
+{
+  "id": 61,
+  "type": "funding",
+  "slug": "apptronik-series-a",
+  "name": "Apptronik Series A",
+  "summary": "$350M round co-led by B Capital and Capital Factory, with Google participating.",
+  "body": "Apptronik later described the initial Series A as an oversubscribed $415M raise.",
+  "data": {
+    "date": {
+      "v": "2025-02-13",
+      "src": "https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 350,
+      "src": "https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2025-02-13"
+}

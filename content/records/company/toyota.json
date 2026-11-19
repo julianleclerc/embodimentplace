@@ -1,0 +1,42 @@
+{
+  "id": 87,
+  "type": "company",
+  "slug": "toyota",
+  "name": "Toyota",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/toyota.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://global.toyota/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Customer"
+      ]
+    },
+    "city": {
+      "v": "Toyota"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Toyota, Japan",
+          "lat": 35.083452,
+          "lon": 137.156737
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:28",
+  "feed_at": null
+}

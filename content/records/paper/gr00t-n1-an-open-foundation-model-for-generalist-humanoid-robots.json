@@ -1,0 +1,27 @@
+{
+  "id": 53,
+  "type": "paper",
+  "slug": "gr00t-n1-an-open-foundation-model-for-generalist-humanoid-robots",
+  "name": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+  "summary": "NVIDIA's humanoid foundation model paper.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "VLA / foundation models"
+      ]
+    },
+    "date": {
+      "v": "2025-03-18"
+    },
+    "authors_text": {
+      "v": "Johan Bjorck, et al. (NVIDIA)"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2503.14734"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2025-03-18"
+}

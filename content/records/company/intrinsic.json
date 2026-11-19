@@ -1,0 +1,25 @@
+{
+  "id": 90,
+  "type": "company",
+  "slug": "intrinsic",
+  "name": "Intrinsic",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/intrinsic.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://intrinsic.ai/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:30",
+  "feed_at": null
+}

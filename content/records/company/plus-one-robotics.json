@@ -1,0 +1,41 @@
+{
+  "id": 129,
+  "type": "company",
+  "slug": "plus-one-robotics",
+  "name": "Plus One Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/plus-one-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.plusonerobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    },
+    "city": {
+      "v": "San Antonio"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Antonio, TX, United States",
+          "lat": 29.4246,
+          "lon": -98.495141
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:46",
+  "feed_at": null
+}

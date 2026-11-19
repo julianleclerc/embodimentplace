@@ -1,0 +1,41 @@
+{
+  "id": 88,
+  "type": "company",
+  "slug": "toyota-research-institute",
+  "name": "Toyota Research Institute",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/toyota-research-institute.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.tri.global/"
+    },
+    "roles": {
+      "v": [
+        "Model lab"
+      ]
+    },
+    "city": {
+      "v": "Los Altos"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Altos, CA, United States",
+          "lat": 37.402564,
+          "lon": -122.116574
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:29",
+  "feed_at": null
+}

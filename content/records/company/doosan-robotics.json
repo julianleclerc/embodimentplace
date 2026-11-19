@@ -1,0 +1,41 @@
+{
+  "id": 105,
+  "type": "company",
+  "slug": "doosan-robotics",
+  "name": "Doosan Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/doosan-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.doosanrobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Suwon"
+    },
+    "country": {
+      "v": "South Korea"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Suwon, South Korea",
+          "lat": 37.263332,
+          "lon": 127.028747
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:36",
+  "feed_at": null
+}

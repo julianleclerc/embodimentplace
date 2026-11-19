@@ -1,0 +1,57 @@
+{
+  "id": 12,
+  "type": "company",
+  "slug": "nvidia",
+  "name": "NVIDIA",
+  "summary": "Compute company; publishes the open Isaac GR00T humanoid foundation models.",
+  "body": "Robotics work covered here: the Isaac GR00T foundation models, Isaac simulation frameworks and the Newton physics engine (developed with Google DeepMind and Disney Research).",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Compute"
+      ],
+      "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "stage": {
+      "v": "Public"
+    },
+    "model_chain": {
+      "v": [
+        "Frontier lab",
+        "Compute"
+      ],
+      "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.nvidia.com/"
+    },
+    "github": {
+      "v": "https://github.com/NVIDIA/Isaac-GR00T"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Santa Clara, CA, United States",
+          "lat": 37.3541,
+          "lon": -121.9552,
+          "src": "https://officesnapshots.com/2018/10/15/nvidia-headquarters-santa-clara/"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/nvidia.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

@@ -1,0 +1,42 @@
+{
+  "id": 20,
+  "type": "company",
+  "slug": "capitalg",
+  "name": "CapitalG",
+  "summary": "Alphabet's independent growth fund.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "website": {
+      "v": "https://www.capitalg.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.7749,
+          "lon": -122.4194,
+          "src": "https://en.wikipedia.org/wiki/CapitalG"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/capitalg.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

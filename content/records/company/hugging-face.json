@@ -1,0 +1,41 @@
+{
+  "id": 92,
+  "type": "company",
+  "slug": "hugging-face",
+  "name": "Hugging Face",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/hugging-face.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://huggingface.co/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    },
+    "city": {
+      "v": "New York"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "New York, NY, United States",
+          "lat": 40.712728,
+          "lon": -74.006015
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:30",
+  "feed_at": null
+}

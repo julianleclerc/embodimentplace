@@ -1,0 +1,41 @@
+{
+  "id": 165,
+  "type": "company",
+  "slug": "irobot",
+  "name": "iRobot",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/irobot.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.irobot.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Bedford"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bedford, MA, United States",
+          "lat": 42.49173,
+          "lon": -71.281795
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:02",
+  "feed_at": null
+}

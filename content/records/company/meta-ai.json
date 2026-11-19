@@ -1,0 +1,25 @@
+{
+  "id": 91,
+  "type": "company",
+  "slug": "meta-ai",
+  "name": "Meta AI",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/meta-ai.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://ai.meta.com/"
+    },
+    "roles": {
+      "v": [
+        "Model lab"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:30",
+  "feed_at": null
+}

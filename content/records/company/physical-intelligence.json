@@ -1,0 +1,67 @@
+{
+  "id": 2,
+  "type": "company",
+  "slug": "physical-intelligence",
+  "name": "Physical Intelligence",
+  "summary": "Bringing general-purpose AI into the physical world.",
+  "body": "Builds foundation models for robots. Research is published at [pi.website/blog](https://www.pi.website/blog).\n\nLater funding rounds have been reported in the press but are not recorded here until confirmed.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://www.pi.website/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding",
+      "asof": "2026-11"
+    },
+    "hq": {
+      "v": "San Francisco, CA",
+      "src": "https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding",
+      "asof": "2026-11"
+    },
+    "founded": {
+      "v": 2024,
+      "src": "https://news.bloomberglaw.com/artificial-intelligence/ai-robotics-lab-in-talks-to-nab-1-billion-at-11-billion-value",
+      "asof": "2026-11"
+    },
+    "stage": {
+      "v": "Series B",
+      "src": "https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.pi.website/"
+    },
+    "careers": {
+      "v": "https://www.pi.website/join-us"
+    },
+    "github": {
+      "v": "https://github.com/Physical-Intelligence"
+    },
+    "image": {
+      "v": "https://physicalintelligence.company/images/og/og.png",
+      "src": "https://www.pi.website/",
+      "fit": "cover",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.7749,
+          "lon": -122.4194,
+          "src": "https://en.wikipedia.org/wiki/Physical_Intelligence_Inc."
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

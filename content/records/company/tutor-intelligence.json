@@ -1,0 +1,42 @@
+{
+  "id": 209,
+  "type": "company",
+  "slug": "tutor-intelligence",
+  "name": "Tutor Intelligence",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/tutor-intelligence.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.tutorintelligence.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ]
+    },
+    "city": {
+      "v": "Watertown"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Watertown, MA, United States",
+          "lat": 42.365258,
+          "lon": -71.184323
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:22",
+  "feed_at": null
+}

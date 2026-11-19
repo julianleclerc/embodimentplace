@@ -1,0 +1,41 @@
+{
+  "id": 100,
+  "type": "company",
+  "slug": "universal-robots",
+  "name": "Universal Robots",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/universal-robots.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.universal-robots.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Odense"
+    },
+    "country": {
+      "v": "Denmark"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Odense, Denmark",
+          "lat": 55.399723,
+          "lon": 10.38521
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:34",
+  "feed_at": null
+}

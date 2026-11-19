@@ -1,0 +1,41 @@
+{
+  "id": 122,
+  "type": "company",
+  "slug": "autostore",
+  "name": "AutoStore",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/autostore.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.autostoresystem.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Nedre Vats"
+    },
+    "country": {
+      "v": "Norway"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Nedre Vats, Norway",
+          "lat": 59.490707,
+          "lon": 5.730338
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:43",
+  "feed_at": null
+}

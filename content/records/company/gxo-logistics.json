@@ -1,0 +1,50 @@
+{
+  "id": 17,
+  "type": "company",
+  "slug": "gxo-logistics",
+  "name": "GXO Logistics",
+  "summary": "Contract logistics provider; first commercial Digit deployment.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Customer"
+      ],
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "hq": {
+      "v": "Greenwich, CT",
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "stage": {
+      "v": "Public"
+    },
+    "website": {
+      "v": "https://gxo.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Greenwich, CT, United States",
+          "lat": 41.0262,
+          "lon": -73.6282,
+          "src": "https://www.sec.gov/Archives/edgar/data/1852244/000185224426000007/gxo-20251231.htm"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/gxo-logistics.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

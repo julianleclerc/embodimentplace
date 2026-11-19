@@ -1,0 +1,41 @@
+{
+  "id": 201,
+  "type": "company",
+  "slug": "imperial-college-london",
+  "name": "Imperial College London",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/imperial-college-london.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.imperial.ac.uk/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "London"
+    },
+    "country": {
+      "v": "United Kingdom"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.500505,
+          "lon": -0.178219
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:19",
+  "feed_at": null
+}

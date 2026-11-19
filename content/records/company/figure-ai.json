@@ -1,0 +1,60 @@
+{
+  "id": 4,
+  "type": "company",
+  "slug": "figure-ai",
+  "name": "Figure AI",
+  "summary": "Builds the Figure humanoid robots and the Helix model.",
+  "body": "Builds general-purpose humanoids (Figure 02, Figure 03) and its own vision-language-action model, Helix. Runs a body-shop and logistics programme with BMW at Plant Spartanburg.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ],
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "stage": {
+      "v": "Series C",
+      "src": "https://www.figure.ai/news/series-c",
+      "asof": "2026-11"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://www.figure.ai/figure",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.figure.ai/"
+    },
+    "careers": {
+      "v": "https://www.figure.ai/careers"
+    },
+    "image": {
+      "v": "/logos/figure-ai.png",
+      "src": "https://www.figure.ai/news/introducing-figure-03",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Jose, CA, United States",
+          "lat": 37.3382,
+          "lon": -121.8863,
+          "src": "https://therealdeal.com/san-francisco/2025/03/17/figure-ai-leases-99k-sf-for-new-san-jose-headquarters-plant"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

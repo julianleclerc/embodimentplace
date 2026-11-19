@@ -1,0 +1,41 @@
+{
+  "id": 163,
+  "type": "company",
+  "slug": "clearpath-robotics",
+  "name": "Clearpath Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/clearpath-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://clearpathrobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Kitchener"
+    },
+    "country": {
+      "v": "Canada"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kitchener, Canada",
+          "lat": 43.451291,
+          "lon": -80.492782
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:01",
+  "feed_at": null
+}

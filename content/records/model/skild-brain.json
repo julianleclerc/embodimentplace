@@ -1,0 +1,38 @@
+{
+  "id": 47,
+  "type": "model",
+  "slug": "skild-brain",
+  "name": "Skild Brain",
+  "summary": "Skild AI's general-purpose robot foundation model.",
+  "body": "",
+  "data": {
+    "kind": {
+      "v": "Foundation model",
+      "src": "https://www.businesswire.com/news/home/20260114335623/en/",
+      "asof": "2026-11"
+    },
+    "design": {
+      "v": "Hierarchical (several policies)",
+      "src": "https://skild.ai/blogs/building-the-general-purpose-robotic-brain",
+      "asof": "2026-11"
+    },
+    "training_data": {
+      "v": "Large-scale simulation and internet video, then targeted real-world data",
+      "src": "https://skild.ai/blogs/building-the-general-purpose-robotic-brain",
+      "asof": "2026-11"
+    },
+    "embodiments": {
+      "v": [
+        "Quadruped",
+        "Humanoid",
+        "Arm",
+        "Mobile manipulator"
+      ],
+      "src": "https://skild.ai/blogs/building-the-general-purpose-robotic-brain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

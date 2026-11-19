@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "embodiment-place",
+  "main": "worker/dist/index.js",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": [],
+  "no_bundle": true,
+  "base_dir": "worker/dist",
+  "find_additional_modules": true,
+  "rules": [{ "type": "ESModule", "globs": ["**/*.js"] }],
+  "keep_vars": true,
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "embodiment-place", "database_id": "f0208a60-bea9-4a39-9a79-89565c0bc32b" }
+  ],
+  "durable_objects": {
+    "bindings": [{ "name": "LIVE", "class_name": "LiveHub" }]
+  },
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "embodiment-place-media" }
+  ],
+  "send_email": [
+    { "name": "EMAIL" }
+  ],
+  "observability": { "enabled": true }
+}

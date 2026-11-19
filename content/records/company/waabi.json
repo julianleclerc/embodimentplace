@@ -1,0 +1,41 @@
+{
+  "id": 153,
+  "type": "company",
+  "slug": "waabi",
+  "name": "Waabi",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/waabi.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://waabi.ai/"
+    },
+    "roles": {
+      "v": [
+        "Model lab"
+      ]
+    },
+    "city": {
+      "v": "Toronto"
+    },
+    "country": {
+      "v": "Canada"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Toronto, Canada",
+          "lat": 43.653482,
+          "lon": -79.383935
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:56",
+  "feed_at": null
+}

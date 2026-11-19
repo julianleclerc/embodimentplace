@@ -1,0 +1,45 @@
+{
+  "id": 24,
+  "type": "company",
+  "slug": "capital-factory",
+  "name": "Capital Factory",
+  "summary": "Austin investor and accelerator; co-led Apptronik's Series A.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "hq": {
+      "v": "Austin, TX"
+    },
+    "website": {
+      "v": "https://www.capitalfactory.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, TX, United States",
+          "lat": 30.2672,
+          "lon": -97.7431,
+          "src": "https://capitalfactory.com/about"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/capital-factory.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

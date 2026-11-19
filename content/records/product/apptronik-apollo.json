@@ -1,0 +1,54 @@
+{
+  "id": 33,
+  "type": "product",
+  "slug": "apptronik-apollo",
+  "name": "Apptronik Apollo",
+  "summary": "General-purpose humanoid for manufacturing and logistics.",
+  "body": "Runtime is per battery, about 4 hours; batteries are hot-swappable.",
+  "data": {
+    "status": {
+      "v": "Pilot",
+      "src": "https://heise.de/-10320691",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://apptronik.com/apollo",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 173,
+      "src": "https://www.all-about-industries.com/mercedes-invests-in-humanoid-robots-a-93b154ac7e3fd2197b66219bf80d8e54",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 73,
+      "src": "https://www.all-about-industries.com/mercedes-invests-in-humanoid-robots-a-93b154ac7e3fd2197b66219bf80d8e54",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 4,
+      "src": "https://apptronik.com/apollo",
+      "asof": "2026-11"
+    },
+    "battery": {
+      "v": "Hot-swappable",
+      "src": "https://apptronik.com/apollo",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Industrial",
+        "Logistics"
+      ],
+      "src": "https://apptronik.com/apollo",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

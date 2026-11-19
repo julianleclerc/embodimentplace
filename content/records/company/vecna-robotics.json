@@ -1,0 +1,25 @@
+{
+  "id": 134,
+  "type": "company",
+  "slug": "vecna-robotics",
+  "name": "Vecna Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/vecna-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.vecnarobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:48",
+  "feed_at": null
+}

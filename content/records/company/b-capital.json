@@ -1,0 +1,43 @@
+{
+  "id": 23,
+  "type": "company",
+  "slug": "b-capital",
+  "name": "B Capital",
+  "summary": "Growth investor; co-led Apptronik's Series A.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bcapgroup.com/"
+    },
+    "image": {
+      "v": "/logos/b-capital.png",
+      "fit": "contain"
+    },
+    "city": {
+      "v": "San Francisco"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752
+        }
+      ]
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-18 00:27:22",
+  "feed_at": "2026-11-16"
+}

@@ -1,0 +1,41 @@
+{
+  "id": 81,
+  "type": "company",
+  "slug": "neura-robotics",
+  "name": "NEURA Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/neura-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://neura-robotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Metzingen"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Metzingen, Germany",
+          "lat": 48.539725,
+          "lon": 9.28312
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:26",
+  "feed_at": null
+}

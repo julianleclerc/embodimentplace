@@ -1,0 +1,33 @@
+{
+  "id": 67,
+  "type": "deployment",
+  "slug": "bmw-figure-figure-03-at-plant-spartanburg",
+  "name": "BMW × Figure: Figure 03 at Plant Spartanburg",
+  "summary": "Figure 03 starts on sequencing work in logistics.",
+  "body": "Announced by BMW in June 2026. Development runs in parallel at the plant and at Figure.",
+  "data": {
+    "date": {
+      "v": "2026-06-25",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Pilot",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    },
+    "use_case": {
+      "v": "Complex sequencing in logistics",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    },
+    "location": {
+      "v": "Spartanburg, SC",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-06-25"
+}

@@ -1,0 +1,41 @@
+{
+  "id": 190,
+  "type": "company",
+  "slug": "georgia-tech-irim",
+  "name": "Georgia Tech Institute for Robotics and Intelligent Machines",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/georgia-tech-irim.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://robotics.gatech.edu/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Atlanta"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Atlanta, GA, United States",
+          "lat": 33.754466,
+          "lon": -84.389815
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:14",
+  "feed_at": null
+}

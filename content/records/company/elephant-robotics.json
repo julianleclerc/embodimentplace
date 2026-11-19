@@ -1,0 +1,25 @@
+{
+  "id": 118,
+  "type": "company",
+  "slug": "elephant-robotics",
+  "name": "Elephant Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/elephant-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.elephantrobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:41",
+  "feed_at": null
+}

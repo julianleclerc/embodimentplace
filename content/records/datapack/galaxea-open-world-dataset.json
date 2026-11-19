@@ -1,0 +1,26 @@
+{
+  "id": 50,
+  "type": "datapack",
+  "slug": "galaxea-open-world-dataset",
+  "name": "Galaxea Open-World Dataset",
+  "summary": "Galaxea's dataset of robot behaviour in real homes, shops and offices.",
+  "body": "Introduced in the Galaxea G0 paper and listed on galaxea-dynamics.com.",
+  "data": {
+    "released": {
+      "v": "2025-08-30",
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "access": {
+      "v": "Open",
+      "src": "https://arxiv.org/abs/2509.00576",
+      "asof": "2026-11"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2509.00576"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

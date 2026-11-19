@@ -1,0 +1,41 @@
+{
+  "id": 180,
+  "type": "company",
+  "slug": "siemens",
+  "name": "Siemens",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/siemens.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.siemens.com/"
+    },
+    "roles": {
+      "v": [
+        "Supplier"
+      ]
+    },
+    "city": {
+      "v": "Munich"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:09",
+  "feed_at": null
+}

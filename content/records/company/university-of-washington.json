@@ -1,0 +1,41 @@
+{
+  "id": 202,
+  "type": "company",
+  "slug": "university-of-washington",
+  "name": "University of Washington",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/university-of-washington.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.washington.edu/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Seattle"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seattle, WA, United States",
+          "lat": 47.654167,
+          "lon": -122.308056
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:19",
+  "feed_at": null
+}

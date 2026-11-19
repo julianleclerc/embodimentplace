@@ -1,0 +1,35 @@
+{
+  "id": 72,
+  "type": "event",
+  "slug": "ces-2027",
+  "name": "CES 2027",
+  "summary": "Consumer Technology Association's annual technology show.",
+  "body": "Dates as listed by exhibitors; check ces.tech before booking.",
+  "data": {
+    "status": {
+      "v": "Upcoming"
+    },
+    "date": {
+      "v": "2027-01-06",
+      "src": "https://www.nordicsemi.com/Events/2027/CES-2027",
+      "asof": "2026-11"
+    },
+    "end_date": {
+      "v": "2027-01-09",
+      "src": "https://www.nordicsemi.com/Events/2027/CES-2027",
+      "asof": "2026-11"
+    },
+    "venue": {
+      "v": "Las Vegas Convention Center"
+    },
+    "city": {
+      "v": "Las Vegas, NV"
+    },
+    "url": {
+      "v": "https://www.ces.tech/"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2027-01-06"
+}

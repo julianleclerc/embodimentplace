@@ -1,0 +1,33 @@
+{
+  "id": 66,
+  "type": "deployment",
+  "slug": "bmw-figure-figure-02-at-plant-spartanburg",
+  "name": "BMW × Figure: Figure 02 at Plant Spartanburg",
+  "summary": "Figure 02 loaded sheet-metal parts in the body shop.",
+  "body": "BMW says Figure 02 supported production of more than 30,000 BMW X3 over ten months in 2025. Figure describes an 11-month deployment, over 90,000 parts loaded and 1,250 hours of operation. Unit count not confirmed by BMW.",
+  "data": {
+    "date": {
+      "v": "2025-06-26",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Ended",
+      "src": "https://www.webpronews.com/bmw-bets-big-on-factory-humanoids-after-u-s-success-delivers-30000-cars/",
+      "asof": "2026-11"
+    },
+    "use_case": {
+      "v": "Inserting sheet-metal parts in the body shop",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    },
+    "location": {
+      "v": "Spartanburg, SC",
+      "src": "https://www.press.bmwgroup.com/global/article/attachment/T0458778EN/651004",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2025-06-26"
+}

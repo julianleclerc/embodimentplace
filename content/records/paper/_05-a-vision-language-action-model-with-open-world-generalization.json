@@ -1,0 +1,28 @@
+{
+  "id": 52,
+  "type": "paper",
+  "slug": "π05-a-vision-language-action-model-with-open-world-generalization",
+  "name": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+  "summary": "Co-training a VLA on heterogeneous data.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "VLA / foundation models",
+        "Manipulation"
+      ]
+    },
+    "date": {
+      "v": "2025-04-22"
+    },
+    "authors_text": {
+      "v": "Physical Intelligence"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2504.16054"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2025-04-22"
+}

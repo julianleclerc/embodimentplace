@@ -1,0 +1,64 @@
+{
+  "id": 6,
+  "type": "company",
+  "slug": "apptronik",
+  "name": "Apptronik",
+  "summary": "Austin company building the Apollo humanoid robot.",
+  "body": "Spun out of the Human Centered Robotics Lab at the University of Texas at Austin in 2016. Works with Google DeepMind's robotics team on humanoids running Gemini Robotics models.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://apptronik.com/apollo",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "hq": {
+      "v": "Austin, TX",
+      "src": "https://apptronik.com/news-collection/apptronik-and-mercedes-benz-enter-commercial-agreement",
+      "asof": "2026-11"
+    },
+    "founded": {
+      "v": 2016,
+      "src": "https://bloomberg.com/news/articles/2026-02-11/apptronik-raises-520-million-in-new-funding-to-build-more-humanoids",
+      "asof": "2026-11"
+    },
+    "stage": {
+      "v": "Series A",
+      "src": "https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding",
+      "asof": "2026-11"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://apptronik.com/apollo",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://apptronik.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, TX, United States",
+          "lat": 30.2672,
+          "lon": -97.7431,
+          "src": "https://builtinaustin.com/company/apptronik/offices"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/apptronik.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

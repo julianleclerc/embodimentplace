@@ -1,0 +1,41 @@
+{
+  "id": 164,
+  "type": "company",
+  "slug": "open-robotics",
+  "name": "Open Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/open-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.openrobotics.org/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    },
+    "city": {
+      "v": "Mountain View"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mountain View, CA, United States",
+          "lat": 37.389389,
+          "lon": -122.08321
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:01",
+  "feed_at": null
+}

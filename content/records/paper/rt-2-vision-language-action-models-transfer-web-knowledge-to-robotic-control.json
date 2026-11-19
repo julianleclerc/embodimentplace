@@ -1,0 +1,27 @@
+{
+  "id": 56,
+  "type": "paper",
+  "slug": "rt-2-vision-language-action-models-transfer-web-knowledge-to-robotic-control",
+  "name": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+  "summary": "Introduces RT-2.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "VLA / foundation models"
+      ]
+    },
+    "date": {
+      "v": "2023-07-28"
+    },
+    "authors_text": {
+      "v": "Google DeepMind"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2307.15818"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2023-07-28"
+}

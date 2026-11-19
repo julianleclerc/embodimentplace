@@ -1,0 +1,102 @@
+{
+  "id": 42,
+  "type": "model",
+  "slug": "isaac-gr00t-n1",
+  "name": "Isaac GR00T N1",
+  "summary": "Open, customisable foundation model for humanoid robots with a dual-system design.",
+  "body": "Announced at GTC 2025. \"System 1\" is a fast action model and \"System 2\" a slower reasoning model. Developers post-train it with real or synthetic data. Later versions in the GR00T family are not yet recorded here.",
+  "data": {
+    "kind": {
+      "v": "Foundation model",
+      "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
+      "asof": "2026-11"
+    },
+    "released": {
+      "v": "2025-03-18",
+      "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
+      "asof": "2026-11"
+    },
+    "weights": {
+      "v": "Open",
+      "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
+      "asof": "2026-11"
+    },
+    "embodiments": {
+      "v": [
+        "Humanoid"
+      ],
+      "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
+      "asof": "2026-11"
+    },
+    "url": {
+      "v": "https://github.com/NVIDIA/Isaac-GR00T"
+    },
+    "params_b": {
+      "v": 2.2,
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "design": {
+      "v": "Dual system (planner + controller)",
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "backbone": {
+      "v": "NVIDIA Eagle-2 VLM (1.34B) + diffusion transformer",
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "action_head": {
+      "v": "Flow matching",
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "action_hz": {
+      "v": 120,
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "planner_hz": {
+      "v": "10 Hz",
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "inputs": {
+      "v": [
+        "RGB images",
+        "Language",
+        "Proprioception"
+      ],
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "latency_ms": {
+      "v": 63.9,
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "inference_hw": {
+      "v": "NVIDIA L40 (the paper's timing, for a 16-action chunk)",
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "train_compute": {
+      "v": "About 50,000 H100 GPU hours of pre-training",
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "training_data": {
+      "v": "Real-robot trajectories (including about 140,000 AgiBot-Alpha trajectories, Fourier GR-1 teleoperation and Open X-Embodiment), 780,000 simulated trajectories (6,500 hours), 827 hours of generated video and human videos",
+      "src": "https://arxiv.org/abs/2503.14734",
+      "asof": "2026-11"
+    },
+    "finetune": {
+      "v": "Yes",
+      "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

@@ -1,0 +1,41 @@
+{
+  "id": 161,
+  "type": "company",
+  "slug": "zipline",
+  "name": "Zipline",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/zipline.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.flyzipline.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "South San Francisco"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "South San Francisco, CA, United States",
+          "lat": 37.65354,
+          "lon": -122.416866
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:00",
+  "feed_at": null
+}

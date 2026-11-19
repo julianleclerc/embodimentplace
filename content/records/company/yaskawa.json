@@ -1,0 +1,41 @@
+{
+  "id": 99,
+  "type": "company",
+  "slug": "yaskawa",
+  "name": "Yaskawa",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/yaskawa.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.yaskawa.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Kitakyushu"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kitakyushu, Japan",
+          "lat": 33.883,
+          "lon": 130.874901
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:33",
+  "feed_at": null
+}

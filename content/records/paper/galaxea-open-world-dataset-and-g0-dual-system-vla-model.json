@@ -1,0 +1,25 @@
+{
+  "id": 58,
+  "type": "paper",
+  "slug": "galaxea-open-world-dataset-and-g0-dual-system-vla-model",
+  "name": "Galaxea Open-World Dataset and G0 Dual-System VLA Model",
+  "summary": "Introduces the Galaxea dataset and the G0 model.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": "VLA / foundation models,Datasets"
+    },
+    "date": {
+      "v": "2025-08-30"
+    },
+    "authors_text": {
+      "v": "Tao Jiang, et al., Jiyang Gao, Huazhe Xu, Hang Zhao"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2509.00576"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-18 00:47:06",
+  "feed_at": "2025-08-30"
+}

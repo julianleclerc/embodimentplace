@@ -1,0 +1,46 @@
+{
+  "id": 49,
+  "type": "datapack",
+  "slug": "droid",
+  "name": "DROID",
+  "summary": "Large in-the-wild robot manipulation dataset.",
+  "body": "About 76k trajectories over 350 hours, in 564 scenes and 84 tasks. Open-sourced with the paper.",
+  "data": {
+    "kind": {
+      "v": "Teleoperation",
+      "src": "https://arxiv.org/abs/2403.12945",
+      "asof": "2026-11"
+    },
+    "released": {
+      "v": "2024-03-19",
+      "src": "https://arxiv.org/abs/2403.12945",
+      "asof": "2026-11"
+    },
+    "hours": {
+      "v": 350,
+      "src": "https://arxiv.org/abs/2403.12945",
+      "asof": "2026-11"
+    },
+    "episodes": {
+      "v": 76000,
+      "src": "https://arxiv.org/abs/2403.12945",
+      "asof": "2026-11"
+    },
+    "tasks": {
+      "v": 84,
+      "src": "https://arxiv.org/abs/2403.12945",
+      "asof": "2026-11"
+    },
+    "access": {
+      "v": "Open",
+      "src": "https://arxiv.org/abs/2403.12945",
+      "asof": "2026-11"
+    },
+    "url": {
+      "v": "https://droid-dataset.github.io/"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

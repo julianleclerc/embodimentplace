@@ -1,0 +1,41 @@
+{
+  "id": 221,
+  "type": "company",
+  "slug": "zebra-technologies",
+  "name": "Zebra Technologies",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/zebra-technologies.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.zebra.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Lincolnshire"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Lincolnshire, IL, United States",
+          "lat": 42.190025,
+          "lon": -87.908404
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:28",
+  "feed_at": null
+}

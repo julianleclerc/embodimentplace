@@ -1,0 +1,42 @@
+{
+  "id": 89,
+  "type": "company",
+  "slug": "the-ai-institute",
+  "name": "The AI Institute",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/the-ai-institute.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://theaiinstitute.com/"
+    },
+    "roles": {
+      "v": [
+        "Model lab",
+        "Research lab"
+      ]
+    },
+    "city": {
+      "v": "Cambridge"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Cambridge, MA, United States",
+          "lat": 42.365635,
+          "lon": -71.104002
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:29",
+  "feed_at": null
+}

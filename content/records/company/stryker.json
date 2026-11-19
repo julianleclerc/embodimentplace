@@ -1,0 +1,41 @@
+{
+  "id": 223,
+  "type": "company",
+  "slug": "stryker",
+  "name": "Stryker",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/stryker.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.stryker.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Portage"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Portage, MI, United States",
+          "lat": 42.201154,
+          "lon": -85.580002
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:28",
+  "feed_at": null
+}

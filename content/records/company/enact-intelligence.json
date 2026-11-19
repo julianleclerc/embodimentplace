@@ -1,0 +1,41 @@
+{
+  "id": 218,
+  "type": "company",
+  "slug": "enact-intelligence",
+  "name": "Enact Intelligence",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/enact-intelligence.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://enact-intelligence.com/"
+    },
+    "roles": {
+      "v": [
+        "Supplier"
+      ]
+    },
+    "city": {
+      "v": "Zurich"
+    },
+    "country": {
+      "v": "Switzerland"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zurich, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:26",
+  "feed_at": null
+}

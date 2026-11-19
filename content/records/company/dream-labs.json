@@ -1,0 +1,41 @@
+{
+  "id": 215,
+  "type": "company",
+  "slug": "dream-labs",
+  "name": "Dream Labs",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/dream-labs.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://dreamlabs.ai/"
+    },
+    "roles": {
+      "v": [
+        "Model lab"
+      ]
+    },
+    "city": {
+      "v": "San Francisco"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:25",
+  "feed_at": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": 125,
+  "type": "company",
+  "slug": "berkshire-grey",
+  "name": "Berkshire Grey",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/berkshire-grey.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.berkshiregrey.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Bedford"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bedford, MA, United States",
+          "lat": 42.49173,
+          "lon": -71.281795
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:44",
+  "feed_at": null
+}

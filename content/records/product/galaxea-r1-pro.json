@@ -1,0 +1,39 @@
+{
+  "id": 39,
+  "type": "product",
+  "slug": "galaxea-r1-pro",
+  "name": "Galaxea R1 Pro",
+  "summary": "Wheeled dual-arm humanoid for mobile manipulation and embodied AI research.",
+  "body": "26 DoF: two 7-DoF arms, a 3-DoF torso and a 6-DoF omnidirectional chassis (distributor listing). Part of the R1 series with R1 and R1 Lite.",
+  "data": {
+    "locomotion": {
+      "v": "Wheeled base",
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 26,
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "end_effector": {
+      "v": "Dual 7-DoF force-controlled arms",
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Research",
+        "Industrial"
+      ],
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

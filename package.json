@@ -1,0 +1,13 @@
+{
+  "name": "embodiment-place",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check-live": "node scripts/check-live-config.mjs",
+    "deploy": "node scripts/check-live-config.mjs && wrangler deploy",
+    "export-content": "node scripts/export-content.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.157.0"
+  }
+}

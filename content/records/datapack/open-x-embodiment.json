@@ -1,0 +1,43 @@
+{
+  "id": 48,
+  "type": "datapack",
+  "slug": "open-x-embodiment",
+  "name": "Open X-Embodiment",
+  "summary": "Pooled robot learning data from 22 robots across 21 institutions.",
+  "body": "Covers 527 skills (160,266 tasks). Used to train RT-1-X and RT-2-X.",
+  "data": {
+    "kind": {
+      "v": "Mixed",
+      "src": "https://arxiv.org/abs/2310.08864",
+      "asof": "2026-11"
+    },
+    "released": {
+      "v": "2023-10-13",
+      "src": "https://arxiv.org/abs/2310.08864",
+      "asof": "2026-11"
+    },
+    "tasks": {
+      "v": 160266,
+      "src": "https://arxiv.org/abs/2310.08864",
+      "asof": "2026-11"
+    },
+    "embodiments": {
+      "v": [
+        "22 robot types"
+      ],
+      "src": "https://arxiv.org/abs/2310.08864",
+      "asof": "2026-11"
+    },
+    "access": {
+      "v": "Open",
+      "src": "https://robotics-transformer-x.github.io/",
+      "asof": "2026-11"
+    },
+    "url": {
+      "v": "https://robotics-transformer-x.github.io/"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

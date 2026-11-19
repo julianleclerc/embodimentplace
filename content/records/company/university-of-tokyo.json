@@ -1,0 +1,41 @@
+{
+  "id": 200,
+  "type": "company",
+  "slug": "university-of-tokyo",
+  "name": "University of Tokyo",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/university-of-tokyo.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.u-tokyo.ac.jp/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Tokyo"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.71339,
+          "lon": 139.76232
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:18",
+  "feed_at": null
+}

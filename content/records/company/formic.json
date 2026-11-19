@@ -1,0 +1,41 @@
+{
+  "id": 112,
+  "type": "company",
+  "slug": "formic",
+  "name": "Formic",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/formic.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://formic.co/"
+    },
+    "roles": {
+      "v": [
+        "Integrator"
+      ]
+    },
+    "city": {
+      "v": "Bolingbrook"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bolingbrook, IL, United States",
+          "lat": 41.70033,
+          "lon": -88.071771
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:39",
+  "feed_at": null
+}

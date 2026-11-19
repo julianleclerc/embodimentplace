@@ -1,0 +1,41 @@
+{
+  "id": 147,
+  "type": "company",
+  "slug": "motional",
+  "name": "Motional",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/motional.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://motional.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Boston"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Boston, MA, United States",
+          "lat": 42.358834,
+          "lon": -71.05783
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:54",
+  "feed_at": null
+}

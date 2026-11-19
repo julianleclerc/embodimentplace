@@ -1,0 +1,36 @@
+{
+  "id": 28,
+  "type": "product",
+  "slug": "unitree-dex5-1",
+  "name": "Unitree Dex5-1",
+  "summary": "Five-finger dexterous hand, 20 DoF (16 active), with 94 tactile sensors.",
+  "body": "Unitree lists 20 degrees of freedom (16 active + 4), 1100 g, a 3.5 kg palm-down / 4.5 kg palm-left load on a 5 cm round object, 10 N fingertip force and 94 pressure sensors in 12 arrays ([unitree.com/Dex5-1](https://www.unitree.com/Dex5-1)). Unitree's page doesn't list compatible robots or a price.",
+  "data": {
+    "dof": {
+      "v": 20,
+      "src": "https://www.unitree.com/Dex5-1",
+      "asof": "2026-11"
+    },
+    "active_dof": {
+      "v": 16,
+      "src": "https://www.unitree.com/Dex5-1",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 1.1,
+      "src": "https://www.unitree.com/Dex5-1",
+      "asof": "2026-11"
+    },
+    "tactile": {
+      "v": "Yes",
+      "src": "https://www.unitree.com/Dex5-1",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Hand / gripper"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

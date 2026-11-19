@@ -1,0 +1,46 @@
+{
+  "id": 18,
+  "type": "company",
+  "slug": "mercedes-benz",
+  "name": "Mercedes-Benz",
+  "summary": "Stuttgart carmaker piloting Apollo; investor in Apptronik.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Customer",
+        "Investor"
+      ],
+      "src": "https://heise.de/-10320691",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "stage": {
+      "v": "Public"
+    },
+    "website": {
+      "v": "https://group.mercedes-benz.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Stuttgart, Germany",
+          "lat": 48.7758,
+          "lon": 9.1829,
+          "src": "https://group.mercedes-benz.com/company/at-a-glance.html"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/mercedes-benz.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

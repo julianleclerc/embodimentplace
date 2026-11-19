@@ -1,0 +1,28 @@
+{
+  "id": 55,
+  "type": "paper",
+  "slug": "open-x-embodiment-robotic-learning-datasets-and-rt-x-models",
+  "name": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+  "summary": "Cross-institution dataset and RT-X models.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Datasets",
+        "Manipulation"
+      ]
+    },
+    "date": {
+      "v": "2023-10-13"
+    },
+    "authors_text": {
+      "v": "Open X-Embodiment Collaboration"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2310.08864"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2023-10-13"
+}

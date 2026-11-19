@@ -1,0 +1,28 @@
+{
+  "id": 57,
+  "type": "paper",
+  "slug": "droid-a-large-scale-in-the-wild-robot-manipulation-dataset",
+  "name": "DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset",
+  "summary": "Introduces the DROID dataset.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Datasets",
+        "Manipulation"
+      ]
+    },
+    "date": {
+      "v": "2024-03-19"
+    },
+    "authors_text": {
+      "v": "Alexander Khazatsky, Karl Pertsch, et al."
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2403.12945"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2024-03-19"
+}

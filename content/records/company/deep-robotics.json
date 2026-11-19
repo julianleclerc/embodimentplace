@@ -1,0 +1,41 @@
+{
+  "id": 172,
+  "type": "company",
+  "slug": "deep-robotics",
+  "name": "DEEP Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/deep-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.deeprobotics.cn/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Hangzhou"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hangzhou, China",
+          "lat": 30.248963,
+          "lon": 120.205234
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:05",
+  "feed_at": null
+}

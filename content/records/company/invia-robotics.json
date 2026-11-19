@@ -1,0 +1,41 @@
+{
+  "id": 139,
+  "type": "company",
+  "slug": "invia-robotics",
+  "name": "inVia Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/invia-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.inviarobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Agoura Hills"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Agoura Hills, CA, United States",
+          "lat": 34.148169,
+          "lon": -118.765546
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:50",
+  "feed_at": null
+}

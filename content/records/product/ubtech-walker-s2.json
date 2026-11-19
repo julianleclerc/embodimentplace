@@ -1,0 +1,58 @@
+{
+  "id": 36,
+  "type": "product",
+  "slug": "ubtech-walker-s2",
+  "name": "UBTech Walker S2",
+  "summary": "Industrial humanoid that swaps its own battery in about 3 minutes.",
+  "body": "Weight is left empty: published figures disagree (43, 70, 73 and 95 kg all appear).",
+  "data": {
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 176,
+      "src": "https://www.canadasatellite.ca/la-en/UBTECH-Walker-S2.htm",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 52,
+      "src": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 15,
+      "src": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "asof": "2026-11"
+    },
+    "speed_mps": {
+      "v": 2,
+      "src": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "asof": "2026-11"
+    },
+    "battery": {
+      "v": "LiFePO4, 48 V",
+      "src": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "asof": "2026-11"
+    },
+    "charging": {
+      "v": "Autonomous battery swap, about 3 min",
+      "src": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Industrial"
+      ],
+      "src": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

@@ -1,0 +1,64 @@
+{
+  "id": 34,
+  "type": "product",
+  "slug": "1x-neo",
+  "name": "1X NEO",
+  "summary": "Home humanoid, 5'6\" and 66 lb, with 22-DoF hands.",
+  "body": "1X lists 5'6\" (168 cm), 66 lb (30 kg), a 154 lb lift and a 55 lb carry (payload field uses the carry figure), and 22 dB operating noise. Press reports give a price of US$20,000 or a monthly subscription; not filled in until confirmed on 1X's own page.",
+  "data": {
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 168,
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 30,
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 25,
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 4,
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "end_effector": {
+      "v": "Hands, 22 DoF each",
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "battery": {
+      "v": "842 Wh",
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Home"
+      ],
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "https://cdn.sanity.io/images/qka6yvsc/production/fdda789a2e7c6caa9a798dd920b8a0acb254ea9d-1200x630.jpg",
+      "src": "https://www.1x.tech/neo",
+      "fit": "cover",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

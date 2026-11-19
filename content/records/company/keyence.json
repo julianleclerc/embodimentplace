@@ -1,0 +1,41 @@
+{
+  "id": 179,
+  "type": "company",
+  "slug": "keyence",
+  "name": "Keyence",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/keyence.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.keyence.com/"
+    },
+    "roles": {
+      "v": [
+        "Supplier"
+      ]
+    },
+    "city": {
+      "v": "Osaka"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Osaka, Japan",
+          "lat": 34.693757,
+          "lon": 135.501454
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:09",
+  "feed_at": null
+}

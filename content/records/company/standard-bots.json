@@ -1,0 +1,41 @@
+{
+  "id": 110,
+  "type": "company",
+  "slug": "standard-bots",
+  "name": "Standard Bots",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/standard-bots.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://standardbots.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Glen Cove"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Glen Cove, NY, United States",
+          "lat": 40.864203,
+          "lon": -73.631781
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:38",
+  "feed_at": null
+}

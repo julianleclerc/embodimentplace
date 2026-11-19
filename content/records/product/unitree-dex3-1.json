@@ -1,0 +1,31 @@
+{
+  "id": 29,
+  "type": "product",
+  "slug": "unitree-dex3-1",
+  "name": "Unitree Dex3-1",
+  "summary": "Three-finger force-controlled dexterous hand, 7 DoF, with 33 tactile sensors.",
+  "body": "Unitree lists 7 degrees of freedom (thumb 3, index 2, middle 2), 710 g, a 500 g load on a 5 cm round object and 33 pressure sensors in 9 areas, and says it can be used with the G1 ([unitree.com/Dex3-1](https://www.unitree.com/Dex3-1)). No price is listed.",
+  "data": {
+    "dof": {
+      "v": 7,
+      "src": "https://www.unitree.com/Dex3-1",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 0.71,
+      "src": "https://www.unitree.com/Dex3-1",
+      "asof": "2026-11"
+    },
+    "tactile": {
+      "v": "Yes",
+      "src": "https://www.unitree.com/Dex3-1",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Hand / gripper"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

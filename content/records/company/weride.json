@@ -1,0 +1,41 @@
+{
+  "id": 151,
+  "type": "company",
+  "slug": "weride",
+  "name": "WeRide",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/weride.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.weride.ai/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Guangzhou"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Guangzhou, China",
+          "lat": 23.128843,
+          "lon": 113.258958
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:55",
+  "feed_at": null
+}

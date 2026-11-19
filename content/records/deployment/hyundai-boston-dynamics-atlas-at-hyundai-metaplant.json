@@ -1,0 +1,28 @@
+{
+  "id": 69,
+  "type": "deployment",
+  "slug": "hyundai-boston-dynamics-atlas-at-hyundai-metaplant",
+  "name": "Hyundai × Boston Dynamics: Atlas at Hyundai Metaplant",
+  "summary": "First Atlas deployment on a customer site.",
+  "body": "Boston Dynamics describes a phased rollout beginning with a field pilot at Hyundai.",
+  "data": {
+    "date": {
+      "v": "2026-01-05",
+      "src": "https://www.pulse.bot/robotics/video/the-beginning-of-your-tomorrow-i-boston-dynamics-6b41f2f6-6c96-466c-b4cf-b5c5e48a3f8e",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Pilot",
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "location": {
+      "v": "Hyundai Metaplant",
+      "src": "https://www.pulse.bot/robotics/video/the-beginning-of-your-tomorrow-i-boston-dynamics-6b41f2f6-6c96-466c-b4cf-b5c5e48a3f8e",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-01-05"
+}

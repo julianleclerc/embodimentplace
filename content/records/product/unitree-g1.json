@@ -1,0 +1,70 @@
+{
+  "id": 26,
+  "type": "product",
+  "slug": "unitree-g1",
+  "name": "Unitree G1",
+  "summary": "Compact humanoid, 1.32 m and about 35 kg, from US$13.5K.",
+  "body": "Specs are for the base G1 as listed by Unitree (price excludes tax and shipping). The G1 EDU version has 23 to 43 DoF.",
+  "data": {
+    "status": {
+      "v": "Commercial",
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 132,
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 35,
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 23,
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 2,
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "battery": {
+      "v": "13-string lithium, 9000 mAh",
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "sensors": {
+      "v": [
+        "Depth camera",
+        "3D LiDAR"
+      ],
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "price_usd": {
+      "v": 13500,
+      "src": "https://www.unitree.com/g1",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "https://www.unitree.com/images/a20ba1ebc0724df8a8135744dee8bbea_2740x1720.jpg",
+      "src": "https://www.unitree.com/g1",
+      "fit": "cover",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

@@ -1,0 +1,41 @@
+{
+  "id": 222,
+  "type": "company",
+  "slug": "honeywell",
+  "name": "Honeywell",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/honeywell.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.honeywell.com/"
+    },
+    "roles": {
+      "v": [
+        "Integrator"
+      ]
+    },
+    "city": {
+      "v": "Charlotte"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Charlotte, NC, United States",
+          "lat": 35.227209,
+          "lon": -80.843083
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:28",
+  "feed_at": null
+}

@@ -1,0 +1,45 @@
+{
+  "id": 11,
+  "type": "company",
+  "slug": "tesla",
+  "name": "Tesla",
+  "summary": "Electric vehicle maker developing the Optimus humanoid robot.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.tesla.com/AI",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "stage": {
+      "v": "Public"
+    },
+    "website": {
+      "v": "https://www.tesla.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, TX, United States",
+          "lat": 30.2672,
+          "lon": -97.7431,
+          "src": "https://insideevs.com/news/552003/tesla-officially-headquartered-austin-texas/"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/tesla.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

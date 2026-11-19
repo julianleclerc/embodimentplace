@@ -1,0 +1,25 @@
+{
+  "id": 156,
+  "type": "company",
+  "slug": "comma-ai",
+  "name": "comma.ai",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/comma-ai.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://comma.ai/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:58",
+  "feed_at": null
+}

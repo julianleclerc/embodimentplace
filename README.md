@@ -1,0 +1,68 @@
+# embodiment.place
+
+The code and public content of [embodiment.place](https://embodiment.place), a site for humanoid robotics news,
+organisations, robots, models and community. It runs on Cloudflare Workers with a D1 database, a Durable Object
+for live chat and presence, R2 for uploads, and Cloudflare email sending.
+
+This repository is the backup and the deploy source: changes merged to `main` deploy to the live site, and the
+site's public content is copied back here every night.
+
+## What's here
+
+| Path | What it is |
+|---|---|
+| `worker/dist/` | The Worker exactly as deployed on 2026-11-18: `index.js` (Hono app and the `LiveHub` Durable Object) and its chunks in `assets/`. This is what `wrangler deploy` uploads. |
+| `public/` | The static files the Worker serves through its `ASSETS` binding: the built frontend (`index.html`, `assets/`), `static/hats.png`, and the organisation logos in `logos/`. |
+| `wrangler.json` | Worker name, bindings (D1 `DB`, Durable Object `LIVE`, R2 `MEDIA`, email `EMAIL`, `ASSETS`) and settings. |
+| `recovered-src/` | A readable copy of the Worker split back into its original files (`backend/worker/src/*.js`, `shared/*.js`). Reference only; nothing builds from it. |
+| `content/` | Nightly export of the public content in D1: one JSON file per record in `records/<type>/<slug>.json`, `links.json`, and `schema.sql`. |
+| `scripts/` | `check-live-config.mjs` (safety check before deploys) and `export-content.mjs` (the content export). |
+| `.github/workflows/` | `deploy.yml` and `export-content.yml`. |
+
+### What could not be recovered
+
+The original TypeScript source and the Vite/React frontend source were not available, so this repository was
+rebuilt from the live deployment on 2026-11-19:
+
+- The Worker code is the compiled JavaScript. It is not minified and keeps each original file's name, but the
+  TypeScript types, comments and the original Vite and wrangler config are gone.
+- The frontend (`public/assets/index-*.js`) is minified React. It can be redeployed as is, but it is not practical to
+  edit by hand. Bigger frontend changes need the original source, or a rewrite.
+- Uploaded images in R2 (`/media/...`) are not copied here.
+
+## How it stays in sync
+
+**Code: GitHub to Cloudflare.** A push to `main` that touches `worker/`, `public/`, `wrangler.json` or the package
+files runs `.github/workflows/deploy.yml`. It first runs `scripts/check-live-config.mjs`, which reads the live
+Worker's bindings and settings from the Cloudflare API and stops the deploy if `wrangler.json` would change any of
+them. Then it runs `wrangler deploy`. Secrets are never read or changed, and dashboard vars are kept
+(`keep_vars`).
+
+**Content: Cloudflare to GitHub.** People add content on the live site, so D1 stays the source of truth.
+`.github/workflows/export-content.yml` runs every night at about 2 AM California time (or by hand from the Actions
+tab) and commits any changes to `content/`. Only public records (not private, not demo), their links and the
+schema are exported. Users, password hashes, sessions, emails, chat and requests stay in D1 only, because this
+repository is public. For full database restores, D1 Time Travel keeps 30 days of point-in-time history:
+`npx wrangler d1 time-travel restore embodiment-place --timestamp=<time>`.
+
+Editing `content/` here does not change the site; edit on the site and the next export picks it up.
+
+## One-time setup
+
+Add two repository secrets under **Settings > Secrets and variables > Actions**:
+
+- `CLOUDFLARE_ACCOUNT_ID`: shown on the right of the Workers & Pages overview in the Cloudflare dashboard.
+- `CLOUDFLARE_API_TOKEN`: create one under **My Profile > API Tokens > Create Token** with the
+  **Edit Cloudflare Workers** template, then add the permission **Account > D1 > Edit** (the export only reads, but
+  the D1 query API needs Edit), limited to your account and the `embodiment.place` zone.
+
+Then run **Export site content** once from the Actions tab, and run **Deploy to Cloudflare** by hand; the safety
+check will say whether `wrangler.json` matches the live Worker before anything is deployed.
+
+## Working locally
+
+```
+npm ci
+npx wrangler dev          # runs the Worker locally against local D1/R2 stand-ins
+npx wrangler deploy --dry-run
+```

@@ -1,0 +1,68 @@
+{
+  "id": 3,
+  "type": "company",
+  "slug": "unitree-robotics",
+  "name": "Unitree Robotics",
+  "summary": "Hangzhou maker of quadruped and humanoid robots, listed on Shanghai's STAR Market.",
+  "body": "Started with quadruped robots and expanded into humanoids in 2023. Listed on the STAR Market of the Shanghai Stock Exchange in August 2026.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.unitree.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.eweek.com/news/apac-unitree-robotics-ipo-review/",
+      "asof": "2026-11"
+    },
+    "hq": {
+      "v": "Hangzhou",
+      "src": "https://www.eweek.com/news/apac-unitree-robotics-ipo-review/",
+      "asof": "2026-11"
+    },
+    "founded": {
+      "v": 2016,
+      "src": "https://www.caixinglobal.com/2026-06-02/humanoid-robot-maker-unitree-advances-toward-618-million-shanghai-ipo-102449940.html",
+      "asof": "2026-11"
+    },
+    "stage": {
+      "v": "Public",
+      "src": "https://www.ehangzhou.gov.cn/2026-08/18/c_298718.htm",
+      "asof": "2026-11"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://www.unitree.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.unitree.com/"
+    },
+    "image": {
+      "v": "/logos/unitree-robotics.png",
+      "src": "https://www.unitree.com/",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hangzhou, China",
+          "lat": 30.2741,
+          "lon": 120.1551,
+          "src": "https://en.wikipedia.org/wiki/Unitree_Robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

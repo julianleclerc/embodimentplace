@@ -1,0 +1,64 @@
+{
+  "id": 15,
+  "type": "company",
+  "slug": "galaxea-dynamics",
+  "name": "Galaxea Dynamics",
+  "summary": "Embodied AI company developing foundation models and intelligent robots.",
+  "body": "Products listed on its site: robots (R1 series, LEMO, LEMO A1Z, Kengo), models (G0.5, Fast-WAM, Galaxea DP) and the Galaxea Open-World Dataset.\n\n**Entity note:** this page covers the company as presented on galaxea-dynamics.com, which gives a Hong Kong address. Third-party sources also use the name Galaxea AI. How those names map to legal entities is not recorded here.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab",
+        "Supplier"
+      ],
+      "src": "https://galaxea-dynamics.com/",
+      "asof": "2026-11"
+    },
+    "hq": {
+      "v": "Tuen Mun, Hong Kong",
+      "src": "https://galaxea-dynamics.com/",
+      "asof": "2026-11"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://galaxea-dynamics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://galaxea-dynamics.com/"
+    },
+    "github": {
+      "v": "https://github.com/OpenGalaxea"
+    },
+    "image": {
+      "v": "/logos/galaxea-dynamics.png",
+      "src": "https://galaxea-dynamics.com/",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tuen Mun, Hong Kong",
+          "lat": 22.3916,
+          "lon": 113.9773,
+          "src": "https://galaxea-dynamics.com/"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tuen Mun"
+    },
+    "country": {
+      "v": "Hong Kong"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-18 00:27:21",
+  "feed_at": "2026-11-16"
+}

@@ -1,0 +1,79 @@
+{
+  "id": 37,
+  "type": "product",
+  "slug": "fourier-gr-3",
+  "name": "Fourier GR-3",
+  "summary": "Full-size care robot, 165 cm and 71 kg, with up to 55 DoF.",
+  "body": "DoF of 55 includes the optional 12-DoF hands. Payload is per arm. Walking speed listed as 6.1 km/h.",
+  "data": {
+    "announced": {
+      "v": "2025-08-06",
+      "src": "https://www.prnewswire.co.uk/news-releases/meet-gr-3-beyond-function-designed-to-care-fourier-to-unveil-its-first-care-centric-humanoid-302523225.html",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 165,
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 71,
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 55,
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 3,
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 3,
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "speed_mps": {
+      "v": 1.7,
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "battery": {
+      "v": "Lithium-ion, 702 Wh + 234 Wh",
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "charging": {
+      "v": "About 1.5 h",
+      "src": "https://support.fftai.com/en/docs/GR-X-Humanoid-Robot/GR3/GR-3_Introduction/",
+      "asof": "2026-11"
+    },
+    "end_effector": {
+      "v": "6-DoF hands, optional 12-DoF dexterous hands",
+      "src": "https://support.fftai.com/en/getting-started/general-information",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Healthcare",
+        "Research"
+      ],
+      "src": "https://www.prnewswire.co.uk/news-releases/meet-gr-3-beyond-function-designed-to-care-fourier-to-unveil-its-first-care-centric-humanoid-302523225.html",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

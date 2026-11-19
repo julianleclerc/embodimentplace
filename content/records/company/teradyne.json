@@ -1,0 +1,41 @@
+{
+  "id": 220,
+  "type": "company",
+  "slug": "teradyne",
+  "name": "Teradyne",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/teradyne.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.teradyne.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "North Reading"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "North Reading, MA, United States",
+          "lat": 42.575094,
+          "lon": -71.078665
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:27",
+  "feed_at": null
+}

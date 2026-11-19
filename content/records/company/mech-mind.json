@@ -1,0 +1,25 @@
+{
+  "id": 178,
+  "type": "company",
+  "slug": "mech-mind",
+  "name": "Mech-Mind Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/mech-mind.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.mech-mind.com/"
+    },
+    "roles": {
+      "v": [
+        "Supplier"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:08",
+  "feed_at": null
+}

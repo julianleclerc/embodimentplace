@@ -1,0 +1,25 @@
+{
+  "id": 132,
+  "type": "company",
+  "slug": "otto-motors",
+  "name": "OTTO Motors",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/otto-motors.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://ottomotors.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:47",
+  "feed_at": null
+}

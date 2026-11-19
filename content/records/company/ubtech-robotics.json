@@ -1,0 +1,52 @@
+{
+  "id": 9,
+  "type": "company",
+  "slug": "ubtech-robotics",
+  "name": "UBTech Robotics",
+  "summary": "Shenzhen robot maker; its Walker S series targets factory work.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.ubtrobot.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China"
+    },
+    "hq": {
+      "v": "Shenzhen"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://www.ubtrobot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ubtrobot.com/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.5431,
+          "lon": 114.0579,
+          "src": "https://en.wikipedia.org/wiki/UBtech_Robotics"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/ubtech-robotics.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

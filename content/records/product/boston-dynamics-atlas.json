@@ -1,0 +1,74 @@
+{
+  "id": 35,
+  "type": "product",
+  "slug": "boston-dynamics-atlas",
+  "name": "Boston Dynamics Atlas",
+  "summary": "Electric humanoid for industrial work, 1.9 m and 90 kg, with self-swapping batteries.",
+  "body": "Payload: 50 kg instantaneous, 30 kg sustained. Reach 2.3 m. The product version was announced at CES 2026 with a phased rollout starting at Hyundai sites. The fully electric Atlas first appeared in April 2024.",
+  "data": {
+    "status": {
+      "v": "Pilot",
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "announced": {
+      "v": "2026-01-05",
+      "src": "https://www.pulse.bot/robotics/video/the-beginning-of-your-tomorrow-i-boston-dynamics-6b41f2f6-6c96-466c-b4cf-b5c5e48a3f8e",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 190,
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 90,
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 56,
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 50,
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 4,
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "battery": {
+      "v": "Self-swapping",
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Industrial"
+      ],
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "https://bostondynamics.com/wp-content/uploads/2024/04/atlas-blue-mobile-copy.jpg",
+      "src": "https://bostondynamics.com/atlas",
+      "fit": "cover",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

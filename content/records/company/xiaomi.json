@@ -1,0 +1,41 @@
+{
+  "id": 85,
+  "type": "company",
+  "slug": "xiaomi",
+  "name": "Xiaomi",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/xiaomi.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.mi.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Beijing"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:27",
+  "feed_at": null
+}

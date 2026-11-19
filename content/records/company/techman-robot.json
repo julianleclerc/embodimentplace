@@ -1,0 +1,25 @@
+{
+  "id": 106,
+  "type": "company",
+  "slug": "techman-robot",
+  "name": "Techman Robot",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/techman-robot.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.tm-robot.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:36",
+  "feed_at": null
+}

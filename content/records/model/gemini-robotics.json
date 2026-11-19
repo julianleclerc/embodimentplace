@@ -1,0 +1,59 @@
+{
+  "id": 43,
+  "type": "model",
+  "slug": "gemini-robotics",
+  "name": "Gemini Robotics",
+  "summary": "Vision-language-action model built on Gemini 2.0 for controlling robots.",
+  "body": "Released with Gemini Robotics-ER, an embodied-reasoning model. Google DeepMind is working with Apptronik to bring the models to humanoids.",
+  "data": {
+    "kind": {
+      "v": "VLA",
+      "src": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "asof": "2026-11"
+    },
+    "released": {
+      "v": "2025-03-12",
+      "src": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "asof": "2026-11"
+    },
+    "url": {
+      "v": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/"
+    },
+    "backbone": {
+      "v": "Gemini 2.0 derivative, distilled from Gemini Robotics-ER",
+      "src": "https://arxiv.org/abs/2503.20020",
+      "asof": "2026-11"
+    },
+    "action_hz": {
+      "v": 50,
+      "src": "https://arxiv.org/abs/2503.20020",
+      "asof": "2026-11"
+    },
+    "runs_on": {
+      "v": "Cloud + on-robot",
+      "src": "https://arxiv.org/abs/2503.20020",
+      "asof": "2026-11"
+    },
+    "latency_ms": {
+      "v": 250,
+      "src": "https://arxiv.org/abs/2503.20020",
+      "asof": "2026-11"
+    },
+    "training_data": {
+      "v": "Thousands of hours of teleoperated ALOHA 2 demonstrations collected over 12 months, plus web, code and multimodal data",
+      "src": "https://arxiv.org/abs/2503.20020",
+      "asof": "2026-11"
+    },
+    "embodiments": {
+      "v": [
+        "Bi-arm",
+        "Humanoid"
+      ],
+      "src": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

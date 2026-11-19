@@ -1,0 +1,25 @@
+{
+  "id": 128,
+  "type": "company",
+  "slug": "osaro",
+  "name": "OSARO",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/osaro.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.osaro.com/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:46",
+  "feed_at": null
+}

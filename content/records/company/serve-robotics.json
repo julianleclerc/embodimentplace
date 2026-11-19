@@ -1,0 +1,41 @@
+{
+  "id": 142,
+  "type": "company",
+  "slug": "serve-robotics",
+  "name": "Serve Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/serve-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.serverobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "San Carlos"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Carlos, CA, United States",
+          "lat": 37.504936,
+          "lon": -122.261823
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:51",
+  "feed_at": null
+}

@@ -1,0 +1,47 @@
+{
+  "id": 194,
+  "type": "company",
+  "slug": "aist",
+  "name": "AIST",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/aist.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.aist.go.jp/"
+    },
+    "roles": {
+      "v": [
+        "Research lab"
+      ]
+    },
+    "city": {
+      "v": "Tsukuba"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tsukuba, Japan",
+          "lat": 36.083326,
+          "lon": 140.077279
+        },
+        {
+          "kind": "Office",
+          "address": "Tokyo, Japan",
+          "lat": 35.67686,
+          "lon": 139.763895
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:16",
+  "feed_at": null
+}

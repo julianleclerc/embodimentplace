@@ -1,0 +1,67 @@
+{
+  "id": 41,
+  "type": "model",
+  "slug": "π05",
+  "name": "π0.5",
+  "summary": "VLA built on π0, co-trained on varied data to generalise to unseen homes.",
+  "body": "",
+  "data": {
+    "kind": {
+      "v": "VLA",
+      "src": "https://www.pi.website/blog/pi05",
+      "asof": "2026-11"
+    },
+    "released": {
+      "v": "2025-04-22",
+      "src": "https://www.pi.website/blog/pi05",
+      "asof": "2026-11"
+    },
+    "url": {
+      "v": "https://www.pi.website/blog/pi05"
+    },
+    "backbone": {
+      "v": "2B VLM initialised from PaliGemma + 300M action expert",
+      "src": "https://arxiv.org/abs/2504.16054",
+      "asof": "2026-11"
+    },
+    "action_head": {
+      "v": "Flow matching",
+      "src": "https://arxiv.org/abs/2504.16054",
+      "asof": "2026-11"
+    },
+    "action_hz": {
+      "v": 50,
+      "src": "https://arxiv.org/abs/2504.16054",
+      "asof": "2026-11"
+    },
+    "inputs": {
+      "v": [
+        "RGB images",
+        "Language",
+        "Proprioception"
+      ],
+      "src": "https://arxiv.org/abs/2504.16054",
+      "asof": "2026-11"
+    },
+    "action_space": {
+      "v": "18 or 19 DoF: two 6-DoF arms with parallel grippers, a holonomic wheeled base and a torso lift",
+      "src": "https://arxiv.org/abs/2504.16054",
+      "asof": "2026-11"
+    },
+    "training_data": {
+      "v": "Co-trained on data from several robots, high-level subtask prediction and web data; about 400 hours of mobile manipulation in about 100 homes. Pre-trained with FAST action tokens, then a flow-matching action expert",
+      "src": "https://arxiv.org/abs/2504.16054",
+      "asof": "2026-11"
+    },
+    "embodiments": {
+      "v": [
+        "Mobile manipulator"
+      ],
+      "src": "https://arxiv.org/abs/2504.16054",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

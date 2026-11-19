@@ -1,0 +1,25 @@
+{
+  "id": 162,
+  "type": "company",
+  "slug": "wing",
+  "name": "Wing",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/wing.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://wing.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:00",
+  "feed_at": null
+}

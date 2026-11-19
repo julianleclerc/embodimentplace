@@ -1,0 +1,41 @@
+{
+  "id": 82,
+  "type": "company",
+  "slug": "rainbow-robotics",
+  "name": "Rainbow Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/rainbow-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.rainbow-robotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Daejeon"
+    },
+    "country": {
+      "v": "South Korea"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Daejeon, South Korea",
+          "lat": 36.349701,
+          "lon": 127.384902
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:26",
+  "feed_at": null
+}

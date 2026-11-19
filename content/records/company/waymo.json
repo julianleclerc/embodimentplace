@@ -1,0 +1,41 @@
+{
+  "id": 143,
+  "type": "company",
+  "slug": "waymo",
+  "name": "Waymo",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/waymo.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://waymo.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Mountain View"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mountain View, CA, United States",
+          "lat": 37.389389,
+          "lon": -122.08321
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:52",
+  "feed_at": null
+}

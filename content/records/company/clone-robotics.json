@@ -1,0 +1,25 @@
+{
+  "id": 171,
+  "type": "company",
+  "slug": "clone-robotics",
+  "name": "Clone Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/clone-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.clonerobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:05",
+  "feed_at": null
+}

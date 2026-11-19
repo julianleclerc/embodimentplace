@@ -1,0 +1,41 @@
+{
+  "id": 217,
+  "type": "company",
+  "slug": "maxinsights",
+  "name": "Maxinsights",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/maxinsights.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://maxinsights.ai/"
+    },
+    "roles": {
+      "v": [
+        "Supplier"
+      ]
+    },
+    "city": {
+      "v": "Santa Clara"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Santa Clara, CA, United States",
+          "lat": 37.354113,
+          "lon": -121.955174
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:26",
+  "feed_at": null
+}

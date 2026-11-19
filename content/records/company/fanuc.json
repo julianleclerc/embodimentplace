@@ -1,0 +1,41 @@
+{
+  "id": 97,
+  "type": "company",
+  "slug": "fanuc",
+  "name": "FANUC",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/fanuc.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.fanuc.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Oshino"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Oshino, Japan",
+          "lat": 35.460072,
+          "lon": 138.847864
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:32",
+  "feed_at": null
+}

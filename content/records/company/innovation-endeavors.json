@@ -1,0 +1,41 @@
+{
+  "id": 206,
+  "type": "company",
+  "slug": "innovation-endeavors",
+  "name": "Innovation Endeavors",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/innovation-endeavors.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.innovationendeavors.com/"
+    },
+    "roles": {
+      "v": [
+        "Investor"
+      ]
+    },
+    "city": {
+      "v": "Palo Alto"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Palo Alto, CA, United States",
+          "lat": 37.444329,
+          "lon": -122.159847
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:21",
+  "feed_at": null
+}

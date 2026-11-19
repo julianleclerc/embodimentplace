@@ -1,0 +1,54 @@
+{
+  "id": 7,
+  "type": "company",
+  "slug": "1x-technologies",
+  "name": "1X Technologies",
+  "summary": "Maker of NEO, a humanoid robot designed for the home.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://www.1x.tech/neo",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.1x.tech/"
+    },
+    "image": {
+      "v": "/logos/1x-technologies.png",
+      "src": "https://www.1x.tech/neo",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Palo Alto, CA, United States",
+          "lat": 37.4419,
+          "lon": -122.143,
+          "src": "https://sacra.com/c/1x-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Palo Alto"
+    },
+    "country": {
+      "v": "United States"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-18 00:27:21",
+  "feed_at": "2026-11-16"
+}

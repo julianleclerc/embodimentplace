@@ -1,0 +1,41 @@
+{
+  "id": 219,
+  "type": "company",
+  "slug": "joby-aviation",
+  "name": "Joby Aviation",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/joby-aviation.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.jobyaviation.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Santa Cruz"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Santa Cruz, CA, United States",
+          "lat": 36.974363,
+          "lon": -122.029467
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:27",
+  "feed_at": null
+}

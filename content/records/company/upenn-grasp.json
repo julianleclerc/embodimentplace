@@ -1,0 +1,41 @@
+{
+  "id": 191,
+  "type": "company",
+  "slug": "upenn-grasp",
+  "name": "University of Pennsylvania GRASP Lab",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/upenn-grasp.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.grasp.upenn.edu/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Philadelphia"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Philadelphia, PA, United States",
+          "lat": 39.952724,
+          "lon": -75.163526
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:14",
+  "feed_at": null
+}

@@ -1,0 +1,42 @@
+{
+  "id": 79,
+  "type": "company",
+  "slug": "engineered-arts",
+  "name": "Engineered Arts",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/engineered-arts.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.engineeredarts.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Entertainment"
+      ]
+    },
+    "city": {
+      "v": "Penryn"
+    },
+    "country": {
+      "v": "United Kingdom"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Penryn, United Kingdom",
+          "lat": 50.168546,
+          "lon": -5.103406
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:25",
+  "feed_at": null
+}

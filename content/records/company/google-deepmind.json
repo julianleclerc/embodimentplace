@@ -1,0 +1,49 @@
+{
+  "id": 13,
+  "type": "company",
+  "slug": "google-deepmind",
+  "name": "Google DeepMind",
+  "summary": "Google's AI lab; builds the Gemini Robotics models.",
+  "body": "Released Gemini Robotics and Gemini Robotics-ER in March 2025, built on Gemini 2.0. Earlier robotics work includes RT-2 and the Open X-Embodiment collaboration.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom"
+    },
+    "model_chain": {
+      "v": [
+        "Frontier lab"
+      ],
+      "src": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://deepmind.google/"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.5074,
+          "lon": -0.1278,
+          "src": "https://wikiwand.com/EN/DeepMind"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/logos/google-deepmind.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

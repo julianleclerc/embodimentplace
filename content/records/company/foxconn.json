@@ -1,0 +1,41 @@
+{
+  "id": 182,
+  "type": "company",
+  "slug": "foxconn",
+  "name": "Foxconn",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/foxconn.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.foxconn.com/"
+    },
+    "roles": {
+      "v": [
+        "Customer"
+      ]
+    },
+    "city": {
+      "v": "New Taipei City"
+    },
+    "country": {
+      "v": "Taiwan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "New Taipei City, Taiwan",
+          "lat": 25.012502,
+          "lon": 121.465448
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:10",
+  "feed_at": null
+}

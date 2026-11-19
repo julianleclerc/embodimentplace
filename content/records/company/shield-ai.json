@@ -1,0 +1,41 @@
+{
+  "id": 159,
+  "type": "company",
+  "slug": "shield-ai",
+  "name": "Shield AI",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/shield-ai.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.shield.ai/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "San Diego"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Diego, CA, United States",
+          "lat": 32.715706,
+          "lon": -117.163828
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:59",
+  "feed_at": null
+}

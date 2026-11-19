@@ -1,0 +1,41 @@
+{
+  "id": 101,
+  "type": "company",
+  "slug": "staubli",
+  "name": "Stäubli",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/staubli.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.staubli.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Pfäffikon"
+    },
+    "country": {
+      "v": "Switzerland"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pfäffikon, Switzerland",
+          "lat": 47.200305,
+          "lon": 8.778075
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:34",
+  "feed_at": null
+}

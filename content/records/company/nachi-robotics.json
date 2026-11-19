@@ -1,0 +1,41 @@
+{
+  "id": 109,
+  "type": "company",
+  "slug": "nachi-robotics",
+  "name": "Nachi Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/nachi-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.nachirobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Toyama"
+    },
+    "country": {
+      "v": "Japan"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Toyama, Japan",
+          "lat": 36.646802,
+          "lon": 137.218353
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:38",
+  "feed_at": null
+}

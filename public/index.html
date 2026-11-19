@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>embodiment.place</title>
+    <script>
+      (function () {
+        var KEYS = ["teal-cool", "umbra-teal", "atelier", "werk", "nocturne", "halftone", "phosphor"];
+        var DEFAULT_THEME = "teal-cool";
+        var DARK_THEME = "umbra-teal";
+        function lum(s) {
+          if (!s) return 1;
+          s = String(s).trim();
+          var r, g, b, m;
+          if ((m = s.match(/^#([0-9a-f]{3})$/i))) {
+            r = parseInt(m[1][0] + m[1][0], 16);
+            g = parseInt(m[1][1] + m[1][1], 16);
+            b = parseInt(m[1][2] + m[1][2], 16);
+          } else if ((m = s.match(/^#([0-9a-f]{6})$/i))) {
+            r = parseInt(m[1].slice(0, 2), 16);
+            g = parseInt(m[1].slice(2, 4), 16);
+            b = parseInt(m[1].slice(4, 6), 16);
+          } else return 1;
+          return (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+        }
+        function resolve(x) {
+          if (KEYS.indexOf(x) >= 0) return x;
+          if (x === "custom") {
+            try {
+              var raw = localStorage.getItem("ep-custom");
+              var c = raw ? JSON.parse(raw) : {};
+              var from = c && c.from;
+              if (from && KEYS.indexOf(from) >= 0) {
+                return from === "umbra-teal" || from === "nocturne" || from === "phosphor" ? DARK_THEME : DEFAULT_THEME;
+              }
+              var bg = c && c.vars && c.vars.bg;
+              if (bg && lum(bg) < 0.45) return DARK_THEME;
+            } catch (e) {}
+            return DEFAULT_THEME;
+          }
+          return DEFAULT_THEME;
+        }
+        var cur = "";
+        try { cur = localStorage.getItem("ep-theme") || ""; } catch (e) {}
+        if (!cur) {
+          var m = document.cookie.match(/(?:^|; )ep-theme=([^;]*)/);
+          if (m) cur = decodeURIComponent(m[1]);
+        }
+        var t = resolve(cur);
+        document.documentElement.dataset.theme = t;
+        try {
+          localStorage.setItem("ep-theme", t);
+          document.cookie = "ep-theme=" + encodeURIComponent(t) + ";path=/;max-age=31536000;SameSite=Lax";
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-B1yJCb82.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CtQBge4r.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

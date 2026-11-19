@@ -1,0 +1,37 @@
+{
+  "id": 73,
+  "type": "event",
+  "slug": "icra-2027",
+  "name": "ICRA 2027",
+  "summary": "IEEE International Conference on Robotics and Automation.",
+  "body": "On-site only; no remote paper presentations.",
+  "data": {
+    "status": {
+      "v": "Upcoming"
+    },
+    "date": {
+      "v": "2027-05-24",
+      "src": "https://2027.ieee-icra.org/",
+      "asof": "2026-11"
+    },
+    "end_date": {
+      "v": "2027-05-28",
+      "src": "https://2027.ieee-icra.org/",
+      "asof": "2026-11"
+    },
+    "venue": {
+      "v": "Coex",
+      "src": "https://2027.ieee-icra.org/",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul"
+    },
+    "url": {
+      "v": "https://2027.ieee-icra.org/"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2027-05-24"
+}

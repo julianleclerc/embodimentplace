@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "type": "company",
+  "slug": "embodiment-place",
+  "name": "Embodiment Place",
+  "summary": "Original writing and research notes from the editors of embodiment.place.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Media"
+      ]
+    },
+    "image": {
+      "v": "/logos/embodiment-place.png",
+      "fit": "contain"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-17 16:05:00",
+  "feed_at": "2026-11-16"
+}

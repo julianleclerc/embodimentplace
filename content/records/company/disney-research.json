@@ -1,0 +1,48 @@
+{
+  "id": 196,
+  "type": "company",
+  "slug": "disney-research",
+  "name": "Disney Research",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/disney-research.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.disneyresearch.com/"
+    },
+    "roles": {
+      "v": [
+        "Research lab",
+        "Entertainment"
+      ]
+    },
+    "city": {
+      "v": "Los Angeles"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "Office",
+          "address": "Los Angeles, CA, United States",
+          "lat": 34.053692,
+          "lon": -118.242768
+        },
+        {
+          "kind": "Office",
+          "address": "Zurich, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:16",
+  "feed_at": null
+}

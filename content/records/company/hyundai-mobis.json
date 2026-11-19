@@ -1,0 +1,41 @@
+{
+  "id": 176,
+  "type": "company",
+  "slug": "hyundai-mobis",
+  "name": "Hyundai Mobis",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/hyundai-mobis.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.mobis.com/"
+    },
+    "roles": {
+      "v": [
+        "Supplier"
+      ]
+    },
+    "city": {
+      "v": "Seoul"
+    },
+    "country": {
+      "v": "South Korea"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.566679,
+          "lon": 126.978291
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:07",
+  "feed_at": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": 170,
+  "type": "company",
+  "slug": "wandercraft",
+  "name": "Wandercraft",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/wandercraft.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.wandercraft.eu/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Paris"
+    },
+    "country": {
+      "v": "France"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Paris, France",
+          "lat": 48.85889,
+          "lon": 2.320041
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:04",
+  "feed_at": null
+}

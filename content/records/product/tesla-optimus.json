@@ -1,0 +1,19 @@
+{
+  "id": 38,
+  "type": "product",
+  "slug": "tesla-optimus",
+  "name": "Tesla Optimus",
+  "summary": "Tesla's general-purpose humanoid, used inside Tesla's own facilities.",
+  "body": "Tesla has not published a full specification sheet, so the fields are left empty.",
+  "data": {
+    "locomotion": {
+      "v": "Bipedal"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

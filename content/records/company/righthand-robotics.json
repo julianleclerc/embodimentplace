@@ -1,0 +1,41 @@
+{
+  "id": 127,
+  "type": "company",
+  "slug": "righthand-robotics",
+  "name": "RightHand Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/righthand-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.righthandrobotics.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Boston"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Boston, MA, United States",
+          "lat": 42.358834,
+          "lon": -71.05783
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:45",
+  "feed_at": null
+}

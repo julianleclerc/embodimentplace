@@ -1,0 +1,41 @@
+{
+  "id": 213,
+  "type": "company",
+  "slug": "archon-robotics",
+  "name": "Archon Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/archon-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.archon.tech/"
+    },
+    "roles": {
+      "v": [
+        "Model lab"
+      ]
+    },
+    "city": {
+      "v": "Shanghai"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:24",
+  "feed_at": null
+}

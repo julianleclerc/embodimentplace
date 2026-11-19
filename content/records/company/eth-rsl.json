@@ -1,0 +1,41 @@
+{
+  "id": 188,
+  "type": "company",
+  "slug": "eth-rsl",
+  "name": "ETH Zurich Robotic Systems Lab",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/eth-rsl.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://rsl.ethz.ch/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Zurich"
+    },
+    "country": {
+      "v": "Switzerland"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zurich, Switzerland",
+          "lat": 47.37645,
+          "lon": 8.54785
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:13",
+  "feed_at": null
+}

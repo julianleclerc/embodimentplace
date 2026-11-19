@@ -1,0 +1,41 @@
+{
+  "id": 199,
+  "type": "company",
+  "slug": "tsinghua-university",
+  "name": "Tsinghua University",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/tsinghua-university.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.tsinghua.edu.cn/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Beijing"
+    },
+    "country": {
+      "v": "China"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:18",
+  "feed_at": null
+}

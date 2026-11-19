@@ -1,0 +1,54 @@
+{
+  "id": 8,
+  "type": "company",
+  "slug": "boston-dynamics",
+  "name": "Boston Dynamics",
+  "summary": "Maker of the Atlas humanoid, Spot and Stretch; part of Hyundai Motor Group.",
+  "body": "Hyundai Motor Group's robotics affiliate. Announced the product version of Atlas at CES 2026.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "stage": {
+      "v": "Corporate"
+    },
+    "hw_chain": {
+      "v": [
+        "OEM"
+      ],
+      "src": "https://bostondynamics.com/atlas",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://bostondynamics.com/"
+    },
+    "image": {
+      "v": "https://bostondynamics.com/wp-content/uploads/2024/04/atlas-blue-mobile-copy.jpg",
+      "src": "https://bostondynamics.com/atlas",
+      "fit": "cover",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Waltham, MA, United States",
+          "lat": 42.3765,
+          "lon": -71.2356,
+          "src": "https://bostondynamics.com/news/boston-dynamics-expands-massachusetts-footprint-with-new-323000-square-foot-facility-in-waltham/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

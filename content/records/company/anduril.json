@@ -1,0 +1,41 @@
+{
+  "id": 157,
+  "type": "company",
+  "slug": "anduril",
+  "name": "Anduril",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/anduril.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.anduril.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Costa Mesa"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Costa Mesa, CA, United States",
+          "lat": 33.663339,
+          "lon": -117.903317
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:58",
+  "feed_at": null
+}

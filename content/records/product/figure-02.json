@@ -1,0 +1,24 @@
+{
+  "id": 31,
+  "type": "product",
+  "slug": "figure-02",
+  "name": "Figure 02",
+  "summary": "Second-generation Figure humanoid; retired after its BMW deployment.",
+  "body": "Figure retired the Figure 02 fleet in November 2025 after its deployment at BMW Plant Spartanburg and moved to Figure 03.",
+  "data": {
+    "status": {
+      "v": "Discontinued",
+      "src": "https://www.webpronews.com/bmw-bets-big-on-factory-humanoids-after-u-s-success-delivers-30000-cars/",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

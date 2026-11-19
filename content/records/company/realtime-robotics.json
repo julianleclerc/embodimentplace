@@ -1,0 +1,25 @@
+{
+  "id": 113,
+  "type": "company",
+  "slug": "realtime-robotics",
+  "name": "Realtime Robotics",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/realtime-robotics.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://rtr.ai/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:39",
+  "feed_at": null
+}

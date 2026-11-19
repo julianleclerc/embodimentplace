@@ -1,0 +1,25 @@
+{
+  "id": 174,
+  "type": "company",
+  "slug": "swiss-mile",
+  "name": "Swiss-Mile",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/swiss-mile.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.swiss-mile.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:06",
+  "feed_at": null
+}

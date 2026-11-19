@@ -1,0 +1,33 @@
+{
+  "id": 60,
+  "type": "funding",
+  "slug": "figure-ai-series-c",
+  "name": "Figure AI Series C",
+  "summary": "Over $1B committed at a $39B post-money valuation.",
+  "body": "Figure reported more than $1B in committed capital; the amount field shows the stated floor.",
+  "data": {
+    "date": {
+      "v": "2025-09-16",
+      "src": "https://www.figure.ai/news/series-c",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://www.figure.ai/news/series-c",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1000,
+      "src": "https://www.figure.ai/news/series-c",
+      "asof": "2026-11"
+    },
+    "valuation_usd_m": {
+      "v": 39000,
+      "src": "https://www.figure.ai/news/series-c",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2025-09-16"
+}

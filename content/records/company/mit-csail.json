@@ -1,0 +1,41 @@
+{
+  "id": 186,
+  "type": "company",
+  "slug": "mit-csail",
+  "name": "MIT CSAIL",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/mit-csail.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.csail.mit.edu/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Cambridge"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Cambridge, MA, United States",
+          "lat": 42.365635,
+          "lon": -71.104002
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:12",
+  "feed_at": null
+}

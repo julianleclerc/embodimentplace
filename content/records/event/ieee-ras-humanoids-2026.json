@@ -1,0 +1,35 @@
+{
+  "id": 71,
+  "type": "event",
+  "slug": "ieee-ras-humanoids-2026",
+  "name": "IEEE-RAS Humanoids 2026",
+  "summary": "25th IEEE-RAS International Conference on Humanoid Robots.",
+  "body": "Public forum day on 6 December, workshops and tutorials on 7 December.",
+  "data": {
+    "status": {
+      "v": "Upcoming"
+    },
+    "date": {
+      "v": "2026-12-06",
+      "src": "https://2026.ieee-humanoids.org",
+      "asof": "2026-11"
+    },
+    "end_date": {
+      "v": "2026-12-09",
+      "src": "https://2026.ieee-humanoids.org",
+      "asof": "2026-11"
+    },
+    "venue": {
+      "v": "Santa Clara Convention Center"
+    },
+    "city": {
+      "v": "Santa Clara, CA"
+    },
+    "url": {
+      "v": "https://2026.ieee-humanoids.org"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-12-06"
+}

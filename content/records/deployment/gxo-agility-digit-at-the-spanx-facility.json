@@ -1,0 +1,33 @@
+{
+  "id": 65,
+  "type": "deployment",
+  "slug": "gxo-agility-digit-at-the-spanx-facility",
+  "name": "GXO × Agility: Digit at the SPANX facility",
+  "summary": "First formal commercial and robots-as-a-service humanoid deployment.",
+  "body": "Multi-year agreement following a proof-of-concept pilot in late 2023. Fleet size was not disclosed.",
+  "data": {
+    "date": {
+      "v": "2024-06-27",
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Production",
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "use_case": {
+      "v": "Moving totes from cobots onto conveyors",
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "location": {
+      "v": "Near Atlanta, GA",
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2024-06-27"
+}

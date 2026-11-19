@@ -1,0 +1,41 @@
+{
+  "id": 195,
+  "type": "company",
+  "slug": "inria",
+  "name": "Inria",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/inria.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.inria.fr/"
+    },
+    "roles": {
+      "v": [
+        "Research lab"
+      ]
+    },
+    "city": {
+      "v": "Le Chesnay"
+    },
+    "country": {
+      "v": "France"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Le Chesnay, France",
+          "lat": 48.826484,
+          "lon": 2.125781
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:16",
+  "feed_at": null
+}

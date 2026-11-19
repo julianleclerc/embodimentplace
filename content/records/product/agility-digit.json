@@ -1,0 +1,39 @@
+{
+  "id": 32,
+  "type": "product",
+  "slug": "agility-digit",
+  "name": "Agility Digit",
+  "summary": "Bipedal mobile manipulation robot for logistics, deployed under robots-as-a-service.",
+  "body": "Agility's website does not publish a spec sheet, so size and payload are left empty.",
+  "data": {
+    "status": {
+      "v": "Commercial",
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "targets": {
+      "v": [
+        "Logistics"
+      ],
+      "src": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "https://cdn.prod.website-files.com/68d6ca150ffa11fdc25d7575/699fdc15e860d79128b81476_80ed2951470859371c4f50dec21751bd_Agility_Digit_08.jpg",
+      "src": "https://www.agilityrobotics.com/",
+      "fit": "cover",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2026-11-16"
+}

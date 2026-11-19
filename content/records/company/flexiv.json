@@ -1,0 +1,41 @@
+{
+  "id": 116,
+  "type": "company",
+  "slug": "flexiv",
+  "name": "Flexiv",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/flexiv.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.flexiv.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "San Jose"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Jose, CA, United States",
+          "lat": 37.336166,
+          "lon": -121.890591
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:41",
+  "feed_at": null
+}

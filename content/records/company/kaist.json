@@ -1,0 +1,41 @@
+{
+  "id": 198,
+  "type": "company",
+  "slug": "kaist",
+  "name": "KAIST",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/kaist.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.kaist.ac.kr/"
+    },
+    "roles": {
+      "v": [
+        "University"
+      ]
+    },
+    "city": {
+      "v": "Daejeon"
+    },
+    "country": {
+      "v": "South Korea"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Daejeon, South Korea",
+          "lat": 36.349701,
+          "lon": 127.384902
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:28:17",
+  "feed_at": null
+}

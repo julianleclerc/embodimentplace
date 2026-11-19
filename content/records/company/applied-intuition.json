@@ -1,0 +1,41 @@
+{
+  "id": 154,
+  "type": "company",
+  "slug": "applied-intuition",
+  "name": "Applied Intuition",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/applied-intuition.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.appliedintuition.com/"
+    },
+    "roles": {
+      "v": [
+        "Software developer"
+      ]
+    },
+    "city": {
+      "v": "Sunnyvale"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Sunnyvale, CA, United States",
+          "lat": 37.36883,
+          "lon": -122.036349
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:57",
+  "feed_at": null
+}

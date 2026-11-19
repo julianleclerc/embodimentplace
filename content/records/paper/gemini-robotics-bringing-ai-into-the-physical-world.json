@@ -1,0 +1,28 @@
+{
+  "id": 54,
+  "type": "paper",
+  "slug": "gemini-robotics-bringing-ai-into-the-physical-world",
+  "name": "Gemini Robotics: Bringing AI into the Physical World",
+  "summary": "Technical report for Gemini Robotics and Gemini Robotics-ER.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "VLA / foundation models",
+        "Manipulation"
+      ]
+    },
+    "date": {
+      "v": "2025-03-25"
+    },
+    "authors_text": {
+      "v": "Gemini Robotics Team, Google DeepMind"
+    },
+    "url": {
+      "v": "https://arxiv.org/abs/2503.20020"
+    }
+  },
+  "created": "2026-11-16 21:16:16",
+  "updated": "2026-11-16 21:16:16",
+  "feed_at": "2025-03-25"
+}

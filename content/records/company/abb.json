@@ -1,0 +1,41 @@
+{
+  "id": 96,
+  "type": "company",
+  "slug": "abb",
+  "name": "ABB",
+  "summary": "",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/logos/abb.png",
+      "fit": "contain"
+    },
+    "website": {
+      "v": "https://www.abb.com/"
+    },
+    "roles": {
+      "v": [
+        "Robot maker"
+      ]
+    },
+    "city": {
+      "v": "Zurich"
+    },
+    "country": {
+      "v": "Switzerland"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zurich, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042
+        }
+      ]
+    }
+  },
+  "created": "2026-11-17 16:05:00",
+  "updated": "2026-11-18 00:27:32",
+  "feed_at": null
+}

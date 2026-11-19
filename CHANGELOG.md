@@ -32,6 +32,12 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#26 Watchlist shows posts only.** The Watchlist and the email digest only show posts (news, reposts, blog
+  posts, videos) and papers linked to the organisations and topics you follow. Products, models, funding rounds,
+  deployments, events, datasets and jobs no longer appear (`watchlistPayload` type list is back to
+  `('post','paper')`). Sections are News, Research, Videos and Topics; Jobs is gone (`WL_SECTIONS`). Posts reach an
+  organisation through their `about` link, which is how org pages and the automatic news job (#23) attach them.
+
 - **#25 Feeds sorted by date with day separators; Watchlist without the side panel.**
   - The Watchlist is one list, newest first, instead of one block per section. The pills still filter by section,
     and Arrange still sets the pill order and hides sections (`epWlFeed`).

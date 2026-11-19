@@ -18075,7 +18075,7 @@ async function watchlistPayload(c, days = 30) {
 	const oids = new Set(src.orgs.map((o) => o.id));
 	const rids = new Set(src.records.map((r) => r.id));
 	const topics = src.topics.map((t) => t.toLowerCase());
-	const rows = await allPublic(c.env.DB, "SELECT * FROM records WHERE type IN ('post','paper','job','product','model','funding','deployment','event','datapack') AND (private=0 OR ?) AND (created>=? OR updated>=? OR COALESCE(feed_at,'')>=?) ORDER BY COALESCE(feed_at, substr(created,1,10),'') DESC, id DESC LIMIT 400", c.get("auth").see_private ? 1 : 0, since, since, since);
+	const rows = await allPublic(c.env.DB, "SELECT * FROM records WHERE type IN ('post','paper') AND (private=0 OR ?) AND (created>=? OR updated>=? OR COALESCE(feed_at,'')>=?) ORDER BY COALESCE(feed_at, substr(created,1,10),'') DESC, id DESC LIMIT 400", c.get("auth").see_private ? 1 : 0, since, since, since);
 	const { outgoing } = await linksFor(c.env.DB, rows.map((r) => r.id));
 	const out = {};
 	for (const k of order) if (!hidden.has(k)) out[k] = [];
@@ -18099,8 +18099,7 @@ async function watchlistPayload(c, days = 30) {
 			companies: byOrg && r.type !== "job" && r.type !== "paper" && !isVideo,
 			research: byOrg && r.type === "paper",
 			videos: byOrg && isVideo,
-			topics: onTopic && r.type !== "job",
-			jobs: r.type === "job" && byOrg && (fieldStr(r.data, "status") || "Open") === "Open"
+			topics: onTopic,
 		};
 		for (const k of order) if (out[k] && rules[k]) {
 			out[k].push(r);

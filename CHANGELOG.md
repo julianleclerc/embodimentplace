@@ -25,7 +25,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#16 Fix "Find your company" (the Companies list returned error 500).**
+- **#17 Fix "Find your company" (the Companies list returned error 500).**
   - `/api/list/company` failed because D1 allows at most 100 bound parameters per query, and `linksFor` bound every
     company id twice (175 companies, 350 parameters). Lists of other types were still small enough to work.
   - Id lists are now sent as one JSON parameter and read with `json_each` in `linksFor`, `allByIds`, `socialCounts`,

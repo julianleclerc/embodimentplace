@@ -849,6 +849,11 @@ var WL_SECTIONS = [
 		"Videos from organisations you follow"
 	],
 	[
+		"topics",
+		"Topics",
+		"Anything matching the topics you follow"
+	],
+	[
 		"jobs",
 		"Jobs",
 		"Open jobs at organisations you follow"
@@ -858,6 +863,7 @@ var WL_DEFAULT = [
 	"companies",
 	"research",
 	"videos",
+	"topics",
 	"jobs"
 ];
 var WEEKDAYS = [

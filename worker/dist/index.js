@@ -18034,7 +18034,7 @@ function needUser(c) {
 	if (!c.get("auth").user) return c.redirect("/login?next=" + encodeURIComponent(new URL(c.req.url).pathname));
 	return null;
 }
-// Members follow organisations only (Julian, 2026-11-19). Older person, record and topic rows stay in the database
+// Members follow organisations and topics only (Julian, 2026-11-19). Older person and record rows stay in the database
 // but are ignored, so they come back if this is ever reversed.
 async function wlSources(db, uid) {
 	await ensureExtraSchema(db);
@@ -18042,7 +18042,7 @@ async function wlSources(db, uid) {
 		people: [],
 		orgs: await allPublic(db, "SELECT r.* FROM follows f JOIN records r ON r.id=f.company_id WHERE f.user_id=? ORDER BY r.name COLLATE NOCASE", uid),
 		records: [],
-		topics: []
+		topics: ((await db.prepare("SELECT ref FROM watch_sources WHERE user_id=? AND kind='tag' ORDER BY ref COLLATE NOCASE").bind(uid).all()).results || []).map((r) => String(r.ref))
 	};
 }
 function wlOrder(prefs) {
@@ -18099,6 +18099,7 @@ async function watchlistPayload(c, days = 30) {
 			companies: byOrg && r.type !== "job" && r.type !== "paper" && !isVideo,
 			research: byOrg && r.type === "paper",
 			videos: byOrg && isVideo,
+			topics: onTopic && r.type !== "job",
 			jobs: r.type === "job" && byOrg && (fieldStr(r.data, "status") || "Open") === "Open"
 		};
 		for (const k of order) if (out[k] && rules[k]) {
@@ -18135,7 +18136,7 @@ async function epWatchSuggest(db, uid, src) {
 	const topics = new Set((src?.topics || []).map((t) => t.toLowerCase()));
 	const ranked = (types, n) => allPublic(db, `SELECT r.*, (SELECT COUNT(*) FROM links l WHERE l.src=r.id OR l.dst=r.id) AS ep_n FROM records r WHERE r.type IN (SELECT value FROM json_each(?)) AND r.private=0 AND COALESCE(r.demo,0)=0 ORDER BY ep_n DESC, r.name COLLATE NOCASE LIMIT ?`, JSON.stringify(types), n + 30);
 	const orgs = (await ranked(ORG_TYPES_LIST, 12)).filter((r) => !have.has(r.slug)).slice(0, 12).map(epSuggestCard);
-	return { orgs, robots: [], topics: [] };
+	return { orgs, robots: [], topics: EP_WL_TOPICS.filter((t) => !topics.has(t.toLowerCase())) };
 }
 // epWatchFind: organisation search for Watchlist Sources, returned as follow tiles.
 async function epWatchFind(c) {
@@ -18209,6 +18210,7 @@ async function postWlAdd(c) {
 	const all = await formAll(c);
 	const g = (k) => (all[k] || [""]).slice(-1)[0].trim();
 	const uid = c.get("auth").user.id;
+	if (g("kind") === "tag" && g("ref").replace(/^#/, "").trim()) await c.env.DB.prepare("INSERT OR IGNORE INTO watch_sources(user_id,kind,ref,created) VALUES(?,?,?,?)").bind(uid, "tag", g("ref").replace(/^#/, "").trim().slice(0, 60), nowStamp()).run();
 	const rid = [...all["rel.ref"] || [], g("ref")].find((x) => /^\d+$/.test(x));
 	const row = g("kind") === "record" && rid ? await c.env.DB.prepare("SELECT * FROM records WHERE id=?").bind(Number(rid)).first() : null;
 	if (row && ORG_TYPES_LIST.includes(String(row.type)) && (!Number(row.private || 0) || c.get("auth").see_private)) await c.env.DB.prepare("INSERT OR IGNORE INTO follows(user_id,company_id,created) VALUES(?,?,?)").bind(uid, row.id, nowStamp()).run();

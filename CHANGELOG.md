@@ -42,13 +42,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     home feed (`.ep-wl3`; `epWlSide` is left unused).
   - Newsletter settings only show the weekday picker for Weekly. Daily shows only the time, and Off hides both
     (CSS block `epNlWhen`, pure CSS with `:has`).
-  - **Members follow organisations only.** People, robots, models and topics can no longer be followed or watched:
+  - **Members follow organisations and topics only.** People, robots and models can no longer be followed or watched:
     the ☆ Watch button on record pages is gone, `/watch/:slug` only toggles organisation follows,
-    `POST /api/watchlist/toggle` and `/watchlist/add` refuse anything else, and `wlSources` returns organisations
-    only. Sources is now a search for organisations plus the list you follow. Suggestions list 12 organisations.
-    Sections are News, Research, Videos and Jobs, all from followed organisations (`WL_SECTIONS` in the catalog).
-    Old rows in `watch_sources` and `user_follows` (2 record watches live, no people or topics) are left in D1 but
-    ignored.
+    `POST /api/watchlist/toggle` and `/watchlist/add` refuse anything else (topics go through
+    `/watchlist/add` and `/watchlist/remove` with `kind=tag`), and `wlSources` returns organisations and topics. Sources is now a search for organisations plus the list you follow. Suggestions list 12 organisations.
+    Sections are News, Research, Videos, Topics and Jobs (`WL_SECTIONS` in the catalog). Old record watches and
+    person follows (2 record watches live, no people) are left in D1 but ignored.
+  - **Topics in Sources.** A Topics section lists followed topics plus suggestions as one-tap chips (`epSrcTopics`,
+    `epTopicTog`), and typing in the search also offers "Follow #topic".
   - **Sources works like "Start your watchlist".** Search results, the organisations you follow and a list of
     suggested organisations are all tiles with a logo, summary and one-tap Follow/Following button (`epSugTile`).
     Search uses the new `GET /api/watchlist/find` (organisations only, returned as tiles); `sourcesPayload` adds

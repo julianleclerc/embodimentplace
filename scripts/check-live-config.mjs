@@ -12,13 +12,16 @@
 // Needs CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
 
 import { readFileSync } from "node:fs";
+import { accountId } from "./cf-account.mjs";
 
 const cfg = JSON.parse(readFileSync("wrangler.json", "utf8"));
-const { CLOUDFLARE_API_TOKEN: token, CLOUDFLARE_ACCOUNT_ID: account } = process.env;
-if (!token || !account) {
-  console.error("CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID must be set.");
+const token = process.env.CLOUDFLARE_API_TOKEN;
+if (!token) {
+  console.error("CLOUDFLARE_API_TOKEN must be set.");
   process.exit(1);
 }
+const account = await accountId(token);
+process.env.CLOUDFLARE_ACCOUNT_ID ||= account;
 
 async function api(path) {
   const res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${account}/workers/scripts/${cfg.name}${path}`, {

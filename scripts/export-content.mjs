@@ -9,6 +9,7 @@
 
 import { mkdirSync, rmSync, writeFileSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { accountId } from "./cf-account.mjs";
 
 const DATABASE_ID = "f0208a60-bea9-4a39-9a79-89565c0bc32b"; // D1 "embodiment-place"
 const OUT = "content";
@@ -28,8 +29,9 @@ const SQL = {
 };
 
 async function query(sql) {
-  const { CLOUDFLARE_API_TOKEN: token, CLOUDFLARE_ACCOUNT_ID: account } = process.env;
-  if (!token || !account) throw new Error("CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID must be set");
+  const token = process.env.CLOUDFLARE_API_TOKEN;
+  if (!token) throw new Error("CLOUDFLARE_API_TOKEN must be set");
+  const account = await accountId(token);
   const res = await fetch(
     `https://api.cloudflare.com/client/v4/accounts/${account}/d1/database/${DATABASE_ID}/query`,
     { method: "POST", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" }, body: JSON.stringify({ sql }) },

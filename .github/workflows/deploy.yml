@@ -30,6 +30,11 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Find the Cloudflare account ID if the secret is not set
+        if: env.CLOUDFLARE_ACCOUNT_ID == ''
+        run: |
+          id=$(node --input-type=module -e 'import { accountId } from "./scripts/cf-account.mjs"; console.log(await accountId(process.env.CLOUDFLARE_API_TOKEN))')
+          echo "CLOUDFLARE_ACCOUNT_ID=$id" >> "$GITHUB_ENV"
       - name: Check wrangler.json against the live Worker
         run: node scripts/check-live-config.mjs
       - name: Deploy

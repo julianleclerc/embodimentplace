@@ -51,7 +51,7 @@ Editing `content/` here does not change the site; edit on the site and the next 
 
 Add two repository secrets under **Settings > Secrets and variables > Actions**:
 
-- `CLOUDFLARE_ACCOUNT_ID`: shown on the right of the Workers & Pages overview in the Cloudflare dashboard.
+- `CLOUDFLARE_ACCOUNT_ID` (optional when the token can see only one account): shown on the right of the Cloudflare dashboard home page.
 - `CLOUDFLARE_API_TOKEN`: create a custom token under **My Profile > API Tokens > Create Token > Create Custom
   Token** with these permissions, limited to your account and the `embodiment.place` zone:
   Account / Workers Scripts / Edit, Account / D1 / Edit (the export only reads, but the D1 query API needs Edit),

@@ -25,6 +25,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#21 Empty cards say so.** Opening a member's card that has no name, position, company, info or social links
+  shows "This card is empty." This replaces the blank card from #10. It applies in Place (`epPlaceCard`) and on
+  walker and Lounge cards (`epCardNode`). Your own empty card still says "Add a position and info to your card.",
+  and private cards still say they're private.
 - **#20 Walkers can't widen the page; walk chat filter on your own screen.** On phones, walking to the right edge pushed the character 9px past the screen,
   so the page could scroll sideways. Your walker now stays at least 22px from each edge (the step in `we`), and the
   walker layer clips anything wider on the sides (CSS block `epWalkClip`, `overflow-x:clip`).

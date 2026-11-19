@@ -44,6 +44,12 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   circle when there is no logo or it fails to load. The Worker adds `lg` to each map point: the record's image when
   its fit is `contain` (the logos), so photos are not used. The map has a location type filter (`epKinds`, HQ, Office
   and any other kinds in the data), and the popup shows the logo.
+- 2026-11-19: phone layout. A menu button (`epMenu`, CSS `.epmenu`) in the header holds Log in / Sign up, or
+  Watchlist, Account and Log out, below 820px wide, where those links were hidden. The section links scroll the
+  current one into view (`epNavInit`). The phone CSS is one block appended to the end of the stylesheet (search for
+  `epmenu`): record pages use one column (a later desktop rule had kept three, squeezing the text), the Lounge opens
+  as a full-width sheet, the map is taller with its organisation list below it, form fields use 16px text so iOS
+  does not zoom in, and the footer and small buttons are easier to tap. Screenshots are in `docs/mobile-2026-11/`.
 
 ## How it stays in sync
 

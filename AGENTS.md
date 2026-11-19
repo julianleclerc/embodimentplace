@@ -87,6 +87,7 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   (`prefs.profile_vis`: me, members or everyone; members is the default).
 - Changing your email needs a code sent to the new address.
 - Members can follow organisations (companies, universities, labs) and topics, not people, robots or models.
+- The Watchlist tabs (Watchlist, Sources, Newsletter) stay hidden until the member follows at least one organisation; until then every Watchlist URL shows "Start your watchlist".
 - Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,
   Last month, Older).
 

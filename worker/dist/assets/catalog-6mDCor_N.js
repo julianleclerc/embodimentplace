@@ -811,7 +811,10 @@ var LOOK_HATS = [
 	["helmet", "Helmet"],
 	["phones", "Headphones"],
 	["antenna", "Antenna"],
-	["beret", "Beret"]
+	["beret", "Beret"],
+	["hardhat", "Hard hat"],
+	["bubble", "Speech bubble"],
+	["explorer", "Explorer hat"]
 ];
 var ADMIN_ONLY = [
 	"/users",

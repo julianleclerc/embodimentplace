@@ -18058,7 +18058,7 @@ async function watchlistPayload(c, days = 30) {
 	const u = c.get("auth").user;
 	const src = await wlSources(c.env.DB, u.id);
 	const { order, hidden } = wlOrder(prefsOf(u));
-	if (!(src.people.length + src.orgs.length + src.records.length + src.topics.length)) return {
+	if (!src.orgs.length) return {
 		tab: "feed",
 		empty: true,
 		days,
@@ -18256,6 +18256,7 @@ async function newsletterPayload(c) {
 		},
 		items: feed.items || {},
 		sources: feed.sources,
+		suggest: feed.suggest,
 		preview_html: epDigest(c.env, c.get("auth").user.id, feed.items || {}, days).html,
 		sections: WL_SECTIONS
 	};

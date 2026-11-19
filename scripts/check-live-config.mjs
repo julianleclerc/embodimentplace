@@ -85,6 +85,19 @@ if (live.placement?.mode && live.placement.mode !== cfg.placement?.mode)
 if ((live.tail_consumers || []).length) problems.push(`tail_consumers are set live: ${JSON.stringify(live.tail_consumers)}`);
 if (live.logpush && !cfg.logpush) problems.push(`logpush is on live but not in wrangler.json`);
 
+// workers.dev URL and preview URLs: wrangler turns workers.dev on by default when wrangler.json has no routes.
+const sub = await api("/subdomain").catch(() => null);
+if (sub) {
+  const wantDev = cfg.workers_dev ?? !(cfg.routes || cfg.route);
+  if (sub.enabled !== wantDev) problems.push(`workers_dev: live is ${sub.enabled}, a deploy would set ${wantDev} (set "workers_dev": ${sub.enabled} in wrangler.json)`);
+  if (sub.previews_enabled !== undefined && cfg.preview_urls !== undefined && sub.previews_enabled !== cfg.preview_urls)
+    problems.push(`preview_urls: live is ${sub.previews_enabled}, wrangler.json has ${cfg.preview_urls}`);
+  if (sub.previews_enabled !== undefined && cfg.preview_urls === undefined)
+    problems.push(`preview_urls is ${sub.previews_enabled} live; set "preview_urls": ${sub.previews_enabled} in wrangler.json`);
+} else {
+  problems.push("could not read the Worker's workers.dev settings; check the token has Workers Scripts access");
+}
+
 for (const n of notes) console.log(`note: ${n}`);
 if (problems.length) {
   console.error("\nwrangler.json does not match the live Worker, so the deploy was stopped:\n");

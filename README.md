@@ -52,9 +52,10 @@ Editing `content/` here does not change the site; edit on the site and the next 
 Add two repository secrets under **Settings > Secrets and variables > Actions**:
 
 - `CLOUDFLARE_ACCOUNT_ID`: shown on the right of the Workers & Pages overview in the Cloudflare dashboard.
-- `CLOUDFLARE_API_TOKEN`: create one under **My Profile > API Tokens > Create Token** with the
-  **Edit Cloudflare Workers** template, then add the permission **Account > D1 > Edit** (the export only reads, but
-  the D1 query API needs Edit), limited to your account and the `embodiment.place` zone.
+- `CLOUDFLARE_API_TOKEN`: create a custom token under **My Profile > API Tokens > Create Token > Create Custom
+  Token** with these permissions, limited to your account and the `embodiment.place` zone:
+  Account / Workers Scripts / Edit, Account / D1 / Edit (the export only reads, but the D1 query API needs Edit),
+  Account / Account Settings / Read, Zone / Workers Routes / Edit.
 
 Then run **Export site content** once from the Actions tab, and run **Deploy to Cloudflare** by hand; the safety
 check will say whether `wrangler.json` matches the live Worker before anything is deployed.

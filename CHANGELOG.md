@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#PRNUM Feeds sorted by date with day separators; Watchlist without the side panel.**
+- **#25 Feeds sorted by date with day separators; Watchlist without the side panel.**
   - The Watchlist is one list, newest first, instead of one block per section. The pills still filter by section,
     and Arrange still sets the pill order and hides sections (`epWlFeed`).
   - The home feed and the Watchlist have small separators: Today, Yesterday, This week, This month, Last month,

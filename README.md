@@ -29,6 +29,18 @@ rebuilt from the live deployment on 2026-11-19:
 - The frontend (`public/assets/index-*.js`) is minified React. It can be redeployed as is, but it is not practical to
   edit by hand. Bigger frontend changes need the original source, or a rewrite.
 
+### Hand edits to the frontend bundle
+
+Because there is no frontend source, fixes are made directly in `public/assets/index-*.js`. Each edit adds helpers
+named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the file is renamed with a new hash
+(updated in `public/index.html`) so browsers fetch the new version. Changes so far:
+
+- 2026-11-19: the lounge and walking characters start only once the login check has finished, so the Send button
+  and Enter work, and the lounge opens for visitors who first landed on Log in or Sign up. Lounge messages show
+  their date and time in the visitor's time zone, and a refused message shows why. A "Load more" button
+  is pressed automatically when it scrolls into view, and organisation group pages show 24 cards at a time.
+  The Worker now sends 6 feed posts per page (`FEED_PAGE_SIZE`). Log out asks for confirmation first.
+
 ## How it stays in sync
 
 **Code: GitHub to Cloudflare.** A push to `main` that touches `worker/`, `public/`, `wrangler.json` or the package

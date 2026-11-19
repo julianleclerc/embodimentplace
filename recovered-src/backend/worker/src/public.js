@@ -207,10 +207,10 @@ async function homePayload(db, filter, original, before) {
 		binds.push(cur.at, cur.at, cur.id);
 	}
 	sql += " ORDER BY COALESCE(feed_at, substr(created, 1, 10), '') DESC, id DESC LIMIT ?";
-	binds.push(21);
+	binds.push(FEED_PAGE_SIZE + 1);
 	const rows = await allPublic(db, sql, ...binds);
-	const more = rows.length > 20;
-	const slice = rows.slice(0, 20);
+	const more = rows.length > FEED_PAGE_SIZE;
+	const slice = rows.slice(0, FEED_PAGE_SIZE);
 	const items = await feedItems(db, slice);
 	const last = slice[slice.length - 1];
 	const next = more && last ? `${feedDate(last)}_${last.id}` : null;
@@ -1132,7 +1132,8 @@ function galleryFor(rec, videoUrl = "", videoCredit = "") {
 async function feedTypeList(db, typeKey, before) {
 	const { rows, next } = await feedPage(db, {
 		types: [typeKey],
-		before
+		before,
+		limit: FEED_PAGE_SIZE
 	});
 	const items = await feedItems(db, rows);
 	const info = TYPE_LABELS[typeKey] || {

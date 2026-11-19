@@ -54,7 +54,8 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   The walk pad is a blocky joystick (`epJoy`, drag in any of 8 directions) that does not select text. While walking,
   the joystick sits bottom-left with the chat line beside it. The Lounge sheet is shorter and moves above the
   on-screen keyboard (`--ep-kb`, `--ep-vh` and class `ep-kb` on `<html>`, set from `visualViewport`). Map filters
-  fold behind a Filters button (`.epmf-tog`), and the list of organisations is a single row over the map.
+  fold behind a Filters button (`.epmf-tog`), and the list of organisations is a single row over the map. The
+  Hämar theme (`umbra-teal`) uses the same teal accent as Hommik (`#007a72`).
 
 ## How it stays in sync
 

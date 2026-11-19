@@ -17204,6 +17204,8 @@ async function orgsPayload(db, group = "", asMap = false) {
 			const roles = asStringList(fieldVal(rec.data, "roles"));
 			const groups = ORG_GROUPS.filter((g) => roles.some((r) => g.roles.includes(r))).map((g) => g.key).join("|");
 			const idx = order.indexOf(rec.id);
+			const lgImg = imageSrc(rec.data);
+			const lg = lgImg && rec.data && rec.data.image && typeof rec.data.image === "object" && rec.data.image.fit === "contain" ? lgImg.src : null;
 			rows.forEach((r, i) => {
 				points.push({
 					id: rec.id,
@@ -17211,6 +17213,7 @@ async function orgsPayload(db, group = "", asMap = false) {
 					s: rec.slug,
 					c: orgColor(idx < 0 ? rec.id : idx, ORG_COLOR_PALETTE),
 					k: r.kind,
+					lg,
 					a: r.address,
 					lat: r.lat,
 					lon: r.lon,

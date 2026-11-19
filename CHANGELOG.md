@@ -28,7 +28,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#PR Automatic updates toggle for organisations (admins only).** On a company, university or lab page, admins
+- **#23 Automatic updates toggle for organisations (admins only).** On a company, university or lab page, admins
   see an "Auto updates off / on" button next to "Pin to home". It is stored in D1 in a new table `auto_news`
   (`record_id`, `enabled`, `feed`, `updated`, `updated_by`, `last_run`, `last_note`), created by
   `ensureExtraSchema`. Routes: `POST /api/autonews/:slug` flips it and returns `{on}`, `GET /api/admin/autonews`

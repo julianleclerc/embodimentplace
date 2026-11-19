@@ -103,3 +103,6 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 
 /* epCards2: no idle bob in Place; name on card */
 .epp-stage .wk-char.idle .wk-fig{animation:none}.epp-u .epp-at{font-weight:400;opacity:.65;margin-left:.45em;font-size:.9em}
+
+/* epWalker2: legs sit behind the body outline like the original single-filter outline */
+.wk-body:before,.wk-body:after{clip-path:inset(calc(100% - 8px) -1px -1px -1px)}

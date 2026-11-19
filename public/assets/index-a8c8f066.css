@@ -48,8 +48,8 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .wk-layer .wk-char{pointer-events:auto;cursor:pointer}
 .wk-layer .wk-char .wk-bub{pointer-events:none}
 .epp-card.epp-float{position:absolute;bottom:auto;transform:translate(-50%,-100%);z-index:9000}
-.epp-stage{background:linear-gradient(var(--rule),var(--rule)) 0 30%/100% 1px no-repeat,repeating-linear-gradient(90deg,transparent 0 47px,var(--hair) 47px 48px) 0 0/100% 30% no-repeat,linear-gradient(to bottom,transparent 30%,color-mix(in srgb,var(--bar) 60%,var(--paper)) 30%),var(--paper)}
-.epp-stage:after{content:"";position:absolute;left:0;right:0;top:30%;bottom:0;pointer-events:none;background:repeating-linear-gradient(to bottom,transparent 0 31px,color-mix(in srgb,var(--hair) 70%,transparent) 31px 32px)}
+
+
 .epp-c:after{left:2px;right:2px;bottom:-4px;height:4px;background:rgba(0,0,0,.25)}
 .ov>.ov-char{grid-column:1;grid-row:1}
 .ov>.epc{grid-column:1;grid-row:2}
@@ -101,3 +101,6 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .epe-row input{flex:1;min-width:140px;max-width:220px;font:500 1.1rem/1 var(--mono);letter-spacing:.2em;border-color:var(--rule);padding:8px 10px}
 .epe-sub form{display:contents}
 .epe>.btn{justify-self:start}
+
+/* epCards2: no idle bob in Place; name on card */
+.epp-stage .wk-char.idle .wk-fig{animation:none}.epp-u .epp-at{font-weight:400;opacity:.65;margin-left:.45em;font-size:.9em}

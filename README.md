@@ -87,6 +87,7 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   Closing a card lets that character walk again.
 - 2026-11-19: cards everywhere and the account page (CSS block `epCards`). Tapping any walking character on any page
 - 2026-11-19: card name and calmer Place (CSS block `epCards2`). The card has an optional Name (profile `name`, up to 80 characters), shown in the card header above the @username. Standing characters in Place no longer bob, the Place background is back to the dotted grid, and cards with nothing filled in show no placeholder text.
+- 2026-11-19: walking legs back to the original `wk-leg` cycle (both legs, one reversed, anchored at the feet) in every direction. The `ep-step` stepping animation and the top-anchored legs from the phone fixes were removed.
   opens its card (`epCardOpen`, `epCardNode`, `GET /api/community/card?u=` or `?me=1`, built by `epCardItem` like
   Place). Walkers now carry the username (`u` in the live presence) so the card finds the right member. Place has a
   wall and a floor (top 30% is wall) and characters only stand on the floor. Account: the Byline is now the Card,
@@ -133,4 +134,3 @@ npm ci
 npx wrangler dev          # runs the Worker locally against local D1/R2 stand-ins
 npx wrangler deploy --dry-run
 ```
-- 2026-11-19: walking legs back to the original `wk-leg` cycle (both legs, one reversed, anchored at the feet) in every direction. The `ep-step` stepping animation and the top-anchored legs from the phone fixes were removed.

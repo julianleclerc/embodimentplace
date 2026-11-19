@@ -114,3 +114,4 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 
 /* epCards3: @username in the header, name in the body above the title */
 .epp-nm{font-weight:700;font-size:1.2rem;line-height:1.2;letter-spacing:-.01em;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epp-bd{flex:1 0 auto;overflow:visible}.epp-soc{flex-wrap:wrap;max-width:100%}.epp-s{flex:none}

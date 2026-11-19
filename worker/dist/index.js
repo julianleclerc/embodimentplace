@@ -18275,7 +18275,7 @@ async function communityPayload(c) {
 }
 async function postMeet(c) {
 	const auth = c.get("auth");
-	if (!auth.user) return c.redirect("/login?next=/community");
+	if (!auth.user) return c.redirect("/login?next=/community/need");
 	await ensureExtraSchema(c.env.DB);
 	const all = await formAll(c);
 	const g = (k) => ((all[k] || [""]).slice(-1)[0] || "").trim();
@@ -18285,10 +18285,10 @@ async function postMeet(c) {
 	const go = (q) => {
 		if (c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("json")) return c.json({
 			ok: q.startsWith("sent"),
-			next: "/community?" + q,
+			next: "/community/need?" + q,
 			error: q.startsWith("err=") ? decodeURIComponent(q.slice(4)) : void 0
 		}, q.startsWith("err") ? 400 : 200);
-		return c.redirect("/community?" + q);
+		return c.redirect("/community/need?" + q);
 	};
 	if (!need || !why) return go("err=" + encodeURIComponent("Pick what you need and describe it in a few words."));
 	if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return go("err=" + encodeURIComponent("Add an email address we can introduce you at."));
@@ -18315,15 +18315,15 @@ async function postMeet(c) {
 }
 async function postWithdraw(c) {
 	const auth = c.get("auth");
-	if (!auth.user) return c.redirect("/login?next=/community");
+	if (!auth.user) return c.redirect("/login?next=/community/need");
 	const all = await formAll(c);
 	const id = Number((all.id || [""]).slice(-1)[0] || 0);
 	await c.env.DB.prepare("UPDATE meet_requests SET status='withdrawn', decided=datetime('now') WHERE id=? AND user_id=? AND status='pending'").bind(id, auth.user.id).run();
 	if (c.req.path.startsWith("/api/")) return c.json({
 		ok: true,
-		next: "/community?sent=withdrawn"
+		next: "/community/need?sent=withdrawn"
 	});
-	return c.redirect("/community?sent=withdrawn");
+	return c.redirect("/community/need?sent=withdrawn");
 }
 async function meetAdminPayload(c) {
 	if (!can(c.get("auth"), "meet")) return {
@@ -20432,6 +20432,74 @@ api.get("/admin/requests", async (c) => {
 	if (g) return c.json({ error: g.body || "Not found" }, g.status);
 	return c.json(await requestsAdminPayload(c));
 });
+// epPlace: characters for the Community "Place" hub. Public fields only: username, character look,
+// public post count and latest post, and the byline (title, organisation, bio) when the member's
+// profile visibility allows the viewer to see it. Visitors only see members who chose "Everyone".
+async function epPlacePayload(c) {
+	const auth = c.get("auth");
+	const me = auth.user ? Number(auth.user.id) : 0;
+	const logged = Boolean(auth.user);
+	const { results } = await c.env.DB.prepare("SELECT id, username, prefs, profile, suspended_until FROM users WHERE disabled=0 ORDER BY id LIMIT 400").all();
+	const posts = new Map();
+	try {
+		const { results: pr } = await c.env.DB.prepare("SELECT r.author_id AS a, COUNT(*) AS n, MAX(r.id) AS last FROM records r WHERE r.type IN ('post','paper') AND r.private=0 AND COALESCE(r.demo,0)=0 AND r.author_id IS NOT NULL GROUP BY r.author_id").all();
+		const lastIds = [];
+		for (const x of pr || []) {
+			posts.set(Number(x.a), { n: Number(x.n || 0), last: Number(x.last || 0) });
+			if (x.last) lastIds.push(Number(x.last));
+		}
+		const lastRec = new Map();
+		for (let i = 0; i < lastIds.length; i += 90) {
+			const ids = lastIds.slice(i, i + 90);
+			const { results: lr } = await c.env.DB.prepare("SELECT id, slug, name FROM records WHERE id IN (" + ids.map(() => "?").join(",") + ")").bind(...ids).all();
+			for (const r of lr || []) lastRec.set(Number(r.id), { slug: String(r.slug), name: String(r.name) });
+		}
+		for (const v of posts.values()) v.latest = lastRec.get(v.last) || null;
+	} catch {}
+	const items = [];
+	let hidden = 0;
+	for (const raw of results || []) {
+		const u = raw;
+		const uid = Number(u.id);
+		const mine = uid === me;
+		if (!mine && isSuspended(u)) continue;
+		const pr = prefsOf(u);
+		const vis = String(pr.profile_vis || "members");
+		if (!logged && vis !== "everyone") {
+			hidden++;
+			continue;
+		}
+		const showByline = mine || vis === "everyone" || (vis === "members" && logged);
+		let prof = {};
+		try {
+			prof = JSON.parse(String(u.profile || "{}"));
+		} catch {}
+		const pv = (k) => {
+			const x = prof[k];
+			const v = x && typeof x === "object" && "v" in x ? x.v : x;
+			return typeof v === "string" ? v.slice(0, k === "bio" ? 400 : 120) : "";
+		};
+		const p = posts.get(uid);
+		items.push({
+			username: String(u.username),
+			look: walkerLook(u),
+			mine,
+			byline: showByline ? {
+				title: pv("title"),
+				organisation: pv("organisation"),
+				bio: pv("bio")
+			} : null,
+			posts: p ? p.n : 0,
+			latest: p && p.latest ? p.latest : null
+		});
+	}
+	return {
+		items,
+		hidden,
+		logged
+	};
+}
+api.get("/community/place", async (c) => c.json(await epPlacePayload(c)));
 api.get("/community", async (c) => c.json(await communityPayload(c)));
 api.get("/community/orgs", async (c) => {
 	const g = gateStatus("/community/orgs", "GET", c.get("auth"));

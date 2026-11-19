@@ -56,6 +56,14 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   on-screen keyboard (`--ep-kb`, `--ep-vh` and class `ep-kb` on `<html>`, set from `visualViewport`). Map filters
   fold behind a Filters button (`.epmf-tog`), and the list of organisations is a single row over the map. The
   Hämar theme (`umbra-teal`) uses the same teal accent as Hommik (`#007a72`).
+- 2026-11-19: Community has a new first tab, Place (`/community`, component `epPlace`, engine `epPlaceRun`, CSS
+  block `epp-` at the end of the stylesheet). Every member's character wanders around a stage; tapping one opens a
+  speech-bubble card (`epPlaceCard`) with their username, byline (title, organisation, bio) and public posts. The
+  Worker serves it from `GET /api/community/place` (`epPlacePayload`), which follows Profile visibility: bylines only
+  when the member allows the viewer to see them, and visitors who aren't logged in only see members set to Everyone.
+  Location, interests, email and other introduction fields are never sent. "Tell us what you need" moved to
+  `/community/need` (old `/community?sent=` and `?err=` links still show it). The Place walking animation runs even
+  with Reduce Motion on.
 
 ## How it stays in sync
 

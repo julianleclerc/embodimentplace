@@ -19629,6 +19629,7 @@ function pub(k, v, t) {
 		x: v.x,
 		y: v.y,
 		d: v.d,
+		w: v.w || 0,
 		ts: Math.round((v.ts || t) * 1e3) / 1e3,
 		seq: v.seq || 0,
 		says: v.says.filter((s) => t - s.ts < 30).slice(-3).map((s) => ({
@@ -19747,6 +19748,8 @@ var WalkWorld = class {
 		};
 		const fx = (v, d, lo, hi) => typeof v === "number" && Number.isFinite(v) ? Math.max(lo, Math.min(hi, v)) : d;
 		me.x = fx(opts.x, me.x, 0, 1);
+		// Width of the walker's page in px, so wide screens can show a phone walker in a centred column.
+		me.w = Math.round(fx(opts.w, me.w || 0, 0, 1e4));
 		me.y = fx(opts.y, me.y, 0, 1e5);
 		if (opts.d && DIRS.has(opts.d)) me.d = opts.d;
 		let err = "";
@@ -19881,6 +19884,7 @@ async function postWalk(c) {
 	const isJoin = flag("join");
 	const x = Number(g("x"));
 	const y = Number(g("y"));
+	const w = Number(g("w"));
 	const input = {
 		cid,
 		name: auth.user.name || auth.user.username,
@@ -19892,6 +19896,7 @@ async function postWalk(c) {
 		leave,
 		x: Number.isFinite(x) ? x : void 0,
 		y: Number.isFinite(y) ? y : void 0,
+		w: Number.isFinite(w) ? w : void 0,
 		d: g("d"),
 		say: g("say")
 	};

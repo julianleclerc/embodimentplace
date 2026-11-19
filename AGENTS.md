@@ -60,6 +60,8 @@ There is no original source. The repository was rebuilt from the live deployment
   `email_log`.
 - Every email is wrapped in the site's Hommik look by `sendMail` (`epMailWrap`). Write only the inner HTML for new
   emails, and keep them in that style. Julian asked for all emails to match the website.
+- Watchlist digests are sent from `newsletter@embodiment.place` (`EP_DIGEST_FROM`); everything else from
+  `EP_MAIL_FROM` (no-reply@). Pass `from` to `sendMail` to use another sender; it falls back to the default if refused.
 
 ### Running it locally
 

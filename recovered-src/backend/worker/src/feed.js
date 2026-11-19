@@ -32,8 +32,8 @@ async function feedPage(db, opts = {}) {
 		binds.push(...opts.types);
 	}
 	if (opts.ids?.length) {
-		where.push(`id IN (${opts.ids.map(() => "?").join(",")})`);
-		binds.push(...opts.ids);
+		where.push("id IN (SELECT value FROM json_each(?))");
+		binds.push(JSON.stringify(opts.ids));
 	}
 	if (!opts.includePrivate) where.push("private = 0");
 	if (opts.authorId) {

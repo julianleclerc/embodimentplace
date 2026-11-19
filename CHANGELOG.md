@@ -25,6 +25,9 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#20 Walkers can't widen the page.** On phones, walking to the right edge pushed the character 9px past the screen,
+  so the page could scroll sideways. Your walker now stays at least 22px from each edge (the step in `we`), and the
+  walker layer clips anything wider on the sides (CSS block `epWalkClip`, `overflow-x:clip`).
 - **#19 Card placement correction, phone walkers in the middle on PC.** The "card on the left" request was meant for the Lounge, not for characters.
   - Character cards in Place and for walkers are back to how they were before #16, above the character on desktop
     and phones. The phone bottom sheet (`.epp-sheet`) is no longer used.

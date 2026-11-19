@@ -25,13 +25,17 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#16 Phone walk animation, hat hints, centred log out.**
+- **#16 Phone walk animation, hat hints, centred log out, cards beside characters.**
   - The legs animate again when the phone asks for reduced motion. The original reduced-motion rule set
     `.wk-char.moving .wk-body:before/:after` to `animation:none`. #6 overrode it with `ep-step`, and #11 removed that
     override, which froze the legs. The `wk-leg` and `wk-bob` rules are now re-applied after it (CSS block `epHats2`).
   - A locked hat's hint is no longer inside its tile. It shows as a pop-up above the tile on hover, or on tap on
     phones (`data-hint` and `.lk-hat.tip`, toggled by a document click listener). The tile only says "Locked".
   - The "Log out?" dialog (`epLogoutAsk`) is centred on the screen (`.palette.ep-logout`).
+  - A character's card opens beside it instead of on top: to the left, or to the right when there's no room, with
+    the arrow pointing at the character (`epSideOf`, `.epp-side-l`, `.epp-side-r`, CSS block `epCardSide`). This
+    covers Place and walkers on every page. On phones (760px and narrower) the card is a sheet at the bottom of the
+    screen (`.epp-sheet`). Cards opened from a Lounge name still open above or below the name.
 - **#15 Lounge names open cards, unlockable hats, plus this log.**
   - In the Lounge, a member's name in a message is a button (`.cw-who`, data `u`). Tapping it opens the same card as
     tapping their character (`epCardOpen`, CSS block `epLoungeCard`). Guests' names stay plain text.

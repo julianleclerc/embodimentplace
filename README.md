@@ -56,6 +56,17 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   on-screen keyboard (`--ep-kb`, `--ep-vh` and class `ep-kb` on `<html>`, set from `visualViewport`). Map filters
   fold behind a Filters button (`.epmf-tog`), and the list of organisations is a single row over the map. The
   Hämar theme (`umbra-teal`) uses the same teal accent as Hommik (`#007a72`).
+- 2026-11-19: phones, third pass (third CSS block, search `epf-tog`). Tables scroll sideways inside their box, and
+  hardware tables (for example /t/humanoid?view=table), which crashed on every screen size because the Worker sends no
+  `cells` for them, now build cells from each item's facets (`epCells`) with readable column names (`epLbl`). List
+  filters fold into a Filters dropdown. While typing in the Lounge, the panel fills the part of the screen above the
+  keyboard (`ep-typing-cw`, `--ep-vt`, `--ep-vh` from `visualViewport`). The ticker and walking characters animate
+  even when the device asks for reduced motion (Julian's choice); the JS reduced-motion check is set to false.
+- 2026-11-19: walking characters from other devices. Each page has its own `LiveHub`, but the live socket stayed on
+  the first page, so after moving to another page you no longer saw anyone walk. The `ep-page` event now reaches
+  `document` listeners, and the socket reconnects to the new page (`ep-page` listener in the socket client). The legs
+  hang from the body and the stepping foot lifts and swings forward (`ep-step`, `ep-step-r`, `ep-step-l`); before, the
+  leg shrank upward from a planted foot, which read as walking backwards.
 - 2026-11-19: Community has a new first tab, Place (`/community`, component `epPlace`, engine `epPlaceRun`, CSS
   block `epp-` at the end of the stylesheet). Every member's character wanders around a stage; tapping one opens a
   speech-bubble card (`epPlaceCard`) with their username, byline (title, organisation, bio) and public posts. The
@@ -64,8 +75,8 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   byline and social links (X, LinkedIn, Discord, Instagram, saved in `prefs.socials` by action `place`, checked by
   `epSocial`) follow Profile visibility. Location, interests, email and other introduction fields are never sent.
   The card sits above the character's head, 4:3, centred, with social icons (`epSocSvg`). "Tell us what you need" moved to
-  `/community/need` (old `/community?sent=` and `?err=` links still show it). The Place walking animation runs even
-  with Reduce Motion on.
+  `/community/need` (old `/community?sent=` and `?err=` links still show it).
+  Resting characters use the `idle` class so they share the walker's idle and step animations.
 
 ## How it stays in sync
 

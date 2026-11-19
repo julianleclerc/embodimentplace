@@ -40,6 +40,8 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     messages, event chats, walker speech bubbles, comments and card fields (name, position, company, info). The list
     is `EP_CURSE_RE` and the noises are `EP_ANIMAL_NOISES`, with helper `epMeow` (`worker/dist/index.js`). Messages
     saved before this change are not rewritten.
+  - The small character in the Account header no longer walks its legs on hover either. It stays completely still
+    (CSS block `epAcctStill`).
 - **#16 Phone walk animation, hat hints, centred log out, cards beside characters.**
   - The legs animate again when the phone asks for reduced motion. The original reduced-motion rule set
     `.wk-char.moving .wk-body:before/:after` to `animation:none`. #6 overrode it with `ep-step`, and #11 removed that

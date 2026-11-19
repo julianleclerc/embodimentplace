@@ -28,7 +28,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#PRNUM Watchlist: more news, working arrange, digest emails, one-tap watching.**
+- **#22 Watchlist: more news, working arrange, digest emails, one-tap watching.**
   - **More in the feed.** The Watchlist used to show only posts, papers and jobs, so following a company showed
     almost nothing. It now also shows launches (products), models, funding rounds, deployments, events and datasets
     linked to what you follow or watch (`watchlistPayload` type list). Their cards get a label such as "Launch" or

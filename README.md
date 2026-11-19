@@ -133,3 +133,4 @@ npm ci
 npx wrangler dev          # runs the Worker locally against local D1/R2 stand-ins
 npx wrangler deploy --dry-run
 ```
+- 2026-11-19: walking legs back to the original `wk-leg` cycle (both legs, one reversed, anchored at the feet) in every direction. The `ep-step` stepping animation and the top-anchored legs from the phone fixes were removed.

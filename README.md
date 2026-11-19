@@ -40,6 +40,10 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   their date and time in the visitor's time zone, and a refused message shows why. A "Load more" button
   is pressed automatically when it scrolls into view, and organisation group pages show 24 cards at a time.
   The Worker now sends 6 feed posts per page (`FEED_PAGE_SIZE`). Log out asks for confirmation first.
+- 2026-11-19: map pins show the organisation's logo (`epPinLogo`, CSS `.opin.logo`), falling back to the coloured
+  circle when there is no logo or it fails to load. The Worker adds `lg` to each map point: the record's image when
+  its fit is `contain` (the logos), so photos are not used. The map has a location type filter (`epKinds`, HQ, Office
+  and any other kinds in the data), and the popup shows the logo.
 
 ## How it stays in sync
 

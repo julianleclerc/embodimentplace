@@ -4040,6 +4040,31 @@ function walkerLook(u) {
 		hc: HEX.test(lk.hc || "") ? lk.hc : "#0d0d0d"
 	};
 }
+// Hats you unlock by doing things on the site. Admins have them all.
+var EP_LOCKED_HATS = {
+	hardhat: "Manage an organisation's page to unlock it.",
+	bubble: "Send a message in the Lounge to unlock it.",
+	explorer: "Walk your character on 10 different pages to unlock it."
+};
+var EP_HEAD_COLORS = ["#0d0d0d", "#f2d0b4", "#d9a47c", "#a86e44", "#6b4127", "#ffffff"];
+function epWalkedCount(pr) {
+	return Array.isArray(pr.walked) ? pr.walked.length : 0;
+}
+async function epHatLocks(db, u, pr) {
+	const locks = {};
+	if (u.role === "admin") return locks;
+	let org = false, said = false;
+	try {
+		org = !!await db.prepare("SELECT 1 AS x FROM owners WHERE user_id=? LIMIT 1").bind(u.id).first();
+	} catch {}
+	try {
+		said = !!await db.prepare("SELECT 1 AS x FROM room_chat WHERE user_id=? AND room='lounge' AND deleted=0 LIMIT 1").bind(u.id).first();
+	} catch {}
+	if (!org) locks.hardhat = EP_LOCKED_HATS.hardhat;
+	if (!said) locks.bubble = EP_LOCKED_HATS.bubble;
+	if (epWalkedCount(pr) < 10) locks.explorer = EP_LOCKED_HATS.explorer + " (" + epWalkedCount(pr) + " of 10 so far)";
+	return locks;
+}
 async function savePrefs(db, uid, pr) {
 	await db.prepare("UPDATE users SET prefs=? WHERE id=?").bind(JSON.stringify(pr), uid).run();
 }
@@ -4122,6 +4147,8 @@ async function accountPayload(c, tab = "overview") {
 		created: u.created,
 		look,
 		hats: LOOK_HATS,
+		hat_locks: await epHatLocks(db, u, pr),
+		walked: epWalkedCount(pr),
 		byline: {
 			name: v("name"),
 			title: v("title"),
@@ -4306,12 +4333,24 @@ async function postCharacter(c) {
 			})
 		});
 	}
+	const isAdmin = auth.user.role === "admin";
+	const presets = {
+		b: WALK_COLORS,
+		h: EP_HEAD_COLORS,
+		hc: ["#0d0d0d", ...WALK_COLORS, "#ffffff"]
+	};
 	const pick = (k) => {
 		const custom = g[k + "_custom"] || "";
 		const touched = g[k + "_touched"];
-		if (HEX.test(custom) && touched && custom.toLowerCase() !== (g[k] || "").toLowerCase()) return custom;
-		return g[k];
+		if (isAdmin && HEX.test(custom) && touched && custom.toLowerCase() !== (g[k] || "").toLowerCase()) return custom;
+		const v = String(g[k] || "").toLowerCase();
+		if (isAdmin) return g[k];
+		return presets[k].find((x) => x.toLowerCase() === v) || "";
 	};
+	if (g.hat && EP_LOCKED_HATS[g.hat]) {
+		const locks = await epHatLocks(c.env.DB, auth.user, pr);
+		if (locks[g.hat]) return c.json({ error: "That hat is locked. " + locks[g.hat] }, 403);
+	}
 	const lk = {
 		b: pick("b"),
 		h: pick("h"),
@@ -20814,6 +20853,22 @@ api.post("/account", async (c) => {
 api.post("/account/character", async (c) => {
 	if (!c.get("auth").user) return c.json({ error: "Log in first." }, 401);
 	return postCharacter(c);
+});
+api.post("/account/walked", async (c) => {
+	const auth = c.get("auth");
+	if (!auth.user) return c.json({ error: "Log in first." }, 401);
+	const g = await readBody(c);
+	let page = String(g.page || "").split(/[?#]/)[0].slice(0, 200);
+	if (!/^\/[\w\-./%]*$/.test(page)) return c.json({ error: "Bad page." }, 400);
+	page = page.replace(/\/+$/, "") || "/";
+	const pr = prefsOf(auth.user);
+	const list = Array.isArray(pr.walked) ? pr.walked.filter((x) => typeof x === "string") : [];
+	if (list.length < 10 && !list.includes(page)) {
+		list.push(page);
+		pr.walked = list;
+		await savePrefs(c.env.DB, auth.user.id, pr);
+	}
+	return c.json({ ok: true, walked: list.length });
 });
 api.post("/account/security", async (c) => {
 	if (!c.get("auth").user) return c.json({ error: "Log in first." }, 401);

@@ -25,11 +25,26 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#15 Lounge names open cards, plus this log.**
+- **#15 Lounge names open cards, unlockable hats, plus this log.**
   - In the Lounge, a member's name in a message is a button (`.cw-who`, data `u`). Tapping it opens the same card as
     tapping their character (`epCardOpen`, CSS block `epLoungeCard`). Guests' names stay plain text.
   - The card flips below the name when there's no room above (`.epp-below`), and it sits above the Lounge panel.
   - Added `AGENTS.md` and this `CHANGELOG.md`. The per-change notes that were in `README.md` moved here.
+  - **Unlockable hats.** Three new hats (`hardhat`, `bubble`, `explorer`) are added to `LOOK_HATS` in the catalog
+    and drawn in `public/static/hats-v2.png`, a 12-hat sprite. `.wk-hat` uses that file at `240px 18px`. Each one
+    unlocks by doing something:
+    - Hard hat: manage an organisation's page (a row in `owners`).
+    - Speech bubble: send a Lounge message (a row in `room_chat`).
+    - Explorer hat: walk your character on 10 different pages. The client posts each page to `POST /api/account/walked`
+      (`epWalked`), which keeps up to 10 paths in `prefs.walked`.
+
+    `epHatLocks` works out which hats are still locked. The account payload sends them as `hat_locks` with a hint.
+    `postCharacter` refuses a locked hat (403). Admins have every hat. In the look creator, locked hats are greyed
+    out with the hint, and Surprise me skips them.
+  - **Custom colours are admin-only.** Non-admins only see the preset swatches. The server only saves preset colours
+    for them: body from `WALK_COLORS`, head from `EP_HEAD_COLORS`, hat from black, `WALK_COLORS` and white.
+  - The small character in the Account header no longer bobs (`.acct-char .wk-fig`). The big Overview character
+    still floats.
 - **#14 Card layout.** The card header shows `@username` at the top left. The Name, when set, is the first line of
   the body, above the position and company (`.epp-nm`, CSS block `epCards3`). The card keeps 4:3 as its smallest
   shape but grows taller, so every social icon shows on phones.

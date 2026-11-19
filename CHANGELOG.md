@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19 (evening)
 
-- **#27 Walking characters show for everyone again.** Each page has its own Durable Object, and its in-memory record
+- **#28 Walking characters show for everyone again.** Each page has its own Durable Object, and its in-memory record
   of who may walk there (`WalkWorld.hold`) was empty whenever a walker changed page or the object restarted (every
   deploy restarts them). The walker kept walking on their own screen, but the page refused their moves, so nobody
   else saw them.

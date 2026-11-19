@@ -19884,6 +19884,13 @@ var WalkWorld = class {
 			};
 		}
 		let owns = Boolean(hold && tok && tok === hold);
+		// The "hold" Durable Object already checked this walker owns its token. Each page has its own Durable
+		// Object, and its memory is lost on restart, so trust that check here instead of asking for a new join.
+		// Without this, a walker who changed page (or whose page restarted) kept walking but nobody saw them.
+		if (!owns && opts.owned && tok) {
+			this.hold.set(cid, tok);
+			owns = true;
+		}
 		let taken = false;
 		if (opts.join && !owns) {
 			tok = validToken(opts.token) || randomToken();
@@ -20131,6 +20138,10 @@ async function postWalk(c) {
 			await old.purge(cid);
 			await old.sendTaken(cid, token);
 		}
+	} else if (hold && owns && prevPage && prevPage !== page) {
+		// Walked to another page: remove the character from the old page straight away.
+		const old = pageStub(c, prevPage);
+		if (old) await old.purge(cid);
 	}
 	const wantOthers = g("stream") !== "1" && g("stream") !== "true";
 	let out;
@@ -20138,6 +20149,7 @@ async function postWalk(c) {
 		...input,
 		token,
 		join: isJoin,
+		owned: Boolean(hold && owns),
 		wantOthers
 	});
 	else {
@@ -20167,7 +20179,7 @@ async function getWalkPeek(c) {
 	const page = pageOf(c.req.query("page"));
 	const me = cidOf(c.get("auth"));
 	const stub = pageStub(c, page);
-	const others = stub ? await stub.peek(page, me) : memoryWorld.peek(page, me);
+	const others = stub ? await stub.peek(page, "") : memoryWorld.peek(page, "");
 	return c.json({ others });
 }
 async function getLiveWs(c) {
@@ -20406,7 +20418,7 @@ var LiveHub = class extends DurableObject {
 		};
 		this.ctx.acceptWebSocket(server);
 		server.serializeAttachment(att);
-		const snap = this.world.snapshot(att.page, att.cid);
+		const snap = this.world.snapshot(att.page, "");
 		try {
 			server.send(JSON.stringify({
 				type: "walk",
@@ -20485,12 +20497,8 @@ var LiveHub = class extends DurableObject {
 	async broadcastWalk(page) {
 		for (const ws of this.ctx.getWebSockets()) try {
 			const att = ws.deserializeAttachment() || {};
-			const mine = /* @__PURE__ */ new Set();
-			if (att.cid) mine.add(att.cid);
-			if (att.uid) mine.add("u" + att.uid);
-			const me = att.cid || (att.uid ? "u" + att.uid : "");
-			const snap = this.world.snapshot(page, me);
-			if (mine.size) snap.others = snap.others.filter((o) => !mine.has(o.id));
+			// Your own character is sent too, so your other devices can show it. The device that is walking skips it.
+			const snap = this.world.snapshot(page, "");
 			ws.send(JSON.stringify({
 				type: "walk",
 				id: this.world.seq,

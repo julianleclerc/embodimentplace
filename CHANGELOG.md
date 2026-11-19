@@ -28,6 +28,25 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#24 Watchlist looks like the rest of the site; "Send to me now" says what happened; digest from newsletter@.**
+  - **Same layout as the home feed.** All three Watchlist tabs now use the home page layout (`.home2`): a 760px
+    content column and the right-hand side panel. Cards are the same size as on the home feed (they were 980px
+    wide). The side panel shows what you're watching and your digest schedule (`epWlSide`, worker
+    `epDigestInfo`).
+  - **Section pills.** The feed has the home feed's pill bar (All, People, Companies… with counts) instead of a tall
+    stack of sections. Empty sections fold into one "Nothing new in …" line. Arrange opens from a button on the bar
+    (`epWlFeed`).
+  - **Send to me now gives feedback.** Before, the button posted to a page route that redirected, so nothing
+    showed. It now shows "Sending…", then a message: sent (with the count and address), nothing new to send, or why
+    it failed (`epNlSend`; `postWlSend` returns JSON with `kind` sent, empty or error). It doesn't send an empty
+    digest. If the button is disabled, it says why.
+  - **Newsletter tab preview.** Shows the email as it will look, in a frame (`preview_html` in the newsletter
+    payload, `.nl-frame`). Sources and Newsletter use boxed panels like the rest of the site.
+  - **Digest sender is newsletter@embodiment.place** (`EP_DIGEST_FROM`, passed as `msg.from` to `sendMail`). If
+    Cloudflare refuses that sender, `sendMail` retries from the default `EP_MAIL_FROM` (no-reply@) and logs
+    `[mail] sender ... refused`. Other emails still come from no-reply@.
+  - CSS block `epWl2`.
+
 - **#22 Watchlist: more news, working arrange, digest emails, one-tap watching.**
   - **More in the feed.** The Watchlist used to show only posts, papers and jobs, so following a company showed
     almost nothing. It now also shows launches (products), models, funding rounds, deployments, events and datasets

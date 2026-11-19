@@ -2796,6 +2796,7 @@ function providerOf(env, _db) {
 	return "log";
 }
 // epMail: every email uses the website's Hommik theme (teal-cool): same colours, fonts, square boxes and mono labels.
+const EP_DIGEST_FROM = "newsletter@embodiment.place";
 const EP_MAIL = { bg: "#f3f5f6", paper: "#fafcfc", ink: "#121516", muted: "#5c6168", faint: "#9aa2a6", hair: "#d7dcde", bar: "#e6eaec", accent: "#007a72", sans: "'Helvetica Neue', Helvetica, Arial, sans-serif", mono: "'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace" };
 function epMailSite(env) {
 	return (env.EP_SITE_URL || "https://embodiment.place").replace(/\/$/, "");
@@ -2813,13 +2814,21 @@ async function sendMail(db, env, msg) {
 	let error = "";
 	if (provider === "cf" && env.EMAIL) try {
 		const from = env.EP_MAIL_FROM || env.EP_SMTP_FROM || "no-reply@embodiment.place";
-		await env.EMAIL.send({
-			from,
+		const send = (f) => env.EMAIL.send({
+			from: f,
 			to: msg.to,
 			subject: msg.subject,
 			html: msg.html,
 			text: msg.text || ""
 		});
+		// msg.from (e.g. newsletter@ for the Watchlist digest) falls back to the default sender if Cloudflare refuses it.
+		if (msg.from && msg.from !== from) try {
+			await send(msg.from);
+		} catch (ex) {
+			console.log("[mail] sender " + msg.from + " refused, using " + from + ": " + (ex instanceof Error ? ex.message : String(ex)));
+			await send(from);
+		}
+		else await send(from);
 		status = "sent";
 	} catch (ex) {
 		error = ex instanceof Error ? ex.message : String(ex);
@@ -2837,7 +2846,7 @@ async function sendMail(db, env, msg) {
 				subject: msg.subject,
 				html: msg.html,
 				text: msg.text || "",
-				from: env.EP_SMTP_FROM || env.EP_MAIL_FROM || ""
+				from: msg.from || env.EP_SMTP_FROM || env.EP_MAIL_FROM || ""
 			})
 		});
 		if (!r.ok) {
@@ -18042,6 +18051,7 @@ async function watchlistPayload(c, days = 30) {
 		tab: "feed",
 		empty: true,
 		days,
+		digest: epDigestInfo(u),
 		suggest: await epWatchSuggest(c.env.DB, u.id, src),
 		sources: src,
 		order,
@@ -18093,6 +18103,7 @@ async function watchlistPayload(c, days = 30) {
 		tab: "feed",
 		empty: false,
 		days,
+		digest: epDigestInfo(u),
 		sources: src,
 		order,
 		hidden: [...hidden],
@@ -18151,6 +18162,7 @@ async function sourcesPayload(c) {
 	return {
 		tab: "sources",
 		sources: src,
+		digest: epDigestInfo(c.get("auth").user),
 		suggest: await epWatchSuggest(c.env.DB, c.get("auth").user.id, src),
 		sections: WL_SECTIONS
 	};
@@ -18234,6 +18246,8 @@ async function newsletterPayload(c) {
 			last_sent: prefs.last_sent || ""
 		},
 		items: feed.items || {},
+		sources: feed.sources,
+		preview_html: epDigest(c.env, c.get("auth").user.id, feed.items || {}, days).html,
 		sections: WL_SECTIONS
 	};
 }
@@ -18295,6 +18309,11 @@ function epDigest(env, uid, items, days) {
 		text: lines.join("\n")
 	};
 }
+// epDigestInfo: the digest schedule shown in the Watchlist side panel.
+function epDigestInfo(u) {
+	const pr = prefsOf(u);
+	return { freq: pr.freq || "off", day: Number(pr.day || 0), hour: Number(pr.hour ?? 8), last_sent: pr.last_sent || "", email: Boolean(pr.email), email_verified: Boolean(pr.email_verified) };
+}
 // epLocalTime: weekday (0 = Monday, like WEEKDAYS) and hour in the member's own time zone.
 function epLocalTime(tz, d) {
 	try {
@@ -18328,7 +18347,7 @@ async function epDigestCron(env) {
 			const items = (await watchlistPayload(ctx, days)).items || {};
 			const d = epDigest(env, u.id, items, days);
 			if (!d.total) continue;
-			const err = await sendMail(env.DB, env, { to: pr.email, subject: d.subject, html: d.html, text: d.text });
+			const err = await sendMail(env.DB, env, { to: pr.email, from: EP_DIGEST_FROM, subject: d.subject, html: d.html, text: d.text });
 			if (!err) {
 				pr.last_sent = pr.auto_sent = now.toISOString().slice(0, 16);
 				await env.DB.prepare("UPDATE users SET prefs=? WHERE id=?").bind(JSON.stringify(pr), u.id).run();
@@ -18345,12 +18364,17 @@ async function postWlSend(c) {
 	const days = Math.max(1, Math.min(31, parseInt((all.days || ["7"]).slice(-1)[0], 10) || 7));
 	const pr = prefsOf(c.get("auth").user);
 	const email = String(pr.email || "");
-	if (!email) return c.redirect("/watchlist/newsletter?sent=" + encodeURIComponent("Set your email address first."));
-	if (!pr.email_verified) return c.redirect("/watchlist/newsletter?sent=" + encodeURIComponent("Confirm your email first (Account, then Settings)."));
+	const wantsJson = c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("json");
+	const reply = (ok, msg, kind) => wantsJson ? c.json({ ok, kind, message: msg, next: `/watchlist/newsletter?days=${days}&sent=${encodeURIComponent(msg)}` }) : c.redirect(`/watchlist/newsletter?days=${days}&sent=${encodeURIComponent(msg)}`);
+	if (!await mailConfigured(c.env.DB, c.env)) return reply(false, "Email sending isn't set up on this site yet.", "error");
+	if (!email) return reply(false, "Add your email address first (Account, then Settings).", "error");
+	if (!pr.email_verified) return reply(false, "Confirm your email first (Account, then Settings).", "error");
 	const items = (await watchlistPayload(c, days)).items || {};
 	const { total, html, text, subject } = epDigest(c.env, c.get("auth").user.id, items, days);
+	if (!total) return reply(false, `Nothing new from what you watch in ${days === 1 ? "the last day" : days === 7 ? "the last week" : "the last month"}, so no email was sent. Try a longer range or watch more things.`, "empty");
 	const err = await sendMail(c.env.DB, c.env, {
 		to: email,
+		from: EP_DIGEST_FROM,
 		subject,
 		html,
 		text,
@@ -18363,13 +18387,8 @@ async function postWlSend(c) {
 		pr.last_sent = (/* @__PURE__ */ new Date()).toISOString().slice(0, 16);
 		await c.env.DB.prepare("UPDATE users SET prefs=? WHERE id=?").bind(JSON.stringify(pr), c.get("auth").user.id).run();
 	}
-	const msg = err || "Sent to " + email + (c.env.EP_ENV !== "production" ? " (logged, not delivered)" : "");
-	if (c.req.path.startsWith("/api/")) return c.json({
-		ok: !err,
-		message: msg,
-		next: `/watchlist/newsletter?days=${days}&sent=${encodeURIComponent(msg)}`
-	});
-	return c.redirect(`/watchlist/newsletter?days=${days}&sent=${encodeURIComponent(msg)}`);
+	if (err) return reply(false, "The email couldn't be sent: " + err, "error");
+	return reply(true, `Sent ${total} new item${total === 1 ? "" : "s"} to ${email}${c.env.EP_ENV !== "production" ? " (logged, not delivered)" : ""}. It can take a minute to arrive.`, "sent");
 }
 async function unsubscribe(c) {
 	const uid = c.req.query("u") || "";

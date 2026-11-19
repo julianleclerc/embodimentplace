@@ -25,9 +25,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#20 Walkers can't widen the page.** On phones, walking to the right edge pushed the character 9px past the screen,
+- **#20 Walkers can't widen the page; walk chat filter on your own screen.** On phones, walking to the right edge pushed the character 9px past the screen,
   so the page could scroll sideways. Your walker now stays at least 22px from each edge (the step in `we`), and the
   walker layer clips anything wider on the sides (CSS block `epWalkClip`, `overflow-x:clip`).
+  - **Walk chat filter on your own screen.** The server already swapped curse words in walker speech for everyone
+    else, but your own bubble and the walk log showed what you typed. The client now runs the same filter before
+    showing it (`epMeowC`, a copy of the Worker's `epMeow`). The noise is picked from the word instead of at random,
+    so you and everyone else see the same one.
 - **#19 Card placement correction, phone walkers in the middle on PC.** The "card on the left" request was meant for the Lounge, not for characters.
   - Character cards in Place and for walkers are back to how they were before #16, above the character on desktop
     and phones. The phone bottom sheet (`.epp-sheet`) is no longer used.

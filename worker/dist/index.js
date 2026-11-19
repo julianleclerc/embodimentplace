@@ -6530,7 +6530,10 @@ var EP_CURSE_RE = new RegExp("\\b(?:" + [
 function epMeow(text) {
 	if (!text) return text;
 	return String(text).replace(EP_CURSE_RE, (w) => {
-		const n = EP_ANIMAL_NOISES[Math.floor(Math.random() * EP_ANIMAL_NOISES.length)];
+		let h = 0;
+		for (const ch of w.toLowerCase()) h = h * 31 + ch.charCodeAt(0) >>> 0;
+		// Picked from the word, so the server and the walker's own screen show the same noise.
+		const n = EP_ANIMAL_NOISES[h % EP_ANIMAL_NOISES.length];
 		return w.length > 1 && w === w.toUpperCase() ? n.toUpperCase() : /^[A-Z]/.test(w) ? n[0].toUpperCase() + n.slice(1) : n;
 	});
 }

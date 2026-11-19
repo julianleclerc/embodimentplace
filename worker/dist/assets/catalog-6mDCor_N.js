@@ -836,7 +836,7 @@ var WL_SECTIONS = [
 	[
 		"companies",
 		"News",
-		"Posts, launches, funding and deployments from organisations you follow"
+		"Posts and news from organisations you follow"
 	],
 	[
 		"research",
@@ -851,20 +851,14 @@ var WL_SECTIONS = [
 	[
 		"topics",
 		"Topics",
-		"Anything matching the topics you follow"
-	],
-	[
-		"jobs",
-		"Jobs",
-		"Open jobs at organisations you follow"
+		"Posts matching the topics you follow"
 	]
 ];
 var WL_DEFAULT = [
 	"companies",
 	"research",
 	"videos",
-	"topics",
-	"jobs"
+	"topics"
 ];
 var WEEKDAYS = [
 	"Monday",

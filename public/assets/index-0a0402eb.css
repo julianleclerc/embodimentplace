@@ -115,3 +115,7 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 /* epCards3: @username in the header, name in the body above the title */
 .epp-nm{font-weight:700;font-size:1.2rem;line-height:1.2;letter-spacing:-.01em;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .epp-bd{flex:1 0 auto;overflow:visible}.epp-soc{flex-wrap:wrap;max-width:100%}.epp-s{flex:none}
+
+/* epLoungeCard: tap a name in the Lounge for their card */
+.cw-who{all:unset;cursor:pointer;display:inline}.cw-who b{text-decoration:underline;text-decoration-color:transparent;text-underline-offset:2px}.cw-who:hover b,.cw-who:focus-visible b{text-decoration-color:currentColor}.cw-who:focus-visible{outline:2px solid var(--accent);outline-offset:1px}.epp-card.epp-float.epp-below:after{top:-7px;bottom:auto;transform:translateX(-50%) rotate(-135deg)}.epp-card.epp-float{z-index:2147483647}
+.cw-mh button.cw-who{display:inline;margin:0;opacity:1;padding:0;text-decoration:none;color:inherit;text-transform:inherit}.cw-msg.cont .cw-mh button.cw-who{display:none}

@@ -25,6 +25,11 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#15 Lounge names open cards, plus this log.**
+  - In the Lounge, a member's name in a message is a button (`.cw-who`, data `u`). Tapping it opens the same card as
+    tapping their character (`epCardOpen`, CSS block `epLoungeCard`). Guests' names stay plain text.
+  - The card flips below the name when there's no room above (`.epp-below`), and it sits above the Lounge panel.
+  - Added `AGENTS.md` and this `CHANGELOG.md`. The per-change notes that were in `README.md` moved here.
 - **#14 Card layout.** The card header shows `@username` at the top left. The Name, when set, is the first line of
   the body, above the position and company (`.epp-nm`, CSS block `epCards3`). The card keeps 4:3 as its smallest
   shape but grows taller, so every social icon shows on phones.

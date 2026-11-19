@@ -151,9 +151,10 @@ async function socialState(db, auth, ids) {
 		watching: /* @__PURE__ */ new Set()
 	};
 	if (!ids.length) return empty;
-	const ph = ids.map(() => "?").join(",");
+	const ph = "SELECT value FROM json_each(?)";
+	const idsJson = JSON.stringify(ids);
 	const count = async (table, col) => {
-		const { results } = await db.prepare(`SELECT ${col} AS id, COUNT(*) AS n FROM ${table} WHERE ${col} IN (${ph}) GROUP BY ${col}`).bind(...ids).all();
+		const { results } = await db.prepare(`SELECT ${col} AS id, COUNT(*) AS n FROM ${table} WHERE ${col} IN (${ph}) GROUP BY ${col}`).bind(idsJson).all();
 		const m = /* @__PURE__ */ new Map();
 		for (const r of results || []) m.set(Number(r.id), Number(r.n));
 		return m;
@@ -166,7 +167,7 @@ async function socialState(db, auth, ids) {
 	const watching = /* @__PURE__ */ new Set();
 	if (auth.user) {
 		const mark = async (sql, set, ...extra) => {
-			const { results } = await db.prepare(sql).bind(...extra, ...ids).all();
+			const { results } = await db.prepare(sql).bind(...extra, idsJson).all();
 			for (const r of results || []) set.add(Number(r.id));
 		};
 		await mark(`SELECT record_id AS id FROM likes WHERE user_id=? AND record_id IN (${ph})`, liked, auth.user.id);

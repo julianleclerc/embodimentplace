@@ -47,7 +47,8 @@ async function linksFor(db, ids) {
 		outgoing,
 		incoming
 	};
-	const ph = ids.map(() => "?").join(",");
+	// D1 allows at most 100 bound parameters per query, so pass the id list as one JSON parameter.
+	const ph = "SELECT value FROM json_each(?1)";
 	const { results } = await db.prepare(`SELECT l.src, l.dst, l.rel, l.note,
             s.slug AS s_slug, s.name AS s_name, s.type AS s_type, s.summary AS s_summary,
             d.slug AS d_slug, d.name AS d_name, d.type AS d_type, d.summary AS d_summary,
@@ -57,7 +58,7 @@ async function linksFor(db, ids) {
      JOIN records d ON d.id = l.dst
      WHERE (l.src IN (${ph}) OR l.dst IN (${ph}))
        AND s.private = 0 AND d.private = 0
-     ORDER BY l.pos, l.id`).bind(...ids, ...ids).all();
+     ORDER BY l.pos, l.id`).bind(JSON.stringify(ids)).all();
 	for (const raw of results || []) {
 		const r = raw;
 		const src = Number(r.src);
@@ -98,7 +99,7 @@ async function allByIds(db, ids) {
 	const map = /* @__PURE__ */ new Map();
 	if (!ids.length) return map;
 	const uniq = [...new Set(ids)];
-	const rows = await allPublic(db, `SELECT * FROM records WHERE id IN (${uniq.map(() => "?").join(",")}) AND private = 0`, ...uniq);
+	const rows = await allPublic(db, `SELECT * FROM records WHERE id IN (SELECT value FROM json_each(?)) AND private = 0`, JSON.stringify(uniq));
 	for (const r of rows) map.set(r.id, r);
 	return map;
 }
@@ -112,13 +113,14 @@ async function socialCounts(db, ids) {
 		likes,
 		comments
 	};
-	const ph = ids.map(() => "?").join(",");
+	const ph = "SELECT value FROM json_each(?)";
+	const idsJson = JSON.stringify(ids);
 	try {
-		const { results } = await db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM likes WHERE record_id IN (${ph}) GROUP BY record_id`).bind(...ids).all();
+		const { results } = await db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM likes WHERE record_id IN (${ph}) GROUP BY record_id`).bind(idsJson).all();
 		for (const r of results || []) likes.set(Number(r.id), Number(r.n));
 	} catch {}
 	try {
-		const { results } = await db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM comments WHERE record_id IN (${ph}) AND status = 'approved' GROUP BY record_id`).bind(...ids).all();
+		const { results } = await db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM comments WHERE record_id IN (${ph}) AND status = 'approved' GROUP BY record_id`).bind(idsJson).all();
 		for (const r of results || []) comments.set(Number(r.id), Number(r.n));
 	} catch {}
 	return {

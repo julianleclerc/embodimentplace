@@ -555,7 +555,7 @@ function shellPage(c, me) {
 	let bar = "";
 	if (auth.needs_2fa) bar = `<div class="adminbar adminbar-setup"><span>Set up two-step login to use admin and contributor tools.</span><a href="/account/security">Open Security</a></div>`;
 	else if (auth.logged) bar = `<div class=adminbar><span>${`Editing on${auth.is_admin ? "" : " · contributor"}`}</span>${me.bar.map((l) => `<a href="${l.href}">${l.label}</a>`).join("")}</div>`;
-	const account = auth.user ? `<a href="/watchlist">Watchlist</a><a href="/create" class="navcreate">+ Create</a><a href="/account" class="navme" aria-label="Account, ${auth.user.username}">Account</a><form method=post action=/logout class=inline onsubmit="return confirm('Log out of embodiment.place?')"><button class=linkbtn>Log out</button></form>` : `<a href="/login">Log in</a><a href="/join">Sign up</a>`;
+	const account = auth.user ? `<a href="/watchlist">Watchlist</a><a href="/create" class="navcreate">+ Create</a><a href="/account" class="navme" aria-label="Account, ${auth.user.username}">Account</a><form method=post action=/logout class=inline onsubmit="if(window.epLogoutAsk){epLogoutAsk(this);return false}return confirm('Log out of embodiment.place?')"><button class=linkbtn>Log out</button></form>` : `<a href="/login">Log in</a><a href="/join">Sign up</a>`;
 	let main = `<h1>${path}</h1>`;
 	if (path === "/login" || path.startsWith("/login/")) main = `<div class=loginbox><h1>Log in</h1><form method=post action=/login><input name=username><input type=password name=password><button class=btn>Log in</button></form></div>`;
 	if (path === "/join") main = `<div class=loginbox><h1>Create an account</h1></div>`;

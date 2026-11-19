@@ -2795,7 +2795,18 @@ function providerOf(env, _db) {
 	if (env.EP_MAIL_PROVIDER === "smtp" || env.EP_SMTP_HOST) return "smtp";
 	return "log";
 }
+// epMail: every email uses the website's Hommik theme (teal-cool): same colours, fonts, square boxes and mono labels.
+const EP_MAIL = { bg: "#f3f5f6", paper: "#fafcfc", ink: "#121516", muted: "#5c6168", faint: "#9aa2a6", hair: "#d7dcde", bar: "#e6eaec", accent: "#007a72", sans: "'Helvetica Neue', Helvetica, Arial, sans-serif", mono: "'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace" };
+function epMailSite(env) {
+	return (env.EP_SITE_URL || "https://embodiment.place").replace(/\/$/, "");
+}
+function epMailWrap(inner, env, opts = {}) {
+	const m = EP_MAIL, site = epMailSite(env);
+	const foot = opts.foot || `You get this email because of your account on <a href="${site}" style="color:${m.muted}">${SITE_NAME}</a>.`;
+	return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"><style>a{color:${m.accent}}.ep-in p{margin:0 0 14px}.ep-in strong{font-family:${m.mono};font-size:1.25em;letter-spacing:.08em}</style></head><body data-ep-mail style="margin:0;padding:0;background:${m.bg}">` + (opts.preview ? `<div style="display:none;max-height:0;overflow:hidden">${esc(opts.preview)}</div>` : "") + `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${m.bg}"><tr><td align="center" style="padding:24px 12px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:${m.paper};border:2px solid ${m.ink};border-collapse:collapse"><tr><td style="padding:16px 20px;border-bottom:2px solid ${m.ink};font-family:${m.sans};font-size:22px;font-weight:700;letter-spacing:-.02em;color:${m.ink}"><a href="${site}" style="color:${m.ink};text-decoration:none">*embodiment.place</a></td></tr>` + (opts.band ? `<tr><td style="background:${m.ink};padding:8px 20px;font-family:${m.mono};font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:${m.paper}"><span style="display:inline-block;background:${m.accent};color:#fff;padding:2px 8px;margin-right:8px">${esc(opts.band)}</span>${esc(opts.bandNote || "")}</td></tr>` : "") + `<tr><td class="ep-in" style="padding:22px 20px;font-family:${m.sans};font-size:16px;line-height:1.5;color:${m.ink}">${inner}</td></tr><tr><td style="padding:14px 20px;border-top:1px solid ${m.hair};font-family:${m.mono};font-size:11px;line-height:1.6;color:${m.muted}">${foot}</td></tr></table></td></tr></table></body></html>`;
+}
 async function sendMail(db, env, msg) {
+	if (msg.html && !msg.html.includes("data-ep-mail")) msg = { ...msg, html: epMailWrap(msg.html, env) };
 	await ensureMailSchema(db);
 	const provider = providerOf(env, db);
 	let status = "logged";
@@ -3752,6 +3763,7 @@ function hslToRgb(h, s, l) {
 }
 function categoryOf(rec, alias, cats) {
 	if (rec.type === "paper") return "Research";
+	if (EP_WL_CAT[rec.type]) return EP_WL_CAT[rec.type];
 	let c = String(fieldVal(rec.data, "kind") || "Blog");
 	c = alias[c] || c;
 	return cats.includes(c) ? c : "Blog";
@@ -16736,12 +16748,19 @@ async function highlightsOf(db) {
 		pins
 	};
 }
+// Which link points at the organisation behind a feed item (Watchlist shows launches, funding and so on too).
+const EP_ACTOR_REL = { paper: "orgs", product: "maker", model: "developer", funding: "company", deployment: "vendor", datapack: "provider" };
+function epActorRel(type) {
+	return EP_ACTOR_REL[type] || "about";
+}
+// Feed category label for records that aren't posts or papers.
+const EP_WL_CAT = { product: "Launch", model: "Model", funding: "Funding", deployment: "Deployment", event: "Event", datapack: "Dataset" };
 async function feedItems(db, recs) {
 	if (!recs.length) return [];
 	const { outgoing } = await linksFor(db, recs.map((r) => r.id));
 	const actorIds = [];
 	for (const r of recs) {
-		const rel = r.type === "paper" ? "orgs" : "about";
+		const rel = epActorRel(r.type);
 		const actor = ((outgoing.get(r.id) || {})[rel] || []).find((x) => ORG_TYPES.includes(x.type) && x.note !== "cc");
 		if (actor) actorIds.push(actor.id);
 	}
@@ -16749,7 +16768,7 @@ async function feedItems(db, recs) {
 	const soc = await socialCounts(db, recs.map((r) => r.id));
 	return recs.map((r) => {
 		const links = outgoing.get(r.id) || {};
-		const actorHit = (links[r.type === "paper" ? "orgs" : "about"] || []).find((x) => ORG_TYPES.includes(x.type) && x.note !== "cc");
+		const actorHit = (links[epActorRel(r.type)] || []).find((x) => ORG_TYPES.includes(x.type) && x.note !== "cc");
 		const actorRec = actorHit ? actors.get(actorHit.id) : void 0;
 		const isPaper = r.type === "paper";
 		const link = isPaper ? fieldStr(r.data, "url") : fieldStr(r.data, "link");
@@ -16761,7 +16780,7 @@ async function feedItems(db, recs) {
 		const creditNames = credits.slice(0, 2).map(([n]) => n);
 		let credit = creditNames.length ? "By " + creditNames.join(", ") : "";
 		if (credits.length > 2) credit += ` +${credits.length - 2}`;
-		const mins = r.body || r.body_len ? readMinutes(r.body || "", r.body_len) : 0;
+		const mins = (r.body || r.body_len) && (r.type === "post" || r.type === "paper") ? readMinutes(r.body || "", r.body_len) : 0;
 		const meta = [
 			relDate(feedDate(r)),
 			credit,
@@ -18023,6 +18042,7 @@ async function watchlistPayload(c, days = 30) {
 		tab: "feed",
 		empty: true,
 		days,
+		suggest: await epWatchSuggest(c.env.DB, u.id, src),
 		sources: src,
 		order,
 		hidden: [...hidden],
@@ -18034,7 +18054,7 @@ async function watchlistPayload(c, days = 30) {
 	const oids = new Set(src.orgs.map((o) => o.id));
 	const rids = new Set(src.records.map((r) => r.id));
 	const topics = src.topics.map((t) => t.toLowerCase());
-	const rows = await allPublic(c.env.DB, "SELECT * FROM records WHERE type IN ('post','paper','job') AND (private=0 OR ?) AND (created>=? OR updated>=? OR COALESCE(feed_at,'')>=?) ORDER BY COALESCE(feed_at, substr(created,1,10),'') DESC, id DESC LIMIT 400", c.get("auth").see_private ? 1 : 0, since, since, since);
+	const rows = await allPublic(c.env.DB, "SELECT * FROM records WHERE type IN ('post','paper','job','product','model','funding','deployment','event','datapack') AND (private=0 OR ?) AND (created>=? OR updated>=? OR COALESCE(feed_at,'')>=?) ORDER BY COALESCE(feed_at, substr(created,1,10),'') DESC, id DESC LIMIT 400", c.get("auth").see_private ? 1 : 0, since, since, since);
 	const { outgoing } = await linksFor(c.env.DB, rows.map((r) => r.id));
 	const out = {};
 	for (const k of order) if (!hidden.has(k)) out[k] = [];
@@ -18080,12 +18100,58 @@ async function watchlistPayload(c, days = 30) {
 		items
 	};
 }
+// epWatch: one-tap watching from anywhere (org cards, map pins, suggestions, Sources search), keyed by record slug.
+const EP_WL_TOPICS = ["humanoid", "VLA", "dexterous hands", "tactile", "warehouse", "home robot", "foundation model", "teleoperation"];
+async function epWatchedSlugs(db, uid) {
+	await ensureExtraSchema(db);
+	const { results } = await db.prepare("SELECT r.slug FROM follows f JOIN records r ON r.id=f.company_id WHERE f.user_id=? UNION SELECT r.slug FROM watch_sources w JOIN records r ON r.id=CAST(w.ref AS INTEGER) WHERE w.user_id=? AND w.kind='record'").bind(uid, uid).all();
+	return (results || []).map((r) => String(r.slug));
+}
+function epSuggestCard(r) {
+	return { id: r.id, slug: r.slug, name: r.name, type: r.type, type_label: TYPE_LABELS[r.type]?.label || r.type, summary: String(r.summary || "").slice(0, 120), ph: phModel(r, "av") };
+}
+async function epWatchSuggest(db, uid, src) {
+	const have = new Set(await epWatchedSlugs(db, uid));
+	const topics = new Set((src?.topics || []).map((t) => t.toLowerCase()));
+	const ranked = (types, n) => allPublic(db, `SELECT r.*, (SELECT COUNT(*) FROM links l WHERE l.src=r.id OR l.dst=r.id) AS ep_n FROM records r WHERE r.type IN (SELECT value FROM json_each(?)) AND r.private=0 AND COALESCE(r.demo,0)=0 ORDER BY ep_n DESC, r.name COLLATE NOCASE LIMIT ?`, JSON.stringify(types), n + 30);
+	const orgs = (await ranked(ORG_TYPES_LIST, 8)).filter((r) => !have.has(r.slug)).slice(0, 8).map(epSuggestCard);
+	const robots = (await ranked(["product", "model"], 6)).filter((r) => !have.has(r.slug)).slice(0, 6).map(epSuggestCard);
+	return { orgs, robots, topics: EP_WL_TOPICS.filter((t) => !topics.has(t.toLowerCase())) };
+}
+async function epWatchIds(c) {
+	const u = c.get("auth").user;
+	if (!u) return c.json({ slugs: [], user: false });
+	return c.json({ slugs: await epWatchedSlugs(c.env.DB, u.id), user: true });
+}
+async function epWatchToggle(c) {
+	const u = c.get("auth").user;
+	if (!u) return c.json({ error: "Log in to watch things." }, 401);
+	await ensureExtraSchema(c.env.DB);
+	const all = await formAll(c);
+	const slug = String((all.slug || [""]).slice(-1)[0] || "").trim();
+	const row = slug ? await c.env.DB.prepare("SELECT * FROM records WHERE slug=?").bind(slug).first() : null;
+	if (!row || Number(row.private || 0) && !c.get("auth").see_private) return c.json({ error: "Not found" }, 404);
+	const want = String((all.on || [""]).slice(-1)[0] || "");
+	const org = ORG_TYPES_LIST.includes(String(row.type));
+	const has = org ? await c.env.DB.prepare("SELECT 1 FROM follows WHERE user_id=? AND company_id=?").bind(u.id, row.id).first() : await c.env.DB.prepare("SELECT 1 FROM watch_sources WHERE user_id=? AND kind='record' AND ref=?").bind(u.id, String(row.id)).first();
+	const on = want === "1" ? true : want === "0" ? false : !has;
+	if (on && !has) {
+		if (org) await c.env.DB.prepare("INSERT OR IGNORE INTO follows(user_id,company_id,created) VALUES(?,?,?)").bind(u.id, row.id, nowStamp()).run();
+		else await c.env.DB.prepare("INSERT OR IGNORE INTO watch_sources(user_id,kind,ref,created) VALUES(?,?,?,?)").bind(u.id, "record", String(row.id), nowStamp()).run();
+	} else if (!on && has) {
+		if (org) await c.env.DB.prepare("DELETE FROM follows WHERE user_id=? AND company_id=?").bind(u.id, row.id).run();
+		else await c.env.DB.prepare("DELETE FROM watch_sources WHERE user_id=? AND kind='record' AND ref=?").bind(u.id, String(row.id)).run();
+	}
+	return c.json({ ok: true, on, slug: row.slug, org });
+}
 async function sourcesPayload(c) {
 	const denied = needUser(c);
 	if (denied) return denied;
+	const src = await wlSources(c.env.DB, c.get("auth").user.id);
 	return {
 		tab: "sources",
-		sources: await wlSources(c.env.DB, c.get("auth").user.id),
+		sources: src,
+		suggest: await epWatchSuggest(c.env.DB, c.get("auth").user.id, src),
 		sections: WL_SECTIONS
 	};
 }
@@ -18164,6 +18230,7 @@ async function newsletterPayload(c) {
 			freq: prefs.freq || "off",
 			day: Number(prefs.day || 0),
 			hour: Number(prefs.hour ?? 8),
+			tz: prefs.tz || "",
 			last_sent: prefs.last_sent || ""
 		},
 		items: feed.items || {},
@@ -18183,6 +18250,7 @@ async function postWlSchedule(c) {
 	].includes(g("freq")) ? g("freq") : "off";
 	pr.day = /^\d+$/.test(g("day")) && Number(g("day")) < 7 ? Number(g("day")) : 0;
 	pr.hour = /^\d+$/.test(g("hour")) && Number(g("hour")) < 24 ? Number(g("hour")) : 8;
+	if (g("tz") && epLocalTime(g("tz"), new Date())) pr.tz = g("tz").slice(0, 64);
 	await c.env.DB.prepare("UPDATE users SET prefs=? WHERE id=?").bind(JSON.stringify(pr), c.get("auth").user.id).run();
 	if (c.req.path.startsWith("/api/")) return c.json({
 		ok: true,
@@ -18194,6 +18262,82 @@ function unsubLink(env, uid) {
 	const secret = env.EP_SECRET || "";
 	return `${(env.EP_SITE_URL || "").replace(/\/$/, "") || ""}/unsubscribe?u=${uid}&s=${sign("unsub:" + uid, secret)}`;
 }
+// epDigest: the watchlist email, laid out like the Watchlist page (black bands per section, cards with a teal label).
+function epDigest(env, uid, items, days) {
+	const m = EP_MAIL, site = epMailSite(env);
+	const names = Object.fromEntries(WL_SECTIONS.map(([k, n]) => [k, n]));
+	const abs = (h) => /^https?:/.test(h || "") ? h : site + (h || "/");
+	const total = Object.values(items).reduce((n, xs) => n + xs.length, 0);
+	const span = days === 1 ? "the last day" : days === 7 ? "the last week" : `the last ${days} days`;
+	let inner = `<p style="margin:0 0 18px;color:${m.muted}">${total ? `${total} new from what you watch in ${span}.` : `Nothing new from what you watch in ${span}.`}</p>`;
+	const lines = [`${total} new on your ${SITE_NAME} watchlist (${span}).`, ""];
+	for (const [k, xs] of Object.entries(items)) {
+		if (!xs.length) continue;
+		inner += `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 10px;border-collapse:collapse"><tr><td style="background:${m.ink};color:${m.paper};padding:6px 10px;font-family:${m.mono};font-size:12px;letter-spacing:.08em;text-transform:uppercase">${esc(names[k] || k)}</td><td align="right" style="background:${m.ink};color:${m.paper};padding:6px 10px;font-family:${m.mono};font-size:12px">${xs.length}</td></tr></table>`;
+		lines.push(String(names[k] || k).toUpperCase());
+		for (const x of xs) {
+			const href = abs(x.href);
+			const meta = [x.who?.name, x.meta].filter(Boolean).join(" · ");
+			inner += `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 10px;border:1px solid ${m.ink};border-collapse:collapse;background:#fff"><tr><td style="padding:12px 14px"><div style="font-family:${m.mono};font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:${m.accent};margin:0 0 4px">${esc(x.category || "")}</div><a href="${esc(href)}" style="font-family:${m.sans};font-size:17px;font-weight:700;line-height:1.3;color:${m.ink};text-decoration:none">${esc(x.name)}</a>` + (x.excerpt ? `<div style="font-size:14px;line-height:1.45;color:${m.muted};margin:6px 0 0">${esc(String(x.excerpt).slice(0, 220))}</div>` : "") + (meta ? `<div style="font-family:${m.mono};font-size:11px;color:${m.faint};margin:8px 0 0">${esc(meta)}</div>` : "") + `</td></tr></table>`;
+			lines.push(`- ${x.name}: ${href}`);
+		}
+		inner += `<div style="height:10px"></div>`;
+		lines.push("");
+	}
+	inner += `<table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 0"><tr><td style="background:${m.ink}"><a href="${site}/watchlist" style="display:inline-block;padding:10px 16px;font-family:${m.mono};font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:${m.paper};text-decoration:none">Open your watchlist</a></td></tr></table>`;
+	const unsub = unsubLink(env, uid);
+	const foot = `<a href="${site}/watchlist/newsletter" style="color:${m.muted}">Change when this arrives</a> · <a href="${esc(unsub)}" style="color:${m.muted}">Unsubscribe</a>`;
+	lines.push(`Open your watchlist: ${site}/watchlist`, `Change when this arrives: ${site}/watchlist/newsletter`, `Unsubscribe: ${unsub}`);
+	return {
+		total,
+		subject: `${SITE_NAME}: your watchlist, ${total} new`,
+		html: epMailWrap(inner, env, { band: "Watchlist", bandNote: span, foot, preview: `${total} new from what you watch` }),
+		text: lines.join("\n")
+	};
+}
+// epLocalTime: weekday (0 = Monday, like WEEKDAYS) and hour in the member's own time zone.
+function epLocalTime(tz, d) {
+	try {
+		const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: tz || "UTC", weekday: "long", hour: "numeric", hourCycle: "h23" }).formatToParts(d).map((x) => [x.type, x.value]));
+		return { day: WEEKDAYS.indexOf(p.weekday), hour: Number(p.hour) % 24 };
+	} catch {
+		return null;
+	}
+}
+// epDigestCron: runs every hour (wrangler.json triggers.crons) and sends each member's digest at the day and hour they picked.
+async function epDigestCron(env) {
+	if (!await mailConfigured(env.DB, env)) return;
+	const now = new Date();
+	const { results } = await env.DB.prepare("SELECT * FROM users WHERE disabled=0 AND json_extract(prefs,'$.freq') IN ('daily','weekly')").all();
+	for (const u of results || []) {
+		try {
+			const pr = prefsOf(u);
+			if (!pr.email || !pr.email_verified) continue;
+			const t = epLocalTime(pr.tz || "UTC", now);
+			if (!t || t.hour !== Number(pr.hour ?? 8)) continue;
+			if (pr.freq === "weekly" && t.day !== Number(pr.day || 0)) continue;
+			const last = pr.auto_sent ? Date.parse(pr.auto_sent + ":00Z") : 0;
+			if (last && now.getTime() - last < (pr.freq === "daily" ? 20 : 6 * 24) * 36e5) continue;
+			const days = pr.freq === "daily" ? 1 : 7;
+			const ctx = {
+				env,
+				get: (k) => k === "auth" ? { user: u, see_private: false } : void 0,
+				req: { url: epMailSite(env) + "/watchlist", path: "/cron", query: () => void 0, header: () => "" },
+				redirect: () => null
+			};
+			const items = (await watchlistPayload(ctx, days)).items || {};
+			const d = epDigest(env, u.id, items, days);
+			if (!d.total) continue;
+			const err = await sendMail(env.DB, env, { to: pr.email, subject: d.subject, html: d.html, text: d.text });
+			if (!err) {
+				pr.last_sent = pr.auto_sent = now.toISOString().slice(0, 16);
+				await env.DB.prepare("UPDATE users SET prefs=? WHERE id=?").bind(JSON.stringify(pr), u.id).run();
+			}
+		} catch (ex) {
+			console.log("[digest] user " + u.id + ": " + (ex instanceof Error ? ex.message : String(ex)));
+		}
+	}
+}
 async function postWlSend(c) {
 	const denied = needUser(c);
 	if (denied) return denied;
@@ -18204,17 +18348,14 @@ async function postWlSend(c) {
 	if (!email) return c.redirect("/watchlist/newsletter?sent=" + encodeURIComponent("Set your email address first."));
 	if (!pr.email_verified) return c.redirect("/watchlist/newsletter?sent=" + encodeURIComponent("Confirm your email first (Account, then Settings)."));
 	const items = (await watchlistPayload(c, days)).items || {};
-	const total = Object.values(items).reduce((n, xs) => n + xs.length, 0);
-	const bits = Object.entries(items).map(([k, xs]) => `<h2>${k}</h2>` + xs.map((x) => `<p>${x.name}</p>`).join(""));
-	const link = unsubLink(c.env, c.get("auth").user.id);
-	const html = `<div>${bits.join("")}<p>Unsubscribe: <a href="${link}">${link}</a></p></div>`;
+	const { total, html, text, subject } = epDigest(c.env, c.get("auth").user.id, items, days);
 	const err = await sendMail(c.env.DB, c.env, {
 		to: email,
-		subject: `${SITE_NAME}: your watchlist, ${total} new`,
+		subject,
 		html,
-		text: `${total} new items. Unsubscribe: ${link}`,
+		text,
 		headers: {
-			"List-Unsubscribe": `<${link}>`,
+			"List-Unsubscribe": `<${unsubLink(c.env, c.get("auth").user.id)}>`,
 			"List-Unsubscribe-Post": "List-Unsubscribe=One-Click"
 		}
 	});
@@ -20592,6 +20733,8 @@ api.get("/watchlist/sources", async (c) => {
 	const d = await sourcesPayload(c);
 	return d instanceof Response ? d : c.json(d);
 });
+api.get("/watchlist/ids", epWatchIds);
+api.post("/watchlist/toggle", epWatchToggle);
 api.get("/watchlist/newsletter", async (c) => {
 	const d = await newsletterPayload(c);
 	return d instanceof Response ? d : c.json(d);
@@ -21141,9 +21284,14 @@ app.all("*", async (c) => {
 	return c.html(shellPage(c, me), 200);
 });
 // \0virtual:cloudflare/worker-entry
-var worker_entry_default = { async fetch(request, env, ctx) {
-	return app.fetch(request, env, ctx);
-} };
+var worker_entry_default = {
+	async fetch(request, env, ctx) {
+		return app.fetch(request, env, ctx);
+	},
+	async scheduled(event, env, ctx) {
+		ctx.waitUntil(epDigestCron(env));
+	}
+};
 export { LiveHub, app, worker_entry_default as default };
 
 //# sourceMappingURL=index.js.map

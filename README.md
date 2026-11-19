@@ -67,6 +67,16 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   `document` listeners, and the socket reconnects to the new page (`ep-page` listener in the socket client). The legs
   hang from the body and the stepping foot lifts and swings forward (`ep-step`, `ep-step-r`, `ep-step-l`); before, the
   leg shrank upward from a planted foot, which read as walking backwards.
+- 2026-11-19: Community has a new first tab, Place (`/community`, component `epPlace`, engine `epPlaceRun`, CSS
+  block `epp-` at the end of the stylesheet). Every member's character wanders around a stage; tapping one opens a
+  speech-bubble card (`epPlaceCard`) with their username, byline (title, organisation, bio) and public posts. The
+  Worker serves it from `GET /api/community/place` (`epPlacePayload`). Everyone, visitors included, sees every
+  character except members who turned "Show my character in Place" off (Account, Settings, `prefs.place_hide`). The
+  byline and social links (X, LinkedIn, Discord, Instagram, saved in `prefs.socials` by action `place`, checked by
+  `epSocial`) follow Profile visibility. Location, interests, email and other introduction fields are never sent.
+  The card sits above the character's head, 4:3, centred, with social icons (`epSocSvg`). "Tell us what you need" moved to
+  `/community/need` (old `/community?sent=` and `?err=` links still show it).
+  Resting characters use the `idle` class so they share the walker's idle and step animations.
 
 ## How it stays in sync
 

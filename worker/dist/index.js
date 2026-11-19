@@ -4130,6 +4130,8 @@ async function accountPayload(c, tab = "overview") {
 		email: String(pr.email || ""),
 		email_verified: !!pr.email_verified,
 		profile_vis: String(pr.profile_vis || "members"),
+		place_show: !pr.place_hide,
+		socials: pr.socials && typeof pr.socials === "object" ? pr.socials : {},
 		totp: Boolean(u.totp),
 		counts,
 		companies,
@@ -4165,6 +4167,22 @@ async function postAccount(c) {
 		return c.json({
 			ok: true,
 			message: "Profile visibility saved."
+		});
+	}
+	if (act === "place") {
+		const socials = {};
+		for (const k of EP_SOCIALS) {
+			const v = epSocial(k, g["social_" + k]);
+			if (v === null) return c.json({ error: { x: "That X link or handle doesn't look right.", linkedin: "Use your LinkedIn profile link (linkedin.com/in/...).", discord: "Use your Discord username or a discord.gg invite link.", instagram: "That Instagram link or handle doesn't look right." }[k] }, 400);
+			if (v) socials[k] = v;
+		}
+		pr.socials = socials;
+		if (g.place_show === "1") delete pr.place_hide;
+		else pr.place_hide = true;
+		await savePrefs(c.env.DB, u.id, pr);
+		return c.json({
+			ok: true,
+			message: "Place settings saved."
 		});
 	}
 	if (act === "email") {
@@ -18275,7 +18293,7 @@ async function communityPayload(c) {
 }
 async function postMeet(c) {
 	const auth = c.get("auth");
-	if (!auth.user) return c.redirect("/login?next=/community");
+	if (!auth.user) return c.redirect("/login?next=/community/need");
 	await ensureExtraSchema(c.env.DB);
 	const all = await formAll(c);
 	const g = (k) => ((all[k] || [""]).slice(-1)[0] || "").trim();
@@ -18285,10 +18303,10 @@ async function postMeet(c) {
 	const go = (q) => {
 		if (c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("json")) return c.json({
 			ok: q.startsWith("sent"),
-			next: "/community?" + q,
+			next: "/community/need?" + q,
 			error: q.startsWith("err=") ? decodeURIComponent(q.slice(4)) : void 0
 		}, q.startsWith("err") ? 400 : 200);
-		return c.redirect("/community?" + q);
+		return c.redirect("/community/need?" + q);
 	};
 	if (!need || !why) return go("err=" + encodeURIComponent("Pick what you need and describe it in a few words."));
 	if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return go("err=" + encodeURIComponent("Add an email address we can introduce you at."));
@@ -18315,15 +18333,15 @@ async function postMeet(c) {
 }
 async function postWithdraw(c) {
 	const auth = c.get("auth");
-	if (!auth.user) return c.redirect("/login?next=/community");
+	if (!auth.user) return c.redirect("/login?next=/community/need");
 	const all = await formAll(c);
 	const id = Number((all.id || [""]).slice(-1)[0] || 0);
 	await c.env.DB.prepare("UPDATE meet_requests SET status='withdrawn', decided=datetime('now') WHERE id=? AND user_id=? AND status='pending'").bind(id, auth.user.id).run();
 	if (c.req.path.startsWith("/api/")) return c.json({
 		ok: true,
-		next: "/community?sent=withdrawn"
+		next: "/community/need?sent=withdrawn"
 	});
-	return c.redirect("/community?sent=withdrawn");
+	return c.redirect("/community/need?sent=withdrawn");
 }
 async function meetAdminPayload(c) {
 	if (!can(c.get("auth"), "meet")) return {
@@ -20432,6 +20450,106 @@ api.get("/admin/requests", async (c) => {
 	if (g) return c.json({ error: g.body || "Not found" }, g.status);
 	return c.json(await requestsAdminPayload(c));
 });
+// epPlace: characters for the Community "Place" hub. Public fields only: username, character look,
+// public post count and latest post, and the byline (title, organisation, bio) when the member's
+// profile visibility allows the viewer to see it, with their social links. Everyone's character is shown
+// unless they turned it off under Account, Settings (prefs.place_hide).
+// epSocial: links a member adds for their Place card (Account, Settings). Returns a clean value or null if invalid.
+function epSocial(kind, raw) {
+	let s = String(raw || "").trim().slice(0, 200);
+	if (!s) return "";
+	const hosts = {
+		x: ["x.com", "twitter.com"],
+		instagram: ["instagram.com"],
+		linkedin: ["linkedin.com"],
+		discord: ["discord.com", "discord.gg"]
+	}[kind];
+	if (!hosts) return null;
+	if (/^https?:\/\//i.test(s) || /^(www\.)?[a-z0-9.-]+\.[a-z]{2,}\//i.test(s)) {
+		let u;
+		try {
+			u = new URL(/^https?:\/\//i.test(s) ? s : "https://" + s);
+		} catch {
+			return null;
+		}
+		const h = u.hostname.toLowerCase().replace(/^(www|m|[a-z]{2})\./, "");
+		if (!hosts.includes(h) || u.username || u.password) return null;
+		return "https://" + u.hostname.toLowerCase() + u.pathname.replace(/\/+$/, "") + (kind === "discord" ? u.search : "");
+	}
+	s = s.replace(/^@/, "");
+	if (kind === "discord") return /^[a-z0-9_.]{2,32}$/i.test(s) ? s : null;
+	if (kind === "linkedin") return /^[a-z0-9_-]{3,100}$/i.test(s) ? "https://www.linkedin.com/in/" + s : null;
+	if (kind === "x") return /^[a-z0-9_]{1,15}$/i.test(s) ? "https://x.com/" + s : null;
+	return /^[a-z0-9_.]{1,30}$/i.test(s) ? "https://www.instagram.com/" + s : null;
+}
+var EP_SOCIALS = ["x", "linkedin", "discord", "instagram"];
+async function epPlacePayload(c) {
+	const auth = c.get("auth");
+	const me = auth.user ? Number(auth.user.id) : 0;
+	const logged = Boolean(auth.user);
+	const { results } = await c.env.DB.prepare("SELECT id, username, prefs, profile, suspended_until FROM users WHERE disabled=0 ORDER BY id LIMIT 400").all();
+	const posts = new Map();
+	try {
+		const { results: pr } = await c.env.DB.prepare("SELECT r.author_id AS a, COUNT(*) AS n, MAX(r.id) AS last FROM records r WHERE r.type IN ('post','paper') AND r.private=0 AND COALESCE(r.demo,0)=0 AND r.author_id IS NOT NULL GROUP BY r.author_id").all();
+		const lastIds = [];
+		for (const x of pr || []) {
+			posts.set(Number(x.a), { n: Number(x.n || 0), last: Number(x.last || 0) });
+			if (x.last) lastIds.push(Number(x.last));
+		}
+		const lastRec = new Map();
+		for (let i = 0; i < lastIds.length; i += 90) {
+			const ids = lastIds.slice(i, i + 90);
+			const { results: lr } = await c.env.DB.prepare("SELECT id, slug, name FROM records WHERE id IN (" + ids.map(() => "?").join(",") + ")").bind(...ids).all();
+			for (const r of lr || []) lastRec.set(Number(r.id), { slug: String(r.slug), name: String(r.name) });
+		}
+		for (const v of posts.values()) v.latest = lastRec.get(v.last) || null;
+	} catch {}
+	const items = [];
+	let hidden = 0;
+	for (const raw of results || []) {
+		const u = raw;
+		const uid = Number(u.id);
+		const mine = uid === me;
+		if (!mine && isSuspended(u)) continue;
+		const pr = prefsOf(u);
+		const vis = String(pr.profile_vis || "members");
+		if (pr.place_hide && !mine) {
+			hidden++;
+			continue;
+		}
+		const showByline = mine || vis === "everyone" || (vis === "members" && logged);
+		let prof = {};
+		try {
+			prof = JSON.parse(String(u.profile || "{}"));
+		} catch {}
+		const pv = (k) => {
+			const x = prof[k];
+			const v = x && typeof x === "object" && "v" in x ? x.v : x;
+			return typeof v === "string" ? v.slice(0, k === "bio" ? 400 : 120) : "";
+		};
+		const p = posts.get(uid);
+		items.push({
+			username: String(u.username),
+			look: walkerLook(u),
+			mine,
+			byline: showByline ? {
+				title: pv("title"),
+				organisation: pv("organisation"),
+				bio: pv("bio")
+			} : null,
+			socials: showByline && pr.socials && typeof pr.socials === "object" ? Object.fromEntries(EP_SOCIALS.filter((k) => typeof pr.socials[k] === "string" && pr.socials[k]).map((k) => [k, String(pr.socials[k]).slice(0, 200)])) : {},
+			hiddenSelf: Boolean(mine && pr.place_hide),
+			posts: p ? p.n : 0,
+			latest: p && p.latest ? p.latest : null
+		});
+	}
+	return {
+		items,
+		hidden,
+		logged
+	};
+}
+api.get("/community/place", async (c) => c.json(await epPlacePayload(c)));
 api.get("/community", async (c) => c.json(await communityPayload(c)));
 api.get("/community/orgs", async (c) => {
 	const g = gateStatus("/community/orgs", "GET", c.get("auth"));

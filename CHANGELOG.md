@@ -18,12 +18,44 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   `[backup retention period]`, `[governing law ...]` and a DMCA agent note.
 - **Not yet checked on a real iPhone:** the steady news ticker (#13) and the dark-theme walker outline while walking
   diagonally (#8, #12). Both were tested in Playwright's iPhone emulation only.
+- **Digest email not yet seen in a real inbox.** The scheduled digest (Watchlist PR) was tested locally with the
+  email log only. Check one arrives and looks right in Apple Mail and Gmail. Members who saved a schedule before
+  that PR have no time zone saved, so their digest goes by UTC until they save delivery again.
 - **No frontend source.** The React bundle is minified and edited by hand. Any large frontend change would need a
   rewrite.
 
 ## Changes
 
 ### 2026-11-19
+
+- **#22 Watchlist: more news, working arrange, digest emails, one-tap watching.**
+  - **More in the feed.** The Watchlist used to show only posts, papers and jobs, so following a company showed
+    almost nothing. It now also shows launches (products), models, funding rounds, deployments, events and datasets
+    linked to what you follow or watch (`watchlistPayload` type list). Their cards get a label such as "Launch" or
+    "Funding" (`EP_WL_CAT` in `categoryOf`) and the organisation behind them (`epActorRel`: maker, developer,
+    company, vendor, provider). "min read" only shows on posts and papers.
+  - **Arrange sections works again.** The up and down buttons had been lost, so the order couldn't change. Each
+    section now has ↑ and ↓ buttons that work by tap on phones (`epWlSort`, CSS block `epWlSort`).
+  - **Email digest sends on its schedule.** Weekly or daily digests were saved but never sent, because the Worker had
+    no scheduled handler. `wrangler.json` now has an hourly cron (`triggers.crons`, minute 5), and the Worker's
+    `scheduled` export runs `epDigestCron`. It sends each member's digest at the day and hour they picked, in their
+    own time zone (saved as `prefs.tz` from the browser when they save delivery; UTC if never saved). It skips
+    members without a confirmed email, skips digests with nothing new, and won't send twice within 20 hours (daily)
+    or 6 days (weekly) (`prefs.auto_sent`). "Send to me now" doesn't count against that.
+  - **Emails look like the site (Hommik theme).** Every email now goes out in the same frame: the
+    `*embodiment.place` header, Hommik colours (#007a72 teal on #f3f5f6), square black borders and mono labels
+    (`epMailWrap`, applied inside `sendMail` to any HTML that isn't already wrapped). The digest is laid out like
+    the Watchlist page, with black section bands, one card per item, real links, and links to change the schedule
+    or unsubscribe (`epDigest`).
+  - **Empty Watchlist helps you start.** Instead of "Your watchlist is empty", new members see suggested
+    organisations, robots and models (ranked by how many links they have, `epWatchSuggest`) and topics
+    (`EP_WL_TOPICS`), each with a one-tap Follow, Watch or + button (`epWlStart`).
+  - **Watch from anywhere.** Organisation cards (`Nr`) and map pin pop-ups have a Follow button, and Sources has a
+    search box for companies, robots and models (`epWlFind`). They share one state (`epW`, `epWatchBtn`,
+    `epWPaint` for the map's plain-HTML pop-up), loaded from `GET /api/watchlist/ids` and changed with
+    `POST /api/watchlist/toggle` (by record slug; organisations go to `follows`, everything else to
+    `watch_sources`). CSS blocks `epWatch`, `epWlStart` and `epWlFind`.
+  - Screenshots from local testing (fake data) are in `docs/watchlist/`.
 
 - **#21 Empty cards say so.** Opening a member's card that has no name, position, company, info or social links
   shows "This card is empty." This replaces the blank card from #10. It applies in Place (`epPlaceCard`) and on

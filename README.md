@@ -62,6 +62,11 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   filters fold into a Filters dropdown. While typing in the Lounge, the panel fills the part of the screen above the
   keyboard (`ep-typing-cw`, `--ep-vt`, `--ep-vh` from `visualViewport`). The ticker and walking characters animate
   even when the device asks for reduced motion (Julian's choice); the JS reduced-motion check is set to false.
+- 2026-11-19: walking characters from other devices. Each page has its own `LiveHub`, but the live socket stayed on
+  the first page, so after moving to another page you no longer saw anyone walk. The `ep-page` event now reaches
+  `document` listeners, and the socket reconnects to the new page (`ep-page` listener in the socket client). The legs
+  hang from the body and the stepping foot lifts and swings forward (`ep-step`, `ep-step-r`, `ep-step-l`); before, the
+  leg shrank upward from a planted foot, which read as walking backwards.
 
 ## How it stays in sync
 

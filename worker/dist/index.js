@@ -4037,7 +4037,9 @@ function walkerLook(u) {
 		b: HEX.test(lk.b || "") ? lk.b : WALK_COLORS[uid % WALK_COLORS.length],
 		h: HEX.test(lk.h || "") ? lk.h : "#0d0d0d",
 		hat: HATS.has(lk.hat) ? lk.hat : "none",
-		hc: HEX.test(lk.hc || "") ? lk.hc : "#0d0d0d"
+		hc: HEX.test(lk.hc || "") ? lk.hc : "#0d0d0d",
+		// Username label colour. Empty means the default (black, or the accent for your own).
+		nc: HEX.test(lk.nc || "") ? lk.nc : ""
 	};
 }
 // Hats you unlock by doing things on the site. Admins have them all.
@@ -4222,8 +4224,8 @@ async function postAccount(c) {
 		});
 	}
 	if (act === "card") {
-		const clip = (k, n) => String(g[k] || "").replace(/\s+/g, " ").trim().slice(0, n);
-		const bio = String(g.bio || "").replace(/\r/g, "").trim().slice(0, 400);
+		const clip = (k, n) => epMeow(String(g[k] || "").replace(/\s+/g, " ").trim().slice(0, n));
+		const bio = epMeow(String(g.bio || "").replace(/\r/g, "").trim().slice(0, 400));
 		let prof = {};
 		try {
 			prof = JSON.parse(String(u.profile || "{}"));
@@ -4337,7 +4339,8 @@ async function postCharacter(c) {
 	const presets = {
 		b: WALK_COLORS,
 		h: EP_HEAD_COLORS,
-		hc: ["#0d0d0d", ...WALK_COLORS, "#ffffff"]
+		hc: ["#0d0d0d", ...WALK_COLORS, "#ffffff"],
+		nc: ["#0d0d0d", ...WALK_COLORS, "#ffffff"]
 	};
 	const pick = (k) => {
 		const custom = g[k + "_custom"] || "";
@@ -4355,7 +4358,8 @@ async function postCharacter(c) {
 		b: pick("b"),
 		h: pick("h"),
 		hat: g.hat,
-		hc: pick("hc")
+		hc: pick("hc"),
+		nc: pick("nc")
 	};
 	pr.walker = Object.fromEntries(Object.entries(lk).filter(([k, v]) => k === "hat" && HATS.has(v || "") || HEX.test(v || "")));
 	await savePrefs(c.env.DB, auth.user.id, pr);
@@ -6508,6 +6512,28 @@ async function needsVerified(c) {
 	if (emailOk(auth.user)) return false;
 	return true;
 }
+// Curse words become animal noises (Julian, 2026-11-19). Whole words only, so "class" or "Scunthorpe" stay as they are.
+var EP_ANIMAL_NOISES = ["meow", "woof", "moo", "oink", "quack", "baa", "ribbit", "hoot", "neigh", "cluck", "squeak", "honk"];
+var EP_CURSE_RE = new RegExp("\\b(?:" + [
+	"(?:mother|mutha)?f[u*@#]+c?k+(?:s|ed|er|ers|in|ing|ings|face|head|wit|off|tard)?",
+	"f[u*]{1,2}k|fck(?:ing|in|er|s)?|fcuk|fuq|feck(?:ing)?|wtf|stfu|ffs|gtfo",
+	"(?:bull|horse|dip|ape)?sh[i!1*]+t+(?:s|e|ty|tier|ting|ted|head|heads|hole|face|show|load)?",
+	"b[i!1*]+tch(?:es|y|ing|ed)?|son of a bitch",
+	"(?:dumb|jack|smart|kick|bad|fat|lard|hard)?ass(?:hole|holes|hat|hats|wipe|wipes|clown|es)?|arse(?:hole|holes)?",
+	"a[s$*]{2}hole|dickhead(?:s)?|dick(?:s|ish|wad)|cocksucker(?:s)?",
+	"c[u*]nt(?:s|y)?|twat(?:s)?|wanker(?:s)?|wank(?:ing|ed|s)?|prick(?:s)?|bellend(?:s)?|knobhead(?:s)?",
+	"bastard(?:s)?|bollocks|bugger(?:ed|ing|s)?|bloody|sod off",
+	"(?:god)?damn(?:ed|it|n)?|dammit|crap(?:py|s)?|piss(?:ed|es|ing|er)?|pissoff",
+	"slut(?:s|ty)?|whore(?:s)?|douche(?:bag|bags|s)?|skank(?:s|y)?",
+	"jerkoff|jackoff|jizz|dildo(?:s)?"
+].join("|") + ")\\b", "gi");
+function epMeow(text) {
+	if (!text) return text;
+	return String(text).replace(EP_CURSE_RE, (w) => {
+		const n = EP_ANIMAL_NOISES[Math.floor(Math.random() * EP_ANIMAL_NOISES.length)];
+		return w.length > 1 && w === w.toUpperCase() ? n.toUpperCase() : /^[A-Z]/.test(w) ? n[0].toUpperCase() + n.slice(1) : n;
+	});
+}
 async function checkText(db, text, auth) {
 	if (auth.logged) return "";
 	const words = (await setting$1(db, "spam_blocklist") || "").split(/\n+/).map((w) => w.trim().toLowerCase()).filter(Boolean);
@@ -6571,7 +6597,7 @@ async function postComment(c, ridRaw) {
 	const rec = loadRow(row);
 	if (!COMMENTABLE.includes(rec.type)) return notFound(c);
 	const all = await formAll(c);
-	const body = ((all.body || [""]).slice(-1)[0] || "").trim().slice(0, 2e3);
+	const body = epMeow(((all.body || [""]).slice(-1)[0] || "").trim().slice(0, 2e3));
 	const back = `/r/${rec.slug}`;
 	const json = c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("application/json");
 	if (body && await needsVerified(c)) return json ? c.json({ error: "Confirm your email first: see Account, then Settings." }, 403) : c.redirect(back + "?cerr=verify#comments");
@@ -19725,7 +19751,7 @@ var WalkWorld = class {
 		if (opts.d && DIRS.has(opts.d)) me.d = opts.d;
 		let err = "";
 		let said;
-		const say = String(opts.say || "").replace(/\s+/g, " ").trim().slice(0, 140);
+		const say = epMeow(String(opts.say || "").replace(/\s+/g, " ").trim().slice(0, 140));
 		if (say) {
 			if (t - me.last_say < 1) err = "Slow down.";
 			else {
@@ -20067,7 +20093,7 @@ async function postRoom(c) {
 	const all = await formAll(c);
 	const g = (k) => (all[k] || [""]).slice(-1)[0] || "";
 	if ((g("room") || "lounge") !== "lounge") return c.json({ error: "bad room" }, 400);
-	const text = g("body").trim().slice(0, 1e3);
+	let text = g("body").trim().slice(0, 1e3);
 	if (!text) return c.json({ error: "Empty message." }, 400);
 	const last = await c.env.DB.prepare("SELECT MAX(ts) AS t FROM room_chat WHERE user_id=?").bind(auth.user.id).first();
 	if (last?.t && Date.now() / 1e3 - Number(last.t) < 1) return c.json({ error: "Slow down." }, 429);
@@ -20075,6 +20101,7 @@ async function postRoom(c) {
 	if (!text.startsWith(":sticker:")) {
 		const problem = await checkText(c.env.DB, text, auth);
 		if (problem) return c.json({ error: problem }, 400);
+		text = epMeow(text);
 	}
 	const revRow = await c.env.DB.prepare("SELECT COALESCE(MAX(rev),0)+1 AS n FROM room_chat WHERE room=?").bind("lounge").first();
 	const rev = Number(revRow.n);
@@ -20152,7 +20179,7 @@ async function postEv(c) {
 	if (!auth.user) return c.json({ error: "Log in to chat." }, 401);
 	const eid = Number(c.req.param("eid"));
 	if (!await c.env.DB.prepare("SELECT id FROM records WHERE id=? AND type='event'").bind(eid).first()) return c.json({ error: "Not found" }, 404);
-	const text = (((await formAll(c)).body || [""]).slice(-1)[0] || "").trim().slice(0, 1e3);
+	const text = epMeow((((await formAll(c)).body || [""]).slice(-1)[0] || "").trim().slice(0, 1e3));
 	if (!text) return c.json({ error: "Empty message." }, 400);
 	const last = await c.env.DB.prepare("SELECT MAX(ts) AS t FROM chat WHERE user_id=? AND event_id=?").bind(auth.user.id, eid).first();
 	if (last?.t && Date.now() / 1e3 - Number(last.t) < 1) return c.json({ error: "Slow down." }, 429);

@@ -77,6 +77,14 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   The card sits above the character's head, 4:3, centred, with social icons (`epSocSvg`). "Tell us what you need" moved to
   `/community/need` (old `/community?sent=` and `?err=` links still show it).
   Resting characters use the `idle` class so they share the walker's idle and step animations.
+- 2026-11-19: Place, second pass (CSS blocks `epWalker` and `epp-` at the end of the stylesheet). Place characters
+  are the normal size. Pressing Walk on Place starts your walker from your own Place character
+  (`window.epPlaceStart`, read in the walker's start code), hides that copy while you walk and puts it back where you
+  stopped. Skipped when your character is hidden from Place. The card uses the site's dialog look (square, 1px rule,
+  hard shadow, mono header band). For every walker: the light outline in dark themes is a box-shadow on body and legs
+  and a drop-shadow on the head and hat, instead of one filter on the whole figure, which phones dropped while walking
+  diagonally (the page scrolls to follow). Left and right walking use the same step as up and down (`ep-step`).
+  Closing a card lets that character walk again.
 
 ## How it stays in sync
 

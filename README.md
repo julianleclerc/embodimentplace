@@ -50,6 +50,11 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   `epmenu`): record pages use one column (a later desktop rule had kept three, squeezing the text), the Lounge opens
   as a full-width sheet, the map is taller with its organisation list below it, form fields use 16px text so iOS
   does not zoom in, and the footer and small buttons are easier to tap. Screenshots are in `docs/mobile-2026-11/`.
+- 2026-11-19: phones, second pass (second CSS block, search `epmf-tog`). The Hide / Walk / Lounge buttons are icons.
+  The walk pad is a blocky joystick (`epJoy`, drag in any of 8 directions) that does not select text. While walking,
+  the joystick sits bottom-left with the chat line beside it. The Lounge sheet is shorter and moves above the
+  on-screen keyboard (`--ep-kb`, `--ep-vh` and class `ep-kb` on `<html>`, set from `visualViewport`). Map filters
+  fold behind a Filters button (`.epmf-tog`), and the list of organisations is a single row over the map.
 
 ## How it stays in sync
 

@@ -56,6 +56,12 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   on-screen keyboard (`--ep-kb`, `--ep-vh` and class `ep-kb` on `<html>`, set from `visualViewport`). Map filters
   fold behind a Filters button (`.epmf-tog`), and the list of organisations is a single row over the map. The
   Hämar theme (`umbra-teal`) uses the same teal accent as Hommik (`#007a72`).
+- 2026-11-19: phones, third pass (third CSS block, search `epf-tog`). Tables scroll sideways inside their box, and
+  hardware tables (for example /t/humanoid?view=table), which crashed on every screen size because the Worker sends no
+  `cells` for them, now build cells from each item's facets (`epCells`) with readable column names (`epLbl`). List
+  filters fold into a Filters dropdown. While typing in the Lounge, the panel fills the part of the screen above the
+  keyboard (`ep-typing-cw`, `--ep-vt`, `--ep-vh` from `visualViewport`). The ticker and walking characters animate
+  even when the device asks for reduced motion (Julian's choice); the JS reduced-motion check is set to false.
 
 ## How it stays in sync
 

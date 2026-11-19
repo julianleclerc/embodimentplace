@@ -33,75 +33,8 @@ rebuilt from the live deployment on 2026-11-19:
 
 Because there is no frontend source, fixes are made directly in `public/assets/index-*.js`. Each edit adds helpers
 named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the file is renamed with a new hash
-(updated in `public/index.html`) so browsers fetch the new version. Changes so far:
-
-- 2026-11-19: the lounge and walking characters start only once the login check has finished, so the Send button
-  and Enter work, and the lounge opens for visitors who first landed on Log in or Sign up. Lounge messages show
-  their date and time in the visitor's time zone, and a refused message shows why. A "Load more" button
-  is pressed automatically when it scrolls into view, and organisation group pages show 24 cards at a time.
-  The Worker now sends 6 feed posts per page (`FEED_PAGE_SIZE`). Log out asks for confirmation first, in a dialog styled like the search box (`epLogoutAsk`).
-- 2026-11-19: map pins show the organisation's logo (`epPinLogo`, CSS `.opin.logo`), falling back to the coloured
-  circle when there is no logo or it fails to load. The Worker adds `lg` to each map point: the record's image when
-  its fit is `contain` (the logos), so photos are not used. The map has a location type filter (`epKinds`, HQ, Office
-  and any other kinds in the data), and the popup shows the logo.
-- 2026-11-19: phone layout. A menu button (`epMenu`, CSS `.epmenu`) in the header holds Log in / Sign up, or
-  Watchlist, Account and Log out, below 820px wide, where those links were hidden. The section links scroll the
-  current one into view (`epNavInit`). The phone CSS is one block appended to the end of the stylesheet (search for
-  `epmenu`): record pages use one column (a later desktop rule had kept three, squeezing the text), the Lounge opens
-  as a full-width sheet, the map is taller with its organisation list below it, form fields use 16px text so iOS
-  does not zoom in, and the footer and small buttons are easier to tap. Screenshots are in `docs/mobile-2026-11/`.
-- 2026-11-19: phones, second pass (second CSS block, search `epmf-tog`). The Hide / Walk / Lounge buttons are icons.
-  The walk pad is a blocky joystick (`epJoy`, drag in any of 8 directions) that does not select text. While walking,
-  the joystick sits bottom-left with the chat line beside it. The Lounge sheet is shorter and moves above the
-  on-screen keyboard (`--ep-kb`, `--ep-vh` and class `ep-kb` on `<html>`, set from `visualViewport`). Map filters
-  fold behind a Filters button (`.epmf-tog`), and the list of organisations is a single row over the map. The
-  Hämar theme (`umbra-teal`) uses the same teal accent as Hommik (`#007a72`).
-- 2026-11-19: phones, third pass (third CSS block, search `epf-tog`). Tables scroll sideways inside their box, and
-  hardware tables (for example /t/humanoid?view=table), which crashed on every screen size because the Worker sends no
-  `cells` for them, now build cells from each item's facets (`epCells`) with readable column names (`epLbl`). List
-  filters fold into a Filters dropdown. While typing in the Lounge, the panel fills the part of the screen above the
-  keyboard (`ep-typing-cw`, `--ep-vt`, `--ep-vh` from `visualViewport`). The ticker and walking characters animate
-  even when the device asks for reduced motion (Julian's choice); the JS reduced-motion check is set to false.
-- 2026-11-19: walking characters from other devices. Each page has its own `LiveHub`, but the live socket stayed on
-  the first page, so after moving to another page you no longer saw anyone walk. The `ep-page` event now reaches
-  `document` listeners, and the socket reconnects to the new page (`ep-page` listener in the socket client). The legs
-  hang from the body and the stepping foot lifts and swings forward (`ep-step`, `ep-step-r`, `ep-step-l`); before, the
-  leg shrank upward from a planted foot, which read as walking backwards.
-- 2026-11-19: Community has a new first tab, Place (`/community`, component `epPlace`, engine `epPlaceRun`, CSS
-  block `epp-` at the end of the stylesheet). Every member's character wanders around a stage; tapping one opens a
-  speech-bubble card (`epPlaceCard`) with their username, byline (title, organisation, bio) and public posts. The
-  Worker serves it from `GET /api/community/place` (`epPlacePayload`). Everyone, visitors included, sees every
-  character except members who turned "Show my character in Place" off (Account, Settings, `prefs.place_hide`). The
-  byline and social links (X, LinkedIn, Discord, Instagram, saved in `prefs.socials` by action `place`, checked by
-  `epSocial`) follow Profile visibility. Location, interests, email and other introduction fields are never sent.
-  The card sits above the character's head, 4:3, centred, with social icons (`epSocSvg`). "Tell us what you need" moved to
-  `/community/need` (old `/community?sent=` and `?err=` links still show it).
-  Resting characters use the `idle` class so they share the walker's idle and step animations.
-- 2026-11-19: Place, second pass (CSS blocks `epWalker` and `epp-` at the end of the stylesheet). Place characters
-  are the normal size. Pressing Walk on Place starts your walker from your own Place character
-  (`window.epPlaceStart`, read in the walker's start code), hides that copy while you walk and puts it back where you
-  stopped. Skipped when your character is hidden from Place. The card uses the site's dialog look (square, 1px rule,
-  hard shadow, mono header band). For every walker: the light outline in dark themes is a box-shadow on body and legs
-  and a drop-shadow on the head and hat, instead of one filter on the whole figure, which phones dropped while walking
-  diagonally (the page scrolls to follow). Left and right walking use the same step as up and down (`ep-step`).
-  Closing a card lets that character walk again.
-- 2026-11-19: cards everywhere and the account page (CSS block `epCards`). Tapping any walking character on any page
-- 2026-11-19: card name and calmer Place (CSS block `epCards2`). The card has an optional Name (profile `name`, up to 80 characters), shown in the card header above the @username. Standing characters in Place no longer bob, the Place background is back to the dotted grid, and cards with nothing filled in show no placeholder text.
-- 2026-11-19: walking legs back to the original `wk-leg` cycle (both legs, one reversed, anchored at the feet) in every direction. The `ep-step` stepping animation and the top-anchored legs from the phone fixes were removed.
-- 2026-11-19: dark-theme walker outline now matches the original pixel for pixel (CSS block `epWalker2`). The legs' outline no longer draws over the body's bottom edge; their outline is clipped so it only shows below the body.
-- 2026-11-19: other people's characters keep their walking animation (the `moving` class now stays on for 220 ms after the last movement instead of flickering off between network updates, which restarted the leg cycle). Clicking a link with the mouse while walking stops walking (the character using a link still carries the walk over). The show/hide characters button uses the phone eye icon on desktop too (CSS block `epHideIcon`).
-- 2026-11-19: card layout (CSS block `epCards3`): the header always shows @username at the top left; the Name, when set, sits in the card body above the title. The card keeps 4:3 as its minimum shape but grows taller when a name, title, bio and all four social icons don't fit, so no icon is cut off on phones.
-  opens its card (`epCardOpen`, `epCardNode`, `GET /api/community/card?u=` or `?me=1`, built by `epCardItem` like
-  Place). Walkers now carry the username (`u` in the live presence) so the card finds the right member. Place has a
-  wall and a floor (top 30% is wall) and characters only stand on the floor. Account: the Byline is now the Card,
-  edited in Overview (`epCardEdit`: position, company, info, + Add social; action `card`), with "Who sees your card"
-  and "Show my character in Place" beside it (`epVisEdit`). Email moved to Security (`epEmailEdit`): type the new
-  address twice, a 6-digit code goes to it (actions `email_start`, `email_confirm`, `email_cancel`, token kind
-  `email_change`, 15 minutes), and the address only changes once the code is entered; the old address gets a notice.
-  The Settings tab and the + Create and Settings buttons are gone from Account (`/account/settings` shows Overview).
-- 2026-11-19: the news ticker keeps one text size and line on phones (`text-size-adjust:100%` stops iOS enlarging
-  some items, and every item is centred on the same line). Event pages no longer show the live box (Schedule, Chat,
-  Here, Featured): the `ei` component is no longer rendered on the record page.
+(updated in `public/index.html`) so browsers fetch the new version. Every change is listed in
+[CHANGELOG.md](CHANGELOG.md), with open items, and [AGENTS.md](AGENTS.md) explains how to work on the repository.
 
 ## How it stays in sync
 

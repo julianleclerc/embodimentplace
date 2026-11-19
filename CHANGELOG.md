@@ -25,6 +25,16 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#18 Username label colour, quieter locked hats.**
+  - The look creator has a Name colour row. It sets the background of the username label above your character, and
+    everyone sees it on walkers, in Place and on the preview. Default keeps the old look (black, or the accent colour
+    for your own). The text turns black or white to stay readable (look field `nc`, helper `epNc`, CSS class `ep-nc`
+    and block `epNameColour`).
+  - Members choose from preset colours only (black, `WALK_COLORS`, white). Admins also get a custom colour picker.
+    `postCharacter` drops any other colour for non-admins.
+  - Locked hat tiles no longer say "Locked". It only shows in the hover or tap pop-up.
+  - While a locked hat's pop-up is pinned open by a tap, hovering other locked hats doesn't show their pop-ups
+    until it is closed (`.lk-hats:has(.lk-hat.tip)`).
 - **#16 Phone walk animation, hat hints, centred log out, cards beside characters.**
   - The legs animate again when the phone asks for reduced motion. The original reduced-motion rule set
     `.wk-char.moving .wk-body:before/:after` to `animation:none`. #6 overrode it with `ep-step`, and #11 removed that

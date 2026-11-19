@@ -4037,7 +4037,9 @@ function walkerLook(u) {
 		b: HEX.test(lk.b || "") ? lk.b : WALK_COLORS[uid % WALK_COLORS.length],
 		h: HEX.test(lk.h || "") ? lk.h : "#0d0d0d",
 		hat: HATS.has(lk.hat) ? lk.hat : "none",
-		hc: HEX.test(lk.hc || "") ? lk.hc : "#0d0d0d"
+		hc: HEX.test(lk.hc || "") ? lk.hc : "#0d0d0d",
+		// Username label colour. Empty means the default (black, or the accent for your own).
+		nc: HEX.test(lk.nc || "") ? lk.nc : ""
 	};
 }
 // Hats you unlock by doing things on the site. Admins have them all.
@@ -4337,7 +4339,8 @@ async function postCharacter(c) {
 	const presets = {
 		b: WALK_COLORS,
 		h: EP_HEAD_COLORS,
-		hc: ["#0d0d0d", ...WALK_COLORS, "#ffffff"]
+		hc: ["#0d0d0d", ...WALK_COLORS, "#ffffff"],
+		nc: ["#0d0d0d", ...WALK_COLORS, "#ffffff"]
 	};
 	const pick = (k) => {
 		const custom = g[k + "_custom"] || "";
@@ -4355,7 +4358,8 @@ async function postCharacter(c) {
 		b: pick("b"),
 		h: pick("h"),
 		hat: g.hat,
-		hc: pick("hc")
+		hc: pick("hc"),
+		nc: pick("nc")
 	};
 	pr.walker = Object.fromEntries(Object.entries(lk).filter(([k, v]) => k === "hat" && HATS.has(v || "") || HEX.test(v || "")));
 	await savePrefs(c.env.DB, auth.user.id, pr);

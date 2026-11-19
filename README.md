@@ -2,7 +2,7 @@
 
 The code and public content of [embodiment.place](https://embodiment.place), a site for humanoid robotics news,
 organisations, robots, models and community. It runs on Cloudflare Workers with a D1 database, a Durable Object
-for live chat and presence, R2 for uploads, and Cloudflare email sending.
+for live chat and presence, and Cloudflare email sending.
 
 This repository is the backup and the deploy source: changes merged to `main` deploy to the live site, and the
 site's public content is copied back here every night.
@@ -13,7 +13,7 @@ site's public content is copied back here every night.
 |---|---|
 | `worker/dist/` | The Worker exactly as deployed on 2026-11-18: `index.js` (Hono app and the `LiveHub` Durable Object) and its chunks in `assets/`. This is what `wrangler deploy` uploads. |
 | `public/` | The static files the Worker serves through its `ASSETS` binding: the built frontend (`index.html`, `assets/`), `static/hats.png`, and the organisation logos in `logos/`. |
-| `wrangler.json` | Worker name, bindings (D1 `DB`, Durable Object `LIVE`, R2 `MEDIA`, email `EMAIL`, `ASSETS`) and settings. |
+| `wrangler.json` | Worker name, bindings (D1 `DB`, Durable Object `LIVE`, email `EMAIL`, `ASSETS`), plain vars and settings, matched to the live Worker on 2026-11-19. The code also supports an R2 `MEDIA` binding for image uploads, but the live Worker has none, so uploads are off. |
 | `recovered-src/` | A readable copy of the Worker split back into its original files (`backend/worker/src/*.js`, `shared/*.js`). Reference only; nothing builds from it. |
 | `content/` | Nightly export of the public content in D1: one JSON file per record in `records/<type>/<slug>.json`, `links.json`, and `schema.sql`. |
 | `scripts/` | `check-live-config.mjs` (safety check before deploys) and `export-content.mjs` (the content export). |
@@ -28,7 +28,6 @@ rebuilt from the live deployment on 2026-11-19:
   TypeScript types, comments and the original Vite and wrangler config are gone.
 - The frontend (`public/assets/index-*.js`) is minified React. It can be redeployed as is, but it is not practical to
   edit by hand. Bigger frontend changes need the original source, or a rewrite.
-- Uploaded images in R2 (`/media/...`) are not copied here.
 
 ## How it stays in sync
 

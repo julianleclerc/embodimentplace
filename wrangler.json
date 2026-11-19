@@ -2,12 +2,21 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "embodiment-place",
   "main": "worker/dist/index.js",
-  "compatibility_date": "2026-11-01",
-  "compatibility_flags": [],
+  "compatibility_date": "2026-11-17",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "no_bundle": true,
   "base_dir": "worker/dist",
   "find_additional_modules": true,
-  "rules": [{ "type": "ESModule", "globs": ["**/*.js"] }],
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.js"
+      ]
+    }
+  ],
   "keep_vars": true,
   "assets": {
     "directory": "public",
@@ -16,16 +25,47 @@
     "run_worker_first": true
   },
   "d1_databases": [
-    { "binding": "DB", "database_name": "embodiment-place", "database_id": "f0208a60-bea9-4a39-9a79-89565c0bc32b" }
+    {
+      "binding": "DB",
+      "database_name": "embodiment-place",
+      "database_id": "f0208a60-bea9-4a39-9a79-89565c0bc32b"
+    }
   ],
   "durable_objects": {
-    "bindings": [{ "name": "LIVE", "class_name": "LiveHub" }]
+    "bindings": [
+      {
+        "name": "LIVE",
+        "class_name": "LiveHub"
+      }
+    ]
   },
-  "r2_buckets": [
-    { "binding": "MEDIA", "bucket_name": "embodiment-place-media" }
-  ],
   "send_email": [
-    { "name": "EMAIL" }
+    {
+      "name": "EMAIL"
+    }
   ],
-  "observability": { "enabled": true }
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": true,
+      "persist": true,
+      "head_sampling_rate": 1
+    }
+  },
+  "preview_urls": true,
+  "vars": {
+    "EP_ENV": "production",
+    "EP_MAIL_FROM": "no-reply@embodiment.place",
+    "EP_MAIL_PROVIDER": "cf",
+    "EP_REQUIRE_2FA": "0",
+    "EP_SECURE_COOKIES": "1",
+    "EP_SITE_URL": "https://embodiment.place"
+  }
 }

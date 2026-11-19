@@ -140,3 +140,8 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 @media (max-width:640px){.ep-wl2 .listhead{padding-top:8px}.ep-wl-bar{align-items:flex-start}.ep-wl-bar .fpills{flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:none;padding-bottom:2px}.ep-wl-bar .fpills::-webkit-scrollbar{display:none}.ep-nl-send{justify-content:flex-start}.ep-wl2 .nl-frame{height:560px}}
 .ep-wl2 .nl-set{margin:0;border:1px solid var(--rule);background:var(--paper)}.ep-wl2 .nl-set .fgroup{border-bottom:0;padding:0 14px 6px}.ep-wl2 .nl-set .fgroup h2{margin:0 -14px 10px;padding:4px 14px;background:var(--bar);font-family:var(--mono);text-transform:uppercase;font-size:.72rem;font-weight:400}.ep-wl2 .nl-set .ep-nl-tz{margin:0;padding:6px 14px 0;font-size:.85rem;border-top:1px solid var(--hair)}.ep-wl2 .nl-set .savebar{padding:10px 14px 14px;background:none}
 .ep-wl2 .nl-set .savebar,.ep-wl2 .wl-arrange .savebar{position:static!important;bottom:auto}
+
+/* epAutoNews: admin "Automatic updates" toggle on organisation pages */
+.btn.ghost.ep-autonews.on{border-color:var(--accent);color:var(--accent)}
+.btn.ghost.ep-autonews.on:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pp-tools.rec-tools{flex-wrap:wrap;min-width:0;max-width:100%}

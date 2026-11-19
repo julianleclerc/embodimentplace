@@ -2037,6 +2037,9 @@ function isMutating(method) {
 // backend/worker/src/schema_extra.ts
 /** Extra tables used by posting, community, claims, quotes, reports and mail. Safe to call on every request. */
 var TABLES = [
+	`CREATE TABLE IF NOT EXISTS auto_news(
+    record_id INTEGER PRIMARY KEY, enabled INTEGER NOT NULL DEFAULT 0, feed TEXT DEFAULT '',
+    updated TEXT, updated_by INTEGER, last_run TEXT, last_note TEXT DEFAULT '')`,
 	`CREATE TABLE IF NOT EXISTS comments(
     id INTEGER PRIMARY KEY, record_id INTEGER NOT NULL, user_id INTEGER, body TEXT,
     status TEXT NOT NULL DEFAULT 'approved', created TEXT, decided TEXT)`,
@@ -2080,6 +2083,11 @@ var TABLES = [
     expires TEXT, created TEXT, used INTEGER DEFAULT 0)`
 ];
 var COLS = [
+	[
+		"auto_news",
+		"seen",
+		"TEXT DEFAULT '[]'"
+	],
 	[
 		"comments",
 		"decided",
@@ -20614,6 +20622,286 @@ api.get("/list/:key", async (c) => {
 	if ("error" in payload) return c.json(payload, 404);
 	return c.json(payload);
 });
+// epAutoNews: admin toggle "Automatic updates" per organisation (table auto_news). A daily job reads the enabled ones.
+var EP_AUTONEWS_TYPES = [
+	"company",
+	"university",
+	"lab"
+];
+async function epAutoNewsOn(db, rid) {
+	try {
+		return Boolean(Number((await db.prepare("SELECT enabled FROM auto_news WHERE record_id=?").bind(rid).first())?.enabled || 0));
+	} catch {
+		return false;
+	}
+}
+async function epAutoNewsInfo(db, rid) {
+	try {
+		const r = await db.prepare("SELECT feed, last_run, last_note FROM auto_news WHERE record_id=?").bind(rid).first();
+		return r ? {
+			autonews_feed: String(r.feed || ""),
+			autonews_run: r.last_run ?? null,
+			autonews_note: String(r.last_note || "")
+		} : {};
+	} catch {
+		return {};
+	}
+}
+api.post("/autonews/:slug", async (c) => {
+	const auth = c.get("auth");
+	if (!auth.is_admin) return c.json({ error: "Not found" }, 404);
+	const row = await c.env.DB.prepare("SELECT id, type FROM records WHERE slug=?").bind(c.req.param("slug")).first();
+	if (!row || !EP_AUTONEWS_TYPES.includes(String(row.type))) return c.json({ error: "Not found" }, 404);
+	const rid = Number(row.id);
+	const on = !await epAutoNewsOn(c.env.DB, rid);
+	await c.env.DB.prepare("INSERT INTO auto_news(record_id,enabled,updated,updated_by) VALUES(?,?,?,?) ON CONFLICT(record_id) DO UPDATE SET enabled=excluded.enabled, updated=excluded.updated, updated_by=excluded.updated_by").bind(rid, on ? 1 : 0, nowStamp(), auth.user?.id ?? null).run();
+	return c.json({
+		ok: true,
+		on
+	});
+});
+// epAutoNewsCron: once a day for each organisation with automatic updates on, read its news feed (RSS or Atom)
+// and publish items from the last 36 hours as Repost posts linked to it. Runs on the hourly cron, a few organisations
+// per tick (EP_AN_PER_TICK) so each run stays well inside the Worker's subrequest limit.
+var EP_AN_PER_TICK = 5;
+var EP_AN_MAX_NEW = 3;
+var EP_AN_WINDOW_H = 36;
+var EP_AN_UA = "Mozilla/5.0 (compatible; embodiment.place news reader; +https://embodiment.place/about)";
+var EP_AN_GUESSES = [
+	"/feed",
+	"/rss.xml",
+	"/feed.xml",
+	"/blog/rss.xml",
+	"/news/rss.xml"
+];
+function epAnDecode(t) {
+	return String(t || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d))).replace(/&(nbsp|amp|lt|gt|quot|apos|rsquo|lsquo|rdquo|ldquo|hellip|mdash|ndash);/g, (_, n) => ({
+		nbsp: " ",
+		amp: "&",
+		lt: "<",
+		gt: ">",
+		quot: "\"",
+		apos: "'",
+		rsquo: "’",
+		lsquo: "‘",
+		rdquo: "”",
+		ldquo: "“",
+		hellip: "…",
+		mdash: "—",
+		ndash: "–"
+	})[n]);
+}
+function epAnText(html) {
+	return epAnDecode(epAnDecode(html).replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, " ").replace(/<[^>]+>/g, " ")).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
+function epAnTag(xml, names) {
+	for (const n of names) {
+		const m = xml.match(new RegExp(`<(?:[\\w-]+:)?${n}\\b[^>]*>([\\s\\S]*?)</(?:[\\w-]+:)?${n}>`, "i"));
+		if (m && m[1].trim()) return m[1];
+	}
+	return "";
+}
+function epAnClip(t, max) {
+	if (t.length <= max) return t;
+	const cut = t.slice(0, max - 1);
+	const sp = cut.lastIndexOf(" ");
+	return (sp > max * .6 ? cut.slice(0, sp) : cut).replace(/[\s,.;:]+$/, "") + "…";
+}
+function epAnCanon(u, base) {
+	try {
+		const x = new URL(String(u || "").trim(), base);
+		if (!/^https?:$/.test(x.protocol)) return "";
+		x.hash = "";
+		x.hostname = x.hostname.toLowerCase();
+		for (const k of [...x.searchParams.keys()]) if (/^(utm_|mc_|fbclid|gclid|ref$|source$)/i.test(k)) x.searchParams.delete(k);
+		if (x.pathname.length > 1) x.pathname = x.pathname.replace(/\/+$/, "");
+		return x.toString();
+	} catch {
+		return "";
+	}
+}
+function epAnItems(xml, feedUrl) {
+	const out = [];
+	const blocks = xml.match(/<item\b[\s\S]*?<\/item>/gi) || xml.match(/<entry\b[\s\S]*?<\/entry>/gi) || [];
+	for (const b of blocks.slice(0, 50)) {
+		const title = epAnClip(epAnText(epAnTag(b, ["title"])), 200);
+		let link = epAnDecode(epAnTag(b, ["link"])).trim();
+		if (!link || link.startsWith("<")) {
+			const ls = [...b.matchAll(/<link\b([^>]*)\/?>/gi)].map((m) => m[1]);
+			const pick = ls.find((a) => /rel=["']alternate["']/i.test(a)) || ls.find((a) => !/rel=/i.test(a)) || ls[0] || "";
+			link = epAnDecode((pick.match(/href=["']([^"']+)["']/i) || [])[1] || "");
+		}
+		if (!link) {
+			const g = epAnDecode(epAnTag(b, ["guid", "id"])).trim();
+			if (/^https?:\/\//.test(g)) link = g;
+		}
+		const url = epAnCanon(link, feedUrl);
+		const when = Date.parse(epAnText(epAnTag(b, ["pubDate", "published", "updated", "date", "issued"])));
+		const intro = epAnClip(epAnText(epAnTag(b, ["description", "summary", "content", "encoded"])), 200);
+		if (title && url) out.push({
+			title,
+			url,
+			when: Number.isFinite(when) ? when : 0,
+			intro
+		});
+	}
+	return out;
+}
+async function epAnGet(url) {
+	const r = await fetch(url, {
+		headers: {
+			"user-agent": EP_AN_UA,
+			accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html;q=0.8, */*;q=0.5"
+		},
+		redirect: "follow",
+		signal: AbortSignal.timeout(1e4)
+	});
+	if (!r.ok) throw new Error("HTTP " + r.status);
+	return {
+		url: r.url || url,
+		type: r.headers.get("content-type") || "",
+		text: (await r.text()).slice(0, 3e6)
+	};
+}
+function epAnIsFeed(text) {
+	return /<(rss|feed|rdf:RDF)\b/i.test(text.slice(0, 2e3));
+}
+// Find a feed: the org's saved feed, else a <link rel="alternate"> on its website, else a few common paths.
+async function epAnFindFeed(org) {
+	if (org.feed) return {
+		feed: org.feed,
+		doc: await epAnGet(org.feed)
+	};
+	const site = epAnCanon(org.website);
+	if (!site) throw new Error("No website or feed set");
+	const home = await epAnGet(site);
+	if (epAnIsFeed(home.text)) return {
+		feed: home.url,
+		doc: home
+	};
+	const tags = [...home.text.matchAll(/<link\b[^>]*>/gi)].map((m) => m[0]).filter((t) => /rel=["']?alternate/i.test(t) && /application\/(rss|atom)\+xml/i.test(t) && !/comments/i.test(t));
+	const cands = tags.map((t) => epAnCanon(epAnDecode((t.match(/href=["']([^"']+)["']/i) || [])[1] || ""), home.url)).filter(Boolean);
+	const origin = new URL(home.url).origin;
+	for (const g of EP_AN_GUESSES) cands.push(origin + g);
+	for (const u of [...new Set(cands)].slice(0, 4)) try {
+		const d = await epAnGet(u);
+		if (epAnIsFeed(d.text)) return {
+			feed: d.url,
+			doc: d
+		};
+	} catch {}
+	throw new Error("No news feed found on " + new URL(home.url).hostname);
+}
+async function epAutoNewsOrg(env, org, now = Date.now()) {
+	const db = env.DB;
+	let feed = org.feed || "";
+	let added = 0;
+	let note = "";
+	let seen = [];
+	try {
+		seen = JSON.parse(org.seen || "[]");
+	} catch {}
+	try {
+		const found = await epAnFindFeed(org);
+		feed = found.feed;
+		const items = epAnItems(found.doc.text, found.feed).filter((x) => x.when && x.when <= now + 36e5 && now - x.when <= EP_AN_WINDOW_H * 36e5).sort((a, b) => b.when - a.when);
+		for (const it of items) {
+			if (added >= EP_AN_MAX_NEW) break;
+			if (seen.includes(it.url)) continue;
+			seen.push(it.url);
+			if ((await db.prepare("SELECT 1 AS n FROM records WHERE type IN ('post','paper') AND (json_extract(data,'$.link.v')=? OR json_extract(data,'$.url.v')=?) LIMIT 1").bind(it.url, it.url).first())?.n) continue;
+			let site = "";
+			try {
+				site = new URL(it.url).hostname.replace(/^www\./, "");
+			} catch {}
+			const rid = await applyCompose(db, {
+				kind: "news",
+				kind_label: "News",
+				title: epMeow(it.title),
+				intro: epMeow(it.intro),
+				body: "",
+				url: it.url,
+				origin: "Repost",
+				source_site: site,
+				as: org.id
+			}, null);
+			if (rid) {
+				await db.prepare("UPDATE records SET data=json_set(data,'$.auto_news',json('{\"v\":\"Yes\"}'),'$.date',json_object('v',?)), feed_at=? WHERE id=?").bind(new Date(it.when).toISOString().slice(0, 10), new Date(it.when).toISOString().slice(0, 10), rid).run();
+				added++;
+			}
+		}
+		note = added ? `Added ${added} new ${added === 1 ? "item" : "items"}` : items.length ? "Nothing new" : "No items from the last 36 hours";
+	} catch (ex) {
+		note = ex instanceof Error ? ex.message : String(ex);
+	}
+	await db.prepare("UPDATE auto_news SET feed=?, last_run=?, last_note=?, seen=? WHERE record_id=?").bind(feed, nowStamp(), note.slice(0, 200), JSON.stringify(seen.slice(-300)), org.id).run();
+	console.log(`[autonews] ${org.slug}: ${note}`);
+	return {
+		slug: org.slug,
+		feed,
+		added,
+		note
+	};
+}
+async function epAnOrgs(db, where, ...args) {
+	const { results } = await db.prepare(`SELECT r.id, r.slug, r.name, r.data, a.feed, a.seen, a.last_run FROM auto_news a JOIN records r ON r.id=a.record_id WHERE ${where}`).bind(...args).all();
+	return (results || []).map((r) => ({
+		id: Number(r.id),
+		slug: String(r.slug),
+		name: String(r.name),
+		website: fieldV(parseData(r.data), "website"),
+		feed: String(r.feed || ""),
+		seen: String(r.seen || "[]")
+	}));
+}
+async function epAutoNewsCron(env) {
+	try {
+		await ensureExtraSchema(env.DB);
+		const cutoff = new Date(Date.now() - 20 * 36e5).toISOString().slice(0, 19).replace("T", " ");
+		const orgs = await epAnOrgs(env.DB, "a.enabled=1 AND (a.last_run IS NULL OR a.last_run < ?) ORDER BY a.last_run IS NOT NULL, a.last_run LIMIT " + EP_AN_PER_TICK, cutoff);
+		for (const org of orgs) await epAutoNewsOrg(env, org);
+	} catch (ex) {
+		console.log("[autonews] " + (ex instanceof Error ? ex.message : String(ex)));
+	}
+}
+api.post("/admin/autonews/:slug/run", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const [org] = await epAnOrgs(c.env.DB, "r.slug=?", c.req.param("slug"));
+	if (!org) return c.json({ error: "Turn on automatic updates first." }, 400);
+	return c.json({
+		ok: true,
+		...await epAutoNewsOrg(c.env, org)
+	});
+});
+api.post("/admin/autonews/:slug/feed", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const all = await formAll(c);
+	const raw = ((all.feed || [""]).slice(-1)[0] || "").trim();
+	const feed = raw ? epAnCanon(raw) : "";
+	if (raw && !feed) return c.json({ error: "That isn't a web address." }, 400);
+	const [org] = await epAnOrgs(c.env.DB, "r.slug=?", c.req.param("slug"));
+	if (!org) return c.json({ error: "Turn on automatic updates first." }, 400);
+	await c.env.DB.prepare("UPDATE auto_news SET feed=? WHERE record_id=?").bind(feed, org.id).run();
+	return c.json({
+		ok: true,
+		feed
+	});
+});
+api.get("/admin/autonews", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const { results } = await c.env.DB.prepare("SELECT r.id, r.slug, r.name, r.type, r.data, a.feed, a.updated, a.last_run, a.last_note FROM auto_news a JOIN records r ON r.id=a.record_id WHERE a.enabled=1 ORDER BY r.name COLLATE NOCASE").all();
+	return c.json({ orgs: (results || []).map((r) => ({
+		id: Number(r.id),
+		slug: String(r.slug),
+		name: String(r.name),
+		type: String(r.type),
+		website: fieldV(parseData(r.data), "website"),
+		feed: String(r.feed || ""),
+		updated: r.updated ?? null,
+		last_run: r.last_run ?? null,
+		last_note: String(r.last_note || "")
+	})) });
+});
 api.get("/r/:slug", async (c) => {
 	const rec = await onePublic(c.env.DB, c.req.param("slug"));
 	if (!rec) return c.json({ error: "Not found" }, 404);
@@ -20662,6 +20950,9 @@ api.get("/r/:slug", async (c) => {
 		watching: soc.watching.has(rec.id),
 		pinned: pins.includes(rec.id),
 		can_pin: can(auth, "home"),
+		can_autonews: auth.is_admin && EP_AUTONEWS_TYPES.includes(rec.type),
+		autonews: auth.is_admin && EP_AUTONEWS_TYPES.includes(rec.type) ? await epAutoNewsOn(c.env.DB, rec.id) : false,
+		...auth.is_admin && EP_AUTONEWS_TYPES.includes(rec.type) ? await epAutoNewsInfo(c.env.DB, rec.id) : {},
 		can_edit: auth.logged,
 		can_manage: [
 			"company",
@@ -21309,6 +21600,7 @@ var worker_entry_default = {
 	},
 	async scheduled(event, env, ctx) {
 		ctx.waitUntil(epDigestCron(env));
+		ctx.waitUntil(epAutoNewsCron(env));
 	}
 };
 export { LiveHub, app, worker_entry_default as default };

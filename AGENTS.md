@@ -33,6 +33,12 @@ There is no original source. The repository was rebuilt from the live deployment
 - `public/index.html` loads the bundle by its hashed name.
 - `wrangler.json` must match the live Worker's bindings. `scripts/check-live-config.mjs` stops a deploy that would
   change them.
+- New tables and columns need no migration step. `ensureExtraSchema` (the `TABLES` and `COLS` lists in
+  `worker/dist/index.js`) runs `CREATE TABLE IF NOT EXISTS` and `ALTER TABLE ... ADD COLUMN` on each request's first
+  use of the database. Add to those lists, and update `content/schema.sql` only if the table is public content.
+- Scheduled work: `wrangler.json` has an hourly cron (minute 5). The Worker's `scheduled` export runs every job on
+  each tick (`epDigestCron` for Watchlist emails, `epAutoNewsCron` for organisation news). Each job decides for
+  itself whether it is due, so add new jobs there instead of new cron lines.
 - D1 rejects a query with more than 100 bound parameters ("too many SQL variables"), and local `wrangler dev` does
   not, so it only fails live. Pass a list of ids as one JSON parameter and read it with
   `IN (SELECT value FROM json_each(?))`, as `linksFor` and `allByIds` do. Never build `?,?,?` from a list that can grow.

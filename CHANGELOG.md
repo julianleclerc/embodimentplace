@@ -8,6 +8,10 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
+- **Automatic updates: organisations without a news feed.** Many robotics companies only have a news page, no
+  RSS or Atom feed. Their "Check news now" says "No news feed found on …". Options: paste a feed address if one
+  exists elsewhere (Medium, Substack, a blog subdomain), or add a reader for plain news pages later (needs an LLM
+  or per-site rules). The job was tested against local sample feeds only; check the first real results live.
 - **Image uploads don't work.** The Worker supports an R2 `MEDIA` binding, but the live Worker has none, so uploads
   are off. An R2 bucket needs to be created and bound in `wrangler.json`. The deploy safety check will flag this as a
   binding change, which is expected.
@@ -28,6 +32,29 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#23 Automatic updates for organisations: admin toggle and a daily news job.**
+  - **Toggle.** On a company, university or lab page, admins see "Auto updates off / on" next to "Pin to home".
+    Stored in D1 in a new table `auto_news` (`record_id`, `enabled`, `feed`, `updated`, `updated_by`, `last_run`,
+    `last_note`, `seen`), created by `ensureExtraSchema`. `POST /api/autonews/:slug` flips it. The record payload
+    carries `can_autonews`, `autonews`, `autonews_feed`, `autonews_run` and `autonews_note` (admins only).
+  - **Daily job.** The hourly cron from #22 now also runs `epAutoNewsCron`. Each tick it takes up to 5 enabled
+    organisations not checked in the last 20 hours (`EP_AN_PER_TICK`), so each is checked about once a day. For each
+    it reads the news feed (RSS or Atom): the saved `feed`, else a `<link rel="alternate">` feed on the website,
+    else `/feed`, `/rss.xml` and similar (`epAnFindFeed`). Items dated in the last 36 hours become **published**
+    posts straight away (Julian's choice): kind News, origin Repost, `link` to the original article, `source_site`,
+    linked `about` the organisation, `data.auto_news = Yes` (`epAutoNewsOrg`, via `applyCompose`). Reposts open
+    the original article, so the source gets the click. At most 3 new posts per organisation per day
+    (`EP_AN_MAX_NEW`).
+  - **No duplicates.** Links are cleaned (`utm_*` and similar removed, no `#…`, no trailing slash; `epAnCanon`)
+    and skipped if any post or paper already has that link. Every link seen is also kept in `auto_news.seen`
+    (last 300), so a post an admin deletes doesn't come back the next day.
+  - **Admin buttons** (shown while it's on): "Check news now" runs the check for that organisation and shows the
+    result ("Added 2 new items", "Nothing new", "No news feed found on …"). "News feed" sets or clears the feed
+    address. Routes: `POST /api/admin/autonews/:slug/run`, `POST /api/admin/autonews/:slug/feed`,
+    `GET /api/admin/autonews` (list of enabled organisations with their last result). All admin-only.
+  - The button row on record pages now wraps instead of running off the screen (`.pp-tools.rec-tools`). Frontend
+    classes `ep-autonews`, `ep-autonews-run`, `ep-autonews-feed`; CSS block `epAutoNews`. Screenshots (local test
+    feeds) in `docs/screenshots/autonews/`.
 - **#24 Watchlist looks like the rest of the site; "Send to me now" says what happened; digest from newsletter@.**
   - **Same layout as the home feed.** All three Watchlist tabs now use the home page layout (`.home2`): a 760px
     content column and the right-hand side panel. Cards are the same size as on the home feed (they were 980px

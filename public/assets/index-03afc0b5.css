@@ -139,3 +139,4 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 /* epAutoNews: admin "Automatic updates" toggle on organisation pages */
 .btn.ghost.ep-autonews.on{border-color:var(--accent);color:var(--accent)}
 .btn.ghost.ep-autonews.on:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pp-tools.rec-tools{flex-wrap:wrap;min-width:0;max-width:100%}

@@ -16834,6 +16834,7 @@ async function feedItems(db, recs) {
 			excerpt: intro,
 			meta,
 			readmore: repost && link ? `Read on ${host} ↗` : "Read more →",
+			date: feedDate(r),
 			origin: {
 				repost,
 				label: repost ? `Repost · ${srcSite}` : "Original"

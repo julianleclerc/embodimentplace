@@ -32,6 +32,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#PRNUM Feeds sorted by date with day separators; Watchlist without the side panel.**
+  - The Watchlist is one list, newest first, instead of one block per section. The pills still filter by section,
+    and Arrange still sets the pill order and hides sections (`epWlFeed`).
+  - The home feed and the Watchlist have small separators: Today, Yesterday, This week, This month, Last month,
+    Older, plus Upcoming for items dated in the future. They use the viewer's local date. "This week" starts on
+    Monday (`epDBucket`, `epWithSeps`, CSS block `epDSep`). Feed items now carry `date` (`feedItems`, worker).
+  - The Watchlist's right-hand panel from #24 is removed. The page is a single 760px column, the same width as the
+    home feed (`.ep-wl3`; `epWlSide` is left unused).
+
 - **#23 Automatic updates for organisations: admin toggle and a daily news job.**
   - **Toggle.** On a company, university or lab page, admins see "Auto updates off / on" next to "Pin to home".
     Stored in D1 in a new table `auto_news` (`record_id`, `enabled`, `feed`, `updated`, `updated_by`, `last_run`,

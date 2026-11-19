@@ -32,6 +32,29 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#25 Feeds sorted by date with day separators; Watchlist without the side panel.**
+  - The Watchlist is one list, newest first, instead of one block per section. The pills still filter by section,
+    and Arrange still sets the pill order and hides sections (`epWlFeed`).
+  - The home feed and the Watchlist have small separators: Today, Yesterday, This week, This month, Last month,
+    Older, plus Upcoming for items dated in the future. They use the viewer's local date. "This week" starts on
+    Monday (`epDBucket`, `epWithSeps`, CSS block `epDSep`). Feed items now carry `date` (`feedItems`, worker).
+  - The Watchlist's right-hand panel from #24 is removed. The page is a single 760px column, the same width as the
+    home feed (`.ep-wl3`; `epWlSide` is left unused).
+  - Newsletter settings only show the weekday picker for Weekly. Daily shows only the time, and Off hides both
+    (CSS block `epNlWhen`, pure CSS with `:has`).
+  - **Members follow organisations and topics only.** People, robots and models can no longer be followed or watched:
+    the ☆ Watch button on record pages is gone, `/watch/:slug` only toggles organisation follows,
+    `POST /api/watchlist/toggle` and `/watchlist/add` refuse anything else (topics go through
+    `/watchlist/add` and `/watchlist/remove` with `kind=tag`), and `wlSources` returns organisations and topics. Sources is now a search for organisations plus the list you follow. Suggestions list 12 organisations.
+    Sections are News, Research, Videos, Topics and Jobs (`WL_SECTIONS` in the catalog). Old record watches and
+    person follows (2 record watches live, no people) are left in D1 but ignored.
+  - **Topics in Sources.** A Topics section lists followed topics plus suggestions as one-tap chips (`epSrcTopics`,
+    `epTopicTog`), and typing in the search also offers "Follow #topic".
+  - **Sources works like "Start your watchlist".** Search results, the organisations you follow and a list of
+    suggested organisations are all tiles with a logo, summary and one-tap Follow/Following button (`epSugTile`).
+    Search uses the new `GET /api/watchlist/find` (organisations only, returned as tiles); `sourcesPayload` adds
+    `following` tiles. CSS block after `epDSep` (`.ep-src2`).
+
 - **#23 Automatic updates for organisations: admin toggle and a daily news job.**
   - **Toggle.** On a company, university or lab page, admins see "Auto updates off / on" next to "Pin to home".
     Stored in D1 in a new table `auto_news` (`record_id`, `enabled`, `feed`, `updated`, `updated_by`, `last_run`,

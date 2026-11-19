@@ -145,3 +145,8 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .btn.ghost.ep-autonews.on{border-color:var(--accent);color:var(--accent)}
 .btn.ghost.ep-autonews.on:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .pp-tools.rec-tools{flex-wrap:wrap;min-width:0;max-width:100%}
+/* epDSep: date separators in the home feed and the Watchlist (Today, Yesterday, This week...), Watchlist without side panel */.ep-dsep{display:flex;align-items:center;gap:10px;margin:6px 0 -2px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;font-size:.66rem;color:var(--muted)}.ep-dsep:before,.ep-dsep:after{content:"";flex:1;height:1px;background:var(--hair)}.ep-dsep:first-child{margin-top:0}.ep-wl3{padding:0 0 40px}.ep-wl3 .ep-wl-col>.wl{max-width:760px;margin:0 auto}
+/* epNlWhen: the weekday picker only shows for Weekly; Off hides day and time */.nl-when:not(:has(select[name=freq] option[value=weekly]:checked)) select[name=day],.nl-when:not(:has(select[name=freq] option[value=weekly]:checked)) select[name=freq]+span{display:none}.nl-when:has(select[name=freq] option[value=off]:checked)>:not(select[name=freq]){display:none}
+.ep-src2 section{margin-bottom:22px}.ep-src2 section>.band{margin-bottom:10px}.ep-src2 .wl-add{border:0;background:none;padding:0}.ep-find-res{margin-top:10px}.ep-wl-find input{border:1px solid var(--rule);background:var(--paper);padding:10px 12px}
+.ep-find-topic{display:flex;align-items:center;gap:10px;margin-top:10px}.ep-topic-hint{margin:0 0 8px;padding:0;font-size:.85rem}
+.ep-wbtn.on:hover:not(:disabled){background:var(--accent);filter:brightness(1.08)}

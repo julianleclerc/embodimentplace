@@ -39,7 +39,7 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   and Enter work, and the lounge opens for visitors who first landed on Log in or Sign up. Lounge messages show
   their date and time in the visitor's time zone, and a refused message shows why. A "Load more" button
   is pressed automatically when it scrolls into view, and organisation group pages show 24 cards at a time.
-  The Worker now sends 6 feed posts per page (`FEED_PAGE_SIZE`). Log out asks for confirmation first.
+  The Worker now sends 6 feed posts per page (`FEED_PAGE_SIZE`). Log out asks for confirmation first, in a dialog styled like the search box (`epLogoutAsk`).
 
 ## How it stays in sync
 

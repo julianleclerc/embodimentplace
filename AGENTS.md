@@ -33,6 +33,9 @@ There is no original source. The repository was rebuilt from the live deployment
 - `public/index.html` loads the bundle by its hashed name.
 - `wrangler.json` must match the live Worker's bindings. `scripts/check-live-config.mjs` stops a deploy that would
   change them.
+- New tables and columns need no migration step. `ensureExtraSchema` (the `TABLES` and `COLS` lists in
+  `worker/dist/index.js`) runs `CREATE TABLE IF NOT EXISTS` and `ALTER TABLE ... ADD COLUMN` on each request's first
+  use of the database. Add to those lists, and update `content/schema.sql` only if the table is public content.
 - D1 rejects a query with more than 100 bound parameters ("too many SQL variables"), and local `wrangler dev` does
   not, so it only fails live. Pass a list of ids as one JSON parameter and read it with
   `IN (SELECT value FROM json_each(?))`, as `linksFor` and `allByIds` do. Never build `?,?,?` from a list that can grow.

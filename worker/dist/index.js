@@ -2037,6 +2037,9 @@ function isMutating(method) {
 // backend/worker/src/schema_extra.ts
 /** Extra tables used by posting, community, claims, quotes, reports and mail. Safe to call on every request. */
 var TABLES = [
+	`CREATE TABLE IF NOT EXISTS auto_news(
+    record_id INTEGER PRIMARY KEY, enabled INTEGER NOT NULL DEFAULT 0, feed TEXT DEFAULT '',
+    updated TEXT, updated_by INTEGER, last_run TEXT, last_note TEXT DEFAULT '')`,
 	`CREATE TABLE IF NOT EXISTS comments(
     id INTEGER PRIMARY KEY, record_id INTEGER NOT NULL, user_id INTEGER, body TEXT,
     status TEXT NOT NULL DEFAULT 'approved', created TEXT, decided TEXT)`,
@@ -20454,6 +20457,47 @@ api.get("/list/:key", async (c) => {
 	if ("error" in payload) return c.json(payload, 404);
 	return c.json(payload);
 });
+// epAutoNews: admin toggle "Automatic updates" per organisation (table auto_news). A daily job reads the enabled ones.
+var EP_AUTONEWS_TYPES = [
+	"company",
+	"university",
+	"lab"
+];
+async function epAutoNewsOn(db, rid) {
+	try {
+		return Boolean(Number((await db.prepare("SELECT enabled FROM auto_news WHERE record_id=?").bind(rid).first())?.enabled || 0));
+	} catch {
+		return false;
+	}
+}
+api.post("/autonews/:slug", async (c) => {
+	const auth = c.get("auth");
+	if (!auth.is_admin) return c.json({ error: "Not found" }, 404);
+	const row = await c.env.DB.prepare("SELECT id, type FROM records WHERE slug=?").bind(c.req.param("slug")).first();
+	if (!row || !EP_AUTONEWS_TYPES.includes(String(row.type))) return c.json({ error: "Not found" }, 404);
+	const rid = Number(row.id);
+	const on = !await epAutoNewsOn(c.env.DB, rid);
+	await c.env.DB.prepare("INSERT INTO auto_news(record_id,enabled,updated,updated_by) VALUES(?,?,?,?) ON CONFLICT(record_id) DO UPDATE SET enabled=excluded.enabled, updated=excluded.updated, updated_by=excluded.updated_by").bind(rid, on ? 1 : 0, nowStamp(), auth.user?.id ?? null).run();
+	return c.json({
+		ok: true,
+		on
+	});
+});
+api.get("/admin/autonews", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const { results } = await c.env.DB.prepare("SELECT r.id, r.slug, r.name, r.type, r.data, a.feed, a.updated, a.last_run, a.last_note FROM auto_news a JOIN records r ON r.id=a.record_id WHERE a.enabled=1 ORDER BY r.name COLLATE NOCASE").all();
+	return c.json({ orgs: (results || []).map((r) => ({
+		id: Number(r.id),
+		slug: String(r.slug),
+		name: String(r.name),
+		type: String(r.type),
+		website: fieldV(parseData(r.data), "website"),
+		feed: String(r.feed || ""),
+		updated: r.updated ?? null,
+		last_run: r.last_run ?? null,
+		last_note: String(r.last_note || "")
+	})) });
+});
 api.get("/r/:slug", async (c) => {
 	const rec = await onePublic(c.env.DB, c.req.param("slug"));
 	if (!rec) return c.json({ error: "Not found" }, 404);
@@ -20502,6 +20546,8 @@ api.get("/r/:slug", async (c) => {
 		watching: soc.watching.has(rec.id),
 		pinned: pins.includes(rec.id),
 		can_pin: can(auth, "home"),
+		can_autonews: auth.is_admin && EP_AUTONEWS_TYPES.includes(rec.type),
+		autonews: auth.is_admin && EP_AUTONEWS_TYPES.includes(rec.type) ? await epAutoNewsOn(c.env.DB, rec.id) : false,
 		can_edit: auth.logged,
 		can_manage: [
 			"company",

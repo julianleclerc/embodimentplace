@@ -8,6 +8,9 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
+- **Daily news job for organisations with automatic updates.** The toggle and `auto_news` table exist, but nothing
+  reads them yet. The plan is a once-a-day pass in the Worker's `scheduled` handler (shared with the Watchlist
+  digest cron) that checks each enabled organisation's feed and adds new items as Repost posts linked to it.
 - **Image uploads don't work.** The Worker supports an R2 `MEDIA` binding, but the live Worker has none, so uploads
   are off. An R2 bucket needs to be created and bound in `wrangler.json`. The deploy safety check will flag this as a
   binding change, which is expected.
@@ -25,6 +28,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
+- **#PR Automatic updates toggle for organisations (admins only).** On a company, university or lab page, admins
+  see an "Auto updates off / on" button next to "Pin to home". It is stored in D1 in a new table `auto_news`
+  (`record_id`, `enabled`, `feed`, `updated`, `updated_by`, `last_run`, `last_note`), created by
+  `ensureExtraSchema`. Routes: `POST /api/autonews/:slug` flips it and returns `{on}`, `GET /api/admin/autonews`
+  lists the enabled organisations for the daily news job. Both are admin-only (404 otherwise). The record payload
+  carries `can_autonews` and `autonews` (helpers `epAutoNewsOn`, `EP_AUTONEWS_TYPES`). Frontend: button class
+  `ep-autonews`, CSS block `epAutoNews`. The toggle does nothing yet on its own: the daily job that reads it is
+  the next step (see Open items).
 - **#21 Empty cards say so.** Opening a member's card that has no name, position, company, info or social links
   shows "This card is empty." This replaces the blank card from #10. It applies in Place (`epPlaceCard`) and on
   walker and Lounge cards (`epCardNode`). Your own empty card still says "Add a position and info to your card.",

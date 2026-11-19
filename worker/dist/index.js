@@ -4130,6 +4130,8 @@ async function accountPayload(c, tab = "overview") {
 		email: String(pr.email || ""),
 		email_verified: !!pr.email_verified,
 		profile_vis: String(pr.profile_vis || "members"),
+		place_show: !pr.place_hide,
+		socials: pr.socials && typeof pr.socials === "object" ? pr.socials : {},
 		totp: Boolean(u.totp),
 		counts,
 		companies,
@@ -4165,6 +4167,22 @@ async function postAccount(c) {
 		return c.json({
 			ok: true,
 			message: "Profile visibility saved."
+		});
+	}
+	if (act === "place") {
+		const socials = {};
+		for (const k of EP_SOCIALS) {
+			const v = epSocial(k, g["social_" + k]);
+			if (v === null) return c.json({ error: { x: "That X link or handle doesn't look right.", linkedin: "Use your LinkedIn profile link (linkedin.com/in/...).", discord: "Use your Discord username or a discord.gg invite link.", instagram: "That Instagram link or handle doesn't look right." }[k] }, 400);
+			if (v) socials[k] = v;
+		}
+		pr.socials = socials;
+		if (g.place_show === "1") delete pr.place_hide;
+		else pr.place_hide = true;
+		await savePrefs(c.env.DB, u.id, pr);
+		return c.json({
+			ok: true,
+			message: "Place settings saved."
 		});
 	}
 	if (act === "email") {
@@ -20434,7 +20452,37 @@ api.get("/admin/requests", async (c) => {
 });
 // epPlace: characters for the Community "Place" hub. Public fields only: username, character look,
 // public post count and latest post, and the byline (title, organisation, bio) when the member's
-// profile visibility allows the viewer to see it. Visitors only see members who chose "Everyone".
+// profile visibility allows the viewer to see it, with their social links. Everyone's character is shown
+// unless they turned it off under Account, Settings (prefs.place_hide).
+// epSocial: links a member adds for their Place card (Account, Settings). Returns a clean value or null if invalid.
+function epSocial(kind, raw) {
+	let s = String(raw || "").trim().slice(0, 200);
+	if (!s) return "";
+	const hosts = {
+		x: ["x.com", "twitter.com"],
+		instagram: ["instagram.com"],
+		linkedin: ["linkedin.com"],
+		discord: ["discord.com", "discord.gg"]
+	}[kind];
+	if (!hosts) return null;
+	if (/^https?:\/\//i.test(s) || /^(www\.)?[a-z0-9.-]+\.[a-z]{2,}\//i.test(s)) {
+		let u;
+		try {
+			u = new URL(/^https?:\/\//i.test(s) ? s : "https://" + s);
+		} catch {
+			return null;
+		}
+		const h = u.hostname.toLowerCase().replace(/^(www|m|[a-z]{2})\./, "");
+		if (!hosts.includes(h) || u.username || u.password) return null;
+		return "https://" + u.hostname.toLowerCase() + u.pathname.replace(/\/+$/, "") + (kind === "discord" ? u.search : "");
+	}
+	s = s.replace(/^@/, "");
+	if (kind === "discord") return /^[a-z0-9_.]{2,32}$/i.test(s) ? s : null;
+	if (kind === "linkedin") return /^[a-z0-9_-]{3,100}$/i.test(s) ? "https://www.linkedin.com/in/" + s : null;
+	if (kind === "x") return /^[a-z0-9_]{1,15}$/i.test(s) ? "https://x.com/" + s : null;
+	return /^[a-z0-9_.]{1,30}$/i.test(s) ? "https://www.instagram.com/" + s : null;
+}
+var EP_SOCIALS = ["x", "linkedin", "discord", "instagram"];
 async function epPlacePayload(c) {
 	const auth = c.get("auth");
 	const me = auth.user ? Number(auth.user.id) : 0;
@@ -20465,7 +20513,7 @@ async function epPlacePayload(c) {
 		if (!mine && isSuspended(u)) continue;
 		const pr = prefsOf(u);
 		const vis = String(pr.profile_vis || "members");
-		if (!logged && vis !== "everyone") {
+		if (pr.place_hide && !mine) {
 			hidden++;
 			continue;
 		}
@@ -20489,6 +20537,8 @@ async function epPlacePayload(c) {
 				organisation: pv("organisation"),
 				bio: pv("bio")
 			} : null,
+			socials: showByline && pr.socials && typeof pr.socials === "object" ? Object.fromEntries(EP_SOCIALS.filter((k) => typeof pr.socials[k] === "string" && pr.socials[k]).map((k) => [k, String(pr.socials[k]).slice(0, 200)])) : {},
+			hiddenSelf: Boolean(mine && pr.place_hide),
 			posts: p ? p.n : 0,
 			latest: p && p.latest ? p.latest : null
 		});

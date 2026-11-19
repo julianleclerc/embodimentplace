@@ -103,3 +103,4 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 
 /* epCards2: no idle bob in Place; name on card */
 .epp-stage .wk-char.idle .wk-fig{animation:none}.epp-u .epp-at{font-weight:400;opacity:.65;margin-left:.45em;font-size:.9em}
+/* ep ticker: same size and line on phones (no iOS text inflation) */html{-webkit-text-size-adjust:100%;text-size-adjust:100%}.ticker{line-height:1.5;-webkit-text-size-adjust:100%;text-size-adjust:100%}.ticker .tlabel,.ticker .track{display:flex;align-items:center}.ticker .run{align-items:center;will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}.ticker a{display:block;flex:none;font-size:inherit;line-height:inherit}.ticker a b{font-size:inherit}

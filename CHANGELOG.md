@@ -40,6 +40,8 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     Monday (`epDBucket`, `epWithSeps`, CSS block `epDSep`). Feed items now carry `date` (`feedItems`, worker).
   - The Watchlist's right-hand panel from #24 is removed. The page is a single 760px column, the same width as the
     home feed (`.ep-wl3`; `epWlSide` is left unused).
+  - Newsletter settings only show the weekday picker for Weekly. Daily shows only the time, and Off hides both
+    (CSS block `epNlWhen`, pure CSS with `:has`).
 
 - **#23 Automatic updates for organisations: admin toggle and a daily news job.**
   - **Toggle.** On a company, university or lab page, admins see "Auto updates off / on" next to "Pin to home".

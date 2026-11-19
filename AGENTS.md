@@ -86,6 +86,9 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - The card (name, position, company, info, social links) follows the member's "Who sees your card" setting
   (`prefs.profile_vis`: me, members or everyone; members is the default).
 - Changing your email needs a code sent to the new address.
+- Members can follow organisations only (companies, universities, labs), not people, robots, models or topics.
+- Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,
+  Last month, Older).
 
 ## Where things are tracked
 

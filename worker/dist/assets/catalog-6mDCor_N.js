@@ -834,29 +834,19 @@ var KIND_ALIAS = {
 var COMPOSE_KINDS = POST_CATEGORIES.map((c) => [c.toLowerCase(), c]);
 var WL_SECTIONS = [
 	[
-		"people",
-		"People",
-		"Posts and papers by people you follow"
-	],
-	[
 		"companies",
-		"Companies",
-		"Posts, launches, funding, deployments and papers from companies, universities and labs you follow"
+		"News",
+		"Posts, launches, funding and deployments from organisations you follow"
 	],
 	[
 		"research",
 		"Research",
-		"Papers from anything you watch"
+		"Papers from organisations you follow"
 	],
 	[
 		"videos",
 		"Videos",
-		"Videos from anything you watch"
-	],
-	[
-		"topics",
-		"Topics",
-		"Anything linked to the robots, models and topics you watch"
+		"Videos from organisations you follow"
 	],
 	[
 		"jobs",
@@ -865,11 +855,9 @@ var WL_SECTIONS = [
 	]
 ];
 var WL_DEFAULT = [
-	"people",
 	"companies",
 	"research",
 	"videos",
-	"topics",
 	"jobs"
 ];
 var WEEKDAYS = [

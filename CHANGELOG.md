@@ -42,6 +42,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     home feed (`.ep-wl3`; `epWlSide` is left unused).
   - Newsletter settings only show the weekday picker for Weekly. Daily shows only the time, and Off hides both
     (CSS block `epNlWhen`, pure CSS with `:has`).
+  - **Members follow organisations only.** People, robots, models and topics can no longer be followed or watched:
+    the ☆ Watch button on record pages is gone, `/watch/:slug` only toggles organisation follows,
+    `POST /api/watchlist/toggle` and `/watchlist/add` refuse anything else, and `wlSources` returns organisations
+    only. Sources is now a search for organisations plus the list you follow. Suggestions list 12 organisations.
+    Sections are News, Research, Videos and Jobs, all from followed organisations (`WL_SECTIONS` in the catalog).
+    Old rows in `watch_sources` and `user_follows` (2 record watches live, no people or topics) are left in D1 but
+    ignored.
 
 - **#23 Automatic updates for organisations: admin toggle and a daily news job.**
   - **Toggle.** On a company, university or lab page, admins see "Auto updates off / on" next to "Pin to home".

@@ -836,7 +836,7 @@ var WL_SECTIONS = [
 	[
 		"companies",
 		"Companies",
-		"Posts, launches and papers from companies, universities and labs you follow"
+		"Posts, launches, funding, deployments and papers from companies, universities and labs you follow"
 	],
 	[
 		"research",

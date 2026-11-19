@@ -49,6 +49,15 @@ There is no original source. The repository was rebuilt from the live deployment
 - After editing, rename each changed file to `index-<first 8 hex of its sha256>.js` / `.css` and update
   `public/index.html`, so browsers fetch the new version.
 
+### Scheduled jobs and email
+
+- The Worker has an hourly cron (`triggers.crons` in `wrangler.json`) that runs the `scheduled` export. Right now it
+  only sends Watchlist digests (`epDigestCron`). Test it locally with
+  `curl "localhost:8787/cdn-cgi/handler/scheduled?cron=5+*+*+*+*"` while `wrangler dev` runs; mail lands in
+  `email_log`.
+- Every email is wrapped in the site's Hommik look by `sendMail` (`epMailWrap`). Write only the inner HTML for new
+  emails, and keep them in that style. Julian asked for all emails to match the website.
+
 ### Running it locally
 
 ```

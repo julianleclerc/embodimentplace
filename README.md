@@ -98,6 +98,9 @@ named `ep…` (for example `epWhen`, `epErr`) so they are easy to find, and the 
   address twice, a 6-digit code goes to it (actions `email_start`, `email_confirm`, `email_cancel`, token kind
   `email_change`, 15 minutes), and the address only changes once the code is entered; the old address gets a notice.
   The Settings tab and the + Create and Settings buttons are gone from Account (`/account/settings` shows Overview).
+- 2026-11-19: the news ticker keeps one text size and line on phones (`text-size-adjust:100%` stops iOS enlarging
+  some items, and every item is centred on the same line). Event pages no longer show the live box (Schedule, Chat,
+  Here, Featured): the `ei` component is no longer rendered on the record page.
 
 ## How it stays in sync
 

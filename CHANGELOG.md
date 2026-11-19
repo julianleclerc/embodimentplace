@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-19
 
-- **#PRNUM Watchlist opens after the first organisation.** A member who follows no organisation sees only "Start your watchlist" (with search, suggested organisations and topics) on /watchlist, /watchlist/sources and /watchlist/newsletter. The Watchlist, Sources and Newsletter tabs appear once at least one organisation is followed. Topics alone do not unlock it. `epLk` in the frontend, `watchlistPayload` empty when `src.orgs` is empty, `newsletterPayload` passes `suggest`.
+- **#27 Watchlist opens after the first organisation.** A member who follows no organisation sees only "Start your watchlist" (with search, suggested organisations and topics) on /watchlist, /watchlist/sources and /watchlist/newsletter. The Watchlist, Sources and Newsletter tabs appear once at least one organisation is followed. Topics alone do not unlock it. `epLk` in the frontend, `watchlistPayload` empty when `src.orgs` is empty, `newsletterPayload` passes `suggest`.
 - **#26 Watchlist shows posts only.** The Watchlist and the email digest only show posts (news, reposts, blog
   posts, videos) and papers linked to the organisations and topics you follow. Products, models, funding rounds,
   deployments, events, datasets and jobs no longer appear (`watchlistPayload` type list is back to

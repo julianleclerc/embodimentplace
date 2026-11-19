@@ -30,6 +30,18 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-19 (evening)
+
+- **#27 Walking characters show for everyone again.** Each page has its own Durable Object, and its in-memory record
+  of who may walk there (`WalkWorld.hold`) was empty whenever a walker changed page or the object restarted (every
+  deploy restarts them). The walker kept walking on their own screen, but the page refused their moves, so nobody
+  else saw them.
+  - `postWalk` now passes `owned` when the `hold` Durable Object has confirmed the walker's token, and
+    `WalkWorld.tick` accepts it.
+  - The character is removed from the old page straight away when the walker changes page.
+  - Your own character now shows on your other devices too. `broadcastWalk`, the socket's first snapshot and
+    `GET /api/walk/peek` no longer leave out your own account. The device that is walking skips it (client `ke`).
+
 ### 2026-11-19
 
 - **#26 Watchlist shows posts only.** The Watchlist and the email digest only show posts (news, reposts, blog

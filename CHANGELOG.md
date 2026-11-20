@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
-- **#30 Admin tools moved to a corner button.** The green "Editing on" bar at the top of every page is gone. Admins
+- **#31 Admin tools moved to a corner button.** The green "Editing on" bar at the top of every page is gone. Admins
   (and contributors, with their own tools) get a button at the bottom right, in the dock left of the eye, Walk and
   Lounge buttons. It shows a teal count of things waiting (review, reports, requests). It opens a small menu in the
   site's menu style with one option, "Admin", that goes to a new `/admin` page listing every tool, grouped

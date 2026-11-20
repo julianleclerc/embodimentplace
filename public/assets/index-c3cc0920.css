@@ -221,3 +221,19 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .ep-ah-d{color:var(--muted);font-size:.86rem;line-height:1.4}
 @media (max-width:760px){.ep-adm-btn{height:44px;padding:0 10px}.ep-ah-l{grid-template-columns:1fr}.ep-ah-g{margin-top:22px}}
 .cdock .ep-adm-menu a{padding:0 16px!important;margin:0!important;border:0;border-radius:0}.cdock .ep-adm-who{padding:10px 16px 8px!important;margin:0}
+/* epAdw: Admin link next to Account, admin pages with tabs (Overview + one per tool) */
+.ep-admnav{position:relative;display:inline-flex;align-items:center;gap:6px}
+.ep-admnav-n{min-width:18px;height:18px;padding:0 5px;display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:var(--accent-ink);font-family:var(--mono);font-size:.62rem;line-height:1}
+.epmenu-panel .ep-admnav{justify-content:space-between}
+.ep-adw-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.ep-adw-head .muted{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em}
+.ep-adw-tb{margin:0 0 20px!important}
+.ep-adw-tb .n{background:var(--accent);color:var(--accent-ink);opacity:1;padding:1px 5px}
+.ep-adw-body .listhead h1{font-size:1.5rem;margin-top:0}
+.ep-adw-body .ep-ah-g:first-child{margin-top:4px}
+.ep-adw-body>.empty:first-child{padding-top:24px}
+nav.right .ep-admnav .ep-admnav-n{position:absolute;top:6px;right:4px;min-width:14px;height:14px;padding:0 3px;font-size:.55rem}
+nav.right .epmenu-panel .ep-admnav .ep-admnav-n{position:static;min-width:18px;height:18px;padding:0 5px;font-size:.62rem}
+nav.right>.ep-admnav{padding-right:18px}
+.ep-adw-body>.cm-wrap{margin-left:0;margin-right:0;max-width:none}
+.ep-adw-body .listhead h1{font-size:1.5rem!important;margin-top:0!important}

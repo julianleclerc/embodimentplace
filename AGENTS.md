@@ -94,9 +94,10 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - The Watchlist tabs (Watchlist, Sources, Newsletter) stay hidden until the member follows at least one organisation; until then every Watchlist URL shows "Start your watchlist".
 - Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,
   Last month, Older).
-- Admin and contributor tools are not shown at the top of the page. They sit behind the button at the bottom
-  right (in the dock, left of the Lounge button), which opens a menu with one option, "Admin", leading to the
-  `/admin` page that lists every tool. Add new admin tools to `adminBarLinks` in the Worker so they appear there.
+- Admin tools live under "Admin" in the top menu, next to Account (also in the phone menu). Every admin page
+  uses one layout like Account: the "Admin" heading, then tabs (Overview first, then one per tool), via `epAdw`.
+  There is no admin bar at the top and no admin button in the bottom-right dock. Add new admin tools to
+  `adminBarLinks` in the Worker and wrap their route in `epAdw` so they get the tabs.
 
 ## Where things are tracked
 

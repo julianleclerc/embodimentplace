@@ -32,6 +32,18 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
+- **#33 Admin moved into the top menu, with tabs.** Julian asked for the admin tools next to Account and laid out
+  like the other pages. The bottom-right admin button from #31 is removed.
+  - "Admin" sits between "+ Create" and "Account" on desktop (small teal count of things waiting) and after
+    "Account" in the phone menu. Only editors see it. `epAdmNav`, active state `epAdmOn`.
+  - Every admin page (`/admin`, `/admin/*`, `/review`, `/users`, `/new`) is wrapped in `epAdw`: an "Admin" heading,
+    then tabs Overview, Review, New record, Reports, Home highlights, Requests, Users, Email, Stickers, Focus areas,
+    Quote requests (counts on the tabs). Overview is the grouped list from #31 (`epAdminHub`). The tab bar scrolls
+    sideways on phones and keeps the open tab in view.
+  - `/community/people`, `/community/orgs` and Export JSON stay out of the tabs (`epAdwX`): the first two belong
+    to Community's own tabs, the last is a download. They are still on the Overview.
+  - CSS block `/* epAdw: ... */`; the `epAdm` corner-button code is gone. Bundle `index-e6dd7c92.js` / `index-c3cc0920.css`.
+
 - **#32 Whistle in the corner, icon sort options, drag characters; Online button size.**
   - The Place whistle moved to the bottom-right corner. Its options are now icon buttons (A–Z, colour squares, top
     hat, arrows for "Let them walk") with the label on hover; touch screens show a small label under each icon. On

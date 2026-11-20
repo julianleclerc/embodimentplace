@@ -32,6 +32,18 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
+- **#32 Admin moved into the top menu, with tabs.** Julian asked for the admin tools next to Account and laid out
+  like the other pages. The bottom-right admin button from #31 is removed.
+  - "Admin" sits between "+ Create" and "Account" on desktop (small teal count of things waiting) and after
+    "Account" in the phone menu. Only editors see it. `epAdmNav`, active state `epAdmOn`.
+  - Every admin page (`/admin`, `/admin/*`, `/review`, `/users`, `/new`) is wrapped in `epAdw`: an "Admin" heading,
+    then tabs Overview, Review, New record, Reports, Home highlights, Requests, Users, Email, Stickers, Focus areas,
+    Quote requests (counts on the tabs). Overview is the grouped list from #31 (`epAdminHub`). The tab bar scrolls
+    sideways on phones and keeps the open tab in view.
+  - `/community/people`, `/community/orgs` and Export JSON stay out of the tabs (`epAdwX`): the first two belong
+    to Community's own tabs, the last is a download. They are still on the Overview.
+  - CSS block `/* epAdw: ... */`; the `epAdm` corner-button code is gone. Bundle `index-b424ede4.js` / `index-251be2f4.css`.
+
 - **#31 Admin tools moved to a corner button.** The green "Editing on" bar at the top of every page is gone. Admins
   (and contributors, with their own tools) get a button at the bottom right, in the dock left of the eye, Walk and
   Lounge buttons. It shows a teal count of things waiting (review, reports, requests). It opens a small menu in the

@@ -237,3 +237,36 @@ nav.right .epmenu-panel .ep-admnav .ep-admnav-n{position:static;min-width:18px;h
 nav.right>.ep-admnav{padding-right:18px}
 .ep-adw-body>.cm-wrap{margin-left:0;margin-right:0;max-width:none}
 .ep-adw-body .listhead h1{font-size:1.5rem!important;margin-top:0!important}
+
+/* epOg: organisation badge on characters, cards, the People section on organisation pages and Account */
+.wk-char.ep-og .wk-fig:after{content:"";position:absolute;left:9px;top:17px;width:8px;height:8px;box-sizing:border-box;border:1px solid #0d0d0d;background:#fff var(--ogi,none) center/contain no-repeat;z-index:1}
+.wk-char.ep-og.ep-og-nl .wk-fig:after{background:var(--accent,#ff4a1c);box-shadow:inset 0 0 0 2px #fff}
+.wk-ogn{opacity:.85}.wk-ogn:before{content:"·";margin:0 4px}
+.epp-og{align-self:stretch;display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--rule);padding-top:9px;margin-top:2px;text-align:left}
+.epp-og:before{content:"Member of";font:500 .6rem/1 var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.04em}
+.epp-ogr{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.epp-ogn{display:flex;align-items:center;gap:8px;min-width:0;color:var(--ink);text-decoration:none;font-weight:600;font-size:.9rem}
+.epp-ogn span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epp-ogn:hover span{text-decoration:underline}
+.epp-ogl{flex:none;width:22px;height:22px;box-sizing:border-box;border:1px solid var(--rule);background:#fff center/contain no-repeat;background-origin:content-box;padding:2px;display:inline-grid;place-items:center;font:600 11px/1 var(--mono);font-style:normal;color:#0d0d0d;vertical-align:middle}
+.epp-ogl.nl{background:var(--accent);color:var(--accent-ink,#fff)}
+.epp-ogo{flex:none;font:500 .62rem/1 var(--mono);text-transform:uppercase;color:var(--ink);text-decoration:none;border:1px solid var(--rule);padding:5px 7px;white-space:nowrap}
+.epp-ogo:hover{background:var(--ink);color:var(--paper)}
+.epo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:10px}
+.epo-p{display:flex;flex-direction:column;align-items:stretch;gap:2px;min-width:0}
+.epo-who{display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px 6px 10px;background:var(--paper);border:1px solid var(--rule);color:var(--ink);cursor:pointer;font:inherit;transition:transform .08s,box-shadow .08s}
+.epo-who:hover,.epo-who:focus-visible{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px)}
+.epo-st{height:66px;width:100%;display:flex;align-items:flex-end;justify-content:center;pointer-events:none}
+.epo-st .wk-char{position:relative;left:auto;top:auto;display:block;transform:scale(1.6);transform-origin:bottom center}
+.epo-u{font:500 .66rem/1.2 var(--mono);text-transform:uppercase;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epo-who.mine .epo-u{color:var(--accent)}
+.epo-rm{font:500 .6rem/1 var(--mono);text-transform:uppercase;background:none;border:0;color:var(--muted);cursor:pointer;padding:6px 2px;text-align:center}
+.epo-rm:hover{color:var(--ink);text-decoration:underline}
+.epo-hint{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:space-between;margin-top:14px}
+.epo-hint p{margin:0}
+.epo-pin{display:inline-block;width:10px;height:10px;box-sizing:border-box;border:1px solid currentColor;background:var(--accent);box-shadow:inset 0 0 0 1px var(--paper);margin-right:7px;vertical-align:-1px}
+.epo-prio{color:var(--accent)}
+.epo-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid var(--hair,var(--rule))}
+.epo-row>a:not(.btn){font-weight:600;margin-right:auto}
+.epo-ov li{display:flex;align-items:center;gap:8px}
+.epo-have .uadd{display:flex;flex-wrap:wrap;gap:8px}

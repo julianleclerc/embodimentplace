@@ -2084,6 +2084,16 @@ var TABLES = [
 ];
 var COLS = [
 	[
+		"reports",
+		"priority",
+		"INTEGER DEFAULT 0"
+	],
+	[
+		"owners",
+		"email",
+		"TEXT DEFAULT ''"
+	],
+	[
 		"auto_news",
 		"seen",
 		"TEXT DEFAULT '[]'"
@@ -3880,7 +3890,8 @@ async function applySubmission(db, sub) {
 		return null;
 	}
 	if (kind === "claim" && target) {
-		await db.prepare("INSERT OR IGNORE INTO owners(user_id,company_id,created) VALUES(?,?,?)").bind(sub.user_id, target, nowStamp()).run();
+		await db.prepare("INSERT OR IGNORE INTO owners(user_id,company_id,created,email) VALUES(?,?,?,?)").bind(sub.user_id, target, nowStamp(), String(p.email || "")).run();
+		await epOgSync(db, sub.user_id);
 		return target;
 	}
 	if (kind === "company_new") {
@@ -3891,7 +3902,6 @@ async function applySubmission(db, sub) {
 			""
 		]] : [];
 		const rid = await saveRecord(db, null, ot, String(p.name), String(p.summary || ""), String(p.body || ""), p.data || {}, "", 0, 0, rels);
-		await db.prepare("INSERT OR IGNORE INTO owners(user_id,company_id,created) VALUES(?,?,?)").bind(sub.user_id, rid, nowStamp()).run();
 		return rid;
 	}
 	if (kind === "company_edit" || kind === "record_edit") {
@@ -4086,12 +4096,74 @@ function walkerLook(u) {
 		hat: HATS.has(lk.hat) ? lk.hat : "none",
 		hc: HEX.test(lk.hc || "") ? lk.hc : "#0d0d0d",
 		// Username label colour. Empty means the default (black, or the accent for your own).
-		nc: HEX.test(lk.nc || "") ? lk.nc : ""
+		nc: HEX.test(lk.nc || "") ? lk.nc : "",
+		// epOg: the organisation badge worn on the chest ({s: slug, n: name, l: logo}), or null.
+		og: epOgOf(u)
 	};
+}
+// epOg: organisation membership is a badge, not page management. Members verify a work email on an
+// organisation's page (/claim/<slug>), get a row in `owners` (the table name is historical: it no longer
+// gives any rights), and wear one badge on their character. prefs.og is a copy of the worn badge so
+// walkerLook can show it without a query; prefs.og_pick is the chosen slug, or "none" to hide badges.
+function epOgOf(u) {
+	let pr = {};
+	try {
+		pr = JSON.parse(u?.prefs || "{}");
+	} catch {}
+	const o = pr.og;
+	if (!o || typeof o !== "object" || !o.s || pr.og_pick === "none") return null;
+	const l = String(o.l || "");
+	return {
+		s: String(o.s).slice(0, 120),
+		n: String(o.n || "").slice(0, 120),
+		l: /^\/[\w\-./%]+$/.test(l) || /^https:\/\/[^"'()\s]+$/.test(l) ? l.slice(0, 400) : ""
+	};
+}
+function epOgLogo(row) {
+	try {
+		// Only real logos (shown with fit "contain", like the map pins); photos make poor badges.
+		const img = imageSrc(loadRow(row).data);
+		return img && img.fit === "contain" ? img.src || "" : "";
+	} catch {
+		return "";
+	}
+}
+// All organisations a member belongs to, oldest first: [{s, n, l, id}].
+async function epOgList(db, uid) {
+	const { results } = await db.prepare("SELECT r.* FROM owners o JOIN records r ON r.id=o.company_id WHERE o.user_id=? ORDER BY o.created, r.id").bind(uid).all();
+	return (results || []).map((r) => ({
+		id: Number(r.id),
+		s: String(r.slug),
+		n: String(r.name),
+		l: epOgLogo(r)
+	}));
+}
+// Recompute the worn badge after any membership change (and on Account loads, to pick up renames).
+async function epOgSync(db, uid) {
+	const u = await db.prepare("SELECT id, prefs FROM users WHERE id=?").bind(uid).first();
+	if (!u) return [];
+	const pr = prefsOf(u);
+	let list = [];
+	try {
+		list = await epOgList(db, uid);
+	} catch {}
+	const pick = String(pr.og_pick || "");
+	const w = list.find((x) => x.s === pick) || list[0] || null;
+	const want = w ? {
+		s: w.s,
+		n: w.n,
+		l: w.l
+	} : null;
+	if (JSON.stringify(pr.og || null) !== JSON.stringify(want)) {
+		if (want) pr.og = want;
+		else delete pr.og;
+		await savePrefs(db, uid, pr);
+	}
+	return list;
 }
 // Hats you unlock by doing things on the site. Admins have them all.
 var EP_LOCKED_HATS = {
-	hardhat: "Manage an organisation's page to unlock it.",
+	hardhat: "Get an organisation badge (I work here, on its page) to unlock it.",
 	bubble: "Send a message in the Lounge to unlock it.",
 	explorer: "Walk your character on 10 different pages to unlock it."
 };
@@ -4139,8 +4211,16 @@ async function accountPayload(c, tab = "overview") {
 	} catch {}
 	const companies = [];
 	try {
-		const { results } = await db.prepare("SELECT r.id, r.slug, r.name, r.summary FROM owners o JOIN records r ON r.id=o.company_id WHERE o.user_id=? ORDER BY r.name COLLATE NOCASE").bind(u.id).all();
-		for (const r of results || []) companies.push(r);
+		for (const o of await epOgSync(db, u.id)) companies.push({
+			id: o.id,
+			slug: o.s,
+			name: o.n,
+			logo: o.l
+		});
+	} catch {}
+	let ogPick = String(pr.og_pick || "");
+	try {
+		ogPick = String(prefsOf(await db.prepare("SELECT prefs FROM users WHERE id=?").bind(u.id).first()).og_pick || "");
 	} catch {}
 	const following = [];
 	try {
@@ -4220,6 +4300,7 @@ async function accountPayload(c, tab = "overview") {
 		totp: Boolean(u.totp),
 		counts,
 		companies,
+		og_pick: ogPick,
 		following,
 		posts,
 		saved,
@@ -6540,6 +6621,8 @@ async function isOwner(db, userId, companyId) {
 	return Boolean(row);
 }
 async function ownedCompanies(db, userId) {
+	// epOg: members wear a badge; only the admin and contributors run organisation pages.
+	return [];
 	const { results } = await db.prepare("SELECT r.* FROM records r JOIN owners o ON o.company_id=r.id WHERE o.user_id=? ORDER BY r.name COLLATE NOCASE").bind(userId).all();
 	return (results || []).map((r) => loadRow(r));
 }
@@ -6776,6 +6859,7 @@ async function apiUfollow(c, uidRaw) {
 	return c.json({ on: !ex });
 }
 var REPORT_REASONS = [
+	"Wrong information",
 	"Spam",
 	"Harassment",
 	"Misinformation",
@@ -6803,7 +6887,9 @@ async function postReport(c) {
 		"user"
 	].includes(kind) || !/^\d+$/.test(tid)) return c.json({ error: "Bad report." }, 400);
 	const reason = REPORT_REASONS.includes(g("reason")) ? g("reason") : "Other";
-	if (!await c.env.DB.prepare("SELECT 1 AS n FROM reports WHERE user_id=? AND kind=? AND target_id=? AND status='open'").bind(auth.user.id, kind, Number(tid)).first()) await c.env.DB.prepare("INSERT INTO reports(user_id,kind,target_id,reason,note,status,created) VALUES(?,?,?,?,?,'open',?)").bind(auth.user.id, kind, Number(tid), reason, g("note").slice(0, 500), nowStamp()).run();
+	// epOg: reports about an organisation's page from its own members come first in the admin's list (priority 1).
+	const prio = kind === "record" && await isOwner(c.env.DB, auth.user.id, Number(tid)) ? 1 : 0;
+	if (!await c.env.DB.prepare("SELECT 1 AS n FROM reports WHERE user_id=? AND kind=? AND target_id=? AND status='open'").bind(auth.user.id, kind, Number(tid)).first()) await c.env.DB.prepare("INSERT INTO reports(user_id,kind,target_id,reason,note,status,created,priority) VALUES(?,?,?,?,?,'open',?,?)").bind(auth.user.id, kind, Number(tid), reason, g("note").slice(0, 2e3), nowStamp(), prio).run();
 	const back = g("back") || "/";
 	if (c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("json")) return c.json({
 		ok: true,
@@ -7061,10 +7147,10 @@ async function postDelete(c, slug) {
 }
 // shared/legal.ts
 /** Default page drafts, copied from the Python site (ep.config / ep.legal). */
-var ABOUT_MD = "# About embodiment.place\n\nembodiment.place is a research tracker, blog and database for humanoid robotics and embodied AI: the organisations, robots, hardware (humanoids, hands and actuators), models, software, people, funding, deployments, papers and events in the field. Each record is stored once and shows up on every page it's linked to.\n\n## Independent\n\nIt is a personal, independent project. It is not affiliated with, endorsed by or sponsored by any employer of the operator, or any company, university, lab or person listed on the site, and it doesn't speak for them. Names and trademarks belong to their owners and are used only to identify them.\n\n## What's here\n\n- **Feed:** blogs, research papers, news and videos from people and organisations in the field.\n- **Organisations:** companies, universities, labs and investors, with their products, people, funding and deployments.\n- **Hardware:** humanoids, hands and actuators, each with a spec page and comparisons.\n- **Models, software and data:** robot foundation models, tools and the datasets behind them.\n- **Events and timeline:** what's coming up and what happened when.\n\n## How the information is gathered\n\nRecords come from public sources, which are cited on the page, and from members. Facts aren't guessed or estimated. Member edits and posts are reviewed before they appear. The site is a research aid, not investment, purchasing or safety advice: check the original sources. See the [Terms](/terms).\n\n## Take part\n\n- **Sign up** to follow organisations and people, save and like posts, comment, chat and get a watchlist newsletter. Others see you by your username. Your byline is shown only to the people you choose, and your email is never shown. See the [Privacy policy](/privacy).\n- **Claim your page:** if you work at an organisation listed here, verify a work email to keep its page current.\n- **Community:** tell us what you need, and we'll introduce you to a good match if we know one.\n\n## Corrections and contact\n\nSpotted something wrong or missing? Use **Report** on the page or write to {contact_email}. More on the [Contact](/contact) page.\n";
+var ABOUT_MD = "# About embodiment.place\n\nembodiment.place is a research tracker, blog and database for humanoid robotics and embodied AI: the organisations, robots, hardware (humanoids, hands and actuators), models, software, people, funding, deployments, papers and events in the field. Each record is stored once and shows up on every page it's linked to.\n\n## Independent\n\nIt is a personal, independent project. It is not affiliated with, endorsed by or sponsored by any employer of the operator, or any company, university, lab or person listed on the site, and it doesn't speak for them. Names and trademarks belong to their owners and are used only to identify them.\n\n## What's here\n\n- **Feed:** blogs, research papers, news and videos from people and organisations in the field.\n- **Organisations:** companies, universities, labs and investors, with their products, people, funding and deployments.\n- **Hardware:** humanoids, hands and actuators, each with a spec page and comparisons.\n- **Models, software and data:** robot foundation models, tools and the datasets behind them.\n- **Events and timeline:** what's coming up and what happened when.\n\n## How the information is gathered\n\nRecords come from public sources, which are cited on the page, and from members. Facts aren't guessed or estimated. Member edits and posts are reviewed before they appear. The site is a research aid, not investment, purchasing or safety advice: check the original sources. See the [Terms](/terms).\n\n## Take part\n\n- **Sign up** to follow organisations and people, save and like posts, comment, chat and get a watchlist newsletter. Others see you by your username. Your byline is shown only to the people you choose, and your email is never shown. See the [Privacy policy](/privacy).\n- **Wear your organisation's badge:** if you work at an organisation listed here, verify a work email with **I work here** on its page. The badge shows on your character and helps people from the same place find each other.\n- **Community:** tell us what you need, and we'll introduce you to a good match if we know one.\n\n## Corrections and contact\n\nSpotted something wrong or missing? Use **Report** on the page or write to {contact_email}. More on the [Contact](/contact) page.\n";
 var PRIVACY_MD = "# Privacy policy\n\n*Last updated: {updated}*\n\nThis policy explains what personal data embodiment.place (\"the site\") collects, why, who can see it, how long it is kept and what you can do about it. The site is run by [operator legal name], [postal address] (\"we\", \"us\"). We decide how your data is used (in EU and UK law, we are the \"controller\"). For any privacy question or request, write to **{contact_email}**.\n\n## Short version\n\n- To use the site you need a username, an email address and a password. Your password is stored only as a salted hash.\n- Others know you by your **username**. Your email is never shown to other members: only you and the site admin see it.\n- Your card (name, photo, title, organisation, short bio, social links) is shown only to the people you choose under Account, Overview, Who sees your card. The default is logged-in members only. Visitors who aren't logged in and search engines see your username, not your byline.\n- We keep short access logs (including IP addresses) for {log_days} days to keep the site running and secure.\n- We don't sell personal data, don't share it for advertising, and don't use advertising or tracking cookies.\n- You can download your data or delete your account at any time from Account, Security.\n\n## What we collect\n\n**When you create an account**\n\n- Username (shown publicly next to what you write), email address, and your password stored as a salted scrypt hash. We can't read your password.\n- Account type (member, contributor or admin), the date you joined, and whether your email address is confirmed.\n- If you turn on two-step login: the secret for your authenticator app, the last code used, and your recovery codes stored as hashes.\n\n**What you choose to add**\n\n- **Card:** name, photo, title, organisation, short bio and social links.\n- **For introductions:** location, what you're open to, interests and website. These are never shown on the site. Only the admin, and moderators who review profile changes, see them.\n- **Settings:** profile visibility, newsletter choices, watchlist sections, your walking character's look, and similar preferences.\n- **Content:** posts, comments, chat messages (in the Lounge and in event chats), suggested edits, pages you create or claim, and replies to review.\n- **Activity on the site:** likes, saved items, organisations and people you follow, what you watch, members you block, and reports you send.\n- **Community requests:** what you need, your description, timing, location if you give it, and the contact email you enter.\n- **Claiming an organisation page:** the work email address you verify. We email it a 6-digit code, stored only as a hash and deleted within a day. The verified address is kept with your claim as proof.\n- **Quote requests** (members and visitors): your name, work email, organisation, country, quantity, intended use, timing, message and your consent.\n- **Uploaded images:** checked by type, with camera, date and GPS details removed before they're stored. Images are stored at an address that's hard to guess, but anyone who has that address can open the image.\n\n**Collected automatically**\n\n- **Logins:** for each device you're logged in on, a hashed login token, when the login started and was last used, your IP address and your browser's user agent. You can see and end them under Account, Security.\n- **Access logs:** for each request, the time, IP address (as passed on by Cloudflare), method, page address (including any search terms in it), response status, response time, your account number if you're logged in, and your browser's user agent. Failed logins are logged with the username that was tried. Server errors are logged with the page address.\n- **Abuse limits:** IP addresses and usernames are counted in memory for short periods (minutes to an hour) to limit wrong passwords, sign-ups, emails, uploads and reports. These counts aren't saved.\n- **Walking characters and \"who's here\":** while you're on a page, your username, character look, position and short messages are held in memory and shown to others on the same page. Presence records are cleared after about an hour.\n\nWe don't ask for special categories of data (such as health, religion or political views). Please don't post them.\n\n## Why we use it (legal bases)\n\n- **To provide the site and your account** (performance of a contract): accounts, logins, posts, comments, chat, watchlist, page claims, Community requests and quote requests you ask us to pass on.\n- **To keep the site secure and working** (our legitimate interests): access logs, login records, abuse limits, the human check, moderation, error alerts and backups.\n- **To understand overall use** (our legitimate interests): page statistics without cookies, if switched on.\n- **With your consent:** the watchlist newsletter (off until you turn it on; unsubscribe at any time) and passing a quote request to a company.\n- **To meet legal obligations,** where the law requires us to keep or disclose data.\n\n## Who can see what\n\n- **Everyone, including visitors and search engines:** your username, and your posts, comments and chat messages. Your byline only if you set Profile visibility to Everyone.\n- **Logged-in members:** the above, plus your byline if your Profile visibility is Members (the default) or Everyone.\n- **Only you:** with Profile visibility set to Only me, others see just your username.\n- **Never other members:** your email address, your For introductions fields, your settings, who you follow, what you save or like, and your login history.\n- **The admin** can see all account data in order to run and moderate the site. Contributors the admin trusts with specific tasks (reviewing changes, handling claims or Community requests) see what they need for that task, with email addresses shortened to their domain.\n- **Companies you send a quote request to:** your request and contact details go to that company's verified page managers and to the address it lists for quotes.\n- **Community introductions:** if we find a match for your request, we introduce you by email, which shares your contact email and request with that person or organisation.\n\n## Service providers and other parties\n\n- **Cloudflare, Inc.** carries all traffic to the site (DNS, secure connection, proxy and tunnel) and so processes IP addresses and request data. Its **Turnstile** human check runs on sign-up, login, password reset, member comments and quote requests: your browser talks to Cloudflare, and we send Cloudflare the check's result token and your IP address to confirm it. If page statistics are switched on, we use **Cloudflare Web Analytics**, which sets no cookies. See Cloudflare's privacy policy at cloudflare.com/privacypolicy.\n- **Email delivery:** account emails (email confirmation, password reset, claim codes), the newsletter, and notices to page managers and the admin are sent through [email provider], which processes the recipient's address and the message.\n- **Embedded and linked content:** some posts embed videos (YouTube, in its privacy-enhanced mode) or posts from X, and some pages show images hosted on other sites. When your browser loads them, those sites receive your IP address and browser details under their own policies. We ask browsers not to send them the page you came from.\n- **Address lookups:** when someone types an organisation's address while editing a page, our server looks it up with OpenStreetMap Nominatim or Photon (Komoot). Only the typed address is sent, not your IP address.\n- **Authorities:** we disclose data if the law requires it, or to protect the rights and safety of people or the site.\n\nWe don't sell personal data or share it for cross-context behavioural advertising.\n\nThe site runs on a server in [country]. Cloudflare and other providers may process data in other countries, including the United States. Where EU or UK law applies, those transfers rely on safeguards such as the European Commission's standard contractual clauses or the EU-US Data Privacy Framework.\n\n## Cookies and browser storage\n\n- `hi_sid`: keeps you logged in. HttpOnly, sent only over HTTPS, lasts up to 30 days.\n- `hi_2fa`: used only between your password and your two-step code. It lasts 10 minutes.\n- Cloudflare may set cookies needed for security and for the human check.\n- Your theme, display choices and walking-character position are kept in your browser's storage, not on our server.\n\nAll of these are strictly necessary or are settings you chose. There are no advertising or cross-site tracking cookies, so there is no cookie banner.\n\n## How long we keep data\n\n- **Account and profile:** as long as your account exists.\n- **Logins:** a login ends after 30 days, or after 14 days without use, and its record (IP address and browser) is then deleted.\n- **Access logs:** {log_days} days, then deleted automatically.\n- **One-time links and codes:** password reset links (1 hour), email confirmation links (48 hours) and claim codes (30 minutes) stop working once used or expired, and are then deleted.\n- **Community and quote requests:** kept to handle them and for later reference. Ask us and we'll delete them.\n- **Backups:** the database and uploads are backed up and encrypted before they leave the server. Backups are kept for [backup retention period], so deleted data can stay in a backup until that backup is removed. We would only use a backup to restore the site.\n\n**When you delete your account** (Account, Security, Delete my account), we delete straight away your email, password hash, byline, introductions fields, settings, logins, likes, saved items, follows, watchlist, blocks, page manager roles, Community requests, pending submissions and the reports you sent. A placeholder record (\"Former member\") is kept so that existing pages still work. Your comments, chat messages and posts stay on the site under \"Former member\". Write to {contact_email} if you want them removed. Quote requests you sent to companies, and claim records, are kept unless you ask us to delete them.\n\n## Your rights\n\nDepending on where you live, you can:\n\n- **Access** your data and get a copy you can take elsewhere: Account, Security, Download my data (a JSON file with your account, settings, logins, comments, chat messages, posts, saved items, likes, follows, watchlist, pages you manage, submissions and Community requests). For anything not in that file, write to us.\n- **Correct** it: edit your byline and settings on your account, or write to us.\n- **Delete** it: delete your account yourself, or ask us.\n- **Object to or restrict** some uses, such as uses based on our legitimate interests.\n- **Withdraw consent** at any time, for example by unsubscribing from the newsletter. This doesn't affect what was done before.\n- **Complain** to your data protection authority.\n\nWrite to {contact_email} from the email address on your account, so that we can confirm it's you. We answer within one month. We won't treat you differently for using your rights.\n\n**California residents:** under the CCPA, as amended by the CPRA, you have the right to know what personal information we collect, use and disclose (described above), and to access, correct and delete it. We don't sell or share personal information, and we don't use sensitive personal information beyond what's needed to provide the site. An authorised agent may make a request for you if we can verify both of you.\n\n**EU and UK residents:** the legal bases are listed above, and you can complain to your local supervisory authority.\n\n## Security\n\nConnections are encrypted (HTTPS). Passwords and login tokens are stored only as hashes. Two-step login is available to everyone and required for administrators and contributors. Logins are rate-limited. Access to the server is limited to the operator. No system is perfectly secure: if a breach affects your data, we'll tell you and the authorities where the law requires.\n\nWe will never ask for your password by email.\n\n## Children\n\nThe site is not meant for anyone under 16, and we don't knowingly collect their data. If you think a child under 16 has an account, write to {contact_email} and we'll delete it.\n\n## Changes to this policy\n\nWe'll post changes here and update the date at the top. For important changes, we'll also tell members by email or on the site before they apply.\n\n## Contact\n\n[operator legal name], [postal address]. Email: {contact_email}\n";
 var TERMS_MD = "# Terms of use\n\n*Last updated: {updated}*\n\nThese terms are an agreement between you and [operator legal name], [postal address] (\"we\", \"us\"), the operator of embodiment.place (\"the site\"). By using the site you accept these terms and our [Privacy policy](/privacy). If you don't accept them, please don't use the site.\n\n## 1. The site\n\nembodiment.place is an independent research tracker, blog and database about humanoid robotics and embodied AI. It is a personal project and is not affiliated with, endorsed by or sponsored by any company, university, lab or person listed on it, or by any employer of the operator.\n\n## 2. Information accuracy, not advice\n\n- Information on the site comes from public sources and from members. We try to cite sources and correct mistakes, but the information may be incomplete, out of date or wrong.\n- Nothing on the site is investment, financial, legal, purchasing, engineering or safety advice. Check the original source and get professional advice before you rely on anything here.\n- Specifications, prices, funding figures and dates are as reported by the cited sources. We don't verify them independently unless we say so.\n- Company names, product names, logos and trademarks belong to their owners. They are used only to identify those companies and products, and their use doesn't mean any affiliation or endorsement.\n\n## 3. Accounts\n\n- You must be at least 16 years old to create an account.\n- Give a valid email address, keep your password and two-step codes safe, and use one account per person. You are responsible for activity under your account. Tell us straight away at {contact_email} if you think someone else is using it.\n- Your username is public. Don't choose one that impersonates someone else, misleads people about who you are, or infringes someone's rights.\n- Only claim an organisation's page if you are authorised to act for it. We may ask for proof and may remove page manager roles at any time.\n\n## 4. Acceptable use\n\nDon't use the site to:\n\n- break the law, or help someone else break it;\n- post content that is defamatory, harassing, threatening, hateful, sexually explicit, or that invades someone's privacy (including other people's personal data or contact details);\n- post confidential information, trade secrets, or anything you don't have the right to share;\n- infringe copyright, trademarks or other rights;\n- spam, advertise without permission, run scams, or post misleading or false information on purpose;\n- impersonate a person or organisation, or misrepresent your connection with one;\n- upload malware, probe or test the site's security, get around rate limits, the human check or access controls, or access accounts or data that aren't yours;\n- scrape or bulk-download the site in a way that harms it or its members, or collect members' personal data;\n- interfere with the site or other people's use of it.\n\nWe may remove content, limit features, or suspend or close accounts that break these rules, at our discretion and without notice where reasonable.\n\n## 5. Your content\n\n- You keep ownership of what you post (posts, comments, chat messages, images, edits and other submissions).\n- You give us a worldwide, non-exclusive, royalty-free licence to host, store, copy, display, adapt (for example, resize images or format text) and distribute your content on the site, in its newsletters, and in feeds or exports of the site's content, for as long as it's on the site, and afterwards in backups for a limited time. This licence also covers suggested edits to records, which become part of the shared database.\n- You confirm that you have the rights needed to post your content and to give this licence, and that your content follows these terms.\n- Reposts must credit and link to the original source. The site doesn't republish the full text of reposted articles.\n- Members' posts and edits may be reviewed before they appear. We may edit, decline or remove any content but aren't obliged to monitor it. We aren't responsible for content posted by members or third parties, and members' views aren't ours.\n\n## 6. Copyright and takedown (DMCA)\n\nIf you think content on the site infringes your copyright, send a notice to {contact_email} with:\n\n1. your name, address, phone number and email;\n2. a description of the copyrighted work;\n3. the address (URL) of the content on the site;\n4. a statement that you believe in good faith that the use isn't authorised by the owner, its agent or the law;\n5. a statement, under penalty of perjury, that the information in your notice is accurate and that you are the owner or authorised to act for the owner;\n6. your physical or electronic signature.\n\nWe'll remove or disable the content promptly and tell the person who posted it. If you posted the content and think it was removed by mistake, you can send a counter-notice to the same address with your contact details, the content's address, a statement under penalty of perjury that it was removed by mistake or misidentification, your consent to the jurisdiction of the appropriate court, and your signature. We may restore the content as the law allows. We close the accounts of people who repeatedly infringe.\n\nFor other complaints about content (privacy, defamation, abuse), use **Report** on the page or write to {contact_email} with the content's address and the reason.\n\n[Note for the operator: to get the US DMCA safe harbour, register a designated agent with the US Copyright Office and put the agent's name and address here.]\n\n## 7. Quote requests and introductions\n\nWhen you send a quote request, we pass it to the company you chose. Any deal is between you and that company. We aren't a party to it, don't guarantee a reply, and aren't responsible for the company's products, prices or conduct. The same goes for Community introductions: we may introduce you to people or organisations but don't guarantee any outcome.\n\n## 8. Third-party links and content\n\nThe site links to and embeds content from other sites (for example, videos and source articles). We don't control them and aren't responsible for their content, policies or practices.\n\n## 9. No warranty\n\nThe site is provided \"as is\" and \"as available\", without warranties of any kind, express or implied, including warranties of accuracy, fitness for a particular purpose, non-infringement, or uninterrupted or error-free service, to the extent the law allows. We may change, suspend or stop the site, or any part of it, at any time.\n\n## 10. Limitation of liability\n\nTo the extent the law allows, we aren't liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of profits, revenue, data, goodwill or business opportunity, arising from your use of the site or your reliance on its content. Our total liability for any claim about the site is limited to the greater of USD 50 and the amount you paid us to use the site in the 12 months before the claim (the site is free, so normally USD 50). Some places don't allow these limits, so they may not all apply to you. Nothing in these terms limits liability that can't be limited by law, such as liability for fraud, or for death or personal injury caused by negligence.\n\n## 11. Indemnity\n\nTo the extent the law allows, you agree to defend, indemnify and hold harmless the operator from claims, losses and costs (including reasonable legal fees) that arise from content you post, your use of the site, or your breach of these terms or of someone else's rights.\n\n## 12. Ending\n\nYou can stop using the site and delete your account at any time (Account, Security). We may suspend or close your account, or stop providing the site, at any time, especially if you break these terms. Sections 2, 5 (for content that stays on the site), 6 and 9 to 14 continue to apply after your account ends.\n\n## 13. Changes to these terms\n\nWe may update these terms. We'll post the new version here with a new date and, for important changes, tell members by email or on the site before they apply. If you keep using the site after changes take effect, you accept them. If you don't, please stop using the site and delete your account.\n\n## 14. General\n\n- These terms are governed by the laws of [governing law: state/country], without regard to conflict-of-law rules. Disputes go to the courts of [place], unless the law where you live gives you the right to bring a claim there.\n- If any part of these terms can't be enforced, the rest still applies. If we don't enforce a term, we haven't waived it. You may not transfer your rights under these terms. We may transfer ours to a future operator of the site.\n- These terms and the Privacy policy are the whole agreement between you and us about the site.\n\n## Contact\n\n[operator legal name], [postal address]. Email: {contact_email}\n";
-var CONTACT_MD = "# Contact\n\nWrite to **{contact_email}** for everything:\n\n- **General questions, corrections and missing information:** include the page address and, for corrections, a source.\n- **Privacy requests** (access, correction, deletion and other rights): write from the email address on your account so that we can confirm it's you. See the [Privacy policy](/privacy).\n- **Copyright and takedown (DMCA) notices:** include everything listed in section 6 of the [Terms](/terms).\n- **Abuse, harassment or other content problems:** use **Report** on the page, or email us with the page address and the reason.\n- **Organisations:** to manage your page, use **Claim** on it. For anything else, email us.\n- **Press and everything else.**\n\nWe read every message and usually reply within a few working days. Privacy requests are answered within one month.\n\n**We will never ask for your password, two-step codes or recovery codes by email, chat or phone.** If you get a message like that claiming to be from embodiment.place, don't reply. Forward it to {contact_email}.\n\nOperator: [operator legal name], [postal address].\n";
+var CONTACT_MD = "# Contact\n\nWrite to **{contact_email}** for everything:\n\n- **General questions, corrections and missing information:** include the page address and, for corrections, a source.\n- **Privacy requests** (access, correction, deletion and other rights): write from the email address on your account so that we can confirm it's you. See the [Privacy policy](/privacy).\n- **Copyright and takedown (DMCA) notices:** include everything listed in section 6 of the [Terms](/terms).\n- **Abuse, harassment or other content problems:** use **Report** on the page, or email us with the page address and the reason.\n- **Organisations:** to fix something on your page, use **Report a mistake** on it. For anything else, email us.\n- **Press and everything else.**\n\nWe read every message and usually reply within a few working days. Privacy requests are answered within one month.\n\n**We will never ask for your password, two-step codes or recovery codes by email, chat or phone.** If you get a message like that claiming to be from embodiment.place, don't reply. Forward it to {contact_email}.\n\nOperator: [operator legal name], [postal address].\n";
 var listViews_default = {
 	humanoid: {
 		"label": "Humanoid",
@@ -18541,7 +18627,7 @@ async function afterSubmit(c, sid, queued) {
 async function reportsPayload(c) {
 	await ensureExtraSchema(c.env.DB);
 	const st = c.req.query("status") || "open";
-	const { results } = await c.env.DB.prepare("SELECT r.*, u.name AS rname FROM reports r LEFT JOIN users u ON u.id=r.user_id WHERE r.status " + (st === "open" ? "='open'" : "<>'open'") + " ORDER BY r.id DESC LIMIT 300").all();
+	const { results } = await c.env.DB.prepare("SELECT r.*, u.name AS rname FROM reports r LEFT JOIN users u ON u.id=r.user_id WHERE r.status " + (st === "open" ? "='open'" : "<>'open'") + " ORDER BY COALESCE(r.priority,0) DESC, r.id DESC LIMIT 300").all();
 	const items = [];
 	for (const raw of results || []) {
 		const r = raw;
@@ -18564,6 +18650,8 @@ async function reportsPayload(c) {
 			action: String(r.action || ""),
 			created: String(r.created || ""),
 			rname: String(r.rname || "a former member"),
+			// epOg: 1 when the reporter is a verified member of the organisation the report is about.
+			priority: Number(r.priority || 0),
 			what,
 			author
 		});
@@ -18890,12 +18978,18 @@ async function claimPayload(c, slug, msg = "", err = "") {
 		pendingEmail = pend?.email || "";
 		step = pend ? "code" : "email";
 	}
+	let members = 0;
+	try {
+		members = Number((await c.env.DB.prepare("SELECT COUNT(*) AS n FROM owners WHERE company_id=?").bind(rec.id).first())?.n || 0);
+	} catch {}
 	return {
 		slug: rec.slug,
 		name: rec.name,
 		type: rec.type,
 		label,
 		domain: dom,
+		members,
+		logo: imageSrc(rec.data)?.fit === "contain" ? imageSrc(rec.data).src || "" : "",
 		step,
 		pending_email: pendingEmail,
 		msg,
@@ -18925,9 +19019,9 @@ async function postClaimCode(c, slug) {
 	await c.env.DB.prepare("INSERT INTO claim_codes(user_id, record_id, email, code_hash, created) VALUES(?,?,?,?,datetime('now'))").bind(auth.user.id, rec.id, email, hashCode(c.env.EP_SECRET || "", code, auth.user.id, rec.id)).run();
 	if (await sendMail(c.env.DB, c.env, {
 		to: email,
-		subject: `embodiment.place: your code to claim ${rec.name}`,
-		html: `<p>Your code is <b>${code}</b></p><p>Use it within ${CODE_MINUTES} minutes to claim ${rec.name} on embodiment.place.</p>`,
-		text: `Your code is ${code}. Use it within ${CODE_MINUTES} minutes to claim ${rec.name} on embodiment.place.`
+		subject: `embodiment.place: your code for the ${rec.name} badge`,
+		html: `<p>Your code is <b>${code}</b></p><p>Use it within ${CODE_MINUTES} minutes to get the ${rec.name} badge on your embodiment.place character.</p>`,
+		text: `Your code is ${code}. Use it within ${CODE_MINUTES} minutes to get the ${rec.name} badge on your embodiment.place character.`
 	})) return again("We couldn't send the email. Please try again later.");
 	const p = await claimPayload(c, slug, `Code sent to ${email}.`);
 	if (c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("json")) return c.json({
@@ -18962,14 +19056,12 @@ async function postClaimVerify(c, slug) {
 		return fail(`That code isn't right (${MAX_TRIES - row.tries - 1} tries left).`);
 	}
 	await c.env.DB.prepare("UPDATE claim_codes SET used=1 WHERE id=?").bind(row.id).run();
-	if (!await c.env.DB.prepare("SELECT 1 AS n FROM submissions WHERE user_id=? AND kind='claim' AND target_id=? AND status='pending'").bind(auth.user.id, rec.id).first()) await submitAndMaybeApply(c.env.DB, auth, "claim", rec.id, {
-		company: rec.name,
-		email: row.email,
-		domain: orgDomain(rec),
-		verified: nowStamp()
-	});
+	// epOg: a verified work email is enough. The badge is given at once; the admin can take it away.
+	await c.env.DB.prepare("INSERT OR IGNORE INTO owners(user_id,company_id,created,email) VALUES(?,?,?,?)").bind(auth.user.id, rec.id, nowStamp(), row.email).run();
+	await c.env.DB.prepare("UPDATE submissions SET status='approved', decided=? WHERE user_id=? AND kind='claim' AND target_id=? AND status='pending'").bind(nowStamp(), auth.user.id, rec.id).run();
+	await epOgSync(c.env.DB, auth.user.id);
 	if (c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("json")) {
-		const p = await claimPayload(c, slug);
+		const p = await claimPayload(c, slug, `Done. The ${rec.name} badge is on your character.`);
 		return c.json({
 			ok: true,
 			...p,
@@ -18977,6 +19069,82 @@ async function postClaimVerify(c, slug) {
 		});
 	}
 	return c.redirect(`/claim/${rec.slug}`);
+}
+// epOg: badge requests without a website, leaving, the admin taking a badge away, and choosing which badge to wear.
+function epOgReply(c, next, extra = {}) {
+	if (c.req.path.startsWith("/api/") || (c.req.header("accept") || "").includes("json")) return c.json({
+		ok: true,
+		next,
+		...extra
+	});
+	return c.redirect(next);
+}
+async function postClaimAsk(c, slug) {
+	const auth = c.get("auth");
+	if (!auth.user) return c.redirect("/login?next=/claim/" + slug);
+	const rec = await recOf(c, slug);
+	if (!rec || rec.slug === "embodiment-place") return c.json({ error: "Not found" }, 404);
+	await ensureExtraSchema(c.env.DB);
+	const note = (((await formAll(c)).note || [""]).slice(-1)[0] || "").trim().slice(0, 500);
+	if (!await isOwner(c.env.DB, auth.user.id, rec.id) && !await c.env.DB.prepare("SELECT 1 AS n FROM submissions WHERE user_id=? AND kind='claim' AND target_id=? AND status='pending'").bind(auth.user.id, rec.id).first()) await submitAndMaybeApply(c.env.DB, auth, "claim", rec.id, {
+		company: rec.name,
+		note,
+		domain: "",
+		asked: nowStamp()
+	});
+	return epOgReply(c, `/claim/${rec.slug}`, await claimPayload(c, slug));
+}
+async function postClaimLeave(c, slug) {
+	const auth = c.get("auth");
+	if (!auth.user) return c.redirect("/login?next=/claim/" + slug);
+	const rec = await recOf(c, slug);
+	if (!rec) return c.json({ error: "Not found" }, 404);
+	await c.env.DB.prepare("DELETE FROM owners WHERE user_id=? AND company_id=?").bind(auth.user.id, rec.id).run();
+	await epOgSync(c.env.DB, auth.user.id);
+	return epOgReply(c, `/claim/${rec.slug}`, await claimPayload(c, slug));
+}
+async function postClaimRemove(c, slug) {
+	const auth = c.get("auth");
+	if (!auth.is_admin && !can(auth, "claims")) return c.json({ error: "Not found" }, 404);
+	const rec = await recOf(c, slug);
+	if (!rec) return c.json({ error: "Not found" }, 404);
+	const who = (((await formAll(c)).u || [""]).slice(-1)[0] || "").trim().slice(0, 80);
+	const u = await c.env.DB.prepare("SELECT id FROM users WHERE username=? COLLATE NOCASE").bind(who).first();
+	if (u) {
+		await c.env.DB.prepare("DELETE FROM owners WHERE user_id=? AND company_id=?").bind(u.id, rec.id).run();
+		await epOgSync(c.env.DB, Number(u.id));
+	}
+	return epOgReply(c, `/r/${rec.slug}#people`);
+}
+async function postOgWear(c) {
+	const auth = c.get("auth");
+	if (!auth.user) return c.json({ error: "Log in first." }, 401);
+	const pick = (((await formAll(c)).og || [""]).slice(-1)[0] || "").trim().slice(0, 120);
+	const u = await c.env.DB.prepare("SELECT id, prefs FROM users WHERE id=?").bind(auth.user.id).first();
+	const pr = prefsOf(u);
+	if (pick) pr.og_pick = pick;
+	else delete pr.og_pick;
+	await savePrefs(c.env.DB, auth.user.id, pr);
+	const list = await epOgSync(c.env.DB, auth.user.id);
+	return epOgReply(c, "/account/companies", { pick: pick || "", orgs: list });
+}
+// Members of one organisation for its page, oldest first. Members who hide their badges aren't listed.
+async function epOgMembers(c, rec) {
+	const auth = c.get("auth");
+	const me = auth.user ? Number(auth.user.id) : 0;
+	const { results } = await c.env.DB.prepare("SELECT u.id, u.username, u.prefs, u.suspended_until FROM owners o JOIN users u ON u.id=o.user_id WHERE o.company_id=? AND u.disabled=0 ORDER BY o.created, u.id LIMIT 200").bind(rec.id).all();
+	const out = [];
+	for (const u of results || []) {
+		const mine = Number(u.id) === me;
+		if (!mine && isSuspended(u)) continue;
+		if (!mine && prefsOf(u).og_pick === "none" && !auth.is_admin) continue;
+		out.push({
+			username: String(u.username),
+			look: walkerLook(u),
+			mine
+		});
+	}
+	return out;
 }
 // backend/worker/src/geo.ts
 var geoCache = /* @__PURE__ */ new Map();
@@ -19125,8 +19293,7 @@ async function orgOf(c, slug) {
 async function canManage(c, companyId) {
 	const auth = c.get("auth");
 	if (!auth.user) return false;
-	if (auth.logged) return true;
-	return isOwner(c.env.DB, auth.user.id, companyId);
+	return Boolean(auth.logged);
 }
 function fieldV(data, key) {
 	const raw = data?.[key];
@@ -21071,7 +21238,18 @@ api.get("/r/:slug", async (c) => {
 			"lab"
 		].includes(rec.type) && auth.user ? await canManage(c, rec.id) : false,
 		claim_pending: auth.user ? Boolean((await c.env.DB.prepare("SELECT 1 AS n FROM submissions WHERE user_id=? AND kind='claim' AND target_id=? AND status='pending'").bind(auth.user.id, rec.id).first())?.n) : false,
-		claimed: Boolean((await c.env.DB.prepare("SELECT 1 AS n FROM owners WHERE company_id=?").bind(rec.id).first())?.n),
+		claimed: false,
+		...ORG_TYPES_LIST.includes(rec.type) ? await (async () => {
+			let people = [];
+			try {
+				people = await epOgMembers(c, rec);
+			} catch {}
+			return {
+				people,
+				is_member: auth.user ? await isOwner(c.env.DB, auth.user.id, rec.id) : false,
+				can_remove_member: Boolean(auth.is_admin || can(auth, "claims"))
+			};
+		})() : {},
 		site_org: rec.slug === SITE_ORG_SLUG,
 		quote_on,
 		related: [...related.values()].map((r) => ({
@@ -21245,6 +21423,8 @@ function epCardItem(u, me, logged, p) {
 		} : null,
 		socials: showByline && pr.socials && typeof pr.socials === "object" ? Object.fromEntries(EP_SOCIALS.filter((k) => typeof pr.socials[k] === "string" && pr.socials[k]).map((k) => [k, String(pr.socials[k]).slice(0, 200)])) : {},
 		hiddenSelf: Boolean(mine && pr.place_hide),
+		// epOg: every organisation the member belongs to, with how many other members it has.
+		orgs: pr.og_pick === "none" && !mine ? [] : p && p.orgs || [],
 		posts: p ? p.n : 0,
 		latest: p && p.latest ? p.latest : null
 	};
@@ -21264,6 +21444,25 @@ async function epCardPayload(c) {
 			const lr = await c.env.DB.prepare("SELECT slug, name FROM records WHERE id=?").bind(row.last).first();
 			p = { n: Number(row.n), latest: lr ? { slug: String(lr.slug), name: String(lr.name) } : null };
 		}
+	} catch {}
+	try {
+		const list = await epOgList(c.env.DB, Number(u.id));
+		const orgs = [];
+		for (const o of list) {
+			const n = Number((await c.env.DB.prepare("SELECT COUNT(*) AS n FROM owners WHERE company_id=?").bind(o.id).first())?.n || 1);
+			orgs.push({
+				s: o.s,
+				n: o.n,
+				l: o.l,
+				others: Math.max(0, n - 1)
+			});
+		}
+		p = {
+			n: 0,
+			latest: null,
+			...p || {},
+			orgs
+		};
 	} catch {}
 	return epCardItem(u, me, Boolean(auth.user), p);
 }
@@ -21291,6 +21490,23 @@ async function epPlacePayload(c) {
 			for (const r of lr || []) lastRec.set(Number(r.id), { slug: String(r.slug), name: String(r.name) });
 		}
 		for (const v of posts.values()) v.latest = lastRec.get(v.last) || null;
+	} catch {}
+	// epOg: badges for everyone in Place, in one query.
+	try {
+		const { results: om } = await c.env.DB.prepare("SELECT o.user_id AS u, r.* FROM owners o JOIN records r ON r.id=o.company_id ORDER BY o.created, r.id").all();
+		const cnt = new Map();
+		for (const x of om || []) cnt.set(Number(x.id), (cnt.get(Number(x.id)) || 0) + 1);
+		for (const x of om || []) {
+			const uid = Number(x.u);
+			if (!posts.has(uid)) posts.set(uid, { n: 0, last: 0, latest: null });
+			const v = posts.get(uid);
+			(v.orgs ||= []).push({
+				s: String(x.slug),
+				n: String(x.name),
+				l: epOgLogo(x),
+				others: Math.max(0, (cnt.get(Number(x.id)) || 1) - 1)
+			});
+		}
 	} catch {}
 	const items = [];
 	let hidden = 0;
@@ -21633,6 +21849,10 @@ app.post("/admin/stickers", postStickers);
 app.post("/admin/focus", postFocus);
 app.post("/claim/:slug/code", (c) => postClaimCode(c, c.req.param("slug")));
 app.post("/claim/:slug/verify", (c) => postClaimVerify(c, c.req.param("slug")));
+app.post("/claim/:slug/ask", (c) => postClaimAsk(c, c.req.param("slug")));
+app.post("/claim/:slug/leave", (c) => postClaimLeave(c, c.req.param("slug")));
+app.post("/claim/:slug/remove", (c) => postClaimRemove(c, c.req.param("slug")));
+app.post("/account/badge", postOgWear);
 app.post("/manage/job/:id/toggle", (c) => postJobToggle(c, c.req.param("id")));
 app.post("/manage/:slug", (c) => postManage(c, c.req.param("slug"), "info"));
 app.post("/manage/:slug/:section", (c) => postManage(c, c.req.param("slug"), c.req.param("section")));

@@ -170,6 +170,14 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .epp-note{position:absolute;top:14px;right:22px;z-index:6002;font:700 16px/1 var(--mono);font-style:normal;color:var(--accent);pointer-events:none;animation:1.2s ease-out forwards epp-note}
 @keyframes epp-note{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}100%{opacity:0;transform:translate(calc(var(--nx) - 30px),36px) rotate(-12deg)}}
 @media (max-width:640px){.epp-wh{width:44px;height:44px}.epp-whm{top:60px}.epp-whm button{padding:13px 12px}}
+
+/* epTrack: the admin Track / Tracking button sits at the top right of organisation pages */
+.rechead{position:relative}
+.rechead .btn.ep-track{position:absolute;top:22px;right:0;z-index:2}
+.btn.ghost.ep-track.on:hover:after{content:" · Untrack"}
+@media (max-width:760px){.rechead .btn.ep-track{top:12px}}
+.rechead:has(.ep-track) .crumbs{padding-right:150px}
+@media (max-width:760px){.rechead:has(.ep-track) .crumbs{padding-right:0;margin-top:40px}}
 /* epAdm: admin corner button (bottom right, in the dock) and /admin hub */
 .ep-adm{position:static;display:inline-flex;align-self:stretch}
 .ep-adm-btn{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 3h8V2h3v1h3v2h-3v1H9V5H1zM1 7h3V6h3v1h8v2H7v1H4V9H1zM1 11h9v-1h3v1h2v2h-2v1h-3v-1H1z'/%3E%3C/svg%3E");position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:44px;height:44px;padding:0 12px;background:var(--paper);color:var(--ink);border:1px solid var(--ink);font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;-webkit-tap-highlight-color:transparent}

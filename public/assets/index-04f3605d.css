@@ -170,7 +170,6 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .epp-whm button:hover{background:var(--hover)}
 .epp-whm button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink,#fff);border-color:var(--accent)}
 .epp-whm button[hidden]{display:none}
-<<<<<<<< HEAD:public/assets/index-93942068.css
 @media (hover:none){.epp-whm{bottom:calc(4px + var(--lift,0px))}.epp-whm button{height:52px;justify-content:flex-start;padding-top:7px}.epp-whm button span{position:static;width:auto;height:auto;clip:auto;overflow:visible;font:500 9px/1 var(--mono);text-transform:uppercase;margin-top:5px}.epp-whm button:after{content:none}.epp-whm button[data-line=colour] span{font-size:8px}}
 .epp-note{position:absolute;bottom:calc(46px + var(--lift,0px));right:22px;z-index:6002;font:700 16px/1 var(--mono);font-style:normal;color:var(--accent);pointer-events:none;animation:1.2s ease-out forwards epp-note}
 @keyframes epp-note{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}100%{opacity:0;transform:translate(calc(var(--nx) - 30px),-40px) rotate(-12deg)}}
@@ -190,14 +189,6 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .cdock .wk-hide{align-self:center;box-sizing:border-box;height:36px;min-height:36px}
 .cdock .wk-btn{box-sizing:border-box;height:36px;min-height:36px}
 @media (width<=760px){.cdock .wk-hide,.cdock .wk-btn{height:44px;min-height:44px}}
-========
-.epp-whm button:hover,.epp-whm button:focus-visible{background:var(--hover)}
-.epp-whm button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink,#fff)}
-.epp-whm button[data-line=""]{color:var(--muted)}
-.epp-note{position:absolute;top:14px;right:22px;z-index:6002;font:700 16px/1 var(--mono);font-style:normal;color:var(--accent);pointer-events:none;animation:1.2s ease-out forwards epp-note}
-@keyframes epp-note{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}100%{opacity:0;transform:translate(calc(var(--nx) - 30px),36px) rotate(-12deg)}}
-@media (max-width:640px){.epp-wh{width:44px;height:44px}.epp-whm{top:60px}.epp-whm button{padding:13px 12px}}
-
 /* epTrack: the admin Track / Tracking button sits at the top right of organisation pages */
 .rechead{position:relative}
 .rechead .btn.ep-track{position:absolute;top:22px;right:0;z-index:2}
@@ -230,4 +221,3 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .ep-ah-d{color:var(--muted);font-size:.86rem;line-height:1.4}
 @media (max-width:760px){.ep-adm-btn{height:44px;padding:0 10px}.ep-ah-l{grid-template-columns:1fr}.ep-ah-g{margin-top:22px}}
 .cdock .ep-adm-menu a{padding:0 16px!important;margin:0!important;border:0;border-radius:0}.cdock .ep-adm-who{padding:10px 16px 8px!important;margin:0}
->>>>>>>> origin/main:public/assets/index-fbd489ab.css

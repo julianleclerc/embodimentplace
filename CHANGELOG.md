@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
-- **#34 Admin redone: dashboard Overview and an Organisations tab.**
+- **#35 Admin redone: dashboard Overview and an Organisations tab.**
   - Overview is now a dashboard: tiles for waiting reviews, open reports, community requests, organisations
     (and how many are tracked), posts this week and members; a "Needs attention" box; a "Tracking" box with the
     latest checks; then all tools grouped (`epAdminHub`, `epAgo`). Data from new `GET /api/admin/stats`.

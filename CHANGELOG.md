@@ -32,6 +32,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
+- **#32 Whistle in the corner, icon sort options, drag characters; Online button size.**
+  - The Place whistle moved to the bottom-right corner. Its options are now icon buttons (A–Z, colour squares, top
+    hat, arrows for "Let them walk") with the label on hover; touch screens show a small label under each icon. On
+    phones the whistle lifts above the fixed dock when the two would overlap (`whDock`).
+  - Characters can be picked up and dragged around the stage. While held they swing, kick their legs and show a "!";
+    when dropped they squash and bounce, then carry on (back to their spot if lined up). A tap still opens the card.
+    Code: `grab` in `epPlaceRun`, CSS `.epp-c.held`, `.epp-fear`, `.epp-c.drop` in the `epWhistle` block.
+  - The dock's Online / Offline button no longer stretches to the row height; it matches the Walk and Lounge buttons
+    (36 px on desktop, 44 px on phones). CSS block `epDockSize`.
 - **#31 Admin tools moved to a corner button.** The green "Editing on" bar at the top of every page is gone. Admins
   (and contributors, with their own tools) get a button at the bottom right, in the dock left of the eye, Walk and
   Lounge buttons. It shows a teal count of things waiting (review, reports, requests). It opens a small menu in the

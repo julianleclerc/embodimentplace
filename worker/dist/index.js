@@ -2637,6 +2637,13 @@ function gateStatus(path, method, auth) {
 		status: 302,
 		location: "/login?next=" + encodeURIComponent(p)
 	};
+	if (p === "/admin") {
+		if (!auth.logged || auth.needs_2fa) return {
+			status: 404,
+			body: "Not found"
+		};
+		return null;
+	}
 	if (ADMIN_ONLY.includes(p) || p === "/export.json") {
 		if (!auth.is_admin) return {
 			status: 404,
@@ -2717,7 +2724,7 @@ function gateStatus(path, method, auth) {
 }
 function isGatedPath(path) {
 	const p = path.replace(/\/+$/, "") || "/";
-	return p === "/account" || p.startsWith("/account/") || p === "/users" || p === "/review" || p.startsWith("/review/") || p === "/new" || p.startsWith("/new/") || p.startsWith("/edit/") || p === "/save" || p.startsWith("/delete/") || p.startsWith("/admin/") || p === "/community/people" || p === "/community/orgs" || p === "/export.json" || p === "/watchlist" || p.startsWith("/watchlist/") || p.startsWith("/create") || p.startsWith("/claim/") || p.startsWith("/manage/") || p === "/login" || p.startsWith("/login/") || p === "/join" || p === "/logout" || p === "/forgot" || p.startsWith("/reset") || p.startsWith("/verify");
+	return p === "/account" || p.startsWith("/account/") || p === "/admin" || p === "/users" || p === "/review" || p.startsWith("/review/") || p === "/new" || p.startsWith("/new/") || p.startsWith("/edit/") || p === "/save" || p.startsWith("/delete/") || p.startsWith("/admin/") || p === "/community/people" || p === "/community/orgs" || p === "/export.json" || p === "/watchlist" || p.startsWith("/watchlist/") || p.startsWith("/create") || p.startsWith("/claim/") || p.startsWith("/manage/") || p === "/login" || p.startsWith("/login/") || p === "/join" || p === "/logout" || p === "/forgot" || p.startsWith("/reset") || p.startsWith("/verify");
 }
 // backend/worker/src/rate.ts
 /** Sliding-window limiter, same windows as Python ep.security.Limiting. In-memory per isolate. */
@@ -20726,7 +20733,7 @@ api.get("/list/:key", async (c) => {
 	if ("error" in payload) return c.json(payload, 404);
 	return c.json(payload);
 });
-// epAutoNews: admin toggle "Automatic updates" per organisation (table auto_news). A daily job reads the enabled ones.
+// epAutoNews: admin "Track" toggle per organisation (table auto_news). A daily job reads the enabled ones.
 var EP_AUTONEWS_TYPES = [
 	"company",
 	"university",

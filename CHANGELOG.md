@@ -8,8 +8,8 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
-- **Automatic updates: organisations without a news feed.** Many robotics companies only have a news page, no
-  RSS or Atom feed. Their "Check news now" says "No news feed found on …". Options: paste a feed address if one
+- **Tracked organisations without a news feed.** Many robotics companies only have a news page, no
+  RSS or Atom feed. Their "Check now" says "No news feed found on …". Options: paste a feed address if one
   exists elsewhere (Medium, Substack, a blog subdomain), or add a reader for plain news pages later (needs an LLM
   or per-site rules). The job was tested against local sample feeds only; check the first real results live.
 - **Image uploads don't work.** The Worker supports an R2 `MEDIA` binding, but the live Worker has none, so uploads
@@ -41,6 +41,24 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     Code: `grab` in `epPlaceRun`, CSS `.epp-c.held`, `.epp-fear`, `.epp-c.drop` in the `epWhistle` block.
   - The dock's Online / Offline button no longer stretches to the row height; it matches the Walk and Lounge buttons
     (36 px on desktop, 44 px on phones). CSS block `epDockSize`.
+- **#31 Admin tools moved to a corner button.** The green "Editing on" bar at the top of every page is gone. Admins
+  (and contributors, with their own tools) get a button at the bottom right, in the dock left of the eye, Walk and
+  Lounge buttons. It shows a teal count of things waiting (review, reports, requests). It opens a small menu in the
+  site's menu style with one option, "Admin", that goes to a new `/admin` page listing every tool, grouped
+  (Review and moderation, Content, People, Site) with a line on what each does and its waiting count.
+  - Frontend: `epAdm` (button and menu, rendered first in `.cdock`), `epAdminHub` (the `/admin` page and route),
+    `epAdmG` (groups), `epAdmD` (descriptions), `epAdmN` (sums the counts in the link labels). CSS block
+    `/* epAdm: ... */` at the end of the stylesheet. Bundle `index-53270552.js` / `index-fbd489ab.css`.
+  - The links still come from `adminBarLinks` in `worker/dist/index.js` (`me.bar`); a link not in `epAdmG` lands
+    under "Other". `/admin` is gated in `isGatedPath` and `gateStatus` (404 unless the account has editing on).
+  - The two-step setup notice ("Set up two-step login to use admin and contributor tools") still shows at the top
+    for editors without two-step login, since it is a warning and not a tool.
+- **#30 "Auto updates" is now "Track".** Admins see a **Track** button at the top right of company, university and
+  lab pages. Once tapped it reads **✓ Tracking** (hover shows "Untrack"; tap again to stop). A tracked organisation is
+  checked once a day by the news job from #23, and new items are reposted to the site. "Check news now" is now
+  **Check now**. Same data and routes as before (`auto_news` table, `POST /api/autonews/:slug`); only the wording
+  and placement changed. CSS block `epTrack` (`.rechead .ep-track`, positioned at the top right of `.rechead`;
+  on phones the breadcrumbs move down below it).
 - **#29 Whistle on Community Place.** A whistle button in the top-right corner of the Place stage opens "Line everyone
   up": By name, By colour or By hat. Everyone hurries into rows sorted that way (colour and hat groups start a new
   row or leave a gap between groups), stands facing right, and stays lined up until you pick "Let them walk". The

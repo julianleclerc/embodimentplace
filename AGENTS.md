@@ -54,8 +54,9 @@ There is no original source. The repository was rebuilt from the live deployment
 
 ### Scheduled jobs and email
 
-- The Worker has an hourly cron (`triggers.crons` in `wrangler.json`) that runs the `scheduled` export. Right now it
-  only sends Watchlist digests (`epDigestCron`). Test it locally with
+- The Worker has an hourly cron (`triggers.crons` in `wrangler.json`) that runs the `scheduled` export. It sends
+  Watchlist digests (`epDigestCron`) and checks tracked organisations for new posts (`epAutoNewsCron`; admins turn
+  this on with the Track button on an organisation page). Test it locally with
   `curl "localhost:8787/cdn-cgi/handler/scheduled?cron=5+*+*+*+*"` while `wrangler dev` runs; mail lands in
   `email_log`.
 - Every email is wrapped in the site's Hommik look by `sendMail` (`epMailWrap`). Write only the inner HTML for new
@@ -93,6 +94,9 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - The Watchlist tabs (Watchlist, Sources, Newsletter) stay hidden until the member follows at least one organisation; until then every Watchlist URL shows "Start your watchlist".
 - Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,
   Last month, Older).
+- Admin and contributor tools are not shown at the top of the page. They sit behind the button at the bottom
+  right (in the dock, left of the Lounge button), which opens a menu with one option, "Admin", leading to the
+  `/admin` page that lists every tool. Add new admin tools to `adminBarLinks` in the Worker so they appear there.
 
 ## Where things are tracked
 

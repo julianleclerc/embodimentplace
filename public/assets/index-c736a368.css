@@ -152,8 +152,8 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .ep-wbtn.on:hover:not(:disabled){background:var(--accent);filter:brightness(1.08)}
 /* epOnline: the eye became an Online / Offline switch (data-net: on, off, wait, conn) */.wk-hide,.cdock .wk-hide{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7 12h2v2H7zM5 10h1V9h4v1h1v1H9v-1H7v1H5zM3 8h1V7h1V6h6v1h1v1h1v1h-1V8h-1V7H5v1H4v1H3zM1 6h1V5h1V4h2V3h6v1h2v1h1v1h1v1h-1V6h-1V5h-2V4H5v1H3v1H2v1H1z'/%3E%3C/svg%3E")}.wk-hide[data-net=on]:after,.wk-hide[data-net=wait]:after,.wk-hide[data-net=conn]:after{content:"";position:absolute;top:6px;right:6px;width:7px;height:7px;transform:none;box-shadow:0 0 0 1px var(--paper);background:#12a150}.wk-hide[data-net=wait]:after,.wk-hide[data-net=conn]:after{background:#e0a000}.wk-hide[data-net=off]{color:var(--muted)}.wk-hide .ep-netn{position:absolute;right:3px;bottom:3px;font:600 9px/1 var(--mono);font-style:normal;background:var(--ink);color:var(--paper);padding:1px 2px;min-width:8px;text-align:center}
 /* epWhistle: Community Place whistle (bottom right) lines characters up by name, colour or hat; characters can be dragged */
-.epp-wh{position:absolute;bottom:calc(10px + var(--lift,0px));right:10px;z-index:6000;width:44px;height:44px;padding:0;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:3px 3px 0 var(--accent)}
-.epp-wh i{display:block;width:22px;height:22px;background:currentColor;-webkit-mask:var(--whi) center/contain no-repeat;mask:var(--whi) center/contain no-repeat;--whi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 6h5V5h1V4h5v1h1v1h1v1h1v4h-1v1h-1v1h-1v1H8v-1H7v-1H6v-1H5V9H1zM9 7h3v1h1v2h-1v1H9v-1H8V8h1zM12 2h3v1h-1v1h-2z'/%3E%3C/svg%3E")}
+.epp-wh{position:absolute;bottom:calc(10px + var(--lift,0px));right:10px;z-index:6000;width:44px;height:44px;padding:0;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.epp-wh i{display:block;width:20px;height:20px;background:currentColor;-webkit-mask:var(--whi) center/contain no-repeat;mask:var(--whi) center/contain no-repeat;--whi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 4h12v1h1v1h1v5h-1v1h-1v1h-2v1H8v-1H6v-1H5v-1H4V8H1zM8 8v3h3V8zM11 1h3v3h-3zM12 2v1h1V2z'/%3E%3C/svg%3E")}
 .epp-wh:hover,.epp-wh[aria-expanded=true]{background:var(--inv);color:var(--inv-ink)}
 .epp-wh.on:after{content:"";position:absolute;top:4px;right:4px;width:6px;height:6px;background:var(--accent);box-shadow:0 0 0 1px var(--paper)}
 .epp-wh.blow{animation:.5s ease-out epp-blow}
@@ -164,7 +164,7 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .epp-whm button{position:relative;width:44px;height:44px;padding:0;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:3px 3px 0 var(--inv)}
 .epp-whm button span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .epp-ic{display:block;width:20px;height:20px;background:currentColor;-webkit-mask:var(--ii) center/contain no-repeat;mask:var(--ii) center/contain no-repeat}
-.epp-whm [data-line=colour] .epp-ic{-webkit-mask:none;mask:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ff4a1c' d='M1 2h6v6H1z'/%3E%3Cpath fill='%23f2b705' d='M9 2h6v6H9z'/%3E%3Cpath fill='%2312a150' d='M1 9h6v6H1z'/%3E%3Cpath fill='%231c7cff' d='M9 9h6v6H9z'/%3E%3C/svg%3E") center/contain no-repeat}
+
 .epp-whm button:after{content:attr(data-tip);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--inv);color:var(--inv-ink);font:500 .66rem/1 var(--mono);text-transform:uppercase;padding:6px 7px;opacity:0;pointer-events:none;transition:opacity .12s}
 .epp-whm button:hover:after,.epp-whm button:focus-visible:after{opacity:1}
 .epp-whm button:hover{background:var(--hover)}
@@ -237,3 +237,8 @@ nav.right .epmenu-panel .ep-admnav .ep-admnav-n{position:static;min-width:18px;h
 nav.right>.ep-admnav{padding-right:18px}
 .ep-adw-body>.cm-wrap{margin-left:0;margin-right:0;max-width:none}
 .ep-adw-body .listhead h1{font-size:1.5rem!important;margin-top:0!important}
+
+/* epWhistle2: whistle and sort buttons share the dock's flat look (ink border, no coloured shadow) */
+.epp-whm button{box-shadow:none}
+.epp-wh.on{background:var(--inv);color:var(--inv-ink)}
+.epp-wh.on:after{content:none}

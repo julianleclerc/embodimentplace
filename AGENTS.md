@@ -54,8 +54,9 @@ There is no original source. The repository was rebuilt from the live deployment
 
 ### Scheduled jobs and email
 
-- The Worker has an hourly cron (`triggers.crons` in `wrangler.json`) that runs the `scheduled` export. Right now it
-  only sends Watchlist digests (`epDigestCron`). Test it locally with
+- The Worker has an hourly cron (`triggers.crons` in `wrangler.json`) that runs the `scheduled` export. It sends
+  Watchlist digests (`epDigestCron`) and checks tracked organisations for new posts (`epAutoNewsCron`; admins turn
+  this on with the Track button on an organisation page). Test it locally with
   `curl "localhost:8787/cdn-cgi/handler/scheduled?cron=5+*+*+*+*"` while `wrangler dev` runs; mail lands in
   `email_log`.
 - Every email is wrapped in the site's Hommik look by `sendMail` (`epMailWrap`). Write only the inner HTML for new

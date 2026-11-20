@@ -150,3 +150,11 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .ep-src2 section{margin-bottom:22px}.ep-src2 section>.band{margin-bottom:10px}.ep-src2 .wl-add{border:0;background:none;padding:0}.ep-find-res{margin-top:10px}.ep-wl-find input{border:1px solid var(--rule);background:var(--paper);padding:10px 12px}
 .ep-find-topic{display:flex;align-items:center;gap:10px;margin-top:10px}.ep-topic-hint{margin:0 0 8px;padding:0;font-size:.85rem}
 .ep-wbtn.on:hover:not(:disabled){background:var(--accent);filter:brightness(1.08)}
+
+/* epTrack: the admin Track / Tracking button sits at the top right of organisation pages */
+.rechead{position:relative}
+.rechead .btn.ep-track{position:absolute;top:22px;right:0;z-index:2}
+.btn.ghost.ep-track.on:hover:after{content:" · Untrack"}
+@media (max-width:760px){.rechead .btn.ep-track{top:12px}}
+.rechead:has(.ep-track) .crumbs{padding-right:150px}
+@media (max-width:760px){.rechead:has(.ep-track) .crumbs{padding-right:0;margin-top:40px}}

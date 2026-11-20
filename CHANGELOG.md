@@ -8,8 +8,8 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
-- **Automatic updates: organisations without a news feed.** Many robotics companies only have a news page, no
-  RSS or Atom feed. Their "Check news now" says "No news feed found on …". Options: paste a feed address if one
+- **Tracked organisations without a news feed.** Many robotics companies only have a news page, no
+  RSS or Atom feed. Their "Check now" says "No news feed found on …". Options: paste a feed address if one
   exists elsewhere (Medium, Substack, a blog subdomain), or add a reader for plain news pages later (needs an LLM
   or per-site rules). The job was tested against local sample feeds only; check the first real results live.
 - **Image uploads don't work.** The Worker supports an R2 `MEDIA` binding, but the live Worker has none, so uploads
@@ -29,6 +29,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   rewrite.
 
 ## Changes
+
+### 2026-11-20
+
+- **#PR "Auto updates" is now "Track".** Admins see a **Track** button at the top right of company, university and
+  lab pages. Once tapped it reads **✓ Tracking** (hover shows "Untrack"; tap again to stop). A tracked organisation is
+  checked once a day by the news job from #23, and new items are reposted to the site. "Check news now" is now
+  **Check now**. Same data and routes as before (`auto_news` table, `POST /api/autonews/:slug`); only the wording
+  and placement changed. CSS block `epTrack` (`.rechead .ep-track`, positioned at the top right of `.rechead`;
+  on phones the breadcrumbs move down below it).
 
 ### 2026-11-19 (evening)
 

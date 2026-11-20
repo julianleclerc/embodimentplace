@@ -32,6 +32,18 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
+- **#31 Admin tools moved to a corner button.** The green "Editing on" bar at the top of every page is gone. Admins
+  (and contributors, with their own tools) get a button at the bottom right, in the dock left of the eye, Walk and
+  Lounge buttons. It shows a teal count of things waiting (review, reports, requests). It opens a small menu in the
+  site's menu style with one option, "Admin", that goes to a new `/admin` page listing every tool, grouped
+  (Review and moderation, Content, People, Site) with a line on what each does and its waiting count.
+  - Frontend: `epAdm` (button and menu, rendered first in `.cdock`), `epAdminHub` (the `/admin` page and route),
+    `epAdmG` (groups), `epAdmD` (descriptions), `epAdmN` (sums the counts in the link labels). CSS block
+    `/* epAdm: ... */` at the end of the stylesheet. Bundle `index-53270552.js` / `index-fbd489ab.css`.
+  - The links still come from `adminBarLinks` in `worker/dist/index.js` (`me.bar`); a link not in `epAdmG` lands
+    under "Other". `/admin` is gated in `isGatedPath` and `gateStatus` (404 unless the account has editing on).
+  - The two-step setup notice ("Set up two-step login to use admin and contributor tools") still shows at the top
+    for editors without two-step login, since it is a warning and not a tool.
 - **#30 "Auto updates" is now "Track".** Admins see a **Track** button at the top right of company, university and
   lab pages. Once tapped it reads **✓ Tracking** (hover shows "Untrack"; tap again to stop). A tracked organisation is
   checked once a day by the news job from #23, and new items are reposted to the site. "Check news now" is now

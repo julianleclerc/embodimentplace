@@ -94,6 +94,9 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - The Watchlist tabs (Watchlist, Sources, Newsletter) stay hidden until the member follows at least one organisation; until then every Watchlist URL shows "Start your watchlist".
 - Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,
   Last month, Older).
+- Admin and contributor tools are not shown at the top of the page. They sit behind the button at the bottom
+  right (in the dock, left of the Lounge button), which opens a menu with one option, "Admin", leading to the
+  `/admin` page that lists every tool. Add new admin tools to `adminBarLinks` in the Worker so they appear there.
 
 ## Where things are tracked
 

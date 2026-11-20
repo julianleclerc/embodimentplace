@@ -32,6 +32,11 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
+- **#29 Whistle on Community Place.** A whistle button in the top-right corner of the Place stage opens "Line everyone
+  up": By name, By colour or By hat. Everyone hurries into rows sorted that way (colour and hat groups start a new
+  row or leave a gap between groups), stands facing right, and stays lined up until you pick "Let them walk". The
+  line-up is only on your screen and re-flows when the stage resizes. Code: `epPlaceRun` (`line`, `paintWh`,
+  `blow`, slot walking in `tick`), helpers `epHsl`, `epLineKey`, `epLineCmp`; CSS block `epWhistle`.
 - **#29 Online / Offline switch with a waitlist.** The eye button in the dock is now an Online / Offline switch with a
   signal icon. A green dot means Online, an amber dot means waiting or connecting, and a slash means Offline.
   - Online: your character is sent to the server, and you see everyone else's. It is site-wide, not per page.

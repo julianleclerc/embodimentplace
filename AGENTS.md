@@ -86,6 +86,9 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - The card (name, position, company, info, social links) follows the member's "Who sees your card" setting
   (`prefs.profile_vis`: me, members or everyone; members is the default).
 - Changing your email needs a code sent to the new address.
+- The dock's Online / Offline switch (it replaced the eye) is site-wide. Online takes one of a limited number of seats
+  (D1 setting `online_max`, default 100) and connects the live socket. When it's full, people wait in line and join
+  automatically. Offline still lets you walk, but sends nothing and shows nobody else. Online is the default.
 - Members can follow organisations (companies, universities, labs) and topics, not people, robots or models.
 - The Watchlist tabs (Watchlist, Sources, Newsletter) stay hidden until the member follows at least one organisation; until then every Watchlist URL shows "Start your watchlist".
 - Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,

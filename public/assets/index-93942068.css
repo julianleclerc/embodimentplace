@@ -151,22 +151,41 @@ html{--sans:"Neue Haas Grotesk Text", "Neue Haas Unica", "Helvetica Neue", Helve
 .ep-find-topic{display:flex;align-items:center;gap:10px;margin-top:10px}.ep-topic-hint{margin:0 0 8px;padding:0;font-size:.85rem}
 .ep-wbtn.on:hover:not(:disabled){background:var(--accent);filter:brightness(1.08)}
 /* epOnline: the eye became an Online / Offline switch (data-net: on, off, wait, conn) */.wk-hide,.cdock .wk-hide{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7 12h2v2H7zM5 10h1V9h4v1h1v1H9v-1H7v1H5zM3 8h1V7h1V6h6v1h1v1h1v1h-1V8h-1V7H5v1H4v1H3zM1 6h1V5h1V4h2V3h6v1h2v1h1v1h1v1h-1V6h-1V5h-2V4H5v1H3v1H2v1H1z'/%3E%3C/svg%3E")}.wk-hide[data-net=on]:after,.wk-hide[data-net=wait]:after,.wk-hide[data-net=conn]:after{content:"";position:absolute;top:6px;right:6px;width:7px;height:7px;transform:none;box-shadow:0 0 0 1px var(--paper);background:#12a150}.wk-hide[data-net=wait]:after,.wk-hide[data-net=conn]:after{background:#e0a000}.wk-hide[data-net=off]{color:var(--muted)}.wk-hide .ep-netn{position:absolute;right:3px;bottom:3px;font:600 9px/1 var(--mono);font-style:normal;background:var(--ink);color:var(--paper);padding:1px 2px;min-width:8px;text-align:center}
-/* epWhistle: Community Place whistle button lines characters up by name, colour or hat */
-.epp-wh{position:absolute;top:8px;right:8px;z-index:6000;width:40px;height:40px;padding:0;border:1px solid var(--rule);background:var(--paper);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:3px 3px 0 var(--inv)}
+/* epWhistle: Community Place whistle (bottom right) lines characters up by name, colour or hat; characters can be dragged */
+.epp-wh{position:absolute;bottom:calc(10px + var(--lift,0px));right:10px;z-index:6000;width:44px;height:44px;padding:0;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:3px 3px 0 var(--accent)}
 .epp-wh i{display:block;width:22px;height:22px;background:currentColor;-webkit-mask:var(--whi) center/contain no-repeat;mask:var(--whi) center/contain no-repeat;--whi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 6h5V5h1V4h5v1h1v1h1v1h1v4h-1v1h-1v1h-1v1H8v-1H7v-1H6v-1H5V9H1zM9 7h3v1h1v2h-1v1H9v-1H8V8h1zM12 2h3v1h-1v1h-2z'/%3E%3C/svg%3E")}
 .epp-wh:hover,.epp-wh[aria-expanded=true]{background:var(--inv);color:var(--inv-ink)}
 .epp-wh.on:after{content:"";position:absolute;top:4px;right:4px;width:6px;height:6px;background:var(--accent);box-shadow:0 0 0 1px var(--paper)}
 .epp-wh.blow{animation:.5s ease-out epp-blow}
 @keyframes epp-blow{0%{transform:none}20%{transform:rotate(-14deg) scale(1.12)}45%{transform:rotate(10deg) scale(1.08)}70%{transform:rotate(-6deg)}100%{transform:none}}
-.epp-whm{position:absolute;top:56px;right:8px;z-index:6001;min-width:180px;display:flex;flex-direction:column;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:6px 6px 0 var(--inv);animation:.14s ease-out epp-pop}
+.epp-whm{position:absolute;bottom:calc(10px + var(--lift,0px));right:62px;z-index:6001;display:flex;gap:6px;animation:.14s ease-out epp-whin}
+@keyframes epp-whin{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:none}}
 .epp-whm[hidden]{display:none}
-.epp-whm b{padding:9px 12px;background:var(--bar);border-bottom:1px solid var(--rule);font:500 .7rem/1.2 var(--mono);text-transform:uppercase}
-.epp-whm button{display:block;width:100%;text-align:left;padding:10px 12px;border:0;border-top:1px solid var(--rule);background:none;color:var(--ink);font:500 .8rem/1.2 var(--mono);text-transform:uppercase;cursor:pointer}
-.epp-whm b+button{border-top:0}
+.epp-whm button{position:relative;width:44px;height:44px;padding:0;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:3px 3px 0 var(--inv)}
+.epp-whm button span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.epp-ic{display:block;width:20px;height:20px;background:currentColor;-webkit-mask:var(--ii) center/contain no-repeat;mask:var(--ii) center/contain no-repeat}
+.epp-whm [data-line=colour] .epp-ic{-webkit-mask:none;mask:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ff4a1c' d='M1 2h6v6H1z'/%3E%3Cpath fill='%23f2b705' d='M9 2h6v6H9z'/%3E%3Cpath fill='%2312a150' d='M1 9h6v6H1z'/%3E%3Cpath fill='%231c7cff' d='M9 9h6v6H9z'/%3E%3C/svg%3E") center/contain no-repeat}
+.epp-whm button:after{content:attr(data-tip);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--inv);color:var(--inv-ink);font:500 .66rem/1 var(--mono);text-transform:uppercase;padding:6px 7px;opacity:0;pointer-events:none;transition:opacity .12s}
+.epp-whm button:hover:after,.epp-whm button:focus-visible:after{opacity:1}
+.epp-whm button:hover{background:var(--hover)}
+.epp-whm button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink,#fff);border-color:var(--accent)}
 .epp-whm button[hidden]{display:none}
-.epp-whm button:hover,.epp-whm button:focus-visible{background:var(--hover)}
-.epp-whm button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink,#fff)}
-.epp-whm button[data-line=""]{color:var(--muted)}
-.epp-note{position:absolute;top:14px;right:22px;z-index:6002;font:700 16px/1 var(--mono);font-style:normal;color:var(--accent);pointer-events:none;animation:1.2s ease-out forwards epp-note}
-@keyframes epp-note{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}100%{opacity:0;transform:translate(calc(var(--nx) - 30px),36px) rotate(-12deg)}}
-@media (max-width:640px){.epp-wh{width:44px;height:44px}.epp-whm{top:60px}.epp-whm button{padding:13px 12px}}
+@media (hover:none){.epp-whm{bottom:calc(4px + var(--lift,0px))}.epp-whm button{height:52px;justify-content:flex-start;padding-top:7px}.epp-whm button span{position:static;width:auto;height:auto;clip:auto;overflow:visible;font:500 9px/1 var(--mono);text-transform:uppercase;margin-top:5px}.epp-whm button:after{content:none}.epp-whm button[data-line=colour] span{font-size:8px}}
+.epp-note{position:absolute;bottom:calc(46px + var(--lift,0px));right:22px;z-index:6002;font:700 16px/1 var(--mono);font-style:normal;color:var(--accent);pointer-events:none;animation:1.2s ease-out forwards epp-note}
+@keyframes epp-note{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}100%{opacity:0;transform:translate(calc(var(--nx) - 30px),-40px) rotate(-12deg)}}
+.epp-stage .wk-char.epp-c{touch-action:none;cursor:grab}
+.epp-c.held{cursor:grabbing}
+.epp-c.held .wk-name{opacity:1}
+.epp-c.held .wk-fig{animation:.15s linear infinite alternate epp-panic;transform-origin:50% 8%}
+.epp-stage .wk-char.epp-c.held .wk-body:before{animation:.14s steps(2,end) infinite wk-leg}
+.epp-stage .wk-char.epp-c.held .wk-body:after{animation:.14s steps(2,end) infinite reverse wk-leg}
+@keyframes epp-panic{from{transform:translateY(-10px) rotate(-9deg)}to{transform:translateY(-10px) rotate(9deg)}}
+.epp-c.held:after{transform:scale(.6);opacity:.45;bottom:-6px}
+.epp-fear{position:absolute;bottom:calc(100% + 16px);left:calc(50% + 10px);font:800 13px/1 var(--mono);font-style:normal;color:#fff;background:#e0a000;padding:3px 5px;box-shadow:0 0 0 1px var(--paper);pointer-events:none;animation:.3s steps(2,end) infinite alternate epp-fearb}
+@keyframes epp-fearb{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+.epp-c.drop .wk-fig{animation:.4s ease-out epp-drop;transform-origin:50% 100%}
+@keyframes epp-drop{0%{transform:scale(1.15,.8)}40%{transform:translateY(-6px) scale(.95,1.06)}70%{transform:scale(1.05,.95)}100%{transform:none}}
+/* epDockSize: the Online / Offline button matches the other dock buttons instead of stretching to the row */
+.cdock .wk-hide{align-self:center;box-sizing:border-box;height:36px;min-height:36px}
+.cdock .wk-btn{box-sizing:border-box;height:36px;min-height:36px}
+@media (width<=760px){.cdock .wk-hide,.cdock .wk-btn{height:44px;min-height:44px}}

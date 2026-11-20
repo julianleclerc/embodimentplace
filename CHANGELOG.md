@@ -30,6 +30,21 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-20
+
+- **#30 Admin tools moved to a corner button.** The green "Editing on" bar at the top of every page is gone. Admins
+  (and contributors, with their own tools) get a button at the bottom right, in the dock left of the eye, Walk and
+  Lounge buttons. It shows a teal count of things waiting (review, reports, requests). It opens a small menu in the
+  site's menu style with one option, "Admin", that goes to a new `/admin` page listing every tool, grouped
+  (Review and moderation, Content, People, Site) with a line on what each does and its waiting count.
+  - Frontend: `epAdm` (button and menu, rendered first in `.cdock`), `epAdminHub` (the `/admin` page and route),
+    `epAdmG` (groups), `epAdmD` (descriptions), `epAdmN` (sums the counts in the link labels). CSS block
+    `/* epAdm: ... */` at the end of the stylesheet. Bundle `index-c240c30c.js` / `index-70450f2d.css`.
+  - The links still come from `adminBarLinks` in `worker/dist/index.js` (`me.bar`); a link not in `epAdmG` lands
+    under "Other". `/admin` is gated in `isGatedPath` and `gateStatus` (404 unless the account has editing on).
+  - The two-step setup notice ("Set up two-step login to use admin and contributor tools") still shows at the top
+    for editors without two-step login, since it is a warning and not a tool.
+
 ### 2026-11-19 (evening)
 
 - **#28 Walking characters show for everyone again.** Each page has its own Durable Object, and its in-memory record

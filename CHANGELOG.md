@@ -38,6 +38,26 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   **Check now**. Same data and routes as before (`auto_news` table, `POST /api/autonews/:slug`); only the wording
   and placement changed. CSS block `epTrack` (`.rechead .ep-track`, positioned at the top right of `.rechead`;
   on phones the breadcrumbs move down below it).
+- **#29 Whistle on Community Place.** A whistle button in the top-right corner of the Place stage opens "Line everyone
+  up": By name, By colour or By hat. Everyone hurries into rows sorted that way (colour and hat groups start a new
+  row or leave a gap between groups), stands facing right, and stays lined up until you pick "Let them walk". The
+  line-up is only on your screen and re-flows when the stage resizes. Code: `epPlaceRun` (`line`, `paintWh`,
+  `blow`, slot walking in `tick`), helpers `epHsl`, `epLineKey`, `epLineCmp`; CSS block `epWhistle`.
+- **#29 Online / Offline switch with a waitlist.** The eye button in the dock is now an Online / Offline switch with a
+  signal icon. A green dot means Online, an amber dot means waiting or connecting, and a slash means Offline.
+  - Online: your character is sent to the server, and you see everyone else's. It is site-wide, not per page.
+  - Offline: you can still browse and walk, but nothing is sent. The live socket is closed and others aren't shown.
+    The Lounge still works by polling.
+  - Seats: one per device (`window.epDev`, kept in localStorage `ep-dev`). `POST /api/online {dev, want}` takes or
+    keeps a seat (heartbeat every 25 s, freed 70 s after the last) or gives it back. The `online` Durable Object
+    holds them (`EpSeats`, `LiveHub.seat`, `hasSeat`).
+  - Limit: D1 setting `online_max`, default 100 (`EP_ONLINE_MAX`). An admin can change it by posting `max` to
+    `/api/online`. When it's full you join a waitlist, see your number on the button, and get the next free seat.
+  - The server refuses the live socket (`/api/live/ws`, now sent `dev`) and walk joins without a seat.
+  - The old choice to hide characters (`ep-walk-hide`) now means Offline. Client: `epSeat`, `epNetToggle`,
+    `epNetPaint`, `Le`. CSS block `epOnline`.
+- **#29 New accounts get a random character.** `createUser` saves a random look in `prefs.walker` (`epRandomLook`):
+  body, head and hat colour from the presets, and any hat that isn't locked. Existing accounts keep their look.
 
 ### 2026-11-19 (evening)
 

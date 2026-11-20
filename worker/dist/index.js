@@ -2450,8 +2450,19 @@ async function createUser(db, username, pw, role = "user") {
 	if (!USERNAME_RE.test(username)) return { error: "Username: 2-32 letters, numbers, dot, dash or underscore." };
 	if (pw && pw.length < 8) return { error: "Password: at least 8 characters." };
 	if (await db.prepare("SELECT 1 FROM users WHERE username=?").bind(username).first()) return { error: "That username is taken." };
-	const res = await db.prepare("INSERT INTO users(username,name,pw,role,created) VALUES(?,?,?,?,?)").bind(username, username.slice(0, 60), pw ? hashPw(pw) : "", role, nowStamp()).run();
+	const res = await db.prepare("INSERT INTO users(username,name,pw,role,created,prefs) VALUES(?,?,?,?,?,?)").bind(username, username.slice(0, 60), pw ? hashPw(pw) : "", role, nowStamp(), JSON.stringify({ walker: epRandomLook() })).run();
 	return { id: Number(res.meta.last_row_id) };
+}
+// A new account starts with a random character look (Julian, 2026-11-20): preset colours and a hat that isn't locked.
+function epRandomLook() {
+	const pick = (a) => a[Math.floor(Math.random() * a.length)];
+	const hats = LOOK_HATS.map(([k]) => k).filter((k) => !EP_LOCKED_HATS[k]);
+	return {
+		b: pick(WALK_COLORS),
+		h: pick(EP_HEAD_COLORS),
+		hat: pick(hats),
+		hc: pick(["#0d0d0d", ...WALK_COLORS, "#ffffff"])
+	};
 }
 var EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 function normEmail(email) {
@@ -19999,6 +20010,49 @@ var StreamCaps = class {
 		else this.by.set(key, n);
 	}
 };
+// epOnline: site-wide Online seats with a waitlist (Julian, 2026-11-20). One seat per device (a random id the
+// browser keeps). Online devices send a heartbeat every 25 s; a seat is freed 70 s after the last one. When every
+// seat is taken, devices wait in line and get the next free seat in order. The cap is the D1 setting online_max.
+var EP_ONLINE_MAX = 100;
+var EP_SEAT_TTL = 70;
+var EP_WAIT_TTL = 40;
+var EpSeats = class {
+	on = /* @__PURE__ */ new Map();
+	wait = /* @__PURE__ */ new Map();
+	sweep(t) {
+		for (const [k, v] of this.on) if (t - v > EP_SEAT_TTL) this.on.delete(k);
+		for (const [k, v] of this.wait) if (t - v > EP_WAIT_TTL) this.wait.delete(k);
+	}
+	has(dev, t = Date.now() / 1e3) {
+		this.sweep(t);
+		return Boolean(dev && this.on.has(dev));
+	}
+	seat(dev, want, max, t = Date.now() / 1e3) {
+		this.sweep(t);
+		max = Math.max(1, Math.min(1e4, Math.floor(max) || EP_ONLINE_MAX));
+		if (!want) {
+			this.on.delete(dev);
+			this.wait.delete(dev);
+			return { state: "offline", online: this.on.size, max };
+		}
+		if (this.on.has(dev)) {
+			this.on.set(dev, t);
+			return { state: "online", online: this.on.size, max };
+		}
+		// Setting an existing key keeps its place in the Map, so a heartbeat doesn't move a device back in line.
+		this.wait.set(dev, t);
+		const line = [...this.wait.keys()];
+		const pos = line.indexOf(dev);
+		const free = max - this.on.size;
+		if (pos < free) {
+			this.wait.delete(dev);
+			this.on.set(dev, t);
+			return { state: "online", online: this.on.size, max };
+		}
+		return { state: "wait", pos: pos - Math.max(0, free) + 1, waiting: line.length, online: this.on.size, max };
+	}
+};
+var memorySeats = new EpSeats();
 /** Process-local world used when Durable Objects are not bound (Vitest). */
 var memoryWorld = new WalkWorld();
 var memoryCaps = new StreamCaps();
@@ -20062,6 +20116,7 @@ async function postWalk(c) {
 	};
 	const leave = flag("leave");
 	const isJoin = flag("join");
+	if (isJoin && !await epHasSeat(c, epDevOf(g("dev")))) return c.json({ error: "Offline: no Online seat.", offline: true }, 403);
 	const x = Number(g("x"));
 	const y = Number(g("y"));
 	const w = Number(g("w"));
@@ -20175,6 +20230,37 @@ async function postWalk(c) {
 	if (out.error) bodyOut.error = out.error;
 	return c.json(bodyOut);
 }
+function epDevOf(v) {
+	const s = String(v || "").slice(0, 64);
+	return /^[A-Za-z0-9_-]{8,64}$/.test(s) ? s : "";
+}
+async function epOnlineMax(c) {
+	const v = Number(await setting$1(c.env.DB, "online_max"));
+	return Number.isFinite(v) && v > 0 ? Math.floor(v) : EP_ONLINE_MAX;
+}
+async function epHasSeat(c, dev) {
+	if (!dev) return false;
+	const ns = liveNs(c);
+	return ns ? await ns.getByName("online").hasSeat(dev) : memorySeats.has(dev);
+}
+/** POST /api/online {dev, want}: take, keep (heartbeat) or give back an Online seat. Admins can set {max}. */
+async function postOnline(c) {
+	const g = await readBody(c);
+	const auth = c.get("auth");
+	if (g.max != null && g.max !== "") {
+		if (auth.user?.role !== "admin") return c.json({ error: "Only admins can change the limit." }, 403);
+		const m = Math.floor(Number(g.max));
+		if (!(m >= 1 && m <= 1e4)) return c.json({ error: "Use a number from 1 to 10000." }, 400);
+		await setSetting(c.env.DB, "online_max", String(m));
+	}
+	const dev = epDevOf(g.dev);
+	if (!dev) return c.json({ error: "Missing device id." }, 400);
+	const want = g.want === "1" || g.want === "true";
+	const max = await epOnlineMax(c);
+	const ns = liveNs(c);
+	const r = ns ? await ns.getByName("online").seat(dev, want, max) : memorySeats.seat(dev, want, max);
+	return c.json({ ok: true, ...r, admin: auth.user?.role === "admin" || void 0 });
+}
 async function getWalkPeek(c) {
 	const page = pageOf(c.req.query("page"));
 	const me = cidOf(c.get("auth"));
@@ -20184,6 +20270,7 @@ async function getWalkPeek(c) {
 }
 async function getLiveWs(c) {
 	if (c.req.header("upgrade")?.toLowerCase() !== "websocket") return c.text("Expected WebSocket", 426);
+	if (!await epHasSeat(c, epDevOf(c.req.query("dev")))) return c.json({ error: "Offline: no Online seat." }, 403);
 	const key = slotKey(c);
 	const caps = capsStub(c);
 	if (!(caps ? await caps.acquireCap(key) : memoryCaps.acquire(key))) return c.json({ error: "Too many live connections." }, 429);
@@ -20393,6 +20480,7 @@ async function postEv(c) {
 var LiveHub = class extends DurableObject {
 	world = new WalkWorld();
 	caps = new StreamCaps();
+	seats = new EpSeats();
 	/** chat:lounge / event:N subscribers: page-DO names */
 	subs = /* @__PURE__ */ new Set();
 	constructor(ctx, env) {
@@ -20545,6 +20633,12 @@ var LiveHub = class extends DurableObject {
 	}
 	async holdPage(cid) {
 		return (await this.ctx.storage.get("hold:" + cid) || null)?.page || "";
+	}
+	async seat(dev, want, max) {
+		return this.seats.seat(dev, want, max);
+	}
+	async hasSeat(dev) {
+		return this.seats.has(dev);
 	}
 	async acquireCap(key) {
 		return this.caps.acquire(key);
@@ -21578,6 +21672,7 @@ api.post("/forgot", postForgot);
 api.get("/reset", async (c) => c.json(await resetPayload(c)));
 api.post("/reset", postReset);
 api.post("/walk", postWalk);
+api.post("/online", postOnline);
 api.get("/walk/peek", getWalkPeek);
 api.get("/live/ws", getLiveWs);
 api.get("/room/poll", getRoomPoll);

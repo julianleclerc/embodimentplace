@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
-- **#PR "Auto updates" is now "Track".** Admins see a **Track** button at the top right of company, university and
+- **#30 "Auto updates" is now "Track".** Admins see a **Track** button at the top right of company, university and
   lab pages. Once tapped it reads **✓ Tracking** (hover shows "Untrack"; tap again to stop). A tracked organisation is
   checked once a day by the news job from #23, and new items are reposted to the site. "Check news now" is now
   **Check now**. Same data and routes as before (`auto_news` table, `POST /api/autonews/:slug`); only the wording

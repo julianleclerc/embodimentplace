@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
-- **#32 Admin moved into the top menu, with tabs.** Julian asked for the admin tools next to Account and laid out
+- **#33 Admin moved into the top menu, with tabs.** Julian asked for the admin tools next to Account and laid out
   like the other pages. The bottom-right admin button from #31 is removed.
   - "Admin" sits between "+ Create" and "Account" on desktop (small teal count of things waiting) and after
     "Account" in the phone menu. Only editors see it. `epAdmNav`, active state `epAdmOn`.

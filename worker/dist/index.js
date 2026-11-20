@@ -20726,7 +20726,7 @@ api.get("/list/:key", async (c) => {
 	if ("error" in payload) return c.json(payload, 404);
 	return c.json(payload);
 });
-// epAutoNews: admin toggle "Automatic updates" per organisation (table auto_news). A daily job reads the enabled ones.
+// epAutoNews: admin "Track" toggle per organisation (table auto_news). A daily job reads the enabled ones.
 var EP_AUTONEWS_TYPES = [
 	"company",
 	"university",

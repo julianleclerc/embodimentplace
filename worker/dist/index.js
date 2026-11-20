@@ -2450,8 +2450,19 @@ async function createUser(db, username, pw, role = "user") {
 	if (!USERNAME_RE.test(username)) return { error: "Username: 2-32 letters, numbers, dot, dash or underscore." };
 	if (pw && pw.length < 8) return { error: "Password: at least 8 characters." };
 	if (await db.prepare("SELECT 1 FROM users WHERE username=?").bind(username).first()) return { error: "That username is taken." };
-	const res = await db.prepare("INSERT INTO users(username,name,pw,role,created) VALUES(?,?,?,?,?)").bind(username, username.slice(0, 60), pw ? hashPw(pw) : "", role, nowStamp()).run();
+	const res = await db.prepare("INSERT INTO users(username,name,pw,role,created,prefs) VALUES(?,?,?,?,?,?)").bind(username, username.slice(0, 60), pw ? hashPw(pw) : "", role, nowStamp(), JSON.stringify({ walker: epRandomLook() })).run();
 	return { id: Number(res.meta.last_row_id) };
+}
+// A new account starts with a random character look (Julian, 2026-11-20): preset colours and a hat that isn't locked.
+function epRandomLook() {
+	const pick = (a) => a[Math.floor(Math.random() * a.length)];
+	const hats = LOOK_HATS.map(([k]) => k).filter((k) => !EP_LOCKED_HATS[k]);
+	return {
+		b: pick(WALK_COLORS),
+		h: pick(EP_HEAD_COLORS),
+		hat: pick(hats),
+		hc: pick(["#0d0d0d", ...WALK_COLORS, "#ffffff"])
+	};
 }
 var EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 function normEmail(email) {

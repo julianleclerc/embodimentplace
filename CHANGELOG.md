@@ -45,6 +45,8 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   - The server refuses the live socket (`/api/live/ws`, now sent `dev`) and walk joins without a seat.
   - The old choice to hide characters (`ep-walk-hide`) now means Offline. Client: `epSeat`, `epNetToggle`,
     `epNetPaint`, `Le`. CSS block `epOnline`.
+- **#29 New accounts get a random character.** `createUser` saves a random look in `prefs.walker` (`epRandomLook`):
+  body, head and hat colour from the presets, and any hat that isn't locked. Existing accounts keep their look.
 
 ### 2026-11-19 (evening)
 

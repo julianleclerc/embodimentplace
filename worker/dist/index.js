@@ -2559,6 +2559,10 @@ function safeJson(s) {
 function adminBarLinks(auth, counts) {
 	if (auth.needs_2fa || !auth.logged) return [];
 	const links = [];
+	if (auth.is_admin) links.push({
+		href: "/admin/orgs",
+		label: "Organisations"
+	});
 	if (can(auth, "review") || can(auth, "claims")) {
 		const n = counts?.review;
 		links.push({
@@ -21179,6 +21183,156 @@ api.get("/admin/autonews", async (c) => {
 		last_run: r.last_run ?? null,
 		last_note: String(r.last_note || "")
 	})) });
+});
+// epAdminOrgs: admin "Organisations" tab. Every organisation with its tracking state, and quick edits of the main
+// fields (saved through saveRecord, so revisions and search stay right; links are left alone).
+var EP_AO_TEXT = ["country", "founded", "employees", "stage", "website", "careers", "linkedin", "x", "github", "huggingface", "email"];
+var EP_AO_URLS = ["website", "careers", "linkedin", "x", "github", "huggingface"];
+function epAoRow(r, counts) {
+	const d = parseData(r.data);
+	const loc = Array.isArray(fieldAny(d, "locations")) ? fieldAny(d, "locations") : [];
+	const hq = loc.find((l) => l && l.kind === "HQ") || loc[0] || null;
+	const roles = fieldAny(d, "roles");
+	const o = {
+		id: Number(r.id),
+		slug: String(r.slug),
+		name: String(r.name),
+		type: String(r.type),
+		summary: String(r.summary || ""),
+		roles: Array.isArray(roles) ? roles.map(String) : roles ? [String(roles)] : [],
+		image: fieldV(d, "image"),
+		hq: hq ? String(hq.address || "") : "",
+		private: Number(r.private || 0) ? 1 : 0,
+		updated: r.updated ?? null,
+		tracked: Number(r.an_on || 0) ? 1 : 0,
+		feed: String(r.an_feed || ""),
+		last_run: r.an_run ?? null,
+		last_note: String(r.an_note || ""),
+		posts: Number(counts.posts.get(Number(r.id)) || 0),
+		last_post: counts.last.get(Number(r.id)) || null,
+		followers: Number(counts.fol.get(Number(r.id)) || 0)
+	};
+	for (const k of EP_AO_TEXT) o[k] = fieldV(d, k);
+	return o;
+}
+async function epAoCounts(db) {
+	const posts = new Map(), last = new Map(), fol = new Map();
+	try {
+		const { results } = await db.prepare("SELECT l.dst AS id, COUNT(*) AS n, MAX(r.feed_at) AS last FROM links l JOIN records r ON r.id=l.src WHERE l.rel IN ('about','orgs') AND r.type IN ('post','paper') GROUP BY l.dst").all();
+		for (const x of results || []) posts.set(Number(x.id), Number(x.n)), last.set(Number(x.id), x.last || null);
+	} catch {}
+	try {
+		const { results } = await db.prepare("SELECT CAST(ref AS INTEGER) AS id, COUNT(*) AS n FROM watch_sources WHERE kind='record' GROUP BY ref").all();
+		for (const x of results || []) fol.set(Number(x.id), Number(x.n));
+	} catch {}
+	return { posts, last, fol };
+}
+var EP_AO_SQL = "SELECT r.id, r.slug, r.name, r.type, r.summary, r.data, r.private, r.updated, a.enabled AS an_on, a.feed AS an_feed, a.last_run AS an_run, a.last_note AS an_note FROM records r LEFT JOIN auto_news a ON a.record_id=r.id WHERE r.type IN ('company','university','lab')";
+api.get("/admin/orgs", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const { results } = await c.env.DB.prepare(EP_AO_SQL + " ORDER BY r.name COLLATE NOCASE").all();
+	const counts = await epAoCounts(c.env.DB);
+	return c.json({
+		orgs: (results || []).map((r) => epAoRow(r, counts)),
+		roles: ["Robot maker", "Model lab", "Software developer", "Supplier", "Compute", "Integrator", "Entertainment", "University", "Research lab", "Investor", "Customer", "Media"],
+		stages: ["Pre-seed", "Seed", "Series A", "Series B", "Series C", "Series D+", "Public", "Acquired", "Closed", "Corporate"]
+	});
+});
+api.post("/admin/orgs/:slug", async (c) => {
+	const auth = c.get("auth");
+	if (!auth.is_admin) return c.json({ error: "Not found" }, 404);
+	const row = await c.env.DB.prepare("SELECT * FROM records WHERE slug=? AND type IN ('company','university','lab')").bind(c.req.param("slug")).first();
+	if (!row) return c.json({ error: "Not found" }, 404);
+	let b = {};
+	try {
+		b = await c.req.json();
+	} catch {
+		return c.json({ error: "Bad request" }, 400);
+	}
+	const name = String(b.name ?? row.name).trim().slice(0, 200);
+	if (!name) return c.json({ error: "Name is required." }, 400);
+	const summary = String(b.summary ?? row.summary ?? "").trim().slice(0, 300);
+	const data = parseData(row.data);
+	const put = (k, v) => {
+		if (v === "" || v == null || Array.isArray(v) && !v.length) {
+			delete data[k];
+			return;
+		}
+		const old = data[k] && typeof data[k] === "object" && !Array.isArray(data[k]) ? data[k] : {};
+		if (JSON.stringify(old.v) === JSON.stringify(v)) return;
+		const keep = { ...old };
+		delete keep.src;
+		delete keep.asof;
+		data[k] = { ...keep, v };
+	};
+	for (const k of EP_AO_TEXT) if (k in b) {
+		let v = String(b[k] ?? "").trim().slice(0, 300);
+		if (v && EP_AO_URLS.includes(k) && !/^https?:\/\//i.test(v)) v = "https://" + v;
+		if (v && (k === "founded" || k === "employees") && !/^\d+$/.test(v)) return c.json({ error: (k === "founded" ? "Founded" : "Employees") + " must be a number." }, 400);
+		put(k, v);
+	}
+	if ("roles" in b) put("roles", (Array.isArray(b.roles) ? b.roles : []).map((x) => String(x).trim()).filter(Boolean).slice(0, 12));
+	if ("image" in b) {
+		const v = String(b.image || "").trim();
+		if (v && !/^(https?:\/\/|\/)/.test(v)) return c.json({ error: "The logo must be a web address or a /logos/ path." }, 400);
+		put("image", v);
+	}
+	if ("hq" in b) {
+		const addr = String(b.hq || "").trim().slice(0, 200);
+		const loc = Array.isArray(fieldAny(data, "locations")) ? [...fieldAny(data, "locations")] : [];
+		const i = loc.findIndex((l) => l && l.kind === "HQ");
+		const cur = i >= 0 ? loc[i] : null;
+		if (!addr) {
+			if (i >= 0) loc.splice(i, 1);
+		} else if (!cur || cur.address !== addr) {
+			const next = { kind: "HQ", address: addr };
+			if (i >= 0) loc[i] = next;
+			else loc.unshift(next);
+		}
+		const keep = data.locations && typeof data.locations === "object" && !Array.isArray(data.locations) ? data.locations : {};
+		if (loc.length) data.locations = { ...keep, v: loc };
+		else delete data.locations;
+	}
+	const priv = "private" in b ? b.private ? 1 : 0 : Number(row.private || 0);
+	await saveRecord(c.env.DB, Number(row.id), String(row.type), name, summary, String(row.body || ""), data, String(row.notes || ""), priv, Number(row.watch || 0), null);
+	if ("tracked" in b || "feed" in b) {
+		const cur = await c.env.DB.prepare("SELECT enabled, feed FROM auto_news WHERE record_id=?").bind(row.id).first();
+		const on = "tracked" in b ? b.tracked ? 1 : 0 : Number(cur?.enabled || 0);
+		let feed = "feed" in b ? String(b.feed || "").trim() : String(cur?.feed || "");
+		if (feed) {
+			const canon = epAnCanon(feed);
+			if (!canon) return c.json({ error: "The news feed isn't a web address." }, 400);
+			feed = canon;
+		}
+		await c.env.DB.prepare("INSERT INTO auto_news(record_id,enabled,feed,updated,updated_by) VALUES(?,?,?,?,?) ON CONFLICT(record_id) DO UPDATE SET enabled=excluded.enabled, feed=excluded.feed, updated=excluded.updated, updated_by=excluded.updated_by").bind(row.id, on, feed, nowStamp(), auth.user?.id ?? null).run();
+	}
+	const fresh = await c.env.DB.prepare(EP_AO_SQL + " AND r.id=?").bind(row.id).first();
+	return c.json({ ok: true, org: epAoRow(fresh, await epAoCounts(c.env.DB)) });
+});
+api.get("/admin/stats", async (c) => {
+	const auth = c.get("auth");
+	if (!auth.logged || auth.needs_2fa) return c.json({ error: "Not found" }, 404);
+	const one = async (sql, ...a) => {
+		try {
+			return Number((await c.env.DB.prepare(sql).bind(...a).first())?.n || 0);
+		} catch {
+			return 0;
+		}
+	};
+	const week = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+	const out = {
+		orgs: await one("SELECT COUNT(*) AS n FROM records WHERE type IN ('company','university','lab')"),
+		tracked: await one("SELECT COUNT(*) AS n FROM auto_news WHERE enabled=1"),
+		posts_week: await one("SELECT COUNT(*) AS n FROM records WHERE type IN ('post','paper') AND feed_at>=?", week),
+		members: auth.is_admin ? await one("SELECT COUNT(*) AS n FROM users") : null,
+		members_week: auth.is_admin ? await one("SELECT COUNT(*) AS n FROM users WHERE created>=?", week) : null,
+		runs: []
+	};
+	if (auth.is_admin) try {
+		const { results } = await c.env.DB.prepare("SELECT r.slug, r.name, a.last_run, a.last_note FROM auto_news a JOIN records r ON r.id=a.record_id WHERE a.enabled=1 ORDER BY a.last_run IS NULL, a.last_run DESC LIMIT 6").all();
+		out.runs = (results || []).map((x) => ({ slug: String(x.slug), name: String(x.name), last_run: x.last_run ?? null, last_note: String(x.last_note || "") }));
+	} catch {}
+	return c.json(out);
 });
 api.get("/r/:slug", async (c) => {
 	const rec = await onePublic(c.env.DB, c.req.param("slug"));

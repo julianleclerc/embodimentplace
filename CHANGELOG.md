@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
-- **Organisation badges instead of members managing pages.** Julian decided people from an organisation should not
+- **#36 Organisation badges instead of members managing pages.** Julian decided people from an organisation should not
   run its page. Belonging is now a badge of honour on their character and a way to find each other. Only the admin
   and contributors manage organisation pages.
   - "Claim this company" became **I work here** (`/claim/<slug>`, page title "Wear the … badge"). A verified work
@@ -59,6 +59,24 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     /admin/reports with a "member of this organisation" tag.
   - The hard hat now unlocks with any badge. Screenshots in `docs/screenshots/badges/`.
 
+- **#35 Admin redone: dashboard Overview and an Organisations tab.**
+  - Overview is now a dashboard: tiles for waiting reviews, open reports, community requests, organisations
+    (and how many are tracked), posts this week and members; a "Needs attention" box; a "Tracking" box with the
+    latest checks; then all tools grouped (`epAdminHub`, `epAgo`). Data from new `GET /api/admin/stats`.
+  - New first tab **Organisations** (`/admin/orgs`, `epAdminOrgs`, `epAoItem`, `epAoEdit`): every organisation
+    with logo, roles, country, stage, post and follower counts, and tracking state. Search, filters (All, Tracked,
+    Not tracked, Missing info, Hidden; `epAoMiss`) and sort (name, recently edited, most posts, most followers).
+    Tapping a row opens an inline editor: name, summary, roles, country, stage, headquarters, founded, employees,
+    website and social links, contact email, logo, track on/off, news feed, "Check now", and hide from the site.
+  - Worker: `GET /api/admin/orgs` and `POST /api/admin/orgs/:slug` (JSON; admin only; `epAoRow`, `epAoCounts`).
+    Saves go through `saveRecord` (revision kept, search reindexed, links untouched). A changed field drops its
+    old `src`/`asof`. Tracking writes `auto_news` directly. "Organisations" added first in `adminBarLinks`.
+  - CSS block `/* epAdmin2: ... */`. Bundle `index-dc790959.js` / `index-f3e158d5.css`.
+
+- **#34 Calmer whistle and colour icons; no "!" when lifted.** A lifted Place character no longer shows the "!" badge
+  (it still swings and kicks). The whistle has a new pixel icon (chamber, mouthpiece, ring) and the whistle and sort
+  buttons use the dock's flat look (ink border, no coloured shadow; the whistle turns dark while a line-up is on).
+  The colour option is a mono drop instead of four coloured squares. CSS blocks `epWhistle` and `epWhistle2`.
 - **#33 Admin moved into the top menu, with tabs.** Julian asked for the admin tools next to Account and laid out
   like the other pages. The bottom-right admin button from #31 is removed.
   - "Admin" sits between "+ Create" and "Account" on desktop (small teal count of things waiting) and after

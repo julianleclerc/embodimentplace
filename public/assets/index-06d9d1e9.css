@@ -408,12 +408,7 @@ a.ep-ad-t:hover{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px);t
 .eplist-btn:hover{background:var(--hover)}
 .eplist-btn.on{background:var(--inv);color:var(--inv-ink)}
 .eplist-btn.on b{background:var(--paper);color:var(--ink)}
-.eplist{z-index:6;background:var(--paper);color:var(--ink);border:1px solid var(--ink);flex-direction:column;width:310px;max-height:calc(100% - 130px);display:flex;position:absolute;top:50px;right:50px;box-shadow:0 6px 18px #0000002e;cursor:auto}
-.eplist[hidden]{display:none}
-.eplist-h{border-bottom:1px solid var(--rule);align-items:center;gap:8px;padding:8px 8px 8px 12px;display:flex}
-.eplist-h strong{font-size:.95rem}
 .eplist-n{font-family:var(--mono);color:var(--muted);text-transform:uppercase;font-size:.66rem}
-.eplist-x{background:none;border:0;color:var(--ink);cursor:pointer;width:32px;height:32px;margin-left:auto;font-size:1.3rem;line-height:1}
 .eplist-ul{overscroll-behavior:contain;margin:0;padding:4px 0;list-style:none;overflow-y:auto}
 .eplist-ul button{background:none;border:0;color:var(--ink);text-align:left;cursor:pointer;align-items:center;gap:10px;width:100%;padding:7px 12px;font:inherit;display:flex}
 .eplist-ul button:hover,.eplist-ul button:focus-visible{background:var(--hover)}
@@ -423,11 +418,22 @@ a.ep-ad-t:hover{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px);t
 .eplist-ul b{font-weight:600;font-size:.88rem;line-height:1.25}
 .eplist-ul small{color:var(--muted);text-overflow:ellipsis;white-space:nowrap;font-size:.74rem;overflow:hidden}
 .eplist-empty{color:var(--muted);padding:12px;font-size:.85rem}
-@media (max-width:700px){.eplist-btn{right:58px;height:40px}.eplist{left:8px;right:8px;top:auto;bottom:78px;width:auto;max-height:min(55%,calc(100% - 140px))}}
+@media (max-width:700px){.eplist-btn{right:58px;height:40px}}
 /* epMapBottom: map search and filters sit at the bottom left */
 .omap .omap-filters{top:auto;bottom:26px;max-width:calc(100% - 470px);min-width:min(560px,calc(100% - 70px))}
 @media (max-width:700px){.omap .omap-filters{bottom:80px;max-width:calc(100% - 16px);min-width:0}}
 .opop .opop-x{background:none;border:0;color:var(--ink);cursor:pointer;flex:none;align-self:flex-start;width:30px;height:30px;margin:-4px -6px 0 auto;font-size:1.25rem;line-height:1}
+/* epMapListWin: the map list is a floating window like the Lounge (cw-panel), draggable by its header */
+.cw-panel.eplw{height:min(520px,calc(100vh - 140px))}
+.eplw .cw-title{white-space:nowrap}
+.eplw .eplist-n{color:var(--muted);margin-left:4px}
+.eplw .eplist-ul{flex:1;min-height:0}
+.cw-panel.eplw.dragging{box-shadow:12px 12px 0 var(--accent);cursor:grabbing}
+.cw-panel.eplw.dragging *{-webkit-user-select:none;user-select:none;cursor:grabbing!important}
+.eplw .eplist-ul li{align-items:center;display:flex}
+.eplw .eplist-ul li>button{flex:1;min-width:0;padding-right:6px}
+.eplw .eplist-go{font-family:var(--mono);text-transform:uppercase;white-space:nowrap;color:var(--ink);border:1px solid var(--rule);flex:none;margin-right:10px;padding:6px 8px;font-size:.64rem;text-decoration:none}
+.eplw .eplist-go:hover,.eplw .eplist-go:focus-visible{background:var(--hover)}
 /* epSite: Admin > Site settings, and the still (non-moving) Latest banner */
 .ticker.ep-still .track{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .ticker.ep-still .track::-webkit-scrollbar{display:none}

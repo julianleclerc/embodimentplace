@@ -39,6 +39,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   - The Latest banner now only shows on the front page (`/`), not on other pages.
   - Worker: `settings` key `ticker_mode` (`scroll` default, `static`, `off`), `epTickerMode`, `GET/POST /api/admin/site`
     (admin only, JSON), and `/api/me` now returns `ticker_mode`. CSS block `/* epSite */`; still banner uses `.ticker.ep-still`.
+- **#41 Map list is a floating window like the Lounge, with a Page link per organisation.**
+  - The map's **List** now opens a Lounge-style window (`cw-panel eplw`, grip, title "In view · N", close). On desktop
+    it can be dragged anywhere by its header and the spot is remembered (`localStorage ep-maplist-box`); on phones it
+    is a bottom sheet like the Lounge. Escape or the close button hides it; it is removed when leaving the map.
+  - Each row has a **Page ↗** link (`.eplist-go`) straight to the organisation's page (`/r/<slug>`); tapping the rest
+    of the row still opens its card on the map.
+  - Code: `epListInit` in the bundle, CSS block `/* epMapListWin */`.
 
 - **#40 Map: list of organisations in view, map-only Overview, walking pans the map, filters at the bottom.**
   - A **List** button (top right of the map, with a count) opens a floating card listing every organisation in the

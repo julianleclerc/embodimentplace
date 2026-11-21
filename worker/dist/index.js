@@ -17519,6 +17519,12 @@ async function orgsPayload(db, group = "", asMap = false) {
 	if (payload.map) {
 		const order = recs.map((r) => r.id);
 		const points = [];
+		const cardById = new Map(cards.map((c) => [c.id, c]));
+		const fans = /* @__PURE__ */ new Map();
+		try {
+			const { results } = await db.prepare("SELECT company_id AS id, COUNT(*) AS n FROM follows GROUP BY company_id").all();
+			for (const f of results || []) fans.set(Number(f.id), Number(f.n) || 0);
+		} catch {}
 		for (const rec of recs) {
 			const rows = locationRows(rec).filter((r) => r.lat != null);
 			if (!rows.length) continue;
@@ -17528,6 +17534,18 @@ async function orgsPayload(db, group = "", asMap = false) {
 			const idx = order.indexOf(rec.id);
 			const lgImg = imageSrc(rec.data);
 			const lg = lgImg && rec.data && rec.data.image && typeof rec.data.image === "object" && rec.data.image.fit === "contain" ? lgImg.src : null;
+			const card = cardById.get(rec.id) || {};
+			const x = {
+				sm: rec.summary || "",
+				ro: roles,
+				co: fieldStr(rec.data, "country"),
+				st: fieldStr(rec.data, "stage"),
+				fd: fieldStr(rec.data, "founded"),
+				ws: fieldStr(rec.data, "website"),
+				rs: card.raised ?? null,
+				mk: card.makes || "",
+				fl: fans.get(rec.id) || 0
+			};
 			rows.forEach((r, i) => {
 				points.push({
 					id: rec.id,
@@ -17536,6 +17554,7 @@ async function orgsPayload(db, group = "", asMap = false) {
 					c: orgColor(idx < 0 ? rec.id : idx, ORG_COLOR_PALETTE),
 					k: r.kind,
 					lg,
+					x,
 					a: r.address,
 					lat: r.lat,
 					lon: r.lon,

@@ -32,6 +32,19 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
+- **#PR Organisations Overview opens on the map.**
+  - `/orgs` (Overview) now starts with the full-screen map: it fills the window under the menus on phone and
+    desktop, with no page heading above it. The grouped lists of organisations follow below the map. The separate
+    "Map" tab is gone; `/orgs/map` (and `?org=` links to it) still work and show Overview. Frontend `Ar`/`Fr`; the map
+    re-measures its height shortly after load (`he`) so a late-loading ticker doesn't push it below the fold.
+  - The map legend no longer lists organisation names (`legend:!1`).
+  - The card that opens on a pin, or by itself when the search narrows to one organisation, shows more:
+    logo, name, location type, address, summary, roles, country, stage, founded, money raised, what it makes,
+    follower count, Follow, Open page and the website (`epPopHtml`). It stays inside the map (`epPopPos`). On
+    phones it is a sheet at the bottom of the map, the filter panel closes, and the map pans so the pin stays
+    visible. CSS block `/* epOrgMap */`.
+  - Worker: each map point carries `x` (summary, roles, country, stage, founded, website, raised, makes, follower
+    count) in `orgsPayload`. The follower count is one `GROUP BY` over `follows`, no bound parameters.
 - **#37 Admin > Organisations: quick buttons and easier sorting.**
   - Each row has quick buttons that work without opening the editor: **Track / Tracking** (turns daily news
     tracking on or off), **Check** (checks for news now; only when tracked), **Hide / Hidden** (hides it from the

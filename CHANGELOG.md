@@ -32,6 +32,12 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
+- **#43 Subtabs keep their original colours, at the Latest banner's size.**
+  - Follow-up to #42: the subtab rows (`.tb`, `.subnav`) go back to their original colours (light row, active tab
+    in the inverted colour) but keep the banner's format: mono caps at .72rem, 4px padding so each row is the same
+    height as the Latest banner (about 25px), and the small square on the active tab. CSS block `/* epTabs */`
+    replaced; the `--tk-*` theme variables are gone.
+
 - **#42 Subtabs look like the Latest banner.**
   - Every subtab row (`.tb` and `.subnav`: Admin, Account, Community, the type pages like Papers/Funding, Admin
     filters) is now a dark strip in mono caps like the Latest banner, and the active tab uses the banner's accent

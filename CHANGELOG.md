@@ -32,6 +32,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
+- **#34 Calmer whistle and colour icons; no "!" when lifted.** A lifted Place character no longer shows the "!" badge
+  (it still swings and kicks). The whistle has a new pixel icon (chamber, mouthpiece, ring) and the whistle and sort
+  buttons use the dock's flat look (ink border, no coloured shadow; the whistle turns dark while a line-up is on).
+  The colour option is a mono drop instead of four coloured squares. CSS blocks `epWhistle` and `epWhistle2`.
 - **#33 Admin moved into the top menu, with tabs.** Julian asked for the admin tools next to Account and laid out
   like the other pages. The bottom-right admin button from #31 is removed.
   - "Admin" sits between "+ Create" and "Account" on desktop (small teal count of things waiting) and after

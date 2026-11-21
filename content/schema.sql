@@ -44,7 +44,7 @@ CREATE TABLE links(
 CREATE TABLE meet_requests(id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE, who_kind TEXT DEFAULT 'either', who_role TEXT DEFAULT '', org_group TEXT DEFAULT '', org_id INTEGER, topic TEXT DEFAULT '', why TEXT DEFAULT '', location TEXT DEFAULT '', by_when TEXT DEFAULT '', status TEXT NOT NULL DEFAULT 'pending', admin_note TEXT DEFAULT '', created TEXT, decided TEXT, handled_by INTEGER, contact_email TEXT DEFAULT '');
 
 CREATE TABLE owners(user_id INTEGER NOT NULL, company_id INTEGER NOT NULL REFERENCES records(id) ON DELETE CASCADE,
-        created TEXT, PRIMARY KEY(user_id, company_id));
+        created TEXT, email TEXT DEFAULT '', PRIMARY KEY(user_id, company_id));
 
 CREATE TABLE presence(
     event_id INTEGER, cid TEXT, user_id INTEGER, name TEXT, seen REAL, PRIMARY KEY(event_id, cid));
@@ -60,7 +60,7 @@ CREATE TABLE referrals(
         company_id INTEGER REFERENCES records(id) ON DELETE SET NULL, user_id INTEGER, requester TEXT DEFAULT '{}',
         status TEXT DEFAULT 'new', reward_usd REAL, note TEXT DEFAULT '', created TEXT, updated TEXT);
 
-CREATE TABLE reports(id INTEGER PRIMARY KEY, user_id INTEGER, kind TEXT NOT NULL, target_id INTEGER NOT NULL, reason TEXT, note TEXT DEFAULT '', status TEXT NOT NULL DEFAULT 'open', created TEXT, handled_by INTEGER, decided TEXT, action TEXT DEFAULT '');
+CREATE TABLE reports(id INTEGER PRIMARY KEY, user_id INTEGER, kind TEXT NOT NULL, target_id INTEGER NOT NULL, reason TEXT, note TEXT DEFAULT '', status TEXT NOT NULL DEFAULT 'open', created TEXT, handled_by INTEGER, decided TEXT, action TEXT DEFAULT '', priority INTEGER DEFAULT 0);
 
 CREATE TABLE revisions(id INTEGER PRIMARY KEY, record_id INTEGER, snapshot TEXT, at TEXT);
 

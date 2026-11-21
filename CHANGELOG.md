@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
-- **#PR Map: list of organisations in view, map-only Overview, walking pans the map, filters at the bottom.**
+- **#40 Map: list of organisations in view, map-only Overview, walking pans the map, filters at the bottom.**
   - A **List** button (top right of the map, with a count) opens a floating card listing every organisation in the
     current view, with logo and location. It updates as you pan, zoom or filter. Tapping one opens its card (zooming
     in first if it's inside a cluster). On phones the list is a sheet at the bottom and closes when you pick one.

@@ -401,3 +401,30 @@ a.ep-ad-t:hover{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px);t
 .opop .opop-act a{font-weight:400;display:inline-flex;align-items:center;text-decoration:none}
 .opop .opop-web{font-size:.78rem;color:var(--muted);text-decoration:underline!important;margin-left:auto}
 .opop.opop-sheet{left:8px;right:8px;top:auto;bottom:78px;width:auto;max-width:none;margin:0;transform:none;max-height:calc(100% - 140px);overflow:auto}
+/* epMapList: floating list of the organisations in view (epListInit) */
+.eplist-btn{z-index:3;border:1px solid var(--ink);background:var(--paper);color:var(--ink);font-family:var(--mono);text-transform:uppercase;letter-spacing:.04em;cursor:pointer;align-items:center;gap:8px;height:34px;padding:0 10px;font-size:.72rem;display:flex;position:absolute;top:8px;right:50px}
+.eplist-btn:before{content:"";background:linear-gradient(currentColor 0 0) 0 0/100% 2px no-repeat,linear-gradient(currentColor 0 0) 0 4px/100% 2px no-repeat,linear-gradient(currentColor 0 0) 0 8px/100% 2px no-repeat;width:12px;height:10px}
+.eplist-btn b{background:var(--ring,var(--hover));border-radius:9px;min-width:18px;padding:1px 5px;font-weight:600;text-align:center}
+.eplist-btn:hover{background:var(--hover)}
+.eplist-btn.on{background:var(--inv);color:var(--inv-ink)}
+.eplist-btn.on b{background:var(--paper);color:var(--ink)}
+.eplist{z-index:6;background:var(--paper);color:var(--ink);border:1px solid var(--ink);flex-direction:column;width:310px;max-height:calc(100% - 130px);display:flex;position:absolute;top:50px;right:50px;box-shadow:0 6px 18px #0000002e;cursor:auto}
+.eplist[hidden]{display:none}
+.eplist-h{border-bottom:1px solid var(--rule);align-items:center;gap:8px;padding:8px 8px 8px 12px;display:flex}
+.eplist-h strong{font-size:.95rem}
+.eplist-n{font-family:var(--mono);color:var(--muted);text-transform:uppercase;font-size:.66rem}
+.eplist-x{background:none;border:0;color:var(--ink);cursor:pointer;width:32px;height:32px;margin-left:auto;font-size:1.3rem;line-height:1}
+.eplist-ul{overscroll-behavior:contain;margin:0;padding:4px 0;list-style:none;overflow-y:auto}
+.eplist-ul button{background:none;border:0;color:var(--ink);text-align:left;cursor:pointer;align-items:center;gap:10px;width:100%;padding:7px 12px;font:inherit;display:flex}
+.eplist-ul button:hover,.eplist-ul button:focus-visible{background:var(--hover)}
+.eplist-ul img,.eplist-ul i{flex:none;border:1px solid var(--rule);background:#fff;object-fit:contain;border-radius:50%;width:28px;height:28px;padding:2px}
+.eplist-ul i{background:var(--pc);border:2px solid #fff;box-shadow:0 0 0 1px #00000059;width:14px;height:14px;margin:0 7px;padding:0}
+.eplist-ul span{min-width:0;flex-direction:column;display:flex}
+.eplist-ul b{font-weight:600;font-size:.88rem;line-height:1.25}
+.eplist-ul small{color:var(--muted);text-overflow:ellipsis;white-space:nowrap;font-size:.74rem;overflow:hidden}
+.eplist-empty{color:var(--muted);padding:12px;font-size:.85rem}
+@media (max-width:700px){.eplist-btn{right:58px;height:40px}.eplist{left:8px;right:8px;top:auto;bottom:78px;width:auto;max-height:min(55%,calc(100% - 140px))}}
+/* epMapBottom: map search and filters sit at the bottom left */
+.omap .omap-filters{top:auto;bottom:26px;max-width:calc(100% - 470px);min-width:min(560px,calc(100% - 70px))}
+@media (max-width:700px){.omap .omap-filters{bottom:80px;max-width:calc(100% - 16px);min-width:0}}
+.opop .opop-x{background:none;border:0;color:var(--ink);cursor:pointer;flex:none;align-self:flex-start;width:30px;height:30px;margin:-4px -6px 0 auto;font-size:1.25rem;line-height:1}

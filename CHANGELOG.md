@@ -32,6 +32,17 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
+- **#40 Map: list of organisations in view, map-only Overview, walking pans the map, filters at the bottom.**
+  - A **List** button (top right of the map, with a count) opens a floating card listing every organisation in the
+    current view, with logo and location. It updates as you pan, zoom or filter. Tapping one opens its card (zooming
+    in first if it's inside a cluster). On phones the list is a sheet at the bottom and closes when you pick one.
+    `epListInit` (fed from the map's draw loop with the set of ids in view), CSS block `/* epMapList */`.
+  - Overview is now just the map: the grouped organisation lists below it are gone (`Ar`). The group tabs still
+    list organisations.
+  - Your walking character pushes the map: walk into the outer band of the map (about 110 px) and it pans that way
+    (`epWalkMap`, called from the walk loop; the map exposes `epPan`).
+  - The map search and filters moved to the bottom left (above the dock on phones). CSS block `/* epMapBottom */`.
+  - The organisation card has a close button (`.opop-x`).
 - **#38 Organisations Overview opens on the map.**
   - `/orgs` (Overview) now starts with the full-screen map: it fills the window under the menus on phone and
     desktop, with no page heading above it. The grouped lists of organisations follow below the map. The separate

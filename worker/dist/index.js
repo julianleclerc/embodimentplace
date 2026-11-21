@@ -2099,6 +2099,26 @@ var COLS = [
 		"TEXT DEFAULT '[]'"
 	],
 	[
+		"auto_news",
+		"every_h",
+		"INTEGER DEFAULT 24"
+	],
+	[
+		"auto_news",
+		"at_hour",
+		"INTEGER DEFAULT 6"
+	],
+	[
+		"auto_news",
+		"tz",
+		"TEXT DEFAULT ''"
+	],
+	[
+		"auto_news",
+		"since_at",
+		"TEXT"
+	],
+	[
 		"comments",
 		"decided",
 		"TEXT"
@@ -20974,20 +20994,6 @@ api.post("/autonews/:slug", async (c) => {
 		on
 	});
 });
-// epAutoNewsCron: once a day for each organisation with automatic updates on, read its news feed (RSS or Atom)
-// and publish items from the last 36 hours as Repost posts linked to it. Runs on the hourly cron, a few organisations
-// per tick (EP_AN_PER_TICK) so each run stays well inside the Worker's subrequest limit.
-var EP_AN_PER_TICK = 5;
-var EP_AN_MAX_NEW = 3;
-var EP_AN_WINDOW_H = 36;
-var EP_AN_UA = "Mozilla/5.0 (compatible; embodiment.place news reader; +https://embodiment.place/about)";
-var EP_AN_GUESSES = [
-	"/feed",
-	"/rss.xml",
-	"/feed.xml",
-	"/blog/rss.xml",
-	"/news/rss.xml"
-];
 function epAnDecode(t) {
 	return String(t || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d))).replace(/&(nbsp|amp|lt|gt|quot|apos|rsquo|lsquo|rdquo|ldquo|hellip|mdash|ndash);/g, (_, n) => ({
 		nbsp: " ",
@@ -21106,73 +21112,260 @@ async function epAnFindFeed(org) {
 	} catch {}
 	throw new Error("No news feed found on " + new URL(home.url).hostname);
 }
-async function epAutoNewsOrg(env, org, now = Date.now()) {
+async function epAnPublish(db, org, it, seen) {
+	if (seen.includes(it.url)) return false;
+	seen.push(it.url);
+	if ((await db.prepare("SELECT 1 AS n FROM records WHERE type IN ('post','paper') AND (json_extract(data,'$.link.v')=? OR json_extract(data,'$.url.v')=?) LIMIT 1").bind(it.url, it.url).first())?.n) return false;
+	let site = "";
+	try {
+		site = new URL(it.url).hostname.replace(/^www\./, "");
+	} catch {}
+	const rid = await applyCompose(db, {
+		kind: "news",
+		kind_label: "News",
+		title: epMeow(it.title),
+		intro: epMeow(it.intro),
+		body: "",
+		url: it.url,
+		origin: "Repost",
+		source_site: it.source || site,
+		as: org.id
+	}, null);
+	if (!rid) return false;
+	const day = new Date(it.when).toISOString().slice(0, 10);
+	await db.prepare("UPDATE records SET data=json_set(data,'$.auto_news',json('{\"v\":\"Yes\"}'),'$.date',json_object('v',?)), feed_at=? WHERE id=?").bind(day, day, rid).run();
+	return true;
+}
+// epAnAgent: the tracking agent. Claude searches the web (server-side web_search tool) for news about the organisation
+// published inside the window, and hands back only items worth reposting through the report_news tool. Needs the Worker
+// secret ANTHROPIC_API_KEY (or EP_ANTHROPIC_API_KEY); without it tracking falls back to the organisation's RSS feed.
+var EP_AN_MODEL = "claude-opus-5-5";
+function epAnKey(env) {
+	return String(env.ANTHROPIC_API_KEY || env.EP_ANTHROPIC_API_KEY || "").trim();
+}
+var EP_AN_REPORT_TOOL = {
+	name: "report_news",
+	description: "Hand in the news items worth reposting. Call this once, at the end, even when nothing qualifies (empty list).",
+	strict: true,
+	input_schema: {
+		type: "object",
+		additionalProperties: false,
+		required: ["items", "note"],
+		properties: {
+			note: {
+				type: "string",
+				description: "One short sentence for the admin on what you found, e.g. 'Two new items: a funding round and a product launch.'"
+			},
+			items: {
+				type: "array",
+				items: {
+					type: "object",
+					additionalProperties: false,
+					required: ["title", "url", "date", "summary", "source"],
+					properties: {
+						title: { type: "string", description: "Plain headline, no clickbait, max 120 characters." },
+						url: { type: "string", description: "Link to the original article or announcement, exactly as found." },
+						date: { type: "string", description: "Publication date, YYYY-MM-DD." },
+						summary: { type: "string", description: "One or two factual sentences, max 200 characters." },
+						source: { type: "string", description: "Publisher name, e.g. 'Figure AI blog' or 'TechCrunch'." }
+					}
+				}
+			}
+		}
+	}
+};
+async function epAnAgent(env, org, from, to, max) {
+	const key = epAnKey(env);
+	const fromDay = new Date(from).toISOString().slice(0, 10), toDay = new Date(to).toISOString().slice(0, 10);
+	const known = org.known.length ? "Already posted on the site (skip these stories, even from another outlet):\n" + org.known.map((k) => "- " + k).join("\n") : "Nothing has been posted about them yet.";
+	const system = "You find news for embodiment.place, a community site that tracks robotics and embodied AI. For one organisation you search the web for news published inside a date window and pick only items worth reposting to robotics people: product or robot launches, demos, funding rounds, acquisitions, partnerships and customer deployments, research papers and model releases, notable hires or leadership changes, major hiring or expansion, regulatory news. Skip job ads, event listings without news, SEO pages, listicles, stock-price chatter, rumours, and anything only loosely about the organisation. One story gets one item: prefer the organisation's own announcement, else the most reputable outlet. Every item must have a real date inside the window; when you can't tell the date, leave it out. Never invent links: use URLs exactly as they appear in search results. When you are done, call report_news once.";
+	const user = `Organisation: ${org.name}${org.website ? `\nWebsite: ${org.website}` : ""}${org.feed ? `\nNews page or feed: ${org.feed}` : ""}${org.summary ? `\nAbout: ${org.summary}` : ""}\n\nWindow: news published from ${fromDay} to ${toDay} (inclusive).\nReturn at most ${max} items, the most important first.\n\n${known}`;
+	const body = {
+		model: EP_AN_MODEL,
+		max_tokens: 16e3,
+		system,
+		output_config: { effort: "medium" },
+		fallbacks: "default",
+		tools: [{
+			type: "web_search_20260209",
+			name: "web_search",
+			max_uses: max > 5 ? 15 : 6
+		}, EP_AN_REPORT_TOOL],
+		messages: [{
+			role: "user",
+			content: user
+		}]
+	};
+	let searches = 0;
+	for (let turn = 0; turn < 4; turn++) {
+		const r = await fetch("https://api.anthropic.com/v1/messages", {
+			method: "POST",
+			headers: {
+				"content-type": "application/json",
+				"x-api-key": key,
+				"anthropic-version": "2023-06-01",
+				"anthropic-beta": "server-side-fallback-2026-07-01"
+			},
+			body: JSON.stringify(body),
+			signal: AbortSignal.timeout(24e4)
+		});
+		const j = await r.json().catch(() => ({}));
+		if (!r.ok) throw new Error("Agent: " + (j?.error?.message || "HTTP " + r.status).slice(0, 150));
+		searches += Number(j.usage?.server_tool_use?.web_search_requests || 0);
+		const call = (j.content || []).find((b) => b.type === "tool_use" && b.name === "report_news");
+		if (call) return {
+			items: Array.isArray(call.input?.items) ? call.input.items : [],
+			note: String(call.input?.note || ""),
+			searches
+		};
+		if (j.stop_reason === "refusal") throw new Error("Agent declined this search");
+		if (j.stop_reason !== "pause_turn") {
+			// Finished without the report: ask once more for it.
+			if (turn > 1) break;
+			body.messages = [...body.messages, { role: "assistant", content: j.content }, { role: "user", content: "Call report_news now with what you found (an empty list is fine)." }];
+			continue;
+		}
+		// pause_turn: send the turn back as it stands and the server carries on.
+		body.messages = [...body.messages, { role: "assistant", content: j.content }];
+	}
+	throw new Error("Agent didn't report back");
+}
+// epAutoNewsCron: tracked organisations are checked on their own schedule (auto_news.every_h hours, at auto_news.at_hour
+// in auto_news.tz). Each run only looks at news published since the previous successful run (auto_news.since_at); the
+// first run looks back one period. "Since founding" (backfill) looks back to the founded year. Runs on the hourly cron,
+// a few organisations per tick (EP_AN_PER_TICK) so each tick stays well inside the Worker's limits.
+var EP_AN_PER_TICK = 4;
+var EP_AN_MAX_NEW = 5;
+var EP_AN_MAX_BACKFILL = 20;
+var EP_AN_EVERY = [6, 12, 24, 48, 168];
+var EP_AN_UA = "Mozilla/5.0 (compatible; embodiment.place news reader; +https://embodiment.place/about)";
+var EP_AN_GUESSES = [
+	"/feed",
+	"/rss.xml",
+	"/feed.xml",
+	"/blog/rss.xml",
+	"/news/rss.xml"
+];
+function epAnStamp(s) {
+	if (!s) return 0;
+	const t = Date.parse(String(s).replace(" ", "T") + (/[zZ]|[+-]\d\d:?\d\d$/.test(String(s)) ? "" : "Z"));
+	return Number.isFinite(t) ? t : 0;
+}
+function epAnIso(t) {
+	return new Date(t).toISOString().slice(0, 19).replace("T", " ");
+}
+function epAnHourIn(tz, now) {
+	try {
+		return Number(new Intl.DateTimeFormat("en-GB", {
+			hour: "numeric",
+			hourCycle: "h23",
+			timeZone: tz || "America/Los_Angeles"
+		}).format(new Date(now))) % 24;
+	} catch {
+		return new Date(now).getUTCHours();
+	}
+}
+// Due when the local hour is one of the schedule's hours and most of a period has passed since the last run, or when a
+// run is long overdue (a missed tick), or when it has never run.
+function epAnDue(org, now) {
+	const every = EP_AN_EVERY.includes(org.every_h) ? org.every_h : 24;
+	const last = epAnStamp(org.last_run);
+	if (!last) return true;
+	const gap = (now - last) / 36e5;
+	if (gap >= every + 3) return true;
+	if (gap < every - 1.5) return false;
+	const h = epAnHourIn(org.tz, now);
+	return every < 24 ? ((h - org.at_hour) % every + every) % every === 0 : h === org.at_hour;
+}
+async function epAutoNewsOrg(env, org, opts = {}) {
 	const db = env.DB;
+	const now = Date.now();
+	const backfill = !!opts.backfill;
 	let feed = org.feed || "";
 	let added = 0;
 	let note = "";
+	let ok = false;
 	let seen = [];
 	try {
 		seen = JSON.parse(org.seen || "[]");
 	} catch {}
+	const every = EP_AN_EVERY.includes(org.every_h) ? org.every_h : 24;
+	const yr = Number(String(org.founded || "").slice(0, 4));
+	const from = backfill ? Date.UTC(yr > 1800 && yr <= new Date(now).getUTCFullYear() ? yr : 2e3, 0, 1) : epAnStamp(org.since_at) || now - every * 36e5;
+	const max = backfill ? EP_AN_MAX_BACKFILL : EP_AN_MAX_NEW;
+	const inWindow = (t) => t && t >= from - 864e5 && t <= now + 864e5;
 	try {
-		const found = await epAnFindFeed(org);
-		feed = found.feed;
-		const items = epAnItems(found.doc.text, found.feed).filter((x) => x.when && x.when <= now + 36e5 && now - x.when <= EP_AN_WINDOW_H * 36e5).sort((a, b) => b.when - a.when);
-		for (const it of items) {
-			if (added >= EP_AN_MAX_NEW) break;
-			if (seen.includes(it.url)) continue;
-			seen.push(it.url);
-			if ((await db.prepare("SELECT 1 AS n FROM records WHERE type IN ('post','paper') AND (json_extract(data,'$.link.v')=? OR json_extract(data,'$.url.v')=?) LIMIT 1").bind(it.url, it.url).first())?.n) continue;
-			let site = "";
-			try {
-				site = new URL(it.url).hostname.replace(/^www\./, "");
-			} catch {}
-			const rid = await applyCompose(db, {
-				kind: "news",
-				kind_label: "News",
-				title: epMeow(it.title),
-				intro: epMeow(it.intro),
-				body: "",
-				url: it.url,
-				origin: "Repost",
-				source_site: site,
-				as: org.id
-			}, null);
-			if (rid) {
-				await db.prepare("UPDATE records SET data=json_set(data,'$.auto_news',json('{\"v\":\"Yes\"}'),'$.date',json_object('v',?)), feed_at=? WHERE id=?").bind(new Date(it.when).toISOString().slice(0, 10), new Date(it.when).toISOString().slice(0, 10), rid).run();
-				added++;
+		if (epAnKey(env)) {
+			const { results } = await db.prepare("SELECT r.name, r.data FROM links l JOIN records r ON r.id=l.src WHERE l.dst=? AND l.rel IN ('about','orgs') AND r.type IN ('post','paper') ORDER BY r.feed_at DESC LIMIT 40").bind(org.id).all();
+			org.known = (results || []).map((x) => {
+				const d = parseData(x.data);
+				return String(x.name) + (fieldV(d, "link") ? ` (${fieldV(d, "link")})` : "");
+			});
+			const res = await epAnAgent(env, org, from, now, max);
+			const items = res.items.map((x) => ({
+				title: epAnClip(String(x.title || "").trim(), 200),
+				url: epAnCanon(x.url),
+				when: Date.parse(String(x.date || "").slice(0, 10) + "T12:00:00Z"),
+				intro: epAnClip(String(x.summary || "").trim(), 200),
+				source: epAnClip(String(x.source || "").trim(), 80)
+			})).filter((x) => x.title && x.url && inWindow(x.when)).sort((a, b) => b.when - a.when);
+			for (const it of items) {
+				if (added >= max) break;
+				if (await epAnPublish(db, org, it, seen)) added++;
 			}
+			note = (added ? `Added ${added} new ${added === 1 ? "item" : "items"}` : "Nothing new worth reposting") + (res.note ? `. ${res.note}` : "");
+		} else {
+			const found = await epAnFindFeed(org);
+			feed = found.feed;
+			const items = epAnItems(found.doc.text, found.feed).filter((x) => inWindow(x.when)).sort((a, b) => b.when - a.when);
+			for (const it of items) {
+				if (added >= max) break;
+				if (await epAnPublish(db, org, it, seen)) added++;
+			}
+			note = added ? `Added ${added} new ${added === 1 ? "item" : "items"} from the news feed` : items.length ? "Nothing new" : "No new items in the news feed";
 		}
-		note = added ? `Added ${added} new ${added === 1 ? "item" : "items"}` : items.length ? "Nothing new" : "No items from the last 36 hours";
+		ok = true;
 	} catch (ex) {
 		note = ex instanceof Error ? ex.message : String(ex);
 	}
-	await db.prepare("UPDATE auto_news SET feed=?, last_run=?, last_note=?, seen=? WHERE record_id=?").bind(feed, nowStamp(), note.slice(0, 200), JSON.stringify(seen.slice(-300)), org.id).run();
-	console.log(`[autonews] ${org.slug}: ${note}`);
+	await db.prepare("INSERT INTO auto_news(record_id,enabled,updated) VALUES(?,0,?) ON CONFLICT(record_id) DO NOTHING").bind(org.id, nowStamp()).run();
+	await db.prepare("UPDATE auto_news SET feed=?, last_run=?, last_note=?, seen=?, since_at=CASE WHEN ? THEN ? ELSE since_at END WHERE record_id=?").bind(feed, nowStamp(), note.slice(0, 240), JSON.stringify(seen.slice(-400)), ok ? 1 : 0, epAnIso(now), org.id).run();
+	console.log(`[autonews] ${org.slug}${backfill ? " (since founding)" : ""}: ${note}`);
 	return {
 		slug: org.slug,
 		feed,
 		added,
-		note
+		note,
+		ok
 	};
 }
 async function epAnOrgs(db, where, ...args) {
-	const { results } = await db.prepare(`SELECT r.id, r.slug, r.name, r.data, a.feed, a.seen, a.last_run FROM auto_news a JOIN records r ON r.id=a.record_id WHERE ${where}`).bind(...args).all();
-	return (results || []).map((r) => ({
-		id: Number(r.id),
-		slug: String(r.slug),
-		name: String(r.name),
-		website: fieldV(parseData(r.data), "website"),
-		feed: String(r.feed || ""),
-		seen: String(r.seen || "[]")
-	}));
+	const { results } = await db.prepare(`SELECT r.id, r.slug, r.name, r.summary, r.data, a.feed, a.seen, a.last_run, a.since_at, a.every_h, a.at_hour, a.tz FROM records r LEFT JOIN auto_news a ON a.record_id=r.id WHERE r.type IN ('company','university','lab') AND ${where}`).bind(...args).all();
+	return (results || []).map((r) => {
+		const d = parseData(r.data);
+		return {
+			id: Number(r.id),
+			slug: String(r.slug),
+			name: String(r.name),
+			summary: String(r.summary || ""),
+			website: fieldV(d, "website"),
+			founded: fieldV(d, "founded"),
+			feed: String(r.feed || ""),
+			seen: String(r.seen || "[]"),
+			last_run: r.last_run ?? null,
+			since_at: r.since_at ?? null,
+			every_h: Number(r.every_h || 24),
+			at_hour: r.at_hour == null ? 6 : Number(r.at_hour),
+			tz: String(r.tz || ""),
+			known: []
+		};
+	});
 }
 async function epAutoNewsCron(env) {
 	try {
 		await ensureExtraSchema(env.DB);
-		const cutoff = new Date(Date.now() - 20 * 36e5).toISOString().slice(0, 19).replace("T", " ");
-		const orgs = await epAnOrgs(env.DB, "a.enabled=1 AND (a.last_run IS NULL OR a.last_run < ?) ORDER BY a.last_run IS NOT NULL, a.last_run LIMIT " + EP_AN_PER_TICK, cutoff);
+		const now = Date.now();
+		const orgs = (await epAnOrgs(env.DB, "a.enabled=1 ORDER BY a.last_run IS NOT NULL, a.last_run")).filter((o) => epAnDue(o, now)).slice(0, EP_AN_PER_TICK);
 		for (const org of orgs) await epAutoNewsOrg(env, org);
 	} catch (ex) {
 		console.log("[autonews] " + (ex instanceof Error ? ex.message : String(ex)));
@@ -21180,11 +21373,50 @@ async function epAutoNewsCron(env) {
 }
 api.post("/admin/autonews/:slug/run", async (c) => {
 	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	let b = {};
+	try {
+		b = await c.req.json();
+	} catch {}
+	await ensureExtraSchema(c.env.DB);
 	const [org] = await epAnOrgs(c.env.DB, "r.slug=?", c.req.param("slug"));
-	if (!org) return c.json({ error: "Turn on automatic updates first." }, 400);
+	if (!org) return c.json({ error: "Not found" }, 404);
 	return c.json({
 		ok: true,
-		...await epAutoNewsOrg(c.env, org)
+		...await epAutoNewsOrg(c.env, org, { backfill: !!b.backfill })
+	});
+});
+// Quick tracking settings for one or many organisations at once (Admin > Organisations, row controls and bulk bar).
+api.post("/admin/autonews/bulk", async (c) => {
+	const auth = c.get("auth");
+	if (!auth.is_admin) return c.json({ error: "Not found" }, 404);
+	let b = {};
+	try {
+		b = await c.req.json();
+	} catch {
+		return c.json({ error: "Bad request" }, 400);
+	}
+	const slugs = (Array.isArray(b.slugs) ? b.slugs : []).map(String).slice(0, 2e3);
+	if (!slugs.length) return c.json({ error: "Choose at least one organisation." }, 400);
+	const every = b.every_h === void 0 ? null : Number(b.every_h);
+	if (every !== null && !EP_AN_EVERY.includes(every)) return c.json({ error: "Choose how often to track." }, 400);
+	const hour = b.at_hour === void 0 ? null : Number(b.at_hour);
+	if (hour !== null && !(Number.isInteger(hour) && hour >= 0 && hour < 24)) return c.json({ error: "Choose a time of day." }, 400);
+	let tz = b.tz === void 0 ? null : String(b.tz || "").slice(0, 64);
+	if (tz) try {
+		new Intl.DateTimeFormat("en", { timeZone: tz });
+	} catch {
+		tz = "";
+	}
+	const on = b.tracked === void 0 ? null : b.tracked ? 1 : 0;
+	await ensureExtraSchema(c.env.DB);
+	const ids = JSON.stringify(slugs);
+	await c.env.DB.prepare("INSERT INTO auto_news(record_id,enabled,updated,updated_by) SELECT id,0,?,? FROM records WHERE slug IN (SELECT value FROM json_each(?)) AND type IN ('company','university','lab') ON CONFLICT(record_id) DO NOTHING").bind(nowStamp(), auth.user?.id ?? null, ids).run();
+	await c.env.DB.prepare("UPDATE auto_news SET enabled=COALESCE(?,enabled), every_h=COALESCE(?,every_h), at_hour=COALESCE(?,at_hour), tz=COALESCE(?,tz), updated=?, updated_by=? WHERE record_id IN (SELECT id FROM records WHERE slug IN (SELECT value FROM json_each(?)))").bind(on, every, hour, tz, nowStamp(), auth.user?.id ?? null, ids).run();
+	const { results } = await c.env.DB.prepare(EP_AO_SQL + " AND r.slug IN (SELECT value FROM json_each(?))").bind(ids).all();
+	const counts = await epAoCounts(c.env.DB);
+	return c.json({
+		ok: true,
+		orgs: (results || []).map((r) => epAoRow(r, counts))
 	});
 });
 api.post("/admin/autonews/:slug/feed", async (c) => {
@@ -21240,6 +21472,10 @@ function epAoRow(r, counts) {
 		feed: String(r.an_feed || ""),
 		last_run: r.an_run ?? null,
 		last_note: String(r.an_note || ""),
+		every_h: Number(r.an_every || 24),
+		at_hour: r.an_hour == null ? 6 : Number(r.an_hour),
+		tz: String(r.an_tz || ""),
+		since_at: r.an_since ?? null,
 		posts: Number(counts.posts.get(Number(r.id)) || 0),
 		last_post: counts.last.get(Number(r.id)) || null,
 		followers: Number(counts.fol.get(Number(r.id)) || 0)
@@ -21259,13 +21495,14 @@ async function epAoCounts(db) {
 	} catch {}
 	return { posts, last, fol };
 }
-var EP_AO_SQL = "SELECT r.id, r.slug, r.name, r.type, r.summary, r.data, r.private, r.updated, a.enabled AS an_on, a.feed AS an_feed, a.last_run AS an_run, a.last_note AS an_note FROM records r LEFT JOIN auto_news a ON a.record_id=r.id WHERE r.type IN ('company','university','lab')";
+var EP_AO_SQL = "SELECT r.id, r.slug, r.name, r.type, r.summary, r.data, r.private, r.updated, a.enabled AS an_on, a.feed AS an_feed, a.last_run AS an_run, a.last_note AS an_note, a.every_h AS an_every, a.at_hour AS an_hour, a.tz AS an_tz, a.since_at AS an_since FROM records r LEFT JOIN auto_news a ON a.record_id=r.id WHERE r.type IN ('company','university','lab')";
 api.get("/admin/orgs", async (c) => {
 	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
 	const { results } = await c.env.DB.prepare(EP_AO_SQL + " ORDER BY r.name COLLATE NOCASE").all();
 	const counts = await epAoCounts(c.env.DB);
 	return c.json({
 		orgs: (results || []).map((r) => epAoRow(r, counts)),
+		agent: Boolean(epAnKey(c.env)),
 		roles: ["Robot maker", "Model lab", "Software developer", "Supplier", "Compute", "Integrator", "Entertainment", "University", "Research lab", "Investor", "Customer", "Media"],
 		stages: ["Pre-seed", "Seed", "Series A", "Series B", "Series C", "Series D+", "Public", "Acquired", "Closed", "Corporate"]
 	});

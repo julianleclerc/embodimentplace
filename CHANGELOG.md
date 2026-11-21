@@ -30,6 +30,20 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-21
+
+- **#37 Admin > Organisations: quick buttons and easier sorting.**
+  - Each row has quick buttons that work without opening the editor: **Track / Tracking** (turns daily news
+    tracking on or off), **Check** (checks for news now; only when tracked), **Hide / Hidden** (hides it from the
+    site), **Page ↗** (public page) and **Edit** (opens the inline editor). A short confirmation shows under the
+    row. Tapping the name also opens the editor.
+  - Sorting: column headers (Organisation, Where, Posts, Tracking) sort on click and flip direction on a second
+    click. The sort menu adds Country, Stage, Followers, Tracked first, Last checked, Last edited and Missing info,
+    with an up/down button for direction. Empty values always go last. The choice is remembered on that device
+    (`localStorage` `ep-ao-sort`).
+  - Code: `epAdminOrgs`, `epAoItem` (rewritten), `epAoSortFn`, `epAoHas`; CSS block `/* epAoQuick: ... */`. Uses
+    the existing `POST /api/admin/orgs/:slug` and `/api/admin/autonews/:slug/run`. Bundle `index-7ca02e0e.js` / `index-f904e5b9.css`.
+
 ### 2026-11-20
 
 - **#36 Organisation badges instead of members managing pages.** Julian decided people from an organisation should not

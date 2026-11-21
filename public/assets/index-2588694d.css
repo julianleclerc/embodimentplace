@@ -456,3 +456,12 @@ a.ep-ad-t:hover{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px);t
 .tb a,.tb button,.subnav:not(.subnav-2) a{font-size:.72rem;line-height:1.5;padding:4px var(--g);min-height:0;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 .tb .on:before,.subnav:not(.subnav-2) a.on:before{content:"";width:6px;height:6px;background:currentColor;flex:none}
 @media (width<=760px){.subnav:not(.subnav-2) a{min-height:0}}
+/* epTabH: subtab height chosen in Admin > Site settings (html[data-tabh] s|m|l), and category pills replacing the
+   old second tab row (.ep-sub2, same look as the Community "What do you need?" pills) */
+html[data-tabh=m] .tb a,html[data-tabh=m] .tb button,html[data-tabh=m] .subnav a{padding-top:8px;padding-bottom:8px}
+html[data-tabh=l] .tb a,html[data-tabh=l] .tb button,html[data-tabh=l] .subnav a{padding-top:12px;padding-bottom:12px}
+.ep-site{display:flex;flex-direction:column;gap:16px}
+.ep-sub2{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0}
+.ep-sub2 .cpill{text-decoration:none;color:var(--ink)}
+.ep-sub2 .cpill:hover{text-decoration:none}
+.ep-sub2 .cpill.on span{background:var(--ink);color:var(--bg);border-color:var(--ink)}

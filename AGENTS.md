@@ -106,6 +106,8 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - Site-wide switches live in Admin > Site settings (`/admin/site`), stored in the D1 `settings` table and sent to
   the page through `/api/me`. The Latest banner mode (`ticker_mode`: scroll, static, off) is the first one.
   The Latest banner only shows on the front page (`/`).
+  Subtab height (`tab_height`: s, m, l) is also set there. Don't add a second row of tabs under a tab row: use
+  Community-style pills (`.cpills.ep-sub2`) for a further choice.
 
 ## Where things are tracked
 

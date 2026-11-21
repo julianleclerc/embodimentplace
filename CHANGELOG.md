@@ -32,6 +32,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
+- **#44 Admin picks the subtab height; second tab rows become pills.**
+  - Admin > Site settings gains "Subtab height": Small (same as the Latest banner, default), Medium or Large. Stored
+    in D1 `settings` key `tab_height` (`s`/`m`/`l`), sent in `/api/me`, applied as `html[data-tabh]` by `epTabH`.
+    `GET/POST /api/admin/site` now also read and write `tab_height`.
+  - The second row of tabs (sub-sub-tabs, e.g. Hardware > Drive > Actuators, Motors...) is gone. Those choices are
+    now pills like the Community "What do you need?" ones (`.cpills.ep-sub2`, links with `.cpill`). CSS block `/* epTabH */`.
+
 - **#43 Subtabs keep their original colours, at the Latest banner's size.**
   - Follow-up to #42: the subtab rows (`.tb`, `.subnav`) go back to their original colours (light row, active tab
     in the inverted colour) but keep the banner's format: mono caps at .72rem, 4px padding so each row is the same

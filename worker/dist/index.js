@@ -2453,6 +2453,11 @@ async function epTickerMode(db) {
 	const m = await setting$1(db, "ticker_mode");
 	return EP_TICKER_MODES.includes(m) ? m : "scroll";
 }
+var EP_TAB_HEIGHTS = ["s", "m", "l"];
+async function epTabHeight(db) {
+	const m = await setting$1(db, "tab_height");
+	return EP_TAB_HEIGHTS.includes(m) ? m : "s";
+}
 async function signupMode(db) {
 	const m = await setting$1(db, "signup_mode");
 	if (m === "open" || m === "code" || m === "closed") return m;
@@ -21338,7 +21343,7 @@ api.post("/admin/orgs/:slug", async (c) => {
 });
 api.get("/admin/site", async (c) => {
 	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
-	return c.json({ ticker_mode: await epTickerMode(c.env.DB) });
+	return c.json({ ticker_mode: await epTickerMode(c.env.DB), tab_height: await epTabHeight(c.env.DB) });
 });
 api.post("/admin/site", async (c) => {
 	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
@@ -21352,7 +21357,11 @@ api.post("/admin/site", async (c) => {
 		if (!EP_TICKER_MODES.includes(b.ticker_mode)) return c.json({ error: "Choose Scrolling, Still or Off." }, 400);
 		await setSetting(c.env.DB, "ticker_mode", b.ticker_mode);
 	}
-	return c.json({ ok: true, ticker_mode: await epTickerMode(c.env.DB) });
+	if (b.tab_height !== void 0) {
+		if (!EP_TAB_HEIGHTS.includes(b.tab_height)) return c.json({ error: "Choose Small, Medium or Large." }, 400);
+		await setSetting(c.env.DB, "tab_height", b.tab_height);
+	}
+	return c.json({ ok: true, ticker_mode: await epTickerMode(c.env.DB), tab_height: await epTabHeight(c.env.DB) });
 });
 api.get("/admin/stats", async (c) => {
 	const auth = c.get("auth");
@@ -21820,6 +21829,7 @@ async function mePayload(c) {
 	const payload = jsonUser(auth, c.env);
 	payload.signup_mode = await signupMode(c.env.DB);
 	payload.ticker_mode = await epTickerMode(c.env.DB);
+	payload.tab_height = await epTabHeight(c.env.DB);
 	return {
 		...payload,
 		bar,

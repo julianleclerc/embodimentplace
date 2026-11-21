@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
-- **#PR Organisations Overview opens on the map.**
+- **#38 Organisations Overview opens on the map.**
   - `/orgs` (Overview) now starts with the full-screen map: it fills the window under the menus on phone and
     desktop, with no page heading above it. The grouped lists of organisations follow below the map. The separate
     "Map" tab is gone; `/orgs/map` (and `?org=` links to it) still work and show Overview. Frontend `Ar`/`Fr`; the map

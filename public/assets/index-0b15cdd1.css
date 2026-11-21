@@ -388,3 +388,16 @@ a.ep-ad-t:hover{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px);t
 .ep-ao-qb.ed{min-width:52px}
 @media (max-width:1100px) and (min-width:761px){.ep-ao-hd,.ep-ao-row{grid-template-columns:minmax(180px,2fr) .9fr .5fr 1fr}}
 @media (max-width:760px){.ep-ao-hd,.ep-ao-row{grid-template-columns:1fr auto}.ep-ao-qa>*{min-width:0!important}}
+/* epOrgMap: map as the Organisations landing page, richer popup card */
+.ep-vh{clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}
+.opop{width:290px;max-width:calc(100% - 12px);margin-left:-145px;padding:10px 12px}
+.opop .opop-head{align-items:center;gap:10px;display:flex}
+.opop .opop-head .opop-logo{float:none;flex:none;margin:0}
+.opop .opop-name{font-size:.98rem;line-height:1.2}
+.opop .opop-addr{margin:6px 0 0}
+.opop .opop-sum{color:var(--ink);margin:6px 0 0;line-height:1.35}
+.opop .opop-facts{font-family:var(--mono);color:var(--muted);margin:6px 0 0;font-size:.68rem;line-height:1.45}
+.opop .opop-act{flex-wrap:wrap;align-items:center;gap:6px;margin-top:10px;display:flex}
+.opop .opop-act a{font-weight:400;display:inline-flex;align-items:center;text-decoration:none}
+.opop .opop-web{font-size:.78rem;color:var(--muted);text-decoration:underline!important;margin-left:auto}
+.opop.opop-sheet{left:8px;right:8px;top:auto;bottom:78px;width:auto;max-width:none;margin:0;transform:none;max-height:calc(100% - 140px);overflow:auto}

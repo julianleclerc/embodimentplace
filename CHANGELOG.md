@@ -32,6 +32,12 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
+- **#42 Subtabs look like the Latest banner.**
+  - Every subtab row (`.tb` and `.subnav`: Admin, Account, Community, the type pages like Papers/Funding, Admin
+    filters) is now a dark strip in mono caps like the Latest banner, and the active tab uses the banner's accent
+    colour with the same small square marker. Follows each colour theme's banner colours. The lighter second row
+    (`.subnav-2`) is unchanged. CSS only, block `/* epTabs */` (theme variables `--tk-*`).
+
 - **#39 Admin can set the Latest banner to Scrolling, Still or Off.**
   - New Admin > Site settings tab (`/admin/site`, frontend `epAdminSite`) for site-wide switches. First switch: the
     "Latest" headline banner. Scrolling is the old behaviour; Still shows the headlines without movement (people can

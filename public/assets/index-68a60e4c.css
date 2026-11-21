@@ -451,3 +451,26 @@ a.ep-ad-t:hover{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px);t
 .ep-site-t{color:var(--muted);font-size:.84rem;line-height:1.4}
 .ep-site-n{margin:0;padding:0 16px 14px;font-size:.86rem;color:var(--ink)}
 @media (max-width:760px){.ep-site-o{grid-template-columns:1fr}}
+/* epTabs: subtabs (.tb, .subnav) styled like the Latest banner: dark strip, mono caps, active tab in the accent */
+:root{--tk-bg:var(--inv);--tk-ink:var(--inv-ink);--tk-on:var(--accent);--tk-on-ink:var(--accent-ink);--tk-line:color-mix(in srgb,var(--tk-ink) 18%,transparent)}
+[data-theme=atelier]{--tk-bg:#000;--tk-ink:#fff;--tk-on:#fff;--tk-on-ink:#000}
+[data-theme=werk]{--tk-bg:#ffd400;--tk-ink:#000;--tk-on:#c01010;--tk-on-ink:#fff}
+[data-theme=nocturne]{--tk-bg:#191d28;--tk-ink:#efe8d8;--tk-on:#c4844a;--tk-on-ink:#12151c}
+[data-theme=halftone]{--tk-bg:#23308a;--tk-ink:#fbf8f1;--tk-on:#ff5aa0;--tk-on-ink:#000}
+[data-theme=phosphor]{--tk-bg:#0c100d;--tk-ink:#c9efc1;--tk-on:#f2b33d;--tk-on-ink:#0c100d}
+.tb,.subnav:not(.subnav-2){background:var(--tk-bg);color:var(--tk-ink);border:0;border-bottom:1px solid var(--rule)}
+.tb a,.tb button,.subnav:not(.subnav-2) a{color:var(--tk-ink);border-right:1px solid var(--tk-line);font-size:.72rem;letter-spacing:.04em;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding-top:6px;padding-bottom:6px}
+.tb a:hover,.tb button:hover,.subnav:not(.subnav-2) a:hover{background:color-mix(in srgb,var(--tk-ink) 12%,transparent);color:var(--tk-ink)}
+.tb .on,.tb .on:hover,.subnav:not(.subnav-2) a.on,.subnav:not(.subnav-2) a.on:hover{background:var(--tk-on);color:var(--tk-on-ink)}
+.tb .on:before,.subnav:not(.subnav-2) a.on:before{content:"";width:6px;height:6px;background:currentColor;flex:none}
+.tb .n{opacity:.6}
+.tb .on .n{opacity:.75}
+.ep-adw-tb .n{background:var(--tk-on);color:var(--tk-on-ink)}
+.ep-adw-tb .on .n{background:var(--tk-on-ink);color:var(--tk-on)}
+.tb.tb-sub{border:0}
+.tb.tb-sub a{border-right:1px solid var(--tk-line)}
+.uwrap .tb,.editor.lk .uwrap .tb{background:var(--tk-bg)}
+[data-theme=halftone] .tb,[data-theme=halftone] .subnav:not(.subnav-2){background-image:radial-gradient(#ff5aa073 .7px,#0000 .8px);background-size:5px 5px}
+[data-theme=nocturne] .tb,[data-theme=nocturne] .subnav:not(.subnav-2){border-bottom-color:#c4844a}
+[data-theme=werk] .tb a,[data-theme=werk] .tb button,[data-theme=werk] .subnav:not(.subnav-2) a{font-weight:700}
+[data-theme=atelier] .tb a,[data-theme=atelier] .tb button,[data-theme=atelier] .subnav:not(.subnav-2) a{letter-spacing:.12em}

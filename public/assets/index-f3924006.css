@@ -465,3 +465,26 @@ html[data-tabh=l] .tb a,html[data-tabh=l] .tb button,html[data-tabh=l] .subnav a
 .ep-sub2 .cpill{text-decoration:none;color:var(--ink)}
 .ep-sub2 .cpill:hover{text-decoration:none}
 .ep-sub2 .cpill.on span{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* epAoSched: select organisations (+ select all), bulk tracking actions, per-row schedule (how often, time), Track now, Since founding */
+.ep-ao-hd,.ep-ao-row{grid-template-columns:22px minmax(200px,2.2fr) 1fr .55fr 1fr 330px}
+.ep-ao-sel{display:flex;align-items:center;justify-content:center;min-height:30px;cursor:pointer}
+.ep-ao-sel input,.ep-ao-all input{width:18px;height:18px;margin:0;accent-color:var(--accent);cursor:pointer}
+.ep-ao-row.sel{background:color-mix(in srgb,var(--accent) 7%,transparent)}
+.ep-ao-bulk{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:8px 14px;border:1px solid var(--rule);border-bottom:0;background:var(--bg)}
+.ep-ao-bulk.on{background:var(--paper);box-shadow:inset 3px 0 0 var(--accent)}
+.ep-ao-all{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);cursor:pointer;min-height:30px}
+.ep-ao-bulk.on .ep-ao-all{color:var(--ink)}
+.ep-ao-bacts{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ep-ao-prog{flex-basis:100%;margin:0;font-size:.8rem;color:var(--accent)}
+.ep-ao-prog.off{color:var(--muted)}
+.ep-ao-sch{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding-left:34px}
+.ep-ao-schl{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-right:2px}
+.ep-ao-sch small{color:var(--muted);font-size:.76rem;white-space:normal}
+.ep-ao-sch select,.ep-ao-bacts select{min-height:30px;max-width:100%;border:1px solid var(--rule);border-radius:0;background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:.66rem;padding:0 6px;cursor:pointer}
+.ep-ao-sch select:hover,.ep-ao-bacts select:hover{border-color:var(--ink)}
+.ep-ao-it.open>.ep-ao-row .ep-ao-sch small,.ep-ao-it.open>.ep-ao-row .ep-ao-schl{color:inherit;opacity:.75}
+.ep-ao-trk em.on{text-transform:none;font-family:var(--mono)}
+@media (max-width:1100px) and (min-width:761px){.ep-ao-hd,.ep-ao-row{grid-template-columns:22px minmax(180px,2fr) .9fr .5fr 1fr}.ep-ao-qa{grid-column:2/-1}}
+@media (max-width:760px){.ep-ao-hd,.ep-ao-row{grid-template-columns:22px 1fr auto}.ep-ao-row{grid-template-areas:"sel who trk" "sel where posts" "qa qa qa" "sch sch sch" "note note note"}.ep-ao-sel{grid-area:sel;align-self:start;min-height:40px}.ep-ao-sch{grid-area:sch;padding-left:0;gap:6px}.ep-ao-sch select{flex:1 1 40%;min-height:40px;font-size:.66rem}.ep-ao-sch .ep-ao-qb{flex:1 1 100%;min-height:40px}.ep-ao-schl{flex-basis:100%}.ep-ao-sch small{flex-basis:100%}.ep-ao-bulk{padding:10px 12px}.ep-ao-bacts{width:100%}.ep-ao-bacts>*{flex:1 1 30%;min-height:40px}.ep-ao-bacts select{flex:1 1 45%;min-height:40px}}
+.ep-ao-sch select,.ep-ao-bacts select{width:auto;flex:0 1 auto}
+@media (max-width:760px){.ep-ao-sch select,.ep-ao-bacts select{flex:1 1 40%;width:auto;min-width:0}.ep-ao-sch .ep-ao-qb{flex:0 0 auto;padding:0 12px}.ep-ao-sch small{flex:1 1 0;min-width:120px;font-size:.74rem;line-height:1.3}}

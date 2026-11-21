@@ -8,10 +8,11 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
-- **Tracked organisations without a news feed.** Many robotics companies only have a news page, no
-  RSS or Atom feed. Their "Check now" says "No news feed found on …". Options: paste a feed address if one
-  exists elsewhere (Medium, Substack, a blog subdomain), or add a reader for plain news pages later (needs an LLM
-  or per-site rules). The job was tested against local sample feeds only; check the first real results live.
+- **Tracking agent needs its API key.** Tracking now uses a web-searching agent (Claude with web search). It runs
+  only when the Worker has the secret `ANTHROPIC_API_KEY` (Cloudflare dashboard, Workers > embodiment-place >
+  Settings > Variables and Secrets). Until then tracking falls back to RSS/Atom feeds, which most robotics companies
+  don't have, and Admin > Organisations says "Web agent off". The agent was tested against a mock API only; check
+  the first real results live and tune the prompt in `epAnAgent` if it picks the wrong stories.
 - **Image uploads don't work.** The Worker supports an R2 `MEDIA` binding, but the live Worker has none, so uploads
   are off. An R2 bucket needs to be created and bound in `wrangler.json`. The deploy safety check will flag this as a
   binding change, which is expected.
@@ -31,6 +32,27 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 ## Changes
 
 ### 2026-11-21
+
+- **#45 Tracking: only new news since the last run, Since founding, schedules, a web agent, bulk actions.**
+  - Each run now looks only at news published since the previous successful run (`auto_news.since_at`); the first run
+    looks back one period. "Since founding" looks back to the organisation's founded year (or 2000 if unknown) and
+    can add up to 20 items, dated by when they were published so they land under older dates in the feed.
+  - Tracking is done by an agent: Claude (`claude-opus-5-5`, `web_search_20260209` server tool, raw `fetch` to the
+    Messages API) searches the web and hands back items worth reposting through a strict `report_news` tool. The
+    Worker checks each item (real link, date inside the window, not already posted) before publishing it as a
+    News/Repost post about the organisation. Helpers `epAnAgent`, `epAnPublish`, `epAnKey`. Without the
+    `ANTHROPIC_API_KEY` secret it falls back to the old RSS reader (`epAnFindFeed`), now also windowed.
+  - Schedules per organisation: how often (`every_h`: every 6 or 12 hours, daily, every 2 days, weekly) and the time
+    of day (`at_hour`, in the admin's time zone `tz`). New `auto_news` columns `every_h`, `at_hour`, `tz`,
+    `since_at` (added by `COLS`). The hourly cron picks due organisations with `epAnDue` (4 per tick).
+  - Admin > Organisations: a checkbox on every row and "Select all" (of the current filter) above the list. With a
+    selection, a bar offers Track, Stop, How often, Time, Track now, Since founding and Clear. Tracked rows get a
+    Schedule line (how often, time, Since founding, and which news the next run looks at). "Check" became
+    "Track now" and works on untracked organisations too. Bulk Track now runs one organisation after another
+    and shows progress. Frontend `epAdminOrgs`, `epAoItem`, `epAoSchSel`, `epAoSchTxt`; CSS block `/* epAoSched */`.
+  - API: `POST /api/admin/autonews/bulk` (`slugs`, optional `tracked`, `every_h`, `at_hour`, `tz`), `POST
+    /api/admin/autonews/:slug/run` takes `{backfill: true}`; `GET /api/admin/orgs` returns `agent` and each
+    organisation's schedule.
 
 - **#44 Admin picks the subtab height; second tab rows become pills.**
   - Admin > Site settings gains "Subtab height": Small (same as the Latest banner, default), Medium or Large. Stored

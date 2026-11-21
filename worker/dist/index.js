@@ -2448,6 +2448,11 @@ async function setting$1(db, key) {
 async function setSetting(db, key, value) {
 	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, value).run();
 }
+var EP_TICKER_MODES = ["scroll", "static", "off"];
+async function epTickerMode(db) {
+	const m = await setting$1(db, "ticker_mode");
+	return EP_TICKER_MODES.includes(m) ? m : "scroll";
+}
 async function signupMode(db) {
 	const m = await setting$1(db, "signup_mode");
 	if (m === "open" || m === "code" || m === "closed") return m;
@@ -2597,6 +2602,9 @@ function adminBarLinks(auth, counts) {
 		});
 	}
 	if (auth.is_admin) links.push({
+		href: "/admin/site",
+		label: "Site settings"
+	}, {
 		href: "/community/people",
 		label: "People"
 	}, {
@@ -21328,6 +21336,24 @@ api.post("/admin/orgs/:slug", async (c) => {
 	const fresh = await c.env.DB.prepare(EP_AO_SQL + " AND r.id=?").bind(row.id).first();
 	return c.json({ ok: true, org: epAoRow(fresh, await epAoCounts(c.env.DB)) });
 });
+api.get("/admin/site", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	return c.json({ ticker_mode: await epTickerMode(c.env.DB) });
+});
+api.post("/admin/site", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	let b = {};
+	try {
+		b = await c.req.json();
+	} catch {
+		return c.json({ error: "Bad request" }, 400);
+	}
+	if (b.ticker_mode !== void 0) {
+		if (!EP_TICKER_MODES.includes(b.ticker_mode)) return c.json({ error: "Choose Scrolling, Still or Off." }, 400);
+		await setSetting(c.env.DB, "ticker_mode", b.ticker_mode);
+	}
+	return c.json({ ok: true, ticker_mode: await epTickerMode(c.env.DB) });
+});
 api.get("/admin/stats", async (c) => {
 	const auth = c.get("auth");
 	if (!auth.logged || auth.needs_2fa) return c.json({ error: "Not found" }, 404);
@@ -21793,6 +21819,7 @@ async function mePayload(c) {
 	const { jsonUser } = await Promise.resolve().then(() => session_exports);
 	const payload = jsonUser(auth, c.env);
 	payload.signup_mode = await signupMode(c.env.DB);
+	payload.ticker_mode = await epTickerMode(c.env.DB);
 	return {
 		...payload,
 		bar,

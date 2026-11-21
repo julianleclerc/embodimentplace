@@ -32,6 +32,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
+- **#39 Admin can set the Latest banner to Scrolling, Still or Off.**
+  - New Admin > Site settings tab (`/admin/site`, frontend `epAdminSite`) for site-wide switches. First switch: the
+    "Latest" headline banner. Scrolling is the old behaviour; Still shows the headlines without movement (people can
+    swipe or scroll the strip); Off hides it on every page. Saves straight away for everyone.
+  - Worker: `settings` key `ticker_mode` (`scroll` default, `static`, `off`), `epTickerMode`, `GET/POST /api/admin/site`
+    (admin only, JSON), and `/api/me` now returns `ticker_mode`. CSS block `/* epSite */`; still banner uses `.ticker.ep-still`.
+
 - **#38 Organisations Overview opens on the map.**
   - `/orgs` (Overview) now starts with the full-screen map: it fills the window under the menus on phone and
     desktop, with no page heading above it. The grouped lists of organisations follow below the map. The separate

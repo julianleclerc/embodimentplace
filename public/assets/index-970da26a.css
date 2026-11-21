@@ -401,3 +401,20 @@ a.ep-ad-t:hover{box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px);t
 .opop .opop-act a{font-weight:400;display:inline-flex;align-items:center;text-decoration:none}
 .opop .opop-web{font-size:.78rem;color:var(--muted);text-decoration:underline!important;margin-left:auto}
 .opop.opop-sheet{left:8px;right:8px;top:auto;bottom:78px;width:auto;max-width:none;margin:0;transform:none;max-height:calc(100% - 140px);overflow:auto}
+/* epSite: Admin > Site settings, and the still (non-moving) Latest banner */
+.ticker.ep-still .track{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.ticker.ep-still .track::-webkit-scrollbar{display:none}
+.ticker.ep-still .run,.ticker.ep-still:hover .run{animation:none!important;transform:none!important;will-change:auto}
+.ep-site{max-width:760px}
+.ep-site-d{color:var(--muted);font-size:.9rem;margin:0;padding:12px 16px 0}
+.ep-site-o{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 16px 16px}
+.ep-site-b{display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;min-height:44px;padding:12px 14px;background:var(--paper);border:1px solid var(--rule);color:var(--ink);font:inherit;cursor:pointer;transition:box-shadow .12s,transform .12s}
+.ep-site-b:hover:not(:disabled){box-shadow:4px 4px 0 var(--inv);transform:translate(-2px,-2px)}
+.ep-site-b.on{border-color:var(--ink);box-shadow:4px 4px 0 var(--accent)}
+.ep-site-b:disabled{cursor:default}
+.ep-site-l{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.05em}
+.ep-site-l i{width:12px;height:12px;border:1px solid var(--ink);border-radius:50%;flex:none}
+.ep-site-b.on .ep-site-l i{background:var(--accent);box-shadow:inset 0 0 0 2px var(--paper)}
+.ep-site-t{color:var(--muted);font-size:.84rem;line-height:1.4}
+.ep-site-n{margin:0;padding:0 16px 14px;font-size:.86rem;color:var(--ink)}
+@media (max-width:760px){.ep-site-o{grid-template-columns:1fr}}

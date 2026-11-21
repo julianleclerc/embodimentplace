@@ -103,6 +103,8 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   `adminBarLinks` in the Worker and wrap their route in `epAdw` so they get the tabs.
 - Admins edit organisations' main facts and tracking from Admin > Organisations (`/admin/orgs`), without opening
   the full editor. Keep important organisation fields editable there when adding new ones.
+- Site-wide switches live in Admin > Site settings (`/admin/site`), stored in the D1 `settings` table and sent to
+  the page through `/api/me`. The Latest banner mode (`ticker_mode`: scroll, static, off) is the first one.
 
 ## Where things are tracked
 

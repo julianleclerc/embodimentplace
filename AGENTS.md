@@ -98,6 +98,8 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   uses one layout like Account: the "Admin" heading, then tabs (Overview first, then one per tool), via `epAdw`.
   There is no admin bar at the top and no admin button in the bottom-right dock. Add new admin tools to
   `adminBarLinks` in the Worker and wrap their route in `epAdw` so they get the tabs.
+- Admins edit organisations' main facts and tracking from Admin > Organisations (`/admin/orgs`), without opening
+  the full editor. Keep important organisation fields editable there when adding new ones.
 
 ## Where things are tracked
 

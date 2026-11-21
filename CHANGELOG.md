@@ -44,8 +44,12 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   - Worker: `GET /api/admin/orgs` and `POST /api/admin/orgs/:slug` (JSON; admin only; `epAoRow`, `epAoCounts`).
     Saves go through `saveRecord` (revision kept, search reindexed, links untouched). A changed field drops its
     old `src`/`asof`. Tracking writes `auto_news` directly. "Organisations" added first in `adminBarLinks`.
-  - CSS block `/* epAdmin2: ... */`. Bundle `index-c101b1a0.js` / `index-16d1822d.css`.
+  - CSS block `/* epAdmin2: ... */`. Bundle `index-dc790959.js` / `index-f3e158d5.css`.
 
+- **#34 Calmer whistle and colour icons; no "!" when lifted.** A lifted Place character no longer shows the "!" badge
+  (it still swings and kicks). The whistle has a new pixel icon (chamber, mouthpiece, ring) and the whistle and sort
+  buttons use the dock's flat look (ink border, no coloured shadow; the whistle turns dark while a line-up is on).
+  The colour option is a mono drop instead of four coloured squares. CSS blocks `epWhistle` and `epWhistle2`.
 - **#33 Admin moved into the top menu, with tabs.** Julian asked for the admin tools next to Account and laid out
   like the other pages. The bottom-right admin button from #31 is removed.
   - "Admin" sits between "+ Create" and "Account" on desktop (small teal count of things waiting) and after

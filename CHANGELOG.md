@@ -32,7 +32,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-21
 
-- **#PRNUM Map list is a floating window like the Lounge, with a Page link per organisation.**
+- **#41 Map list is a floating window like the Lounge, with a Page link per organisation.**
   - The map's **List** now opens a Lounge-style window (`cw-panel eplw`, grip, title "In view · N", close). On desktop
     it can be dragged anywhere by its header and the spot is remembered (`localStorage ep-maplist-box`); on phones it
     is a bottom sheet like the Lounge. Escape or the close button hides it; it is removed when leaving the map.

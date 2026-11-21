@@ -32,6 +32,33 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-20
 
+- **#36 Organisation badges instead of members managing pages.** Julian decided people from an organisation should not
+  run its page. Belonging is now a badge of honour on their character and a way to find each other. Only the admin
+  and contributors manage organisation pages.
+  - "Claim this company" became **I work here** (`/claim/<slug>`, page title "Wear the … badge"). A verified work
+    email gives the badge at once (row in `owners`, which now means "member" and gives no rights; new column
+    `owners.email`). Organisations without a website get an "Ask the admin" form instead (`POST /claim/<slug>/ask`,
+    a pending `claim` submission; approving it adds the badge). Members can leave (`POST /claim/<slug>/leave`).
+  - `canManage` is staff only, `ownedCompanies` returns nothing, and creating an organisation page no longer makes
+    you its member. So members can't post as the organisation; organisation news comes from the editors and Track.
+  - The worn badge: a small logo pin on the character's chest (CSS `.wk-char.ep-og .wk-fig:after`, var `--ogi`;
+    an accent square when there is no logo) and the organisation name in the name label (`.wk-ogn`). It shows
+    everywhere a character appears: Place, walkers on every page, Account. Worker `walkerLook` returns `og`
+    (copied in `prefs.og` by `epOgSync`, chosen with `prefs.og_pick`, or `none` to hide). Frontend `epOgApply`,
+    `epOgC`, `epOgS`. Only real logos (image fit "contain") are used.
+  - Cards (Place and anywhere) list every organisation under "Member of", with a "N others" link to the People
+    section (`orgs` on `epCardItem`; `epOgRows` / `epOgNode`).
+  - Organisation pages have a **People** section (`#people`, `epOrgPeople`, record payload `people`, `is_member`):
+    members' characters; tap one to open their card. Admins see "Remove badge" (`POST /claim/<slug>/remove`, field
+    `u`). Members who hide their badges aren't listed.
+  - The Place whistle has a new **By organisation** line-up (`data-line="org"`, `epLineKey`).
+  - Account: the Overview card is "Your badges"; the Companies tab lists badges with Wear / Leave and "Hide my
+    badges" (`POST /account/badge`, field `og`).
+  - **Report a mistake** on organisation pages (logged-in non-editors; `epReportAsk`, reason "Wrong information").
+    Reports from verified members of that organisation get `reports.priority = 1` and come first on
+    /admin/reports with a "member of this organisation" tag.
+  - The hard hat now unlocks with any badge. Screenshots in `docs/screenshots/badges/`.
+
 - **#35 Admin redone: dashboard Overview and an Organisations tab.**
   - Overview is now a dashboard: tiles for waiting reviews, open reports, community requests, organisations
     (and how many are tracked), posts this week and members; a "Needs attention" box; a "Tracking" box with the

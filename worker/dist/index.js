@@ -2,6 +2,7 @@ import { t as __exportAll } from "./assets/rolldown-runtime-D8jQpDG7.js";
 import { A as ORG_TYPES, B as TYPE_LABELS, C as LOOK_HATS, D as NO_IMAGE, E as NAV, F as QUOTE_USES, H as WEEKDAYS, I as SITE_NAME, L as SITE_ORG_SLUG, M as POST_CATEGORIES, N as QUOTE_STATUSES, O as ORG_COLOR_PALETTE, P as QUOTE_TIMING, R as SOFTWARE_KINDS, S as LEGAL_UPDATED, T as MONTHS, U as WL_DEFAULT, V as WALK_COLORS, W as WL_SECTIONS, _ as HW_CAT, a as CAT_ALIAS, b as INTRO_WHY_MAX, c as COMPOSE_KINDS, d as DATE_FIELDS, f as FEED_FILTERS, g as GEOCODE_UA, h as FREE_MAIL, i as ADMIN_ONLY, j as ORG_TYPES_LIST, k as ORG_GROUPS, l as CONTACT_EMAIL, m as FOCUS_AREAS, n as ACTIVITY_SUBNAV, o as COMMENTABLE, p as FEED_FILTER_ALIAS, r as ADDRESS_SUGGEST_URL, s as COMMUNITY_NEEDS, t as ACCOUNT_TABS, u as CONTRIB_PERMS, v as HW_CATEGORIES, w as MAP_TILES, x as KIND_ALIAS, y as HW_LETTERLESS, z as THEME_MENU } from "./assets/catalog-6mDCor_N.js";
 import { a as sign, c as tokenHash, d as bytesToHex, i as randomBytes, l as sha256, n as hashPw, o as timingEqual, r as nowStamp, s as token, u as hmac } from "./assets/crypto-FYYfVqc8.js";
 import { DurableObject } from "cloudflare:workers";
+import { EP_SEED_ROBOT_MAKERS_2026_11 } from "./assets/seed-robot-makers-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -22373,6 +22374,67 @@ app.all("*", async (c) => {
 	const me = await mePayload(c);
 	return c.html(shellPage(c, me), 200);
 });
+// epSeedCron: one-time content imports shipped with the code (EP_SEEDS). Each seed runs once from the hourly cron and
+// records itself in settings (seed_<id>). It skips news whose link is already on the site and robots whose name is already
+// there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
+// News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
+// with a maker link.
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11];
+async function epSeedRun(db, seed) {
+	const key = "seed_" + seed.id;
+	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
+	const links = new Set(((await db.prepare("SELECT json_extract(data,'$.link.v') AS u FROM records WHERE type IN ('post','paper') UNION SELECT json_extract(data,'$.url.v') FROM records WHERE type IN ('post','paper')").all()).results || []).map((r) => String(r.u || "")));
+	const names = new Set(((await db.prepare("SELECT lower(name) AS n FROM records WHERE type='product'").all()).results || []).map((r) => String(r.n)));
+	const slugs = new Set(((await db.prepare("SELECT slug FROM records").all()).results || []).map((r) => String(r.slug)));
+	const orgs = new Set(((await db.prepare("SELECT id FROM records WHERE type IN ('company','university','lab')").all()).results || []).map((r) => Number(r.id)));
+	const ts = nowStamp();
+	const stmts = [];
+	const slugFor = (name) => {
+		const base = slugify$1(name);
+		let s = base, i = 2;
+		while (slugs.has(s)) s = `${base}-${i++}`;
+		slugs.add(s);
+		return s;
+	};
+	const add = (type, name, summary, data, day, rels) => {
+		const slug = slugFor(name);
+		stmts.push(db.prepare("INSERT INTO records(type,slug,name,summary,body,data,notes,private,watch,demo,created,updated,feed_at) VALUES(?,?,?,?,'',?,?,0,0,0,?,?,?)").bind(type, slug, name, summary, JSON.stringify(data), seed.note || "", ts, ts, day || ts.slice(0, 10)));
+		let pos = 0;
+		for (const [rel, dst, note] of rels) if (orgs.has(dst)) stmts.push(db.prepare("INSERT INTO links(src,rel,dst,note,pos) SELECT id,?,?,?,? FROM records WHERE slug=?").bind(rel, dst, note, pos++, slug));
+		stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE slug=?").bind(slug));
+	};
+	let nNews = 0, nRobots = 0;
+	for (const it of seed.news || []) {
+		if (!it.url || links.has(it.url) || !orgs.has(Number(it.org))) continue;
+		links.add(it.url);
+		const data = {
+			date: { v: it.date },
+			origin: { v: "Repost" },
+			source_site: { v: it.site },
+			kind: { v: "News" },
+			link: { v: it.url }
+		};
+		add("post", it.title, it.intro, data, it.date, [["about", Number(it.org), ""], ...(it.cc || []).map((id) => ["about", Number(id), "cc"])]);
+		nNews++;
+	}
+	for (const r of seed.robots || []) {
+		if (names.has(r.name.toLowerCase()) || !orgs.has(Number(r.maker))) continue;
+		names.add(r.name.toLowerCase());
+		add("product", r.name, r.summary, r.data, null, [["maker", Number(r.maker), ""]]);
+		nRobots++;
+	}
+	if (stmts.length) await db.batch(stmts);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots`);
+}
+async function epSeedCron(env) {
+	try {
+		await ensureExtraSchema(env.DB);
+		for (const seed of EP_SEEDS) await epSeedRun(env.DB, seed);
+	} catch (ex) {
+		console.log("[seed] " + (ex instanceof Error ? ex.message : String(ex)));
+	}
+}
 // \0virtual:cloudflare/worker-entry
 var worker_entry_default = {
 	async fetch(request, env, ctx) {
@@ -22381,6 +22443,7 @@ var worker_entry_default = {
 	async scheduled(event, env, ctx) {
 		ctx.waitUntil(epDigestCron(env));
 		ctx.waitUntil(epAutoNewsCron(env));
+		ctx.waitUntil(epSeedCron(env));
 	}
 };
 export { LiveHub, app, worker_entry_default as default };

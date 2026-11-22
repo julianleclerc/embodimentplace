@@ -33,6 +33,12 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-22
 
+- **#PRNUM Map is its own top-menu tab; Organisations Overview is back.**
+  - New top-menu tab **Map** (after Organisations) at `/map` (`epMapPage`, routes and `zn` menu list in the bundle),
+    with the full-screen map, List window, filters and walking pan unchanged. `/orgs/map` still opens it.
+  - Organisations > Overview (`/orgs`) shows the grouped organisation lists again (`Mr`), as before #38.
+  - "On the map" links on organisation pages now go to `/map?org=…`.
+
 - **Robot makers: one-time import of recent news and robot entries.** A manual pass over every organisation with the
   Robot maker role (103), done while the tracking agent waits for its API key. Adds 114 News reposts (published
   late July to November 2026, each with its real source link and publish date, about the organisation and cc'd to

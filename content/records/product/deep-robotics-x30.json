@@ -1,0 +1,18 @@
+{
+  "id": 344,
+  "type": "product",
+  "slug": "deep-robotics-x30",
+  "name": "DEEP Robotics X30",
+  "summary": "Industrial quadruped for inspection in harsh environments.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Quadruped",
+      "src": "https://deeprobotics.cn/en/index/product3.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-22 03:05:17",
+  "updated": "2026-11-22 03:05:17",
+  "feed_at": "2026-11-22"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 347,
+  "type": "product",
+  "slug": "agile-one",
+  "name": "Agile ONE",
+  "summary": "Industrial humanoid from Agile Robots.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.agile-robots.com/en/products/humanoid-robots/agile-one/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-22 03:05:17",
+  "updated": "2026-11-22 03:05:17",
+  "feed_at": "2026-11-22"
+}

@@ -1,6 +1,6 @@
 CREATE TABLE auto_news(
     record_id INTEGER PRIMARY KEY, enabled INTEGER NOT NULL DEFAULT 0, feed TEXT DEFAULT '',
-    updated TEXT, updated_by INTEGER, last_run TEXT, last_note TEXT DEFAULT '', seen TEXT DEFAULT '[]');
+    updated TEXT, updated_by INTEGER, last_run TEXT, last_note TEXT DEFAULT '', seen TEXT DEFAULT '[]', every_h INTEGER DEFAULT 24, at_hour INTEGER DEFAULT 6, tz TEXT DEFAULT '', since_at TEXT);
 
 CREATE TABLE blocks(user_id INTEGER NOT NULL, blocked_id INTEGER NOT NULL, created TEXT, PRIMARY KEY(user_id, blocked_id));
 

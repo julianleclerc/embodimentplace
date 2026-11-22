@@ -1,0 +1,28 @@
+{
+  "id": 362,
+  "type": "product",
+  "slug": "elephant-robotics-mycobot-280",
+  "name": "Elephant Robotics myCobot 280",
+  "summary": "Desktop 6-axis arm for education and research, 250 g payload.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Arm",
+      "src": "https://shop.elephantrobotics.com/collections/mycobot-280",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://shop.elephantrobotics.com/collections/mycobot-280",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 0.25,
+      "src": "https://shop.elephantrobotics.com/collections/mycobot-280",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-22 03:05:17",
+  "updated": "2026-11-22 03:05:17",
+  "feed_at": "2026-11-22"
+}

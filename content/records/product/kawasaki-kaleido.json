@@ -1,0 +1,23 @@
+{
+  "id": 364,
+  "type": "product",
+  "slug": "kawasaki-kaleido",
+  "name": "Kawasaki Kaleido",
+  "summary": "Kawasaki's robust humanoid research platform.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Humanoid",
+      "src": "https://kawasakirobotics.com/blog/evolution-of-kawasakis-humanoid-robot-challenge/",
+      "asof": "2026-11"
+    },
+    "locomotion": {
+      "v": "Bipedal",
+      "src": "https://kawasakirobotics.com/blog/evolution-of-kawasakis-humanoid-robot-challenge/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-22 03:05:17",
+  "updated": "2026-11-22 03:05:17",
+  "feed_at": "2026-11-22"
+}

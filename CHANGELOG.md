@@ -33,7 +33,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-22
 
-- **#PRNUM Map is its own top-menu tab; Organisations Overview is back.**
+- **#47 Map is its own top-menu tab; Organisations Overview is back.**
   - New top-menu tab **Map** (after Organisations) at `/map` (`epMapPage`, routes and `zn` menu list in the bundle),
     with the full-screen map, List window, filters and walking pan unchanged. `/orgs/map` still opens it.
   - Organisations > Overview (`/orgs`) shows the grouped organisation lists again (`Mr`), as before #38.

@@ -56,7 +56,8 @@ There is no original source. The repository was rebuilt from the live deployment
 
 - The Worker has an hourly cron (`triggers.crons` in `wrangler.json`) that runs the `scheduled` export. It sends
   Watchlist digests (`epDigestCron`) and checks tracked organisations for new posts (`epAutoNewsCron`; admins turn
-  this on with the Track button on an organisation page). Test it locally with
+  this on with Track on an organisation page or in Admin > Organisations; each organisation has its own schedule
+  and `epAnDue` decides when it runs). Test it locally with
   `curl "localhost:8787/cdn-cgi/handler/scheduled?cron=5+*+*+*+*"` while `wrangler dev` runs; mail lands in
   `email_log`.
 - Every email is wrapped in the site's Hommik look by `sendMail` (`epMailWrap`). Write only the inner HTML for new
@@ -102,7 +103,12 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   There is no admin bar at the top and no admin button in the bottom-right dock. Add new admin tools to
   `adminBarLinks` in the Worker and wrap their route in `epAdw` so they get the tabs.
 - Admins edit organisations' main facts and tracking from Admin > Organisations (`/admin/orgs`), without opening
-  the full editor. Keep important organisation fields editable there when adding new ones.
+  the full editor. Keep important organisation fields editable there when adding new ones. Rows can be selected
+  (with Select all) to change tracking for many at once.
+- Tracking (never "auto updates") only looks at news since the last run, on a schedule set per organisation (how
+  often and time of day), with "Track now" and "Since founding" on demand. An agent (Claude with web search,
+  `epAnAgent`, secret `ANTHROPIC_API_KEY`) picks news worth reposting and it is published straight away as News,
+  with no review queue.
 - Site-wide switches live in Admin > Site settings (`/admin/site`), stored in the D1 `settings` table and sent to
   the page through `/api/me`. The Latest banner mode (`ticker_mode`: scroll, static, off) is the first one.
   The Latest banner only shows on the front page (`/`).

@@ -31,6 +31,22 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-22
+
+- **Robot makers: one-time import of recent news and robot entries.** A manual pass over every organisation with the
+  Robot maker role (103), done while the tracking agent waits for its API key. Adds 114 News reposts (published
+  late July to November 2026, each with its real source link and publish date, about the organisation and cc'd to
+  partners already on the site, such as GXO, NVIDIA, Walmart or Stryker) and 28 robots (quadrupeds, humanoids,
+  arms, mobile manipulators and one hand) with a maker link and a source on the category field. Specs are only
+  filled where the source page states them.
+  - Data lives in `worker/dist/assets/seed-robot-makers-2026-11.js`. `epSeedCron` (with `epSeedRun`, `EP_SEEDS`) in
+    `worker/dist/index.js` runs from the hourly cron, imports each seed once and records it in D1 `settings`
+    (`seed_robot-makers-2026-11` holds the counts). It skips news whose link is already on the site and robots whose
+    name already exists, and writes everything (records, links, search index) in one D1 batch.
+  - Imported news looks like tracking reposts (type `post`, kind News, origin Repost), so later tracking runs dedupe
+    against it by link. Records carry the note "Imported in the robot-maker pass, November 2026".
+  - To add another import later, add a seed module and put it in `EP_SEEDS` with a new id.
+
 ### 2026-11-21
 
 - **#45 Tracking: only new news since the last run, Since founding, schedules, a web agent, bulk actions.**

@@ -94,6 +94,8 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - People from an organisation don't manage its page. Only the admin and contributors do. Belonging is a badge
   (verified work email via "I work here", table `owners`) shown on the character, the card and the
   organisation's People section. Members can still report mistakes, and their reports come first.
+- The organisations map is its own top-menu tab, **Map** (`/map`, component `epMapPage`; old `/orgs/map` links still
+  work). Organisations > Overview (`/orgs`) is the grouped list of organisations, not the map.
 - Members can follow organisations (companies, universities, labs) and topics, not people, robots or models.
 - The Watchlist tabs (Watchlist, Sources, Newsletter) stay hidden until the member follows at least one organisation; until then every Watchlist URL shows "Start your watchlist".
 - Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,

@@ -33,6 +33,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **Floating joystick on phones.** While walking on a phone, pressing anywhere on the page shows a smaller (96px),
+  see-through joystick under your finger, and dragging from there walks; letting go hides it. Taps in this mode don't
+  open links or cards. The button at the bottom right, above the Lounge, switches to "use the page" (tap links and
+  characters, scroll) and back; it shows a pointer while walking and is inverted while using the page. The fixed
+  joystick places, the Move / Look buttons and the "Joystick on phones" Account card are gone, and so are the
+  `joy` / `joyxy` / `joya` fields and the `joy` account action (old values left in prefs are ignored). Frontend
+  `epJoyFloat`, `epJoyEnd`, `epJoyClick` (classes `.chatw.joy-on`, `.chatw.joy-look`); CSS block `epJoyFloat`.
+
 - **Joystick on the right again, sitting higher; Move and Look fixed bottom right.** The phone joystick's default
   place is Right again (`prefs.joy` absent = right; `"centre"` is now stored), and the Left / Centre / Right places
   sit higher, near the middle of the lower half of the screen (`--pb: max(110px, 45svh - 120px)`). Move and Look no

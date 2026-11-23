@@ -569,3 +569,18 @@ html:not(.ep-typing) .chatw.walking[data-joy=left] .wk-log,html:not(.ep-typing) 
 .chatw[data-joy=left],.chatw[data-joy=centre],.chatw[data-joy=right]{--pb:max(calc(110px + env(safe-area-inset-bottom)),calc(45svh - 120px))}
 html:not(.ep-typing) .chatw.walking[data-joy] .wk-log{left:8px;right:108px;bottom:calc(60px + env(safe-area-inset-bottom))}
 }
+/* epJoyFloat: phones only. While walking, pressing anywhere on the page shows a smaller, see-through joystick under your finger (.chatw.joy-on, --fx/--fy) and dragging walks. The button at the bottom right (data-joy-mode) switches to using the page (.chatw.joy-look: tap, scroll, open cards) and back. */
+@media (width<=760px){
+html .chatw.walking .wk-pad{display:none}
+html .chatw.walking.joy-on .wk-pad{display:grid;left:calc(var(--fx,50vw) - 48px);top:calc(var(--fy,50vh) - 48px);right:auto;bottom:auto;margin:0;width:96px;height:96px;z-index:2147483602;background:color-mix(in srgb,var(--paper) 40%,transparent);border-color:color-mix(in srgb,var(--ink) 55%,transparent);box-shadow:3px 3px 0 color-mix(in srgb,var(--ink) 30%,transparent);outline:0}
+html .chatw.walking.joy-on .wk-pad:after{width:26px;height:26px;margin:-13px 0 0 -13px;opacity:.7}
+html .chatw.walking.joy-on .wk-pad:before{content:none}
+html .chatw.walking.joy-on .wk-pad button{visibility:visible;font-size:.78rem}
+html:has(.chatw.walking:not(.open):not(.joy-look)) body{touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+html:has(.chatw.walking:not(.open):not(.joy-look)) .wk-say input{-webkit-user-select:text;user-select:text}
+html:has(.chatw.walking:not(.open):not(.joy-look)) .cw-panel{touch-action:auto}
+.chatw.walking .wk-joyctl{gap:0}
+.wk-joyctl [data-joy-mode]{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1H9v1h1v2h1v2H9v-2H8v-2H7v1H6v1H5v1H3z'/%3E%3C/svg%3E")}
+.chatw.joy-look .wk-joyctl [data-joy-mode]{background:var(--inv);color:var(--inv-ink);border-color:var(--inv);--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 1h14v14H1zm2 2v10h10V3zm3 3h4v4H6z'/%3E%3C/svg%3E")}
+html:not(.ep-typing) .chatw.walking .wk-log{left:8px;right:60px;bottom:calc(60px + env(safe-area-inset-bottom))}
+}

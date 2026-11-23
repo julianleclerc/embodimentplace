@@ -4327,8 +4327,6 @@ async function accountPayload(c, tab = "overview") {
 		email_verified: !!pr.email_verified,
 		profile_vis: String(pr.profile_vis || "members"),
 		place_show: !pr.place_hide,
-		joy: ["left", "centre", "free"].includes(pr.joy) ? pr.joy : "right",
-		joya: ["solid", "faint"].includes(pr.joya) ? pr.joya : "glass",
 		email_pending: await (async () => {
 			try {
 				const r = await db.prepare("SELECT email, expires FROM email_tokens WHERE user_id=? AND kind='email_change' AND used=0 ORDER BY created DESC LIMIT 1").bind(u.id).first();
@@ -4374,30 +4372,6 @@ async function postAccount(c) {
 		return c.json({
 			ok: true,
 			message: "Profile visibility saved."
-		});
-	}
-	if (act === "joy") {
-		if (g.joy === undefined && g.joya === undefined) return c.json({ error: "Choose where the joystick goes." }, 400);
-		if (g.joy !== undefined) {
-			if (!["left", "centre", "right", "free"].includes(g.joy)) return c.json({ error: "Choose left, centre or right." }, 400);
-			if (g.joy === "right") delete pr.joy;
-			else pr.joy = g.joy;
-			if (g.joy === "free") {
-				const x = Number(g.joyx), y = Number(g.joyy);
-				if (!Number.isFinite(x) || !Number.isFinite(y)) return c.json({ error: "Move the joystick to a spot on the screen." }, 400);
-				const cl = (n) => Math.round(Math.min(1, Math.max(0, n)) * 1e3) / 1e3;
-				pr.joyxy = [cl(x), cl(y)];
-			}
-		}
-		if (g.joya !== undefined) {
-			if (!["solid", "glass", "faint"].includes(g.joya)) return c.json({ error: "Choose solid, see-through or faint." }, 400);
-			if (g.joya === "glass") delete pr.joya;
-			else pr.joya = g.joya;
-		}
-		await savePrefs(c.env.DB, u.id, pr);
-		return c.json({
-			ok: true,
-			message: "Joystick saved."
 		});
 	}
 	if (act === "place") {
@@ -22101,9 +22075,6 @@ async function mePayload(c) {
 		bar,
 		bar_label: auth.needs_2fa ? "setup" : auth.logged ? auth.is_admin ? "admin" : "contributor" : "",
 		look: auth.user ? walkerLook(auth.user) : null,
-		joy: auth.user && ["left", "centre", "free"].includes(prefsOf(auth.user).joy) ? prefsOf(auth.user).joy : "right",
-		joyxy: auth.user && Array.isArray(prefsOf(auth.user).joyxy) ? prefsOf(auth.user).joyxy : [.5, 0],
-		joya: auth.user && ["solid", "faint"].includes(prefsOf(auth.user).joya) ? prefsOf(auth.user).joya : "glass",
 		stickers: await stickerPack(c.env.DB)
 	};
 }

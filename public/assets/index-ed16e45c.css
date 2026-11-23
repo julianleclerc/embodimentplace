@@ -513,3 +513,16 @@ html:not(.ep-typing) .chatw.walking[data-joy=right] .wk-log{left:8px;right:136px
 }
 /* epSayIdle: the Say button only shows while you are writing (box focused or holding text) */
 .wk-say:not(:focus-within):has(input:placeholder-shown) .btn{display:none}
+/* epJoyCentre: the phone joystick sits in the centre by default (data-joy=centre); recent lines go above it */
+@media (width<=760px){
+.chatw.walking[data-joy=centre] .wk-pad{left:50%;right:auto;margin-left:-60px}
+html:not(.ep-typing) .chatw.walking[data-joy=centre] .wk-log{left:8px;right:8px;bottom:calc(186px + env(safe-area-inset-bottom))}
+}
+/* epJoyGlass: the phone joystick is partly see-through so the Place shows through it; firmer while held */
+@media (width<=760px){
+.chatw.walking .wk-pad{background:color-mix(in srgb,var(--paper) 40%,transparent);border-color:color-mix(in srgb,var(--ink) 55%,transparent);box-shadow:3px 3px 0 color-mix(in srgb,var(--ink) 35%,transparent)}
+.chatw.walking .wk-pad:after{opacity:.7}
+.chatw.walking .wk-pad[data-epj]{background:color-mix(in srgb,var(--paper) 65%,transparent)}
+.chatw.walking .wk-pad[data-epj]:after{opacity:.9}
+.chatw.walking .wk-pad button.on,.chatw.walking .wk-pad button:active{background:color-mix(in srgb,var(--inv) 55%,transparent)}
+}

@@ -33,6 +33,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **Phone joystick in the centre by default, and see-through.** The "Joystick on phones" card is now Left / Centre /
+  Right, with Centre the default (`prefs.joy` is `"left"`, `"right"` or absent for centre; `/api/me` sends `centre`).
+  In the centre, recent lines sit above the joystick. The joystick is partly see-through and firms up while held.
+  CSS blocks `epJoyCentre`, `epJoyGlass`.
 - **The Say button only shows while you write.** While walking, the chat box shows just "Say something" until you tap
   or click into it (or it holds text); then the Say button appears. Phone and desktop. CSS block `epSayIdle`.
 

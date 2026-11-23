@@ -89,8 +89,9 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - The card (name, position, company, info, social links) follows the member's "Who sees your card" setting
   (`prefs.profile_vis`: me, members or everyone; members is the default).
 - Changing your email needs a code sent to the new address.
-- On phones, walking uses a floating joystick: press anywhere and it appears under your finger (smaller, see-through);
-  drag to walk. The button at the bottom right, above the Lounge, switches between walking and using the page. While
+- On phones, walking uses a floating joystick: press on walkable ground (not the menu, links, buttons, characters or
+  dock) and it appears under your finger (smaller, see-through); drag to walk. The button at the bottom right, above
+  the Lounge, is the phone's E key (use what you stand on). While
   walking, the "Say something" box sits in the same row as the Online, Walk and Lounge buttons (CSS `epDockRow`), and
   the Say button only shows while writing.
 - The dock's Online / Offline switch (it replaced the eye) is site-wide. Online takes one of a limited number of seats

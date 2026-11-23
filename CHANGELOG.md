@@ -33,6 +33,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **Joystick quick buttons: move it anywhere, change its look.** While walking on a phone, two small buttons sit on
+  top of the joystick. Move: tap it, drag the joystick anywhere on the screen ("DRAG ME", dashed outline), tap again to
+  lock. Look: one tap cycles Solid, See-through (default) and Faint. Both save to the account straight away
+  (`prefs.joy = "free"` with `prefs.joyxy = [x, y]` as 0 to 1 fractions, `prefs.joya` = `solid` / `faint`, absent =
+  see-through; `POST /api/account` action `joy` takes `joy`, `joyx`, `joyy`, `joya`; `/api/me` sends `joy`, `joyxy`,
+  `joya`). Account > Overview's "Joystick on phones" card has Place (Left / Centre / Right snaps it back) and Look.
+  Frontend `epJoyTap`, `epJoyDrag`, `epJoySave`; CSS block `epJoyCtl` (`--pl` / `--pb` place the joystick and buttons).
+
 - **Phone joystick in the centre by default, and see-through.** The "Joystick on phones" card is now Left / Centre /
   Right, with Centre the default (`prefs.joy` is `"left"`, `"right"` or absent for centre; `/api/me` sends `centre`).
   In the centre, recent lines sit above the joystick. The joystick is partly see-through and firms up while held.

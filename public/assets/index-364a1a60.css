@@ -556,3 +556,16 @@ html:not(.ep-typing) .chatw.walking[data-joy=centre] .wk-log{bottom:calc(220px +
 html:not(.ep-typing) .chatw.walking[data-joy=free] .wk-log{left:8px;right:8px;bottom:calc(60px + env(safe-area-inset-bottom))}
 .ep-typing .chatw.walking .wk-joyctl,.chatw.open .wk-joyctl{display:none!important}
 }
+/* epJoyCtlDock: Move and Look sit fixed at the bottom right, just above the Lounge button, the same size as the dock buttons; things that would cover them make room */
+@media (width<=760px){
+.chatw.walking .wk-joyctl{left:auto;right:8px;bottom:calc(60px + env(safe-area-inset-bottom));width:auto;gap:6px}
+.wk-joyctl button{width:44px;height:44px}
+.wk-joyctl button:before{width:18px;height:18px}
+.chatw[data-joy=right]{--pb:calc(110px + env(safe-area-inset-bottom))}
+html:not(.ep-typing) .chatw.walking[data-joy=left] .wk-log,html:not(.ep-typing) .chatw.walking[data-joy=free] .wk-log{right:108px}
+}
+/* epJoyHigh: preset joystick places (right by default) sit higher, near the middle of the lower half of the screen; recent lines sit low, left of Move and Look */
+@media (width<=760px){
+.chatw[data-joy=left],.chatw[data-joy=centre],.chatw[data-joy=right]{--pb:max(calc(110px + env(safe-area-inset-bottom)),calc(45svh - 120px))}
+html:not(.ep-typing) .chatw.walking[data-joy] .wk-log{left:8px;right:108px;bottom:calc(60px + env(safe-area-inset-bottom))}
+}

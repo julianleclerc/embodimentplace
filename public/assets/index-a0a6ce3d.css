@@ -584,3 +584,11 @@ html:has(.chatw.walking:not(.open):not(.joy-look)) .cw-panel{touch-action:auto}
 .chatw.joy-look .wk-joyctl [data-joy-mode]{background:var(--inv);color:var(--inv-ink);border-color:var(--inv);--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 1h14v14H1zm2 2v10h10V3zm3 3h4v4H6z'/%3E%3C/svg%3E")}
 html:not(.ep-typing) .chatw.walking .wk-log{left:8px;right:60px;bottom:calc(60px + env(safe-area-inset-bottom))}
 }
+/* epJoyE: the joystick only opens on the walkable area (not the menu, links, buttons, characters or dock), so the page still scrolls and taps from there; the bottom-right button is the phone's E key (use what you stand on), dimmed when there is nothing to use */
+@media (width<=760px){
+html:has(.chatw.walking:not(.open):not(.joy-look)) body{touch-action:auto}
+.wk-joyctl [data-joy-mode]{font:600 1rem/1 var(--mono)}
+.wk-joyctl [data-joy-mode]:before{content:none}
+.chatw:has(.wk-e[hidden]) .wk-joyctl [data-joy-mode]{color:var(--muted);border-color:color-mix(in srgb,var(--ink) 40%,transparent)}
+.chatw:not(:has(.wk-e[hidden])) .wk-joyctl [data-joy-mode]{background:var(--inv);color:var(--inv-ink);border-color:var(--inv);box-shadow:3px 3px 0 var(--accent)}
+}

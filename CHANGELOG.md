@@ -33,6 +33,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **Phone E button, and the joystick only on walkable ground.** The bottom-right button (above the Lounge) is now the
+  phone's E key: it uses the link or button your character stands on (it sends the same `keydown` "e" the walker
+  listens for). It lights up (inverted, accent shadow) when there is something to use, and is dimmed otherwise. The
+  use-the-page mode is gone. The floating joystick now opens only on walkable ground (`epJoyWalkable`), not on the
+  menu, links, buttons, form fields, characters, the dock, the chat box or the map, so those stay tappable and the
+  page still scrolls from them; a `touchstart` handler (`epJoyTouch`, non-passive) stops scrolling only for joystick
+  presses. CSS block `epJoyE`.
+
 - **Floating joystick on phones.** While walking on a phone, pressing anywhere on the page shows a smaller (96px),
   see-through joystick under your finger, and dragging from there walks; letting go hides it. Taps in this mode don't
   open links or cards. The button at the bottom right, above the Lounge, switches to "use the page" (tap links and

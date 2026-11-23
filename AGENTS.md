@@ -89,6 +89,9 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - The card (name, position, company, info, social links) follows the member's "Who sees your card" setting
   (`prefs.profile_vis`: me, members or everyone; members is the default).
 - Changing your email needs a code sent to the new address.
+- On phones the walking joystick sits on the right by default; members can switch it to the left in Account >
+  Overview ("Joystick on phones", `prefs.joy`). While walking, the "Say something" box sits in the same row as the
+  Online, Walk and Lounge buttons (CSS `epDockRow`).
 - The dock's Online / Offline switch (it replaced the eye) is site-wide. Online takes one of a limited number of seats
   (D1 setting `online_max`, default 100) and connects the live socket. When it's full, people wait in line and join
   automatically. Offline still lets you walk, but sends nothing and shows nobody else. Online is the default.

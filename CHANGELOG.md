@@ -33,6 +33,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **Joystick on the right again, sitting higher; Move and Look fixed bottom right.** The phone joystick's default
+  place is Right again (`prefs.joy` absent = right; `"centre"` is now stored), and the Left / Centre / Right places
+  sit higher, near the middle of the lower half of the screen (`--pb: max(110px, 45svh - 120px)`). Move and Look no
+  longer ride on the joystick: they are fixed at the bottom right just above the Lounge button, the size of the dock
+  buttons. Recent lines sit low on the left, beside them. The whistle no longer jumps above the joystick (only the
+  dock, Move/Look and recent lines lift it). CSS blocks `epJoyCtlDock`, `epJoyHigh`.
+
 - **Joystick quick buttons: move it anywhere, change its look.** While walking on a phone, two small buttons sit on
   top of the joystick. Move: tap it, drag the joystick anywhere on the screen ("DRAG ME", dashed outline), tap again to
   lock. Look: one tap cycles Solid, See-through (default) and Faint. Both save to the account straight away

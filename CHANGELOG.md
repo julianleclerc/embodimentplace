@@ -31,6 +31,25 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-23
+
+- **Article banners use the source site's image, or no banner at all.**
+  - When an article that links to another site is added (tracking, seed imports or the compose form), the Worker reads
+    the linked page and uses the publisher's own share image (`og:image:secure_url`, `og:image`, `twitter:image`, then
+    `link rel=image_src`) as the banner. It is hotlinked from the publisher (the image they publish for link previews),
+    not copied, and is saved on the post as `data.image` with `src` = the article link and `auto: "og"`. Pages whose
+    robots meta or `X-Robots-Tag` say `noimageindex` / `max-image-preview:none`, and images whose file name looks like
+    a logo, favicon or placeholder, are skipped.
+  - Feed cards without an image now show no banner (the patterned placeholder is gone). If a banner image fails to load,
+    the card hides the banner (`epBannerGone` in the bundle, CSS block `epBanner`). Video thumbnails are unchanged.
+  - Code: `epBannerPick`, `epBannerFetch`, `epBannerSet`, `epBannerCron` in `worker/dist/index.js`. Tracking calls
+    `epBannerSet` as soon as it publishes (`epAnPublish`). `epBannerCron` runs after `epSeedCron` on each hourly tick
+    and checks up to 15 posts that have a link and no image, newest first, so the existing posts (about 115) are
+    backfilled within a day. Each post is checked once; results and reasons are in the D1 table `post_banner`
+    (`record_id`, `checked`, `image`, `note`). Delete a row there to have a post checked again.
+  - Tested locally against sample pages (image, no image, opt-out, logo, broken image). Live sites could not be reached
+    from the sandbox, so check the first real results in `post_banner` after deploy.
+
 ### 2026-11-22
 
 - **#47 Map is its own top-menu tab; Organisations Overview is back.**

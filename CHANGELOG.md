@@ -33,6 +33,9 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **The Say button only shows while you write.** While walking, the chat box shows just "Say something" until you tap
+  or click into it (or it holds text); then the Say button appears. Phone and desktop. CSS block `epSayIdle`.
+
 - **Joystick side setting, and the walking chat box sits in the dock row.**
   - Account > Overview has a new "Joystick on phones" card (Left / Right, default Right, component `epJoyEdit`).
     It saves `prefs.joy` (`"left"`, or absent for right) via `POST /api/account` action `joy`, and is sent in

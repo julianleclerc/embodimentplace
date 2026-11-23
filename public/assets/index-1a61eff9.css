@@ -511,3 +511,5 @@ html:not(.ep-typing) .chatw.walking[data-joy=right] .wk-log{left:8px;right:136px
 .chatw.walking[data-joy=right] .wk-pad{left:auto;right:8px}
 .ep-typing .chatw.walking .wk-say{right:8px;height:40px}
 }
+/* epSayIdle: the Say button only shows while you are writing (box focused or holding text) */
+.wk-say:not(:focus-within):has(input:placeholder-shown) .btn{display:none}

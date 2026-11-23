@@ -33,6 +33,16 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **Joystick side setting, and the walking chat box sits in the dock row.**
+  - Account > Overview has a new "Joystick on phones" card (Left / Right, default Right, component `epJoyEdit`).
+    It saves `prefs.joy` (`"left"`, or absent for right) via `POST /api/account` action `joy`, and is sent in
+    `/api/me` and the account payload as `joy`. The page sets `.chatw[data-joy]`, so a change applies straight away.
+  - While walking, the "Say something" box is on the same row as Online, Walk and Lounge (phone and desktop). On
+    desktop the key hints and recent lines stack above it in the same box. On phones the joystick sits above the row
+    on the chosen side and the recent lines sit beside it on the other side. Typing on a phone still lifts the box
+    above the keyboard. CSS block `epDockRow`.
+  - The Place whistle now also lifts above the joystick and the recent-lines strip on phones (`whDock`).
+
 - **Article banners use the source site's image, or no banner at all.**
   - When an article that links to another site is added (tracking, seed imports or the compose form), the Worker reads
     the linked page and uses the publisher's own share image (`og:image:secure_url`, `og:image`, `twitter:image`, then

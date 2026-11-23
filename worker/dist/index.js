@@ -4327,6 +4327,7 @@ async function accountPayload(c, tab = "overview") {
 		email_verified: !!pr.email_verified,
 		profile_vis: String(pr.profile_vis || "members"),
 		place_show: !pr.place_hide,
+		joy: pr.joy === "left" ? "left" : "right",
 		email_pending: await (async () => {
 			try {
 				const r = await db.prepare("SELECT email, expires FROM email_tokens WHERE user_id=? AND kind='email_change' AND used=0 ORDER BY created DESC LIMIT 1").bind(u.id).first();
@@ -4372,6 +4373,16 @@ async function postAccount(c) {
 		return c.json({
 			ok: true,
 			message: "Profile visibility saved."
+		});
+	}
+	if (act === "joy") {
+		if (!["left", "right"].includes(g.joy)) return c.json({ error: "Choose left or right." }, 400);
+		if (g.joy === "left") pr.joy = "left";
+		else delete pr.joy;
+		await savePrefs(c.env.DB, u.id, pr);
+		return c.json({
+			ok: true,
+			message: "Joystick side saved."
 		});
 	}
 	if (act === "place") {
@@ -22075,6 +22086,7 @@ async function mePayload(c) {
 		bar,
 		bar_label: auth.needs_2fa ? "setup" : auth.logged ? auth.is_admin ? "admin" : "contributor" : "",
 		look: auth.user ? walkerLook(auth.user) : null,
+		joy: auth.user && prefsOf(auth.user).joy === "left" ? "left" : "right",
 		stickers: await stickerPack(c.env.DB)
 	};
 }

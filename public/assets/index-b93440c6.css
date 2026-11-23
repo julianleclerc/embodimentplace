@@ -526,3 +526,33 @@ html:not(.ep-typing) .chatw.walking[data-joy=centre] .wk-log{left:8px;right:8px;
 .chatw.walking .wk-pad[data-epj]:after{opacity:.9}
 .chatw.walking .wk-pad button.on,.chatw.walking .wk-pad button:active{background:color-mix(in srgb,var(--inv) 55%,transparent)}
 }
+/* epJoyCtl: two small buttons above the phone joystick. Move (tap, drag the joystick anywhere, tap to lock; data-joy=free with --joy-x/--joy-y) and Look (cycles data-joya: solid, glass, faint) */
+.wk-joyctl{display:none}
+@media (width<=760px){
+.chatw{--pl:calc(50% - 60px);--pb:calc(60px + env(safe-area-inset-bottom))}
+.chatw[data-joy=left]{--pl:8px}
+.chatw[data-joy=right]{--pl:calc(100% - 128px)}
+.chatw[data-joy=free]{--pl:calc(8px + var(--joy-x,.5)*(100vw - 136px));--pb:calc(60px + env(safe-area-inset-bottom) + var(--joy-y,0)*(100svh - 280px))}
+html .chatw.walking[data-joy] .wk-pad{left:var(--pl);right:auto;margin-left:0;bottom:var(--pb);z-index:2147483602}
+.chatw.walking .wk-joyctl{display:flex;justify-content:flex-end;gap:4px;position:fixed;left:var(--pl);bottom:calc(var(--pb) + 125px);width:120px;z-index:2147483602}
+.wk-joyctl button{appearance:none;box-sizing:border-box;width:30px;height:30px;padding:0;display:flex;align-items:center;justify-content:center;color:var(--ink);background:var(--paper);border:1px solid var(--ink);border-radius:0;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.wk-joyctl button:before{content:"";width:16px;height:16px;background:currentColor;-webkit-mask:var(--epi) center/contain no-repeat;mask:var(--epi) center/contain no-repeat}
+.wk-joyctl [data-joy-place]{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7 0h2v1h1v1h1v1H9v4h4V5h1v1h1v1h1v2h-1v1h-1v1h-1V9H9v4h2v1h-1v1H9v1H7v-1H6v-1H5v-1h2V9H3v2H2v-1H1V9H0V7h1V6h1V5h1v2h4V3H5V2h1V1h1z'/%3E%3C/svg%3E")}
+.wk-joyctl [data-joy-alpha]{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 1h14v14H1zm2 2v2h2V3zm4 0v2h2V3zm4 0v2h2V3zM5 5v2h2V5zm4 0v2h2V5zM3 7v2h2V7zm4 0v2h2V7zm4 0v2h2V7zM5 9v2h2V9zm4 0v2h2V9zm-6 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z'/%3E%3C/svg%3E")}
+.chatw[data-joya=solid] .wk-joyctl [data-joy-alpha]{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 1h14v14H1z'/%3E%3C/svg%3E")}
+.chatw[data-joya=faint] .wk-joyctl [data-joy-alpha]{--epi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 1h14v14H1zm2 2v10h10V3z'/%3E%3C/svg%3E")}
+.chatw.joy-move .wk-joyctl [data-joy-place],.wk-joyctl button:active{background:var(--inv);color:var(--inv-ink);border-color:var(--inv)}
+.chatw.joy-move .wk-pad{outline:2px dashed var(--accent);outline-offset:3px;cursor:move}
+.chatw.joy-move .wk-pad button{visibility:hidden}
+.chatw.joy-move .wk-pad:before{content:"DRAG ME";position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font:500 .62rem/1 var(--mono);letter-spacing:.06em;color:var(--accent);pointer-events:none}
+.chatw.walking[data-joya=solid] .wk-pad{background:var(--paper);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.chatw.walking[data-joya=solid] .wk-pad:after{opacity:1}
+.chatw.walking[data-joya=faint] .wk-pad{background:color-mix(in srgb,var(--paper) 12%,transparent);border-color:color-mix(in srgb,var(--ink) 30%,transparent);box-shadow:none}
+.chatw.walking[data-joya=faint] .wk-pad:after{opacity:.35}
+.chatw.walking[data-joya=faint] .wk-pad button{color:color-mix(in srgb,var(--muted) 60%,transparent)}
+.chatw.walking[data-joya=faint] .wk-pad[data-epj]{background:color-mix(in srgb,var(--paper) 35%,transparent)}
+.chatw.walking[data-joya=faint] .wk-pad[data-epj]:after{opacity:.6}
+html:not(.ep-typing) .chatw.walking[data-joy=centre] .wk-log{bottom:calc(220px + env(safe-area-inset-bottom))}
+html:not(.ep-typing) .chatw.walking[data-joy=free] .wk-log{left:8px;right:8px;bottom:calc(60px + env(safe-area-inset-bottom))}
+.ep-typing .chatw.walking .wk-joyctl,.chatw.open .wk-joyctl{display:none!important}
+}

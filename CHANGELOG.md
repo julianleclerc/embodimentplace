@@ -33,6 +33,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-23
 
+- **Posts stay tappable while walking on a phone.** The floating joystick no longer opens on post cards (`article`,
+  `[data-href]`, `.bcard`, `.card`, `.postcard`, comments, the compose box) or on anything with a pointer cursor, so
+  tapping a post opens it and the feed scrolls from it again (`epJoyWalkable`).
+
 - **Phone E button, and the joystick only on walkable ground.** The bottom-right button (above the Lounge) is now the
   phone's E key: it uses the link or button your character stands on (it sends the same `keydown` "e" the walker
   listens for). It lights up (inverted, accent shadow) when there is something to use, and is dimmed otherwise. The

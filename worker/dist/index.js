@@ -2038,6 +2038,7 @@ function isMutating(method) {
 // backend/worker/src/schema_extra.ts
 /** Extra tables used by posting, community, claims, quotes, reports and mail. Safe to call on every request. */
 var TABLES = [
+	`CREATE TABLE IF NOT EXISTS post_banner(record_id INTEGER PRIMARY KEY, checked TEXT, image TEXT DEFAULT '', note TEXT DEFAULT '')`,
 	`CREATE TABLE IF NOT EXISTS auto_news(
     record_id INTEGER PRIMARY KEY, enabled INTEGER NOT NULL DEFAULT 0, feed TEXT DEFAULT '',
     updated TEXT, updated_by INTEGER, last_run TEXT, last_note TEXT DEFAULT '')`,
@@ -21135,6 +21136,7 @@ async function epAnPublish(db, org, it, seen) {
 	if (!rid) return false;
 	const day = new Date(it.when).toISOString().slice(0, 10);
 	await db.prepare("UPDATE records SET data=json_set(data,'$.auto_news',json('{\"v\":\"Yes\"}'),'$.date',json_object('v',?)), feed_at=? WHERE id=?").bind(day, day, rid).run();
+	await epBannerSet(db, rid, it.url);
 	return true;
 }
 // epAnAgent: the tracking agent. Claude searches the web (server-side web_search tool) for news about the organisation
@@ -22435,6 +22437,106 @@ async function epSeedCron(env) {
 		console.log("[seed] " + (ex instanceof Error ? ex.message : String(ex)));
 	}
 }
+// epBanner: article banners from the source page. When a post links to another site (reposts from tracking, seeds or the
+// compose form), the banner is the publisher's own share image (og:image, then twitter:image, then link rel=image_src),
+// shown straight from their server and credited to the article. It is the image the publisher offers for link previews,
+// so it is not copied or stored here. Pages that opt out of image previews (robots noimageindex or
+// max-image-preview:none, in a meta tag or the X-Robots-Tag header) and generic logos or placeholders get no image.
+// A post without an image shows no banner at all (the card's patterned placeholder is gone). Results are recorded in
+// the post_banner table so each post is checked once; epBannerCron runs from the hourly cron and also backfills older posts.
+var EP_BANNER_PER_TICK = 15;
+function epBannerAttrs(tag) {
+	const out = {};
+	for (const m of tag.matchAll(/([a-zA-Z:_-]+)\s*=\s*("([^"]*)"|'([^']*)'|([^\s"'>]+))/g)) out[m[1].toLowerCase()] = m[3] ?? m[4] ?? m[5] ?? "";
+	return out;
+}
+function epBannerDecode(v) {
+	return String(v || "").replace(/&amp;/g, "&").replace(/&#0*38;/g, "&").replace(/&#x0*26;/gi, "&").replace(/&quot;/g, '"').replace(/&#0*39;/g, "'").trim();
+}
+function epBannerNoPreview(v) {
+	return /noimageindex|max-image-preview\s*:\s*none|\bnone\b/i.test(String(v || ""));
+}
+// Picks the share image from a page's HTML. Returns { image } or { note } saying why there is none.
+function epBannerPick(html, pageUrl, robotsHeader) {
+	if (epBannerNoPreview(robotsHeader)) return { note: "Page opts out of image previews" };
+	const head = html.split(/<\/head>/i)[0].slice(0, 6e5);
+	const found = {};
+	for (const m of head.matchAll(/<(meta|link)\b[^>]*>/gi)) {
+		const a = epBannerAttrs(m[0]);
+		if (m[1].toLowerCase() === "meta") {
+			const key = String(a.property || a.name || a.itemprop || "").toLowerCase();
+			if (key === "robots" && epBannerNoPreview(a.content)) return { note: "Page opts out of image previews" };
+			if (["og:image:secure_url", "og:image", "og:image:url", "twitter:image", "twitter:image:src", "image"].includes(key) && a.content && !found[key]) found[key] = a.content;
+		} else if (String(a.rel || "").toLowerCase() === "image_src" && a.href && !found.image_src) found.image_src = a.href;
+	}
+	const raw = found["og:image:secure_url"] || found["og:image"] || found["og:image:url"] || found["twitter:image"] || found["twitter:image:src"] || found.image_src || found.image;
+	if (!raw) return { note: "No share image on the page" };
+	let url;
+	try {
+		url = new URL(epBannerDecode(raw), pageUrl);
+	} catch {
+		return { note: "Share image link is broken" };
+	}
+	if (url.protocol === "http:" && !/^(localhost|127\.0\.0\.1)$/.test(url.hostname)) url.protocol = "https:";
+	if (!/^https?:$/.test(url.protocol)) return { note: "Share image is not a web link" };
+	if (/(^|[\/_.-])(logo|logos|favicon|placeholder|default[-_]?(og|share|social|image|thumb)?|blank|spacer)([\/_.-]|$)/i.test(url.pathname)) return { note: "Share image is a generic logo" };
+	const img = url.toString();
+	if (img.length > 1500) return { note: "Share image link too long" };
+	return { image: img };
+}
+async function epBannerFetch(link) {
+	const r = await fetch(link, {
+		headers: {
+			"user-agent": EP_AN_UA,
+			accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5"
+		},
+		redirect: "follow",
+		signal: AbortSignal.timeout(8e3)
+	});
+	if (!r.ok) return { note: "Page answered HTTP " + r.status };
+	if (!/html/i.test(r.headers.get("content-type") || "text/html")) return { note: "Link is not a web page" };
+	const reader = r.body?.getReader();
+	let html = "";
+	if (reader) {
+		const dec = new TextDecoder();
+		while (html.length < 6e5) {
+			const { done, value } = await reader.read();
+			if (done) break;
+			html += dec.decode(value, { stream: true });
+			if (/<\/head>/i.test(html)) break;
+		}
+		try {
+			await reader.cancel();
+		} catch {}
+	} else html = (await r.text()).slice(0, 6e5);
+	return epBannerPick(html, r.url || link, r.headers.get("x-robots-tag"));
+}
+// Looks up the banner for one post and saves it (data.image, credited to the article) unless the post already has one.
+async function epBannerSet(db, rid, link) {
+	let res;
+	try {
+		if (!/^https?:\/\//i.test(String(link || ""))) res = { note: "No source link" };
+		else res = await epBannerFetch(link);
+	} catch (ex) {
+		res = { note: "Could not load the page (" + (ex instanceof Error ? ex.message : String(ex)).slice(0, 80) + ")" };
+	}
+	if (res.image) await db.prepare("UPDATE records SET data=json_set(data,'$.image',json_object('v',?,'fit','cover','src',?,'auto','og')) WHERE id=? AND json_extract(data,'$.image') IS NULL").bind(res.image, link, rid).run();
+	await db.prepare("INSERT INTO post_banner(record_id,checked,image,note) VALUES(?,?,?,?) ON CONFLICT(record_id) DO UPDATE SET checked=excluded.checked, image=excluded.image, note=excluded.note").bind(rid, nowStamp(), res.image || "", res.note || "").run();
+	return res;
+}
+async function epBannerCron(env) {
+	try {
+		await ensureExtraSchema(env.DB);
+		const rows = (await env.DB.prepare(`SELECT id, COALESCE(json_extract(data,'$.link.v'), json_extract(data,'$.link')) AS link FROM records
+      WHERE type='post' AND json_extract(data,'$.image') IS NULL AND COALESCE(json_extract(data,'$.link.v'), json_extract(data,'$.link'), '') LIKE 'http%'
+      AND id NOT IN (SELECT record_id FROM post_banner) ORDER BY id DESC LIMIT ?`).bind(EP_BANNER_PER_TICK).all()).results || [];
+		let n = 0;
+		for (const r of rows) if ((await epBannerSet(env.DB, r.id, r.link)).image) n++;
+		if (rows.length) console.log(`[banner] checked ${rows.length} posts, ${n} got a banner`);
+	} catch (ex) {
+		console.log("[banner] " + (ex instanceof Error ? ex.message : String(ex)));
+	}
+}
 // \0virtual:cloudflare/worker-entry
 var worker_entry_default = {
 	async fetch(request, env, ctx) {
@@ -22443,7 +22545,7 @@ var worker_entry_default = {
 	async scheduled(event, env, ctx) {
 		ctx.waitUntil(epDigestCron(env));
 		ctx.waitUntil(epAutoNewsCron(env));
-		ctx.waitUntil(epSeedCron(env));
+		ctx.waitUntil(epSeedCron(env).then(() => epBannerCron(env)));
 	}
 };
 export { LiveHub, app, worker_entry_default as default };

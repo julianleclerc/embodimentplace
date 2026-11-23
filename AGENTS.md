@@ -37,7 +37,8 @@ There is no original source. The repository was rebuilt from the live deployment
   `worker/dist/index.js`) runs `CREATE TABLE IF NOT EXISTS` and `ALTER TABLE ... ADD COLUMN` on each request's first
   use of the database. Add to those lists, and update `content/schema.sql` only if the table is public content.
 - Scheduled work: `wrangler.json` has an hourly cron (minute 5). The Worker's `scheduled` export runs every job on
-  each tick (`epDigestCron` for Watchlist emails, `epAutoNewsCron` for organisation news). Each job decides for
+  each tick (`epDigestCron` for Watchlist emails, `epAutoNewsCron` for organisation news, `epSeedCron` then
+  `epBannerCron` for imports and article banners). Each job decides for
   itself whether it is due, so add new jobs there instead of new cron lines.
 - D1 rejects a query with more than 100 bound parameters ("too many SQL variables"), and local `wrangler dev` does
   not, so it only fails live. Pass a list of ids as one JSON parameter and read it with
@@ -111,6 +112,10 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   often and time of day), with "Track now" and "Since founding" on demand. An agent (Claude with web search,
   `epAnAgent`, secret `ANTHROPIC_API_KEY`) picks news worth reposting and it is published straight away as News,
   with no review queue.
+- Article banners come from the source page: the publisher's own share image (og:image, then twitter:image), shown
+  from their server and credited to the article, never copied. Pages that opt out of image previews and generic
+  logos get none. A post without an image shows **no banner at all** (no patterned placeholder). New posts get theirs
+  right away from tracking or within the hour from `epBannerCron`; keep any new way of adding articles covered by it.
 - Site-wide switches live in Admin > Site settings (`/admin/site`), stored in the D1 `settings` table and sent to
   the page through `/api/me`. The Latest banner mode (`ticker_mode`: scroll, static, off) is the first one.
   The Latest banner only shows on the front page (`/`).

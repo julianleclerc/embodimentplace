@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.therobotreport.com/agile-robots-raises-500m-to-increase-production-capacity/"
+    },
+    "image": {
+      "v": "https://www.therobotreport.com/wp-content/uploads/2026/11/agilerobots-featured.jpg",
+      "fit": "cover",
+      "src": "https://www.therobotreport.com/agile-robots-raises-500m-to-increase-production-capacity/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

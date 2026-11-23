@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.rfidjournal.com/news/greyorange-acquires-site-bionics-to-accelerate-physical-ai-strategy/225773/"
+    },
+    "image": {
+      "v": "https://www.rfidjournal.com/wp-content/uploads/2026/11/Grey-Orange-Robotics.jpeg",
+      "fit": "cover",
+      "src": "https://www.rfidjournal.com/news/greyorange-acquires-site-bionics-to-accelerate-physical-ai-strategy/225773/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

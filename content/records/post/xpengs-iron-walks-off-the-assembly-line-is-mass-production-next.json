@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.techrepublic.com/article/news-xpeng-iron-assembly-line-apac-china/"
+    },
+    "image": {
+      "v": "https://assets.techrepublic.com/uploads/2026/09/xpeng-iron.jpg?f=jpeg",
+      "fit": "cover",
+      "src": "https://www.techrepublic.com/article/news-xpeng-iron-assembly-line-apac-china/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

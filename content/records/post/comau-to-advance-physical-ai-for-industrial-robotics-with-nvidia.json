@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.sourcesecurity.com/news/comau-advance-physical-ai-industrial-robotics-co-1769783697-ga.1792756690.html"
+    },
+    "image": {
+      "v": "https://www.sourcesecurity.com/img/news/920/comau-to-advance-physical-ai-for-industrial-robotics-with-nvidia-920x533.jpg",
+      "fit": "cover",
+      "src": "https://www.sourcesecurity.com/news/comau-advance-physical-ai-industrial-robotics-co-1769783697-ga.1792756690.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

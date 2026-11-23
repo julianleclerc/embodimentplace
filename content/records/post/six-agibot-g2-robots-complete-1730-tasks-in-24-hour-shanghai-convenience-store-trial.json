@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://markets.businessinsider.com/news/stocks/six-agibot-g2-robots-complete-1-730-tasks-in-24-hour-shanghai-convenience-store-trial-1036733492"
+    },
+    "image": {
+      "v": "https://ml.globenewswire.com/Resource/Download/66f78495-0180-4822-8471-e94248100a80/1-1.png",
+      "fit": "cover",
+      "src": "https://markets.businessinsider.com/news/stocks/six-agibot-g2-robots-complete-1-730-tasks-in-24-hour-shanghai-convenience-store-trial-1036733492",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

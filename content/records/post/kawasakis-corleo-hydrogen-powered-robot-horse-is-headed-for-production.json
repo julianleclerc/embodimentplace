@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.topspeed.com/kawasakis-corleo-hydrogen-powered-robot-horse-is-headed-for-production/"
+    },
+    "image": {
+      "v": "https://static0.topspeedimages.com/wordpress/wp-content/uploads/2026/11/kawasaki-corleo-concept-close-up-shot.jpeg?w=1600&h=900&fit=crop",
+      "fit": "cover",
+      "src": "https://www.topspeed.com/kawasakis-corleo-hydrogen-powered-robot-horse-is-headed-for-production/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

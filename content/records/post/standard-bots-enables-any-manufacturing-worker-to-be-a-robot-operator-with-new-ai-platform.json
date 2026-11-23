@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.morningstar.com/news/business-wire/20261015248811/standard-bots-enables-any-manufacturing-worker-to-be-a-robot-operator-with-new-ai-platform"
+    },
+    "image": {
+      "v": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+      "fit": "cover",
+      "src": "https://www.morningstar.com/news/business-wire/20261015248811/standard-bots-enables-any-manufacturing-worker-to-be-a-robot-operator-with-new-ai-platform",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

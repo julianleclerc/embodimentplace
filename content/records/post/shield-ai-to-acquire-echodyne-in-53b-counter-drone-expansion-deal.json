@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://thedefensepost.com/2026/11/09/shield-ai-echodyne-acquisition/"
+    },
+    "image": {
+      "v": "https://thedefensepost.com/wp-content/uploads/2026/04/radar-counter-drone.jpg",
+      "fit": "cover",
+      "src": "https://thedefensepost.com/2026/11/09/shield-ai-echodyne-acquisition/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

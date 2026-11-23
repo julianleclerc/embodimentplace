@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://thedefensepost.com/2026/11/16/shield-ai-nippi-vbat-japan/"
+    },
+    "image": {
+      "v": "https://thedefensepost.com/wp-content/uploads/2026/01/shield-ai.jpg",
+      "fit": "cover",
+      "src": "https://thedefensepost.com/2026/11/16/shield-ai-nippi-vbat-japan/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.news-medical.net/Sterimove-robot-for-aseptic-cleanroom-applications"
+    },
+    "image": {
+      "v": "https://www.news-medical.net/images/equipments/ImageForEquipment_7636_17756237568222778.png",
+      "fit": "cover",
+      "src": "https://www.news-medical.net/Sterimove-robot-for-aseptic-cleanroom-applications",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

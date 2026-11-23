@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.techrepublic.com/article/news-tesla-optimus-robot-production-2027-sales-timeline/"
+    },
+    "image": {
+      "v": "https://assets.techrepublic.com/uploads/2026/10/tr-10122026-tesla-optimus-robot.jpg?f=jpeg",
+      "fit": "cover",
+      "src": "https://www.techrepublic.com/article/news-tesla-optimus-robot-production-2027-sales-timeline/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

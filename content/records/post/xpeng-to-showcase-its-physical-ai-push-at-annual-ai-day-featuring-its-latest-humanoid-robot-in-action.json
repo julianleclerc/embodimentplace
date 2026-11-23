@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://markets.businessinsider.com/news/stocks/xpeng-to-showcase-its-physical-ai-push-at-annual-ai-day-featuring-its-latest-humanoid-robot-in-action-1036784481"
+    },
+    "image": {
+      "v": "https://ml.globenewswire.com/Resource/Download/815a2e69-bb85-4345-862d-5b3da885f2a9/20261119-181425.jpg",
+      "fit": "cover",
+      "src": "https://markets.businessinsider.com/news/stocks/xpeng-to-showcase-its-physical-ai-push-at-annual-ai-day-featuring-its-latest-humanoid-robot-in-action-1036784481",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

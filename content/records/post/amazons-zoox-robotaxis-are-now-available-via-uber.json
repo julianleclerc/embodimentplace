@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.theverge.com/transportation/1032984/uber-zoox-robotaxi-las-vegas-launch-mgm-resorts-los-angeles"
+    },
+    "image": {
+      "v": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/MGM-x-Uber-x-Zoox.jpg?quality=90&strip=all&crop=0%2C10.750043134499%2C100%2C78.499913731003&w=1200",
+      "fit": "cover",
+      "src": "https://www.theverge.com/transportation/1032984/uber-zoox-robotaxi-las-vegas-launch-mgm-resorts-los-angeles",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

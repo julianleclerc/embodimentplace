@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://ca.finance.yahoo.com/news/neura-robotics-acquires-adlatus-build-111558970.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/a4c7c3df965f037d05fbde432e0ab6a6006795d996becb05d2dbcfe45e9884b1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fpitchbook_790%2Ffcf838e18e4d8b67a5f83217c71837d4.jpg",
+      "fit": "cover",
+      "src": "https://ca.finance.yahoo.com/news/neura-robotics-acquires-adlatus-build-111558970.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

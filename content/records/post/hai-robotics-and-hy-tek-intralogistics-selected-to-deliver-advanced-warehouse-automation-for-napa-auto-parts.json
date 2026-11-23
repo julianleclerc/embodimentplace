@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/articles/hai-robotics-hy-tek-intralogistics-130000867.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/9cadba173a9f490ff35cc9c7b5d8dfc7aa0142eb3a0651535978fc84f5461b53/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnewsfile_64%2F1fbddab9725d7ef11ede465988d0722d.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/articles/hai-robotics-hy-tek-intralogistics-130000867.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

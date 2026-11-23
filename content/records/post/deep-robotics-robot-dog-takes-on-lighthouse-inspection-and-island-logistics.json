@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/ai/articles/deep-robotics-robot-dog-takes-045500437.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/31a39f3d28bfa5795b9be638ceb0a93468c33b7ff95dedc5593ce3dce4e16e40/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Faccesswire.ca%2Fabfe0883d7f313c4a895064ddf5bec0f.png",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/ai/articles/deep-robotics-robot-dog-takes-045500437.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

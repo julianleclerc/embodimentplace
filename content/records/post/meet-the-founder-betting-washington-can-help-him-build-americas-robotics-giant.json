@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.businessinsider.com/he-wants-to-build-americas-robotics-giant-will-washington-help-2026-11"
+    },
+    "image": {
+      "v": "https://i.insider.com/6af38c88a96052a81c349b1b?width=1200&format=jpeg",
+      "fit": "cover",
+      "src": "https://www.businessinsider.com/he-wants-to-build-americas-robotics-giant-will-washington-help-2026-11",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

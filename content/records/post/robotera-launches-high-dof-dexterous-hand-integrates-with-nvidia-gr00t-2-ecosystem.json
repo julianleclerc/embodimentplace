@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://autonews.gasgoo.com/articles/news/robotera-launches-high-dof-dexterous-hand-integrates-with-nvidia-gr00t-2-ecosystem-2122578308449099777"
+    },
+    "image": {
+      "v": "https://imagecn.gasgoo.com/moblogo/News/UEditor/image/20261116/6393043292100826676660133.png",
+      "fit": "cover",
+      "src": "https://autonews.gasgoo.com/articles/news/robotera-launches-high-dof-dexterous-hand-integrates-with-nvidia-gr00t-2-ecosystem-2122578308449099777",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

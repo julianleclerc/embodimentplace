@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/ai/articles/path-robotics-announces-300-million-140500145.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/a7f9e0f808c2fbe52221c83ccf6917d0debf2f6705e896eca3a740379fadf4eb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbusiness-wire.com%2F0545573e59654aec05a480669aae49cf.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/ai/articles/path-robotics-announces-300-million-140500145.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

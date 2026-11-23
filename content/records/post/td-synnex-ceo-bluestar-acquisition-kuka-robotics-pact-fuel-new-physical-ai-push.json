@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.crn.com/news/channel-news/2026/td-synnex-ceo-bluestar-acquisition-kuka-robotics-pact-fuel-new-physical-ai-push"
+    },
+    "image": {
+      "v": "https://www.crn.com/news/channel-news/2026/media_1fd383ef1dcb766aa4df0c04210d5069d2559bb55.png?width=1200&format=pjpg&optimize=medium",
+      "fit": "cover",
+      "src": "https://www.crn.com/news/channel-news/2026/td-synnex-ceo-bluestar-acquisition-kuka-robotics-pact-fuel-new-physical-ai-push",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

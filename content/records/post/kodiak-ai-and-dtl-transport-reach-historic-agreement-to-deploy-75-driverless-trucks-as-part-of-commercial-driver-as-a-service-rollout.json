@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://markets.businessinsider.com/news/stocks/kodiak-ai-and-dtl-transport-reach-historic-agreement-to-deploy-75-driverless-trucks-as-part-of-commercial-driver-as-a-service-rollout-1036676817"
+    },
+    "image": {
+      "v": "https://ml.globenewswire.com/media/7397076e-22eb-4ad8-bf18-7d49f239a306/small/kodiak-ai-inc-jpg.jpg",
+      "fit": "cover",
+      "src": "https://markets.businessinsider.com/news/stocks/kodiak-ai-and-dtl-transport-reach-historic-agreement-to-deploy-75-driverless-trucks-as-part-of-commercial-driver-as-a-service-rollout-1036676817",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/articles/unitree-famous-dancing-robots-surges-125135333.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/8ca42767b89638296b1c838cd7187a0a7e9c9e25e1d298d1200b5e49d13f5072/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ffortune_175%2F70998fc85173a5fe18782466e9612cc2.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/articles/unitree-famous-dancing-robots-surges-125135333.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

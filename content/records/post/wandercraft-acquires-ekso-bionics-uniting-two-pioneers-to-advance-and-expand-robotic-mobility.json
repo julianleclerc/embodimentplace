@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://markets.businessinsider.com/news/stocks/wandercraft-acquires-ekso-bionics-uniting-two-pioneers-to-advance-and-expand-robotic-mobility-1036591764"
+    },
+    "image": {
+      "v": "https://ml.globenewswire.com/media/a7652c6e-47ec-49fc-a6e7-a98c2a297944/small/wandercraft-black-1-large-jpg.jpg",
+      "fit": "cover",
+      "src": "https://markets.businessinsider.com/news/stocks/wandercraft-acquires-ekso-bionics-uniting-two-pioneers-to-advance-and-expand-robotic-mobility-1036591764",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.techrepublic.com/article/news-figure-03-humanoid-robot-348-mile-endurance-test/"
+    },
+    "image": {
+      "v": "https://assets.techrepublic.com/uploads/2026/10/figure-03.jpg?f=jpeg",
+      "fit": "cover",
+      "src": "https://www.techrepublic.com/article/news-figure-03-humanoid-robot-348-mile-endurance-test/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

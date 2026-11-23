@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://autos.yahoo.com/safety-and-recalls/articles/waymo-files-two-recalls-robotaxis-213600580.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/a051ef3f61411089acd8bea6a6857c53f4e15020a1a0d0d2641b071c743f887d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthetruthaboutcars_com_794%2Fa89a3ba0909042892806b803ef6dc1b5.jpg",
+      "fit": "cover",
+      "src": "https://autos.yahoo.com/safety-and-recalls/articles/waymo-files-two-recalls-robotaxis-213600580.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

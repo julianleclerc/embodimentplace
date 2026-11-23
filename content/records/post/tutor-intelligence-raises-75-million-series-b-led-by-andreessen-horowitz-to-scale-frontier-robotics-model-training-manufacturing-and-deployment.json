@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/ai/articles/tutor-intelligence-raises-75-million-160000524.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/d15434c7f7c568eb6a3507fd203da31db104ee3411e3350a1c57678b3dcee43b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbusiness-wire.com%2Fe81addfecccb350278ed4ef4ee772c26.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/ai/articles/tutor-intelligence-raises-75-million-160000524.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

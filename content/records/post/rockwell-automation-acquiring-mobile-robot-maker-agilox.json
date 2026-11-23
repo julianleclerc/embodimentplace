@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.therobotreport.com/rockwell-automation-acquiring-mobile-robot-maker-agilox/"
+    },
+    "image": {
+      "v": "https://www.therobotreport.com/wp-content/uploads/2026/11/agilox-x-logimat-2026-124-scaled-1.jpg",
+      "fit": "cover",
+      "src": "https://www.therobotreport.com/rockwell-automation-acquiring-mobile-robot-maker-agilox/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

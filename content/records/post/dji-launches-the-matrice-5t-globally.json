@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://uavcoach.com/dji-matrice-5t/"
+    },
+    "image": {
+      "v": "https://uavcoach.com/wp-content/uploads/2026/11/dji-matrice-5t-hero.jpg",
+      "fit": "cover",
+      "src": "https://uavcoach.com/dji-matrice-5t/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

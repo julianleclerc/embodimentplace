@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/ai/articles/agile-robots-launches-agile-one-062200731.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/59c9bfb414f7f758f46d736620ad00d9d2ef2d74cf1f77bc963ec39e50dad431/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprnewswire.com%2Fe42d5d8f8fabd4c84d91c8eb35bc6c14.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/ai/articles/agile-robots-launches-agile-one-062200731.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

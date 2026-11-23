@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.koreatimes.co.kr/business/tech-science/20261101/hd-hyundai-robotics-palantir-to-slash-robot-programming-costs-with-ai"
+    },
+    "image": {
+      "v": "https://newsimg.koreatimes.co.kr/2026/11/01/3f2f0085-2c06-4f2e-b68f-6fdacb9e8a11.png",
+      "fit": "cover",
+      "src": "https://www.koreatimes.co.kr/business/tech-science/20261101/hd-hyundai-robotics-palantir-to-slash-robot-programming-costs-with-ai",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

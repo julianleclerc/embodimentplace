@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.prnewswire.com/news-releases/galaxea-ai-demonstrated-fullstack-capabilities-and-embodied-ai-generalization-at-its-wrc-2026-productivity-awakening-exhibition-302857784.html"
+    },
+    "image": {
+      "v": "https://mmx.prnewswire.com/media/MS1974050/20260823075431EDT_image_1.jpg?id=OA2904321&p=facebook",
+      "fit": "cover",
+      "src": "https://www.prnewswire.com/news-releases/galaxea-ai-demonstrated-fullstack-capabilities-and-embodied-ai-generalization-at-its-wrc-2026-productivity-awakening-exhibition-302857784.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

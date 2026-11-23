@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.therobotreport.com/boston-dynamics-atlas-humanoid-lands-first-non-automotive-trial/"
+    },
+    "image": {
+      "v": "https://www.therobotreport.com/wp-content/uploads/2026/11/atlas-globalfoundries.jpg",
+      "fit": "cover",
+      "src": "https://www.therobotreport.com/boston-dynamics-atlas-humanoid-lands-first-non-automotive-trial/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

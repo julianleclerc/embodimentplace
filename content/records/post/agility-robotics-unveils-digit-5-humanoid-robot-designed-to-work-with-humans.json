@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.foxbusiness.com/video/6405151349112"
+    },
+    "image": {
+      "v": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/36b47376-45c7-4045-8c7b-a8ed9774867f/bf3897f4-1ff8-48d6-b865-1ae8e28de8fc/1280x720/match/1024/512/image.jpg?ve=1&tl=1",
+      "fit": "cover",
+      "src": "https://www.foxbusiness.com/video/6405151349112",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

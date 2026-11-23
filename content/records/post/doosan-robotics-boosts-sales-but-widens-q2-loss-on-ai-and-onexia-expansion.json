@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://biz.chosun.com/en/en-industry/2026/07/24/JDMOHZAANNGGPJAKQ46DJB6TN4/"
+    },
+    "image": {
+      "v": "https://biz.chosun.com/resizer/v2/GOUHNWF26FEG5PQBBHOJAUQERU.JPG?auth=6a65063aa913bdc8d33220f2ce83b3200b652df72ee1277e59cbf9ba4f858643&width=1200&height=630&smart=true",
+      "fit": "cover",
+      "src": "https://biz.chosun.com/en/en-industry/2026/07/24/JDMOHZAANNGGPJAKQ46DJB6TN4/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/ai/articles/minerva-humanoids-emerges-stealth-10m-101000013.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/069d906abeba7a7b0e9ce96aaa96d09c20f612c73846e0cf4f2d804f5cdcf4b3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fglobenewswire.com%2F561afddcb4022439b3d1764f2144c1f8.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/ai/articles/minerva-humanoids-emerges-stealth-10m-101000013.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

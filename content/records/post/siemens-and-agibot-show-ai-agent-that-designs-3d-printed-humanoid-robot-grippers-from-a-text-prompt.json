@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://3dprintingindustry.com/news/siemens-and-agibot-show-ai-agent-that-designs-3d-printed-humanoid-robot-grippers-from-a-text-prompt-256961/"
+    },
+    "image": {
+      "v": "https://3dprintingindustry.com/wp-content/uploads/2026/11/di-additive-manufacturing-keyvisual-16zu9-srgb-Hero.jpg",
+      "fit": "cover",
+      "src": "https://3dprintingindustry.com/news/siemens-and-agibot-show-ai-agent-that-designs-3d-printed-humanoid-robot-grippers-from-a-text-prompt-256961/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

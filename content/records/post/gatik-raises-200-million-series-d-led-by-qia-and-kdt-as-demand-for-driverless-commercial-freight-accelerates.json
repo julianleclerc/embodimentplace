@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/ai/articles/gatik-raises-200-million-series-130000023.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/ada53f5a71d83eea235f4c6e883ec40a0cd57881b094e266b69f2fa3070890fa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbusiness-wire.com%2F1fd694c416ee316c4b02b72563df6c33.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/ai/articles/gatik-raises-200-million-series-130000023.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

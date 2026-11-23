@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/"
+    },
+    "image": {
+      "v": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Radeco-Cerberus-robot-1152x648.jpg",
+      "fit": "cover",
+      "src": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

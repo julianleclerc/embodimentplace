@@ -46,6 +46,8 @@ CREATE TABLE meet_requests(id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL REFE
 CREATE TABLE owners(user_id INTEGER NOT NULL, company_id INTEGER NOT NULL REFERENCES records(id) ON DELETE CASCADE,
         created TEXT, email TEXT DEFAULT '', PRIMARY KEY(user_id, company_id));
 
+CREATE TABLE post_banner(record_id INTEGER PRIMARY KEY, checked TEXT, image TEXT DEFAULT '', note TEXT DEFAULT '');
+
 CREATE TABLE presence(
     event_id INTEGER, cid TEXT, user_id INTEGER, name TEXT, seen REAL, PRIMARY KEY(event_id, cid));
 

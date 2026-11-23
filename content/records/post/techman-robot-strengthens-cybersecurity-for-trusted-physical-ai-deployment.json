@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.prnewswire.co.uk/news-releases/techman-robot-strengthens-cybersecurity-for-trusted-physical-ai-deployment-302899568.html"
+    },
+    "image": {
+      "v": "https://mmx.prnewswire.com/media/MS2003149/20261006023135EDT_image_1.jpg?id=OA2989524&p=facebook",
+      "fit": "cover",
+      "src": "https://www.prnewswire.co.uk/news-releases/techman-robot-strengthens-cybersecurity-for-trusted-physical-ai-deployment-302899568.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

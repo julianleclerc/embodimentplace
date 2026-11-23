@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.techrepublic.com/article/news-toyota-400000-factory-robots-apac-japan/"
+    },
+    "image": {
+      "v": "https://assets.techrepublic.com/uploads/2026/09/toyota-ai.jpg?f=jpeg",
+      "fit": "cover",
+      "src": "https://www.techrepublic.com/article/news-toyota-400000-factory-robots-apac-japan/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

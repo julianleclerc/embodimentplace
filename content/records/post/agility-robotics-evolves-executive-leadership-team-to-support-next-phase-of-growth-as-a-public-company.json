@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/ai/articles/agility-robotics-evolves-executive-leadership-120000806.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/c0b7c6061afeddc2e79d7dbd5782156569ace7d67a36e1d523d49e17e9b5432d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fglobenewswire.com%2F5ad66446f3267ae6fbcae9d3f7a1cca3.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/ai/articles/agility-robotics-evolves-executive-leadership-120000806.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

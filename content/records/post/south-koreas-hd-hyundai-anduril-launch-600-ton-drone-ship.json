@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.upi.com/Top_News/World-News/2026/11/15/hd-hyundai-anduril-industries-unmanned-surface-vessel/4031794789178/"
+    },
+    "image": {
+      "v": "https://cdnph.upi.com/sv/ph/og/i/4031794789178/2026/1/17947892781436/v1.5/South-Koreas-HD-Hyundai-Anduril-launch-600-ton-drone-ship.jpg",
+      "fit": "cover",
+      "src": "https://www.upi.com/Top_News/World-News/2026/11/15/hd-hyundai-anduril-industries-unmanned-surface-vessel/4031794789178/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

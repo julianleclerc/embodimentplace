@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://www.unite.ai/robotera-deploys-humanoid-robots-at-11-postal-hubs-in-guangdong/"
+    },
+    "image": {
+      "v": "https://www.unite.ai/wp-content/uploads/2026/11/robotera-deploys-humanoid-robots-at-11-postal-hubs-in-guangdong.jpg",
+      "fit": "cover",
+      "src": "https://www.unite.ai/robotera-deploys-humanoid-robots-at-11-postal-hubs-in-guangdong/",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

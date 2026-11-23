@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://finance.yahoo.com/technology/articles/german-robotics-startup-robco-hits-122502353.html"
+    },
+    "image": {
+      "v": "https://s.yimg.com/lo/mysterio/api/1bfda1e7234ec3d8b9e8a2baacc0dbfe2b66b526836e997f56104baf1448f659/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fquartz_855%2F3539c972d260259edb092110820c4ec8.jpg",
+      "fit": "cover",
+      "src": "https://finance.yahoo.com/technology/articles/german-robotics-startup-robco-hits-122502353.html",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

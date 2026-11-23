@@ -20,6 +20,12 @@
     },
     "link": {
       "v": "https://markets.businessinsider.com/news/stocks/walmart-and-symbotic-expand-commercial-agreement-to-support-supply-chain-transformation-1036687703"
+    },
+    "image": {
+      "v": "https://ml.globenewswire.com/media/a3a71915-abe3-4982-ad9d-7a956681b8c2/small/symbotic-horizontal-full-color-png.png",
+      "fit": "cover",
+      "src": "https://markets.businessinsider.com/news/stocks/walmart-and-symbotic-expand-commercial-agreement-to-support-supply-chain-transformation-1036687703",
+      "auto": "og"
     }
   },
   "created": "2026-11-22 03:05:17",

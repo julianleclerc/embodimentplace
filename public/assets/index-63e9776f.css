@@ -940,3 +940,18 @@ html.ep-pv-open,html.ep-pv-open body{overflow:hidden}
  .epct-k{font-size:.5rem;padding:2px 5px;top:auto;bottom:6px;left:6px;max-width:calc(100% - 12px)}
  .epct .epcmpb{top:6px;right:6px;font-size:.5rem;padding:3px 5px;min-height:20px}
 }
+/* epCatKinds: kind chips under the Catalogue toolbar (tap to show one kind, tap again for all) and one section per kind (.epcsec) with a heading. */
+.epckinds{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.epckind{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;border:1px solid var(--hair);background:transparent;color:var(--ink);font-size:.85rem;padding:6px 12px;border-radius:999px;cursor:pointer;line-height:1.2}
+.epckind i{font-style:normal;font-family:var(--mono);font-size:.7rem;opacity:.6}
+.epckind.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.epckind.on i{opacity:1}
+.epcsecs{display:flex;flex-direction:column;gap:26px;margin-top:14px}
+.epcsech{margin:0 0 10px;font-size:1.25rem;line-height:1.2;border-bottom:1px solid var(--hair);padding-bottom:6px}
+.epcsech button{all:unset;cursor:pointer;display:flex;align-items:baseline;gap:8px;width:100%}
+.epcsech i{font-style:normal;font-family:var(--mono);font-size:.75rem;opacity:.55}
+.epcsech em{margin-left:auto;font-style:normal;font-family:var(--mono);font-size:.68rem;text-transform:uppercase;opacity:.6}
+.epcsech button:hover em{opacity:1}
+@media (max-width:640px){.epckinds{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:8px -12px 2px;padding:0 12px}.epckinds::-webkit-scrollbar{display:none}.epckind{flex:0 0 auto}.epcsecs{gap:20px}.epcsech{font-size:1.1rem}}
+.epcsec .epct-k,.epcone .epct-k{display:none}
+@media (max-width:640px){.epctools .epometa{justify-content:space-between;flex-wrap:nowrap}.epctools .epometa .epon{flex:1 1 auto}.epctools .epometa .eposel{flex:0 0 auto}.epctools .epometa .eposel select{width:auto;max-width:11em;min-width:0;padding:5px 8px;font-size:16px}}

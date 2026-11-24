@@ -722,3 +722,32 @@ html.ep-orgmap footer,html.ep-orgmap .site-foot{display:none}
 .eplw .eplist-role{font-style:normal;font-family:var(--mono);text-transform:uppercase;font-size:.58rem;color:var(--muted);letter-spacing:.04em}
 .eplw .eplist-go{width:34px;height:34px;padding:0;display:inline-flex;align-items:center;justify-content:center;font-size:.9rem}
 @media (min-width:761px){html.ep-orgmap .cw-panel.eplw{height:min(520px,calc(100vh - 320px));min-height:240px}}
+
+/* epOrgMap5: (1) map buttons (Grid/Map switch, List, zoom) use the same look as the dock buttons (Lounge, Walk,
+   Online): 1px ink border, paper fill, mono caps, no hard ink shadow, accent shadow on hover, inverted when on;
+   36px tall on desktop and 44px on phone, 8px gaps. (2) On desktop the "Find an organisation" bar sits at the top
+   right, just left of the switch, and is layered above the pop-up cards. */
+.epvsw{box-shadow:none;width:150px;box-sizing:border-box;transition:box-shadow .15s}
+.epvsw:hover{box-shadow:4px 4px 0 var(--accent)}
+.epvsw button{flex:1;justify-content:center;height:34px;padding:0 10px;font-size:.75rem;letter-spacing:0;gap:6px}
+.epvsw button.on{background:var(--inv);color:var(--inv-ink)}
+.epfull .eplist-btn,.epfull .omap-ctl{box-shadow:none;transition:box-shadow .15s}
+.epfull .eplist-btn:hover,.epfull .omap-ctl:hover{box-shadow:4px 4px 0 var(--accent);background:var(--paper)}
+.epfull .eplist-btn.on,.epfull .eplist-btn.on:hover{background:var(--inv);color:var(--inv-ink);box-shadow:3px 3px 0 var(--accent)}
+.epfull .eplist-btn{top:58px;right:calc(var(--g,12px) + 44px);width:106px;height:36px;font-size:.75rem;letter-spacing:0;box-sizing:border-box}
+.epfull .omap-ctl{top:58px;right:var(--g,12px)}
+.epfull .omap-ctl button{width:34px;height:34px;font-size:1.05rem}
+.epfull .omap-ctl button:hover{background:var(--hover)}
+@media (max-width:760px){
+  .epvsw button{height:42px}
+  .epfull .eplist-btn{top:66px;right:calc(var(--g,12px) + 52px);width:98px;height:44px}
+  .epfull .omap-ctl button{width:42px;height:42px}
+  .epfull .omap-ctl{top:66px}
+  .epmf-tog{min-height:44px;font-size:.75rem}
+}
+@media (min-width:761px){
+  .epfull .omap .omap-filters{top:11px;bottom:auto;left:auto;right:calc(var(--g,12px) + 158px);z-index:40;min-width:0;
+    max-width:calc(100% - 2*var(--g,12px) - 170px);min-height:36px;box-sizing:border-box;padding:3px;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+  .epfull .omap .omap-filters input,.epfull .omap .omap-filters select{height:28px;padding:0 8px;box-sizing:border-box}
+  .epfull .omap .omap-filters:focus-within{box-shadow:4px 4px 0 var(--accent)}
+}

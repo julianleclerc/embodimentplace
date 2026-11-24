@@ -39,8 +39,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   square `.epotag` buttons with a "Kind" label (no more rounded pills in Arial), cards with the `.ocard` hairline
   border and `.oc-name` name size, the card Compare button styled like Follow (`.ep-wbtn`, "+ Compare"), the kind
   label as a `.chip`, and the preview and compare bar actions as `.btn`. The "Only these" link on section headings is
-  gone (the heading itself still isolates the kind). Catalogue stays highlighted in the menu on `/compare`. CSS block
-  `epCatTidy`; the old `.epchead`/`.epctools` grid and the pill styles were removed.
+  gone (the heading itself still isolates the kind). Catalogue stays highlighted in the menu on `/compare`. The Compare bar now sits in the dock row, level with the
+  Lounge button and left of it (same bottom and height, measured from `.cdock` into `--epdock*`), so it no longer
+  covers the middle of the page; on a phone it shrinks to kind, count, Compare and ×. CSS blocks `epCatTidy`,
+  `epCmpDock`; the old `.epchead`/`.epctools` grid and the pill styles were removed.
 
 - **Catalogue grouped by kind.** Julian didn't like humanoids, arms and quadrupeds mixed in one grid (same for the
   other types). Within a type, Catalogue now shows one section per kind with a heading and count (biggest kind first,

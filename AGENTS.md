@@ -106,7 +106,7 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   redirect to that tag. The page loads everything from `/api/orgs?group=all` and pages 24 at a time.
 - Robots, hardware, models and software share one top-menu tab, **Catalogue** (`/catalogue`, frontend
   `epCatalogue`/`epCatCard`, Worker `GET /api/catalogue` via `epCatalogue`). There are no separate Robots, Hardware,
-  Models or Software tabs, and no "All" tag: it opens on Robots. Types are single-select tags kept in the URL (`?tag=robots|hardware|models|software`),
+  Models or Software tabs, and no "All" tag: it opens on Robots. Types are a header switch (like Grid/Map on Organisations), kept in the URL (`?tag=robots|hardware|models|software`),
   and within a type items are grouped into one section per kind (humanoids, arms, quadrupeds...), never one mixed grid.
   Kind tags isolate one kind (`&kind=humanoid`). Catalogue, preview and Compare reuse the shared classes (`.epotag`,
   `.ep-wbtn`, `.chip`, `.btn`, `.listhead`/`.oblurb`); don't give them their own button or font styles. Old `/t/<category>`, `/t/model`, `/t/benchmark` and

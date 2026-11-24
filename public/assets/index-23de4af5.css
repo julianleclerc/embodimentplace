@@ -953,3 +953,17 @@ html.ep-pv-open,html.ep-pv-open body{overflow:hidden}
  .epcmpbar .epcmpbar-go{padding:0 9px;font-size:.66rem}
  .epcmpbar-x{width:28px;font-size:1.1rem}
 }
+
+/* epCatSwitch: Robots / Hardware / Models / Software is a switch in the Catalogue header (same .epvsw style as the
+   Organisations Grid/Map switch); the kinds are the only tag row. */
+.epchd{align-items:flex-end;flex-wrap:wrap}
+.epchd .epcsw{width:auto;margin-left:auto;margin-bottom:10px}
+.epcsw button{padding:0 14px;gap:6px}
+.epcsw button i{font-style:normal;opacity:.6;font-size:.68rem}
+.epcsw button.on i{opacity:.85}
+@media (max-width:720px){
+ main.wrap .epchd{flex-wrap:wrap}
+ .epchd .epcsw{width:100%;margin:6px 0 2px}
+ .epcsw button{flex:1 1 auto;padding:0 4px;font-size:.66rem;gap:4px}
+ .epcsw button i{font-size:.6rem}
+}

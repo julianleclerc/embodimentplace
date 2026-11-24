@@ -33,6 +33,9 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Grid/Map switch on the top right.** Same spot in both views, now at the right gutter; in Map view the map's
+  List and zoom buttons sit 52px lower, under the switch. CSS block `epOrgMap3`.
+
 - **Grid/Map switch stays in one place.** The switch is now the first row of the page (`.epvbar`), 12px under the
   header at the left gutter, and in Map view it floats over the map at exactly the same spot, so it never moves when
   you switch. Restyled with grid and pin icons and a hard shadow (`epViewSw`, CSS block `epOrgMap2`).

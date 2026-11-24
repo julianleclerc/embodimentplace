@@ -33,6 +33,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Cleaner Organisations page, phone first.** Julian found the first version (PR #56) awkward. The search box now
+  comes first; the type tags are a single row (one line that swipes sideways on a phone, wraps on desktop) and pick
+  one type at a time (tap again or All to clear); a line under them shows the count, a Clear link, and compact
+  Country and Sort menus. On a phone the intro text and Grid/Table switch are hidden so the list starts on the first
+  screen. Cards put the logo on the left with the name and Follow beside it, and summaries clamp to two lines.
+  Card chips are plain labels again (tapping them filtered instead of opening the card). Frontend `Mr`; CSS block
+  `epOrgTags2` replaces `epOrgTags`.
+
 - **Organisations on one page, with type tags.** The per-type subtabs (Robot makers, Model labs, Universities...) are
   gone. `/orgs` lists every organisation once, with a row of type tags (with counts) to filter by; pick several to
   combine them (any match). Tapping a type chip on a card filters by it too. Also added a name search and a "Type"

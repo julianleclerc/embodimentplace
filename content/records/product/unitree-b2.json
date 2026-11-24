@@ -15,9 +15,59 @@
       "v": "Commercial",
       "src": "https://www.unitree.com/b2/",
       "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 60,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 40,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "speed_mps": {
+      "v": 6,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 5,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "step_cm": {
+      "v": 40,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "slope_deg": {
+      "v": 45,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "length_cm": {
+      "v": 109.8,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "width_cm": {
+      "v": 45,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 64.5,
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
+    },
+    "ip_rating": {
+      "v": "IP67",
+      "src": "https://www.unitree.com/b2/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

@@ -15,9 +15,29 @@
       "v": "Commercial",
       "src": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa",
       "asof": "2026-11"
+    },
+    "dof": {
+      "v": 7,
+      "src": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa",
+      "asof": "2026-11"
+    },
+    "reach_mm": {
+      "v": 800,
+      "src": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 7,
+      "src": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa",
+      "asof": "2026-11"
+    },
+    "ip_rating": {
+      "v": "IP54",
+      "src": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

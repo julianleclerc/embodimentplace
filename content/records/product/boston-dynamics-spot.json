@@ -15,9 +15,54 @@
       "v": "Commercial",
       "src": "https://bostondynamics.com/products/spot/",
       "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 33.8,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "speed_mps": {
+      "v": 1.6,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 1.5,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "step_cm": {
+      "v": 30,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "slope_deg": {
+      "v": 30,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "length_cm": {
+      "v": 110,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "width_cm": {
+      "v": 50,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 61,
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
+    },
+    "ip_rating": {
+      "v": "IP54",
+      "src": "https://bostondynamics.com/products/spot/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

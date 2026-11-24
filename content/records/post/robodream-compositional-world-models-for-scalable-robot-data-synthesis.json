@@ -1,0 +1,31 @@
+{
+  "id": 372,
+  "type": "post",
+  "slug": "robodream-compositional-world-models-for-scalable-robot-data-synthesis",
+  "name": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis",
+  "summary": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis robyn.cherinka… Mon, 11/23/2026 - 15:34 Scaling robot learning requires large-scale, diverse demonstrations, yet real-world…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "tri.global"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "http://www.tri.global/research/robodream-compositional-world-models-scalable-robot-data-synthesis"
+    },
+    "auto_news": {
+      "v": "Yes"
+    }
+  },
+  "created": "2026-11-24 05:05:23",
+  "updated": "2026-11-24 05:05:23",
+  "feed_at": "2026-11-23"
+}

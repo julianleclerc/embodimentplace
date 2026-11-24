@@ -1,0 +1,31 @@
+{
+  "id": 373,
+  "type": "post",
+  "slug": "polaris-scalable-real-to-sim-evaluations-for-generalist-robot-policies",
+  "name": "PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies",
+  "summary": "PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies robyn.cherinka… Mon, 11/23/2026 - 15:14 A significant challenge for robot learning research is our ability to accurately…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "tri.global"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "http://www.tri.global/research/polaris-scalable-real-sim-evaluations-generalist-robot-policies"
+    },
+    "auto_news": {
+      "v": "Yes"
+    }
+  },
+  "created": "2026-11-24 05:05:24",
+  "updated": "2026-11-24 05:05:24",
+  "feed_at": "2026-11-23"
+}

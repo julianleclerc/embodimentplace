@@ -15,9 +15,34 @@
       "v": "Bipedal",
       "src": "https://www.unitree.com/mobile/R1/",
       "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 123,
+      "src": "https://www.unitree.com/mobile/R1/",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 29,
+      "src": "https://www.unitree.com/mobile/R1/",
+      "asof": "2026-11"
+    },
+    "price_usd": {
+      "v": 5900,
+      "src": "https://www.unitree.com/mobile/R1/",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 1,
+      "src": "https://www.unitree.com/mobile/R1/",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 26,
+      "src": "https://www.unitree.com/mobile/R1/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

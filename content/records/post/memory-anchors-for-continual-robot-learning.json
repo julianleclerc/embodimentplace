@@ -1,0 +1,31 @@
+{
+  "id": 370,
+  "type": "post",
+  "slug": "memory-anchors-for-continual-robot-learning",
+  "name": "Memory Anchors for Continual Robot Learning",
+  "summary": "Memory Anchors for Continual Robot Learning robyn.cherinka… Mon, 11/23/2026 - 15:50 Robot policies deployed in the wild should have the capability to continually learn new tasks without forgetting…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "tri.global"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "http://www.tri.global/research/memory-anchors-continual-robot-learning"
+    },
+    "auto_news": {
+      "v": "Yes"
+    }
+  },
+  "created": "2026-11-24 05:05:21",
+  "updated": "2026-11-24 05:05:21",
+  "feed_at": "2026-11-23"
+}

@@ -20,9 +20,39 @@
       "v": 20,
       "src": "https://www.universal-robots.com/manuals/latest/en/datasheets/ur20/",
       "asof": "2026-11"
+    },
+    "dof": {
+      "v": 6,
+      "src": "https://www.universal-robots.com/manuals/latest/en/datasheets/ur20/",
+      "asof": "2026-11"
+    },
+    "reach_mm": {
+      "v": 1750,
+      "src": "https://www.universal-robots.com/manuals/latest/en/datasheets/ur20/",
+      "asof": "2026-11"
+    },
+    "repeatability_mm": {
+      "v": 0.1,
+      "src": "https://www.universal-robots.com/manuals/latest/en/datasheets/ur20/",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 64,
+      "src": "https://www.universal-robots.com/manuals/latest/en/datasheets/ur20/",
+      "asof": "2026-11"
+    },
+    "tcp_speed_mps": {
+      "v": 5,
+      "src": "https://www.universal-robots.com/manuals/latest/en/datasheets/ur20/",
+      "asof": "2026-11"
+    },
+    "ip_rating": {
+      "v": "IP65",
+      "src": "https://www.universal-robots.com/manuals/latest/en/datasheets/ur20/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

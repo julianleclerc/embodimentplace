@@ -20,9 +20,14 @@
       "v": "Wheeled",
       "src": "https://bostondynamics.com/news/boston-dynamics-stretch-robot-now-available-for-commercial-purchase/",
       "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 22.7,
+      "src": "https://bostondynamics.com/news/boston-dynamics-stretch-robot-now-available-for-commercial-purchase/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

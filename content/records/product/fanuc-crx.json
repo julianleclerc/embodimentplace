@@ -15,9 +15,19 @@
       "v": "Commercial",
       "src": "https://crx.fanucamerica.com/",
       "asof": "2026-11"
+    },
+    "reach_mm": {
+      "v": 1249,
+      "src": "https://crx.fanucamerica.com/",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 10,
+      "src": "https://crx.fanucamerica.com/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

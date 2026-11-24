@@ -28,9 +28,14 @@
     },
     "category": {
       "v": "Hand / gripper"
+    },
+    "payload_kg": {
+      "v": 3.5,
+      "src": "https://www.unitree.com/Dex5-1",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-16 21:16:16",
-  "updated": "2026-11-16 21:16:16",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-16"
 }

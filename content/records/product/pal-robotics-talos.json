@@ -15,9 +15,29 @@
       "v": "Bipedal",
       "src": "https://pal-robotics.com/robot/talos/",
       "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 175,
+      "src": "https://pal-robotics.com/robot/talos/",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 95,
+      "src": "https://pal-robotics.com/robot/talos/",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 6,
+      "src": "https://pal-robotics.com/robot/talos/",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 1.5,
+      "src": "https://pal-robotics.com/robot/talos/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

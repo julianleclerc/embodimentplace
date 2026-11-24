@@ -20,9 +20,19 @@
       "v": 0.25,
       "src": "https://shop.elephantrobotics.com/collections/mycobot-280",
       "asof": "2026-11"
+    },
+    "dof": {
+      "v": 6,
+      "src": "https://shop.elephantrobotics.com/collections/mycobot-280",
+      "asof": "2026-11"
+    },
+    "price_usd": {
+      "v": 649,
+      "src": "https://shop.elephantrobotics.com/collections/mycobot-280",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

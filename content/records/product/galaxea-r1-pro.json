@@ -31,9 +31,34 @@
     },
     "category": {
       "v": "Humanoid"
+    },
+    "height_cm": {
+      "v": 170,
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 96,
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 10,
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "speed_mps": {
+      "v": 1.5,
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
+    },
+    "runtime_h": {
+      "v": 7,
+      "src": "https://rbtx.de/en-GB/components/humanoid/galaxea-r1-pro-humanoid-robot-26-dof",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-16 21:16:16",
-  "updated": "2026-11-16 21:16:16",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-16"
 }

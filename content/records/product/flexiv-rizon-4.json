@@ -10,9 +10,14 @@
       "v": "Arm",
       "src": "https://www.flexiv.com/news/Rizon-4-Adaptive-Robot-Now-Supported-in-NVIDIA-Isaac",
       "asof": "2026-11"
+    },
+    "dof": {
+      "v": 7,
+      "src": "https://www.flexiv.com/news/Rizon-4-Adaptive-Robot-Now-Supported-in-NVIDIA-Isaac",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

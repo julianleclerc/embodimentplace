@@ -15,9 +15,29 @@
       "v": "Commercial",
       "src": "https://franka.de/franka-research-3",
       "asof": "2026-11"
+    },
+    "dof": {
+      "v": 7,
+      "src": "https://franka.de/franka-research-3",
+      "asof": "2026-11"
+    },
+    "reach_mm": {
+      "v": 855,
+      "src": "https://franka.de/franka-research-3",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 3,
+      "src": "https://franka.de/franka-research-3",
+      "asof": "2026-11"
+    },
+    "repeatability_mm": {
+      "v": 0.1,
+      "src": "https://franka.de/franka-research-3",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

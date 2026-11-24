@@ -1,0 +1,31 @@
+{
+  "id": 371,
+  "type": "post",
+  "slug": "fastmap-revisiting-dense-and-scalable-structure-from-motion",
+  "name": "FastMap: Revisiting Dense and Scalable Structure from Motion",
+  "summary": "FastMap: Revisiting Dense and Scalable Structure from Motion robyn.cherinka… Mon, 11/23/2026 - 15:42 We propose FastMap, a new global structure from motion method focused on speed and simplicity…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "tri.global"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "http://www.tri.global/research/fastmap-revisiting-dense-and-scalable-structure-motion"
+    },
+    "auto_news": {
+      "v": "Yes"
+    }
+  },
+  "created": "2026-11-24 05:05:22",
+  "updated": "2026-11-24 05:05:22",
+  "feed_at": "2026-11-23"
+}

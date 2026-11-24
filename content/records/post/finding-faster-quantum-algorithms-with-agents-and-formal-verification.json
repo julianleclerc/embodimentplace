@@ -1,0 +1,37 @@
+{
+  "id": 366,
+  "type": "post",
+  "slug": "finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+  "name": "Finding faster quantum algorithms with agents and formal verification",
+  "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "deepmind.google"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://lh3.googleusercontent.com/jIoM2lo98EDqLMQjIaXBlXPmXgPbUPpM2GgtXcDsGekZBOPUY41IjBsnuZIhLac7MSOuRkklNBsp20a5M25oDz-xTIY0BIqoBxUqmmXvEHwlM3MJJw=w1200-h630-n-nu-rw",
+      "fit": "cover",
+      "src": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-23 23:05:14",
+  "updated": "2026-11-23 23:05:14",
+  "feed_at": "2026-11-23"
+}

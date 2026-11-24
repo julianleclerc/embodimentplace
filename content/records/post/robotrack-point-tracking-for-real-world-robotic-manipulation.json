@@ -1,0 +1,37 @@
+{
+  "id": 375,
+  "type": "post",
+  "slug": "robotrack-point-tracking-for-real-world-robotic-manipulation",
+  "name": "RoboTrack: Point tracking for real-world robotic manipulation",
+  "summary": "",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "huggingface.co"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://huggingface.co/blog/allenai/robotrack"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/0KlbITzhyUGtGPyvi09um.png",
+      "fit": "cover",
+      "src": "https://huggingface.co/blog/allenai/robotrack",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-24 06:05:14",
+  "updated": "2026-11-24 06:05:14",
+  "feed_at": "2026-11-23"
+}

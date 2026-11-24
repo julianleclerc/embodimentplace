@@ -1,0 +1,37 @@
+{
+  "id": 376,
+  "type": "post",
+  "slug": "how-to-build-and-maintain-an-agentic-evaluation",
+  "name": "How to build and maintain an agentic evaluation",
+  "summary": "",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "huggingface.co"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://huggingface.co/blog/agentic-evals"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png",
+      "fit": "cover",
+      "src": "https://huggingface.co/blog/agentic-evals",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-24 06:05:15",
+  "updated": "2026-11-24 06:05:15",
+  "feed_at": "2026-11-23"
+}

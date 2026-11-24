@@ -15,9 +15,44 @@
       "v": "Wheeled",
       "src": "https://rainbow-robotics.com/en/products/rb-y1/",
       "asof": "2026-11"
+    },
+    "dof": {
+      "v": 20,
+      "src": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "asof": "2026-11"
+    },
+    "arms": {
+      "v": 2,
+      "src": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 3,
+      "src": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "asof": "2026-11"
+    },
+    "reach_mm": {
+      "v": 600,
+      "src": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "asof": "2026-11"
+    },
+    "speed_mps": {
+      "v": 1.5,
+      "src": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "asof": "2026-11"
+    },
+    "weight_kg": {
+      "v": 131,
+      "src": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "asof": "2026-11"
+    },
+    "height_cm": {
+      "v": 140,
+      "src": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-24 06:05:09",
   "feed_at": "2026-11-22"
 }

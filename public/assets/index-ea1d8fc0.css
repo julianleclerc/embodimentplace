@@ -974,3 +974,7 @@ html.ep-pv-open,html.ep-pv-open body{overflow:hidden}
 .epchd .epcsw button{flex:1 1 0;justify-content:center;height:46px;font-size:.8rem;padding:0 8px}
 .epchd .epcsw button i{font-size:.72rem}
 @media (max-width:720px){.epchd .epcsw button{height:42px;font-size:.66rem;padding:0 4px}.epchd .epcsw button i{font-size:.6rem}}
+
+/* epCatSwitch3: intro line above the type switch. */
+div.epchd{display:block;margin:0 0 14px}
+div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}

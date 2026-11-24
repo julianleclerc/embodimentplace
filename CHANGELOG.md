@@ -33,6 +33,12 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Map search on the top right, dock-style map buttons.** On desktop (wider than 760px) the "Find an organisation"
+  bar sits at the top right of the map, just left of the Grid/Map switch, and is layered above pop-up cards (z-index
+  40). The switch, List and zoom buttons now use the dock button look (Lounge, Walk, Online): 1px ink border, paper
+  fill, mono caps, accent shadow on hover, inverted when on; 36px tall on desktop and 44px on phone with 8px gaps.
+  Phone keeps the bottom-left Filters button. CSS block `epOrgMap5`.
+
 - **Map polish: aligned buttons, richer pop-ups, better list.** In Map view the List and zoom buttons line up under
   the Grid/Map switch (same right edge and total width, 40px tall, same shadow). The switch no longer covers the header
   menu (`.epvbar` z-index 5, under `header.top` 20). Pop-up cards (`epPopHtml`, date helper `epPopDate`) now show

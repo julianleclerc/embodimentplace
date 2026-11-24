@@ -644,3 +644,19 @@ html:has(.chatw.walking:not(.open):not(.joy-look)) body{touch-action:auto}
  .epoall .oc-name{font-size:1rem}
  .epoall .oc-sum{font-size:.88rem}
 }
+
+/* epOrgMap: Organisations Grid/Map switch (epViewSw). Map view (/orgs?view=map, html.ep-orgmap) fills the screen
+   under the header with no page scroll; --ep-maptop is the header's bottom edge, set by Ar. */
+.epvsw{display:inline-flex;border:1px solid var(--ink);background:var(--paper)}
+.epvsw button{border:0;background:none;color:var(--ink);font-family:var(--mono);text-transform:uppercase;font-size:.7rem;letter-spacing:.04em;padding:8px 16px;min-height:36px;cursor:pointer}
+.epvsw button.on{background:var(--ink);color:var(--bg)}
+.epvsw button:focus-visible{outline:2px solid var(--accent);outline-offset:-3px}
+html.ep-orgmap,html.ep-orgmap body{overflow:hidden;overscroll-behavior:none;height:100%}
+html.ep-orgmap footer,html.ep-orgmap .site-foot{display:none}
+.epfull{position:fixed;left:0;right:0;top:var(--ep-maptop,0px);bottom:0;z-index:3;background:var(--bg)}
+.epfull>.empty{padding:40px 16px}
+.epfull .epvsw{position:absolute;top:12px;left:12px;z-index:30;box-shadow:0 1px 0 var(--ink)}
+.epfull .omapsec.big{margin:0;height:100%}
+.epfull .omapwrap,.epfull .omapwrap.big{height:100%;position:relative}
+.epfull .omapwrap.big .omap{height:100%!important;min-height:0!important;max-height:none!important}
+@media (max-width:720px){.epohead .epvsw{display:inline-flex}.epohead .lh-right{margin-left:auto}.epohead{flex-wrap:nowrap;align-items:center}.epfull .epvsw{top:10px;left:10px}}

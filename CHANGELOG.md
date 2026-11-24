@@ -33,6 +33,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Map controls laid out like a map app, styled exactly like the dock.** Top row: search/filters on the left (phone:
+  the Filters button) and the Grid/Map switch on the right. Bottom row: List on the left, on the same line as the
+  dock; zoom stacked just above the dock on the right. The switch, List and zoom copy the dock's computed styles
+  (`.wk-btn` and `.cw-launch`): no transitions, paper + 1px ink, an instant 4px accent shadow on hover, and dark fill
+  with an accent shadow when on (List open looks like Lounge). The List count is plain dimmed text like "3 here".
+  The list window now opens at the top left (`epListInit` placement). The OSM credit sits above List on phone. CSS block `epOrgMap6`.
+
 - **Map search on the top right, dock-style map buttons.** On desktop (wider than 760px) the "Find an organisation"
   bar sits at the top right of the map, just left of the Grid/Map switch, and is layered above pop-up cards (z-index
   40). The switch, List and zoom buttons now use the dock button look (Lounge, Walk, Online): 1px ink border, paper

@@ -33,6 +33,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Catalogue type switch full width everywhere, no shadow.** On desktop the switch beside the title was easy to miss
+  (Julian only noticed Robots). It now runs full width under the title on every screen, with four equal, taller
+  segments, and has no shadow. CSS block `epCatSwitch2`.
+
 - **Catalogue type is a switch, kinds are the only tag row.** Julian found the two stacked tag rows (type, then kind)
   odd. Robots / Hardware / Models / Software is now a switch in the header (`.epvsw.epcsw`, the same style as the
   Organisations Grid/Map switch): beside the title on desktop, full width under it on a phone. The kind tags are the

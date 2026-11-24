@@ -33,6 +33,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Catalogue: no "All" tag, and a preview for every item.** Julian found "All" pointless (robots, models and
+  software mixed). Catalogue now opens on Robots; the type tags are single-select with one always on (`?tag=`
+  defaults to robots), and search/kind/count apply within that type. Tapping a card (picture, name, summary or specs)
+  opens a preview (`epCatPreview`, URL `?item=<slug>` so the phone's Back closes it): large picture, kind and status,
+  maker, summary, every listed spec grouped by section (from `/api/compare?ids=<id>`), and Compare / Open full page
+  buttons. Bottom sheet on phones, centred panel on desktop; Esc or tapping outside closes it. Frontend
+  `epCatalogue`, `epCatCard` (now takes `open`), `epCatPreview`; CSS block `epCatPreview`.
+
 - **Robot specs filled from makers' pages.** New seed `worker/dist/assets/seed-robot-specs-2026-11.js`
   (`EP_SEED_ROBOT_SPECS_2026_11`): 124 values for 27 robots (height, weight, payload, DoF, speed, runtime, reach,
   repeatability, step height, slope, IP rating, price...), each with its source page in `src` and `asof` 2026-11.

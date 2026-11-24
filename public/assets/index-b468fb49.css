@@ -896,3 +896,47 @@ html.ep-pv-open,html.ep-pv-open body{overflow:hidden}
 }
 .epcpv-img{max-height:320px;aspect-ratio:auto;height:min(320px,45vw)}
 @media (max-width:720px){.epcpv-img{height:32svh;max-height:none}}
+
+/* epCatGrid: picture-first Catalogue cards (epCatCard, .epct in .epcgrid). Big image on top (4:3), kind label on the
+   image, Compare on the image's top right, then name, maker + status, summary (desktop) and key specs.
+   2 columns on phones, as many 230px columns as fit on desktop. Header and toolbar are tighter (.epchead, .epctools). */
+.epchead{padding-bottom:4px}
+.epchead h1{font-size:2.6rem;line-height:1.05}
+.epctools{gap:8px;margin:4px 0 14px}
+@media (min-width:721px){
+ .epctools{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"tags tags" "q meta";align-items:center;column-gap:16px}
+ .epctools .epotags{grid-area:tags}
+ .epctools .epoq{grid-area:q;max-width:none}
+ .epctools .epometa{grid-area:meta;flex-wrap:nowrap}
+ .epctools .epon{margin-right:8px}
+}
+.epcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.epct{position:relative;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--rule);min-width:0;transition:none}
+.epct:hover{border-color:var(--ink);box-shadow:4px 4px 0 var(--accent)}
+.epct-img{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:var(--bg);border-bottom:1px solid var(--rule)}
+.epct-img>div{position:absolute!important;inset:0;width:100%!important;height:100%!important;min-width:0!important;font-size:2.2rem}
+.epct-img img{width:100%;height:100%;object-fit:cover;display:block}
+.epct-img img.fit-contain{object-fit:contain;padding:8px;box-sizing:border-box}
+.epct-k{position:absolute;left:8px;top:8px;z-index:1;font-family:var(--mono);text-transform:uppercase;font-size:.58rem;letter-spacing:.03em;background:var(--paper);color:var(--ink);border:1px solid var(--ink);padding:3px 6px;max-width:calc(100% - 100px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.epct .epcmpb{top:8px;right:8px;bottom:auto;min-height:24px;padding:4px 7px;font-size:.56rem}
+.epct-b{display:flex;flex-direction:column;gap:3px;padding:10px 12px 12px;text-decoration:none;color:var(--ink);flex:1 1 auto}
+.epct-n{font-size:1.05rem;font-weight:650;line-height:1.2;overflow-wrap:anywhere}
+.epct-m{font-family:var(--mono);text-transform:uppercase;font-size:.62rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 8px}
+.epct-m i{font-style:normal;color:var(--accent)}
+.epct-s{font-size:.85rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
+.epct-st{display:flex;flex-wrap:wrap;gap:2px 12px;margin-top:auto;padding-top:6px}
+.epct-st span{display:inline-flex;align-items:baseline;gap:4px;font-size:.8rem}
+.epct-st b{font-weight:600}
+.epct-st i{font-style:normal;font-family:var(--mono);text-transform:uppercase;font-size:.55rem;color:var(--muted)}
+@media (max-width:720px){
+ .epchead h1{font-size:1.9rem}
+ .epcgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .epct-b{padding:8px 9px 10px}
+ .epct-n{font-size:.95rem}
+ .epct-s{display:none}
+ .epct-st{gap:1px 8px}
+ .epct-st span:nth-child(n+3){display:none}
+ .epct-st span{font-size:.74rem}
+ .epct-k{font-size:.5rem;padding:2px 5px;top:auto;bottom:6px;left:6px;max-width:calc(100% - 12px)}
+ .epct .epcmpb{top:6px;right:6px;font-size:.5rem;padding:3px 5px;min-height:20px}
+}

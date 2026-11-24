@@ -21070,7 +21070,7 @@ async function epCatalogue(db) {
 			card_name: org ? cardName(rec.name, org.name) : rec.name,
 			summary: rec.summary || "",
 			href: `/r/${rec.slug}`,
-			ph: phModel(rec, "sm", rec.type === "model" ? org : void 0),
+			ph: phModel(rec, "md", rec.type === "model" ? org : void 0),
 			tag,
 			kind,
 			ck: rec.type === "product" ? kind : rec.type,

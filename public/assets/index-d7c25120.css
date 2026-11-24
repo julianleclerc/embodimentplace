@@ -660,3 +660,17 @@ html.ep-orgmap footer,html.ep-orgmap .site-foot{display:none}
 .epfull .omapwrap,.epfull .omapwrap.big{height:100%;position:relative}
 .epfull .omapwrap.big .omap{height:100%!important;min-height:0!important;max-height:none!important}
 @media (max-width:720px){.epohead .epvsw{display:inline-flex}.epohead .lh-right{margin-left:auto}.epohead{flex-wrap:nowrap;align-items:center}.epfull .epvsw{top:10px;left:10px}}
+
+/* epOrgMap2: the Grid/Map switch sits in the same spot in both views: 12px under the header, at the page's left
+   gutter (.epvbar). In Grid it is the first row of the page; in Map it floats over the map at the same place. */
+.epvbar{display:flex;align-items:center;padding:12px 0 0;position:relative;z-index:30}
+.epfull>.epvbar{position:absolute;top:0;left:var(--g,12px);padding:12px 0 0;pointer-events:none}
+.epfull>.epvbar .epvsw{position:static;pointer-events:auto}
+.epvsw{display:inline-flex;align-items:stretch;border:1px solid var(--ink);background:var(--paper);box-shadow:2px 2px 0 var(--ink)}
+.epvsw button{display:inline-flex;align-items:center;gap:7px;border:0;background:none;color:var(--ink);font-family:var(--mono);text-transform:uppercase;font-size:.72rem;letter-spacing:.05em;padding:0 14px;height:38px;min-height:0;cursor:pointer}
+.epvsw button+button{border-left:1px solid var(--ink)}
+.epvsw button svg{flex:none;opacity:.85}
+.epvsw button.on{background:var(--ink);color:var(--bg)}
+.epvsw button.on svg{opacity:1}
+.epvbar+.epohead{padding-top:14px}
+@media (max-width:720px){.epvbar+.epohead{padding-top:10px}}

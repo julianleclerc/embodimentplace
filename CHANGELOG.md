@@ -33,6 +33,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Grid/Map switch stays in one place.** The switch is now the first row of the page (`.epvbar`), 12px under the
+  header at the left gutter, and in Map view it floats over the map at exactly the same spot, so it never moves when
+  you switch. Restyled with grid and pin icons and a hard shadow (`epViewSw`, CSS block `epOrgMap2`).
+
 - **Grid/Map switch on Organisations; the Map tab is folded in.** The Grid/Table switch is replaced by a Grid/Map
   switch (`epViewSw`). Map view (`/orgs?view=map`) fills the screen under the header with no page scroll
   (`html.ep-orgmap`, fixed `.epfull`, `--ep-maptop` set from the header in `Ar`), with the switch floating top left to

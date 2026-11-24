@@ -33,6 +33,16 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Compare works one kind at a time, from Catalogue.** Each Catalogue card has a Compare button (`epCmpBtn`); a
+  bar above the dock (`epCmpBar`) collects up to 4 items on a phone, 6 on desktop, saved in localStorage `ep-cmp`.
+  The first item sets the kind (Humanoids, Arms, Models...); cards of other kinds are dimmed and explain why. The
+  compare page (`epCompare`, replaces `si`) groups rows by section (General, Dimensions, Performance, Power...),
+  highlights the best number, has a "Differences only" switch (localStorage `ep-cmp-diff`), keeps item names and row
+  labels pinned while the table scrolls on a phone, and links back to the matching Catalogue filter. Worker
+  `comparePayload` now drops items of another kind (returns `dropped`, shown as a note), adds `group` to rows,
+  `plural` and `back`, skips Type/For sale rows, and only marks a best value when at least two items have one.
+  `/api/catalogue` items carry `ck`/`ckl` (comparison kind). CSS block `epCompare`.
+
 - **Catalogue replaces the Robots, Hardware, Models and Software tabs.** Julian found four product tabs too many.
   The top menu now has one **Catalogue** tab (`/catalogue`): a search box, one row of single-select type tags
   (Robots, Hardware, Models, Software, with counts; swipes sideways on a phone), a count line with Clear, a Kind menu

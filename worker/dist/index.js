@@ -17884,6 +17884,14 @@ async function comparePayload(db, idsRaw) {
 		status: 404
 	};
 	const tkey = categoryKey(recs[0]) || recs[0].type;
+	// epCompare: only one kind per comparison; drop the rest and say which.
+	const dropped = [];
+	for (let i = recs.length - 1; i > 0; i--) if ((categoryKey(recs[i]) || recs[i].type) !== tkey) {
+		dropped.unshift(recs[i].name);
+		recs.splice(i, 1);
+		keys.splice(i, 1);
+		vers.splice(i, 1);
+	}
 	const t = viewFor(tkey) || viewFor(recs[0].type);
 	const plural = HW_CAT[tkey]?.plural || TYPE_LABELS[recs[0].type]?.plural || "records";
 	const sameType = recs[0].type;
@@ -17918,7 +17926,8 @@ async function comparePayload(db, idsRaw) {
 		};
 	});
 	if (makerCells.some((c) => c.text !== "–")) rows.push({
-		label: "Maker",
+		label: recs[0].type === "product" ? "Maker" : "By",
+		group: "",
 		diff: new Set(makerCells.map((c) => c.text)).size > 1,
 		cells: makerCells
 	});
@@ -17933,29 +17942,35 @@ async function comparePayload(db, idsRaw) {
 			"image",
 			"ordering",
 			"models"
-		].includes(f.group || "")) continue;
+		].includes(f.group || "") || ["category", "for_sale", "quote_email"].includes(f.key)) continue;
 		const vals = recs.map((r, i) => fieldVal(dataOf(r, vers[i]), f.key));
 		if (vals.every((v) => v == null || v === "" || Array.isArray(v) && !v.length)) continue;
 		const diff = new Set(vals.map((v) => JSON.stringify(v))).size > 1;
 		let best = null;
 		if (f.kind === "number") {
-			const nums = vals.map(Number).filter((n) => Number.isFinite(n));
+			const nums = vals.filter((v) => v != null && v !== "" && !Array.isArray(v)).map(Number).filter((n) => Number.isFinite(n));
 			const way = betterWay(f);
 			if (nums.length > 1 && way !== "none") best = way === "lower" ? Math.min(...nums) : Math.max(...nums);
 		}
 		rows.push({
 			label: f.label,
+			group: f.group === "Basics" ? "General" : f.group || "",
 			diff,
 			cells: vals.map((v) => ({
 				text: formatField(f, v),
-				best: best != null && typeof v === "number" && Number(v) === best
+				best: best != null && v != null && v !== "" && Number(v) === best
 			}))
 		});
 	}
+	if (rows[0] && rows[0].group === "") rows[0].group = rows[1]?.group || "General";
 	const sub = listSubnav(tkey).subnav;
+	const ctag = HW_CAT[tkey] ? HW_CAT[tkey].tab === "robots" ? "robots" : "hardware" : recs[0].type === "software" ? "software" : "models";
 	return {
 		title: `Compare ${plural.toLowerCase()}`,
 		tkey,
+		plural,
+		dropped,
+		back: `/catalogue?tag=${ctag}` + (HW_CAT[tkey] || recs[0].type !== "software" ? `&kind=${encodeURIComponent(tkey)}` : ""),
 		keys,
 		subnav: sub,
 		columns: recs.map((r, i) => ({
@@ -21057,6 +21072,8 @@ async function epCatalogue(db) {
 			ph: phModel(rec, "sm", rec.type === "model" ? org : void 0),
 			tag,
 			kind,
+			ck: rec.type === "product" ? kind : rec.type,
+			ckl: rec.type === "product" ? kindLabel : TYPE_LABELS[rec.type]?.plural || rec.type,
 			kind_label: TYPE_LABELS[rec.type] && rec.type !== "product" ? TYPE_LABELS[rec.type].label : typeLabel(rec),
 			maker: org ? { slug: org.slug, name: org.name } : null,
 			status: fieldStr(rec.data, "status"),

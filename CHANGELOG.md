@@ -33,6 +33,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Organisations, Events and Community match Catalogue.** Julian liked the new Catalogue and asked for the other
+  pages to follow it. All three now use the same header: title, intro line (`.oblurb`), then a full-width,
+  shadow-free switch (`.epchd .epvsw`). Organisations: the Grid/Map switch moved from above the title to under the
+  intro (grid view only; the full-screen map and its switch are unchanged). Events: the Upcoming/Past tabs moved from
+  the very top into that switch, the count next to the title is gone, a new intro line, and the list uses the full
+  page width instead of a centred column. Community: Place / Tell us what you need (and the admin tabs) are the
+  switch, the intro uses the shared style, and the page is no longer indented in a narrower column. CSS block
+  `epPageHeads`.
+
 - **Catalogue intro line above the type switch.** Julian asked for the intro ("Every robot, part, AI model...") to sit
   above the Robots / Hardware / Models / Software switch. The switch now has its own wrapper (`div.epchd`) after the
   intro. CSS block `epCatSwitch3`.

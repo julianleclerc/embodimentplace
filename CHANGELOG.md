@@ -33,6 +33,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Map polish: aligned buttons, richer pop-ups, better list.** In Map view the List and zoom buttons line up under
+  the Grid/Map switch (same right edge and total width, 40px tall, same shadow). The switch no longer covers the header
+  menu (`.epvbar` z-index 5, under `header.top` 20). Pop-up cards (`epPopHtml`, date helper `epPopDate`) now show
+  type chips, a stats row (Founded, Raised, Stage, Products, Followers), the robots/products the org makes (links,
+  "+N more"), the latest news story with its date, and "N sites"; orgs without a logo get a coloured initial. The
+  Worker's map points carry this as `x.pr`, `x.np`, `x.nw`, `x.ns` (one extra `links` query in `orgsPayload`, ids
+  passed via `json_each`). The map list (`epListInit`) has a filter box, shows each org's main type and "N sites
+  here", bigger logos and a compact open-page button, and opens below the map buttons. CSS block `epOrgMap4`.
+
 - **Grid/Map switch on the top right.** Same spot in both views, now at the right gutter; in Map view the map's
   List and zoom buttons sit 52px lower, under the switch. CSS block `epOrgMap3`.
 

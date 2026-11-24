@@ -33,6 +33,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Catalogue intro line above the type switch.** Julian asked for the intro ("Every robot, part, AI model...") to sit
+  above the Robots / Hardware / Models / Software switch. The switch now has its own wrapper (`div.epchd`) after the
+  intro. CSS block `epCatSwitch3`.
+
 - **Catalogue type switch full width everywhere, no shadow.** On desktop the switch beside the title was easy to miss
   (Julian only noticed Robots). It now runs full width under the title on every screen, with four equal, taller
   segments, and has no shadow. CSS block `epCatSwitch2`.

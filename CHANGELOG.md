@@ -31,6 +31,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-24
+
+- **Organisations on one page, with type tags.** The per-type subtabs (Robot makers, Model labs, Universities...) are
+  gone. `/orgs` lists every organisation once, with a row of type tags (with counts) to filter by; pick several to
+  combine them (any match). Tapping a type chip on a card filters by it too. Also added a name search and a "Type"
+  sort; Country, the other sorts, Grid/Table and Load more (24 at a time) stay. Tags live in the URL (`?tag=ai,research`),
+  and old `/orgs/<type>` links redirect there. Frontend: `Ar`, `Mr`, `epOrgKey`, `Nr` (`onTag`); CSS block
+  `epOrgTags`. Worker: `orgsPayload` accepts `group=all` and returns every organisation in every group.
+
 ### 2026-11-23
 
 - **Posts stay tappable while walking on a phone.** The floating joystick no longer opens on post cards (`article`,

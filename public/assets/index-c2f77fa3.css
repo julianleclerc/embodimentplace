@@ -751,3 +751,22 @@ html.ep-orgmap footer,html.ep-orgmap .site-foot{display:none}
   .epfull .omap .omap-filters input,.epfull .omap .omap-filters select{height:28px;padding:0 8px;box-sizing:border-box}
   .epfull .omap .omap-filters:focus-within{box-shadow:4px 4px 0 var(--accent)}
 }
+
+/* epCatalogue: one Catalogue page (/catalogue, epCatalogue/epCatCard) for robots, hardware, models and software.
+   Reuses the epOrgTags2 toolbar and card layout; bigger picture, status label and a small spec row. */
+.epccards .ocard{position:relative}
+.epccards .oc-av{flex-basis:64px;width:64px;height:64px;background:var(--paper)}
+.epccards .oc-av>*{width:64px!important;height:64px!important}
+.epccards .oc-type{font-family:var(--mono);text-transform:uppercase;font-size:.62rem;color:var(--muted);border:1px solid var(--hair);padding:2px 6px;white-space:nowrap}
+.epccards .oc-meta{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:.8rem}
+.epccards .oc-makes{color:var(--ink);text-decoration:none;font-weight:600}
+.epccards .oc-makes:hover{text-decoration:underline}
+.epcst{font-family:var(--mono);text-transform:uppercase;font-size:.6rem;color:var(--accent)}
+.epcstats{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:2px}
+.epcstats span{display:inline-flex;align-items:baseline;gap:4px;font-size:.78rem}
+.epcstats b{font-weight:600;color:var(--ink)}
+.epcstats i{font-style:normal;font-family:var(--mono);text-transform:uppercase;font-size:.58rem;color:var(--muted)}
+@media (max-width:720px){
+ .epccards .oc-av,.epccards .oc-av>*{flex-basis:56px;width:56px!important;height:56px!important}
+ .epcstats{gap:2px 12px}
+}

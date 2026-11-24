@@ -104,6 +104,11 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   component `Fr`). There is no Map tab any more; `/map` and `/orgs/map` redirect there (`epMapRedir`). Organisations (`/orgs`) is one page listing every organisation, with no per-type subtabs. Types
   (`ORG_GROUPS` / bundle `Hn`) are single-select filter tags, kept in the URL as `?tag=makers`; old `/orgs/<type>` links
   redirect to that tag. The page loads everything from `/api/orgs?group=all` and pages 24 at a time.
+- Robots, hardware, models and software share one top-menu tab, **Catalogue** (`/catalogue`, frontend
+  `epCatalogue`/`epCatCard`, Worker `GET /api/catalogue` via `epCatalogue`). There are no separate Robots, Hardware,
+  Models or Software tabs. Types are single-select tags kept in the URL (`?tag=robots|hardware|models|software`),
+  with a Kind menu for the sub-type (`&kind=humanoid`). Old `/t/<category>`, `/t/model`, `/t/benchmark` and
+  `/t/software[/<kind>]` links redirect there (in `Rr`). Events stays its own tab.
 - Members can follow organisations (companies, universities, labs) and topics, not people, robots or models.
 - The Watchlist tabs (Watchlist, Sources, Newsletter) stay hidden until the member follows at least one organisation; until then every Watchlist URL shows "Start your watchlist".
 - Feeds (home and Watchlist) are newest first with date separators (Today, Yesterday, This week, This month,

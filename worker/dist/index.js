@@ -20987,6 +20987,90 @@ api.get("/list/:key", async (c) => {
 	if ("error" in payload) return c.json(payload, 404);
 	return c.json(payload);
 });
+// epCatalogue: one list of robots, hardware, models and software for the Catalogue page (/catalogue).
+var EP_CAT_TAGS = [
+	{ key: "robots", label: "Robots" },
+	{ key: "hardware", label: "Hardware" },
+	{ key: "models", label: "Models" },
+	{ key: "software", label: "Software" }
+];
+async function epCatalogue(db) {
+	const recs = await allPublic(db, "SELECT * FROM records WHERE type IN ('product','model','benchmark','software') AND private = 0 ORDER BY name COLLATE NOCASE");
+	const { outgoing } = await linksFor(db, recs.map((r) => r.id));
+	const relOf = (r) => {
+		const l = outgoing.get(r.id) || {};
+		return (l.maker || l.developer || l.company || [])[0];
+	};
+	const orgs = await allByIds(db, recs.map(relOf).filter(Boolean).map((x) => x.id));
+	const kinds = {};
+	const addKind = (tag, key, label) => {
+		const list = kinds[tag] || (kinds[tag] = []);
+		let k = list.find((x) => x.key === key);
+		if (!k) list.push(k = { key, label, count: 0 });
+		k.count++;
+	};
+	const items = recs.map((rec) => {
+		let tag, kind, kindLabel, specs = [], view;
+		if (rec.type === "product") {
+			const cat = categoryKey(rec) || "misc";
+			const hc = HW_CAT[cat] || HW_CAT.misc;
+			tag = hc?.tab === "robots" ? "robots" : "hardware";
+			kind = hc?.key || cat;
+			kindLabel = hc?.plural || "Other";
+			view = viewFor(kind);
+			specs = view?.card_specs || hc?.card_specs || [];
+		} else if (rec.type === "software") {
+			tag = "software";
+			const raw = fieldStr(rec.data, "kind").toLowerCase();
+			const sk = SOFTWARE_KINDS.find((k) => raw.replace(/\s+/g, "") === k.key || raw === k.label.toLowerCase());
+			kind = sk?.key || "other";
+			kindLabel = sk?.label || "Other";
+			view = viewFor("software");
+			specs = (view?.columns || []).filter((c) => !c.startsWith("rel:") && c !== "kind");
+		} else {
+			tag = "models";
+			kind = rec.type;
+			kindLabel = TYPE_LABELS[rec.type]?.plural || rec.type;
+			view = viewFor(rec.type);
+			specs = (view?.columns || []).filter((c) => !c.startsWith("rel:"));
+		}
+		addKind(tag, kind, kindLabel);
+		const hit = relOf(rec);
+		const org = hit ? orgs.get(hit.id) : void 0;
+		const stats = [];
+		for (const key of specs) {
+			if (stats.length >= 3) break;
+			const v = fieldVal(rec.data, key);
+			if (v == null || v === "") continue;
+			const f = view?.fmap?.[key];
+			const val = f?.kind === "number" ? `${shortValue(f.unit || "", v)}${f.unit && f.unit !== "USD" ? " " + f.unit : ""}` : fmtValue(v);
+			if (!val || val === "–") continue;
+			stats.push({ label: shortLabel(f?.label || key), value: String(val).slice(0, 40) });
+		}
+		return {
+			id: rec.id,
+			slug: rec.slug,
+			name: rec.name,
+			card_name: org ? cardName(rec.name, org.name) : rec.name,
+			summary: rec.summary || "",
+			href: `/r/${rec.slug}`,
+			ph: phModel(rec, "sm", rec.type === "model" ? org : void 0),
+			tag,
+			kind,
+			kind_label: TYPE_LABELS[rec.type] && rec.type !== "product" ? TYPE_LABELS[rec.type].label : typeLabel(rec),
+			maker: org ? { slug: org.slug, name: org.name } : null,
+			status: fieldStr(rec.data, "status"),
+			stats,
+			updated: rec.updated || ""
+		};
+	});
+	return {
+		tags: EP_CAT_TAGS.map((t) => ({ ...t, count: items.filter((i) => i.tag === t.key).length })),
+		kinds,
+		items
+	};
+}
+api.get("/catalogue", async (c) => c.json(await epCatalogue(c.env.DB)));
 // epAutoNews: admin "Track" toggle per organisation (table auto_news). A daily job reads the enabled ones.
 var EP_AUTONEWS_TYPES = [
 	"company",

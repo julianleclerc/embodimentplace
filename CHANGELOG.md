@@ -33,6 +33,16 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Catalogue replaces the Robots, Hardware, Models and Software tabs.** Julian found four product tabs too many.
+  The top menu now has one **Catalogue** tab (`/catalogue`): a search box, one row of single-select type tags
+  (Robots, Hardware, Models, Software, with counts; swipes sideways on a phone), a count line with Clear, a Kind menu
+  once a type is picked (Humanoids, Arms, Quadrupeds...; `?kind=`) and Sort (Name, Maker, Type, Recently updated).
+  Compact cards: picture, name, maker, status, kind label, two-line summary and up to three key specs. Old
+  `/t/humanoid`, `/t/actuator`, `/t/model`, `/t/benchmark`, `/t/software/...` links redirect to the matching tag and
+  kind. Frontend `epCatalogue`, `epCatCard` (nav list `zn`, redirect in `Rr`); CSS block `epCatalogue` (reuses the
+  `epOrgTags2` toolbar). Worker: `GET /api/catalogue` (`epCatalogue`, `EP_CAT_TAGS`). The per-type grid/table views
+  and the Compare checkboxes are no longer reachable from the menu; `/compare` itself still works.
+
 - **Map controls laid out like a map app, styled exactly like the dock.** Top row: search/filters on the left (phone:
   the Filters button) and the Grid/Map switch on the right. Bottom row: List on the left, on the same line as the
   dock; zoom stacked just above the dock on the right. The switch, List and zoom copy the dock's computed styles

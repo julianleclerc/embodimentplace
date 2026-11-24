@@ -100,8 +100,8 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - People from an organisation don't manage its page. Only the admin and contributors do. Belonging is a badge
   (verified work email via "I work here", table `owners`) shown on the character, the card and the
   organisation's People section. Members can still report mistakes, and their reports come first.
-- The organisations map is its own top-menu tab, **Map** (`/map`, component `epMapPage`; old `/orgs/map` links still
-  work). Organisations (`/orgs`) is one page listing every organisation, with no per-type subtabs. Types
+- The organisations map is the **Map** view of Organisations (`/orgs?view=map`, Grid/Map switch `epViewSw`, map
+  component `Fr`). There is no Map tab any more; `/map` and `/orgs/map` redirect there (`epMapRedir`). Organisations (`/orgs`) is one page listing every organisation, with no per-type subtabs. Types
   (`ORG_GROUPS` / bundle `Hn`) are single-select filter tags, kept in the URL as `?tag=makers`; old `/orgs/<type>` links
   redirect to that tag. The page loads everything from `/api/orgs?group=all` and pages 24 at a time.
 - Members can follow organisations (companies, universities, labs) and topics, not people, robots or models.

@@ -33,6 +33,14 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Grid/Map switch on Organisations; the Map tab is folded in.** The Grid/Table switch is replaced by a Grid/Map
+  switch (`epViewSw`). Map view (`/orgs?view=map`) fills the screen under the header with no page scroll
+  (`html.ep-orgmap`, fixed `.epfull`, `--ep-maptop` set from the header in `Ar`), with the switch floating top left to
+  go back. A type picked in Grid carries into the map's type filter (`Fr` reads `tag` as well as `g`; its "All
+  groups" menu is now "All types"). The top-menu **Map** tab is removed; `/map` and `/orgs/map` redirect to
+  `/orgs?view=map` keeping `org`/`site` (`epMapRedir`), and "On the map" links on org pages go there directly.
+  The Table view is gone. CSS block `epOrgMap`.
+
 - **Cleaner Organisations page, phone first.** Julian found the first version (PR #56) awkward. The search box now
   comes first; the type tags are a single row (one line that swipes sideways on a phone, wraps on desktop) and pick
   one type at a time (tap again or All to clear); a line under them shows the count, a Clear link, and compact

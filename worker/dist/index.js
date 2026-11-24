@@ -3,6 +3,7 @@ import { A as ORG_TYPES, B as TYPE_LABELS, C as LOOK_HATS, D as NO_IMAGE, E as N
 import { a as sign, c as tokenHash, d as bytesToHex, i as randomBytes, l as sha256, n as hashPw, o as timingEqual, r as nowStamp, s as token, u as hmac } from "./assets/crypto-FYYfVqc8.js";
 import { DurableObject } from "cloudflare:workers";
 import { EP_SEED_ROBOT_MAKERS_2026_11 } from "./assets/seed-robot-makers-2026-11.js";
+import { EP_SEED_ROBOT_SPECS_2026_11 } from "./assets/seed-robot-specs-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -22511,7 +22512,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -22555,9 +22556,31 @@ async function epSeedRun(db, seed) {
 		add("product", r.name, r.summary, r.data, null, [["maker", Number(r.maker), ""]]);
 		nRobots++;
 	}
+	// Spec fills: { slug, data: { field: { v, src, asof } } }. Only fields that are still empty are written.
+	let nSpecs = 0;
+	if ((seed.specs || []).length) {
+		const rows = ((await db.prepare("SELECT id, slug, data FROM records WHERE type='product' AND slug IN (SELECT value FROM json_each(?))").bind(JSON.stringify(seed.specs.map((x) => x.slug))).all()).results || []);
+		const bySlug = new Map(rows.map((r) => [String(r.slug), r]));
+		for (const sp of seed.specs) {
+			const row = bySlug.get(sp.slug);
+			if (!row) continue;
+			let data = {};
+			try { data = JSON.parse(String(row.data || "{}")) || {}; } catch {}
+			let changed = 0;
+			for (const [k, val] of Object.entries(sp.data || {})) {
+				const cur = fieldVal(data, k);
+				if (cur != null && cur !== "" && !(Array.isArray(cur) && !cur.length)) continue;
+				data[k] = val;
+				changed++;
+			}
+			if (!changed) continue;
+			nSpecs += changed;
+			stmts.push(db.prepare("UPDATE records SET data=?, updated=? WHERE id=?").bind(JSON.stringify(data), ts, row.id));
+		}
+	}
 	if (stmts.length) await db.batch(stmts);
-	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots })).run();
-	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots`);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs`);
 }
 async function epSeedCron(env) {
 	try {

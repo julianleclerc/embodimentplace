@@ -33,6 +33,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Robot specs filled from makers' pages.** New seed `worker/dist/assets/seed-robot-specs-2026-11.js`
+  (`EP_SEED_ROBOT_SPECS_2026_11`): 124 values for 27 robots (height, weight, payload, DoF, speed, runtime, reach,
+  repeatability, step height, slope, IP rating, price...), each with its source page in `src` and `asof` 2026-11.
+  `epSeedRun` gained a `specs` list: it fills only fields that are still empty and never overwrites. Values were
+  left out when a page was ambiguous (conflicting speeds, per-variant figures, reseller prices with tariffs).
+  Pages that gave no usable specs: AgiBot A2, Agility Digit, Ameca, Dobot Atom, Sanctuary Phoenix, XPeng Iron,
+  Diligent Moxi, Robotera XHand, ABB GoFa (script-only page), Deep Robotics X30 (blocked), Xiaomi CyberDog 2
+  (stored source link points to a laptop page), Figure 03, Tesla Optimus (no source).
+
 - **Compare works one kind at a time, from Catalogue.** Each Catalogue card has a Compare button (`epCmpBtn`); a
   bar above the dock (`epCmpBar`) collects up to 4 items on a phone, 6 on desktop, saved in localStorage `ep-cmp`.
   The first item sets the kind (Humanoids, Arms, Models...); cards of other kinds are dimmed and explain why. The

@@ -17556,6 +17556,31 @@ async function orgsPayload(db, group = "", asMap = false) {
 		const points = [];
 		const cardById = new Map(cards.map((c) => [c.id, c]));
 		const fans = /* @__PURE__ */ new Map();
+		const epExtra = /* @__PURE__ */ new Map();
+		try {
+			const { results } = await db.prepare(`SELECT l.dst AS oid, r.type, r.name, r.slug, r.data, COALESCE(r.feed_at, r.created, '') AS d
+       FROM links l JOIN records r ON r.id = l.src
+       WHERE l.dst IN (SELECT value FROM json_each(?)) AND r.private = 0
+         AND ((r.type = 'product' AND l.rel = 'maker') OR (r.type = 'post' AND l.rel = 'about'))`).bind(JSON.stringify(order)).all();
+			for (const row of results || []) {
+				const oid = Number(row.oid);
+				const bag = epExtra.get(oid) || { pr: [], np: 0, nw: null };
+				if (row.type === "product") {
+					bag.np += 1;
+					if (bag.pr.length < 4) bag.pr.push({ n: row.name, s: row.slug });
+				} else {
+					let dt = String(row.d || "");
+					try {
+						const dd = JSON.parse(row.data || "{}");
+						const v = dd && dd.date && typeof dd.date === "object" ? dd.date.v : dd && dd.date;
+						if (v) dt = String(v);
+					} catch {}
+					dt = dt.slice(0, 10);
+					if (!bag.nw || dt > bag.nw.d) bag.nw = { t: row.name, s: row.slug, d: dt };
+				}
+				epExtra.set(oid, bag);
+			}
+		} catch {}
 		try {
 			const { results } = await db.prepare("SELECT company_id AS id, COUNT(*) AS n FROM follows GROUP BY company_id").all();
 			for (const f of results || []) fans.set(Number(f.id), Number(f.n) || 0);
@@ -17579,7 +17604,11 @@ async function orgsPayload(db, group = "", asMap = false) {
 				ws: fieldStr(rec.data, "website"),
 				rs: card.raised ?? null,
 				mk: card.makes || "",
-				fl: fans.get(rec.id) || 0
+				fl: fans.get(rec.id) || 0,
+				pr: (epExtra.get(rec.id) || {}).pr || [],
+				np: (epExtra.get(rec.id) || {}).np || 0,
+				nw: (epExtra.get(rec.id) || {}).nw || null,
+				ns: rows.length
 			};
 			rows.forEach((r, i) => {
 				points.push({

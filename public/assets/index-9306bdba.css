@@ -674,3 +674,9 @@ html.ep-orgmap footer,html.ep-orgmap .site-foot{display:none}
 .epvsw button.on svg{opacity:1}
 .epvbar+.epohead{padding-top:14px}
 @media (max-width:720px){.epvbar+.epohead{padding-top:10px}}
+
+/* epOrgMap3: Grid/Map switch moved to the top right (same spot in both views). In Map view the map's own List and
+   zoom buttons move down below it. */
+.epvbar{justify-content:flex-end}
+.epfull>.epvbar{left:auto;right:var(--g,12px)}
+.epfull .omap-ctl,.epfull .eplist-btn{margin-top:52px}

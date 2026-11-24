@@ -978,3 +978,28 @@ html.ep-pv-open,html.ep-pv-open body{overflow:hidden}
 /* epCatSwitch3: intro line above the type switch. */
 div.epchd{display:block;margin:0 0 14px}
 div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
+
+/* epPageHeads: Organisations, Events and Community use the Catalogue header: title, intro line (.oblurb), then a
+   full-width, shadow-free switch (.epchd .epvsw): Grid/Map, Upcoming/Past, Place/Tell us what you need. */
+.epchd .epvsw a{flex:1 1 0;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:46px;padding:0 8px;font-family:var(--mono);text-transform:uppercase;font-size:.8rem;color:var(--ink);text-decoration:none;white-space:nowrap;background:none}
+.epchd .epvsw a+a{border-left:1px solid var(--ink)}
+.epchd .epvsw a:hover{background:var(--hover);text-decoration:none}
+.epchd .epvsw a.on,.epchd .epvsw a.on:hover{background:var(--inv);color:var(--inv-ink)}
+.epchd .epvsw a i{font-style:normal;opacity:.6;font-size:.72rem}
+.epchd .epvsw a:before{display:none!important}
+.epchd-org .epvbar{display:block;padding:0}
+.epchd-org .epvsw,.epchd-org .epvsw:hover{width:100%;box-shadow:none}
+.epchd-org .epvsw button{flex:1 1 0;height:46px;font-size:.8rem}
+.cm-wrap{max-width:none;padding:0;margin:0}
+.cm-lede{max-width:72ch;margin:-4px 0 18px}
+.cm-wrap .epchd{margin-bottom:16px}
+.cm-sw{overflow-x:auto;scrollbar-width:none}
+.cm-sw::-webkit-scrollbar{display:none}
+.cm-sw a{flex:1 0 auto;padding:0 14px}
+.evwrap{max-width:none;margin:0}
+@media (max-width:720px){
+ .epchd .epvsw a{height:42px;font-size:.66rem;padding:0 6px}
+ .epchd .epvsw a i{font-size:.6rem}
+ .epchd-org .epvsw button{height:42px}
+ .cm-sw a{padding:0 12px}
+}

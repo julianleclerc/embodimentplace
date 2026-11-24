@@ -592,3 +592,15 @@ html:has(.chatw.walking:not(.open):not(.joy-look)) body{touch-action:auto}
 .chatw:has(.wk-e[hidden]) .wk-joyctl [data-joy-mode]{color:var(--muted);border-color:color-mix(in srgb,var(--ink) 40%,transparent)}
 .chatw:not(:has(.wk-e[hidden])) .wk-joyctl [data-joy-mode]{background:var(--inv);color:var(--inv-ink);border-color:var(--inv);box-shadow:3px 3px 0 var(--accent)}
 }
+
+/* epOrgTags: Organisations on one page; type tags replace the old per-type subtabs (Mr, epOrgKey) */
+.epotags{margin:4px 0 14px}
+.epotags button.cpill{background:none;border:0;padding:0;font:inherit;color:var(--ink);cursor:pointer}
+.epotags .cpill span{display:inline-flex;align-items:center;gap:6px}
+.epotags .cpill i{font-style:normal;opacity:.6}
+.epotags .cpill.on i{opacity:.85}
+.epobar .epoq{flex:1 1 220px;min-width:0;max-width:340px;font-family:var(--sans,inherit);text-transform:none;border:1px solid var(--rule);background:var(--paper);color:var(--ink);padding:5px 8px;font-size:.85rem}
+button.chip.epotag{border:0;font:inherit;font-family:var(--mono);text-transform:uppercase;font-size:inherit;cursor:pointer;line-height:inherit}
+.oc-chips button.chip.epotag{font-size:.62rem;position:relative;z-index:2}
+button.chip.epotag:hover,button.chip.epotag.on{outline:1px solid var(--accent);outline-offset:1px}
+@media (max-width:720px){.epotags{gap:5px}.epotags .cpill span{padding:4px 9px}.epobar{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px}.epobar .epoq{grid-column:1/-1;max-width:none;font-size:16px}.epobar label{flex-direction:column;align-items:stretch;gap:3px}.epobar select{width:100%;min-width:0}}

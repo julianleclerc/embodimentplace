@@ -17537,7 +17537,7 @@ async function orgsPayload(db, group = "", asMap = false) {
 			label: g.label,
 			blurb: g.blurb,
 			count: items.length,
-			items: group && group !== g.key ? items : group === g.key ? items : items.slice(0, 6)
+			items: group ? items : items.slice(0, 6)
 		};
 	}).filter((g) => g.count > 0);
 	const inAny = new Set(ORG_GROUPS.flatMap((g) => byRole(g.roles).map((c) => c.id)));
@@ -17546,8 +17546,8 @@ async function orgsPayload(db, group = "", asMap = false) {
 	const payload = {
 		total: cards.length,
 		group: group || void 0,
-		groups: group && group !== "map" ? groups.filter((g) => g.key === group) : groups,
-		other: group && group !== "map" ? [] : other,
+		groups: group && group !== "map" && group !== "all" ? groups.filter((g) => g.key === group) : groups,
+		other: group && group !== "map" && group !== "all" ? [] : other,
 		countries,
 		map: asMap || group === "map"
 	};

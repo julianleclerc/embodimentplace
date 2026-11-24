@@ -752,6 +752,42 @@ html.ep-orgmap footer,html.ep-orgmap .site-foot{display:none}
   .epfull .omap .omap-filters:focus-within{box-shadow:4px 4px 0 var(--accent)}
 }
 
+/* epOrgMap6: map controls placed like a map app and styled exactly like the dock (Walk/Online = .wk-btn,
+   Lounge = .cw-launch): no transitions, paper + 1px ink, hover = instant 4px accent shadow, on = --inv fill.
+   Top row: search (left) and Grid/Map switch (right), 12px under the header.
+   Bottom row: List (left) on the same line as the dock; zoom stacked just above the dock on the right. */
+.epvsw,.epvsw button,.epfull .eplist-btn,.epfull .omap-ctl,.epfull .omap-ctl button{transition:none}
+.epvsw{border-color:var(--ink);background:var(--paper)}
+.epvsw:hover{box-shadow:4px 4px 0 var(--accent)}
+.epvsw button{color:var(--ink);background:var(--paper)}
+.epvsw button.on{background:var(--inv);color:var(--inv-ink)}
+.epvsw button+button{border-left-color:var(--ink)}
+.epfull .eplist-btn{top:auto;bottom:16px;right:auto;left:var(--g,12px);width:auto;min-width:106px;padding:0 14px;gap:8px;background:var(--paper);color:var(--ink);border:1px solid var(--ink)}
+.epfull .eplist-btn:hover{background:var(--paper);box-shadow:4px 4px 0 var(--accent)}
+.epfull .eplist-btn.on,.epfull .eplist-btn.on:hover{background:var(--inv);color:var(--inv-ink);border-color:var(--inv);box-shadow:4px 4px 0 var(--accent)}
+.epfull .omap-ctl{top:auto;right:16px;bottom:60px;border-color:var(--ink);background:var(--paper)}
+.epfull .omap-ctl:hover{box-shadow:none}
+.epfull .omap-ctl button,.epfull .omap-ctl button:hover{background:var(--paper);color:var(--ink);border-bottom-color:var(--ink)}
+.epfull .omap-ctl button:last-child{border-bottom:0}
+.epfull .omap-ctl button:hover{background:var(--inv);color:var(--inv-ink)}
+@media (min-width:761px){
+  .epfull .omap .omap-filters{right:auto;left:var(--g,12px);max-width:calc(100% - 2*var(--g,12px) - 166px);justify-content:flex-start;border-color:var(--ink)}
+  .epfull .omap .omap-filters:focus-within{box-shadow:4px 4px 0 var(--accent)}
+  html.ep-orgmap .cw-panel.eplw{height:min(560px,calc(100vh - var(--ep-maptop,46px) - 150px))}
+}
+@media (max-width:760px){
+  .epfull .eplist-btn{top:auto;right:auto;left:var(--g,12px);bottom:calc(8px + env(safe-area-inset-bottom));width:auto;min-width:98px;height:44px}
+  .epfull .eplist-btn.on,.epfull .eplist-btn.on:hover{box-shadow:3px 3px 0 var(--accent)}
+  .epfull .omap-ctl{top:auto;right:8px;bottom:calc(60px + env(safe-area-inset-bottom))}
+  .epfull .omap .omap-filters{top:11px;bottom:auto;left:var(--g,12px);max-width:calc(100% - 2*var(--g,12px) - 158px)}
+  .epfull .omap .omap-filters.epmf-open{max-width:calc(100% - 2*var(--g,12px));z-index:40}
+  .epfull .epmf-tog{min-height:44px}
+}
+.epfull .eplist-btn b,.epfull .eplist-btn.on b{background:none;color:inherit;border-radius:0;padding:0;min-width:0;font-weight:400;opacity:.6}
+@media (max-width:760px){.epfull .omap-attr{bottom:calc(58px + env(safe-area-inset-bottom));left:var(--g,12px)}}
+.epfull .epvsw{box-shadow:none}
+.epfull .epvsw:hover{box-shadow:4px 4px 0 var(--accent)}
+
 /* epCatalogue: one Catalogue page (/catalogue, epCatalogue/epCatCard) for robots, hardware, models and software.
    Reuses the epOrgTags2 toolbar and card layout; bigger picture, status label and a small spec row. */
 .epccards .ocard{position:relative}

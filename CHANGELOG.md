@@ -33,6 +33,11 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Catalogue type is a switch, kinds are the only tag row.** Julian found the two stacked tag rows (type, then kind)
+  odd. Robots / Hardware / Models / Software is now a switch in the header (`.epvsw.epcsw`, the same style as the
+  Organisations Grid/Map switch): beside the title on desktop, full width under it on a phone. The kind tags are the
+  only tag row and lost their "Kind" label. CSS block `epCatSwitch`.
+
 - **Catalogue matches the rest of the site.** Julian found Catalogue's fonts and buttons inconsistent. Catalogue,
   its preview and Compare now reuse the shared styles: the same title size and intro line as Organisations
   (`.listhead`, `.oblurb`), the same toolbar order (search, type tags, then count and Sort), kinds as the same

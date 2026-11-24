@@ -21070,7 +21070,7 @@ async function epCatalogue(db) {
 			card_name: org ? cardName(rec.name, org.name) : rec.name,
 			summary: rec.summary || "",
 			href: `/r/${rec.slug}`,
-			ph: phModel(rec, "sm", rec.type === "model" ? org : void 0),
+			ph: phModel(rec, "md", rec.type === "model" ? org : void 0),
 			tag,
 			kind,
 			ck: rec.type === "product" ? kind : rec.type,
@@ -21082,6 +21082,9 @@ async function epCatalogue(db) {
 			updated: rec.updated || ""
 		};
 	});
+	// Kind sections on the page follow this order: biggest first, "other"/"misc" last.
+	const lastKey = (k) => (k.key === "other" || k.key === "misc" ? 1 : 0);
+	for (const list of Object.values(kinds)) list.sort((x, y) => lastKey(x) - lastKey(y) || y.count - x.count || x.label.localeCompare(y.label));
 	return {
 		tags: EP_CAT_TAGS.map((t) => ({ ...t, count: items.filter((i) => i.tag === t.key).length })),
 		kinds,

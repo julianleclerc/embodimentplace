@@ -33,6 +33,20 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Catalogue grouped by kind.** Julian didn't like humanoids, arms and quadrupeds mixed in one grid (same for the
+  other types). Within a type, Catalogue now shows one section per kind with a heading and count (biggest kind first,
+  "Other" last; order set in `epCatalogue` in the Worker). Kind chips under the toolbar (`.epckind`) replace the Kind
+  menu: tap one to show only that kind (`&kind=`), tap it again to go back to all sections. Section headings also
+  isolate their kind. The kind label on the picture is hidden where the section already says it. The Sort menu lost
+  its "Kind" option, and on a phone it now sits beside the count. A type with one kind (Models today) shows a plain
+  grid. First page is 60 items. CSS block `epCatKinds`.
+
+- **Picture-first Catalogue cards.** Julian couldn't see the robots in the small thumbnails. Cards (`epCatCard`, class
+  `.epct` in `.epcgrid`) now lead with a big 4:3 picture, the kind label on the picture and Compare on its top right,
+  then name, maker and status, summary (desktop only) and key specs. Two columns on a phone, as many 230px columns as
+  fit on desktop. The header is tighter: no intro line, smaller title, and on desktop the search box shares a row
+  with the count, Kind and Sort. `/api/catalogue` sends `md` pictures. CSS block `epCatGrid`.
+
 - **Catalogue: no "All" tag, and a preview for every item.** Julian found "All" pointless (robots, models and
   software mixed). Catalogue now opens on Robots; the type tags are single-select with one always on (`?tag=`
   defaults to robots), and search/kind/count apply within that type. Tapping a card (picture, name, summary or specs)

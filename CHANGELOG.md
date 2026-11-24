@@ -33,6 +33,15 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-24
 
+- **Catalogue matches the rest of the site.** Julian found Catalogue's fonts and buttons inconsistent. Catalogue,
+  its preview and Compare now reuse the shared styles: the same title size and intro line as Organisations
+  (`.listhead`, `.oblurb`), the same toolbar order (search, type tags, then count and Sort), kinds as the same
+  square `.epotag` buttons with a "Kind" label (no more rounded pills in Arial), cards with the `.ocard` hairline
+  border and `.oc-name` name size, the card Compare button styled like Follow (`.ep-wbtn`, "+ Compare"), the kind
+  label as a `.chip`, and the preview and compare bar actions as `.btn`. The "Only these" link on section headings is
+  gone (the heading itself still isolates the kind). Catalogue stays highlighted in the menu on `/compare`. CSS block
+  `epCatTidy`; the old `.epchead`/`.epctools` grid and the pill styles were removed.
+
 - **Catalogue grouped by kind.** Julian didn't like humanoids, arms and quadrupeds mixed in one grid (same for the
   other types). Within a type, Catalogue now shows one section per kind with a heading and count (biggest kind first,
   "Other" last; order set in `epCatalogue` in the Worker). Kind chips under the toolbar (`.epckind`) replace the Kind

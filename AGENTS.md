@@ -108,7 +108,8 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   `epCatalogue`/`epCatCard`, Worker `GET /api/catalogue` via `epCatalogue`). There are no separate Robots, Hardware,
   Models or Software tabs, and no "All" tag: it opens on Robots. Types are single-select tags kept in the URL (`?tag=robots|hardware|models|software`),
   and within a type items are grouped into one section per kind (humanoids, arms, quadrupeds...), never one mixed grid.
-  Kind chips isolate one kind (`&kind=humanoid`). Old `/t/<category>`, `/t/model`, `/t/benchmark` and
+  Kind tags isolate one kind (`&kind=humanoid`). Catalogue, preview and Compare reuse the shared classes (`.epotag`,
+  `.ep-wbtn`, `.chip`, `.btn`, `.listhead`/`.oblurb`); don't give them their own button or font styles. Old `/t/<category>`, `/t/model`, `/t/benchmark` and
   `/t/software[/<kind>]` links redirect there (in `Rr`). Events stays its own tab.
 - Compare only ever compares one kind (humanoids with humanoids, cameras with cameras, models with models), each
   with its own spec fields from `VIEWS`. Items are picked with the Compare button on Catalogue cards.

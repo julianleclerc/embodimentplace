@@ -4,6 +4,7 @@ import { a as sign, c as tokenHash, d as bytesToHex, i as randomBytes, l as sha2
 import { DurableObject } from "cloudflare:workers";
 import { EP_SEED_ROBOT_MAKERS_2026_11 } from "./assets/seed-robot-makers-2026-11.js";
 import { EP_SEED_ROBOT_SPECS_2026_11 } from "./assets/seed-robot-specs-2026-11.js";
+import { EP_SEED_ORG_OVERVIEWS_2026_11 } from "./assets/seed-org-overviews-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -22515,7 +22516,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -22581,9 +22582,35 @@ async function epSeedRun(db, seed) {
 			stmts.push(db.prepare("UPDATE records SET data=?, updated=? WHERE id=?").bind(JSON.stringify(data), ts, row.id));
 		}
 	}
+	// Overview fills: { slug, summary, body }. Only organisations whose summary or body is still empty are touched, and
+	// only the empty field is written; existing text is never overwritten. Each changed record gets a revision first
+	// (same snapshot as an edit), and its search index row is rebuilt. Ids go in as one JSON parameter (json_each).
+	let nOrgs = 0;
+	if ((seed.orgs || []).length) {
+		const rows = ((await db.prepare("SELECT id, slug, summary, body FROM records WHERE type IN ('company','university','lab') AND slug IN (SELECT value FROM json_each(?))").bind(JSON.stringify(seed.orgs.map((x) => x.slug))).all()).results || []);
+		const bySlug = new Map(rows.map((r) => [String(r.slug), r]));
+		const ids = [], ups = [];
+		for (const o of seed.orgs) {
+			const row = bySlug.get(o.slug);
+			if (!row) continue;
+			const sum = String(row.summary || "").trim() ? null : (o.summary || null);
+			const bod = String(row.body || "").trim() ? null : (o.body || null);
+			if (!sum && !bod) continue;
+			ids.push(Number(row.id));
+			ups.push(db.prepare("UPDATE records SET summary=COALESCE(?, summary), body=COALESCE(?, body), updated=? WHERE id=?").bind(sum, bod, ts, row.id));
+		}
+		if (ids.length) {
+			const idj = JSON.stringify(ids);
+			stmts.push(db.prepare("INSERT INTO revisions(record_id,snapshot,at) SELECT id, json_object('id',id,'type',type,'slug',slug,'name',name,'summary',summary,'body',body,'data',data,'notes',notes,'private',private,'watch',watch,'demo',demo,'created',created,'updated',updated,'author_id',author_id,'feed_at',feed_at), ? FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(ts, idj));
+			stmts.push(...ups);
+			stmts.push(db.prepare("DELETE FROM fts WHERE rowid IN (SELECT value FROM json_each(?))").bind(idj));
+			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(idj));
+			nOrgs = ids.length;
+		}
+	}
 	if (stmts.length) await db.batch(stmts);
-	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs })).run();
-	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs`);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews`);
 }
 async function epSeedCron(env) {
 	try {

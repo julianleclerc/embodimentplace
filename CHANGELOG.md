@@ -33,6 +33,23 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-25
 
+- **Overviews for the 150 organisations that had none.** Julian asked for an overview on every company. 25 of 175
+  had one; this fills the other 150 (companies, labs, universities and investors) with a one-line summary, shown on
+  cards and at the top of each page, plus a short body of one or two sentences. Each was written from the
+  organisation's own site and reliable sources such as Wikipedia, company press releases and trade press; the
+  sources sit next to each entry as `src` in the seed file but are not stored in D1. Facts that change often
+  (funding, headcounts, fleet sizes) were left out.
+  - Content: `worker/dist/assets/seed-org-overviews-2026-11.js` (`EP_SEED_ORG_OVERVIEWS_2026_11`), added to
+    `EP_SEEDS`. It runs once from the hourly cron after this deploys (marker `settings.seed_org-overviews-2026-11`).
+  - Code: `epSeedRun` in `worker/dist/index.js` accepts a new `orgs` list of `{ slug, summary, body }`. It writes
+    only a summary or body that is still empty, so existing overviews and anything edited in Admin before the
+    seed runs are kept. Changed records get a revision first (same snapshot as an edit), and their `fts` search
+    rows are rebuilt. Ids are passed as one JSON parameter (`json_each`), so it stays under D1's bound-parameter
+    limit. All writes go in one `db.batch()` (about 153 statements).
+  - Tested with `wrangler dev --local` against a copy of the live `records` table: 150 overviews written, 0 empty
+    summaries left, 14 summary-only records unchanged, 150 revisions, search finds the new text, and a second
+    cron tick does nothing.
+
 - **Pages no longer take ~5.5 s to load about half the time.** Every new Worker isolate used to run about 57 D1
   statements one after another before answering its first request (5 auth `CREATE TABLE`s, a `PRAGMA`, 21 more
   `CREATE TABLE`s and 30 `ALTER TABLE ... ADD COLUMN`s, most failing as duplicates). `loadAuth` runs for every

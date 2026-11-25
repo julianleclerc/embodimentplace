@@ -2238,17 +2238,79 @@ var COLS = [
 		"TEXT"
 	]
 ];
+// epSchema: the table and column checks run once per schema version, not on every new isolate.
+// Before, each new isolate ran about 57 D1 statements one after another (5 auth tables, a PRAGMA, 21 more tables and
+// 30 ALTER TABLE ... ADD COLUMN, most of which fail with "duplicate column") before it answered anything, static files
+// included, because loadAuth runs for every request. At roughly 0.1 s per D1 round trip that is the ~5.5 s first load.
+// Now: one SELECT of settings.schema_version. When it equals EP_SCHEMA_VERSION nothing else runs. EP_SCHEMA_VERSION is a
+// hash of AUTH_DDL, TABLES, COLS, EP_USER_COLS and EP_MAIL_DDL, so adding a table or column to those lists changes it and
+// the checks run again on the next request by themselves. When they run, every CREATE ... IF NOT EXISTS goes in one
+// db.batch(), the columns are read with one batch of PRAGMA table_info, only missing columns are added, and the version
+// is saved only when every listed table exists and every ALTER worked. Requests that arrive together on a new isolate
+// share one promise, so the work is not repeated, and a failure lets the next request try again.
 var ready = null;
 async function ensureExtraSchema(db) {
-	ready ||= /* @__PURE__ */ new WeakSet();
-	if (ready.has(db)) return;
-	for (const sql of TABLES) try {
-		await db.prepare(sql).run();
+	return epEnsureSchema(db);
+}
+var EP_USER_COLS = [
+	["users", "totp", "TEXT DEFAULT ''"],
+	["users", "totp_step", "INTEGER DEFAULT 0"],
+	["users", "recovery", "TEXT DEFAULT '[]'"],
+	["users", "suspended_until", "TEXT DEFAULT ''"],
+	["users", "suspend_reason", "TEXT DEFAULT ''"]
+];
+var EP_MAIL_DDL = `CREATE TABLE IF NOT EXISTS email_log(
+      id INTEGER PRIMARY KEY, to_addr TEXT NOT NULL, subject TEXT, text_body TEXT, html_body TEXT,
+      provider TEXT, status TEXT, error TEXT, created TEXT)`;
+var EP_SCHEMA_KEY = "schema_version";
+var epSchemaVer = null;
+function epSchemaVersion() {
+	if (epSchemaVer) return epSchemaVer;
+	const src = JSON.stringify([AUTH_DDL, TABLES, COLS, EP_USER_COLS, EP_MAIL_DDL]);
+	let h = 2166136261;
+	for (let i = 0; i < src.length; i++) {
+		h ^= src.charCodeAt(i);
+		h = Math.imul(h, 16777619) >>> 0;
+	}
+	return epSchemaVer = "s1-" + h.toString(16).padStart(8, "0") + "-" + src.length;
+}
+var epSchemaJob = null;
+function epEnsureSchema(db) {
+	if (!db) return Promise.resolve();
+	if (!epSchemaJob) epSchemaJob = epSchemaRun(db).catch((ex) => {
+		epSchemaJob = null;
+		throw ex;
+	});
+	return epSchemaJob;
+}
+async function epSchemaRun(db) {
+	const want = epSchemaVersion();
+	try {
+		const row = await db.prepare("SELECT value FROM settings WHERE key=?").bind(EP_SCHEMA_KEY).first();
+		if (row && row.value === want) return;
 	} catch {}
-	for (const [tbl, col, typ] of COLS) try {
-		await db.prepare(`ALTER TABLE ${tbl} ADD COLUMN ${col} ${typ}`).run();
-	} catch {}
-	ready.add(db);
+	const creates = [...AUTH_DDL, ...TABLES, EP_MAIL_DDL];
+	try {
+		await db.batch(creates.map((sql) => db.prepare(sql)));
+	} catch {
+		for (const sql of creates) try {
+			await db.prepare(sql).run();
+		} catch {}
+	}
+	const cols = [...EP_USER_COLS, ...COLS];
+	const tables = [...new Set(cols.map((c) => c[0]))];
+	const info = await db.batch(tables.map((t) => db.prepare(`PRAGMA table_info(${t})`)));
+	const have = new Map(tables.map((t, i) => [t, new Set((info[i]?.results || []).map((r) => r.name))]));
+	let complete = tables.every((t) => have.get(t).size > 0);
+	for (const [tbl, col, typ] of cols) {
+		if (have.get(tbl).has(col)) continue;
+		try {
+			await db.prepare(`ALTER TABLE ${tbl} ADD COLUMN ${col} ${typ}`).run();
+		} catch {
+			complete = false;
+		}
+	}
+	if (complete) await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(EP_SCHEMA_KEY, want).run();
 }
 // backend/worker/src/env.ts
 function envFlag(env, key, fallback = false) {
@@ -2290,22 +2352,9 @@ var AUTH_DDL = [
 	`CREATE TABLE IF NOT EXISTS owners(user_id INTEGER NOT NULL, company_id INTEGER NOT NULL, created TEXT, PRIMARY KEY(user_id, company_id))`
 ];
 var schemaReady = null;
+// See epSchema above: auth tables and users columns are part of the same once-per-version check.
 async function ensureAuthSchema(db) {
-	schemaReady ||= /* @__PURE__ */ new WeakSet();
-	if (schemaReady.has(db)) return;
-	for (const sql of AUTH_DDL) await db.prepare(sql).run();
-	const cols = await db.prepare("PRAGMA table_info(users)").all();
-	const have = new Set((cols.results || []).map((c) => c.name));
-	for (const [name, typ] of [
-		["totp", "TEXT DEFAULT ''"],
-		["totp_step", "INTEGER DEFAULT 0"],
-		["recovery", "TEXT DEFAULT '[]'"],
-		["suspended_until", "TEXT DEFAULT ''"],
-		["suspend_reason", "TEXT DEFAULT ''"]
-	]) if (!have.has(name)) try {
-		await db.prepare(`ALTER TABLE users ADD COLUMN ${name} ${typ}`).run();
-	} catch {}
-	schemaReady.add(db);
+	return epEnsureSchema(db);
 }
 function emptyAuth(ip = "", https = false) {
 	return {
@@ -2443,8 +2492,7 @@ async function endOtherSessions(db, uid, keep = "") {
 	await db.prepare("DELETE FROM sessions WHERE user_id=? AND token<>?").bind(uid, keep || "").run();
 }
 async function loadAuth(request, env) {
-	await ensureAuthSchema(env.DB);
-	await ensureExtraSchema(env.DB);
+	await epEnsureSchema(env.DB);
 	const ip = clientIp$2(request);
 	const https = isHttps(request, env);
 	const tok = parseCookies(request).hi_sid;
@@ -2847,9 +2895,7 @@ async function turnstileOk(env, token, ip) {
 // backend/worker/src/mail.ts
 /** Pluggable email sending. Locally (default) messages are logged, never sent. Secrets stay in Worker secrets / .dev.vars. */
 async function ensureMailSchema(db) {
-	await db.prepare(`CREATE TABLE IF NOT EXISTS email_log(
-      id INTEGER PRIMARY KEY, to_addr TEXT NOT NULL, subject TEXT, text_body TEXT, html_body TEXT,
-      provider TEXT, status TEXT, error TEXT, created TEXT)`).run();
+	return epEnsureSchema(db);
 }
 function mailFromEnv(env) {
 	return Boolean(env.EMAIL || env.EP_SMTP_HOST || env.EP_MAIL_API_URL);
@@ -22173,7 +22219,16 @@ var app = new Hono();
 function isOauthCallback(path) {
 	return /^\/api\/auth\/oauth\/[a-z]+\/callback$/.test(path);
 }
+// epStaticPath: built files (JS, CSS, logos, hats) need no login, so they skip loadAuth and its D1 work entirely.
+function epStaticPath(path) {
+	return /^\/(assets|logos|static)\//.test(path) || /^\/(favicon\.ico|robots\.txt|site\.webmanifest|apple-touch-icon[^/]*\.png)$/.test(path);
+}
 app.use("*", async (c, next) => {
+	const path0 = new URL(c.req.url).pathname;
+	if ((c.req.method === "GET" || c.req.method === "HEAD") && epStaticPath(path0)) {
+		c.set("auth", emptyAuth(clientIp$2(c.req.raw), isHttps(c.req.raw, c.env)));
+		return next();
+	}
 	const auth = await loadAuth(c.req.raw, c.env);
 	c.set("auth", auth);
 	const path = new URL(c.req.url).pathname;

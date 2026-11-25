@@ -66,6 +66,16 @@ There is no original source. The repository was rebuilt from the live deployment
 - Watchlist digests are sent from `newsletter@embodiment.place` (`EP_DIGEST_FROM`); everything else from
   `EP_MAIL_FROM` (no-reply@). Pass `from` to `sendMail` to use another sender; it falls back to the default if refused.
 
+### Database tables and columns
+
+- Tables and columns that the code adds itself live in `AUTH_DDL`, `TABLES`, `COLS`, `EP_USER_COLS` and
+  `EP_MAIL_DDL` in `worker/dist/index.js`. Add new ones there, not as ad-hoc `CREATE`/`ALTER` calls in a handler.
+  `epEnsureSchema` runs them once per schema version (a hash of those lists, saved as `settings.schema_version`).
+  A new isolate costs one D1 read, not one per statement. Check with `node scripts/cold-start-check.mjs` (and
+  `node scripts/cold-start-check.mjs 95 main` to compare with `main`).
+- `wrangler dev` with the pinned wrangler needs `--compatibility-date 2026-11-10` locally (its workerd is older
+  than `wrangler.json`'s date). Don't change the date in `wrangler.json`: the deploy check compares it with the live Worker.
+
 ### Running it locally
 
 ```

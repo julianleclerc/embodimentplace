@@ -1003,3 +1003,18 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
  .epchd-org .epvsw button{height:42px}
  .cm-sw a{padding:0 12px}
 }
+
+/* epPageTabs: on Organisations, Events and Community the header switch is a row of underline tabs (text labels, thin
+   rule underneath, a 2px ink line under the selected one). Catalogue keeps its big type switch (.epchd .epcsw is
+   only restyled here when it is not Catalogue's). The full-screen map's own Grid/Map switch is unchanged. */
+.epchd-org .epvsw,.epchd-org .epvsw:hover,.epchd nav.epvsw,.epchd nav.epvsw:hover{display:flex;width:100%;gap:24px;border:0;border-bottom:1px solid var(--rule);background:none;box-shadow:none;overflow-x:auto;scrollbar-width:none}
+.epchd-org .epvsw::-webkit-scrollbar,.epchd nav.epvsw::-webkit-scrollbar{display:none}
+.epchd-org .epvsw button,.epchd nav.epvsw a{flex:0 0 auto;height:40px;padding:0 1px;margin-bottom:-1px;font-size:.75rem;background:none;color:var(--muted);border:0;border-bottom:2px solid transparent;justify-content:flex-start}
+.epchd-org .epvsw button+button,.epchd nav.epvsw a+a{border-left:0}
+.epchd-org .epvsw button:hover,.epchd nav.epvsw a:hover{background:none;color:var(--ink)}
+.epchd-org .epvsw button.on,.epchd nav.epvsw a.on,.epchd nav.epvsw a.on:hover{background:none;color:var(--ink);border-bottom-color:var(--ink)}
+.epchd-org .epvsw button svg{opacity:.7}
+.epchd-org .epvsw button.on svg{opacity:1}
+.epchd nav.epvsw a i{opacity:.6}
+.epchd+.evwrap .evlist{border-top:0}
+@media (max-width:720px){.epchd-org .epvsw button,.epchd nav.epvsw a{height:40px;font-size:.7rem;padding:0 1px}.epchd-org .epvsw,.epchd nav.epvsw{gap:20px}}

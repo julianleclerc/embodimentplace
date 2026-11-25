@@ -33,6 +33,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-25
 
+- **Underline tabs on Organisations, Events and Community.** Julian didn't like the big full-width switches there
+  (Community was better before). Grid/Map, Upcoming/Past and the Community sections are now a row of text tabs on a
+  thin rule, with a 2px ink line under the selected one. Catalogue keeps its big type switch, and the full-screen
+  map's own Grid/Map switch is unchanged.
+  - Code: CSS block `epPageTabs` appended to `public/assets/index-*.css` (scoped to `.epchd-org .epvsw` and
+    `.epchd nav.epvsw`, so Catalogue's `div` switch is untouched). No JS change.
+
 - **Overviews for the 150 organisations that had none.** Julian asked for an overview on every company. 25 of 175
   had one; this fills the other 150 (companies, labs, universities and investors) with a one-line summary, shown on
   cards and at the top of each page, plus a short body of one or two sentences. Each was written from the

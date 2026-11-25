@@ -33,6 +33,35 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-25
 
+- **Organisation directory: 140 more organisations, each with its HQ address on the map.** Julian asked for a
+  thorough list of the organisations working on humanoids, physical AI and embodied AI, with their HQ address. This
+  adds 140 organisations: robot makers (humanoid, legged, mobile manipulation and service robots), robot
+  foundation-model labs, simulation and data tools, suppliers (actuators, reducers, hands, grippers, tactile and depth
+  sensors), compute, universities, research labs and investors. They were deduplicated against the 175 already on the
+  site, including renamed and acquired names (for example Kinisi is listed as now part of Bear Robotics, and
+  Aldebaran's NAO business is listed as Maxtronics). Each gets a one-line summary, a short body where there was
+  something solid to say, its website, a logo, its roles and an HQ entry. It also fills the HQ for the 23 existing
+  organisations that had no location (Embodiment Place itself is left without one).
+  - Address: the HQ goes in the existing `data.locations` field (kind `HQ`, address, lat/lon, src), the same field
+    the edit form, the org page's Locations panel and "Based" line, and the map already use. No new column: the
+    schema already has a proper home for it. Street addresses are used where the organisation or a registry
+    publishes one, otherwise city and country. Coordinates come from OpenStreetMap Nominatim (street level where the
+    address resolved, otherwise the district or city). `city` and `country` are set too.
+  - Logos: 140 new 128×128 transparent PNGs in `public/logos/<slug>.png`, from each organisation's site icon or
+    logo, or its Wikimedia Commons logo.
+  - Content: `worker/dist/assets/seed-org-directory-2026-11.js` (`EP_SEED_ORG_DIRECTORY_2026_11`), added to
+    `EP_SEEDS`. It runs once from the hourly cron after this deploys (marker `settings.seed_org-directory-2026-11`).
+  - Code: `epSeedRun` accepts two new lists. `newOrgs` (`{ slug, name, summary, body, data }`) inserts an organisation
+    only when no record has that slug and no organisation has that name, in chunks of 25 passed as JSON
+    (`json_each`), with its `fts` row. `orgData` (`{ slug, data }`) fills only empty fields on existing organisations,
+    with a revision first and an `fts` rebuild, like the overview fills. Tested locally on a copy of the live data:
+    the first run added 140 organisations and 69 fields (23 × city, country, locations), and a second run with the
+    marker removed changed nothing.
+  - Display: Community > Organisations showed "Based" as the full HQ address plus the country, so the country came
+    out twice ("New York, NY, United States, United States"). `communityOrgsPayload` now uses the `city` field first
+    and doesn't repeat the country.
+  - New organisations are not switched on for tracking (Admin > Organisations); turn on the ones worth following.
+
 - **Underline tabs on Organisations, Events and Community.** Julian didn't like the big full-width switches there
   (Community was better before). Grid/Map, Upcoming/Past and the Community sections are now a row of text tabs on a
   thin rule, with a 2px ink line under the selected one. Catalogue keeps its big type switch, and the full-screen

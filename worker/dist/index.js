@@ -5,6 +5,7 @@ import { DurableObject } from "cloudflare:workers";
 import { EP_SEED_ROBOT_MAKERS_2026_11 } from "./assets/seed-robot-makers-2026-11.js";
 import { EP_SEED_ROBOT_SPECS_2026_11 } from "./assets/seed-robot-specs-2026-11.js";
 import { EP_SEED_ORG_OVERVIEWS_2026_11 } from "./assets/seed-org-overviews-2026-11.js";
+import { EP_SEED_ORG_DIRECTORY_2026_11 } from "./assets/seed-org-directory-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -19009,9 +19010,11 @@ async function communityOrgsPayload(c) {
 			const open_to = asList(fieldVal(r.data, "open_to"));
 			const locs = fieldVal(r.data, "locations");
 			const locRows = Array.isArray(locs) ? locs : [];
-			const city = (locRows.find((l) => l && (l.city || l.address)) || {}).city || (locRows.find((l) => l && l.address) || {}).address || String(fieldVal(r.data, "city") || "");
+			// Place is "city, country": the city field first, then a location's city, and only then the full HQ address (which
+			// may be a street address that already ends with the country, so the country is not repeated).
+			const city = String(fieldVal(r.data, "city") || "") || (locRows.find((l) => l && l.city) || {}).city || (locRows.find((l) => l && l.address) || {}).address || "";
 			const country = String(fieldVal(r.data, "country") || "");
-			const place = [city, country].filter(Boolean).join(", ");
+			const place = country && city.toLowerCase().endsWith(country.toLowerCase()) ? city : [city, country].filter(Boolean).join(", ");
 			return {
 				id: r.id,
 				slug: r.slug,
@@ -22571,7 +22574,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -22663,9 +22666,63 @@ async function epSeedRun(db, seed) {
 			nOrgs = ids.length;
 		}
 	}
+	// New organisations: { slug, name, summary, body, data }. One is skipped when any record already uses the slug or an
+	// organisation already has the name (any case), so organisations added by hand in the meantime are left alone. Rows go
+	// in as JSON (json_each) in chunks, so the bound parameters stay few; the search index rows are added by slug.
+	let nNewOrgs = 0;
+	if ((seed.newOrgs || []).length) {
+		const taken = new Set(((await db.prepare("SELECT lower(name) AS n FROM records WHERE type IN ('company','university','lab')").all()).results || []).map((r) => String(r.n)));
+		const rows = [];
+		for (const o of seed.newOrgs) {
+			const lower = String(o.name || "").toLowerCase();
+			if (!o.slug || !lower || slugs.has(o.slug) || taken.has(lower)) continue;
+			slugs.add(o.slug);
+			taken.add(lower);
+			rows.push({ slug: o.slug, name: o.name, summary: o.summary || "", body: o.body || "", data: JSON.stringify(o.data || {}) });
+		}
+		for (let i = 0; i < rows.length; i += 25) {
+			const chunk = rows.slice(i, i + 25);
+			stmts.push(db.prepare("INSERT INTO records(type,slug,name,summary,body,data,notes,private,watch,demo,created,updated,feed_at) SELECT 'company', json_extract(value,'$.slug'), json_extract(value,'$.name'), json_extract(value,'$.summary'), json_extract(value,'$.body'), json_extract(value,'$.data'), ?, 0, 0, 0, ?, ?, ? FROM json_each(?)").bind(seed.note || "", ts, ts, ts.slice(0, 10), JSON.stringify(chunk)));
+			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE slug IN (SELECT value FROM json_each(?))").bind(JSON.stringify(chunk.map((r) => r.slug))));
+		}
+		nNewOrgs = rows.length;
+	}
+	// Organisation field fills: { slug, data: { field: value } } for existing organisations (e.g. HQ city, country and
+	// locations). Only fields that are still empty are written. Each changed record gets a revision first and its
+	// search index row is rebuilt, as for overview fills.
+	let nOrgFields = 0;
+	if ((seed.orgData || []).length) {
+		const rows = ((await db.prepare("SELECT id, slug, data FROM records WHERE type IN ('company','university','lab') AND slug IN (SELECT value FROM json_each(?))").bind(JSON.stringify(seed.orgData.map((x) => x.slug))).all()).results || []);
+		const bySlug = new Map(rows.map((r) => [String(r.slug), r]));
+		const ids = [], ups = [];
+		for (const od of seed.orgData) {
+			const row = bySlug.get(od.slug);
+			if (!row) continue;
+			let data = {};
+			try { data = JSON.parse(String(row.data || "{}")) || {}; } catch {}
+			let changed = 0;
+			for (const [k, val] of Object.entries(od.data || {})) {
+				const cur = fieldVal(data, k);
+				if (cur != null && cur !== "" && !(Array.isArray(cur) && !cur.length)) continue;
+				data[k] = val;
+				changed++;
+			}
+			if (!changed) continue;
+			nOrgFields += changed;
+			ids.push(Number(row.id));
+			ups.push(db.prepare("UPDATE records SET data=?, updated=? WHERE id=?").bind(JSON.stringify(data), ts, row.id));
+		}
+		if (ids.length) {
+			const idj = JSON.stringify(ids);
+			stmts.push(db.prepare("INSERT INTO revisions(record_id,snapshot,at) SELECT id, json_object('id',id,'type',type,'slug',slug,'name',name,'summary',summary,'body',body,'data',data,'notes',notes,'private',private,'watch',watch,'demo',demo,'created',created,'updated',updated,'author_id',author_id,'feed_at',feed_at), ? FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(ts, idj));
+			stmts.push(...ups);
+			stmts.push(db.prepare("DELETE FROM fts WHERE rowid IN (SELECT value FROM json_each(?))").bind(idj));
+			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(idj));
+		}
+	}
 	if (stmts.length) await db.batch(stmts);
-	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs })).run();
-	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews`);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields`);
 }
 async function epSeedCron(env) {
 	try {

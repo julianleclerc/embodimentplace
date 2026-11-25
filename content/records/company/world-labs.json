@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "world-labs",
   "name": "World Labs",
-  "summary": "",
-  "body": "",
+  "summary": "Spatial intelligence company building world models that perceive, generate and interact with 3D worlds.",
+  "body": "Founded by Fei-Fei Li with Justin Johnson, Ben Mildenhall and Christoph Lassner. Its world model Atlas turns images into 3D worlds that can be explored and edited.",
   "data": {
     "image": {
       "v": "/logos/world-labs.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:31",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

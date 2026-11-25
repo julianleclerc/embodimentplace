@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "pal-robotics",
   "name": "PAL Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Barcelona maker of humanoid and service robots, including TIAGo and TALOS.",
+  "body": "Headquartered in Barcelona with offices in Toulouse and Bari. Its mobile manipulators, such as TIAGo Pro, are widely used in research, and it also makes RFID inventory robots for retail.",
   "data": {
     "image": {
       "v": "/logos/pal-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:25",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

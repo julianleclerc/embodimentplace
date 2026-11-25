@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "gatik",
   "name": "Gatik",
-  "summary": "",
-  "body": "",
+  "summary": "Mountain View company running autonomous box trucks for middle-mile delivery.",
+  "body": "Its Level 4 trucks move freight between distribution centres and stores for large retailers in the US and Canada.",
   "data": {
     "image": {
       "v": "/logos/gatik.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:54",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "disney-research",
   "name": "Disney Research",
-  "summary": "",
-  "body": "",
+  "summary": "The Walt Disney Company's research labs, including work on robotic characters.",
+  "body": "Pursues technology for Disney's entertainment businesses. Co-developed the Newton physics engine with NVIDIA and Google DeepMind.",
   "data": {
     "image": {
       "v": "/logos/disney-research.png",
@@ -43,6 +43,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:16",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "kodiak-robotics",
   "name": "Kodiak Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Autonomous trucking company, now trading as Kodiak AI.",
+  "body": "Founded in 2018 by Don Burnette, co-founder of self-driving truck startup Otto. Its Kodiak Driver runs on trucks and other ground vehicles, from a California headquarters and a Texas operations centre.",
   "data": {
     "image": {
       "v": "/logos/kodiak-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:55",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

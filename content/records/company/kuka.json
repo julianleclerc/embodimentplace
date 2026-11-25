@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "kuka",
   "name": "KUKA",
-  "summary": "",
-  "body": "",
+  "summary": "Augsburg maker of industrial robots and automation systems, owned by Midea.",
+  "body": "Founded in 1898. Built FAMULUS in 1973, the first industrial robot with six electromechanically driven axes, and also supplies logistics and healthcare automation.",
   "data": {
     "image": {
       "v": "/logos/kuka.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:33",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

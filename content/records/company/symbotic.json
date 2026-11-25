@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "symbotic",
   "name": "Symbotic",
-  "summary": "",
-  "body": "",
+  "summary": "Wilmington, Massachusetts maker of AI-driven warehouse automation systems.",
+  "body": "Builds and runs automated warehouse systems for retailers and wholesalers in the US and Canada. Customers include Walmart, Target, Albertsons and C&S Wholesale Grocers.",
   "data": {
     "image": {
       "v": "/logos/symbotic.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:44",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

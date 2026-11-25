@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "ecovacs",
   "name": "Ecovacs",
-  "summary": "",
-  "body": "",
+  "summary": "Suzhou maker of home robots, including Deebot robot vacuums.",
+  "body": "Founded in 1998 by Qian Dongqi. One of China's largest makers of home cleaning robots.",
   "data": {
     "image": {
       "v": "/logos/ecovacs.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:02",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

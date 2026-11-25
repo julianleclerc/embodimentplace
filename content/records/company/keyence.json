@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "keyence",
   "name": "Keyence",
-  "summary": "",
-  "body": "",
+  "summary": "Osaka maker of factory automation sensors, vision systems and measuring instruments.",
+  "body": "Sells directly to customers and outsources manufacturing. Its machine vision and sensors are widely used in automated production lines.",
   "data": {
     "image": {
       "v": "/logos/keyence.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:09",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

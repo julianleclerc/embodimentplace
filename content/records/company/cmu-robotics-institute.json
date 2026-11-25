@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "cmu-robotics-institute",
   "name": "Carnegie Mellon Robotics Institute",
-  "summary": "",
-  "body": "",
+  "summary": "Carnegie Mellon's robotics department in Pittsburgh, founded in 1979.",
+  "body": "One of the world's leading robotics research institutions. Known for work in computer vision, autonomous vehicles, space exploration and assistive robotics.",
   "data": {
     "image": {
       "v": "/logos/cmu-robotics-institute.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:11",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

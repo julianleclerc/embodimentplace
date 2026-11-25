@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "cmr-surgical",
   "name": "CMR Surgical",
-  "summary": "",
-  "body": "",
+  "summary": "Cambridge, UK maker of the Versius surgical robot.",
+  "body": "Formerly Cambridge Medical Robotics. Versius is a modular robot for minimal access surgery that competes with the da Vinci system.",
   "data": {
     "image": {
       "v": "/logos/cmr-surgical.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:03",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

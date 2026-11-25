@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "clone-robotics",
   "name": "Clone Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Wrocław company building musculoskeletal androids, including Clone Alpha.",
+  "body": "Founded in 2021 by Dhanush Radhakrishnan and Łukasz Koźlik. Its robots use artificial muscles instead of motors in the joints.",
   "data": {
     "image": {
       "v": "/logos/clone-robotics.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:05",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "dobot",
   "name": "Dobot",
-  "summary": "",
-  "body": "",
+  "summary": "Shenzhen maker of collaborative robots and desktop robotic arms.",
+  "body": "Founded in 2015. Its arms are used in industrial automation and in STEM education.",
   "data": {
     "image": {
       "v": "/logos/dobot.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:41",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

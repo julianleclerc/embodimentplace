@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "righthand-robotics",
   "name": "RightHand Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Boston-area maker of AI-powered robotic piece-picking systems.",
+  "body": "Founded in 2015 by a DARPA challenge-winning team from the Harvard Biorobotics Lab, the Yale GRAB Lab and MIT. Its RightPick system picks individual items for order fulfilment.",
   "data": {
     "image": {
       "v": "/logos/righthand-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:45",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

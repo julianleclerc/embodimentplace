@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "mecka",
   "name": "Mecka",
-  "summary": "",
-  "body": "",
+  "summary": "New York data and deployment company for physical AI.",
+  "body": "Captures, structures and evaluates real-world human activity into datasets that robotics and AI teams train on.",
   "data": {
     "image": {
       "v": "/logos/mecka.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:25",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

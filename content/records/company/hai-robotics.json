@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "hai-robotics",
   "name": "Hai Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Shenzhen maker of autonomous case-handling robots for warehouses.",
+  "body": "Founded in 2016. Its HaiPick systems use tall robots that pick totes and cartons from high shelves.",
   "data": {
     "image": {
       "v": "/logos/hai-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:49",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

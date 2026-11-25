@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "toyota",
   "name": "Toyota",
-  "summary": "",
-  "body": "",
+  "summary": "Japanese carmaker, the world's largest by volume; parent of Toyota Research Institute.",
+  "body": "Founded in 1937 and headquartered in Toyota City, Aichi. Its robotics work includes the T-HR3 humanoid and research run through Toyota Research Institute.",
   "data": {
     "image": {
       "v": "/logos/toyota.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:28",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

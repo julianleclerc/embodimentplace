@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "bosch",
   "name": "Bosch",
-  "summary": "",
-  "body": "",
+  "summary": "Gerlingen engineering and technology group, maker of sensors and automation.",
+  "body": "Founded in 1886 and 94% owned by the charitable Robert Bosch Stiftung. Its businesses include automotive parts, industrial technology and sensors.",
   "data": {
     "image": {
       "v": "/logos/bosch.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:09",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

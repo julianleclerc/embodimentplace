@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "ghost-robotics",
   "name": "Ghost Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Philadelphia maker of legged robots for defence and industry, including Vision 60.",
+  "body": "Founded by Avik De and Gavin Kenneally. South Korea's LIG Nex1 bought a 60% stake in 2024.",
   "data": {
     "image": {
       "v": "/logos/ghost-robotics.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:06",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

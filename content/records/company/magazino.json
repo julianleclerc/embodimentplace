@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "magazino",
   "name": "Magazino",
-  "summary": "",
-  "body": "",
+  "summary": "Munich maker of mobile picking robots for intralogistics; a Jungheinrich subsidiary.",
+  "body": "Its TORU robot picks boxes and containers from shelves on its own and carries them. Part of forklift maker Jungheinrich since 2023.",
   "data": {
     "image": {
       "v": "/logos/magazino.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:29",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

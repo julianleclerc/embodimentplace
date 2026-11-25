@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "kaist",
   "name": "KAIST",
-  "summary": "",
-  "body": "",
+  "summary": "Korea's national research university in Daejeon; home of the HUBO humanoid.",
+  "body": "Founded by the Korean government in 1971 as the country's first research-oriented science and engineering institution. Its HUBO Lab led to Rainbow Robotics.",
   "data": {
     "image": {
       "v": "/logos/kaist.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:17",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

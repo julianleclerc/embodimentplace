@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "enact-intelligence",
   "name": "Enact Intelligence",
-  "summary": "",
-  "body": "",
+  "summary": "Zurich startup giving robots a sense of force and touch.",
+  "body": "Founded in 2026 by Manuel Yves Galliker, formerly of 1X and Physical Intelligence. Builds actuators that measure force inside the joints, with AI for contact-rich manipulation.",
   "data": {
     "image": {
       "v": "/logos/enact-intelligence.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:26",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

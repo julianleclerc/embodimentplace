@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "weride",
   "name": "WeRide",
-  "summary": "",
-  "body": "",
+  "summary": "Guangzhou autonomous driving company running robotaxis, robobuses and robovans.",
+  "body": "Develops driving technology from Level 2 to Level 4. Holds driverless permits in several countries, including China, the US, the UAE and Singapore.",
   "data": {
     "image": {
       "v": "/logos/weride.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:55",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "anduril",
   "name": "Anduril",
-  "summary": "",
-  "body": "",
+  "summary": "Costa Mesa defence company building autonomous systems.",
+  "body": "Founded in 2017 by Palmer Luckey and others. Makes drones, counter-drone systems, autonomous surveillance towers and its Lattice command-and-control software.",
   "data": {
     "image": {
       "v": "/logos/anduril.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:58",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

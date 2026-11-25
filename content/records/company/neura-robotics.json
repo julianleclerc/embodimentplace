@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "neura-robotics",
   "name": "NEURA Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Metzingen maker of cognitive cobots, mobile robots and the 4NE1 humanoid.",
+  "body": "German company that builds collaborative robots, autonomous mobile robots and humanoids designed to work alongside people.",
   "data": {
     "image": {
       "v": "/logos/neura-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:26",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

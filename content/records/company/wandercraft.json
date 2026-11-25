@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "wandercraft",
   "name": "Wandercraft",
-  "summary": "",
-  "body": "",
+  "summary": "Paris maker of self-balancing robotic exoskeletons and humanoid robots.",
+  "body": "Founded in Paris in 2012, with dual headquarters in Paris and New York. Its exoskeletons are used in rehabilitation and research.",
   "data": {
     "image": {
       "v": "/logos/wandercraft.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:04",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

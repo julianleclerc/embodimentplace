@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "seegrid",
   "name": "Seegrid",
-  "summary": "",
-  "body": "",
+  "summary": "Pittsburgh maker of vision-guided autonomous mobile robots for material handling.",
+  "body": "Co-founded by roboticist Hans Moravec. Makes autonomous pallet trucks and tow tractors for manufacturing and warehouses.",
   "data": {
     "image": {
       "v": "/logos/seegrid.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:47",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

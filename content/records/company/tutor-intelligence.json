@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "tutor-intelligence",
   "name": "Tutor Intelligence",
-  "summary": "",
-  "body": "",
+  "summary": "Watertown, Massachusetts company building AI robots for industrial work.",
+  "body": "Trains foundation models for dexterous robot manipulation and deploys its robots, such as the mobile Sonny, at customer sites across the US for an hourly fee.",
   "data": {
     "image": {
       "v": "/logos/tutor-intelligence.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:22",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

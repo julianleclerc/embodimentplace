@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "formic",
   "name": "Formic",
-  "summary": "",
-  "body": "",
+  "summary": "Chicago company offering robotic automation to manufacturers as a service.",
+  "body": "Founded in 2020. Customers pay a monthly fee for palletizing, case packing, machine tending and other systems, with no upfront capital cost.",
   "data": {
     "image": {
       "v": "/logos/formic.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:39",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

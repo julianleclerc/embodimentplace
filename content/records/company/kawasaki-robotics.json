@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "kawasaki-robotics",
   "name": "Kawasaki Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Industrial robot division of Kawasaki Heavy Industries.",
+  "body": "Kawasaki Heavy Industries is a Tokyo maker of motorcycles, aerospace equipment, ships and rolling stock. Its robotics business builds industrial robots for welding, handling and painting.",
   "data": {
     "image": {
       "v": "/logos/kawasaki-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:36",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

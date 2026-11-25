@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "amazon-robotics",
   "name": "Amazon Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Amazon's robotics arm, which designs and builds mobile fulfilment robots.",
+  "body": "Formerly Kiva Systems, which Amazon bought in 2012. Based in Massachusetts, its robots run across Amazon's fulfilment network.",
   "data": {
     "image": {
       "v": "/logos/amazon-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:49",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

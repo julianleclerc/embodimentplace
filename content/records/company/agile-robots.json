@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "agile-robots",
   "name": "Agile Robots",
-  "summary": "",
-  "body": "",
+  "summary": "Munich maker of AI-driven industrial robots and automation systems.",
+  "body": "Founded in 2018 as a spin-off from the German Aerospace Center (DLR). Owns Franka Robotics, the maker of the Franka research arm, since 2023.",
   "data": {
     "image": {
       "v": "/logos/agile-robots.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-21 00:54:54",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": "2026-11-21"
 }

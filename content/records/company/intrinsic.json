@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "intrinsic",
   "name": "Intrinsic",
-  "summary": "",
-  "body": "",
+  "summary": "Robotics software and AI company, now part of Google.",
+  "body": "Started as an Alphabet Other Bet and joined Google in February 2026. Builds Flowstate, a web-based platform for developing, simulating and deploying industrial robot applications from reusable AI skills.",
   "data": {
     "image": {
       "v": "/logos/intrinsic.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:30",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "softbank-robotics",
   "name": "SoftBank Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "SoftBank's robotics arm, known for the Pepper humanoid; now a robot integrator.",
+  "body": "Part of SoftBank Group and based in Tokyo. It builds, makes and sells robots and cobots, and integrates robots from other makers for businesses.",
   "data": {
     "image": {
       "v": "/logos/softbank-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:27",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

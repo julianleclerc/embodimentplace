@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "aurora",
   "name": "Aurora",
-  "summary": "",
-  "body": "",
+  "summary": "Pittsburgh company building the Aurora Driver for self-driving trucks.",
+  "body": "Co-founded by Chris Urmson, Sterling Anderson and Drew Bagnell. Runs driverless freight trucks in Texas.",
   "data": {
     "image": {
       "v": "/logos/aurora.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:53",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

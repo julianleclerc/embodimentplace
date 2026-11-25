@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "techman-robot",
   "name": "Techman Robot",
-  "summary": "",
-  "body": "",
+  "summary": "Taiwanese cobot maker under Quanta Computer, known for arms with built-in vision.",
+  "body": "Spun out of Quanta Storage as an independent company in 2015. Its TM Robot series combines a robot arm, a vision system and an AI engine.",
   "data": {
     "image": {
       "v": "/logos/techman-robot.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:36",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

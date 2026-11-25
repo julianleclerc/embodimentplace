@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "dji",
   "name": "DJI",
-  "summary": "",
-  "body": "",
+  "summary": "Shenzhen maker of consumer and commercial drones and camera stabilisers.",
+  "body": "Holds most of the world's consumer drone market. Also makes agricultural drones, flight control systems and handheld cameras.",
   "data": {
     "image": {
       "v": "/logos/dji.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:59",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

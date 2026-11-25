@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "nuro",
   "name": "Nuro",
-  "summary": "",
-  "body": "",
+  "summary": "Mountain View company licensing its Nuro Driver autonomous driving system.",
+  "body": "Founded in 2016 by Jiajun Zhu and Dave Ferguson; it first built custom driverless delivery vehicles. Since 2024 it has focused on licensing its Level 4 system to carmakers and mobility companies.",
   "data": {
     "image": {
       "v": "/logos/nuro.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:51",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

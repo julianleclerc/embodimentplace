@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "otto-motors",
   "name": "OTTO Motors",
-  "summary": "",
-  "body": "",
+  "summary": "Maker of autonomous mobile robots for industrial material handling; part of Rockwell Automation.",
+  "body": "OTTO began as the industrial line of Clearpath Robotics. Both now belong to Rockwell Automation and trade as OTTO by Rockwell Automation.",
   "data": {
     "image": {
       "v": "/logos/otto-motors.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:47",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

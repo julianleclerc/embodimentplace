@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "zebra-technologies",
   "name": "Zebra Technologies",
-  "summary": "",
-  "body": "",
+  "summary": "Lincolnshire, Illinois maker of barcode, RFID, mobile computing and machine vision products.",
+  "body": "Sold its robotics automation business, formerly Fetch Robotics, to Skild AI in March 2026 and took a stake in Skild.",
   "data": {
     "image": {
       "v": "/logos/zebra-technologies.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:28",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

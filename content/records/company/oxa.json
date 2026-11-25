@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "oxa",
   "name": "Oxa",
-  "summary": "",
-  "body": "",
+  "summary": "Oxford company building autonomous vehicle software for industrial vehicles.",
+  "body": "Founded in 2014, formerly known as Oxbotica. Its self-driving software, modular hardware and fleet tools are used on industrial sites such as airports.",
   "data": {
     "image": {
       "v": "/logos/oxa.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:57",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "quicktron",
   "name": "Quicktron",
-  "summary": "",
-  "body": "",
+  "summary": "Shanghai maker of mobile robots for intralogistics automation.",
+  "body": "Founded in 2014, it has subsidiaries in the US, Europe and Asia-Pacific and production in Shanghai.",
   "data": {
     "image": {
       "v": "/logos/quicktron.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:51",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

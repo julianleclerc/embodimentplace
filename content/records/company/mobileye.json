@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "mobileye",
   "name": "Mobileye",
-  "summary": "",
-  "body": "",
+  "summary": "Jerusalem company making driver-assistance and self-driving systems; also developing humanoid robots.",
+  "body": "Bought by Intel in 2017 and listed again in 2022. Its chips and software are used in driver-assistance systems by many carmakers.",
   "data": {
     "image": {
       "v": "/logos/mobileye.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:53",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

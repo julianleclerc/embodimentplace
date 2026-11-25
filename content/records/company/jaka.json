@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "jaka",
   "name": "JAKA",
-  "summary": "",
-  "body": "",
+  "summary": "Shanghai maker of collaborative robot arms.",
+  "body": "Builds cobots for manufacturing and other industries, sold globally.",
   "data": {
     "image": {
       "v": "/logos/jaka.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:42",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

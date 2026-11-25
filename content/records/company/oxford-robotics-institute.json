@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "oxford-robotics-institute",
   "name": "Oxford Robotics Institute",
-  "summary": "",
-  "body": "",
+  "summary": "University of Oxford's robotics and AI research division.",
+  "body": "Part of the Department of Engineering Science and directed by Professor Nick Hawes. Works on robotics, AI and systems engineering.",
   "data": {
     "image": {
       "v": "/logos/oxford-robotics-institute.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:14",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "comma-ai",
   "name": "comma.ai",
-  "summary": "",
-  "body": "",
+  "summary": "San Diego company behind openpilot, open-source driver-assistance software.",
+  "body": "Sells a device that plugs into supported cars to add openpilot's hands-free driving features, with no subscription.",
   "data": {
     "image": {
       "v": "/logos/comma-ai.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:58",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "joby-aviation",
   "name": "Joby Aviation",
-  "summary": "",
-  "body": "",
+  "summary": "Santa Cruz company developing an all-electric air taxi.",
+  "body": "Its electric vertical take-off and landing aircraft is designed for an app-booked air taxi service.",
   "data": {
     "image": {
       "v": "/logos/joby-aviation.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:27",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

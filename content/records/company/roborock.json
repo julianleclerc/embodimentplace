@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "roborock",
   "name": "Roborock",
-  "summary": "",
-  "body": "",
+  "summary": "Beijing maker of robot vacuums, mops and cordless stick vacuums.",
+  "body": "Its robotic sweeping and mopping devices are sold worldwide.",
   "data": {
     "image": {
       "v": "/logos/roborock.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:02",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

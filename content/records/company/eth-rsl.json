@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "eth-rsl",
   "name": "ETH Zurich Robotic Systems Lab",
-  "summary": "",
-  "body": "",
+  "summary": "ETH Zurich lab researching legged robots, home of ANYmal.",
+  "body": "Led by Marco Hutter. Develops legged and mobile robots for rough terrain; ANYbotics was spun out of the lab.",
   "data": {
     "image": {
       "v": "/logos/eth-rsl.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:13",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

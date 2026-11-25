@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "wing",
   "name": "Wing",
-  "summary": "",
-  "body": "",
+  "summary": "Alphabet's drone delivery company.",
+  "body": "Graduated from X, Alphabet's moonshot lab, in 2018. Delivers in the US, Australia and Europe, and builds drone traffic management systems.",
   "data": {
     "image": {
       "v": "/logos/wing.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:00",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

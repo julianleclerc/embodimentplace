@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "honeywell",
   "name": "Honeywell",
-  "summary": "",
-  "body": "",
+  "summary": "Charlotte-based automation company, now presenting itself as Honeywell Technologies.",
+  "body": "Announced in 2025 that it would split into three companies. Its businesses include building and industrial automation, with Intelligrated warehouse automation.",
   "data": {
     "image": {
       "v": "/logos/honeywell.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:28",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

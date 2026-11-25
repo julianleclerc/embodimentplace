@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "irobot",
   "name": "iRobot",
-  "summary": "",
-  "body": "",
+  "summary": "Maker of Roomba robot vacuums.",
+  "body": "Founded in 1990 by three members of MIT's AI Lab. After Amazon's planned takeover collapsed, it filed for bankruptcy in December 2025 and was acquired by its manufacturer, Shenzhen Picea Robotics.",
   "data": {
     "image": {
       "v": "/logos/irobot.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:02",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "abb",
   "name": "ABB",
-  "summary": "",
-  "body": "",
+  "summary": "Zurich electrification and automation group, and one of the largest industrial robot makers.",
+  "body": "Formed in 1988 from the merger of ASEA and Brown, Boveri & Cie. In October 2025 it agreed to sell its robotics division to SoftBank Group.",
   "data": {
     "image": {
       "v": "/logos/abb.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-21 00:54:51",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": "2026-11-21"
 }

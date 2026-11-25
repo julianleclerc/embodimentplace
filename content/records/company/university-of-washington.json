@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "university-of-washington",
   "name": "University of Washington",
-  "summary": "",
-  "body": "",
+  "summary": "Public research university in Seattle, founded in 1861.",
+  "body": "One of the oldest universities on the US West Coast, with robotics research in computer science and engineering.",
   "data": {
     "image": {
       "v": "/logos/university-of-washington.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:19",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

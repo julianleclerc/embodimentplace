@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "hikrobot",
   "name": "Hikrobot",
-  "summary": "",
-  "body": "",
+  "summary": "Hangzhou maker of mobile robots and machine vision products.",
+  "body": "Hikrobot's products include warehouse and factory mobile robots, industrial cameras and vision software.",
   "data": {
     "image": {
       "v": "/logos/hikrobot.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:50",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

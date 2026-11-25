@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "nachi-robotics",
   "name": "Nachi Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Toyama maker of industrial robots, machine tools and components; trades as Nachi.",
+  "body": "Nachi-Fujikoshi is listed on the Tokyo Stock Exchange. Its robots are used in automotive welding and handling.",
   "data": {
     "image": {
       "v": "/logos/nachi-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:38",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

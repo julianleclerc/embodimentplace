@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "deep-robotics",
   "name": "DEEP Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Hangzhou maker of quadruped and humanoid robots for industrial use.",
+  "body": "Known for its Jueying and Lite quadrupeds, used for inspection, emergency response and research.",
   "data": {
     "image": {
       "v": "/logos/deep-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:05",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

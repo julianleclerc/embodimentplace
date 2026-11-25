@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "locus-robotics",
   "name": "Locus Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Wilmington, Massachusetts maker of autonomous mobile robots for warehouse fulfilment.",
+  "body": "Founded in 2014 by the team behind Quiet Logistics, with a regional headquarters in Amsterdam. Sells its robots and software as a service.",
   "data": {
     "image": {
       "v": "/logos/locus-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:42",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "epfl",
   "name": "EPFL",
-  "summary": "",
-  "body": "",
+  "summary": "Swiss Federal Institute of Technology in Lausanne.",
+  "body": "A public university focused on education, research and innovation, with active robotics labs. Sister institution of ETH Zurich.",
   "data": {
     "image": {
       "v": "/logos/epfl.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:17",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

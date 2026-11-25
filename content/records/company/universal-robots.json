@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "universal-robots",
   "name": "Universal Robots",
-  "summary": "",
-  "body": "",
+  "summary": "Odense maker of collaborative robot arms; part of Teradyne Robotics.",
+  "body": "Sold the first commercially viable cobot in 2008 and has sold more than 100,000 since. Owned by Teradyne since 2015.",
   "data": {
     "image": {
       "v": "/logos/universal-robots.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:34",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

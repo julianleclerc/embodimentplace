@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "innovation-endeavors",
   "name": "Innovation Endeavors",
-  "summary": "",
-  "body": "",
+  "summary": "Early-stage venture firm co-founded by Eric Schmidt.",
+  "body": "Invests in founders working at the technical frontier, including computing, AI and the physical world.",
   "data": {
     "image": {
       "v": "/logos/innovation-endeavors.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:21",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

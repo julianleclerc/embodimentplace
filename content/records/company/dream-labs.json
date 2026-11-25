@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "dream-labs",
   "name": "Dream Labs",
-  "summary": "",
-  "body": "",
+  "summary": "San Francisco company building Dream-1, a general robot brain available through an API.",
+  "body": "Founded in 2026 by former NVIDIA GR00T researchers who created the DreamZero world action model. Dream-1 turns camera images and plain-language instructions into actions for robots it has not seen before.",
   "data": {
     "image": {
       "v": "/logos/dream-labs.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:25",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

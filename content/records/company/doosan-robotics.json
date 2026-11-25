@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "doosan-robotics",
   "name": "Doosan Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "South Korean cobot maker, part of the Doosan Group.",
+  "body": "Founded in 2015, it mainly makes collaborative robots and has added AI software for industrial automation.",
   "data": {
     "image": {
       "v": "/logos/doosan-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:36",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

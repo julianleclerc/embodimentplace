@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "archon-robotics",
   "name": "Archon Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Shanghai company building humanoid foundation models for whole-body intelligence.",
+  "body": "Pre-trains on large-scale human motion data and post-trains on real robots. Published Anchor 1, a controller for precise humanoid whole-body manipulation.",
   "data": {
     "image": {
       "v": "/logos/archon-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:24",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

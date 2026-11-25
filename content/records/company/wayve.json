@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "wayve",
   "name": "Wayve",
-  "summary": "",
-  "body": "",
+  "summary": "London company building end-to-end embodied AI for assisted and automated driving.",
+  "body": "Founded in 2017 by University of Cambridge researchers. Its AI driver learns from camera data and driving experience instead of detailed maps and hand-written rules.",
   "data": {
     "image": {
       "v": "/logos/wayve.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:56",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

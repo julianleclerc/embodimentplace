@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "applied-intuition",
   "name": "Applied Intuition",
-  "summary": "",
-  "body": "",
+  "summary": "Sunnyvale company building software and AI for vehicles and other autonomous machines.",
+  "body": "Co-founded by Qasar Younis, a former Y Combinator COO. Serves automotive, defence, trucking, mining, construction and agriculture customers.",
   "data": {
     "image": {
       "v": "/logos/applied-intuition.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:57",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

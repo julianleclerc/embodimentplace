@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "teradyne",
   "name": "Teradyne",
-  "summary": "",
-  "body": "",
+  "summary": "North Reading, Massachusetts maker of semiconductor test equipment; owner of Universal Robots and MiR.",
+  "body": "Its Teradyne Robotics division includes the cobot maker Universal Robots and the mobile robot maker Mobile Industrial Robots.",
   "data": {
     "image": {
       "v": "/logos/teradyne.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:27",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

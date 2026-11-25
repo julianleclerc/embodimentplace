@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "waymo",
   "name": "Waymo",
-  "summary": "",
-  "body": "",
+  "summary": "Alphabet's autonomous driving company, running commercial robotaxi services.",
+  "body": "Began as Google's self-driving car project, with roots in the DARPA Grand Challenges. Runs public driverless ride-hail services in several US metro areas.",
   "data": {
     "image": {
       "v": "/logos/waymo.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:52",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "yaskawa",
   "name": "Yaskawa",
-  "summary": "",
-  "body": "",
+  "summary": "Kitakyushu maker of drives, servo systems and Motoman industrial robots.",
+  "body": "Founded in 1915. Its Motoman robots are used for welding, packaging, assembly, painting and material handling.",
   "data": {
     "image": {
       "v": "/logos/yaskawa.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:33",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

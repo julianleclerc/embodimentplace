@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "berkshire-grey",
   "name": "Berkshire Grey",
-  "summary": "",
-  "body": "",
+  "summary": "Bedford, Massachusetts maker of AI-powered robotic pick, pack and sort systems.",
+  "body": "Automates operations for e-commerce, retail replenishment and logistics. Founded by a team of robotics PhDs.",
   "data": {
     "image": {
       "v": "/logos/berkshire-grey.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:44",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

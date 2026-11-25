@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "serve-robotics",
   "name": "Serve Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Operator of autonomous sidewalk delivery robots for food and goods.",
+  "body": "Founded in 2017 as Postmates' robotics division and spun out after Uber bought Postmates. Its robots deliver through Uber Eats and DoorDash in several US cities.",
   "data": {
     "image": {
       "v": "/logos/serve-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:51",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

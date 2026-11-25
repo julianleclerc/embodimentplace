@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "siemens",
   "name": "Siemens",
-  "summary": "",
-  "body": "",
+  "summary": "Munich industrial technology group focused on automation and industrial software.",
+  "body": "Europe's largest engineering company, with origins in 1847. Supplies factory automation, industrial AI and simulation software used to build and run robotic production.",
   "data": {
     "image": {
       "v": "/logos/siemens.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:09",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

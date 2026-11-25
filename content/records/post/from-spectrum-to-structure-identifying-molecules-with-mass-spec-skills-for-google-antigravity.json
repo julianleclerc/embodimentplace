@@ -1,0 +1,37 @@
+{
+  "id": 381,
+  "type": "post",
+  "slug": "from-spectrum-to-structure-identifying-molecules-with-mass-spec-skills-for-google-antigravity",
+  "name": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+  "summary": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-24"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "deepmind.google"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://lh3.googleusercontent.com/CtAfS_JWygw2R9cuDNty3xd0S4WFRzVew1vtNDiPaN1ZOGa88hCwTiCLxtgCtpSFER2t3jFO-moRkPnQYPjXziNgMvKHVc0wkOkzBTdGRoOYL3Ld=w1200-h630-n-nu-rw",
+      "fit": "cover",
+      "src": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-25 19:05:08",
+  "updated": "2026-11-25 19:05:08",
+  "feed_at": "2026-11-24"
+}

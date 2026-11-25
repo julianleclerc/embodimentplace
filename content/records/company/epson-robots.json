@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "epson-robots",
   "name": "Epson Robots",
-  "summary": "",
-  "body": "",
+  "summary": "Robotics division of Seiko Epson, making SCARA, six-axis and Cartesian industrial robots.",
+  "body": "Epson began making robots in 1980. It offers PC-based controllers and integrated vision systems, with cleanroom models for electronics work.",
   "data": {
     "image": {
       "v": "/logos/epson-robots.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:37",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

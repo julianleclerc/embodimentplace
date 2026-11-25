@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "aist",
   "name": "AIST",
-  "summary": "",
-  "body": "",
+  "summary": "Japan's National Institute of Advanced Industrial Science and Technology.",
+  "body": "One of Japan's largest public research organisations, based in Tsukuba. Developed the HRP series of humanoid robots.",
   "data": {
     "image": {
       "v": "/logos/aist.png",
@@ -42,6 +42,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:16",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "sanctuary-ai",
   "name": "Sanctuary AI",
-  "summary": "",
-  "body": "",
+  "summary": "Vancouver company building Physical AI for industrial automation, and maker of the Phoenix robot.",
+  "body": "Developed the Phoenix general-purpose humanoid, which it now uses mainly as a data-capture platform. Its current focus is deploying hardware-agnostic Physical AI on existing industrial robot arms, with robotic hands in development.",
   "data": {
     "image": {
       "v": "/logos/sanctuary-ai.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:22",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

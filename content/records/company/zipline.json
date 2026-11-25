@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "zipline",
   "name": "Zipline",
-  "summary": "",
-  "body": "",
+  "summary": "US company that designs, builds and operates autonomous delivery drones.",
+  "body": "Delivers medicine, food and goods in the US and several African countries and Japan. Its P1 drone serves rural areas and its P2 suburban and urban areas.",
   "data": {
     "image": {
       "v": "/logos/zipline.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:00",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

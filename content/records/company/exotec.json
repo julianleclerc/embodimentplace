@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "exotec",
   "name": "Exotec",
-  "summary": "",
-  "body": "",
+  "summary": "French maker of robotic warehouse storage systems, known for Skypod.",
+  "body": "Founded in 2015 and headquartered in Wasquehal, France, with US headquarters in Atlanta. Became a unicorn in 2022.",
   "data": {
     "image": {
       "v": "/logos/exotec.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:44",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

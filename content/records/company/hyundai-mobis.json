@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "hyundai-mobis",
   "name": "Hyundai Mobis",
-  "summary": "",
-  "body": "",
+  "summary": "Seoul auto parts maker and parts arm of Hyundai Motor Group.",
+  "body": "Founded in 1977, it supplies parts and service for Hyundai, Kia and Genesis. One of the world's largest automotive suppliers.",
   "data": {
     "image": {
       "v": "/logos/hyundai-mobis.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:07",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

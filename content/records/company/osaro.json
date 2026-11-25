@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "osaro",
   "name": "OSARO",
-  "summary": "",
-  "body": "",
+  "summary": "Warehouse automation company making AI-powered robotic piece-picking systems.",
+  "body": "Builds machine-learning software for robotic picking, packing and depalletising in e-commerce and logistics.",
   "data": {
     "image": {
       "v": "/logos/osaro.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:46",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

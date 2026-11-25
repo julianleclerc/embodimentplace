@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "hesai",
   "name": "Hesai",
-  "summary": "",
-  "body": "",
+  "summary": "Shanghai lidar maker for cars and robots.",
+  "body": "Publicly listed. Its lidar sensors are used in driver-assistance, automated driving, robotics and industrial products.",
   "data": {
     "image": {
       "v": "/logos/hesai.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:08",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "mobile-industrial-robots",
   "name": "Mobile Industrial Robots",
-  "summary": "",
-  "body": "",
+  "summary": "Odense maker of autonomous mobile robots for internal logistics; part of Teradyne.",
+  "body": "MiR was an early mover in collaborative mobile robots. Its robots carry loads inside factories and warehouses, and can be fitted with top modules for different jobs.",
   "data": {
     "image": {
       "v": "/logos/mobile-industrial-robots.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:48",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

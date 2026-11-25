@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "plus-one-robotics",
   "name": "Plus One Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "San Antonio company making AI vision systems for robotic parcel handling.",
+  "body": "Founded in 2016 by computer vision and robotics experts. Its systems combine vision, AI and remote human assistance to pick parcels for logistics and e-commerce companies.",
   "data": {
     "image": {
       "v": "/logos/plus-one-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:46",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

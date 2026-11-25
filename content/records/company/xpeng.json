@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "xpeng",
   "name": "XPeng",
-  "summary": "",
-  "body": "",
+  "summary": "Guangzhou electric carmaker developing the IRON humanoid robot.",
+  "body": "Listed in New York and Hong Kong, it develops its own driver-assistance software. It describes itself as an AI mobility company and has shown its IRON humanoid alongside its cars.",
   "data": {
     "image": {
       "v": "/logos/xpeng.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:28",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

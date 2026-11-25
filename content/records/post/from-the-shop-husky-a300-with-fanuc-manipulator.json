@@ -1,0 +1,37 @@
+{
+  "id": 377,
+  "type": "post",
+  "slug": "from-the-shop-husky-a300-with-fanuc-manipulator",
+  "name": "From the Shop: Husky A300 with Fanuc Manipulator",
+  "summary": "At its core, Husky A300 is built as a flexible research and development platform, enabling organizations to develop, test, and deploy advanced robotic applications. This custom integration…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-24"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "clearpathrobotics.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://clearpathrobotics.com/blog/2026/11/from-the-shop-husky-a300-with-fanuc-manipulator"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2026/11/24103803/HuskyA300_Fanuc_Wiferion-1-scaled-e1795535481369.jpg",
+      "fit": "cover",
+      "src": "https://clearpathrobotics.com/blog/2026/11/from-the-shop-husky-a300-with-fanuc-manipulator",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-25 00:05:19",
+  "updated": "2026-11-25 00:05:19",
+  "feed_at": "2026-11-24"
+}

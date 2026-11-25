@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "realtime-robotics",
   "name": "Realtime Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Motion planning company for industrial robots and autonomous systems.",
+  "body": "Founded in 2016 by university professors including Dan Sorin. Its software lets teams simulate, test and optimise robot work cells and coordinate multiple robots.",
   "data": {
     "image": {
       "v": "/logos/realtime-robotics.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:39",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

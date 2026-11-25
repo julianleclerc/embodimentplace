@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "foxconn",
   "name": "Foxconn",
-  "summary": "",
-  "body": "",
+  "summary": "New Taipei City electronics maker; the world's largest contract manufacturer.",
+  "body": "Formally Hon Hai Precision Industry, founded in 1974. Builds electronics for many of the world's largest brands.",
   "data": {
     "image": {
       "v": "/logos/foxconn.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:10",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

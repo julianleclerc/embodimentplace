@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "walmart",
   "name": "Walmart",
-  "summary": "",
-  "body": "",
+  "summary": "Bentonville retailer, the world's largest private employer.",
+  "body": "Founded in 1962 by Sam and Bud Walton. Uses Symbotic's automated systems in its distribution centres.",
   "data": {
     "image": {
       "v": "/logos/walmart.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:11",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

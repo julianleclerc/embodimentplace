@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "fanuc",
   "name": "FANUC",
-  "summary": "",
-  "body": "",
+  "summary": "Japanese maker of industrial robots and CNC systems; the world's largest industrial robot maker.",
+  "body": "Began as part of Fujitsu; the name stands for Fuji Automatic Numerical Control. Organised into factory automation, robot and robomachine businesses.",
   "data": {
     "image": {
       "v": "/logos/fanuc.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:32",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

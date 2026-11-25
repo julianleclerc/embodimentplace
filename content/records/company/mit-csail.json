@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "mit-csail",
   "name": "MIT CSAIL",
-  "summary": "",
-  "body": "",
+  "summary": "MIT's Computer Science and Artificial Intelligence Laboratory.",
+  "body": "Formed in 2003 by merging MIT's Laboratory for Computer Science and AI Lab. It is MIT's largest on-campus lab and does extensive robotics research.",
   "data": {
     "image": {
       "v": "/logos/mit-csail.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:12",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

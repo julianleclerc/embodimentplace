@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "realbotix",
   "name": "Realbotix",
-  "summary": "",
-  "body": "",
+  "summary": "Las Vegas maker of humanoid robots with lifelike faces and conversational AI.",
+  "body": "Builds the Realbotix Series 1 humanoids in Las Vegas.",
   "data": {
     "image": {
       "v": "/logos/realbotix.png",
@@ -21,6 +21,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:23",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

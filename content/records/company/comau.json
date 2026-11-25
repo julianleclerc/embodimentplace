@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "comau",
   "name": "Comau",
-  "summary": "",
-  "body": "",
+  "summary": "Turin industrial automation and robotics company.",
+  "body": "Supplies robots, production systems and automation services to automotive, logistics, electrification, renewable energy and heavy industry customers.",
   "data": {
     "image": {
       "v": "/logos/comau.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:35",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

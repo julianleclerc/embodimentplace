@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "meta-ai",
   "name": "Meta AI",
-  "summary": "",
-  "body": "",
+  "summary": "Meta's AI research division, with work on embodied AI and world models.",
+  "body": "Has labs in Menlo Park, New York, Paris, Pittsburgh and elsewhere. Its embodied AI research includes the Habitat simulation platform and the V-JEPA world models.",
   "data": {
     "image": {
       "v": "/logos/meta-ai.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:30",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

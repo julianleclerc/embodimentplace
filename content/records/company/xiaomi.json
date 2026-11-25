@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "xiaomi",
   "name": "Xiaomi",
-  "summary": "",
-  "body": "",
+  "summary": "Beijing consumer electronics and EV maker; built the CyberOne humanoid and CyberDog.",
+  "body": "Founded in 2010 and one of the world's largest smartphone sellers. Its robotics work includes the CyberDog quadruped and the CyberOne humanoid prototype.",
   "data": {
     "image": {
       "v": "/logos/xiaomi.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:27",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

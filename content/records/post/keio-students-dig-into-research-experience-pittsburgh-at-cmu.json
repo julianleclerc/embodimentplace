@@ -1,0 +1,37 @@
+{
+  "id": 379,
+  "type": "post",
+  "slug": "keio-students-dig-into-research-experience-pittsburgh-at-cmu",
+  "name": "Keio Students Dig Into Research, Experience Pittsburgh at CMU",
+  "summary": "Students from Keio University spent several months earlier this year working on projects spanning robotics, machine learning and artificial intelligence alongside researchers in Carnegie Mellon…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "ri.cmu.edu"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.ri.cmu.edu/keio-students-dig-into-research-experience-pittsburgh-at-cmu"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://www.ri.cmu.edu/app/uploads/2026/11/Keio-Story-Feature-Image-scaled.jpg",
+      "fit": "cover",
+      "src": "https://www.ri.cmu.edu/keio-students-dig-into-research-experience-pittsburgh-at-cmu",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-25 05:05:16",
+  "updated": "2026-11-25 05:05:16",
+  "feed_at": "2026-11-23"
+}

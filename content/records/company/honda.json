@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "honda",
   "name": "Honda",
-  "summary": "",
-  "body": "",
+  "summary": "Tokyo carmaker and the world's largest motorcycle maker; creator of the ASIMO humanoid.",
+  "body": "Founded in 1946 by Soichiro Honda. Its ASIMO humanoid programme ran for two decades and shaped much early humanoid research.",
   "data": {
     "image": {
       "v": "/logos/honda.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:26",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

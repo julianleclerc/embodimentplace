@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "staubli",
   "name": "Stäubli",
-  "summary": "",
-  "body": "",
+  "summary": "Swiss mechatronics group whose robotics division makes industrial robots.",
+  "body": "Has four divisions: electrical connectors, fluid connectors, robotics and textile. Its robots include SCARA and six-axis arms for cleanroom, food and industrial work.",
   "data": {
     "image": {
       "v": "/logos/staubli.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:34",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

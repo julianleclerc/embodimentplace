@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "tsinghua-university",
   "name": "Tsinghua University",
-  "summary": "",
-  "body": "",
+  "summary": "Public research university in Beijing.",
+  "body": "One of China's leading universities and a source of many embodied AI startups, including Robotera.",
   "data": {
     "image": {
       "v": "/logos/tsinghua-university.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:18",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

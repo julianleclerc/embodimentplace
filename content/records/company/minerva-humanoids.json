@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "minerva-humanoids",
   "name": "Minerva Humanoids",
-  "summary": "",
-  "body": "",
+  "summary": "San Francisco company building Roger, a humanoid robot for dangerous jobs.",
+  "body": "Founded at the end of 2025 by Sandor Felber and Maurice Rahme. Roger is remotely operated by trained specialists for hazardous energy work and public safety tasks such as bomb disposal.",
   "data": {
     "image": {
       "v": "/logos/minerva-humanoids.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:23",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

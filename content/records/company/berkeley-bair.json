@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "berkeley-bair",
   "name": "Berkeley Artificial Intelligence Research",
-  "summary": "",
-  "body": "",
+  "summary": "UC Berkeley's AI research lab, spanning robotics, vision, learning and language.",
+  "body": "Brings together Berkeley faculty and students working on AI. Its robot learning research has produced many robotics founders.",
   "data": {
     "image": {
       "v": "/logos/berkeley-bair.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:12",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

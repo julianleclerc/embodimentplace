@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "denso-robotics",
   "name": "DENSO Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Robotics arm of Japanese auto supplier Denso, making compact industrial robots.",
+  "body": "Denso is headquartered in Kariya and is part of the Toyota group. Its robots are small SCARA and six-axis arms for assembly and handling.",
   "data": {
     "image": {
       "v": "/logos/denso-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:35",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

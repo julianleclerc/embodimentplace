@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "astribot",
   "name": "Astribot",
-  "summary": "",
-  "body": "",
+  "summary": "Shenzhen company building AI robot assistants, including the Astribot S1.",
+  "body": "Founded at the end of 2022. It designs its hardware and software together for AI-driven learning, aiming for robots that use human tools and help with everyday tasks.",
   "data": {
     "image": {
       "v": "/logos/astribot.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:23",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

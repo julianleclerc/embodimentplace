@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "stryker",
   "name": "Stryker",
-  "summary": "",
-  "body": "",
+  "summary": "Portage, Michigan medical technology company; maker of the Mako surgical robot.",
+  "body": "Makes surgical equipment, neurotechnology and orthopaedic implants. Its Mako system is used for robotic-arm assisted joint replacement.",
   "data": {
     "image": {
       "v": "/logos/stryker.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:28",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

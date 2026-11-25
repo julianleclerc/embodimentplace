@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "autostore",
   "name": "AutoStore",
-  "summary": "",
-  "body": "",
+  "summary": "Norwegian maker of cube-storage automated storage and retrieval systems.",
+  "body": "Headquartered in Nedre Vats, Norway, and listed on the Oslo Stock Exchange. Its robots run on a grid above stacked bins to fetch goods for order fulfilment.",
   "data": {
     "image": {
       "v": "/logos/autostore.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:43",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

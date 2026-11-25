@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "robotera",
   "name": "Robotera",
-  "summary": "",
-  "body": "",
+  "summary": "Beijing humanoid robot maker incubated at Tsinghua University.",
+  "body": "Founded in 2023 and partly owned by Tsinghua University, it develops its hardware and software in-house. Products include the STAR1 full-size humanoid and the XHAND dexterous hand.",
   "data": {
     "image": {
       "v": "/logos/robotera.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:24",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

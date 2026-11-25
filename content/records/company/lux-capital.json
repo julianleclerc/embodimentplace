@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "lux-capital",
   "name": "Lux Capital",
-  "summary": "",
-  "body": "",
+  "summary": "New York venture firm investing in emerging technologies.",
+  "body": "Founded in 2000. Backs science and deep technology companies, including in robotics and AI.",
   "data": {
     "image": {
       "v": "/logos/lux-capital.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:21",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "agibot",
   "name": "AgiBot",
-  "summary": "",
-  "body": "",
+  "summary": "Shanghai maker of humanoid robots for industrial and service work.",
+  "body": "Founded in 2023 by former Huawei engineers Deng Taihua and Peng Zhihui; also known as Zhiyuan Robotics. Said it had begun mass production of humanoids in December 2024.",
   "data": {
     "image": {
       "v": "/logos/agibot.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-21 00:54:52",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": "2026-11-21"
 }

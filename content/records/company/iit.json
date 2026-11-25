@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "iit",
   "name": "Italian Institute of Technology",
-  "summary": "",
-  "body": "",
+  "summary": "Genoa research institute in robotics, life sciences and materials; home of the iCub humanoid.",
+  "body": "Istituto Italiano di Tecnologia does research aimed at applications and technology transfer. Its humanoid research includes the open-source iCub robot.",
   "data": {
     "image": {
       "v": "/logos/iit.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:15",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

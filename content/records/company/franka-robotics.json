@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "franka-robotics",
   "name": "Franka Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Munich maker of research-grade robot arms; part of Agile Robots since 2023.",
+  "body": "Founded in 2016 as a research-driven robotics company. Its arms are widely used in robot learning research labs.",
   "data": {
     "image": {
       "v": "/logos/franka-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:37",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

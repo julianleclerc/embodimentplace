@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "harvard-university",
   "name": "Harvard University",
-  "summary": "",
-  "body": "",
+  "summary": "Private Ivy League research university in Cambridge, Massachusetts.",
+  "body": "Founded in 1636, the oldest institution of higher learning in the US. Its robotics research includes soft robotics and microrobots.",
   "data": {
     "image": {
       "v": "/logos/harvard-university.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:20",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

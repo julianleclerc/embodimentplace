@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "pony-ai",
   "name": "Pony.ai",
-  "summary": "",
-  "body": "",
+  "summary": "Autonomous driving company running robotaxi and robotruck services.",
+  "body": "Based in Guangzhou, Beijing and Silicon Valley. Develops Level 4 driverless technology for ride-hailing and freight.",
   "data": {
     "image": {
       "v": "/logos/pony-ai.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:55",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

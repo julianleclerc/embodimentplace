@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "diligent-robotics",
   "name": "Diligent Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Austin company building Moxi, a hospital delivery robot.",
+  "body": "Founded in 2017 by social robotics experts trained at MIT and Georgia Tech. Moxi carries supplies around hospitals so nurses can focus on patients.",
   "data": {
     "image": {
       "v": "/logos/diligent-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:03",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

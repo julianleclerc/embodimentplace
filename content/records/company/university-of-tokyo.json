@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "university-of-tokyo",
   "name": "University of Tokyo",
-  "summary": "",
-  "body": "",
+  "summary": "Japan's first modern university, a public research university in Tokyo.",
+  "body": "Founded in 1877 in Bunkyō, Tokyo. Its labs have a long record in humanoid and robotics research.",
   "data": {
     "image": {
       "v": "/logos/university-of-tokyo.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:18",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

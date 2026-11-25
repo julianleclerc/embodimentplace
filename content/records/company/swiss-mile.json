@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "swiss-mile",
   "name": "Swiss-Mile",
-  "summary": "",
-  "body": "",
+  "summary": "Zurich maker of wheeled-legged delivery robots, now called RIVR.",
+  "body": "Renamed from Swiss-Mile to RIVR in 2025. Its robots use wheels to travel fast and legs to climb kerbs and stairs for doorstep delivery.",
   "data": {
     "image": {
       "v": "/logos/swiss-mile.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:06",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

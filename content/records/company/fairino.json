@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "fairino",
   "name": "FAIRINO",
-  "summary": "",
-  "body": "",
+  "summary": "Chinese maker of collaborative robots and robot control systems (FR series).",
+  "body": "Says it develops all of its core components in-house and focuses on supply-chain innovation to keep cobots affordable.",
   "data": {
     "image": {
       "v": "/logos/fairino.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:40",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

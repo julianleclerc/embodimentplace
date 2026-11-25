@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "mech-mind",
   "name": "Mech-Mind Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Chinese maker of 3D cameras and AI vision software for robots.",
+  "body": "Founded in 2016 by Shao Tianlan. Products include Mech-Eye cameras and Mech-Vision software, used for bin picking, depalletising and machine tending.",
   "data": {
     "image": {
       "v": "/logos/mech-mind.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:08",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

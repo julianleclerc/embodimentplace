@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "invia-robotics",
   "name": "inVia Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Agoura Hills, California maker of goods-to-person warehouse robots.",
+  "body": "Its robots and AI software automate picking; products include inVia Picker robots and the PickerWall.",
   "data": {
     "image": {
       "v": "/logos/invia-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:50",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

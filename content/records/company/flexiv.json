@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "flexiv",
   "name": "Flexiv",
-  "summary": "",
-  "body": "",
+  "summary": "Adaptive robot maker founded out of Stanford, with headquarters in Shanghai.",
+  "body": "Founded in 2016 by Shiquan Wang. Makes the force-controlled Rizon arms and Moonlight robots, with operations in the US and Singapore.",
   "data": {
     "image": {
       "v": "/logos/flexiv.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:41",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

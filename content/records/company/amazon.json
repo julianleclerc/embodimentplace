@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "amazon",
   "name": "Amazon",
-  "summary": "",
-  "body": "",
+  "summary": "Seattle retail and cloud company; owner of Amazon Robotics and Zoox.",
+  "body": "Founded in 1994 by Jeff Bezos. Runs one of the largest fleets of warehouse robots in its fulfilment network.",
   "data": {
     "image": {
       "v": "/logos/amazon.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:10",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

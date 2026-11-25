@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "imperial-college-london",
   "name": "Imperial College London",
-  "summary": "",
-  "body": "",
+  "summary": "Public research university in London focused on science, engineering, medicine and business.",
+  "body": "Has robotics research across engineering, computing and medicine.",
   "data": {
     "image": {
       "v": "/logos/imperial-college-london.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:19",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

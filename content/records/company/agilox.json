@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "agilox",
   "name": "Agilox",
-  "summary": "",
-  "body": "",
+  "summary": "Austrian maker of autonomous mobile robots and AGVs for material handling.",
+  "body": "Headquartered in Neukirchen bei Lambach. Its forklift-style robots move pallets without fixed routes.",
   "data": {
     "image": {
       "v": "/logos/agilox.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:06",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

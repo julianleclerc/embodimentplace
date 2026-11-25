@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "playground-global",
   "name": "Playground Global",
-  "summary": "",
-  "body": "",
+  "summary": "Palo Alto venture firm investing in early-stage deep tech.",
+  "body": "Founded in 2015. Backs hardware, robotics and other deep technology startups.",
   "data": {
     "image": {
       "v": "/logos/playground-global.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:20",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

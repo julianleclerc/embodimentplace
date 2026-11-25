@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "robco",
   "name": "RobCo",
-  "summary": "",
-  "body": "",
+  "summary": "Munich-founded maker of modular industrial robots, offered as a service.",
+  "body": "Deploys, maintains and improves AI-powered robot systems for manufacturers on a subscription, with no upfront cost. Opened a US headquarters in San Francisco in 2025.",
   "data": {
     "image": {
       "v": "/logos/robco.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:40",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

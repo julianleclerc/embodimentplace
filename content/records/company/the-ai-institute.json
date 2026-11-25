@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "the-ai-institute",
   "name": "The AI Institute",
-  "summary": "",
-  "body": "",
+  "summary": "Cambridge, Massachusetts research institute working on core problems in robotics and AI.",
+  "body": "Now called the RAI Institute (Robotics and AI Institute), formerly the Boston Dynamics AI Institute. Founded by Boston Dynamics founder Marc Raibert, it works on making robots smarter, more agile and more dexterous.",
   "data": {
     "image": {
       "v": "/logos/the-ai-institute.png",
@@ -37,6 +37,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:29",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "maxinsights",
   "name": "Maxinsights",
-  "summary": "",
-  "body": "",
+  "summary": "Santa Clara company collecting real-world training data for physical AI.",
+  "body": "Runs a global network of field operators who record real tasks, and uses its own models to structure the data for robotics foundation model companies.",
   "data": {
     "image": {
       "v": "/logos/maxinsights.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:28:26",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

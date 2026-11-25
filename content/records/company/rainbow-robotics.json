@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "rainbow-robotics",
   "name": "Rainbow Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Daejeon robot maker that grew out of KAIST's HUBO Lab.",
+  "body": "Founded in 2011 by Professor Oh Jun-ho, creator of the HUBO humanoid. Makes the RB series of cobots, mobile manipulators, and quadruped and biped robots; Samsung Electronics is its largest shareholder.",
   "data": {
     "image": {
       "v": "/logos/rainbow-robotics.png",
@@ -36,6 +36,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:26",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

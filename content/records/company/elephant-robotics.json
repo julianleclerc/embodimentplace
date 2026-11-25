@@ -3,8 +3,8 @@
   "type": "company",
   "slug": "elephant-robotics",
   "name": "Elephant Robotics",
-  "summary": "",
-  "body": "",
+  "summary": "Shenzhen maker of lightweight robotic arms, including myCobot.",
+  "body": "Founded in 2016 and incubated by the HAX hardware accelerator. Its collaborative arms range from education to professional use.",
   "data": {
     "image": {
       "v": "/logos/elephant-robotics.png",
@@ -20,6 +20,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-18 00:27:41",
+  "updated": "2026-11-25 03:05:08",
   "feed_at": null
 }

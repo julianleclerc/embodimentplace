@@ -31,6 +31,29 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-25
+
+- **Pages no longer take ~5.5 s to load about half the time.** Every new Worker isolate used to run about 57 D1
+  statements one after another before answering its first request (5 auth `CREATE TABLE`s, a `PRAGMA`, 21 more
+  `CREATE TABLE`s and 30 `ALTER TABLE ... ADD COLUMN`s, most failing as duplicates). `loadAuth` runs for every
+  request, so static files waited too. Measured on the live site on 2026-11-24 (60 timed requests, 8 paths):
+  26 of 60 (43%) took 5.0 to 7.6 s (mean 5.8 s); the rest had a median of 0.075 s. Now:
+  - The checks run once per schema version (`epEnsureSchema` / `epSchemaRun`, comment block `epSchema` in
+    `worker/dist/index.js`). A new isolate makes one `SELECT` of `settings.schema_version`. When it matches
+    `EP_SCHEMA_VERSION`, nothing else runs. That version is a hash of `AUTH_DDL`, `TABLES`, `COLS`,
+    `EP_USER_COLS` and `EP_MAIL_DDL`, so adding a table or column to those lists re-runs the checks by itself.
+  - When the checks do run: all `CREATE ... IF NOT EXISTS` go in one `db.batch()`, the columns are read with one
+    batch of `PRAGMA table_info`, and only missing columns are added. The version is saved only when every table
+    exists and every `ALTER` worked.
+  - Requests that arrive together on a new isolate share one promise (before, each one ran all 57).
+  - `ensureAuthSchema`, `ensureExtraSchema` and `ensureMailSchema` all call `epEnsureSchema` now.
+  - Built files (`/assets/`, `/logos/`, `/static/`, favicon, robots.txt) skip `loadAuth` entirely (`epStaticPath`).
+  - The new `scripts/cold-start-check.mjs` runs the Worker in Node against SQLite with a simulated 95 ms D1 round
+    trip. On `main` a new isolate's first request makes 57 round trips (about 5.5 s). On this branch it makes 4
+    the first time ever (about 0.4 s) and 1 after that (about 0.1 s). Four requests at once on a new isolate went
+    from 228 round trips to 1. Static files make 0. `wrangler dev` (local D1) returns the same responses as `main`
+    for `/`, `/login`, `/api/orgs`, `/api/home` and `/admin`.
+
 ### 2026-11-24
 
 - **Organisations, Events and Community match Catalogue.** Julian liked the new Catalogue and asked for the other

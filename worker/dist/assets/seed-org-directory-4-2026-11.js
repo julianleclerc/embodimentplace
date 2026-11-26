@@ -2037,7 +2037,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "AssetCool, Terawatt-1,  Unit A1, Batley, England WF17 6GH, United Kingdom",
+       "address": "AssetCool, Terawatt-1, Unit A1, Batley, England WF17 6GH, United Kingdom",
        "lat": 53.716564,
        "lon": -1.636386,
        "src": "https://uk.linkedin.com/company/assetcool"
@@ -2394,7 +2394,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "asof": "2026-11"
     },
     "city": {
-     "v": "OKEHAMPTON",
+     "v": "Okehampton",
      "src": "https://uk.linkedin.com/company/autonaut-ltd",
      "asof": "2026-11"
     },
@@ -2407,7 +2407,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "AutoNaut Ltd, OKEHAMPTON, Devon EX20 1BQ, United Kingdom",
+       "address": "AutoNaut Ltd, Okehampton, Devon EX20 1BQ, United Kingdom",
        "lat": 50.737667,
        "lon": -4.000316,
        "src": "https://uk.linkedin.com/company/autonaut-ltd"
@@ -6352,8 +6352,8 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
    }
   },
   {
-   "slug": "aira-artificial-intelligence-real-abilities",
-   "name": "AIRA - Artificial Intelligence. Real Abilities",
+   "slug": "aira",
+   "name": "AIRA",
    "summary": "Develops AI-powered mobile robots for manufacturing and construction environments.",
    "body": "AIRA puts Robots to Work. We train Physical AI models on task specific data and deploy mobile, general-purpose Robots in real world manufacturing settings, supervising remotely, and supporting on site. We aim to solve the productivity challenge working directly with manufacturing customers, one task at a time.",
    "data": {
@@ -6370,7 +6370,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": "https://aira.site/"
     },
     "image": {
-     "v": "/logos/aira-artificial-intelligence-real-abilities.png",
+     "v": "/logos/aira.png",
      "fit": "contain",
      "src": "https://roboticsconnected.com/media/logos/ingested/d0408993434d8e70b80d.webp",
      "asof": "2026-11"
@@ -8522,7 +8522,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "101 AVENUE OF THE AMERICAS, New York, 10013, United States",
+       "address": "101 Avenue OF THE Americas, New York, 10013, United States",
        "lat": 40.723378,
        "lon": -74.005497,
        "src": "https://www.linkedin.com/company/buildwithcuby"
@@ -8556,7 +8556,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "asof": "2026-11"
     },
     "city": {
-     "v": "SINGAPORE",
+     "v": "Singapore",
      "src": "https://sg.linkedin.com/company/cyberorigin-ai",
      "asof": "2026-11"
     },
@@ -8569,7 +8569,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "346C KING GEORGE'S AVENUE KING GEORGE'S BUILDING, SINGAPORE, --- Select One --- 208577, Singapore",
+       "address": "346C King George's Avenue King George's Building, Singapore, 208577, Singapore",
        "lat": 1.289918,
        "lon": 103.851907,
        "src": "https://sg.linkedin.com/company/cyberorigin-ai"
@@ -10656,7 +10656,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "601, Building No. 3, Han's Global Manufacturing Center, No. 12, Chongqing Road, Heping Community, Fuhai Street, Bao'an District,, Shenzhen, Guangdong 518057, China",
+       "address": "601, Building No. 3, Han's Global Manufacturing Center, No. 12, Chongqing Road, Heping Community, Fuhai Street, Bao'an District, Shenzhen, Guangdong 518057, China",
        "lat": 22.559853,
        "lon": 113.879033,
        "src": "https://cn.linkedin.com/company/huayanrobotics"
@@ -11721,7 +11721,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "Delftechpark 26, Delft, Zuid-Holland  2628 XH, Netherlands",
+       "address": "Delftechpark 26, Delft, Zuid-Holland 2628 XH, Netherlands",
        "lat": 51.996925,
        "lon": 4.385073,
        "src": "https://nl.linkedin.com/company/exrobotics"
@@ -12460,7 +12460,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "XOCEAN Technical Centre, Rathcor, Louth A91 DVT0, Ireland",
+       "address": "Xocean Technical Centre, Rathcor, Louth A91 DVT0, Ireland",
        "lat": 53.98162,
        "lon": -6.187449,
        "src": "https://ie.linkedin.com/company/xocean"
@@ -12494,7 +12494,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "asof": "2026-11"
     },
     "city": {
-     "v": "STAVANGER",
+     "v": "Stavanger",
      "src": "https://no.linkedin.com/company/remora-robotics-as",
      "asof": "2026-11"
     },
@@ -12507,7 +12507,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "Dusavikveien 39, STAVANGER, Norway 4007, Norway",
+       "address": "Dusavikveien 39, Stavanger, Norway 4007, Norway",
        "lat": 59.906793,
        "lon": 10.761016,
        "src": "https://no.linkedin.com/company/remora-robotics-as"
@@ -15894,7 +15894,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "Am Kartoffelgarten 14, München, Bavaria  81671, Germany",
+       "address": "Am Kartoffelgarten 14, München, Bavaria 81671, Germany",
        "lat": 48.123412,
        "lon": 11.607486,
        "src": "https://de.linkedin.com/company/driveblocks"
@@ -19874,7 +19874,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "AV FRANCISCO JOSE DE CAMARGO ANDRADE 30, Campinas, SP, Brazil",
+       "address": "AV Francisco Jose DE Camargo Andrade 30, Campinas, SP, Brazil",
        "lat": -22.884803,
        "lon": -47.074481,
        "src": "https://br.linkedin.com/company/acta-robotics"
@@ -20047,7 +20047,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "asof": "2026-11"
     },
     "city": {
-     "v": "NAVI MUMBAI",
+     "v": "Navi Mumbai",
      "src": "https://in.linkedin.com/company/lunatechnologiespvtltd",
      "asof": "2026-11"
     },
@@ -20060,7 +20060,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "THANE BELAPUR ROAD,, NAVI MUMBAI, MAHARASHTRA 400708, India",
+       "address": "Thane Belapur Road, Navi Mumbai, Maharashtra 400708, India",
        "lat": 19.176592,
        "lon": 72.997673,
        "src": "https://in.linkedin.com/company/lunatechnologiespvtltd"
@@ -20141,7 +20141,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "asof": "2026-11"
     },
     "city": {
-     "v": "ERNAKULAM",
+     "v": "Ernakulam",
      "src": "https://in.linkedin.com/company/eyerov",
      "asof": "2026-11"
     },
@@ -20154,7 +20154,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "KUNNATHUNAD PANCHAYATH, ERNAKULAM, KERALA 683562, India",
+       "address": "Kunnathunad Panchayath, Ernakulam, Kerala 683562, India",
        "lat": 10.038395,
        "lon": 76.507414,
        "src": "https://in.linkedin.com/company/eyerov"
@@ -20944,7 +20944,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "Pavana Industrial Estate, MIDC, Bhosari, Pune, Maharashtra 411026, India",
+       "address": "Pavana Industrial Estate, Midc, Bhosari, Pune, Maharashtra 411026, India",
        "lat": 18.638365,
        "lon": 73.832243,
        "src": "https://in.linkedin.com/company/auto-bots-pvt-ltd-company"
@@ -20978,7 +20978,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "asof": "2026-11"
     },
     "city": {
-     "v": "NOIDA",
+     "v": "Noida",
      "src": "https://in.linkedin.com/company/robospecies",
      "asof": "2026-11"
     },
@@ -20991,7 +20991,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "D-66,First Floor, NOIDA, U.P. 201301, India",
+       "address": "D-66,First Floor, Noida, U.P. 201301, India",
        "lat": -33.358163,
        "lon": -70.740907,
        "src": "https://in.linkedin.com/company/robospecies"
@@ -21719,7 +21719,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "asof": "2026-11"
     },
     "city": {
-     "v": "La Roche sur Yon cedex",
+     "v": "La Roche sur Yon",
      "src": "https://fr.linkedin.com/company/seprogroup",
      "asof": "2026-11"
     },
@@ -21732,7 +21732,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "Rue Henry Bessemer Zone Acti Est CS 10084, La Roche sur Yon cedex, 85003, France",
+       "address": "Rue Henry Bessemer Zone Acti Est CS 10084, La Roche sur Yon, 85003, France",
        "lat": 46.23373,
        "lon": 5.353878,
        "src": "https://fr.linkedin.com/company/seprogroup"
@@ -22344,8 +22344,8 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
    }
   },
   {
-   "slug": "air6-systems-airborne-robotics",
-   "name": "AIR6 SYSTEMS | AIRBORNE ROBOTICS",
+   "slug": "air6-systems",
+   "name": "AIR6 Systems",
    "summary": "Designs and manufactures high-performance drones (UAVs) capable of carrying payloads of up to 10 kg.",
    "body": "AIR6 SYSTEMS is a developer and manufacturer of enterprise drones. The Company manufactures high-performance turnkey drone systems for industrial and government applications.",
    "data": {
@@ -22360,7 +22360,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": "https://www.air6systems.com/"
     },
     "image": {
-     "v": "/logos/air6-systems-airborne-robotics.png",
+     "v": "/logos/air6-systems.png",
      "fit": "contain",
      "src": "https://www.air6systems.com/wp-content/uploads/2021/05/cropped-Profile-Picture3-180x180.png",
      "asof": "2026-11"
@@ -22425,7 +22425,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "410 / 2 , Tex park road, NehrunagarWest,, coimbatore, TAMILNADU 641014, India",
+       "address": "410 / 2 , Tex park road, NehrunagarWest, coimbatore, Tamilnadu 641014, India",
        "lat": 11.001812,
        "lon": 76.962842,
        "src": "https://in.linkedin.com/company/synapserobotics"
@@ -23214,7 +23214,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "Raghavendra Colony, Kondapur, Hyderabad, Telangana, Hyderabad, Telangana  500084, India",
+       "address": "Raghavendra Colony, Kondapur, Hyderabad, Telangana, Hyderabad, Telangana 500084, India",
        "lat": 17.471985,
        "lon": 78.362273,
        "src": "https://in.linkedin.com/company/eternal-robotics"
@@ -23491,7 +23491,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "Rua da Beyond Vision,, Alverca do Ribatejo, Lisboa 2615-153, Portugal",
+       "address": "Rua da Beyond Vision, Alverca do Ribatejo, Lisboa 2615-153, Portugal",
        "lat": 38.893525,
        "lon": -9.039614,
        "src": "https://pt.linkedin.com/company/beyondvision-join-the-future"
@@ -23815,7 +23815,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "IKP-EDEN, 16, Bhuvanappa Layout,, Bangalore, 1489 560029, India",
+       "address": "IKP-Eden, 16, Bhuvanappa Layout, Bangalore, 1489 560029, India",
        "lat": 12.976794,
        "lon": 77.590082,
        "src": "https://in.linkedin.com/company/yolabs"
@@ -26092,7 +26092,7 @@ export const EP_SEED_ORG_DIRECTORY_4_2026_11 = {
      "v": [
       {
        "kind": "HQ",
-       "address": "IFZA Business Park, DDP, PO Box 342001, Dubai, United Arab Emirates",
+       "address": "Ifza Business Park, DDP, PO Box 342001, Dubai, United Arab Emirates",
        "lat": 25.097897,
        "lon": 55.156315,
        "src": "https://ae.linkedin.com/company/motion2machine"

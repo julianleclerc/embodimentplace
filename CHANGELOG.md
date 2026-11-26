@@ -31,6 +31,41 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-26
+
+- **Organisation directory, fourth pass (same PR as the third): 593 more organisations, with Robotics Connected as the
+  main source.** Julian said Lute, AMI in Paris "and others" were still missing, and that roboticsconnected.com has a
+  better database. This pass reads the whole Robotics Connected company directory (921 hand-checked listings, through
+  its sitemap; robots.txt allows it and nothing was blocked) and adds recent launches from funding news and the
+  humano.one humanoid directory. New seed `seed-org-directory-4-2026-11.js` (`EP_SEED_ORG_DIRECTORY_4_2026_11`, run
+  after the third-pass seed by `epSeedCron` in `worker/dist/index.js`).
+  - Robotics Connected: 921 listings. 335 were already live or in the third pass (matched by website domain, every
+    domain in the listing's sameAs links, name and slug; 2 more turned out to be acquired by or the same as listed
+    ones), 2 are duplicate listings, 17 were left out (regional subsidiaries such as FANUC Europe, FANUC France and
+    KUKA Robotics Korea; companies absorbed into a parent such as RIVR into Amazon, Five AI into Bosch, EpiSci into
+    Applied Intuition; ArcBest, a carrier; and dead websites), and 567 were added.
+  - Recent launches and gaps (13 from news, 13 from humano.one): Lute (Warsaw, tactile foundation models, $20M seed
+    on 25 Nov 2026), Emulate (London, DeepMind Genie spinout), Embo (San Francisco, $110M seed), Mosaic Intelligence
+    Labs, Qvyon (Montreal), Ubitium (Düsseldorf), YK-Robotics (Pontedera), Sunrise Robotics (Ljubljana), Six Robotics
+    (Oslo), Kodama, Rendezvous Robotics, Tangent Robotics, CosmoChute (Ahmedabad), Boardwalk Robotics, Faraday Future,
+    Lightwheel, Moonlake AI, PrismaX, Dataa Robotics, NineRay, Alibaba DAMO Academy, Sanhua, Keli Sensing, Zhaowei,
+    Prophesee and Nexdata. UMA, Wandercraft, Humanoid, Genesis AI and Enact were already live; AMI Labs is in the
+    third pass at 10 Rue de Penthièvre, 75008 Paris (checked again against company-register summaries).
+  - Roles (primary): 444 robot makers, 92 software developers, 32 suppliers, 14 integrators, 8 model labs, 2 research
+    labs and 1 compute company. 191 have more than one role (159 two, 30 three, 2 four). Roles come from the
+    listing's main category plus its other categories only where the description backs them up (for example a
+    components tag adds supplier only when the text names grippers, actuators, sensors and so on).
+  - Existing organisations: `orgRoles` adds one role each to 9 (Advanced Navigation, Boost Robotics, Enact and
+    Festo +robot maker, KNAPP +robot maker, D-Robotics and Daxo +supplier, Mecka and Mech-Mind +software developer),
+    picked by hand from the Robotics Connected profiles.
+  - HQ: LinkedIn's street address when its country matches the listing (308), otherwise the city and country from
+    the Robotics Connected profile or a cited news source, marked city-only (285). Geocoded with Nominatim.
+  - Logos: 589 of 593, mostly the logo on the Robotics Connected profile (background made transparent, then
+    resized to 128 px); the other 4 fall back to initials.
+  - Tested against a local copy of the live D1 (658 organisations): the third and fourth seeds insert 526 and 593
+    organisations (1,777 in all) and 46 and 9 roles, and a second cron run changes nothing.
+  - Draft for review (not in the repo): `org-directory-4-draft.csv` / `.json`.
+
 ### 2026-11-25
 
 - **Organisation directory, third pass: 526 more organisations, and secondary roles on 41 existing ones.** Julian said

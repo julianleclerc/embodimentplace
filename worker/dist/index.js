@@ -8,6 +8,7 @@ import { EP_SEED_ORG_OVERVIEWS_2026_11 } from "./assets/seed-org-overviews-2026-
 import { EP_SEED_ORG_DIRECTORY_2026_11 } from "./assets/seed-org-directory-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_2_2026_11 } from "./assets/seed-org-directory-2-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_3_2026_11 } from "./assets/seed-org-directory-3-2026-11.js";
+import { EP_SEED_ORG_DIRECTORY_4_2026_11 } from "./assets/seed-org-directory-4-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -22576,7 +22577,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;

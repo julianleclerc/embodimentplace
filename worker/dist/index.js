@@ -7,6 +7,7 @@ import { EP_SEED_ROBOT_SPECS_2026_11 } from "./assets/seed-robot-specs-2026-11.j
 import { EP_SEED_ORG_OVERVIEWS_2026_11 } from "./assets/seed-org-overviews-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_2026_11 } from "./assets/seed-org-directory-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_2_2026_11 } from "./assets/seed-org-directory-2-2026-11.js";
+import { EP_SEED_ORG_DIRECTORY_3_2026_11 } from "./assets/seed-org-directory-3-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -22575,7 +22576,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -22721,9 +22722,46 @@ async function epSeedRun(db, seed) {
 			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(idj));
 		}
 	}
+	// Organisation role additions: { slug, add: [role], src: { role: url } }. An organisation can hold several roles (the
+	// first one is its primary role). Roles named here are appended after the existing ones when missing; nothing is ever
+	// removed or reordered, so the primary role stays first. Each added role keeps its own source under roles.more. Each
+	// changed record gets a revision first and its search index row is rebuilt, as for the other fills. The new roles go in
+	// as one JSON parameter per chunk (json_set on data.roles only), so the statement count stays small.
+	let nOrgRoles = 0;
+	if ((seed.orgRoles || []).length) {
+		const rows = ((await db.prepare("SELECT id, slug, data FROM records WHERE type IN ('company','university','lab') AND slug IN (SELECT value FROM json_each(?))").bind(JSON.stringify(seed.orgRoles.map((x) => x.slug))).all()).results || []);
+		const bySlug = new Map(rows.map((r) => [String(r.slug), r]));
+		const ids = [], vals = [];
+		for (const orr of seed.orgRoles) {
+			const row = bySlug.get(orr.slug);
+			if (!row) continue;
+			let data = {};
+			try { data = JSON.parse(String(row.data || "{}")) || {}; } catch {}
+			const cur = data.roles && typeof data.roles === "object" && !Array.isArray(data.roles) ? data.roles : { v: asStringList(fieldVal(data, "roles")) };
+			const have = asStringList(cur.v);
+			const add = (orr.add || []).map((x) => String(x).trim()).filter((x) => x && !have.includes(x));
+			if (!add.length) continue;
+			const more = Array.isArray(cur.more) ? cur.more.slice() : [];
+			for (const r of add) more.push({ role: r, src: (orr.src || {})[r] || "", asof: orr.asof || "" });
+			const roles = { ...cur, v: [...have, ...add].slice(0, 12), more };
+			nOrgRoles += add.length;
+			ids.push(Number(row.id));
+			vals.push({ id: Number(row.id), roles });
+		}
+		if (ids.length) {
+			const idj = JSON.stringify(ids);
+			stmts.push(db.prepare("INSERT INTO revisions(record_id,snapshot,at) SELECT id, json_object('id',id,'type',type,'slug',slug,'name',name,'summary',summary,'body',body,'data',data,'notes',notes,'private',private,'watch',watch,'demo',demo,'created',created,'updated',updated,'author_id',author_id,'feed_at',feed_at), ? FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(ts, idj));
+			for (let i = 0; i < vals.length; i += 50) {
+				const chunk = JSON.stringify(vals.slice(i, i + 50));
+				stmts.push(db.prepare("UPDATE records SET data=json_set(data,'$.roles',json((SELECT json_extract(value,'$.roles') FROM json_each(?1) WHERE json_extract(value,'$.id')=records.id))), updated=?2 WHERE id IN (SELECT json_extract(value,'$.id') FROM json_each(?1))").bind(chunk, ts));
+			}
+			stmts.push(db.prepare("DELETE FROM fts WHERE rowid IN (SELECT value FROM json_each(?))").bind(idj));
+			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(idj));
+		}
+	}
 	if (stmts.length) await db.batch(stmts);
-	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields })).run();
-	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields`);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields, ${nOrgRoles} organisation roles`);
 }
 async function epSeedCron(env) {
 	try {

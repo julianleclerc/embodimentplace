@@ -33,6 +33,40 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-25
 
+- **Organisation directory, third pass: 526 more organisations, and secondary roles on 41 existing ones.** Julian said
+  many organisations were still missing, and that one organisation can hold several roles (for example software
+  developer and integrator). This pass sweeps the full Y Combinator directory by keyword, a 208-company Chinese
+  embodied-AI directory (zeeklog), robodienst's supply-chain list, an EU robotics companies list, Hugging Face robotics
+  organisations (LeRobot and dataset publishers), robotics VC portfolios (Pillar, F-Prime, Bee, Promus, Calibrate,
+  Cybernetix, Root, DCVC, Lux, SOSV and others), Japanese, Korean, Israeli and Indian companies, and universities and
+  labs. It adds 189 robot makers, 65 suppliers, 61 software developers, 37 investors, 22 model labs, 14 compute
+  companies, 4 integrators, 118 universities, 15 research labs and 1 media organisation (primary role). 64 of them
+  have two roles and 1 has three. Everything was deduplicated against the 658 live organisations by slug, name and
+  website domain.
+  - Quality: each organisation needs robotics, physical-AI or embodied-AI evidence from its own site, LinkedIn page or
+    the source list; investors need robotics on their own site or portfolio page; universities and labs need a
+    robotics page or at least 30 robotics, humanoid or embodied-AI papers since 2025 in OpenAlex. About 140 candidates
+    were left out (generic chip, car and electronics groups with no robotics evidence, investors without a robotics
+    focus, dead or redirected domains, acquired or wound-down companies, and sites that could not be verified).
+  - Roles: roles were already multi-valued (`roles`, kind `multi`), with the first one as the primary role (shown in
+    the breadcrumb) and all of them shown as chips and used by the type filters, so no schema or UI change was
+    needed. New organisations get every role their sources support.
+  - Existing organisations: a new `orgRoles` seed op (`epSeedRun` in `worker/dist/index.js`) appends missing roles
+    after the existing ones and never removes or reorders any, so the primary role stays first. Each added role keeps
+    its source in `roles.more`. Changed records get a revision first and their search rows are rebuilt. This pass adds
+    46 roles to 41 organisations (15 model lab, 10 software developer, 10 integrator, 7 supplier, 1 each compute, robot
+    maker, entertainment and research lab), from each organisation's own pages (for example KUKA and Comau +integrator,
+    NEURA, Sereact and OSARO +model lab, NVIDIA +software developer for Isaac, Hugging Face +model lab and robot maker).
+  - HQ: in `data.locations` (kind `HQ`) plus `city` and `country`, each with its source (LinkedIn, the organisation's
+    site, a filing or registry, Wikidata, the YC page or the source list). 244 have a street address; 282 have only a
+    city (most Chinese and YC startups, and universities, which use Wikidata campus coordinates).
+  - Logos: 476 new 128×128 transparent PNGs in `public/logos/<slug>.png`; 50 have no usable logo and fall back to
+    initials.
+  - Content: `worker/dist/assets/seed-org-directory-3-2026-11.js` (`EP_SEED_ORG_DIRECTORY_3_2026_11`), added to
+    `EP_SEEDS`. It runs once from the hourly cron after deploy (marker `settings.seed_org-directory-3-2026-11`, which now
+    also records `org_roles`). Tested locally against a copy of the live data: 526 inserted, 46 roles added, 0 existing
+    roles removed or reordered, and a second run changes nothing.
+
 - **Organisation directory, second pass: 343 more organisations, each with an HQ on the map.** Julian pointed out
   that many humanoid and embodied-AI companies were still missing (Abstract, Dimensional, General Robotics and REK
   among them). This pass sweeps humanoid.guide's manufacturer list, humanoid.observer's company list, robodienst's

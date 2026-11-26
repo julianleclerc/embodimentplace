@@ -1,0 +1,52 @@
+{
+  "id": 806,
+  "type": "company",
+  "slug": "vassar-robotics",
+  "name": "Vassar Robotics",
+  "summary": "Gearless robot joints for better embodied AI.",
+  "body": "Vassar Robotics is building gearless robot joints and arms using high-torque transverse-flux motors. Eliminating gearboxes makes robots more precise, reliable, affordable, and easier to simulate. Y Combinator Spring 2025 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://vassarrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vassarrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/vassar-robotics.png",
+      "fit": "contain",
+      "src": "https://vassarrobotics.com/apple-icon?6d125e9e0e4f4a16",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boston",
+      "src": "https://www.ycombinator.com/companies/vassar-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/vassar-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Boston, MA, United States",
+          "lat": 42.358834,
+          "lon": -71.05783,
+          "src": "https://www.ycombinator.com/companies/vassar-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

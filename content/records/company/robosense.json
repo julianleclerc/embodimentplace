@@ -1,0 +1,51 @@
+{
+  "id": 704,
+  "type": "company",
+  "slug": "robosense",
+  "name": "RoboSense",
+  "summary": "Shenzhen lidar and robot perception supplier.",
+  "body": "Listed in Hong Kong (2498.HK).",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.robosense.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robosense.ai/"
+    },
+    "image": {
+      "v": "/logos/robosense.png",
+      "fit": "contain",
+      "src": "https://cdn.robosense.cn/shop_logo",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://www.robosense.ai/en",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.robosense.ai/en",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1213 Liuxian Avenue, Taoyuan Street, Nanshan District, Shenzhen",
+          "lat": 22.556896,
+          "lon": 113.978346,
+          "src": "https://www.robosense.ai/en"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

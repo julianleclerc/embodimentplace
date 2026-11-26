@@ -1,0 +1,37 @@
+{
+  "id": 871,
+  "type": "post",
+  "slug": "an-indic-voice-agent-with-cuga",
+  "name": "An Indic Voice Agent with CUGA",
+  "summary": "",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-25"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "huggingface.co"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://cdn-uploads.huggingface.co/production/uploads/67fe070a4e8cc28ba346f53c/-QNcrxSDbjI8VOCBlhi-C.png",
+      "fit": "cover",
+      "src": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-26 02:05:09",
+  "updated": "2026-11-26 02:05:09",
+  "feed_at": "2026-11-25"
+}

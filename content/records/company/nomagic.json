@@ -1,0 +1,52 @@
+{
+  "id": 683,
+  "type": "company",
+  "slug": "nomagic",
+  "name": "Nomagic",
+  "summary": "Developer of physical AI robots for e-commerce picking and packing.",
+  "body": "It automates picking, packing and sorting in warehouses.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://nomagic.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://nomagic.ai/"
+    },
+    "image": {
+      "v": "/logos/nomagic.png",
+      "fit": "contain",
+      "src": "https://nomagic.ai/wp-content/uploads/2026/03/cropped-nomagic_favicon_48px-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Warsaw",
+      "src": "https://nomagic.ai/contact-us/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Poland",
+      "src": "https://nomagic.ai/contact-us/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rakowiecka 36, 02-532 Warsaw",
+          "lat": 52.207446,
+          "lon": 21.000691,
+          "src": "https://nomagic.ai/contact-us/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

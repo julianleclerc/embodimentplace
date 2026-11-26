@@ -1,0 +1,37 @@
+{
+  "id": 877,
+  "type": "post",
+  "slug": "beyond-one-package-at-a-time-a-new-approach-to-autonomous-robotic-trailer-unloading",
+  "name": "Beyond One Package at a Time: A New Approach to Autonomous Robotic Trailer Unloading",
+  "summary": "Explore how bulk unloading and targeted robotic picking work together to handle varied trailer loads and keep packages moving. The post Beyond One Package at a Time: A New Approach to Autonomous…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-24"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "berkshiregrey.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.berkshiregrey.com/resources/blog/beyond-one-package-at-a-time-a-new-approach-to-autonomous-robotic-trailer-unloading"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://www.berkshiregrey.com/wp-content/uploads/2026/11/Beyond-One-Package-at-a-Time.webp",
+      "fit": "cover",
+      "src": "https://www.berkshiregrey.com/resources/blog/beyond-one-package-at-a-time-a-new-approach-to-autonomous-robotic-trailer-unloading",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-26 10:05:09",
+  "updated": "2026-11-26 10:05:09",
+  "feed_at": "2026-11-24"
+}

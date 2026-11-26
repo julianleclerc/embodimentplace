@@ -1,0 +1,51 @@
+{
+  "id": 562,
+  "type": "company",
+  "slug": "fauna-robotics",
+  "name": "Fauna Robotics",
+  "summary": "Maker of Sprout, a humanoid robot designed to be safe and fun.",
+  "body": "It builds capable, safe robots for everyone, starting with Sprout.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://faunarobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://faunarobotics.com/"
+    },
+    "image": {
+      "v": "/logos/fauna-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6931911db0300aa6e7e3fc81/6977858c9e604b93eef026d9_Frame%203.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://www.wikidata.org/wiki/Q133845954",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q133845954",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "New York, NY",
+          "lat": 40.712728,
+          "lon": -74.006015,
+          "src": "https://www.wikidata.org/wiki/Q133845954"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

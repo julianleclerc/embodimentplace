@@ -1,0 +1,51 @@
+{
+  "id": 613,
+  "type": "company",
+  "slug": "sarcomere-dynamics",
+  "name": "Sarcomere Dynamics",
+  "summary": "Canadian maker of dexterous robot hands.",
+  "body": "It builds lightweight dexterous hands.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://sarcomeredynamics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://sarcomeredynamics.com/"
+    },
+    "image": {
+      "v": "/logos/sarcomere-dynamics.png",
+      "fit": "contain",
+      "src": "https://sarcomeredynamics.com/assets/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "St. Albert",
+      "src": "https://canadamakes.ca/places/sarcomere-dynamics/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://canadamakes.ca/places/sarcomere-dynamics/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "200 Carnegie Dr, Unit 206, St. Albert, Alberta T8N 5A8",
+          "lat": 53.633239,
+          "lon": -113.628845,
+          "src": "https://canadamakes.ca/places/sarcomere-dynamics/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

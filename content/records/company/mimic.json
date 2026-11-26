@@ -1,0 +1,52 @@
+{
+  "id": 585,
+  "type": "company",
+  "slug": "mimic",
+  "name": "Mimic",
+  "summary": "Zurich ETH spin-off building dexterous robot hands and AI.",
+  "body": "It develops dexterous hands and foundation models for manipulation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ],
+      "src": "https://www.mimicrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mimicrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/mimic.png",
+      "fit": "contain",
+      "src": "https://www.mimicrobotics.com/favicon.ico?favicon.f725dee9.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zurich",
+      "src": "https://www.mimicrobotics.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://www.mimicrobotics.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zurich, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042,
+          "src": "https://www.mimicrobotics.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 816,
+  "type": "company",
+  "slug": "philon",
+  "name": "Philon",
+  "summary": "General Purpose Robots.",
+  "body": "Building open-source general-purpose robots capable of performing unsafe, repetitive or boring tasks. Y Combinator Fall 2025 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://philon.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://philon.ai/"
+    },
+    "image": {
+      "v": "/logos/philon.png",
+      "fit": "contain",
+      "src": "https://philon.ai/images/logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.ycombinator.com/companies/philon",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/philon",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.ycombinator.com/companies/philon"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

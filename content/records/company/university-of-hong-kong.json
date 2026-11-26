@@ -1,0 +1,51 @@
+{
+  "id": 505,
+  "type": "company",
+  "slug": "university-of-hong-kong",
+  "name": "The University of Hong Kong",
+  "summary": "Hong Kong research university with robotics and embodied AI research.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.hku.hk/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hku.hk/"
+    },
+    "image": {
+      "v": "/logos/university-of-hong-kong.png",
+      "fit": "contain",
+      "src": "https://www.hku.hk/etc.clientlibs/hkucms/clientlibs/clientlib-site/resources/icon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hong Kong",
+      "src": "https://en.wikipedia.org/wiki/University_of_Hong_Kong",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://en.wikipedia.org/wiki/University_of_Hong_Kong",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pokfulam Road, Hong Kong",
+          "lat": 22.281936,
+          "lon": 114.132299,
+          "src": "https://en.wikipedia.org/wiki/University_of_Hong_Kong"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-25 22:05:10",
+  "updated": "2026-11-25 22:05:10",
+  "feed_at": "2026-11-25"
+}

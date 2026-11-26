@@ -1,0 +1,51 @@
+{
+  "id": 697,
+  "type": "company",
+  "slug": "neuromeka",
+  "name": "Neuromeka",
+  "summary": "Korean maker of collaborative robots.",
+  "body": "It builds cobots, industrial and mobile robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.neuromeka.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.neuromeka.com/"
+    },
+    "image": {
+      "v": "/logos/neuromeka.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/media/a83c47_1b53f52cf8d343b88cb79d978dca0d0f%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/a83c47_1b53f52cf8d343b88cb79d978dca0d0f%7Emv2.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul",
+      "src": "https://en.neuromeka.com/contactus",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://en.neuromeka.com/contactus",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.566679,
+          "lon": 126.978291,
+          "src": "https://en.neuromeka.com/contactus"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

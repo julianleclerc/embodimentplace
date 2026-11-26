@@ -1,0 +1,51 @@
+{
+  "id": 782,
+  "type": "company",
+  "slug": "alt-bionics",
+  "name": "Alt-Bionics",
+  "summary": "San Antonio maker of bionic hands for humanoids and prosthetics.",
+  "body": "Its Surge Hand is for humanoid robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://altbionics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://altbionics.com/"
+    },
+    "image": {
+      "v": "/logos/alt-bionics.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=altbionics.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Antonio",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Antonio, United States",
+          "lat": 29.4246,
+          "lon": -98.495141,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

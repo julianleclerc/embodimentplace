@@ -1,0 +1,51 @@
+{
+  "id": 709,
+  "type": "company",
+  "slug": "decart",
+  "name": "Decart",
+  "summary": "AI lab building real-time world models.",
+  "body": "Its models generate interactive environments in real time.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://decart.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://decart.ai/"
+    },
+    "image": {
+      "v": "/logos/decart.png",
+      "fit": "contain",
+      "src": "https://decart.ai/images/webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tel Aviv",
+      "src": "https://en.wikipedia.org/wiki/Decart",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://en.wikipedia.org/wiki/Decart",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tel Aviv, Israel",
+          "lat": 32.0853,
+          "lon": 34.781806,
+          "src": "https://en.wikipedia.org/wiki/Decart"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

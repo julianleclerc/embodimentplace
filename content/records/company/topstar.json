@@ -1,0 +1,51 @@
+{
+  "id": 626,
+  "type": "company",
+  "slug": "topstar",
+  "name": "Topstar",
+  "summary": "Listed Chinese robot and industrial automation maker.",
+  "body": "It has also shown a humanoid robot.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.topstarmachine.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.topstarmachine.com/"
+    },
+    "image": {
+      "v": "/logos/topstar.png",
+      "fit": "contain",
+      "src": "https://www.topstarmachine.com/wp-content/uploads/2026/07/cropped-Topstar-logo-site-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dongguan",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Dongguan, China",
+          "lat": 23.018357,
+          "lon": 113.745233,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

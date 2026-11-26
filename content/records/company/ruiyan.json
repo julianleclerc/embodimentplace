@@ -1,0 +1,51 @@
+{
+  "id": 612,
+  "type": "company",
+  "slug": "ruiyan",
+  "name": "Ruiyan",
+  "summary": "Shenzhen maker of dexterous robot hands.",
+  "body": "Known in Chinese as Ruiyan Zhikong, it focuses on dexterous hands and core components.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.ruirobot.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ruirobot.cn/"
+    },
+    "image": {
+      "v": "/logos/ruiyan.png",
+      "fit": "contain",
+      "src": "https://www.ruirobot.cn/icon.png?icon.2-8mvg93ur8zb.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://www.ruirobot.cn/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.ruirobot.cn/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "深圳市南山区粤海街道科技园, Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://www.ruirobot.cn/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

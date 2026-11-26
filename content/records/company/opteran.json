@@ -1,0 +1,51 @@
+{
+  "id": 688,
+  "type": "company",
+  "slug": "opteran",
+  "name": "Opteran",
+  "summary": "British developer of insect-brain-inspired natural intelligence for robot autonomy.",
+  "body": "Its technology gives robots vision and navigation without deep learning.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://opteran.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://opteran.com/"
+    },
+    "image": {
+      "v": "/logos/opteran.png",
+      "fit": "contain",
+      "src": "https://opteran.com/images/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sheffield",
+      "src": "https://opteran.com/contact",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://opteran.com/contact",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pennine Five, 1 Tenter Street, Sheffield S1 4BY",
+          "lat": 53.384013,
+          "lon": -1.473116,
+          "src": "https://opteran.com/contact"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

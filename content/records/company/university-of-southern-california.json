@@ -1,0 +1,51 @@
+{
+  "id": 657,
+  "type": "company",
+  "slug": "university-of-southern-california",
+  "name": "University of Southern California",
+  "summary": "Los Angeles university with robotics and embodied AI research.",
+  "body": "Its robotics research spans the Viterbi School of Engineering.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://usc.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://usc.edu/"
+    },
+    "image": {
+      "v": "/logos/university-of-southern-california.png",
+      "fit": "contain",
+      "src": "https://usc.edu/wp-content/uploads/2025/11/cropped-usc_512x512-Android@1x-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.marshall.usc.edu/news/energy-business-summit-explores-ai-innovations-and-adaptivity-to-policy-shifts",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.marshall.usc.edu/news/energy-business-summit-explores-ai-innovations-and-adaptivity-to-policy-shifts",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3670 Trousdale Parkway Los Angeles, California 90089",
+          "lat": 34.01885,
+          "lon": -118.285778,
+          "src": "https://www.marshall.usc.edu/news/energy-business-summit-explores-ai-innovations-and-adaptivity-to-policy-shifts"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

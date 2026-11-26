@@ -1,0 +1,51 @@
+{
+  "id": 836,
+  "type": "company",
+  "slug": "rodeo-robotics",
+  "name": "Rodeo Robotics",
+  "summary": "Robots for vehicle maintenance.",
+  "body": "Rodeo Robotics (YC F26) automates vehicle maintenance so shops can get vehicles back to work at lower cost. Y Combinator Fall 2026 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.rodeorobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rodeorobotics.com/"
+    },
+    "image": {
+      "v": "/logos/rodeo-robotics.png",
+      "fit": "contain",
+      "src": "https://www.rodeorobotics.com/apple-icon?c0eea6885fa15b6d",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.ycombinator.com/companies/rodeo-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/rodeo-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.ycombinator.com/companies/rodeo-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

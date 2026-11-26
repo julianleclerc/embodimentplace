@@ -1,0 +1,51 @@
+{
+  "id": 706,
+  "type": "company",
+  "slug": "ambarella",
+  "name": "Ambarella",
+  "summary": "Santa Clara maker of edge AI vision chips.",
+  "body": "Its chips power perception in cameras, cars and robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute"
+      ],
+      "src": "https://www.ambarella.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ambarella.com/"
+    },
+    "image": {
+      "v": "/logos/ambarella.png",
+      "fit": "contain",
+      "src": "https://www.ambarella.com/wp-content/themes/ambarella/img/favicons/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Clara",
+      "src": "https://www.ambarella.com/contact-us/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ambarella.com/contact-us/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3001 Tasman Drive Santa Clara, CA 95054",
+          "lat": 37.403176,
+          "lon": -121.982189,
+          "src": "https://www.ambarella.com/contact-us/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

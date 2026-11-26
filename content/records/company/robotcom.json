@@ -1,0 +1,51 @@
+{
+  "id": 775,
+  "type": "company",
+  "slug": "robotcom",
+  "name": "Robot.com",
+  "summary": "Maker of the R-noid humanoid plus delivery and logistics robots.",
+  "body": "R-noid targets kitchens, packing, picking and linen folding.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://robot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robot.com/"
+    },
+    "image": {
+      "v": "/logos/robotcom.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=robot.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

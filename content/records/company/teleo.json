@@ -1,0 +1,51 @@
+{
+  "id": 679,
+  "type": "company",
+  "slug": "teleo",
+  "name": "Teleo",
+  "summary": "Palo Alto company turning heavy equipment into remote-operated and autonomous robots.",
+  "body": "Its kits retrofit loaders, dozers and other machines.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.teleo.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.teleo.ai/"
+    },
+    "image": {
+      "v": "/logos/teleo.png",
+      "fit": "contain",
+      "src": "https://www.teleo.ai/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Palo Alto",
+      "src": "https://www.teleo.ai/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.teleo.ai/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "292 Lambert Ave, Palo Alto, CA 94306",
+          "lat": 37.42283,
+          "lon": -122.13557,
+          "src": "https://www.teleo.ai/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

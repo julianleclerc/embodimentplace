@@ -1,0 +1,52 @@
+{
+  "id": 625,
+  "type": "company",
+  "slug": "tianlian-robot",
+  "name": "Tianlian Robot",
+  "summary": "Sichuan maker of humanoid, cobot and palletising robots.",
+  "body": "It develops and produces humanoid robots and core robot components.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://www.tlibot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tlibot.com/"
+    },
+    "image": {
+      "v": "/logos/tianlian-robot.png",
+      "fit": "contain",
+      "src": "https://www.tlibot.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mianyang",
+      "src": "https://www.tlibot.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.tlibot.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "四川省绵阳高新区火炬西街南段10号, Mianyang, China",
+          "lat": 31.460271,
+          "lon": 104.716072,
+          "src": "https://www.tlibot.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

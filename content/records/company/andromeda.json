@@ -1,0 +1,51 @@
+{
+  "id": 535,
+  "type": "company",
+  "slug": "andromeda",
+  "name": "Andromeda",
+  "summary": "Australian maker of personalised companion robots for aged care.",
+  "body": "Its robot companion Abi is used by aged-care and assisted-living teams; it also has a US office in San Francisco.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://andromedarobotics.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://andromedarobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/andromeda.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/68df6f147a002d319954fff7/68df6f147a002d3199550096_Webclip.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Melbourne",
+      "src": "https://andromedarobotics.ai/contact-us",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://andromedarobotics.ai/contact-us",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "226 Normanby Rd, Southbank VIC 3006",
+          "lat": -37.828328,
+          "lon": 144.949069,
+          "src": "https://andromedarobotics.ai/contact-us"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 773,
+  "type": "company",
+  "slug": "robstride",
+  "name": "RobStride",
+  "summary": "Beijing maker of integrated robot joint modules.",
+  "body": "Each module combines motor, driver and gearbox.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://robstride.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robstride.com/"
+    },
+    "image": {
+      "v": "/logos/robstride.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=robstride.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

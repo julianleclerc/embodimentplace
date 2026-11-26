@@ -1,0 +1,51 @@
+{
+  "id": 787,
+  "type": "company",
+  "slug": "andromeda-surgical",
+  "name": "Andromeda Surgical",
+  "summary": "Autonomous surgical robots.",
+  "body": "We're building autonomous robots to make surgery safe, easier and more efficient. Robots currently perform about 1/4 of surgeries but only help with the physical aspects. We use AI to make surgery cognitively easier. Y Combinator Summer 2023 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.andromedasurgical.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.andromedasurgical.com/"
+    },
+    "image": {
+      "v": "/logos/andromeda-surgical.png",
+      "fit": "contain",
+      "src": "https://www.andromedasurgical.com/apple-icon.png?5eb8db9aa686e630",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.ycombinator.com/companies/andromeda-surgical",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/andromeda-surgical",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.ycombinator.com/companies/andromeda-surgical"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

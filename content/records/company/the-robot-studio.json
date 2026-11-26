@@ -1,0 +1,51 @@
+{
+  "id": 623,
+  "type": "company",
+  "slug": "the-robot-studio",
+  "name": "The Robot Studio",
+  "summary": "French maker of open humanoid robots.",
+  "body": "It is based near Lyon.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.therobotstudio.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.therobotstudio.com/"
+    },
+    "image": {
+      "v": "/logos/the-robot-studio.png",
+      "fit": "contain",
+      "src": "https://www.therobotstudio.com/wp-content/uploads/2019/01/icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Villeurbanne",
+      "src": "https://www.therobotstudio.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://www.therobotstudio.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "11 Avenue du Bel Air, 69100 Villeurbanne",
+          "lat": 45.766058,
+          "lon": 4.879627,
+          "src": "https://www.therobotstudio.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 677,
+  "type": "company",
+  "slug": "gecko-robotics",
+  "name": "Gecko Robotics",
+  "summary": "Maker of wall-climbing inspection robots and infrastructure AI.",
+  "body": "Its robots measure industrial assets and feed data into AI software.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://www.geckorobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.geckorobotics.com/"
+    },
+    "image": {
+      "v": "/logos/gecko-robotics.png",
+      "fit": "contain",
+      "src": "https://www.geckorobotics.com/apple-icon.png?apple-icon.2nfu9bh1yh8up.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.wikidata.org/wiki/Q137570136",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q137570136",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pittsburgh, PA",
+          "lat": 40.440697,
+          "lon": -80.002567,
+          "src": "https://www.wikidata.org/wiki/Q137570136"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

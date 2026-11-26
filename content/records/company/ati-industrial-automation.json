@@ -1,0 +1,51 @@
+{
+  "id": 762,
+  "type": "company",
+  "slug": "ati-industrial-automation",
+  "name": "ATI Industrial Automation",
+  "summary": "Maker of six-axis force/torque sensors and robotic tool changers.",
+  "body": "Its sensors are used on industrial, collaborative and medical robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://ati-ia.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ati-ia.com/"
+    },
+    "image": {
+      "v": "/logos/ati-industrial-automation.png",
+      "fit": "contain",
+      "src": "https://www.ati-ia.com/Images/ATI_Logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Apex",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Apex, United States",
+          "lat": 35.732535,
+          "lon": -78.850552,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

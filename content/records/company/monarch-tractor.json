@@ -1,0 +1,51 @@
+{
+  "id": 673,
+  "type": "company",
+  "slug": "monarch-tractor",
+  "name": "Monarch Tractor",
+  "summary": "Maker of electric, autonomy-ready tractors.",
+  "body": "Its MK-V tractor is electric and driver-optional.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://monarchtractor.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://monarchtractor.com/"
+    },
+    "image": {
+      "v": "/logos/monarch-tractor.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.monarchtractor.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Livermore",
+      "src": "https://monarchtractor.com/news",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://monarchtractor.com/news",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "151 Lawrence Dr., Livermore, CA 94551",
+          "lat": 37.710286,
+          "lon": -121.705695,
+          "src": "https://monarchtractor.com/news"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

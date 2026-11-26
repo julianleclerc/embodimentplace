@@ -1,0 +1,51 @@
+{
+  "id": 724,
+  "type": "company",
+  "slug": "toyota-ventures",
+  "name": "Toyota Ventures",
+  "summary": "Venture arm of Toyota.",
+  "body": "It invests in robotics, autonomy and climate tech.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://toyota.ventures/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://toyota.ventures/"
+    },
+    "image": {
+      "v": "/logos/toyota-ventures.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=toyota.ventures&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Altos",
+      "src": "https://toyota.ventures/20-2.html",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://toyota.ventures/20-2.html",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Altos, California",
+          "lat": 37.379063,
+          "lon": -122.116578,
+          "src": "https://toyota.ventures/20-2.html"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 791,
+  "type": "company",
+  "slug": "yondu",
+  "name": "Yondu",
+  "summary": "Robots to Automate Fulfillment.",
+  "body": "Yondu is creating the robotic workforce of the future starting with logistics automation. We're deploying humanoid robots in the first flexible, drop-in picking automation solution designed for 3PLs. Y Combinator Winter 2024 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.yondu.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.yondu.ai/"
+    },
+    "image": {
+      "v": "/logos/yondu.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/68b78b24b8c6d7f8c97cb125/68b8bbd722505cfdcdc146f6_ICON.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.ycombinator.com/companies/yondu",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/yondu",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, CA, United States",
+          "lat": 34.053692,
+          "lon": -118.242768,
+          "src": "https://www.ycombinator.com/companies/yondu"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

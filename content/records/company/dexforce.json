@@ -1,0 +1,52 @@
+{
+  "id": 552,
+  "type": "company",
+  "slug": "dexforce",
+  "name": "Dexforce",
+  "summary": "Shenzhen embodied AI company using generative world models.",
+  "body": "Founded in 2021, it builds an embodied AI engine spanning data, models, robot bodies and applications.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ],
+      "src": "https://dexforce.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dexforce.com/"
+    },
+    "image": {
+      "v": "/logos/dexforce.png",
+      "fit": "contain",
+      "src": "https://dexforce.com/favicon.ico?favicon.3uvyjmop96ud0.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://dexforce.com",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://dexforce.com",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "广东省深圳市南山区科园, Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://dexforce.com"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

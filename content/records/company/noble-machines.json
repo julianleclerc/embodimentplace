@@ -1,0 +1,51 @@
+{
+  "id": 590,
+  "type": "company",
+  "slug": "noble-machines",
+  "name": "Noble Machines",
+  "summary": "Robotics startup building humanoid robots.",
+  "body": "Formerly Under Control Robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.noblemachines.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.noblemachines.ai/"
+    },
+    "image": {
+      "v": "/logos/noble-machines.png",
+      "fit": "contain",
+      "src": "https://www.noblemachines.ai/favicon/android-chrome-512x512.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sunnyvale",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Sunnyvale, United States",
+          "lat": 37.36883,
+          "lon": -122.036349,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

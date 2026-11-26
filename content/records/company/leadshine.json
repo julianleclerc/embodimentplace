@@ -1,0 +1,51 @@
+{
+  "id": 579,
+  "type": "company",
+  "slug": "leadshine",
+  "name": "Leadshine",
+  "summary": "Chinese supplier of servo drives, motors and motion control.",
+  "body": "It supplies motion-control components including for humanoid joints.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://leadshine.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://leadshine.com/"
+    },
+    "image": {
+      "v": "/logos/leadshine.png",
+      "fit": "contain",
+      "src": "https://leadshine.com/static/pc/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

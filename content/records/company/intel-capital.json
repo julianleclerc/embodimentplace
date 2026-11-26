@@ -1,0 +1,51 @@
+{
+  "id": 726,
+  "type": "company",
+  "slug": "intel-capital",
+  "name": "Intel Capital",
+  "summary": "Venture arm of Intel.",
+  "body": "It invests in AI, compute and robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.intelcapital.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.intelcapital.com/"
+    },
+    "image": {
+      "v": "/logos/intel-capital.png",
+      "fit": "contain",
+      "src": "https://www.intelcapital.com/wp-content/themes/intel-capital/dist/images/logo-color.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Clara",
+      "src": "https://pitchbook.com/profiles/investor/11220-13",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://pitchbook.com/profiles/investor/11220-13",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2200 Mission College Boulevard, Santa Clara, CA 95054",
+          "lat": 37.388266,
+          "lon": -121.963779,
+          "src": "https://pitchbook.com/profiles/investor/11220-13"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

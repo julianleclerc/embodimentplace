@@ -1,0 +1,51 @@
+{
+  "id": 637,
+  "type": "company",
+  "slug": "wirobotics",
+  "name": "WIRobotics",
+  "summary": "Korean maker of wearable robots and humanoids.",
+  "body": "Its WIM wearable robot assists walking.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.wirobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.wirobotics.com/"
+    },
+    "image": {
+      "v": "/logos/wirobotics.png",
+      "fit": "contain",
+      "src": "https://www.wirobotics.com:443/images/img-logo-wh.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cheonan",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Cheonan, South Korea",
+          "lat": 36.815028,
+          "lon": 127.114065,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

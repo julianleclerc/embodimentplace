@@ -1,0 +1,52 @@
+{
+  "id": 665,
+  "type": "company",
+  "slug": "bright-machines",
+  "name": "Bright Machines",
+  "summary": "Maker of robotic micro-factories for electronics and AI infrastructure.",
+  "body": "It builds AI and data-centre infrastructure using robotics and physical AI.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://www.brightmachines.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.brightmachines.com/"
+    },
+    "image": {
+      "v": "/logos/bright-machines.png",
+      "fit": "contain",
+      "src": "https://www.brightmachines.com/wp-content/themes/bright-machines/img/favicons/favicon-228.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Burlingame",
+      "src": "https://www.brightmachines.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.brightmachines.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1635 Rollins Rd., Ste. B, Burlingame, CA 94010",
+          "lat": 37.578097,
+          "lon": -122.34731,
+          "src": "https://www.brightmachines.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

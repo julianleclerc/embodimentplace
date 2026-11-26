@@ -1,0 +1,51 @@
+{
+  "id": 555,
+  "type": "company",
+  "slug": "digital-huaxia",
+  "name": "Digital Huaxia",
+  "summary": "Shenzhen developer of interactive humanoid robots.",
+  "body": "It works on multimodal interaction models and hardware for humanoid robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.digit.com.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.digit.com.cn/"
+    },
+    "image": {
+      "v": "/logos/digital-huaxia.png",
+      "fit": "contain",
+      "src": "https://www.digit.com.cn/UserFiles/SiteConfig/GSxrrbSP.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://www.digit.com.cn/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.digit.com.cn/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "深圳市南山区科技南八路8号, Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://www.digit.com.cn/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

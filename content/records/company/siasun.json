@@ -1,0 +1,51 @@
+{
+  "id": 617,
+  "type": "company",
+  "slug": "siasun",
+  "name": "Siasun",
+  "summary": "Shenyang industrial and mobile robot maker.",
+  "body": "A major Chinese robot maker serving 4,000+ companies in 40+ countries, also developing humanoids.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.siasun.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.siasun.com/"
+    },
+    "image": {
+      "v": "/logos/siasun.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.siasun.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenyang",
+      "src": "https://www.siasun.com",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.siasun.com",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "辽宁省沈阳市浑南区全运路33号, Shenyang, China",
+          "lat": 41.80261,
+          "lon": 123.42791,
+          "src": "https://www.siasun.com"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

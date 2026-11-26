@@ -1,0 +1,51 @@
+{
+  "id": 460,
+  "type": "company",
+  "slug": "inspire-robots",
+  "name": "Inspire Robots",
+  "summary": "Beijing maker of dexterous five-fingered robot hands, micro servo actuators and grippers.",
+  "body": "Its hands are used on many humanoid robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.inspire-robots.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.inspire-robots.com/"
+    },
+    "image": {
+      "v": "/logos/inspire-robots.png",
+      "fit": "contain",
+      "src": "https://www.inspire-robots.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://www.inspire-robots.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.inspire-robots.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://www.inspire-robots.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-25 22:05:10",
+  "updated": "2026-11-25 22:05:10",
+  "feed_at": "2026-11-25"
+}

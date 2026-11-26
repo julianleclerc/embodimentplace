@@ -1,0 +1,51 @@
+{
+  "id": 796,
+  "type": "company",
+  "slug": "cerulion",
+  "name": "Cerulion",
+  "summary": "Open source operating system for robots.",
+  "body": "Cerulion is an open source operating system for robots built by 2 MIT robotics PhDs. Engineers at Amazon Robotics and Boston Dynamics AI Institute are using us to develop faster and ship more reliable robots than with ROS. Y Combinator Summer 2024 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://cerulion.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cerulion.com/"
+    },
+    "image": {
+      "v": "/logos/cerulion.png",
+      "fit": "contain",
+      "src": "https://cerulion.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.ycombinator.com/companies/cerulion",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/cerulion",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.ycombinator.com/companies/cerulion"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

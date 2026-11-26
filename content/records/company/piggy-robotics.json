@@ -1,0 +1,51 @@
+{
+  "id": 795,
+  "type": "company",
+  "slug": "piggy-robotics",
+  "name": "Piggy Robotics",
+  "summary": "Humanoid robots that do your chores for the price of an iPhone.",
+  "body": "We build humanoid robots that do your chores at iPhone prices. Just like the millions of cars generating data for self-driving, we need millions of humanoids generating real-world data for general-purpose robotics. Y Combinator Fall 2025 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://piggyrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://piggyrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/piggy-robotics.png",
+      "fit": "contain",
+      "src": "https://piggyrobotics.com/favicon.ico?favicon.0b3bf435.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://www.ycombinator.com/companies/piggy-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.ycombinator.com/companies/piggy-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, England, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://www.ycombinator.com/companies/piggy-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

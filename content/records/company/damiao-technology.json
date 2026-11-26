@@ -1,0 +1,51 @@
+{
+  "id": 764,
+  "type": "company",
+  "slug": "damiao-technology",
+  "name": "Damiao Technology",
+  "summary": "Shenzhen maker of robot joint motors with built-in drivers.",
+  "body": "It makes joint motors, hub motors and gimbals widely used in legged robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://dmbot.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dmbot.cn/"
+    },
+    "image": {
+      "v": "/logos/damiao-technology.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=dmbot.cn&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

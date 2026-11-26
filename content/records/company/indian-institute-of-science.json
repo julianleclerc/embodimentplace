@@ -1,0 +1,51 @@
+{
+  "id": 752,
+  "type": "company",
+  "slug": "indian-institute-of-science",
+  "name": "Indian Institute of Science",
+  "summary": "Bengaluru research institute with robotics research.",
+  "body": "Known as IISc.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.iisc.ac.in/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.iisc.ac.in/"
+    },
+    "image": {
+      "v": "/logos/indian-institute-of-science.png",
+      "fit": "contain",
+      "src": "https://www.iisc.ac.in/wp-content/themes/iisc/images/favicon/android-icon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bengaluru",
+      "src": "https://www.wikidata.org/wiki/Q948720",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://www.wikidata.org/wiki/Q948720",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bengaluru, Karnataka, India",
+          "lat": 12.976794,
+          "lon": 77.590082,
+          "src": "https://www.wikidata.org/wiki/Q948720"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

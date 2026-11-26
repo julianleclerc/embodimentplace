@@ -1,0 +1,51 @@
+{
+  "id": 668,
+  "type": "company",
+  "slug": "simbe",
+  "name": "Simbe",
+  "summary": "Maker of Tally, a shelf-scanning retail robot.",
+  "body": "Its robots and vision systems track inventory in stores.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://simbe.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://simbe.com/"
+    },
+    "image": {
+      "v": "/logos/simbe.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=simberobotics.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Burlingame",
+      "src": "https://www.simberobotics.com/about/contact-us",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.simberobotics.com/about/contact-us",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Burlingame, CA 94010",
+          "lat": 37.578097,
+          "lon": -122.34731,
+          "src": "https://www.simberobotics.com/about/contact-us"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

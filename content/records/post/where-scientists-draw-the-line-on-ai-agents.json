@@ -1,0 +1,37 @@
+{
+  "id": 527,
+  "type": "post",
+  "slug": "where-scientists-draw-the-line-on-ai-agents",
+  "name": "Where scientists draw the line on AI agents",
+  "summary": "",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-25"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "huggingface.co"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/F32BgZC_rj0kg99apJlto.png",
+      "fit": "cover",
+      "src": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-25"
+}

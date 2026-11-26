@@ -1,0 +1,51 @@
+{
+  "id": 698,
+  "type": "company",
+  "slug": "aeirobot",
+  "name": "AeiRobot",
+  "summary": "Korean developer of humanoid robots.",
+  "body": "It develops the ALICE humanoid robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://aeirobot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://aeirobot.com/"
+    },
+    "image": {
+      "v": "/logos/aeirobot.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=aeirobot.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ansan",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ansan, South Korea",
+          "lat": 37.321715,
+          "lon": 126.83086,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

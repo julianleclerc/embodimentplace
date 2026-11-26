@@ -1,0 +1,51 @@
+{
+  "id": 669,
+  "type": "company",
+  "slug": "brain-corp",
+  "name": "Brain Corp",
+  "summary": "Autonomy software company powering commercial cleaning and inventory robots.",
+  "body": "Its BrainOS runs fleets of autonomous floor scrubbers and other robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.braincorp.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.braincorp.com/"
+    },
+    "image": {
+      "v": "/logos/brain-corp.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/650caff2e60146b72295e1c4/6a70cea4df5a3168e5794737_Untitled%20design%20(4).png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Diego",
+      "src": "https://www.wikidata.org/wiki/Q56347442",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q56347442",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Diego, CA",
+          "lat": 32.715706,
+          "lon": -117.163828,
+          "src": "https://www.wikidata.org/wiki/Q56347442"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

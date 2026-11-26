@@ -1,0 +1,31 @@
+{
+  "id": 525,
+  "type": "post",
+  "slug": "h2rbench-a-real-to-sim-benchmark-for-evaluating-human-to-robot-transfer",
+  "name": "H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer",
+  "summary": "H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer robyn.cherinka… Mon, 11/23/2026 - 13:02 Learning robot manipulation policies from human video demonstrations constitutes a…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "tri.global"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "http://www.tri.global/research/h2rbench-real-sim-benchmark-evaluating-human-robot-transfer"
+    },
+    "auto_news": {
+      "v": "Yes"
+    }
+  },
+  "created": "2026-11-26 01:05:13",
+  "updated": "2026-11-26 01:05:13",
+  "feed_at": "2026-11-23"
+}

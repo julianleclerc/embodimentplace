@@ -1,0 +1,52 @@
+{
+  "id": 780,
+  "type": "company",
+  "slug": "wowrobo-robotics",
+  "name": "WowRobo Robotics",
+  "summary": "Dongguan maker of robot arm kits and parts.",
+  "body": "It sells robot arm kits, ready-built arms and parts.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://wowrobo.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://wowrobo.com/"
+    },
+    "image": {
+      "v": "/logos/wowrobo-robotics.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=wowrobo.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dongguan",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Dongguan, China",
+          "lat": 23.018357,
+          "lon": 113.745233,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

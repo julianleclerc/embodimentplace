@@ -1,0 +1,51 @@
+{
+  "id": 463,
+  "type": "company",
+  "slug": "psyonic",
+  "name": "PSYONIC",
+  "summary": "US maker of the Ability Hand, a bionic hand also used on robots.",
+  "body": "Founded at the University of Illinois Urbana-Champaign.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.psyonic.io/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.psyonic.io/"
+    },
+    "image": {
+      "v": "/logos/psyonic.png",
+      "fit": "contain",
+      "src": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/10227d27-d28c-4eff-a557-3288c139c925/favicon.ico?format=100w",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Diego",
+      "src": "https://www.psyonic.io/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.psyonic.io/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "10939 Technology Place, San Diego, CA 92127, United States",
+          "lat": 33.008626,
+          "lon": -117.094497,
+          "src": "https://www.psyonic.io/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-25 22:05:10",
+  "updated": "2026-11-25 22:05:10",
+  "feed_at": "2026-11-25"
+}

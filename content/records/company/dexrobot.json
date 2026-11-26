@@ -1,0 +1,51 @@
+{
+  "id": 553,
+  "type": "company",
+  "slug": "dexrobot",
+  "name": "DexRobot",
+  "summary": "Chinese developer of high-DOF dexterous robot hands and components.",
+  "body": "It focuses on multi-modal intelligent dexterous hands and key components.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.dex-robot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.dex-robot.com/"
+    },
+    "image": {
+      "v": "/logos/dexrobot.png",
+      "fit": "contain",
+      "src": "https://www.dex-robot.com/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shaoxing",
+      "src": "https://www.dex-robot.com/about",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.dex-robot.com/about",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "浙江省绍兴市新昌县澄潭街道新昌高创智造科技园, Shaoxing, China",
+          "lat": 29.999243,
+          "lon": 120.576854,
+          "src": "https://www.dex-robot.com/about"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

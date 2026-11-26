@@ -1,0 +1,51 @@
+{
+  "id": 819,
+  "type": "company",
+  "slug": "hlabs",
+  "name": "Hlabs",
+  "summary": "US-Made Parts for Robots.",
+  "body": "HLabs is making an industrial supply chain for building robots in the USA including electronics and actuators, with a focus on in-house manufacturing. Robotics is going to be one of the largest industries the world has ever seen. Y Combinator Winter 2026 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.hlaboratories.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hlaboratories.com/"
+    },
+    "image": {
+      "v": "/logos/hlabs.png",
+      "fit": "contain",
+      "src": "https://www.hlaboratories.com/branding/favicon-black.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://www.ycombinator.com/companies/hlabs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/hlabs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, TX, United States",
+          "lat": 30.264926,
+          "lon": -97.747409,
+          "src": "https://www.ycombinator.com/companies/hlabs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

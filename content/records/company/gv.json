@@ -1,0 +1,51 @@
+{
+  "id": 732,
+  "type": "company",
+  "slug": "gv",
+  "name": "GV",
+  "summary": "Venture capital arm of Alphabet.",
+  "body": "It supports founders across AI, life sciences and frontier tech.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.gv.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.gv.com/"
+    },
+    "image": {
+      "v": "/logos/gv.png",
+      "fit": "contain",
+      "src": "https://www.gv.com/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://linkedin.com/company/googleventures",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://linkedin.com/company/googleventures",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, California",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://linkedin.com/company/googleventures"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

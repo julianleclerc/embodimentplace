@@ -1,0 +1,51 @@
+{
+  "id": 407,
+  "type": "company",
+  "slug": "maxtronics",
+  "name": "Maxtronics",
+  "summary": "French company continuing the NAO humanoid line after Aldebaran.",
+  "body": "Maxvision Technology bought the core assets of Aldebaran (formerly SoftBank Robotics Europe), maker of NAO and Pepper, in July 2025 and created Maxtronics in August 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://maxtronics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://maxtronics.com/"
+    },
+    "image": {
+      "v": "/logos/maxtronics.png",
+      "fit": "contain",
+      "src": "https://maxtronics.com/wp-content/uploads/logo_maxtronics_blue.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Issy-les-Moulineaux",
+      "src": "https://maxtronics.com/en/contact-us/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://maxtronics.com/en/contact-us/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "11 rue Camille Desmoulins, 92130 Issy-les-Moulineaux, France",
+          "lat": 48.830325,
+          "lon": 2.26596,
+          "src": "https://maxtronics.com/en/contact-us/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-25 22:05:10",
+  "updated": "2026-11-25 22:05:10",
+  "feed_at": "2026-11-25"
+}

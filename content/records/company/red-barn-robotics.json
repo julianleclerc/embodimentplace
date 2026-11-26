@@ -1,0 +1,51 @@
+{
+  "id": 801,
+  "type": "company",
+  "slug": "red-barn-robotics",
+  "name": "Red Barn Robotics",
+  "summary": "A Roomba for weeds on a farm.",
+  "body": "We are building an autonomous robot to precisely eliminate weeds and leave crops untouched. Despite $100 billion being spent annually on weed control, weeds still cost the US economy $46B/year. Y Combinator Winter 2025 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.redbarnrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.redbarnrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/red-barn-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/679c26bf7f96c23ec67d2854/67a26f8c72c91fa67fc33c82_Frame%202.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tukwila",
+      "src": "https://www.redbarnrobotics.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.redbarnrobotics.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1020 Industry Drive, Tukwila, WA 98188",
+          "lat": 47.448232,
+          "lon": -122.247643,
+          "src": "https://www.redbarnrobotics.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

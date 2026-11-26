@@ -1,0 +1,52 @@
+{
+  "id": 661,
+  "type": "company",
+  "slug": "general-robotics",
+  "name": "General Robotics",
+  "summary": "AI research and deployment company building intelligence for robots.",
+  "body": "Formerly Scaled Foundations, it develops the GRID platform for robot AI; it was founded in 2023.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://www.generalrobotics.company/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.generalrobotics.company/"
+    },
+    "image": {
+      "v": "/logos/general-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6aa0328c48614f5ed0e1f130/6aa04546e359b0bc13b92681_favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Redmond",
+      "src": "https://www.linkedin.com/company/generalrobotics/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/generalrobotics/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Redmond, United States",
+          "lat": 47.669414,
+          "lon": -122.123877,
+          "src": "https://www.linkedin.com/company/generalrobotics/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

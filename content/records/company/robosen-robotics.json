@@ -1,0 +1,52 @@
+{
+  "id": 654,
+  "type": "company",
+  "slug": "robosen-robotics",
+  "name": "Robosen Robotics",
+  "summary": "Shenzhen maker of consumer transforming robots.",
+  "body": "It makes licensed transforming robots for consumers.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Entertainment"
+      ],
+      "src": "https://www.robosen.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robosen.com/"
+    },
+    "image": {
+      "v": "/logos/robosen-robotics.png",
+      "fit": "contain",
+      "src": "https://dbx1fvnryss68.cloudfront.net/public1/robosen-logo.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://humanoid.observer/companies/robosen/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://humanoid.observer/companies/robosen/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://humanoid.observer/companies/robosen/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

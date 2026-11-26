@@ -1,0 +1,51 @@
+{
+  "id": 710,
+  "type": "company",
+  "slug": "runway",
+  "name": "Runway",
+  "summary": "AI company building video and world models.",
+  "body": "It is extending its generative video models toward general world models.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://runway.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://runway.com/"
+    },
+    "image": {
+      "v": "/logos/runway.png",
+      "fit": "contain",
+      "src": "https://runway.com/icon.png?icon.35ps9bmugbe1e.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://www.wikidata.org/wiki/Q123367593",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q123367593",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Manhattan, New York, NY",
+          "lat": 40.712728,
+          "lon": -74.006015,
+          "src": "https://www.wikidata.org/wiki/Q123367593"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 659,
+  "type": "company",
+  "slug": "abstract",
+  "name": "Abstract",
+  "summary": "San Francisco provider of inference infrastructure for robot action models.",
+  "body": "One API key serves robot action models such as π0.5, MolmoAct2 and Isaac 0.5 alongside open LLMs.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Compute"
+      ],
+      "src": "https://abstract.inc/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://abstract.inc/"
+    },
+    "image": {
+      "v": "/logos/abstract.png",
+      "fit": "contain",
+      "src": "https://abstract.inc/favicon-192.png?v=568dad4698f6",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.linkedin.com/company/abstract-pbc/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/abstract-pbc/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.linkedin.com/company/abstract-pbc/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

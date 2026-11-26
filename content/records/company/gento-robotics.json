@@ -1,0 +1,51 @@
+{
+  "id": 566,
+  "type": "company",
+  "slug": "gento-robotics",
+  "name": "GENTO Robotics",
+  "summary": "Robotics company developing the Gento Luna humanoid.",
+  "body": "It is listed on humanoid.guide for its Luna robot.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://gentorobotics.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gentorobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/gento-robotics.png",
+      "fit": "contain",
+      "src": "https://gentorobotics.ai/wp-content/uploads/2026/04/cropped-logo1-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dongguan",
+      "src": "https://www.gentorobotics.ai/contact-us/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.gentorobotics.ai/contact-us/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Building 3, No. 6 Industrial West Third Road, Songshan Lake Park, Dongguan, Guangdong",
+          "lat": 23.091866,
+          "lon": 113.896542,
+          "src": "https://www.gentorobotics.ai/contact-us/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 678,
+  "type": "company",
+  "slug": "palladyne-ai",
+  "name": "Palladyne AI",
+  "summary": "Salt Lake City developer of embodied AI software for robots and drones.",
+  "body": "Formerly Sarcos Technology and Robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Robot maker"
+      ],
+      "src": "https://www.palladyneai.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.palladyneai.com/"
+    },
+    "image": {
+      "v": "/logos/palladyne-ai.png",
+      "fit": "contain",
+      "src": "https://www.palladyneai.com/wp-content/uploads/2024/04/Palladyne-favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Salt Lake City",
+      "src": "https://www.palladyneai.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.palladyneai.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Salt Lake City, United States",
+          "lat": 40.75962,
+          "lon": -111.886797,
+          "src": "https://www.palladyneai.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

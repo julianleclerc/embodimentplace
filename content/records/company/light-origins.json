@@ -1,0 +1,52 @@
+{
+  "id": 580,
+  "type": "company",
+  "slug": "light-origins",
+  "name": "Light Origins",
+  "summary": "Chinese startup building a full stack for general embodied intelligence.",
+  "body": "Its work spans multimodal learning, action models, whole-body control and robot systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Robot maker"
+      ],
+      "src": "https://www.lightorigins.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lightorigins.com/"
+    },
+    "image": {
+      "v": "/logos/light-origins.png",
+      "fit": "contain",
+      "src": "https://www.lightorigins.com/favicon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://linkedin.com/company/lightorigins",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://linkedin.com/company/lightorigins",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, Guangdong, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://linkedin.com/company/lightorigins"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

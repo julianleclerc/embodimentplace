@@ -1,0 +1,52 @@
+{
+  "id": 621,
+  "type": "company",
+  "slug": "tacta-systems",
+  "name": "Tacta Systems",
+  "summary": "Palo Alto developer of robot hands, touch sensing and skill transfer.",
+  "body": "It builds the hand, touch, skill-transfer and intelligence layers as one.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Model lab"
+      ],
+      "src": "https://www.tactasystems.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tactasystems.com/"
+    },
+    "image": {
+      "v": "/logos/tacta-systems.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6a45a9994d98f3a059e8ac0c/6a63ec1fe4fd8a3b4f4f00e5_T_Logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Palo Alto",
+      "src": "https://www.tactasystems.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.tactasystems.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3240 Hillview Ave Palo Alto, CA 94304",
+          "lat": 37.408,
+          "lon": -122.146169,
+          "src": "https://www.tactasystems.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 799,
+  "type": "company",
+  "slug": "revise-robotics",
+  "name": "Revise Robotics",
+  "summary": "Automating refurbishment of $1T in consumer electronics.",
+  "body": "E-waste recycling facilities spend most of their time and effort sifting through discarded electronics, searching for valuable devices, refurbishing them, and reselling them in second-hand markets. Y Combinator Winter 2025 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://reviserobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://reviserobotics.com/"
+    },
+    "image": {
+      "v": "/logos/revise-robotics.png",
+      "fit": "contain",
+      "src": "https://reviserobotics.com/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://www.ycombinator.com/companies/revise-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/revise-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "New York, NY, United States",
+          "lat": 40.712728,
+          "lon": -74.006015,
+          "src": "https://www.ycombinator.com/companies/revise-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

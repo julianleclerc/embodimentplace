@@ -1,0 +1,51 @@
+{
+  "id": 573,
+  "type": "company",
+  "slug": "ihub-robotics",
+  "name": "iHub Robotics",
+  "summary": "Indian developer of humanoid robots.",
+  "body": "It builds humanoid robots in India.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.ihubrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ihubrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/ihub-robotics.png",
+      "fit": "contain",
+      "src": "https://www.ihubrobotics.com/favicon-512x512.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kochi",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kochi, India",
+          "lat": 9.967903,
+          "lon": 76.244438,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

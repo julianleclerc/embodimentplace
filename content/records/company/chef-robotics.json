@@ -1,0 +1,51 @@
+{
+  "id": 671,
+  "type": "company",
+  "slug": "chef-robotics",
+  "name": "Chef Robotics",
+  "summary": "San Francisco maker of AI robots for food manufacturing.",
+  "body": "Its robots assemble meals on food-production lines.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.chefrobotics.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.chefrobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/chef-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/64b77d8a4c7f046a3e2e5feb/64b933dc321d617372fdb707_Favicon%20Chef.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.chefrobotics.ai/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.chefrobotics.ai/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "200 Kansas St, STE 204 San Francisco, CA 94103",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.chefrobotics.ai/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 635,
+  "type": "company",
+  "slug": "vinmotion",
+  "name": "VinMotion",
+  "summary": "Vietnamese humanoid robot company in the Vingroup ecosystem.",
+  "body": "It provides infrastructure for large-scale humanoid deployment, with a US office in Cypress, California.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://vinmotion.net/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vinmotion.net/"
+    },
+    "image": {
+      "v": "/logos/vinmotion.png",
+      "fit": "contain",
+      "src": "https://vinmotion.net/favicon.ico?favicon.1i7cxjqxx50z6.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hanoi",
+      "src": "https://humanoid.observer/companies/vinmotion/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Vietnam",
+      "src": "https://humanoid.observer/companies/vinmotion/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hanoi, Vietnam",
+          "lat": 21.028333,
+          "lon": 105.854041,
+          "src": "https://humanoid.observer/companies/vinmotion/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

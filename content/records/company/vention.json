@@ -1,0 +1,52 @@
+{
+  "id": 666,
+  "type": "company",
+  "slug": "vention",
+  "name": "Vention",
+  "summary": "Cloud platform to design, automate, order and deploy manufacturing equipment.",
+  "body": "Customers design and deploy robot cells through its cloud software and modular hardware.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://vention.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vention.com/"
+    },
+    "image": {
+      "v": "/logos/vention.png",
+      "fit": "contain",
+      "src": "https://assets.vention.io/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Montreal",
+      "src": "https://pitchbook.com/profiles/company/170846-02",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://pitchbook.com/profiles/company/170846-02",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "4767 Dagenais Street, Montreal, QC H4C 1L8",
+          "lat": 45.503182,
+          "lon": -73.569806,
+          "src": "https://pitchbook.com/profiles/company/170846-02"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

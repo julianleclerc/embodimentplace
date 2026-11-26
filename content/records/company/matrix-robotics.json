@@ -1,0 +1,51 @@
+{
+  "id": 583,
+  "type": "company",
+  "slug": "matrix-robotics",
+  "name": "Matrix Robotics",
+  "summary": "Chinese maker of the MATRIX humanoid robot series.",
+  "body": "MATRIX-3 features a biomimetic design, tactile perception and dexterous manipulation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://matrixrobotics.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://matrixrobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/matrix-robotics.png",
+      "fit": "contain",
+      "src": "https://matrixrobotics.ai/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

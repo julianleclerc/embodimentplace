@@ -1,0 +1,51 @@
+{
+  "id": 774,
+  "type": "company",
+  "slug": "rochu",
+  "name": "Rochu",
+  "summary": "Chinese maker of soft grippers and soft fingers.",
+  "body": "Its soft grippers are offered as hand options for robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://rochu.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://rochu.com/"
+    },
+    "image": {
+      "v": "/logos/rochu.png",
+      "fit": "contain",
+      "src": "https://rochu.com/_nuxt/img/logo.4bab2a4.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zhangjiagang",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zhangjiagang, China",
+          "lat": 31.878298,
+          "lon": 120.55146,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

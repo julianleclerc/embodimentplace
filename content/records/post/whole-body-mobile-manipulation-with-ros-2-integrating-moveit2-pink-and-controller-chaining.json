@@ -1,0 +1,37 @@
+{
+  "id": 878,
+  "type": "post",
+  "slug": "whole-body-mobile-manipulation-with-ros-2-integrating-moveit2-pink-and-controller-chaining",
+  "name": "Whole-Body Mobile Manipulation with ROS 2: Integrating MoveIt2, PINK, and Controller Chaining",
+  "summary": "As mobile manipulators become more common in research and industrial robotics, developers are increasingly looking for ways to coordinate autonomous navigation and manipulation within a single…",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-26"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "clearpathrobotics.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://clearpathrobotics.com/blog/2026/11/whole-body-mobile-manipulation-with-ros-2-integrating-moveit2-pink-and-controller-chaining"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2026/11/25141218/RCoE-Ridgeback-Manipulator-blog-still-Recovered.png",
+      "fit": "cover",
+      "src": "https://clearpathrobotics.com/blog/2026/11/whole-body-mobile-manipulation-with-ros-2-integrating-moveit2-pink-and-controller-chaining",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-26 19:05:12",
+  "updated": "2026-11-26 19:05:12",
+  "feed_at": "2026-11-26"
+}

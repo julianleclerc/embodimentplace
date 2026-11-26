@@ -1,0 +1,51 @@
+{
+  "id": 646,
+  "type": "company",
+  "slug": "android-technics",
+  "name": "Android Technics",
+  "summary": "Russian developer of robotic systems including the FEDOR humanoid.",
+  "body": "It builds anthropomorphic and other robotic complexes.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://npo-at.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://npo-at.com/"
+    },
+    "image": {
+      "v": "/logos/android-technics.png",
+      "fit": "contain",
+      "src": "https://npo-at.com/wp-content/uploads/2025/05/cropped-logo-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Magnitogorsk",
+      "src": "https://humanoid.observer/companies/android-technics/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Russia",
+      "src": "https://humanoid.observer/companies/android-technics/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Magnitogorsk, Russia",
+          "lat": 53.425687,
+          "lon": 59.050732,
+          "src": "https://humanoid.observer/companies/android-technics/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

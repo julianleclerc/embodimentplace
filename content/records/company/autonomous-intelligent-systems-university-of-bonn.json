@@ -1,0 +1,51 @@
+{
+  "id": 656,
+  "type": "company",
+  "slug": "autonomous-intelligent-systems-university-of-bonn",
+  "name": "Autonomous Intelligent Systems (University of Bonn)",
+  "summary": "University of Bonn group known for humanoid soccer and cognitive robotics.",
+  "body": "It is Computer Science VI at the University of Bonn.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://www.ais.uni-bonn.de/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ais.uni-bonn.de/"
+    },
+    "image": {
+      "v": "/logos/autonomous-intelligent-systems-university-of-bonn.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.ais.uni-bonn.de&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bonn",
+      "src": "https://humanoid.observer/companies/university-of-bonn/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://humanoid.observer/companies/university-of-bonn/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bonn, Germany",
+          "lat": 50.735262,
+          "lon": 7.102463,
+          "src": "https://humanoid.observer/companies/university-of-bonn/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 757,
+  "type": "company",
+  "slug": "labelbox",
+  "name": "Labelbox",
+  "summary": "Data and evaluation company for AI, including robotics data.",
+  "body": "It provides environments and expert data for frontier labs.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://labelbox.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://labelbox.com/"
+    },
+    "image": {
+      "v": "/logos/labelbox.png",
+      "fit": "contain",
+      "src": "https://labelbox.com/static/images/favicon-v4-black.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://h1bgrader.com/h1b-sponsors/labelbox-inc-ok8576orkd/lca/2026/lca-details/I-200-25308-366649",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://h1bgrader.com/h1b-sponsors/labelbox-inc-ok8576orkd/lca/2026/lca-details/I-200-25308-366649",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "510 Treat Avenue, San Francisco, CA 94110",
+          "lat": 37.761998,
+          "lon": -122.41412,
+          "src": "https://h1bgrader.com/h1b-sponsors/labelbox-inc-ok8576orkd/lca/2026/lca-details/I-200-25308-366649"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

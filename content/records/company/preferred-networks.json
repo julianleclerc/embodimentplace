@@ -1,0 +1,53 @@
+{
+  "id": 691,
+  "type": "company",
+  "slug": "preferred-networks",
+  "name": "Preferred Networks",
+  "summary": "Tokyo AI company working on chips, models and robotics.",
+  "body": "It develops AI semiconductors, compute platforms and generative AI.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer",
+        "Compute"
+      ],
+      "src": "https://www.preferred.jp/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.preferred.jp/"
+    },
+    "image": {
+      "v": "/logos/preferred-networks.png",
+      "fit": "contain",
+      "src": "https://www.preferred.jp:443/apple-icon.png?98b0016698193766",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://www.wikidata.org/wiki/Q53309069",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://www.wikidata.org/wiki/Q53309069",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Otemachi Building, Chiyoda, Tokyo",
+          "lat": 35.67686,
+          "lon": 139.763895,
+          "src": "https://www.wikidata.org/wiki/Q53309069"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

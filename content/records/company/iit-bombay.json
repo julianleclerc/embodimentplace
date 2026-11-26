@@ -1,0 +1,51 @@
+{
+  "id": 512,
+  "type": "company",
+  "slug": "iit-bombay",
+  "name": "IIT Bombay",
+  "summary": "Indian Institute of Technology in Mumbai, with robotics research.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.iitb.ac.in/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.iitb.ac.in/"
+    },
+    "image": {
+      "v": "/logos/iit-bombay.png",
+      "fit": "contain",
+      "src": "https://en.wikipedia.org/wiki/Special:FilePath/IIT_Bombay_Wordmark_Logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mumbai",
+      "src": "https://en.wikipedia.org/wiki/IIT_Bombay",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://en.wikipedia.org/wiki/IIT_Bombay",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Powai, Mumbai, India",
+          "lat": 19.11872,
+          "lon": 72.907348,
+          "src": "https://en.wikipedia.org/wiki/IIT_Bombay"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-25 22:05:10",
+  "updated": "2026-11-25 22:05:10",
+  "feed_at": "2026-11-25"
+}

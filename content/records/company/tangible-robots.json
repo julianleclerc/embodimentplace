@@ -1,0 +1,51 @@
+{
+  "id": 622,
+  "type": "company",
+  "slug": "tangible-robots",
+  "name": "Tangible Robots",
+  "summary": "Robotics startup building physical robots.",
+  "body": "It is listed among humanoid makers on humanoid.guide.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://tangiblerobots.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://tangiblerobots.ai/"
+    },
+    "image": {
+      "v": "/logos/tangible-robots.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/eGkroJzHXsiukXHiVanDToEZ4.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://vcmaps.com/company/tangiblerobots.ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://vcmaps.com/company/tangiblerobots.ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, California",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://vcmaps.com/company/tangiblerobots.ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

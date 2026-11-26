@@ -1,0 +1,51 @@
+{
+  "id": 695,
+  "type": "company",
+  "slug": "groove-x",
+  "name": "GROOVE X",
+  "summary": "Tokyo maker of the LOVOT companion robot.",
+  "body": "It builds robots designed to form relationships with people.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://groove-x.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://groove-x.com/"
+    },
+    "image": {
+      "v": "/logos/groove-x.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=groove-x.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://www.wikidata.org/wiki/Q138309744",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://www.wikidata.org/wiki/Q138309744",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Nihonbashi-Hamachō, Chūō, Tokyo",
+          "lat": 35.67686,
+          "lon": 139.763895,
+          "src": "https://www.wikidata.org/wiki/Q138309744"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

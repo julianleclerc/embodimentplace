@@ -1,0 +1,51 @@
+{
+  "id": 719,
+  "type": "company",
+  "slug": "founders-fund",
+  "name": "Founders Fund",
+  "summary": "San Francisco venture firm backing hard tech and robotics.",
+  "body": "It describes itself as a San Francisco based venture capital firm.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://foundersfund.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://foundersfund.com/"
+    },
+    "image": {
+      "v": "/logos/founders-fund.png",
+      "fit": "contain",
+      "src": "https://foundersfund.com/apple-touch-icon-152x152.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://foundersfund.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://foundersfund.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://foundersfund.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

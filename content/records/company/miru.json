@@ -1,0 +1,51 @@
+{
+  "id": 792,
+  "type": "company",
+  "slug": "miru",
+  "name": "Miru",
+  "summary": "Config Management for Robotics.",
+  "body": "Miru makes it easy for robotics teams to manage, version, and deploy robot configurations. Developers use our well-documented APIs and UI components to automate configuration updates for both engineers and operators. Y Combinator Summer 2024 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.mirurobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mirurobotics.com/"
+    },
+    "image": {
+      "v": "/logos/miru.png",
+      "fit": "contain",
+      "src": "https://www.mirurobotics.com/favicon-light.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.ycombinator.com/companies/miru-ml",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/miru-ml",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.ycombinator.com/companies/miru-ml"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

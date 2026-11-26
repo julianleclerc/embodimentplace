@@ -1,0 +1,51 @@
+{
+  "id": 658,
+  "type": "company",
+  "slug": "virginia-tech",
+  "name": "Virginia Tech",
+  "summary": "Virginia university with humanoid robotics research.",
+  "body": "Its TREC lab worked on humanoid robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.vt.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.vt.edu/"
+    },
+    "image": {
+      "v": "/logos/virginia-tech.png",
+      "fit": "contain",
+      "src": "https://www.vt.edu/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Blacksburg",
+      "src": "https://humanoid.observer/companies/virginia-tech/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://humanoid.observer/companies/virginia-tech/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Blacksburg, Virginia, United States",
+          "lat": 37.229657,
+          "lon": -80.413677,
+          "src": "https://humanoid.observer/companies/virginia-tech/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

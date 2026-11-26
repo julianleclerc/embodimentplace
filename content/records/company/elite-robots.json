@@ -1,0 +1,51 @@
+{
+  "id": 560,
+  "type": "company",
+  "slug": "elite-robots",
+  "name": "Elite Robots",
+  "summary": "Chinese maker of collaborative, mobile and humanoid robots.",
+  "body": "Known in Chinese as Ailite, it focuses on collaborative, composite and humanoid robot categories.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.elibot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.elibot.com/"
+    },
+    "image": {
+      "v": "/logos/elite-robots.png",
+      "fit": "contain",
+      "src": "https://www.elibot.com/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Suzhou",
+      "src": "https://www.eliterobots.com/contact",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.eliterobots.com/contact",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bldg. 4, 259 Changyang Road, Suzhou",
+          "lat": 31.311123,
+          "lon": 120.621288,
+          "src": "https://www.eliterobots.com/contact"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

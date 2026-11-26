@@ -1,0 +1,51 @@
+{
+  "id": 830,
+  "type": "company",
+  "slug": "inloop-robotics",
+  "name": "InLoop Robotics",
+  "summary": "Robotic arms that pick and pack your orders.",
+  "body": "We are building AI-native fulfillment powered by robotics. Warehouses without human labor that get better, faster, and cheaper with every order. Most robotics companies wait until their system is perfect before deploying. We don't. Y Combinator Spring 2026 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.inloop-robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.inloop-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/inloop-robotics.png",
+      "fit": "contain",
+      "src": "https://www.inloop-robotics.com/icon.svg?icon.89833079.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://www.inloop-robotics.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://www.inloop-robotics.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://www.inloop-robotics.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

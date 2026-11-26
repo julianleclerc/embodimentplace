@@ -1,0 +1,51 @@
+{
+  "id": 558,
+  "type": "company",
+  "slug": "duatic",
+  "name": "Duatic",
+  "summary": "Swiss ETH Zurich spin-off building human-scale robot arms and mobile manipulators.",
+  "body": "It merges ETH Zurich research into human-scale robotic hardware.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.duatic.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.duatic.com/"
+    },
+    "image": {
+      "v": "/logos/duatic.png",
+      "fit": "contain",
+      "src": "https://www.duatic.com/web/image/website/1/logo/Duatic?unique=a48f9bd",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Opfikon",
+      "src": "https://www.duatic.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://www.duatic.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Thurgauerstrasse 119, 8152 Opfikon",
+          "lat": 47.424594,
+          "lon": 8.559386,
+          "src": "https://www.duatic.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

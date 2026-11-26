@@ -1,0 +1,51 @@
+{
+  "id": 614,
+  "type": "company",
+  "slug": "seed-robotics",
+  "name": "Seed Robotics",
+  "summary": "Maker of robotic hands and actuators.",
+  "body": "Its RH8D hand is used in research.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.seedrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.seedrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/seed-robotics.png",
+      "fit": "contain",
+      "src": "https://images.squarespace-cdn.com/content/v1/5db846da1bb60d0407fed0ac/1572382262065-ELN2HNYENUEO5PO0GAPD/favicon.ico?format=100w",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Lisbon",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Portugal",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Lisbon, Portugal",
+          "lat": 38.707751,
+          "lon": -9.136592,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

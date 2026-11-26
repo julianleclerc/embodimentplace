@@ -1,0 +1,51 @@
+{
+  "id": 586,
+  "type": "company",
+  "slug": "mirrorme-technology",
+  "name": "MirrorMe Technology",
+  "summary": "Beijing robotics company.",
+  "body": "Registered as MirrorMe Technology (Beijing) Co., Ltd.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.mirrormetech.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mirrormetech.com/"
+    },
+    "image": {
+      "v": "/logos/mirrorme-technology.png",
+      "fit": "contain",
+      "src": "https://www.mirrormetech.com/static/img/logo_bottomen.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://www.mirrormetech.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.mirrormetech.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://www.mirrormetech.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

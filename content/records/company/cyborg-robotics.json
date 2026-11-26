@@ -1,0 +1,51 @@
+{
+  "id": 548,
+  "type": "company",
+  "slug": "cyborg-robotics",
+  "name": "Cyborg Robotics",
+  "summary": "Chinese developer of embodied humanoid robots.",
+  "body": "Its Cyborg-R01 humanoid has 62 degrees of freedom and a 20 kg dual-arm payload.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.cyb-org.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.cyb-org.cn/"
+    },
+    "image": {
+      "v": "/logos/cyborg-robotics.png",
+      "fit": "contain",
+      "src": "https://www.cyb-org.cn/res/202510/18/7f5e66c8e936ca29.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://registry.deploy.report/companies/cyborg-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://registry.deploy.report/companies/cyborg-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, Guangdong, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://registry.deploy.report/companies/cyborg-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

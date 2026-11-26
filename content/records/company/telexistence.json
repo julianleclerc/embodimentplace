@@ -1,0 +1,51 @@
+{
+  "id": 690,
+  "type": "company",
+  "slug": "telexistence",
+  "name": "Telexistence",
+  "summary": "Tokyo developer of remote-controlled and AI robots for retail.",
+  "body": "Its robots restock drinks in Japanese convenience stores.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://tx-inc.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://tx-inc.com/"
+    },
+    "image": {
+      "v": "/logos/telexistence.png",
+      "fit": "contain",
+      "src": "https://tx-inc.com/wp-content/uploads/2026/08/TX_siteicon_fulllogo_rounded_512-300x300.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://tx-inc.com/en/contact/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://tx-inc.com/en/contact/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo Ryutsu Center Building A, 6-1-1 Heiwajima, Ota-ku, Tokyo",
+          "lat": 35.582867,
+          "lon": 139.746029,
+          "src": "https://tx-inc.com/en/contact/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 600,
+  "type": "company",
+  "slug": "pink-robotics",
+  "name": "Pink Robotics",
+  "summary": "Darmstadt startup building humanoid robots.",
+  "body": "It builds humanoid robots in Darmstadt, Germany.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.pink-robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.pink-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/pink-robotics.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/media/b8a0f0_09598b5fb13949868ac57d7aada1b8ed%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/b8a0f0_09598b5fb13949868ac57d7aada1b8ed%7Emv2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Darmstadt",
+      "src": "https://www.pink-robotics.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://www.pink-robotics.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Landwehrstraße 55, 64293 Darmstadt",
+          "lat": 49.878553,
+          "lon": 8.641836,
+          "src": "https://www.pink-robotics.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

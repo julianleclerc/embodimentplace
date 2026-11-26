@@ -1,0 +1,52 @@
+{
+  "id": 572,
+  "type": "company",
+  "slug": "jingchu-humanoid-robot",
+  "name": "Jingchu Humanoid Robot",
+  "summary": "Wuhan maker of linear-drive humanoid robots and components.",
+  "body": "It develops linear-actuator humanoid parts and complete robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://www.jingchurobot.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.jingchurobot.cn/"
+    },
+    "image": {
+      "v": "/logos/jingchu-humanoid-robot.png",
+      "fit": "contain",
+      "src": "https://www.jingchurobot.cn/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Wuhan",
+      "src": "https://www.jingchurobot.cn",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.jingchurobot.cn",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "湖北省武汉市武昌区杨园, Wuhan, China",
+          "lat": 30.578891,
+          "lon": 114.29212,
+          "src": "https://www.jingchurobot.cn"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

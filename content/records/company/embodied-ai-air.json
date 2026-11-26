@@ -1,0 +1,52 @@
+{
+  "id": 561,
+  "type": "company",
+  "slug": "embodied-ai-air",
+  "name": "Embodied AI (AIR)",
+  "summary": "Swiss company deploying AI-powered robots in human environments.",
+  "body": "Its AIR system handles dull, dirty and dangerous tasks.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://embodiedai.ch/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://embodiedai.ch/"
+    },
+    "image": {
+      "v": "/logos/embodied-ai-air.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/696e4d2b681829764d29ce1c/6a7d7312f065e5e1a0763746_favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Lausanne",
+      "src": "https://pitchbook.com/profiles/company/820659-25",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://pitchbook.com/profiles/company/820659-25",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rue du Lac 12, 1007 Lausanne",
+          "lat": 46.507623,
+          "lon": 6.625813,
+          "src": "https://pitchbook.com/profiles/company/820659-25"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

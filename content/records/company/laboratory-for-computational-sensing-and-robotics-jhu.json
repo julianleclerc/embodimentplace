@@ -1,0 +1,51 @@
+{
+  "id": 742,
+  "type": "company",
+  "slug": "laboratory-for-computational-sensing-and-robotics-jhu",
+  "name": "Laboratory for Computational Sensing and Robotics (JHU)",
+  "summary": "Johns Hopkins robotics institute.",
+  "body": "It covers medical and other robotics research.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://lcsr.jhu.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://lcsr.jhu.edu/"
+    },
+    "image": {
+      "v": "/logos/laboratory-for-computational-sensing-and-robotics-jhu.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=lcsr.jhu.edu&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Baltimore",
+      "src": "https://lcsr.jhu.edu/about/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://lcsr.jhu.edu/about/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3400 North Charles Street, 200 Hackerman Hall, Baltimore, MD 21218",
+          "lat": 39.290882,
+          "lon": -76.610759,
+          "src": "https://lcsr.jhu.edu/about/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

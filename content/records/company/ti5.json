@@ -1,0 +1,51 @@
+{
+  "id": 624,
+  "type": "company",
+  "slug": "ti5",
+  "name": "Ti5",
+  "summary": "Chinese maker of lightweight robot joint modules and bionic hands.",
+  "body": "Also known as Axion Motion Technologies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.ti5robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ti5robotics.com/"
+    },
+    "image": {
+      "v": "/logos/ti5.png",
+      "fit": "contain",
+      "src": "https://images.yybcdn.com/yyb_icons/68274/1779076186914845592076902400.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://www.ti5robot.com/?lang=en",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.ti5robot.com/?lang=en",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2nd Floor, Building 3C, Liandong U Valley, 55 Zidong Road, Maqiao Town, Minhang District, Shanghai",
+          "lat": 31.114767,
+          "lon": 121.376943,
+          "src": "https://www.ti5robot.com/?lang=en"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

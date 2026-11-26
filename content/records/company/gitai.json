@@ -1,0 +1,51 @@
+{
+  "id": 692,
+  "type": "company",
+  "slug": "gitai",
+  "name": "GITAI",
+  "summary": "Space robotics startup.",
+  "body": "It builds robots for work in orbit and on the Moon.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://gitai.tech/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gitai.tech/"
+    },
+    "image": {
+      "v": "/logos/gitai.png",
+      "fit": "contain",
+      "src": "https://gitai.tech/wp-content/uploads/2025/08/gitai-logo-300x52.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://www.kddi.com/english/open-innovation-program/news/20230525/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://www.kddi.com/english/open-innovation-program/news/20230525/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1-20-13 Haneda, Ota-ku, Tokyo",
+          "lat": 35.549546,
+          "lon": 139.743733,
+          "src": "https://www.kddi.com/english/open-innovation-program/news/20230525/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

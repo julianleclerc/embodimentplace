@@ -1,0 +1,52 @@
+{
+  "id": 610,
+  "type": "company",
+  "slug": "robotis",
+  "name": "ROBOTIS",
+  "summary": "Korean maker of Dynamixel actuators and robot kits.",
+  "body": "Its actuators are widely used in research and humanoid robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Robot maker"
+      ],
+      "src": "https://robotis.us/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotis.us/"
+    },
+    "image": {
+      "v": "/logos/robotis.png",
+      "fit": "contain",
+      "src": "https://robotis.us/cdn/shop/files/logo_9cdf5374-c365-49e7-a1a9-87d4b21ba4c5.png?v=1785310767&amp;width=600",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.566679,
+          "lon": 126.978291,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

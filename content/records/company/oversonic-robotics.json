@@ -1,0 +1,51 @@
+{
+  "id": 596,
+  "type": "company",
+  "slug": "oversonic-robotics",
+  "name": "Oversonic Robotics",
+  "summary": "Italian maker of cognitive humanoid robots.",
+  "body": "Its RoBee humanoid is used in industry and healthcare.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.oversonicrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.oversonicrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/oversonic-robotics.png",
+      "fit": "contain",
+      "src": "https://www.oversonicrobotics.com/images/icon/favicon-512x512.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Besana in Brianza",
+      "src": "https://humanoid.observer/companies/oversonic-robotics/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Italy",
+      "src": "https://humanoid.observer/companies/oversonic-robotics/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Besana in Brianza, Italy",
+          "lat": 45.702538,
+          "lon": 9.289542,
+          "src": "https://humanoid.observer/companies/oversonic-robotics/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

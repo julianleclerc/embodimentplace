@@ -1,0 +1,51 @@
+{
+  "id": 581,
+  "type": "company",
+  "slug": "linkerbot",
+  "name": "LinkerBot",
+  "summary": "Beijing maker of high-performance dexterous robot hands.",
+  "body": "Known in Chinese as Lingxin Qiaoshou, it makes high-DOF hands with many sensors.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://linkerbot.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://linkerbot.cn/"
+    },
+    "image": {
+      "v": "/logos/linkerbot.png",
+      "fit": "contain",
+      "src": "https://linkerbot.cn/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://linkerbot.cn",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://linkerbot.cn",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "北京市海淀区大钟寺东路京仪科技大厦, Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://linkerbot.cn"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

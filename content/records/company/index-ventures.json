@@ -1,0 +1,51 @@
+{
+  "id": 728,
+  "type": "company",
+  "slug": "index-ventures",
+  "name": "Index Ventures",
+  "summary": "Venture capital firm based in San Francisco and London.",
+  "body": "It partners with founders from seed to growth.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.indexventures.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.indexventures.com/"
+    },
+    "image": {
+      "v": "/logos/index-ventures.png",
+      "fit": "contain",
+      "src": "https://www.indexventures.com/static/images/apple-touch-icon.334e2c0ca650.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://www.wikidata.org/wiki/Q3809397",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.wikidata.org/wiki/Q3809397",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://www.wikidata.org/wiki/Q3809397"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

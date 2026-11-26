@@ -1,0 +1,51 @@
+{
+  "id": 684,
+  "type": "company",
+  "slug": "wandelbots",
+  "name": "Wandelbots",
+  "summary": "German developer of a physical AI platform for industrial robots.",
+  "body": "Its software connects robot programming and simulation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.wandelbots.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.wandelbots.com/"
+    },
+    "image": {
+      "v": "/logos/wandelbots.png",
+      "fit": "contain",
+      "src": "https://www.wandelbots.com/hubfs/Favicon%20Wandelbots.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dresden",
+      "src": "https://www.wandelbots.com/imprint",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://www.wandelbots.com/imprint",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tharandter Straße 33, 01159 Dresden",
+          "lat": 51.03801,
+          "lon": 13.706073,
+          "src": "https://www.wandelbots.com/imprint"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

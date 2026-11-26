@@ -1,0 +1,51 @@
+{
+  "id": 769,
+  "type": "company",
+  "slug": "leaderdrive",
+  "name": "Leaderdrive",
+  "summary": "Suzhou maker of strain-wave reducers for robot joints.",
+  "body": "Its harmonic reducers are used in industrial and humanoid robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://leaderdrive.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://leaderdrive.com/"
+    },
+    "image": {
+      "v": "/logos/leaderdrive.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=leaderdrive.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Suzhou",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Suzhou, China",
+          "lat": 31.311123,
+          "lon": 120.621288,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

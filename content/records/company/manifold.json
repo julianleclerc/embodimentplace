@@ -1,0 +1,51 @@
+{
+  "id": 843,
+  "type": "company",
+  "slug": "manifold",
+  "name": "Manifold",
+  "summary": "Drop-in robotic labor that works on Day 1.",
+  "body": "The US Warehouse industry spends $75bn on labor each year. Yet, only 10% of US warehouses have any form of automation, because existing robotics are too expensive and hard to integrate. Y Combinator Summer 2026 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.manifoldindustries.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.manifoldindustries.ai/"
+    },
+    "image": {
+      "v": "/logos/manifold.png",
+      "fit": "contain",
+      "src": "https://www.manifoldindustries.ai/apple-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.ycombinator.com/companies/manifold-2",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/manifold-2",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, CA, United States",
+          "lat": 34.053692,
+          "lon": -118.242768,
+          "src": "https://www.ycombinator.com/companies/manifold-2"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

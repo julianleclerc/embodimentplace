@@ -1,0 +1,51 @@
+{
+  "id": 627,
+  "type": "company",
+  "slug": "torchkernel-robotics",
+  "name": "TorchKernel Robotics",
+  "summary": "Hangzhou maker of industrial dexterous hands and end effectors.",
+  "body": "Its products include the TORCH HAND 1 and 2.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://torchkernel.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://torchkernel.com/"
+    },
+    "image": {
+      "v": "/logos/torchkernel-robotics.png",
+      "fit": "contain",
+      "src": "https://torchkernel.com/images/logo.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hangzhou",
+      "src": "https://torchkernel.com",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://torchkernel.com",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "浙江省杭州市余杭区仓前街道龙舟北路76号, Hangzhou, China",
+          "lat": 30.248963,
+          "lon": 120.205234,
+          "src": "https://torchkernel.com"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

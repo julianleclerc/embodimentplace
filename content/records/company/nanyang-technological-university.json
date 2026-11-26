@@ -1,0 +1,51 @@
+{
+  "id": 747,
+  "type": "company",
+  "slug": "nanyang-technological-university",
+  "name": "Nanyang Technological University",
+  "summary": "Singapore university with robotics research.",
+  "body": "Its robotics research spans engineering and AI.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.ntu.edu.sg/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ntu.edu.sg/"
+    },
+    "image": {
+      "v": "/logos/nanyang-technological-university.png",
+      "fit": "contain",
+      "src": "https://www.ntu.edu.sg/ResourcePackages/NTU/assets/images/NTU_Logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://www.ntu.edu.sg/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://www.ntu.edu.sg/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "50 Nanyang Avenue, Singapore",
+          "lat": 1.353701,
+          "lon": 103.686601,
+          "src": "https://www.ntu.edu.sg/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

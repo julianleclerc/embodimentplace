@@ -1,0 +1,51 @@
+{
+  "id": 481,
+  "type": "company",
+  "slug": "nyu-courant",
+  "name": "NYU Courant Institute",
+  "summary": "New York University's school of mathematics, computing and data science, with robot learning research.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://cims.nyu.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cims.nyu.edu/"
+    },
+    "image": {
+      "v": "/logos/nyu-courant.png",
+      "fit": "contain",
+      "src": "https://cims.nyu.edu/static/cims/images/Courant_Logos/NYUCourant_Long-Color.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://en.wikipedia.org/wiki/Courant_Institute_of_Mathematical_Sciences",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://en.wikipedia.org/wiki/Courant_Institute_of_Mathematical_Sciences",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "251 Mercer Street, New York, NY 10012, United States",
+          "lat": 40.728699,
+          "lon": -73.995715,
+          "src": "https://en.wikipedia.org/wiki/Courant_Institute_of_Mathematical_Sciences"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-25 22:05:10",
+  "updated": "2026-11-25 22:05:10",
+  "feed_at": "2026-11-25"
+}

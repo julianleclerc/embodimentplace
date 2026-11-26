@@ -1,0 +1,51 @@
+{
+  "id": 727,
+  "type": "company",
+  "slug": "bessemer-venture-partners",
+  "name": "Bessemer Venture Partners",
+  "summary": "Venture capital firm.",
+  "body": "It backs founders worldwide, including in robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.bvp.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bvp.com/"
+    },
+    "image": {
+      "v": "/logos/bessemer-venture-partners.png",
+      "fit": "contain",
+      "src": "https://www.bvp.com/favicon.ico?favicon.2rmsoxim8swnj.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Menlo Park",
+      "src": "https://www.wikidata.org/wiki/Q4896433",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q4896433",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Menlo Park, CA",
+          "lat": 37.451967,
+          "lon": -122.177992,
+          "src": "https://www.wikidata.org/wiki/Q4896433"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

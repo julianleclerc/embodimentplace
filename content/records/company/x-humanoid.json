@@ -1,0 +1,52 @@
+{
+  "id": 391,
+  "type": "company",
+  "slug": "x-humanoid",
+  "name": "Beijing Humanoid Robot Innovation Center",
+  "summary": "Beijing humanoid robotics innovation centre (X-Humanoid), developer of the Tiangong robots.",
+  "body": "It builds the Tiangong general-purpose robot platform, the Huisi Kaiwu embodied-AI platform, and offers data and pilot-testing services.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Research lab"
+      ],
+      "src": "https://www.x-humanoid.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.x-humanoid.com/"
+    },
+    "image": {
+      "v": "/logos/x-humanoid.png",
+      "fit": "contain",
+      "src": "https://www.x-humanoid.com/fav2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://www.x-humanoid.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.x-humanoid.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://www.x-humanoid.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-25 22:05:10",
+  "updated": "2026-11-25 22:05:10",
+  "feed_at": "2026-11-25"
+}

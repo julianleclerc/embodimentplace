@@ -1,0 +1,51 @@
+{
+  "id": 822,
+  "type": "company",
+  "slug": "robodock",
+  "name": "RoboDock",
+  "summary": "Robots that run autonomous depots for autonomous fleets.",
+  "body": "RoboDock builds robots that automate depot operations, like charging and vehicle checks, for electric and autonomous vehicle fleets. We turn fleet depots from manual sites into self-running systems that lower operational costs and increase vehicle uptime. Y Combinator Winter 2026 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://robodock.tech/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robodock.tech/"
+    },
+    "image": {
+      "v": "/logos/robodock.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/69828aca357130fb28dc8b68/6984c0cf826ee1d3309d86ca_webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.ycombinator.com/companies/robodock",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/robodock",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.ycombinator.com/companies/robodock"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

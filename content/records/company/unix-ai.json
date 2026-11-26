@@ -1,0 +1,51 @@
+{
+  "id": 631,
+  "type": "company",
+  "slug": "unix-ai",
+  "name": "UniX AI",
+  "summary": "Chinese humanoid robot maker.",
+  "body": "It develops versatile humanoids for commercial and home use.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.unix-group.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.unix-group.ai/"
+    },
+    "image": {
+      "v": "/logos/unix-ai.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.unix-group.ai&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Suzhou",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Suzhou, China",
+          "lat": 31.311123,
+          "lon": 120.621288,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

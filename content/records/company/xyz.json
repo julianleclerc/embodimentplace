@@ -1,0 +1,51 @@
+{
+  "id": 785,
+  "type": "company",
+  "slug": "xyz",
+  "name": "XYZ",
+  "summary": "Seoul maker of semi-humanoid service and barista robots.",
+  "body": "Its products include DEUX and Baris Brew.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://xyzcorp.imweb.me/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://xyzcorp.imweb.me/"
+    },
+    "image": {
+      "v": "/logos/xyz.png",
+      "fit": "contain",
+      "src": "https://cdn.imweb.me/thumbnail/20220722/7a54bc076383d.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.566679,
+          "lon": 126.978291,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

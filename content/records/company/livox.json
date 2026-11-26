@@ -1,0 +1,51 @@
+{
+  "id": 770,
+  "type": "company",
+  "slug": "livox",
+  "name": "Livox",
+  "summary": "Shenzhen maker of lidar sensors for robots.",
+  "body": "Its lidars are used in robots, cars and mapping.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://livoxtech.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://livoxtech.com/"
+    },
+    "image": {
+      "v": "/logos/livox.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=livoxtech.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

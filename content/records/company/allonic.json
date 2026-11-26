@@ -1,0 +1,52 @@
+{
+  "id": 533,
+  "type": "company",
+  "slug": "allonic",
+  "name": "Allonic",
+  "summary": "Developer of a 3D tissue-braiding process for manufacturing robotic hands and bodies.",
+  "body": "Its machine builds robotic hands and bodies with tendons, joints and skin in one automated process.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://allonic.co/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://allonic.co/"
+    },
+    "image": {
+      "v": "/logos/allonic.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6a79af5f257ba52c910bb7e6/6afb9415a42803ca71333751_favicon-onlight.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Budapest",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Hungary",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Budapest, Hungary",
+          "lat": 47.481849,
+          "lon": 19.144905,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

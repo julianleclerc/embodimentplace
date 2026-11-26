@@ -1,0 +1,51 @@
+{
+  "id": 559,
+  "type": "company",
+  "slug": "sichuan-embodied-humanoid-robot",
+  "name": "Sichuan Embodied Humanoid Robot",
+  "summary": "Sichuan maker of humanoid and emotional robots.",
+  "body": "Its products include full-size humanoid robots and industry solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.eir.com.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.eir.com.cn/"
+    },
+    "image": {
+      "v": "/logos/sichuan-embodied-humanoid-robot.png",
+      "fit": "contain",
+      "src": "https://robot-website.oss-cn-chengdu.aliyuncs.com/sm-frontend-public/public/vite.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chengdu",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Chengdu, Sichuan, China",
+          "lat": 30.659867,
+          "lon": 104.063315,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

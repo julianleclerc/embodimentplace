@@ -1,0 +1,51 @@
+{
+  "id": 781,
+  "type": "company",
+  "slug": "isento-pib",
+  "name": "isento (pib)",
+  "summary": "Nuremberg company behind pib, an open-source 3D-printable humanoid.",
+  "body": "pib.Pro is its assembled version.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://pib.rocks/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://pib.rocks/"
+    },
+    "image": {
+      "v": "/logos/isento-pib.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=pib.rocks&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Nuremberg",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Nuremberg, Germany",
+          "lat": 49.453872,
+          "lon": 11.077298,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

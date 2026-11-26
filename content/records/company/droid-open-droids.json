@@ -1,0 +1,51 @@
+{
+  "id": 595,
+  "type": "company",
+  "slug": "droid-open-droids",
+  "name": "Droid (Open Droids)",
+  "summary": "Maker of open robotics platforms, formerly Open Droids.",
+  "body": "Its platforms include R2D3, R1D3 and DH116.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://droid.org/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://droid.org/"
+    },
+    "image": {
+      "v": "/logos/droid-open-droids.png",
+      "fit": "contain",
+      "src": "https://droid.org/icon.svg?icon.192bd423.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mountain View",
+      "src": "https://www.humanoidmegahub.com/companies/550-opendroids",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.humanoidmegahub.com/companies/550-opendroids",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mountain View, California",
+          "lat": 37.389389,
+          "lon": -122.08321,
+          "src": "https://www.humanoidmegahub.com/companies/550-opendroids"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

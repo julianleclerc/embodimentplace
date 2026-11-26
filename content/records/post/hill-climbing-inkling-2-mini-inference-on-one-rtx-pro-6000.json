@@ -1,0 +1,37 @@
+{
+  "id": 872,
+  "type": "post",
+  "slug": "hill-climbing-inkling-2-mini-inference-on-one-rtx-pro-6000",
+  "name": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+  "summary": "",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-25"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "huggingface.co"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb"
+    },
+    "auto_news": {
+      "v": "Yes"
+    },
+    "image": {
+      "v": "https://huggingface.co/blog/assets/inkling-2-mini-inference-hillclimb/thumbnail.png",
+      "fit": "cover",
+      "src": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-26 02:05:10",
+  "updated": "2026-11-26 02:05:10",
+  "feed_at": "2026-11-25"
+}

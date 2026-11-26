@@ -1,0 +1,51 @@
+{
+  "id": 754,
+  "type": "company",
+  "slug": "honda-research-institute",
+  "name": "Honda Research Institute",
+  "summary": "Honda's research institutes, behind ASIMO-era humanoid research.",
+  "body": "It runs research centres in Japan, the US and Europe.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://www.honda-ri.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.honda-ri.com/"
+    },
+    "image": {
+      "v": "/logos/honda-research-institute.png",
+      "fit": "contain",
+      "src": "https://www.honda-ri.com/o/liferay-hri-theme/images/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Wakō",
+      "src": "https://www.jp.honda-ri.com/en/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://www.jp.honda-ri.com/en/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "8-1 Honcho, Wako, Saitama 351-0188",
+          "lat": 35.781705,
+          "lon": 139.605869,
+          "src": "https://www.jp.honda-ri.com/en/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

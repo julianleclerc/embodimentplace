@@ -1,0 +1,52 @@
+{
+  "id": 667,
+  "type": "company",
+  "slug": "robust-ai",
+  "name": "Robust AI",
+  "summary": "Developer of collaborative warehouse robots.",
+  "body": "It builds AI-powered robots designed to work alongside people.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://www.robust.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robust.ai/"
+    },
+    "image": {
+      "v": "/logos/robust-ai.png",
+      "fit": "contain",
+      "src": "https://images.squarespace-cdn.com/content/v1/6658c5126fe477069fe8a5ed/96bbee7b-d581-44e1-845b-b13d394ac232/favicon.ico?format=100w",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Carlos",
+      "src": "https://pitchbook.com/profiles/company/267926-77",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://pitchbook.com/profiles/company/267926-77",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1050 Commercial Street, San Carlos, CA 94070",
+          "lat": 37.50368,
+          "lon": -122.254345,
+          "src": "https://pitchbook.com/profiles/company/267926-77"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

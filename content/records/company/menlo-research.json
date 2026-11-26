@@ -1,0 +1,52 @@
+{
+  "id": 584,
+  "type": "company",
+  "slug": "menlo-research",
+  "name": "Menlo Research",
+  "summary": "Singapore lab building the Asimov humanoid and tools for robots.",
+  "body": "It builds robots and the tools to make them useful, starting with Asimov.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://menlo.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://menlo.ai/"
+    },
+    "image": {
+      "v": "/logos/menlo-research.png",
+      "fit": "contain",
+      "src": "https://menlo.ai/apple-icon.png?apple-icon.0sbf~h8-~.6ey.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://menlo.ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://menlo.ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "100 Victoria St, Singapore",
+          "lat": 1.297667,
+          "lon": 103.854292,
+          "src": "https://menlo.ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

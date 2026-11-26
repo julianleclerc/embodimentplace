@@ -1,0 +1,51 @@
+{
+  "id": 851,
+  "type": "company",
+  "slug": "grip-robotics",
+  "name": "Grip Robotics",
+  "summary": "Robots for waste manipulation.",
+  "body": "Grip is a robotics company building intelligent robotic systems for waste and recycling. We are starting with organic waste, where removing contaminants from messy, constantly changing streams remains difficult and highly manual. Y Combinator Summer 2026 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://griprobotics.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://griprobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/grip-robotics.png",
+      "fit": "contain",
+      "src": "https://griprobotics.ai/logo_full.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zürich",
+      "src": "https://www.ycombinator.com/companies/grip",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://www.ycombinator.com/companies/grip",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zürich, ZH, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042,
+          "src": "https://www.ycombinator.com/companies/grip"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-26 02:05:08",
+  "updated": "2026-11-26 02:05:08",
+  "feed_at": "2026-11-26"
+}

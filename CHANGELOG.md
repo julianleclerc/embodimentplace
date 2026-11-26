@@ -33,6 +33,28 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-25
 
+- **Organisation directory, second pass: 343 more organisations, each with an HQ on the map.** Julian pointed out
+  that many humanoid and embodied-AI companies were still missing (Abstract, Dimensional, General Robotics and REK
+  among them). This pass sweeps humanoid.guide's manufacturer list, humanoid.observer's company list, robodienst's
+  humanoid supply-chain list, the Y Combinator robotics, hardware and drones tags from 2022 to 2026, and investor,
+  university and lab lists. It adds 179 robot makers, 55 suppliers (hands, actuators, reducers, tactile and depth
+  sensors), 38 software developers (data, teleoperation, robot OS and fleet tools), 22 investors, 17 model labs,
+  12 universities, 9 research labs, 5 compute companies, 4 integrators, 1 entertainment company (REK) and 1 media
+  organisation. Everything was deduplicated against the 315 live organisations by slug, name and website domain.
+  Companies that have shut down (K-Scale Labs, Cartwheel Robotics) or were absorbed into one already listed
+  (Kind Humanoid into 1X, Aldebaran into Maxtronics) are left out.
+  - HQ: in `data.locations` (kind `HQ`) plus `city` and `country`, each with its source: the organisation's own site,
+    a registry or filing, LinkedIn, PitchBook, Crunchbase-style profiles, Wikidata, the YC company page, or
+    humanoid.observer / robodienst. 104 have a street address. 239 have only a city and country, because that is all a
+    source gives (most YC and Chinese startups); coordinates for those are the city centre (OpenStreetMap Nominatim).
+  - Logos: 333 new 128×128 transparent PNGs in `public/logos/<slug>.png` from each site's icon or logo. 10 have no
+    usable logo and fall back to initials.
+  - Content: `worker/dist/assets/seed-org-directory-2-2026-11.js` (`EP_SEED_ORG_DIRECTORY_2_2026_11`), added to
+    `EP_SEEDS`. It uses the same `newOrgs` mechanism as #77 (insert only when no record has the slug and no
+    organisation has the name), so nothing existing is touched. It runs once from the hourly cron after deploy (marker
+    `settings.seed_org-directory-2-2026-11`). Tested locally on a copy of the live data: 343 organisations added,
+    658 organisations and 659 map points afterwards, and a second run with the marker removed changed nothing.
+
 - **Organisation directory: 140 more organisations, each with its HQ address on the map.** Julian asked for a
   thorough list of the organisations working on humanoids, physical AI and embodied AI, with their HQ address. This
   adds 140 organisations: robot makers (humanoid, legged, mobile manipulation and service robots), robot

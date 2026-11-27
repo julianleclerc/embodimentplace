@@ -1018,3 +1018,11 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
 .epchd nav.epvsw a i{opacity:.6}
 .epchd+.evwrap .evlist{border-top:0}
 @media (max-width:720px){.epchd-org .epvsw button,.epchd nav.epvsw a{height:40px;font-size:.7rem;padding:0 1px}.epchd-org .epvsw,.epchd nav.epvsw{gap:20px}}
+
+/* epCatTabs: Catalogue's type switch (Robots, Components, Hardware, Models, Software) uses the same underline tabs as
+   Organisations (it carries .epchd-org, so epPageTabs styles it); only the count after each label is added here. */
+.epchd-cat .epvsw button{gap:6px}
+.epchd-cat .epvsw button i{font-style:normal;opacity:.6;font-size:.68rem}
+.epchd-cat .epvsw button.on i{opacity:.85}
+@media (max-width:720px){.epchd-cat .epvsw{gap:16px}.epchd-cat .epvsw button i{font-size:.6rem}}
+@media (max-width:720px){.epchd-cat .epvsw button i{display:none}}

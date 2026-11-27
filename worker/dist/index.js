@@ -10,6 +10,7 @@ import { EP_SEED_ORG_DIRECTORY_2_2026_11 } from "./assets/seed-org-directory-2-2
 import { EP_SEED_ORG_DIRECTORY_3_2026_11 } from "./assets/seed-org-directory-3-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_4_2026_11 } from "./assets/seed-org-directory-4-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_5_2026_11 } from "./assets/seed-org-directory-5-2026-11.js";
+import { EP_SEED_CATALOGUE_COMPONENTS_2026_11 } from "./assets/seed-catalogue-components-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -3697,7 +3698,10 @@ function categoryKey(rec) {
 		Compute: "compute",
 		Battery: "battery",
 		Material: "material",
-		Misc: "misc"
+		Misc: "misc",
+		Automotive: "automotive",
+		"Tool changer": "tool_changer",
+		"Other component": "other_component"
 	}[s] || s.toLowerCase().replace(/\s+/g, "_") || "misc";
 }
 function fmtValue(v) {
@@ -6995,6 +6999,12 @@ function notFound(c) {
 }
 // backend/worker/src/edit.ts
 var TYPES = typesSchema_default;
+// epCatComponents: vehicle fields for the Automotive kind, editable like the other product fields.
+if (TYPES.product && !TYPES.product.fields.some((f) => f.key === "av_kind")) {
+	TYPES.product.fields.splice(TYPES.product.fields.findIndex((f) => f.key === "misc_kind") + 1, 0, { key: "av_kind", label: "Kind", kind: "select" }, { key: "sae_level", label: "Autonomy level", kind: "select" });
+	const ri = TYPES.product.fields.findIndex((f) => f.key === "regions");
+	TYPES.product.fields.splice(ri < 0 ? TYPES.product.fields.length : ri + 1, 0, { key: "cities", label: "Operating in", kind: "tags" });
+}
 async function editPayload(c, slug, tkey) {
 	const db = c.env.DB;
 	const auth = c.get("auth");
@@ -16858,6 +16868,36 @@ async function feedPage(db, opts = {}) {
 }
 // backend/worker/src/public.ts
 var VIEWS = listViews_default;
+// epCatComponents: views for the new kinds (Automotive, Tool changers, Other components), built from the Misc view with
+// three extra fields for vehicles. The frontend bundle has the same helper (epViewsExtra) for its copy of the views.
+function epViewsExtra(V) {
+	const m = V.misc;
+	if (!m || V.automotive) return V;
+	const nf = [
+		{ key: "av_kind", label: "Kind", kind: "select", group: "General", private: false, unit: "" },
+		{ key: "sae_level", label: "Autonomy level", kind: "select", group: "General", private: false, unit: "" },
+		{ key: "cities", label: "Operating in", kind: "tags", group: "Commercial", private: false, unit: "" }
+	];
+	const fields = [...m.fields];
+	fields.splice(fields.findIndex((f) => f.key === "misc_kind") + 1, 0, nf[0], nf[1]);
+	fields.splice(fields.findIndex((f) => f.key === "regions") + 1, 0, nf[2]);
+	const fmap = { ...m.fmap };
+	for (const f of nf) fmap[f.key] = { label: f.label, kind: f.kind, unit: "" };
+	const mk = (label, plural, extra) => ({ ...m, label, plural, fields, fmap, ...extra });
+	V.automotive = mk("Automotive", "Automotive", {
+		facets: ["status", "av_kind", "sae_level", "rel:maker", "maker_country"],
+		columns: ["rel:maker", "maker_country", "status", "av_kind", "sae_level", "cities"],
+		card_specs: ["av_kind", "sae_level", "cities"]
+	});
+	V.tool_changer = mk("Tool changer", "Tool changers", {
+		facets: ["status", "rel:maker", "maker_country", "payload_kg"],
+		columns: ["rel:maker", "maker_country", "status", "payload_kg", "weight_kg", "interface"],
+		card_specs: ["payload_kg", "weight_kg"]
+	});
+	V.other_component = mk("Other component", "Other components", {});
+	return V;
+}
+epViewsExtra(VIEWS);
 function phModel(rec, cls = "", via) {
 	if (via) return phOf({
 		slug: via.slug,
@@ -17295,7 +17335,7 @@ async function listPayload(db, tkey, kind = "", when = "", before = "") {
 	const info = hw ? {
 		label: hw.label,
 		plural: hw.plural,
-		section: hw.tab === "robots" ? "Robots" : "Hardware"
+		section: hw.tab === "robots" ? "Robots" : hw.tab === "components" ? "Components" : "Hardware"
 	} : {
 		label: TYPE_LABELS[typeKey]?.label || t?.label || tkey,
 		plural: TYPE_LABELS[typeKey]?.plural || t?.plural || tkey,
@@ -18017,7 +18057,7 @@ async function comparePayload(db, idsRaw) {
 	}
 	if (rows[0] && rows[0].group === "") rows[0].group = rows[1]?.group || "General";
 	const sub = listSubnav(tkey).subnav;
-	const ctag = HW_CAT[tkey] ? HW_CAT[tkey].tab === "robots" ? "robots" : "hardware" : recs[0].type === "software" ? "software" : "models";
+	const ctag = HW_CAT[tkey] ? HW_CAT[tkey].tab || "hardware" : recs[0].type === "software" ? "software" : "models";
 	return {
 		title: `Compare ${plural.toLowerCase()}`,
 		tkey,
@@ -21016,6 +21056,11 @@ api.get("/meta", (c) => {
 				label,
 				plural
 			})),
+			components: HW_CATEGORIES.filter((x) => x.tab === "components").map(({ key, label, plural }) => ({
+				key,
+				label,
+				plural
+			})),
 			hardware: HW_CATEGORIES.filter((x) => x.tab === "hardware").map(({ key, label, plural, group }) => ({
 				key,
 				label,
@@ -21057,9 +21102,10 @@ api.get("/list/:key", async (c) => {
 	if ("error" in payload) return c.json(payload, 404);
 	return c.json(payload);
 });
-// epCatalogue: one list of robots, hardware, models and software for the Catalogue page (/catalogue).
+// epCatalogue: one list of robots, components, hardware, models and software for the Catalogue page (/catalogue).
 var EP_CAT_TAGS = [
 	{ key: "robots", label: "Robots" },
+	{ key: "components", label: "Components" },
 	{ key: "hardware", label: "Hardware" },
 	{ key: "models", label: "Models" },
 	{ key: "software", label: "Software" }
@@ -21084,7 +21130,7 @@ async function epCatalogue(db) {
 		if (rec.type === "product") {
 			const cat = categoryKey(rec) || "misc";
 			const hc = HW_CAT[cat] || HW_CAT.misc;
-			tag = hc?.tab === "robots" ? "robots" : "hardware";
+			tag = hc?.tab || "hardware";
 			kind = hc?.key || cat;
 			kindLabel = hc?.plural || "Other";
 			view = viewFor(kind);
@@ -21137,7 +21183,7 @@ async function epCatalogue(db) {
 		};
 	});
 	// Kind sections on the page follow this order: biggest first, "other"/"misc" last.
-	const lastKey = (k) => (k.key === "other" || k.key === "misc" ? 1 : 0);
+	const lastKey = (k) => (k.key === "other" || k.key === "misc" || k.key === "other_component" ? 1 : 0);
 	for (const list of Object.values(kinds)) list.sort((x, y) => lastKey(x) - lastKey(y) || y.count - x.count || x.label.localeCompare(y.label));
 	return {
 		tags: EP_CAT_TAGS.map((t) => ({ ...t, count: items.filter((i) => i.tag === t.key).length })),
@@ -22578,7 +22624,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;

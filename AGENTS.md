@@ -116,14 +116,18 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   redirect to that tag. The page loads everything from `/api/orgs?group=all` and pages 24 at a time.
 - Robots, hardware, models and software share one top-menu tab, **Catalogue** (`/catalogue`, frontend
   `epCatalogue`/`epCatCard`, Worker `GET /api/catalogue` via `epCatalogue`). There are no separate Robots, Hardware,
-  Models or Software tabs, and no "All" tag: it opens on Robots. Types are a header switch (like Grid/Map on Organisations), kept in the URL (`?tag=robots|hardware|models|software`),
+  Models or Software tabs, and no "All" tag: it opens on Robots. Types are Robots, Components, Hardware, Models and
+  Software, a header switch styled like Organisations' Grid/Map tabs, kept in the URL (`?tag=robots|components|hardware|models|software`).
+  Components holds hands and grippers, teleoperation, tool changers and other components (`tab: "components"` in
+  `HW_CATEGORIES`, added by `epHwExtra`); robots include an Automotive kind (robotaxis, autonomous trucks, driver
+  systems). Julian asked for Automotive explicitly (2026-11-27) after earlier declining more types,
   and within a type items are grouped into one section per kind (humanoids, arms, quadrupeds...), never one mixed grid.
   Kind tags isolate one kind (`&kind=humanoid`). Catalogue, preview and Compare reuse the shared classes (`.epotag`,
   `.ep-wbtn`, `.chip`, `.btn`, `.listhead`/`.oblurb`); don't give them their own button or font styles.
 - List pages (Organisations, Catalogue, Events, Community) share one header: title, intro line (`.oblurb`), then the
-  page switch (`.epchd .epvsw`), then search and one row of tags. Catalogue's type switch is the big full-width
-  segmented one; on Organisations (Grid/Map), Events and Community it is a row of underline tabs (CSS `epPageTabs`).
-  Julian chose this; don't turn those three back into big switches. Keep new list pages to this. Old `/t/<category>`, `/t/model`, `/t/benchmark` and
+  page switch (`.epchd .epvsw`), then search and one row of tags. On every list page, Catalogue included, the switch
+  is a row of underline tabs (CSS `epPageTabs`; Catalogue's wrapper carries `.epchd-org` so it follows Organisations,
+  plus `epCatTabs` for its counts). Julian chose this; don't bring back big full-width switches. Keep new list pages to this. Old `/t/<category>`, `/t/model`, `/t/benchmark` and
   `/t/software[/<kind>]` links redirect there (in `Rr`). Events stays its own tab.
 - Compare only ever compares one kind (humanoids with humanoids, cameras with cameras, models with models), each
   with its own spec fields from `VIEWS`. Items are picked with the Compare button on Catalogue cards.

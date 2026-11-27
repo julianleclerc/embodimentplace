@@ -47,6 +47,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     the Bay Area became a heap of overlapping logos). Bubbles are smaller (20 to 32px, one thin halo), logo pins 22px
     (HQ 26px), dots 10px. Clicking a bubble zooms in until it splits. In `Or` (`b=o<16`, radius `epR`).
 
+- **Room on the sides of content pages (PR "Side margins").** Every page except Home and About (which already had
+  their own layout) now sits in a centred column at most 1200px wide, with side room that grows with the screen
+  (`clamp(12px, 5vw - 20px, 48px)`). Phones keep the 12px edge they had. The full-screen map (`.epfull`) is fixed
+  so it still fills the screen. CSS block `epSideRoom` at the end of the stylesheet (`main.wrap:not(:has(>.home2))`).
 - **Organisation directory, fifth pass (same PR as the third and fourth): 61 more organisations from launch posts on X
   and Hacker News.** Julian asked for a sweep of launch and funding posts before merging. New seed
   `seed-org-directory-5-2026-11.js` (`EP_SEED_ORG_DIRECTORY_5_2026_11`, run after the fourth-pass seed by

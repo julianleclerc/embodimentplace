@@ -65,6 +65,28 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   their own layout) now sits in a centred column at most 1200px wide, with side room that grows with the screen
   (`clamp(12px, 5vw - 20px, 48px)`). Phones keep the 12px edge they had. The full-screen map (`.epfull`) is fixed
   so it still fills the screen. CSS block `epSideRoom` at the end of the stylesheet (`main.wrap:not(:has(>.home2))`).
+- **Catalogue: Components type, Automotive robots, and Organisations-style tabs.** Julian asked for (1) the Catalogue
+  type switch to look like the Organisations Grid/Map switch, (2) a Components type with hands and grippers,
+  teleoperation equipment and others, and (3) an Automotive robot type.
+  - Switch: Catalogue's type switch is now the same underline tabs as Organisations (wrapper `.epchd.epchd-org.epchd-cat`,
+    styled by `epPageTabs`; new CSS block `epCatTabs` adds the counts, hidden on phones so all five tabs fit).
+  - Components: new type between Robots and Hardware (`EP_CAT_TAGS`, `/catalogue?tag=components`). Kinds: Hands and
+    grippers and Teleoperation (moved from Robots), plus new Tool changers (`tool_changer`) and Other components
+    (`other_component`). `epHwExtra` in `worker/dist/assets/catalog-*.js` (and the same inline helper on the bundle's
+    `Bn` list) sets `tab: "components"` and adds the kinds; `/api/meta` lists them under `hardware.components`.
+  - Automotive: new robot kind `automotive` (robotaxis, autonomous trucks, driver systems) with three fields, Kind
+    (`av_kind`), Autonomy level (`sae_level`) and Operating in (`cities`). Views for the new kinds come from the Misc
+    view (`epViewsExtra` after `VIEWS` in the Worker, same inline helper in the bundle's record page `Zr`); the fields
+    are also editable (`TYPES.product.fields`).
+  - Seed `seed-catalogue-components-2026-11.js` (`EP_SEED_CATALOGUE_COMPONENTS_2026_11`, run by `epSeedCron`): 24
+    entries for existing organisations: 9 hands and grippers (Robotiq 2F-85 and Hand-E, OnRobot RG2, Shadow Dexterous
+    Hand, Inspire RH56DFX, PSYONIC Ability Hand, Allegro Hand V4, Tesollo DG-5F, SharpaWave), 2 teleoperation (Trossen
+    WidowX ALOHA Set, Sunday Skill Capture Glove), 2 ATI tool changers and 11 automotive (Waymo Driver, Zoox, Tesla
+    Cybercab, Pony.ai Gen-7, WeRide GXR, Wayve AI Driver, Aurora Driver, Kodiak Driver, Nuro Driver, Motional IONIQ 5,
+    Mobileye Drive). Each field carries its source. Makers missing from the directory (Manus, HaptX, SenseGlove,
+    Baidu Apollo) were left out.
+  - Bundle index-d2822720.js / index-3f95000c.css. Screenshots in the project files (`catalogue-components/`).
+
 - **Organisation directory, fifth pass (same PR as the third and fourth): 61 more organisations from launch posts on X
   and Hacker News.** Julian asked for a sweep of launch and funding posts before merging. New seed
   `seed-org-directory-5-2026-11.js` (`EP_SEED_ORG_DIRECTORY_5_2026_11`, run after the fourth-pass seed by

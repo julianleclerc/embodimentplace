@@ -443,6 +443,37 @@ var HW_CATEGORIES = [
 		group: "Other"
 	}
 ];
+// epCatComponents: Catalogue has a Components type (hands and grippers, teleoperation, tool changers, other components)
+// and robots have an Automotive kind. Applied to the list above so HW_CAT, /api/meta and the create form all see it.
+function epHwExtra(a) {
+	for (const c of a) if (c.key === "hand" || c.key === "teleop") c.tab = "components";
+	if (a.some((c) => c.key === "automotive")) return a;
+	a.splice(a.findIndex((c) => c.key === "hand"), 0, {
+		key: "automotive",
+		label: "Automotive",
+		plural: "Automotive",
+		tab: "robots",
+		card_specs: ["av_kind", "sae_level", "cities"],
+		columns: ["av_kind", "sae_level", "cities"]
+	});
+	a.splice(a.findIndex((c) => c.key === "teleop") + 1, 0, {
+		key: "tool_changer",
+		label: "Tool changer",
+		plural: "Tool changers",
+		tab: "components",
+		card_specs: ["payload_kg", "weight_kg"],
+		columns: ["payload_kg", "weight_kg", "interface"]
+	}, {
+		key: "other_component",
+		label: "Other component",
+		plural: "Other components",
+		tab: "components",
+		card_specs: ["misc_kind", "weight_kg"],
+		columns: ["misc_kind", "weight_kg"]
+	});
+	return a;
+}
+epHwExtra(HW_CATEGORIES);
 var HW_CAT = Object.fromEntries(HW_CATEGORIES.map((c) => [c.key, c]));
 var SOFTWARE_KINDS = [
 	{

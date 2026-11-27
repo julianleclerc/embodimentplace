@@ -1068,3 +1068,28 @@ html .epfull .epvsw button.on:hover{border-bottom-color:var(--accent)}
 .opin.logo{width:22px;height:22px;margin:-11px 0 0 -11px;padding:2px}
 .opin.logo.hq{width:26px;height:26px;margin:-13px 0 0 -13px;border-width:2px;box-shadow:0 0 0 1px #00000073,0 0 0 3px color-mix(in srgb, var(--pc) 30%, transparent),0 1px 4px #00000040}
 .oclus{font-size:.68rem;box-shadow:0 0 0 3px color-mix(in srgb, var(--ink) 14%, transparent),0 1px 4px #00000040}
+
+/* epCatTabs: Catalogue's type switch (Robots, Components, Hardware, Models, Software) uses the same underline tabs as
+   Organisations (it carries .epchd-org, so epPageTabs styles it); only the count after each label is added here. */
+.epchd-cat .epvsw button{gap:6px}
+.epchd-cat .epvsw button i{font-style:normal;opacity:.6;font-size:.68rem}
+.epchd-cat .epvsw button.on i{opacity:.85}
+@media (max-width:720px){.epchd-cat .epvsw{gap:16px}.epchd-cat .epvsw button i{font-size:.6rem}}
+@media (max-width:720px){.epchd-cat .epvsw button i{display:none}}
+========
+/* epSideRoom: content pages get a centred column with room on the sides (Home and About keep their own layout) */
+main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto;padding-left:clamp(12px,5vw - 20px,48px);padding-right:clamp(12px,5vw - 20px,48px)}
+>>>>>>>> origin/main:public/assets/index-a326c215.css
+========
+/* epVisits: visit counts above Community Place, anonymous visitor walkers and their card (2026-11-27) */
+.epp-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--rule);margin:14px 0 0;background:var(--paper)}
+.epp-st{padding:10px 12px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.epp-st+.epp-st{border-left:1px solid var(--rule)}
+.epp-st b{font:600 1.35rem/1 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.epp-st span{font:500 .62rem/1.25 var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
+.epp-stats+.epp{margin-top:8px}
+.epp-c.epp-anon{opacity:.72}
+.epp-c.epp-anon.sel,.epp-c.epp-anon.held{opacity:1}
+.epp-vcard .epp-by{margin-bottom:6px}
+@media (max-width:640px){.epp-st{padding:8px 9px}.epp-st b{font-size:1.1rem}.epp-st span{font-size:.56rem}}
+>>>>>>>> origin/main:public/assets/index-92aa8e37.css

@@ -1018,3 +1018,6 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
 .epchd nav.epvsw a i{opacity:.6}
 .epchd+.evwrap .evlist{border-top:0}
 @media (max-width:720px){.epchd-org .epvsw button,.epchd nav.epvsw a{height:40px;font-size:.7rem;padding:0 1px}.epchd-org .epvsw,.epchd nav.epvsw{gap:20px}}
+
+/* epSideRoom: content pages get a centred column with room on the sides (Home and About keep their own layout) */
+main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto;padding-left:clamp(12px,5vw - 20px,48px);padding-right:clamp(12px,5vw - 20px,48px)}

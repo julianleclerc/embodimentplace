@@ -33,6 +33,20 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-27
 
+- **Organisations: List view, quieter map switch, map clustering (PR #83).** Julian asked for a list as well as the
+  grid and map, for no dark highlight on the map's Grid/Map switch, and for smaller circles where many organisations
+  sit close together.
+  - The switch is now Grid / List / Map (`epViewSw`, `?view=list`). List (`epOrgList`, CSS block `epOrgList`) shows one
+    row per organisation: logo, name, one-line summary, type, country, founded and Follow. On phones type, country
+    and founded fold into a line under the name. Search, type tags, country, sort and "Show more" work the same as
+    the grid.
+  - Map switch: no filled background on the chosen view; it is ink with a 2px underline, the others muted, and
+    hovering a choice turns it the accent colour. The page tabs on Organisations, Events and Community also hover to
+    the accent colour.
+  - Map pins: nearby pins now merge into a numbered bubble at every zoom up to 15 (before: only below zoom 8, so
+    the Bay Area became a heap of overlapping logos). Bubbles are smaller (20 to 32px, one thin halo), logo pins 22px
+    (HQ 26px), dots 10px. Clicking a bubble zooms in until it splits. In `Or` (`b=o<16`, radius `epR`).
+
 - **Community shows visit counts, and an anonymous character walks for each visitor (Julian).** A strip above Place
   shows visits in the last 24 hours, the last 7 days and in total since counting started (the total starts at 0 on
   the day this deploys). Each logged-out visitor of the last 24 hours walks in Place as an anonymous character

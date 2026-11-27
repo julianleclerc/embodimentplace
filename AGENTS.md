@@ -129,6 +129,9 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   is a row of underline tabs (CSS `epPageTabs`; Catalogue's wrapper carries `.epchd-org` so it follows Organisations,
   plus `epCatTabs` for its counts). Julian chose this; don't bring back big full-width switches. Keep new list pages to this. Old `/t/<category>`, `/t/model`, `/t/benchmark` and
   `/t/software[/<kind>]` links redirect there (in `Rr`). Events stays its own tab.
+- Content pages sit in a centred column (max 1200px, CSS `epSideRoom` on `main.wrap`) with room on the sides. Home
+  (`.home2`, feed plus sidebar) and the full-screen map keep the full width. Julian asked for this; don't stretch new
+  pages edge to edge.
 - Compare only ever compares one kind (humanoids with humanoids, cameras with cameras, models with models), each
   with its own spec fields from `VIEWS`. Items are picked with the Compare button on Catalogue cards.
 - Members can follow organisations (companies, universities, labs) and topics, not people, robots or models.

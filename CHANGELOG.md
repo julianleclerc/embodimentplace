@@ -33,6 +33,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-27
 
+- **Room on the sides of content pages (PR "Side margins").** Every page except Home and About (which already had
+  their own layout) now sits in a centred column at most 1200px wide, with side room that grows with the screen
+  (`clamp(12px, 5vw - 20px, 48px)`). Phones keep the 12px edge they had. The full-screen map (`.epfull`) is fixed
+  so it still fills the screen. CSS block `epSideRoom` at the end of the stylesheet (`main.wrap:not(:has(>.home2))`).
 - **Catalogue: Components type, Automotive robots, and Organisations-style tabs.** Julian asked for (1) the Catalogue
   type switch to look like the Organisations Grid/Map switch, (2) a Components type with hands and grippers,
   teleoperation equipment and others, and (3) an Automotive robot type.
@@ -53,7 +57,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     Cybercab, Pony.ai Gen-7, WeRide GXR, Wayve AI Driver, Aurora Driver, Kodiak Driver, Nuro Driver, Motional IONIQ 5,
     Mobileye Drive). Each field carries its source. Makers missing from the directory (Manus, HaptX, SenseGlove,
     Baidu Apollo) were left out.
-  - Bundle index-87cc5d2d.js / index-8b5df608.css. Screenshots in the project files (`catalogue-components/`).
+  - Bundle index-87cc5d2d.js / index-0d87e475.css. Screenshots in the project files (`catalogue-components/`).
 
 - **Organisation directory, fifth pass (same PR as the third and fourth): 61 more organisations from launch posts on X
   and Hacker News.** Julian asked for a sweep of launch and funding posts before merging. New seed

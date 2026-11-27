@@ -1019,6 +1019,9 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
 .epchd+.evwrap .evlist{border-top:0}
 @media (max-width:720px){.epchd-org .epvsw button,.epchd nav.epvsw a{height:40px;font-size:.7rem;padding:0 1px}.epchd-org .epvsw,.epchd nav.epvsw{gap:20px}}
 
+/* epSideRoom: content pages get a centred column with room on the sides (Home and About keep their own layout) */
+main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto;padding-left:clamp(12px,5vw - 20px,48px);padding-right:clamp(12px,5vw - 20px,48px)}
+
 /* epCatTabs: Catalogue's type switch (Robots, Components, Hardware, Models, Software) uses the same underline tabs as
    Organisations (it carries .epchd-org, so epPageTabs styles it); only the count after each label is added here. */
 .epchd-cat .epvsw button{gap:6px}
@@ -1026,3 +1029,7 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
 .epchd-cat .epvsw button.on i{opacity:.85}
 @media (max-width:720px){.epchd-cat .epvsw{gap:16px}.epchd-cat .epvsw button i{font-size:.6rem}}
 @media (max-width:720px){.epchd-cat .epvsw button i{display:none}}
+========
+/* epSideRoom: content pages get a centred column with room on the sides (Home and About keep their own layout) */
+main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto;padding-left:clamp(12px,5vw - 20px,48px);padding-right:clamp(12px,5vw - 20px,48px)}
+>>>>>>>> origin/main:public/assets/index-a326c215.css

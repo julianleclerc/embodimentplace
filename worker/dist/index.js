@@ -2689,6 +2689,9 @@ function adminBarLinks(auth, counts) {
 		href: "/admin/site",
 		label: "Site settings"
 	}, {
+		href: "/admin/database",
+		label: "Database"
+	}, {
 		href: "/community/people",
 		label: "People"
 	}, {
@@ -21838,6 +21841,388 @@ api.post("/admin/site", async (c) => {
 	}
 	return c.json({ ok: true, ticker_mode: await epTickerMode(c.env.DB), tab_height: await epTabHeight(c.env.DB) });
 });
+// Admin > Database (epDb*): browse the D1 tables and export them to Excel. Admin only.
+// Internal tables (search index shards, Cloudflare's own) are left out. Secret columns
+// (password hashes, 2FA secrets, recovery codes, session and email tokens, claim code hashes)
+// are never sent, not even to admins, and not in the Excel files.
+var EP_DB_SKIP = /^(_cf_|sqlite_|d1_|fts$|fts_)/;
+var EP_DB_SECRET = {
+	users: ["pw", "totp", "recovery"],
+	sessions: ["token"],
+	email_tokens: ["token"],
+	claim_codes: ["code_hash"]
+};
+// Tables copied to the public GitHub repo by the nightly export (scripts/export-content.mjs). Everything else is private.
+var EP_DB_PUBLIC = ["records", "links"];
+var EP_DB_INFO = {
+	records: ["Content", "Every organisation, robot, model, paper, post, event and other page on the site (type says which)."],
+	links: ["Content", "Connections between records, for example a robot and its maker."],
+	revisions: ["Content", "Earlier versions of records, saved on each edit."],
+	comments: ["Content", "Comments on records, with their review status."],
+	post_banner: ["Content", "Article banner images found for news posts."],
+	auto_news: ["Content", "Organisations that are tracked for new posts, and when they were last checked."],
+	settings: ["Site", "Site-wide settings (Latest banner, subtab height, online seats...)."],
+	submissions: ["Moderation", "Suggested edits, new records and claims waiting for review."],
+	reports: ["Moderation", "Posts and comments people reported."],
+	meet_requests: ["Moderation", "Requests sent from the Community page."],
+	intros: ["Moderation", "Introduction requests between members and organisations."],
+	referrals: ["Moderation", "Quote requests sent to companies."],
+	users: ["People", "Member accounts: username, name, role, profile and preferences."],
+	sessions: ["People", "Signed-in browsers and devices."],
+	owners: ["People", "Members verified as working at an organisation (the badge)."],
+	follows: ["People", "Organisations each member follows."],
+	user_follows: ["People", "Members following other members."],
+	connections: ["People", "Connection requests between members."],
+	blocks: ["People", "Members who blocked other members."],
+	saves: ["People", "Records members saved."],
+	likes: ["People", "Records members liked."],
+	watch_sources: ["People", "Watchlist sources each member added."],
+	claim_codes: ["People", "Codes sent to confirm a work email."],
+	email_tokens: ["People", "Email confirmation and password reset links."],
+	email_log: ["Email", "Every email the site sent (or tried to)."],
+	chat: ["Chat", "Event chat messages."],
+	room_chat: ["Chat", "Lounge and room chat messages."],
+	presence: ["Chat", "Who is on an event page right now."],
+	room_presence: ["Chat", "Who is in a room right now."],
+	visits: ["Site", "Daily visit counts for Community (one anonymous hash per visitor per day)."]
+};
+// Columns that point at a user or a record, so the viewer can show a name and jump to it.
+var EP_DB_USERREF = ["user_id", "author_id", "from_id", "to_id", "follower_id", "followee_id", "handled_by", "decided_by", "updated_by", "blocked_id"];
+var EP_DB_RECREF = ["record_id", "company_id", "event_id", "src", "dst", "result_id", "org_id", "pinned_id"];
+function epDbRef(table, col) {
+	if (table === "users" && col === "pinned_id") return "records";
+	if (EP_DB_USERREF.includes(col)) return "users";
+	if (EP_DB_RECREF.includes(col)) return "records";
+	return null;
+}
+function epDbQ(name) {
+	return "\"" + String(name).replace(/"/g, "\"\"") + "\"";
+}
+async function epDbTables(db) {
+	const rs = await db.prepare("SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name").all();
+	return (rs.results || []).filter((t) => !EP_DB_SKIP.test(t.name) && !/WITHOUT ROWID/i.test(t.sql || ""));
+}
+function epDbColRows(table, rows) {
+	const hide = EP_DB_SECRET[table] || [];
+	return (rows || []).map((c) => ({
+		name: c.name,
+		type: c.type || "",
+		pk: Number(c.pk || 0) > 0,
+		notnull: !!c.notnull,
+		secret: hide.includes(c.name),
+		ref: epDbRef(table, c.name)
+	}));
+}
+async function epDbCols(db, table) {
+	const rs = await db.prepare("PRAGMA table_info(" + epDbQ(table) + ")").all();
+	return epDbColRows(table, rs.results);
+}
+function epDbFkRows(rows) {
+	return (rows || []).map((f) => ({ col: f.from, table: f.table, to: f.to || "id" }));
+}
+async function epDbFks(db, table) {
+	try {
+		return epDbFkRows((await db.prepare("PRAGMA foreign_key_list(" + epDbQ(table) + ")").all()).results);
+	} catch {
+		return [];
+	}
+}
+// Columns and foreign keys of every table in one round trip.
+async function epDbSchema(db, tables) {
+	const out = {};
+	try {
+		const st = [];
+		for (const t of tables) st.push(db.prepare("PRAGMA table_info(" + epDbQ(t.name) + ")"), db.prepare("PRAGMA foreign_key_list(" + epDbQ(t.name) + ")"));
+		const rs = await db.batch(st);
+		tables.forEach((t, i) => {
+			out[t.name] = { cols: epDbColRows(t.name, rs[2 * i].results), fks: epDbFkRows(rs[2 * i + 1].results) };
+		});
+	} catch {
+		for (const t of tables) out[t.name] = { cols: await epDbCols(db, t.name), fks: await epDbFks(db, t.name) };
+	}
+	return out;
+}
+async function epDbTable(db, name) {
+	const t = (await epDbTables(db)).find((x) => x.name === name);
+	return t ? t.name : null;
+}
+function epDbSel(table, cols) {
+	return "rowid AS __rid, " + cols.filter((c) => !c.secret).map((c) => epDbQ(c.name)).join(", ");
+}
+async function epDbLabels(db, cols, rows) {
+	const want = { users: new Set(), records: new Set() };
+	for (const c of cols) if (c.ref && !c.secret) for (const r of rows) {
+		const v = Number(r[c.name]);
+		if (Number.isInteger(v) && v > 0) want[c.ref].add(v);
+	}
+	const out = { users: {}, records: {} };
+	if (want.users.size) {
+		const rs = await db.prepare("SELECT id, username AS l FROM users WHERE id IN (SELECT value FROM json_each(?))").bind(JSON.stringify([...want.users])).all();
+		for (const r of rs.results || []) out.users[r.id] = r.l;
+	}
+	if (want.records.size) {
+		const rs = await db.prepare("SELECT id, name AS l, type, slug FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(JSON.stringify([...want.records])).all();
+		for (const r of rs.results || []) out.records[r.id] = r.type + ": " + r.l;
+	}
+	return out;
+}
+// Which other tables point at this table (declared foreign keys plus the user/record columns above).
+async function epDbIncoming(db, target, tables) {
+	const sc = await epDbSchema(db, tables);
+	const out = [];
+	for (const t of tables) {
+		const { cols, fks } = sc[t.name];
+		const seen = new Set();
+		for (const f of fks) if (f.table === target && !seen.has(f.col)) {
+			seen.add(f.col);
+			out.push({ table: t.name, col: f.col });
+		}
+		for (const c of cols) if (c.ref === target && !seen.has(c.name) && !(t.name === target && c.pk)) out.push({ table: t.name, col: c.name });
+	}
+	return out;
+}
+async function epDbMeta(db) {
+	const tables = await epDbTables(db);
+	let counts = [];
+	try {
+		counts = (await db.batch(tables.map((t) => db.prepare("SELECT COUNT(*) AS n FROM " + epDbQ(t.name))))).map((r) => Number(r.results?.[0]?.n || 0));
+	} catch {}
+	return tables.map((t, i) => {
+		const info = EP_DB_INFO[t.name] || ["Other", ""];
+		return { name: t.name, group: info[0], about: info[1], rows: counts[i] ?? null, public: EP_DB_PUBLIC.includes(t.name) };
+	});
+}
+function epDbWhere(cols, q, f) {
+	// Numbered parameters keep the bound count at two whatever the column count.
+	const parts = [];
+	const args = [];
+	if (f && f.col && cols.some((c) => c.name === f.col && !c.secret)) {
+		args.push(/^-?\d+$/.test(f.val) ? Number(f.val) : f.val);
+		parts.push(epDbQ(f.col) + " = ?" + args.length);
+	}
+	if (q) {
+		args.push("%" + q.replace(/[\\%_]/g, (m) => "\\" + m) + "%");
+		const n = args.length;
+		parts.push("(" + cols.filter((c) => !c.secret).map((c) => "CAST(" + epDbQ(c.name) + " AS TEXT) LIKE ?" + n + " ESCAPE '\\'").join(" OR ") + ")");
+	}
+	return { sql: parts.length ? " WHERE " + parts.join(" AND ") : "", args };
+}
+api.get("/admin/db", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	return c.json({ tables: await epDbMeta(c.env.DB) });
+});
+api.get("/admin/db/export", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const db = c.env.DB;
+	const one = c.req.query("table");
+	let names;
+	if (one) {
+		const t = await epDbTable(db, one);
+		if (!t) return c.json({ error: "No such table." }, 404);
+		names = [t];
+	} else names = (await epDbTables(db)).map((t) => t.name);
+	const sheets = [];
+	for (const name of names) {
+		const cols = (await epDbCols(db, name)).filter((x) => !x.secret);
+		const rs = await db.prepare("SELECT " + (cols.map((x) => epDbQ(x.name)).join(", ") || "rowid") + " FROM " + epDbQ(name) + " ORDER BY rowid LIMIT 100000").all();
+		sheets.push({ name, cols: cols.map((x) => x.name), rows: (rs.results || []).map((r) => cols.map((x) => r[x.name])) });
+	}
+	const day = (/* @__PURE__ */ new Date()).toISOString().slice(0, 10);
+	const file = "embodiment-place-" + (one ? names[0] : "database") + "-" + day + ".xlsx";
+	const bytes = await epXlsx(sheets);
+	return new Response(bytes, { headers: {
+		"content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+		"content-disposition": "attachment; filename=\"" + file + "\"",
+		"cache-control": "no-store"
+	} });
+});
+api.get("/admin/db/:table", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const db = c.env.DB;
+	const name = await epDbTable(db, c.req.param("table"));
+	if (!name) return c.json({ error: "No such table." }, 404);
+	const cols = await epDbCols(db, name);
+	const per = Math.min(200, Math.max(10, Number(c.req.query("per")) || 50));
+	const page = Math.max(1, Number(c.req.query("page")) || 1);
+	const q = String(c.req.query("q") || "").trim().slice(0, 200);
+	const fc = String(c.req.query("fcol") || ""), fv = String(c.req.query("fval") ?? "");
+	const f = fc ? { col: fc, val: fv } : null;
+	let sort = String(c.req.query("sort") || "");
+	if (sort !== "__rid" && !cols.some((x) => x.name === sort && !x.secret)) sort = "__rid";
+	const dir = c.req.query("dir") === "asc" ? "ASC" : "DESC";
+	const w = epDbWhere(cols, q, f);
+	const total = Number((await db.prepare("SELECT COUNT(*) AS n FROM " + epDbQ(name) + w.sql).bind(...w.args).first())?.n || 0);
+	const rs = await db.prepare("SELECT " + epDbSel(name, cols) + " FROM " + epDbQ(name) + w.sql + " ORDER BY " + (sort === "__rid" ? "rowid" : epDbQ(sort)) + " " + dir + " LIMIT " + per + " OFFSET " + (page - 1) * per).bind(...w.args).all();
+	const rows = rs.results || [];
+	const tables = await epDbTables(db);
+	const info = EP_DB_INFO[name] || ["Other", ""];
+	return c.json({
+		name,
+		group: info[0],
+		about: info[1],
+		public: EP_DB_PUBLIC.includes(name),
+		cols,
+		fks: await epDbFks(db, name),
+		incoming: name === "users" || name === "records" ? await epDbIncoming(db, name, tables) : [],
+		total,
+		page,
+		per,
+		sort,
+		dir: dir.toLowerCase(),
+		rows,
+		labels: await epDbLabels(db, cols, rows)
+	});
+});
+// Linked rows for one row: how many rows in other tables point at it.
+api.get("/admin/db/:table/:rid/links", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const db = c.env.DB;
+	const name = await epDbTable(db, c.req.param("table"));
+	if (!name || name !== "users" && name !== "records") return c.json({ links: [] });
+	const row = await db.prepare("SELECT id FROM " + epDbQ(name) + " WHERE rowid=?").bind(Number(c.req.param("rid"))).first();
+	if (!row) return c.json({ links: [] });
+	const inc = await epDbIncoming(db, name, await epDbTables(db));
+	const links = [];
+	for (const l of inc) {
+		const n = Number((await db.prepare("SELECT COUNT(*) AS n FROM " + epDbQ(l.table) + " WHERE " + epDbQ(l.col) + "=?").bind(row.id).first())?.n || 0);
+		if (n) links.push({ ...l, val: row.id, n });
+	}
+	return c.json({ links });
+});
+// Minimal .xlsx writer: one sheet per table, inline strings, bold frozen header row, zipped with deflate.
+function epXmlEsc(s) {
+	return String(s).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F￾￿]/g, "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function epXlsxCol(i) {
+	let s = "";
+	for (i++; i > 0; i = Math.floor((i - 1) / 26)) s = String.fromCharCode(65 + (i - 1) % 26) + s;
+	return s;
+}
+function epXlsxCell(v, ref, head) {
+	if (v === null || v === void 0 || v === "") return "";
+	if (!head && typeof v === "number" && Number.isFinite(v)) return "<c r=\"" + ref + "\"><v>" + v + "</v></c>";
+	if (v instanceof ArrayBuffer || ArrayBuffer.isView(v)) v = "(binary)";
+	let s = String(v);
+	if (s.length > 32e3) s = s.slice(0, 32e3) + "…";
+	return "<c r=\"" + ref + "\" t=\"inlineStr\"" + (head ? " s=\"1\"" : "") + "><is><t xml:space=\"preserve\">" + epXmlEsc(s) + "</t></is></c>";
+}
+function epXlsxSheet(sh) {
+	const out = ["<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><worksheet xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\"><sheetViews><sheetView workbookViewId=\"0\"><pane ySplit=\"1\" topLeftCell=\"A2\" activePane=\"bottomLeft\" state=\"frozen\"/></sheetView></sheetViews>"];
+	if (sh.cols.length) out.push("<cols>" + sh.cols.map((c, i) => {
+		let w = c.length;
+		for (const r of sh.rows.slice(0, 200)) w = Math.max(w, Math.min(60, String(r[i] ?? "").length));
+		return "<col min=\"" + (i + 1) + "\" max=\"" + (i + 1) + "\" width=\"" + Math.max(8, w + 2) + "\" customWidth=\"1\"/>";
+	}).join("") + "</cols>");
+	out.push("<sheetData>");
+	const all = [sh.cols, ...sh.rows];
+	all.forEach((r, ri) => {
+		out.push("<row r=\"" + (ri + 1) + "\">" + r.map((v, ci) => epXlsxCell(v, epXlsxCol(ci) + (ri + 1), ri === 0)).join("") + "</row>");
+	});
+	out.push("</sheetData>");
+	if (sh.cols.length) out.push("<autoFilter ref=\"A1:" + epXlsxCol(sh.cols.length - 1) + Math.max(1, all.length) + "\"/>");
+	out.push("</worksheet>");
+	return out.join("");
+}
+async function epXlsx(sheets) {
+	const used = new Set();
+	const names = sheets.map((s) => {
+		let n = String(s.name).replace(/[\[\]\*\?\/\\:]/g, "_").slice(0, 31) || "Sheet";
+		for (let k = 2; used.has(n.toLowerCase()); k++) n = n.slice(0, 28) + "_" + k;
+		used.add(n.toLowerCase());
+		return n;
+	});
+	const files = [
+		["[Content_Types].xml", "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Types xmlns=\"http://schemas.openxmlformats.org/package/2006/content-types\"><Default Extension=\"rels\" ContentType=\"application/vnd.openxmlformats-package.relationships+xml\"/><Default Extension=\"xml\" ContentType=\"application/xml\"/><Override PartName=\"/xl/workbook.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml\"/><Override PartName=\"/xl/styles.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml\"/>" + sheets.map((_, i) => "<Override PartName=\"/xl/worksheets/sheet" + (i + 1) + ".xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/>").join("") + "</Types>"],
+		["_rels/.rels", "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\"><Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument\" Target=\"xl/workbook.xml\"/></Relationships>"],
+		["xl/workbook.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><workbook xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><sheets>" + names.map((n, i) => "<sheet name=\"" + epXmlEsc(n) + "\" sheetId=\"" + (i + 1) + "\" r:id=\"rId" + (i + 1) + "\"/>").join("") + "</sheets></workbook>"],
+		["xl/_rels/workbook.xml.rels", "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">" + sheets.map((_, i) => "<Relationship Id=\"rId" + (i + 1) + "\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet\" Target=\"worksheets/sheet" + (i + 1) + ".xml\"/>").join("") + "<Relationship Id=\"rId" + (sheets.length + 1) + "\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles\" Target=\"styles.xml\"/></Relationships>"],
+		["xl/styles.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><styleSheet xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\"><fonts count=\"2\"><font><sz val=\"11\"/><name val=\"Calibri\"/></font><font><b/><sz val=\"11\"/><name val=\"Calibri\"/></font></fonts><fills count=\"2\"><fill><patternFill patternType=\"none\"/></fill><fill><patternFill patternType=\"gray125\"/></fill></fills><borders count=\"1\"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count=\"1\"><xf numFmtId=\"0\" fontId=\"0\" fillId=\"0\" borderId=\"0\"/></cellStyleXfs><cellXfs count=\"2\"><xf numFmtId=\"0\" fontId=\"0\" fillId=\"0\" borderId=\"0\" xfId=\"0\"/><xf numFmtId=\"0\" fontId=\"1\" fillId=\"0\" borderId=\"0\" xfId=\"0\" applyFont=\"1\"/></cellXfs><cellStyles count=\"1\"><cellStyle name=\"Normal\" xfId=\"0\" builtinId=\"0\"/></cellStyles></styleSheet>"],
+		...sheets.map((s, i) => ["xl/worksheets/sheet" + (i + 1) + ".xml", epXlsxSheet(s)])
+	];
+	return epZip(files);
+}
+var epCrcT = null;
+function epCrc32(b) {
+	if (!epCrcT) {
+		epCrcT = new Uint32Array(256);
+		for (let n = 0; n < 256; n++) {
+			let c = n;
+			for (let k = 0; k < 8; k++) c = c & 1 ? 3988292384 ^ c >>> 1 : c >>> 1;
+			epCrcT[n] = c >>> 0;
+		}
+	}
+	let c = 4294967295;
+	for (let i = 0; i < b.length; i++) c = epCrcT[(c ^ b[i]) & 255] ^ c >>> 8;
+	return (c ^ 4294967295) >>> 0;
+}
+async function epDeflate(b) {
+	try {
+		const s = new Blob([b]).stream().pipeThrough(new CompressionStream("deflate-raw"));
+		return new Uint8Array(await new Response(s).arrayBuffer());
+	} catch {
+		return null;
+	}
+}
+async function epZip(files) {
+	const enc = new TextEncoder();
+	const parts = [];
+	const central = [];
+	let off = 0;
+	const d = /* @__PURE__ */ new Date();
+	const dosT = d.getUTCHours() << 11 | d.getUTCMinutes() << 5 | d.getUTCSeconds() >> 1;
+	const dosD = d.getUTCFullYear() - 1980 << 9 | d.getUTCMonth() + 1 << 5 | d.getUTCDate();
+	for (const [name, text] of files) {
+		const nb = enc.encode(name);
+		const raw = enc.encode(text);
+		const crc = epCrc32(raw);
+		const z = await epDeflate(raw);
+		const method = z && z.length < raw.length ? 8 : 0;
+		const data = method ? z : raw;
+		const h = new DataView(new ArrayBuffer(30));
+		h.setUint32(0, 67324752, true);
+		h.setUint16(4, 20, true);
+		h.setUint16(6, 2048, true);
+		h.setUint16(8, method, true);
+		h.setUint16(10, dosT, true);
+		h.setUint16(12, dosD, true);
+		h.setUint32(14, crc, true);
+		h.setUint32(18, data.length, true);
+		h.setUint32(22, raw.length, true);
+		h.setUint16(26, nb.length, true);
+		h.setUint16(28, 0, true);
+		parts.push(new Uint8Array(h.buffer), nb, data);
+		const cd = new DataView(new ArrayBuffer(46));
+		cd.setUint32(0, 33639248, true);
+		cd.setUint16(4, 20, true);
+		cd.setUint16(6, 20, true);
+		cd.setUint16(8, 2048, true);
+		cd.setUint16(10, method, true);
+		cd.setUint16(12, dosT, true);
+		cd.setUint16(14, dosD, true);
+		cd.setUint32(16, crc, true);
+		cd.setUint32(20, data.length, true);
+		cd.setUint32(24, raw.length, true);
+		cd.setUint16(28, nb.length, true);
+		cd.setUint32(42, off, true);
+		central.push(new Uint8Array(cd.buffer), nb);
+		off += 30 + nb.length + data.length;
+	}
+	const cdSize = central.reduce((a, b) => a + b.length, 0);
+	const end = new DataView(new ArrayBuffer(22));
+	end.setUint32(0, 101010256, true);
+	end.setUint16(8, files.length, true);
+	end.setUint16(10, files.length, true);
+	end.setUint32(12, cdSize, true);
+	end.setUint32(16, off, true);
+	const all = [...parts, ...central, new Uint8Array(end.buffer)];
+	const out = new Uint8Array(all.reduce((a, b) => a + b.length, 0));
+	let p = 0;
+	for (const a of all) {
+		out.set(a, p);
+		p += a.length;
+	}
+	return out;
+}
 api.get("/admin/stats", async (c) => {
 	const auth = c.get("auth");
 	if (!auth.logged || auth.needs_2fa) return c.json({ error: "Not found" }, 404);

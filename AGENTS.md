@@ -68,6 +68,9 @@ There is no original source. The repository was rebuilt from the live deployment
 
 ### Database tables and columns
 
+- Admin > Database (`/admin/database`, `epAdminDb`, routes `/api/admin/db*`) shows every table to admins and exports
+  .xlsx. When you add a table, give it a group and a one-line description in `EP_DB_INFO`, and if it holds a secret
+  (password hash, token, 2FA secret) add that column to `EP_DB_SECRET` so it is never shown or exported.
 - Tables and columns that the code adds itself live in `AUTH_DDL`, `TABLES`, `COLS`, `EP_USER_COLS` and
   `EP_MAIL_DDL` in `worker/dist/index.js`. Add new ones there, not as ad-hoc `CREATE`/`ALTER` calls in a handler.
   `epEnsureSchema` runs them once per schema version (a hash of those lists, saved as `settings.schema_version`).

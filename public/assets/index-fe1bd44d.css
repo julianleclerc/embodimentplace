@@ -1093,3 +1093,56 @@ main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto
 .epp-vcard .epp-by{margin-bottom:6px}
 @media (max-width:640px){.epp-st{padding:8px 9px}.epp-st b{font-size:1.1rem}.epp-st span{font-size:.56rem}}
 >>>>>>>> origin/main:public/assets/index-92aa8e37.css
+/* epDb: Admin > Database viewer (epAdminDb) */
+.ep-db{display:flex;flex-direction:column;gap:14px}
+.ep-db.busy .ep-db-wrap{opacity:.55}
+.ep-db-top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.ep-db-intro{margin:0;flex:1 1 320px;max-width:62ch}
+.ep-db-xl{white-space:nowrap;text-decoration:none}
+.ep-db-g h2 span{text-transform:none;letter-spacing:0;font-size:.72rem}
+.ep-db-tl{display:flex;flex-direction:column}
+.ep-db-t{display:grid;grid-template-columns:minmax(150px,1fr) 2.2fr 110px;gap:14px;align-items:center;width:100%;padding:11px 16px;background:none;border:0;text-align:left;color:var(--ink);font:inherit;cursor:pointer}
+.ep-db-t+.ep-db-t{border-top:1px solid var(--hair)}
+.ep-db-t:hover{background:var(--inv);color:var(--inv-ink)}
+.ep-db-t:hover .ep-db-ta,.ep-db-t:hover small{color:inherit;opacity:.75}
+.ep-db-tn{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-width:0}
+.ep-db-tn b{font-family:var(--mono);font-weight:500;font-size:.92rem}
+.ep-db-ta{color:var(--muted);font-size:.88rem}
+.ep-db-tr{text-align:right;font-family:var(--mono);font-size:.9rem}
+.ep-db-tr small{color:var(--muted)}
+.ep-db-pub{color:var(--accent)}
+.ep-db-priv{color:var(--muted)}
+.ep-db-crumb{margin-bottom:-4px}
+.ep-db-head{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;padding:14px 16px;flex-wrap:wrap}
+.ep-db-hl{flex:1 1 280px;min-width:0}
+.ep-db-hl h3{margin:0 0 4px;font-family:var(--mono);font-weight:500;font-size:1.1rem;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.ep-db-hl p{margin:0 0 4px}
+.ep-db-cnt{font-family:var(--mono);font-size:.8rem;text-transform:uppercase}
+.ep-db-cols{border:1px solid var(--rule);background:var(--paper);padding:0 16px}
+.ep-db-cols summary{cursor:pointer;padding:10px 0;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.ep-db-cols ul{list-style:none;margin:0 0 10px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:4px 16px}
+.ep-db-cols li{display:flex;gap:8px;align-items:center;font-size:.86rem;flex-wrap:wrap}
+.ep-db-cols p{font-size:.86rem;margin:0 0 10px}
+.ep-db-f{white-space:nowrap}
+.ep-db-wrap{overflow:auto;max-height:70vh;border:1px solid var(--rule);background:var(--paper);-webkit-overflow-scrolling:touch}
+.ep-db-tab{font-size:.84rem}
+.ep-db-tab td{white-space:nowrap;max-width:340px;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+.ep-db-tab .ep-db-rid,.ep-db-null{font-family:var(--mono);color:var(--muted)}
+.ep-db-lab{color:var(--muted)}
+.ep-db-pg{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.ep-db-pg>span:last-child{display:flex;gap:8px}
+.ep-db-dlg .pbox{width:min(720px,94vw);max-height:86vh;display:flex;flex-direction:column}
+.ep-db-dh{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px var(--g,16px);border-bottom:1px solid var(--rule)}
+.ep-db-dh h2{margin:0;font-size:1.15rem;font-family:var(--mono);font-weight:500}
+.ep-db-db{overflow:auto;padding:12px var(--g,16px) 16px}
+.ep-db-db dl{display:grid;grid-template-columns:minmax(90px,max-content) 1fr;gap:6px 14px;margin:0}
+.ep-db-db dt{font-family:var(--mono);font-size:.72rem;color:var(--muted);padding-top:3px;word-break:break-all}
+.ep-db-db dd{margin:0;min-width:0}
+.ep-db-db pre{margin:0;white-space:pre-wrap;word-break:break-word;font-family:inherit;font-size:.88rem}
+.ep-db-links{margin-top:14px;border-top:1px solid var(--rule);padding-top:10px}
+.ep-db-links h4{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:400;margin:0 0 8px}
+.ep-db-links ul{margin:0;padding-left:18px}
+@media (max-width:700px){.ep-db-t{grid-template-columns:1fr auto;gap:4px 12px;padding:12px 14px}.ep-db-ta{grid-column:1/-1;grid-row:2}.ep-db-tr{grid-row:1;grid-column:2}.ep-db-xl{width:100%;text-align:center}.ep-db-db dl{grid-template-columns:1fr}.ep-db-db dt{padding-top:6px}.ep-db-wrap{max-height:60vh}}
+@media (max-width:700px){.ep-db{padding-bottom:84px}}
+.palette.ep-db-dlg{z-index:300}
+.ep-db-top{margin-bottom:4px}

@@ -1021,6 +1021,17 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
 
 /* epSideRoom: content pages get a centred column with room on the sides (Home and About keep their own layout) */
 main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto;padding-left:clamp(12px,5vw - 20px,48px);padding-right:clamp(12px,5vw - 20px,48px)}
+/* epVisits: visit counts above Community Place, anonymous visitor walkers and their card (2026-11-27) */
+.epp-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--rule);margin:14px 0 0;background:var(--paper)}
+.epp-st{padding:10px 12px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.epp-st+.epp-st{border-left:1px solid var(--rule)}
+.epp-st b{font:600 1.35rem/1 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.epp-st span{font:500 .62rem/1.25 var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
+.epp-stats+.epp{margin-top:8px}
+.epp-c.epp-anon{opacity:.72}
+.epp-c.epp-anon.sel,.epp-c.epp-anon.held{opacity:1}
+.epp-vcard .epp-by{margin-bottom:6px}
+@media (max-width:640px){.epp-st{padding:8px 9px}.epp-st b{font-size:1.1rem}.epp-st span{font-size:.56rem}}
 
 /* epOrgList: Organisations has three views, Grid / List / Map (epViewSw, ?view=list). The list (epOrgList) is one
    row per organisation: logo, name + one-line summary, type, country, founded, follow. Phones fold type, country and

@@ -33,7 +33,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-27
 
-- **Organisations: List view, quieter map switch, map clustering (PR #NN).** Julian asked for a list as well as the
+- **Organisations: List view, quieter map switch, map clustering (PR #83).** Julian asked for a list as well as the
   grid and map, for no dark highlight on the map's Grid/Map switch, and for smaller circles where many organisations
   sit close together.
   - The switch is now Grid / List / Map (`epViewSw`, `?view=list`). List (`epOrgList`, CSS block `epOrgList`) shows one

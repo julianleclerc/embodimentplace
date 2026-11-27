@@ -78,6 +78,27 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     privacy policy (`PRIVACY_MD`) has a new "Visit count" bullet.
   - Frontend: `epPlaceAll` (members plus anonymous walkers), `epVisitStats`, `epVisitFoot`, `epVisitCard`; the
     walker class `epp-anon`. CSS block `epVisits`. Screenshots in `docs/screenshots/visits/`.
+- **Faster pages (PR "Speed up page loading").** Each D1 round trip from the Worker takes about 100 ms, and pages were
+  waiting on many of them one after another (Organisations 23, Home 11, every page's `/api/me` 5 and Lounge poll 5).
+  Measured live before the change: Organisations data 2.6-3.0 s, Map 2.8 s, Home 1.25 s, a record page 1.1 s,
+  `/api/me` 0.56 s. What changed, all in `worker/dist/index.js`:
+  - `epEdge` (in the `fetch` export): an edge cache (`caches.default`) for public answers. `EP_EDGE_ALL`
+    (home, ticker, board, orgs, catalogue, list, page) is shared by everyone; `EP_EDGE_ANON` (`/api/r/:slug`) only by
+    visitors without a session cookie. Fresh 60 s, then served stale for up to 10 min while it rebuilds in the
+    background. Any change made through the site (any non-GET except walk, online, chat and event chat) moves the
+    cache generation in that data centre, so editors see their change at once. Header `x-ep-cache: hit|stale|miss`.
+  - `epSettings`: all settings in one query, kept 15 s per isolate (`setting`, `setting$1`; `setSetting` updates it).
+    `/api/me` now usually needs no D1 trip.
+  - `orgCounts` is one query (JSON id list) instead of one per 30 ids; `orgsPayload` runs it with the map extras and
+    follower counts at the same time (`epOrgsPar`). `homePayload` (`epHomePar`), `boardPayload`, `feedItems`,
+    `socialCounts` and `/api/r/:slug` (`epRecPar`) run independent queries in parallel. Lounge poll is one
+    `db.batch` (`epPollBatch`).
+  - `epAssetFetch`: hashed bundle files are cached by browsers for a year (`immutable`; they were re-checked on every
+    load). Logos and hats keep a day. Logos are served as lossless WebP from `public/logos-webp` (40% smaller; the
+    map loads about 600) when the browser accepts it, else the PNG. Run `python3 scripts/logos-webp.py` after adding
+    logos; missing WebP copies just fall back to the PNG.
+  Answers are byte-for-byte the same as before (checked for orgs, home, a record and catalogue).
+
 - **Room on the sides of content pages (PR "Side margins").** Every page except Home and About (which already had
   their own layout) now sits in a centred column at most 1200px wide, with side room that grows with the screen
   (`clamp(12px, 5vw - 20px, 48px)`). Phones keep the 12px edge they had. The full-screen map (`.epfull`) is fixed

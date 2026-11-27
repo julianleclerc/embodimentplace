@@ -2517,15 +2517,34 @@ async function getUserById(db, id) {
 	const row = await db.prepare("SELECT * FROM users WHERE id=?").bind(id).first();
 	return row ? row : null;
 }
+// epSettings: every settings row is read with one query and kept in the isolate for EP_SETTINGS_TTL ms, so a request
+// that needs several settings (/api/me needs five) costs one D1 round trip or none instead of one per key. setSetting
+// updates the copy at once; other isolates see a change within the TTL.
+var EP_SETTINGS_TTL = 15e3;
+var epSettingsMap = null, epSettingsAt = 0, epSettingsJob = null;
+function epSettings(db) {
+	if (epSettingsMap && Date.now() - epSettingsAt < EP_SETTINGS_TTL) return Promise.resolve(epSettingsMap);
+	if (!epSettingsJob) epSettingsJob = db.prepare("SELECT key, value FROM settings").all().then((r) => {
+		const m = /* @__PURE__ */ new Map();
+		for (const row of r.results || []) m.set(String(row.key), row.value);
+		epSettingsMap = m;
+		epSettingsAt = Date.now();
+		return m;
+	}).finally(() => {
+		epSettingsJob = null;
+	});
+	return epSettingsJob;
+}
 async function setting$1(db, key) {
 	try {
-		return (await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value || "";
+		return (await epSettings(db)).get(key) || "";
 	} catch {
 		return "";
 	}
 }
 async function setSetting(db, key, value) {
 	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, value).run();
+	if (epSettingsMap) epSettingsMap.set(key, value);
 }
 var EP_TICKER_MODES = ["scroll", "static", "off"];
 async function epTickerMode(db) {
@@ -6691,7 +6710,7 @@ async function allByIds(db, ids) {
 	return map;
 }
 async function setting(db, key) {
-	return (await db.prepare("SELECT value FROM settings WHERE key = ?").bind(key).first())?.value ?? "";
+	return (await epSettings(db)).get(key) ?? "";
 }
 async function socialCounts(db, ids) {
 	const likes = /* @__PURE__ */ new Map();
@@ -6702,14 +6721,9 @@ async function socialCounts(db, ids) {
 	};
 	const ph = "SELECT value FROM json_each(?)";
 	const idsJson = JSON.stringify(ids);
-	try {
-		const { results } = await db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM likes WHERE record_id IN (${ph}) GROUP BY record_id`).bind(idsJson).all();
-		for (const r of results || []) likes.set(Number(r.id), Number(r.n));
-	} catch {}
-	try {
-		const { results } = await db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM comments WHERE record_id IN (${ph}) AND status = 'approved' GROUP BY record_id`).bind(idsJson).all();
-		for (const r of results || []) comments.set(Number(r.id), Number(r.n));
-	} catch {}
+	const [epL, epC] = await Promise.all([db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM likes WHERE record_id IN (${ph}) GROUP BY record_id`).bind(idsJson).all().catch(() => null), db.prepare(`SELECT record_id AS id, COUNT(*) AS n FROM comments WHERE record_id IN (${ph}) AND status = 'approved' GROUP BY record_id`).bind(idsJson).all().catch(() => null)]);
+	for (const r of epL?.results || []) likes.set(Number(r.id), Number(r.n));
+	for (const r of epC?.results || []) comments.set(Number(r.id), Number(r.n));
 	return {
 		likes,
 		comments
@@ -16957,8 +16971,9 @@ async function tickerItems(db, limit = 10) {
 	});
 }
 async function boardPayload(db) {
-	const up = (await allPublic(db, "SELECT * FROM records WHERE type = 'event' AND private = 0")).filter((v) => evState(v) === "Upcoming").sort((a, b) => (fieldStr(a.data, "date") || "").localeCompare(fieldStr(b.data, "date") || "")).slice(0, 4);
-	const fund = (await allPublic(db, "SELECT * FROM records WHERE type = 'funding' AND private = 0")).sort((a, b) => recordDate(b).localeCompare(recordDate(a))).slice(0, 4);
+	const [epEv, epFund] = await Promise.all([allPublic(db, "SELECT * FROM records WHERE type = 'event' AND private = 0"), allPublic(db, "SELECT * FROM records WHERE type = 'funding' AND private = 0")]);
+	const up = epEv.filter((v) => evState(v) === "Upcoming").sort((a, b) => (fieldStr(a.data, "date") || "").localeCompare(fieldStr(b.data, "date") || "")).slice(0, 4);
+	const fund = epFund.sort((a, b) => recordDate(b).localeCompare(recordDate(a))).slice(0, 4);
 	const fl = await linksFor(db, fund.map((r) => r.id));
 	return {
 		upcoming: up.map((v) => ({
@@ -17021,8 +17036,7 @@ async function feedItems(db, recs) {
 		const actor = ((outgoing.get(r.id) || {})[rel] || []).find((x) => ORG_TYPES.includes(x.type) && x.note !== "cc");
 		if (actor) actorIds.push(actor.id);
 	}
-	const actors = await allByIds(db, actorIds);
-	const soc = await socialCounts(db, recs.map((r) => r.id));
+	const [actors, soc] = await Promise.all([allByIds(db, actorIds), socialCounts(db, recs.map((r) => r.id))]);
 	return recs.map((r) => {
 		const links = outgoing.get(r.id) || {};
 		const actorHit = (links[epActorRel(r.type)] || []).find((x) => ORG_TYPES.includes(x.type) && x.note !== "cc");
@@ -17119,24 +17133,29 @@ async function homePayload(db, filter, original, before) {
 	}
 	sql += " ORDER BY COALESCE(feed_at, substr(created, 1, 10), '') DESC, id DESC LIMIT ?";
 	binds.push(FEED_PAGE_SIZE + 1);
-	const rows = await allPublic(db, sql, ...binds);
+	const showChrome = !before && filter === "all";
+	// epHomePar: the feed, ticker, board and highlights don't depend on each other, so they load at the same time.
+	const [[rows, items], ticker, board, highlights] = await Promise.all([
+		allPublic(db, sql, ...binds).then(async (rows) => [rows, await feedItems(db, rows.slice(0, FEED_PAGE_SIZE))]),
+		tickerItems(db),
+		boardPayload(db),
+		showChrome ? highlightsOf(db) : Promise.resolve({
+			welcome: null,
+			pins: []
+		})
+	]);
 	const more = rows.length > FEED_PAGE_SIZE;
 	const slice = rows.slice(0, FEED_PAGE_SIZE);
-	const items = await feedItems(db, slice);
 	const last = slice[slice.length - 1];
 	const next = more && last ? `${feedDate(last)}_${last.id}` : null;
-	const showChrome = !before && filter === "all";
 	return {
 		items,
 		next,
 		filter: filt.key,
 		original,
-		ticker: await tickerItems(db),
-		board: await boardPayload(db),
-		highlights: showChrome ? await highlightsOf(db) : {
-			welcome: null,
-			pins: []
-		}
+		ticker,
+		board,
+		highlights
 	};
 }
 function listSubnav(tkey, extra) {
@@ -17488,19 +17507,16 @@ async function tableList(db, typeKey, tkey, label, plural, section, recs, t) {
 async function orgCounts(db, ids) {
 	const map = /* @__PURE__ */ new Map();
 	if (!ids.length) return map;
-	const chunk = 30;
-	const results = [];
-	for (let i = 0; i < ids.length; i += chunk) {
-		const part = ids.slice(i, i + chunk);
-		const ph = part.map(() => "?").join(",");
-		const res = await db.prepare(`SELECT l.src, l.dst, r.type, l.rel
-       FROM links l JOIN records r ON r.id = CASE WHEN l.src IN (${ph}) THEN l.dst ELSE l.src END
-       WHERE (l.src IN (${ph}) OR l.dst IN (${ph})) AND r.private = 0`).bind(...part, ...part, ...part).all();
-		results.push(...res.results || []);
-	}
+	// One round trip for every id (was one query per 30 ids, run one after another: 22 trips on /orgs).
+	const res = await db.prepare(`WITH ids(id) AS (SELECT value FROM json_each(?))
+       SELECT l.src, l.dst, r.type, l.rel
+       FROM links l JOIN records r ON r.id = CASE WHEN l.src IN (SELECT id FROM ids) THEN l.dst ELSE l.src END
+       WHERE (l.src IN (SELECT id FROM ids) OR l.dst IN (SELECT id FROM ids)) AND r.private = 0`).bind(JSON.stringify(ids)).all();
+	const results = res.results || [];
+	const idSet = new Set(ids.map(Number));
 	for (const raw of results) {
 		const r = raw;
-		const oid = ids.includes(Number(r.src)) ? Number(r.src) : Number(r.dst);
+		const oid = idSet.has(Number(r.src)) ? Number(r.src) : Number(r.dst);
 		const bag = map.get(oid) || {
 			hw: 0,
 			models: 0,
@@ -17624,7 +17640,17 @@ function locationRows(rec) {
 }
 async function orgsPayload(db, group = "", asMap = false) {
 	const recs = await allPublic(db, `SELECT * FROM records WHERE type IN (${ORG_TYPES.map(() => "?").join(",")}) AND private = 0 ORDER BY id`, ...ORG_TYPES);
-	const counts = await orgCounts(db, recs.map((r) => r.id));
+	// epOrgsPar: the counts and, for the map, its extras and follower counts run at the same time (one round trip).
+	const epIds = recs.map((r) => r.id);
+	const epWantMap = asMap || group === "map";
+	const [counts, epMapRows, epFanRows] = await Promise.all([
+		orgCounts(db, epIds),
+		epWantMap ? db.prepare(`SELECT l.dst AS oid, r.type, r.name, r.slug, r.data, COALESCE(r.feed_at, r.created, '') AS d
+       FROM links l JOIN records r ON r.id = l.src
+       WHERE l.dst IN (SELECT value FROM json_each(?)) AND r.private = 0
+         AND ((r.type = 'product' AND l.rel = 'maker') OR (r.type = 'post' AND l.rel = 'about'))`).bind(JSON.stringify(epIds)).all().catch(() => ({ results: [] })) : null,
+		epWantMap ? db.prepare("SELECT company_id AS id, COUNT(*) AS n FROM follows GROUP BY company_id").all().catch(() => ({ results: [] })) : null
+	]);
 	const cards = recs.map((r) => toOrgCard(r, counts.get(r.id) || {}));
 	const byRole = (roles) => cards.filter((c) => c.roles.some((r) => roles.includes(r)));
 	const groups = ORG_GROUPS.map((g) => {
@@ -17655,10 +17681,7 @@ async function orgsPayload(db, group = "", asMap = false) {
 		const fans = /* @__PURE__ */ new Map();
 		const epExtra = /* @__PURE__ */ new Map();
 		try {
-			const { results } = await db.prepare(`SELECT l.dst AS oid, r.type, r.name, r.slug, r.data, COALESCE(r.feed_at, r.created, '') AS d
-       FROM links l JOIN records r ON r.id = l.src
-       WHERE l.dst IN (SELECT value FROM json_each(?)) AND r.private = 0
-         AND ((r.type = 'product' AND l.rel = 'maker') OR (r.type = 'post' AND l.rel = 'about'))`).bind(JSON.stringify(order)).all();
+			const { results } = epMapRows || {};
 			for (const row of results || []) {
 				const oid = Number(row.oid);
 				const bag = epExtra.get(oid) || { pr: [], np: 0, nw: null };
@@ -17679,7 +17702,7 @@ async function orgsPayload(db, group = "", asMap = false) {
 			}
 		} catch {}
 		try {
-			const { results } = await db.prepare("SELECT company_id AS id, COUNT(*) AS n FROM follows GROUP BY company_id").all();
+			const { results } = epFanRows || {};
 			for (const f of results || []) fans.set(Number(f.id), Number(f.n) || 0);
 		} catch {}
 		for (const rec of recs) {
@@ -20702,15 +20725,22 @@ async function getRoomPoll(c) {
 	const cid = (c.req.query("cid") || "").replace(/[^\w-]/g, "").slice(0, 40);
 	const t = Date.now() / 1e3;
 	const auth = c.get("auth");
-	if (cid) {
-		await c.env.DB.prepare("INSERT INTO room_presence(room,cid,user_id,seen) VALUES(?,?,?,?) ON CONFLICT(room,cid) DO UPDATE SET user_id=excluded.user_id, seen=excluded.seen").bind("lounge", cid, auth.user?.id ?? null, t).run();
-		await c.env.DB.prepare("DELETE FROM room_presence WHERE seen<?").bind(t - 3600).run();
-	}
+	// epPollBatch: the presence update, messages, revision and who is here go to D1 as one batch (one round trip, was 5+).
 	const since = Number(c.req.query("since") || 0) || 0;
-	const q = since === 0 ? "SELECT * FROM (SELECT * FROM room_chat WHERE room=? AND deleted=0 ORDER BY id DESC LIMIT 200) ORDER BY id" : "SELECT * FROM room_chat WHERE room=? AND rev>? ORDER BY id";
-	const { results } = since === 0 ? await c.env.DB.prepare(q).bind("lounge").all() : await c.env.DB.prepare(q).bind("lounge", since).all();
-	const revRow = await c.env.DB.prepare("SELECT COALESCE(MAX(rev),0) AS n FROM room_chat WHERE room=?").bind("lounge").first();
-	const hereRows = await c.env.DB.prepare("SELECT user_id FROM room_presence WHERE room=? AND seen>?").bind("lounge", t - 40).all();
+	const db = c.env.DB;
+	const stmts = [];
+	if (cid) {
+		stmts.push(db.prepare("INSERT INTO room_presence(room,cid,user_id,seen) VALUES(?,?,?,?) ON CONFLICT(room,cid) DO UPDATE SET user_id=excluded.user_id, seen=excluded.seen").bind("lounge", cid, auth.user?.id ?? null, t));
+		stmts.push(db.prepare("DELETE FROM room_presence WHERE seen<?").bind(t - 3600));
+	}
+	const nPre = stmts.length;
+	stmts.push(since === 0 ? db.prepare("SELECT * FROM (SELECT * FROM room_chat WHERE room=? AND deleted=0 ORDER BY id DESC LIMIT 200) ORDER BY id").bind("lounge") : db.prepare("SELECT * FROM room_chat WHERE room=? AND rev>? ORDER BY id").bind("lounge", since));
+	stmts.push(db.prepare("SELECT COALESCE(MAX(rev),0) AS n FROM room_chat WHERE room=?").bind("lounge"));
+	stmts.push(db.prepare("SELECT p.user_id, u.name FROM room_presence p LEFT JOIN users u ON u.id=p.user_id WHERE p.room=? AND p.seen>?").bind("lounge", t - 40));
+	const out = await db.batch(stmts);
+	const results = out[nPre]?.results || [];
+	const revRow = (out[nPre + 1]?.results || [])[0];
+	const hereRows = out[nPre + 2] || {};
 	const members = {};
 	let guests = 0;
 	for (const raw of hereRows.results || []) {
@@ -20720,9 +20750,8 @@ async function getRoomPoll(c) {
 			continue;
 		}
 		if (members[uid]) continue;
-		const u = await c.env.DB.prepare("SELECT name FROM users WHERE id=?").bind(uid).first();
-		if (u) members[uid] = {
-			n: u.name,
+		if (raw.name != null) members[uid] = {
+			n: raw.name,
 			t: ""
 		};
 	}
@@ -22256,18 +22285,21 @@ api.get("/r/:slug", async (c) => {
 	const out = outgoing.get(rec.id) || {};
 	const inc = incoming.get(rec.id) || {};
 	const actorId = (out[rec.type === "paper" ? "orgs" : rec.type === "product" ? "maker" : rec.type === "model" ? "developer" : "about"] || [])[0]?.id;
-	const extras = actorId ? await allByIds(c.env.DB, [actorId]) : /* @__PURE__ */ new Map();
-	const actor = actorId ? extras.get(actorId) : void 0;
 	const relatedIds = Object.values(out).flat().map((x) => x.id).concat(Object.values(inc).flat().map((x) => x.id));
-	const related = await allByIds(c.env.DB, relatedIds);
 	const auth = c.get("auth");
+	// epRecPar: the actor, related records, comments, likes and pins load at the same time (one round trip, was five).
+	const [related, epComments, soc, pins] = await Promise.all([
+		allByIds(c.env.DB, actorId ? relatedIds.concat([actorId]) : relatedIds),
+		commentsFor(c.env.DB, rec.id, auth),
+		socialState(c.env.DB, auth, [rec.id]),
+		auth.logged ? pinIds(c.env.DB) : Promise.resolve([])
+	]);
+	const actor = actorId ? related.get(actorId) : void 0;
 	const comments = {
 		count: 0,
-		items: await commentsFor(c.env.DB, rec.id, auth)
+		items: epComments
 	};
 	comments.count = comments.items.filter((x) => x.status === "approved").length;
-	const soc = await socialState(c.env.DB, auth, [rec.id]);
-	const pins = auth.logged ? await pinIds(c.env.DB) : [];
 	const quote_on = rec.type === "product" && orderMode(rec) === "quote";
 	const gallery = galleryFor(rec, rec.type === "post" ? fieldStr(rec.data, "video") : fieldStr(rec.data, "official_video") || fieldStr(rec.data, "video"), fieldStr(rec.data, "video_credit"));
 	const bodyHtml = rec.body ? md(rec.body) : "";
@@ -23076,6 +23108,40 @@ api.get("/event/:eid/poll", getEvPoll);
 api.post("/event/:eid/post", postEv);
 app.route("/api", api);
 app.all("/login/debug", (c) => c.text("Not available", 404));
+// epAssetCache: the bundle files have their content hash in the name, so browsers may keep them for a year without
+// asking again (they used to re-check them on every page load). Logos and hats keep a day, then refresh in the
+// background. Logos are served as WebP (public/logos-webp, about 40% smaller) to browsers that accept it, falling back
+// to the PNG when there is no WebP copy yet (scripts/logos-webp.py makes them).
+var EP_HASHED_ASSET = /^\/assets\/index-[0-9a-f]{8}\.(js|css)$/;
+function epWithCache(res, cc, extra) {
+	const h = new Headers(res.headers);
+	h.set("cache-control", cc);
+	if (extra) for (const [k, v] of Object.entries(extra)) h.set(k, v);
+	return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
+}
+async function epAssetFetch(c, path) {
+	const req = c.req.raw;
+	if (EP_HASHED_ASSET.test(path)) {
+		const res = await c.env.ASSETS.fetch(req);
+		const ct = res.headers.get("content-type") || "";
+		return res.status === 200 && /javascript|css/.test(ct) ? epWithCache(res, "public, max-age=31536000, immutable") : res;
+	}
+	if (/^\/logos\/[^/]+\.png$/.test(path)) {
+		if (/image\/webp/.test(req.headers.get("accept") || "")) {
+			const u = new URL(req.url);
+			u.pathname = path.replace(/^\/logos\//, "/logos-webp/").replace(/\.png$/, ".webp");
+			const w = await c.env.ASSETS.fetch(new Request(u.toString(), { headers: req.headers }));
+			if ((w.status === 200 || w.status === 304) && (w.status === 304 || /image\/webp/.test(w.headers.get("content-type") || ""))) return epWithCache(w, "public, max-age=86400, stale-while-revalidate=604800", { vary: "Accept" });
+		}
+		const res = await c.env.ASSETS.fetch(req);
+		return res.status === 200 && /^image\//.test(res.headers.get("content-type") || "") ? epWithCache(res, "public, max-age=86400, stale-while-revalidate=604800", { vary: "Accept" }) : res;
+	}
+	if (/^\/static\/[^/]+\.(png|svg|webp)$/.test(path)) {
+		const res = await c.env.ASSETS.fetch(req);
+		return res.status === 200 && /^image\//.test(res.headers.get("content-type") || "") ? epWithCache(res, "public, max-age=86400, stale-while-revalidate=604800") : res;
+	}
+	return c.env.ASSETS.fetch(req);
+}
 app.all("*", async (c) => {
 	const path = new URL(c.req.url).pathname;
 	if (isGatedPath(path) && ![
@@ -23089,7 +23155,7 @@ app.all("*", async (c) => {
 		if (g) return deny(c, g);
 	}
 	if (c.req.method !== "GET" && c.req.method !== "HEAD") return c.text("Not found", 404);
-	if (c.env.ASSETS) return c.env.ASSETS.fetch(c.req.raw);
+	if (c.env.ASSETS) return epAssetFetch(c, path);
 	const me = await mePayload(c);
 	return c.html(shellPage(c, me), 200);
 });
@@ -23393,10 +23459,98 @@ async function epBannerCron(env) {
 		console.log("[banner] " + (ex instanceof Error ? ex.message : String(ex)));
 	}
 }
+// epEdge: edge cache for public read-only API answers, in the Cloudflare data centre's cache (caches.default).
+// Every page loads one of these, and building them costs several D1 round trips (about 100 ms each), so a cached copy
+// turns a 1-3 s wait into a few milliseconds.
+// - EP_EDGE_ALL answers don't depend on who asks (their handlers never read auth), so everyone shares one copy.
+// - EP_EDGE_ANON answers do (liked, saved, can_edit...), so only visitors without a session cookie share them.
+// A copy is fresh for EP_EDGE_FRESH ms. After that, until EP_EDGE_STALE, the old copy is answered at once and rebuilt in
+// the background (ctx.waitUntil), so the next visitor gets the new one. Any change made through the site (a POST etc.,
+// apart from walking, presence and chat) moves the cache generation in that data centre, so whoever edits sees the
+// change straight away. Changes from the hourly cron and from other data centres show within EP_EDGE_FRESH.
+// Responses carry x-ep-cache: hit | stale | miss.
+var EP_EDGE_ALL = /^\/api\/(home|ticker|board|orgs|catalogue|list\/[^/]+|page\/[^/]+)$/;
+var EP_EDGE_ANON = /^\/api\/r\/[^/]+$/;
+var EP_EDGE_NOISE = /^\/api\/(walk|online|room\/|event\/|live\/)/;
+var EP_EDGE_FRESH = 6e4;
+var EP_EDGE_STALE = 6e5;
+var epEdgeBusy = /* @__PURE__ */ new Set();
+function epEdgeCache() {
+	try {
+		return typeof caches !== "undefined" && caches.default ? caches.default : null;
+	} catch {
+		return null;
+	}
+}
+async function epEdgeGen(cache, origin) {
+	try {
+		const r = await cache.match(origin + "/__ep_edge_gen");
+		return r ? await r.text() : "0";
+	} catch {
+		return "0";
+	}
+}
+function epEdgeBump(cache, origin) {
+	return cache.put(origin + "/__ep_edge_gen", new Response(String(Date.now()), { headers: { "cache-control": "public, max-age=31536000" } })).catch(() => {});
+}
+async function epEdgeFill(cache, key, request, env, ctx) {
+	// Built without the cookie, so nothing personal (and no Set-Cookie) can end up in the shared copy.
+	const res = await app.fetch(new Request(request.url, { method: "GET", headers: { accept: request.headers.get("accept") || "application/json" } }), env, ctx);
+	if (res.status !== 200 || res.headers.has("set-cookie")) return res;
+	const body = await res.arrayBuffer();
+	const h = new Headers(res.headers);
+	h.set("x-ep-at", String(Date.now()));
+	h.set("cache-control", "public, max-age=" + Math.round(EP_EDGE_STALE / 1e3));
+	await cache.put(key, new Response(body, { status: 200, headers: h })).catch(() => {});
+	h.delete("x-ep-at");
+	h.set("cache-control", "no-cache");
+	h.set("x-ep-cache", "miss");
+	return new Response(body, { status: 200, headers: h });
+}
+async function epEdge(request, env, ctx) {
+	if (request.method !== "GET") return null;
+	const url = new URL(request.url);
+	const p = url.pathname;
+	if (!EP_EDGE_ALL.test(p) && !(EP_EDGE_ANON.test(p) && !/(?:^|;\s*)hi_sid=/.test(request.headers.get("cookie") || ""))) return null;
+	const cache = epEdgeCache();
+	if (!cache) return null;
+	const gen = await epEdgeGen(cache, url.origin);
+	const key = url.origin + "/__ep_edge/" + gen + p + url.search;
+	let hit = null;
+	try {
+		hit = await cache.match(key);
+	} catch {}
+	if (hit) {
+		const age = Date.now() - Number(hit.headers.get("x-ep-at") || 0);
+		if (age < EP_EDGE_STALE) {
+			const stale = age >= EP_EDGE_FRESH;
+			if (stale && !epEdgeBusy.has(key)) {
+				epEdgeBusy.add(key);
+				ctx.waitUntil(epEdgeFill(cache, key, request, env, ctx).catch(() => {}).finally(() => epEdgeBusy.delete(key)));
+			}
+			const h = new Headers(hit.headers);
+			h.delete("x-ep-at");
+			h.set("cache-control", "no-cache");
+			h.set("x-ep-cache", stale ? "stale" : "hit");
+			return new Response(hit.body, { status: 200, headers: h });
+		}
+	}
+	return epEdgeFill(cache, key, request, env, ctx);
+}
 // \0virtual:cloudflare/worker-entry
 var worker_entry_default = {
 	async fetch(request, env, ctx) {
-		return app.fetch(request, env, ctx);
+		try {
+			const cached = await epEdge(request, env, ctx);
+			if (cached) return cached;
+		} catch {}
+		const res = await app.fetch(request, env, ctx);
+		if (request.method !== "GET" && request.method !== "HEAD" && res.status < 400) {
+			const url = new URL(request.url);
+			const cache = !EP_EDGE_NOISE.test(url.pathname) ? epEdgeCache() : null;
+			if (cache) ctx.waitUntil(epEdgeBump(cache, url.origin));
+		}
+		return res;
 	},
 	async scheduled(event, env, ctx) {
 		ctx.waitUntil(epDigestCron(env));

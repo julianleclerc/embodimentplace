@@ -33,6 +33,23 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-27
 
+- **Admin > Database: browse every D1 table and export to Excel (PR #84).** Julian asked for an admin tab showing the
+  databases and the information linked to them, exportable to Excel.
+  - New Admin subtab **Database** (`/admin/database`, frontend `epAdminDb`, CSS block `epDb`). The first view lists
+    every table grouped (Content, Site, Moderation, People, Email, Chat) with a description, row count and a
+    "Public export" / "Private" badge. Open a table to search it, sort by any column, page through rows, see its
+    columns and links (what it points to, what points to it), and tap a row for the full row in a dialog. Columns that
+    point at a user or record show the name next to the id and jump to it; a users or records row lists how many rows
+    in other tables link to it, each one opening that table filtered (`?fcol=&fval=`).
+  - **Export to Excel**: one button per table and one for the whole database (one sheet per table). The Worker writes
+    the .xlsx itself (`epXlsx`/`epZip`, no library: inline strings, bold frozen header with filters, deflate).
+  - Worker routes, all admin-only (404 otherwise; the page is also gated by the `/admin/*` rule in `gateStatus`):
+    `GET /api/admin/db` (tables), `GET /api/admin/db/:table` (rows; `q`, `sort`, `dir`, `page`, `per`, `fcol`/`fval`),
+    `GET /api/admin/db/:table/:rid/links`, `GET /api/admin/db/export[?table=]`. Descriptions live in `EP_DB_INFO`.
+  - Secret columns are never sent or exported, even to admins: `users.pw`, `users.totp`, `users.recovery`,
+    `sessions.token`, `email_tokens.token`, `claim_codes.code_hash` (`EP_DB_SECRET`). Internal tables (search index
+    `fts*`, `_cf_*`, `sqlite_*`) are hidden (`EP_DB_SKIP`). Nothing changes in the nightly public export.
+
 - **Organisations: List view, quieter map switch, map clustering (PR #83).** Julian asked for a list as well as the
   grid and map, for no dark highlight on the map's Grid/Map switch, and for smaller circles where many organisations
   sit close together.

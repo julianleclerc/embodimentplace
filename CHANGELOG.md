@@ -31,6 +31,38 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-27
+
+- **Organisation directory, fifth pass (same PR as the third and fourth): 61 more organisations from launch posts on X
+  and Hacker News.** Julian asked for a sweep of launch and funding posts before merging. New seed
+  `seed-org-directory-5-2026-11.js` (`EP_SEED_ORG_DIRECTORY_5_2026_11`, run after the fourth-pass seed by
+  `epSeedCron` in `worker/dist/index.js`).
+  - X (mid-2025 to today): searches for out-of-stealth, "we raised", seed and Series A, robot foundation model and
+    world model launches, and YC batch launches; plus the accounts of Y Combinator, The Humanoid Hub, Lukas Ziegler's
+    robotics roundups and Stealth Startup Spy (181 out-of-stealth posts). About 180 named robotics candidates: 74
+    were already live or in this PR (for example Genesis AI, Generalist, Walden, Embo, Lute, Simplexity, Proception,
+    Xynova, Humble, Tutor Intelligence), 53 were added and 53 left out.
+  - Hacker News (Algolia API, 2024 to today): every Launch HN post plus Show HN posts and stories about robots,
+    humanoids, physical and embodied AI, robot learning, teleoperation and robot data. 35 organisations: 15 already
+    listed (Bucket, Azalea, Innate, Vassar, Nori, Hebbian, Salem, Fauna, Corvus, Weave and others), 8 added, 12 left
+    out.
+  - Added, for example: PHYMI (Shanghai, ~$100M seed), TensorWorld (Beijing, physics-native world models), Enigma
+    (San Francisco, $71M seed), Watney Robotics (data-centre robots), Noitom Robotics (teleoperation and robot data),
+    Dayan Technology (tactile gloves, Hangzhou), Closer (Tsukuba), Motion1 (Brussels), Vanar Robots (Mumbai),
+    HavocAI, Neros, Splash Industries, Earendil Robotics, Grizzly, Crewline, Gatsby, OctaPulse, Voltair, Sowbot,
+    Transitive Robotics, Versor, Saturn Dynamics and Build AI.
+  - Left out: AI-agent, security and energy start-ups that only use the word "autonomous"; founders still in stealth
+    with no company site; sites for sale, expired or "coming soon"; pivots away from robotics (Twolabs, Apprentice
+    Labs, Sureform); shut-down companies (Basis Robotics, K-Scale Labs site down); solo or research projects (Calibra,
+    YOR, Poppy); a crypto-token data project (AXIS Robotics); counter-drone services; and candidates whose HQ city
+    could not be sourced (Verapulse, OpenCastor, Nua, The Parkour Company, Mayfly, Praana Labs, Hawthorne).
+    Nines was already live.
+  - Roles: 27 robot makers, 34 software developers, 9 model labs, 8 integrators, 7 suppliers, 2 research labs and 1
+    customer across all roles; 26 have more than one role. HQ: 9 street addresses and 52 city-only. Logos: 56 of 61
+    (PHYMI, Dayan Technology, Vanar Robots, Parallax Worlds and The Robotics Company fall back to initials).
+  - Tested locally against a copy of live D1: the seed inserts 61 organisations (1,838 organisations after seeds 3 to
+    5) and a second run changes nothing. Projected total after merge: 1,838.
+
 ### 2026-11-26
 
 - **Organisation directory, fourth pass (same PR as the third): 593 more organisations, with Robotics Connected as the

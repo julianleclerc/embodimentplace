@@ -33,6 +33,20 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-27
 
+- **Community shows visit counts, and an anonymous character walks for each visitor (Julian).** A strip above Place
+  shows visits in the last 24 hours, the last 7 days and in total since counting started (the total starts at 0 on
+  the day this deploys). Each logged-out visitor of the last 24 hours walks in Place as an anonymous character
+  (random preset look made from the visit code, no name label, slightly faded, at most 30; the footer says how many
+  more there are). Tapping one opens a small "Anonymous visitor" card ("Stopped by 2 hours ago"). They join the
+  whistle line-up and can be dragged like members. Members aren't doubled: a visit by a logged-in browser is marked
+  `m=1` and gets no anonymous walker.
+  - Worker: `epVisitCount` (runs in `waitUntil` on `GET /api/me`, skips bot user agents), `epVisitSaltFor`,
+    `epVisitStats` and `epVisitLook`; `GET /api/community/place` now returns `visits {total, since, day, week, anon,
+    walkers[{look, ago}]}`. New table `visits(day, h, ts, m)` in `TABLES`; settings `visit_salt`, `visits_total`,
+    `visits_since`. Only a salted hash is stored, the salt changes daily and rows are deleted after 8 days. The
+    privacy policy (`PRIVACY_MD`) has a new "Visit count" bullet.
+  - Frontend: `epPlaceAll` (members plus anonymous walkers), `epVisitStats`, `epVisitFoot`, `epVisitCard`; the
+    walker class `epp-anon`. CSS block `epVisits`. Screenshots in `docs/screenshots/visits/`.
 - **Room on the sides of content pages (PR "Side margins").** Every page except Home and About (which already had
   their own layout) now sits in a centred column at most 1200px wide, with side room that grows with the screen
   (`clamp(12px, 5vw - 20px, 48px)`). Phones keep the 12px edge they had. The full-screen map (`.epfull`) is fixed
@@ -57,7 +71,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     Cybercab, Pony.ai Gen-7, WeRide GXR, Wayve AI Driver, Aurora Driver, Kodiak Driver, Nuro Driver, Motional IONIQ 5,
     Mobileye Drive). Each field carries its source. Makers missing from the directory (Manus, HaptX, SenseGlove,
     Baidu Apollo) were left out.
-  - Bundle index-87cc5d2d.js / index-0d87e475.css. Screenshots in the project files (`catalogue-components/`).
+  - Bundle index-0aefec5b.js / index-f1aadd41.css. Screenshots in the project files (`catalogue-components/`).
 
 - **Organisation directory, fifth pass (same PR as the third and fourth): 61 more organisations from launch posts on X
   and Hacker News.** Julian asked for a sweep of launch and funding posts before merging. New seed

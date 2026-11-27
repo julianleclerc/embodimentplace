@@ -31,7 +31,108 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-27
+
+- **Organisation directory, fifth pass (same PR as the third and fourth): 61 more organisations from launch posts on X
+  and Hacker News.** Julian asked for a sweep of launch and funding posts before merging. New seed
+  `seed-org-directory-5-2026-11.js` (`EP_SEED_ORG_DIRECTORY_5_2026_11`, run after the fourth-pass seed by
+  `epSeedCron` in `worker/dist/index.js`).
+  - X (mid-2025 to today): searches for out-of-stealth, "we raised", seed and Series A, robot foundation model and
+    world model launches, and YC batch launches; plus the accounts of Y Combinator, The Humanoid Hub, Lukas Ziegler's
+    robotics roundups and Stealth Startup Spy (181 out-of-stealth posts). About 180 named robotics candidates: 74
+    were already live or in this PR (for example Genesis AI, Generalist, Walden, Embo, Lute, Simplexity, Proception,
+    Xynova, Humble, Tutor Intelligence), 53 were added and 53 left out.
+  - Hacker News (Algolia API, 2024 to today): every Launch HN post plus Show HN posts and stories about robots,
+    humanoids, physical and embodied AI, robot learning, teleoperation and robot data. 35 organisations: 15 already
+    listed (Bucket, Azalea, Innate, Vassar, Nori, Hebbian, Salem, Fauna, Corvus, Weave and others), 8 added, 12 left
+    out.
+  - Added, for example: PHYMI (Shanghai, ~$100M seed), TensorWorld (Beijing, physics-native world models), Enigma
+    (San Francisco, $71M seed), Watney Robotics (data-centre robots), Noitom Robotics (teleoperation and robot data),
+    Dayan Technology (tactile gloves, Hangzhou), Closer (Tsukuba), Motion1 (Brussels), Vanar Robots (Mumbai),
+    HavocAI, Neros, Splash Industries, Earendil Robotics, Grizzly, Crewline, Gatsby, OctaPulse, Voltair, Sowbot,
+    Transitive Robotics, Versor, Saturn Dynamics and Build AI.
+  - Left out: AI-agent, security and energy start-ups that only use the word "autonomous"; founders still in stealth
+    with no company site; sites for sale, expired or "coming soon"; pivots away from robotics (Twolabs, Apprentice
+    Labs, Sureform); shut-down companies (Basis Robotics, K-Scale Labs site down); solo or research projects (Calibra,
+    YOR, Poppy); a crypto-token data project (AXIS Robotics); counter-drone services; and candidates whose HQ city
+    could not be sourced (Verapulse, OpenCastor, Nua, The Parkour Company, Mayfly, Praana Labs, Hawthorne).
+    Nines was already live.
+  - Roles: 27 robot makers, 34 software developers, 9 model labs, 8 integrators, 7 suppliers, 2 research labs and 1
+    customer across all roles; 26 have more than one role. HQ: 9 street addresses and 52 city-only. Logos: 56 of 61
+    (PHYMI, Dayan Technology, Vanar Robots, Parallax Worlds and The Robotics Company fall back to initials).
+  - Tested locally against a copy of live D1: the seed inserts 61 organisations (1,838 organisations after seeds 3 to
+    5) and a second run changes nothing. Projected total after merge: 1,838.
+
+### 2026-11-26
+
+- **Organisation directory, fourth pass (same PR as the third): 593 more organisations, with Robotics Connected as the
+  main source.** Julian said Lute, AMI in Paris "and others" were still missing, and that roboticsconnected.com has a
+  better database. This pass reads the whole Robotics Connected company directory (921 hand-checked listings, through
+  its sitemap; robots.txt allows it and nothing was blocked) and adds recent launches from funding news and the
+  humano.one humanoid directory. New seed `seed-org-directory-4-2026-11.js` (`EP_SEED_ORG_DIRECTORY_4_2026_11`, run
+  after the third-pass seed by `epSeedCron` in `worker/dist/index.js`).
+  - Robotics Connected: 921 listings. 335 were already live or in the third pass (matched by website domain, every
+    domain in the listing's sameAs links, name and slug; 2 more turned out to be acquired by or the same as listed
+    ones), 2 are duplicate listings, 17 were left out (regional subsidiaries such as FANUC Europe, FANUC France and
+    KUKA Robotics Korea; companies absorbed into a parent such as RIVR into Amazon, Five AI into Bosch, EpiSci into
+    Applied Intuition; ArcBest, a carrier; and dead websites), and 567 were added.
+  - Recent launches and gaps (13 from news, 13 from humano.one): Lute (Warsaw, tactile foundation models, $20M seed
+    on 25 Nov 2026), Emulate (London, DeepMind Genie spinout), Embo (San Francisco, $110M seed), Mosaic Intelligence
+    Labs, Qvyon (Montreal), Ubitium (Düsseldorf), YK-Robotics (Pontedera), Sunrise Robotics (Ljubljana), Six Robotics
+    (Oslo), Kodama, Rendezvous Robotics, Tangent Robotics, CosmoChute (Ahmedabad), Boardwalk Robotics, Faraday Future,
+    Lightwheel, Moonlake AI, PrismaX, Dataa Robotics, NineRay, Alibaba DAMO Academy, Sanhua, Keli Sensing, Zhaowei,
+    Prophesee and Nexdata. UMA, Wandercraft, Humanoid, Genesis AI and Enact were already live; AMI Labs is in the
+    third pass at 10 Rue de Penthièvre, 75008 Paris (checked again against company-register summaries).
+  - Roles (primary): 444 robot makers, 92 software developers, 32 suppliers, 14 integrators, 8 model labs, 2 research
+    labs and 1 compute company. 191 have more than one role (159 two, 30 three, 2 four). Roles come from the
+    listing's main category plus its other categories only where the description backs them up (for example a
+    components tag adds supplier only when the text names grippers, actuators, sensors and so on).
+  - Existing organisations: `orgRoles` adds one role each to 9 (Advanced Navigation, Boost Robotics, Enact and
+    Festo +robot maker, KNAPP +robot maker, D-Robotics and Daxo +supplier, Mecka and Mech-Mind +software developer),
+    picked by hand from the Robotics Connected profiles.
+  - HQ: LinkedIn's street address when its country matches the listing (308), otherwise the city and country from
+    the Robotics Connected profile or a cited news source, marked city-only (285). Geocoded with Nominatim.
+  - Logos: 589 of 593, mostly the logo on the Robotics Connected profile (background made transparent, then
+    resized to 128 px); the other 4 fall back to initials.
+  - Tested against a local copy of the live D1 (658 organisations): the third and fourth seeds insert 526 and 593
+    organisations (1,777 in all) and 46 and 9 roles, and a second cron run changes nothing.
+  - Draft for review (not in the repo): `org-directory-4-draft.csv` / `.json`.
+
 ### 2026-11-25
+
+- **Organisation directory, third pass: 526 more organisations, and secondary roles on 41 existing ones.** Julian said
+  many organisations were still missing, and that one organisation can hold several roles (for example software
+  developer and integrator). This pass sweeps the full Y Combinator directory by keyword, a 208-company Chinese
+  embodied-AI directory (zeeklog), robodienst's supply-chain list, an EU robotics companies list, Hugging Face robotics
+  organisations (LeRobot and dataset publishers), robotics VC portfolios (Pillar, F-Prime, Bee, Promus, Calibrate,
+  Cybernetix, Root, DCVC, Lux, SOSV and others), Japanese, Korean, Israeli and Indian companies, and universities and
+  labs. It adds 189 robot makers, 65 suppliers, 61 software developers, 37 investors, 22 model labs, 14 compute
+  companies, 4 integrators, 118 universities, 15 research labs and 1 media organisation (primary role). 64 of them
+  have two roles and 1 has three. Everything was deduplicated against the 658 live organisations by slug, name and
+  website domain.
+  - Quality: each organisation needs robotics, physical-AI or embodied-AI evidence from its own site, LinkedIn page or
+    the source list; investors need robotics on their own site or portfolio page; universities and labs need a
+    robotics page or at least 30 robotics, humanoid or embodied-AI papers since 2025 in OpenAlex. About 140 candidates
+    were left out (generic chip, car and electronics groups with no robotics evidence, investors without a robotics
+    focus, dead or redirected domains, acquired or wound-down companies, and sites that could not be verified).
+  - Roles: roles were already multi-valued (`roles`, kind `multi`), with the first one as the primary role (shown in
+    the breadcrumb) and all of them shown as chips and used by the type filters, so no schema or UI change was
+    needed. New organisations get every role their sources support.
+  - Existing organisations: a new `orgRoles` seed op (`epSeedRun` in `worker/dist/index.js`) appends missing roles
+    after the existing ones and never removes or reorders any, so the primary role stays first. Each added role keeps
+    its source in `roles.more`. Changed records get a revision first and their search rows are rebuilt. This pass adds
+    46 roles to 41 organisations (15 model lab, 10 software developer, 10 integrator, 7 supplier, 1 each compute, robot
+    maker, entertainment and research lab), from each organisation's own pages (for example KUKA and Comau +integrator,
+    NEURA, Sereact and OSARO +model lab, NVIDIA +software developer for Isaac, Hugging Face +model lab and robot maker).
+  - HQ: in `data.locations` (kind `HQ`) plus `city` and `country`, each with its source (LinkedIn, the organisation's
+    site, a filing or registry, Wikidata, the YC page or the source list). 244 have a street address; 282 have only a
+    city (most Chinese and YC startups, and universities, which use Wikidata campus coordinates).
+  - Logos: 476 new 128×128 transparent PNGs in `public/logos/<slug>.png`; 50 have no usable logo and fall back to
+    initials.
+  - Content: `worker/dist/assets/seed-org-directory-3-2026-11.js` (`EP_SEED_ORG_DIRECTORY_3_2026_11`), added to
+    `EP_SEEDS`. It runs once from the hourly cron after deploy (marker `settings.seed_org-directory-3-2026-11`, which now
+    also records `org_roles`). Tested locally against a copy of the live data: 526 inserted, 46 roles added, 0 existing
+    roles removed or reordered, and a second run changes nothing.
 
 - **Organisation directory, second pass: 343 more organisations, each with an HQ on the map.** Julian pointed out
   that many humanoid and embodied-AI companies were still missing (Abstract, Dimensional, General Robotics and REK

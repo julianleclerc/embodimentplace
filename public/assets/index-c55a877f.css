@@ -1018,3 +1018,39 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
 .epchd nav.epvsw a i{opacity:.6}
 .epchd+.evwrap .evlist{border-top:0}
 @media (max-width:720px){.epchd-org .epvsw button,.epchd nav.epvsw a{height:40px;font-size:.7rem;padding:0 1px}.epchd-org .epvsw,.epchd nav.epvsw{gap:20px}}
+
+/* epOrgList: Organisations has three views, Grid / List / Map (epViewSw, ?view=list). The list (epOrgList) is one
+   row per organisation: logo, name + one-line summary, type, country, founded, follow. Phones fold type, country and
+   founded into a line under the name (.epol-sm). Map switch: no filled background on the chosen view; the chosen one
+   is ink with a 2px underline, the others muted, and hovering a choice turns it accent (same on the page tabs).
+   Map pins are smaller and nearby pins merge into smaller numbered bubbles up to zoom 15 (Or). */
+.epolist{border-top:1px solid var(--rule);margin-top:4px}
+.epol-row{display:grid;grid-template-columns:40px minmax(0,1fr) 190px 130px 64px auto;align-items:center;gap:14px;padding:10px 4px;border-bottom:1px solid var(--rule)}
+.epol-row:not(.epol-head):hover{background:var(--hover)}
+.epol-head{padding:8px 4px;font-family:var(--mono);text-transform:uppercase;font-size:.66rem;letter-spacing:.05em;color:var(--muted)}
+.epolist .epol-av{flex:none;width:40px;height:40px;overflow:hidden;display:block}
+.epolist .epol-av>*{width:40px!important;height:40px!important;min-width:0!important;font-size:.85rem}
+.epolist .epol-av img{width:100%;height:100%;object-fit:contain}
+.epol-main{display:flex;flex-direction:column;min-width:0;gap:2px}
+.epol-name{font-weight:600;color:var(--ink);text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epol-name:hover{color:var(--accent);text-decoration:none}
+.epol-sum{color:var(--muted);font-size:.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epol-sm{display:none;color:var(--muted);font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.03em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epol-ty,.epol-co,.epol-fo{font-size:.82rem;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epol-head .epol-ty,.epol-head .epol-co,.epol-head .epol-fo{font-size:inherit;color:inherit}
+.epol-fo{font-family:var(--mono)}
+.epol-w{display:flex;justify-content:flex-end;min-width:0}
+@media (max-width:900px){.epol-row{grid-template-columns:40px minmax(0,1fr) 120px 56px auto}.epol-ty{display:none}}
+@media (max-width:720px){.epol-row{grid-template-columns:36px minmax(0,1fr) auto;gap:10px;padding:10px 0}.epol-head{display:none}.epol-co,.epol-fo{display:none}.epol-sm{display:block}.epolist .epol-av,.epolist .epol-av>*{width:36px!important;height:36px!important}.epol-sum{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}}
+.epchd-org .epvsw button:hover,.epchd nav.epvsw a:hover,.epchd nav.epvsw a.on:hover{color:var(--accent)}
+html .epfull .epvsw,html .epfull .epvsw:hover{width:auto;box-shadow:none;background:var(--paper)}
+html .epfull .epvsw button,html .epfull .epvsw button.on{background:none;color:var(--muted);border-bottom:2px solid transparent}
+html .epfull .epvsw button+button{border-left:0}
+html .epfull .epvsw button.on{color:var(--ink);border-bottom-color:var(--ink)}
+html .epfull .epvsw button:hover{background:none;color:var(--accent)}
+html .epfull .epvsw button.on:hover{border-bottom-color:var(--accent)}
+.opin{width:10px;height:10px;margin:-5px 0 0 -5px}
+.opin.hq{width:13px;height:13px;margin:-6.5px 0 0 -6.5px}
+.opin.logo{width:22px;height:22px;margin:-11px 0 0 -11px;padding:2px}
+.opin.logo.hq{width:26px;height:26px;margin:-13px 0 0 -13px;border-width:2px;box-shadow:0 0 0 1px #00000073,0 0 0 3px color-mix(in srgb, var(--pc) 30%, transparent),0 1px 4px #00000040}
+.oclus{font-size:.68rem;box-shadow:0 0 0 3px color-mix(in srgb, var(--ink) 14%, transparent),0 1px 4px #00000040}

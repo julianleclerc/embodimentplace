@@ -33,6 +33,20 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-27
 
+- **Organisations: List view, quieter map switch, map clustering (PR #NN).** Julian asked for a list as well as the
+  grid and map, for no dark highlight on the map's Grid/Map switch, and for smaller circles where many organisations
+  sit close together.
+  - The switch is now Grid / List / Map (`epViewSw`, `?view=list`). List (`epOrgList`, CSS block `epOrgList`) shows one
+    row per organisation: logo, name, one-line summary, type, country, founded and Follow. On phones type, country
+    and founded fold into a line under the name. Search, type tags, country, sort and "Show more" work the same as
+    the grid.
+  - Map switch: no filled background on the chosen view; it is ink with a 2px underline, the others muted, and
+    hovering a choice turns it the accent colour. The page tabs on Organisations, Events and Community also hover to
+    the accent colour.
+  - Map pins: nearby pins now merge into a numbered bubble at every zoom up to 15 (before: only below zoom 8, so
+    the Bay Area became a heap of overlapping logos). Bubbles are smaller (20 to 32px, one thin halo), logo pins 22px
+    (HQ 26px), dots 10px. Clicking a bubble zooms in until it splits. In `Or` (`b=o<16`, radius `epR`).
+
 - **Organisation directory, fifth pass (same PR as the third and fourth): 61 more organisations from launch posts on X
   and Hacker News.** Julian asked for a sweep of launch and funding posts before merging. New seed
   `seed-org-directory-5-2026-11.js` (`EP_SEED_ORG_DIRECTORY_5_2026_11`, run after the fourth-pass seed by

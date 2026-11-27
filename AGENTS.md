@@ -110,8 +110,10 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - People from an organisation don't manage its page. Only the admin and contributors do. Belonging is a badge
   (verified work email via "I work here", table `owners`) shown on the character, the card and the
   organisation's People section. Members can still report mistakes, and their reports come first.
-- The organisations map is the **Map** view of Organisations (`/orgs?view=map`, Grid/Map switch `epViewSw`, map
-  component `Fr`). There is no Map tab any more; `/map` and `/orgs/map` redirect there (`epMapRedir`). Organisations (`/orgs`) is one page listing every organisation, with no per-type subtabs. Types
+- Organisations has three views, **Grid / List / Map** (`/orgs`, `/orgs?view=list`, `/orgs?view=map`; switch `epViewSw`,
+  list `epOrgList`, map component `Fr`). On the map, nearby pins merge into small numbered bubbles up to zoom 15
+  (`Or`); past that they fan out. The map's switch has no filled background on the chosen view (underline only) and
+  hovering a choice turns it the accent colour. There is no Map tab any more; `/map` and `/orgs/map` redirect there (`epMapRedir`). Organisations (`/orgs`) is one page listing every organisation, with no per-type subtabs. Types
   (`ORG_GROUPS` / bundle `Hn`) are single-select filter tags, kept in the URL as `?tag=makers`; old `/orgs/<type>` links
   redirect to that tag. The page loads everything from `/api/orgs?group=all` and pages 24 at a time.
 - Robots, hardware, models and software share one top-menu tab, **Catalogue** (`/catalogue`, frontend
@@ -122,7 +124,7 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   `.ep-wbtn`, `.chip`, `.btn`, `.listhead`/`.oblurb`); don't give them their own button or font styles.
 - List pages (Organisations, Catalogue, Events, Community) share one header: title, intro line (`.oblurb`), then the
   page switch (`.epchd .epvsw`), then search and one row of tags. Catalogue's type switch is the big full-width
-  segmented one; on Organisations (Grid/Map), Events and Community it is a row of underline tabs (CSS `epPageTabs`).
+  segmented one; on Organisations (Grid/List/Map), Events and Community it is a row of underline tabs (CSS `epPageTabs`).
   Julian chose this; don't turn those three back into big switches. Keep new list pages to this. Old `/t/<category>`, `/t/model`, `/t/benchmark` and
   `/t/software[/<kind>]` links redirect there (in `Rr`). Events stays its own tab.
 - Compare only ever compares one kind (humanoids with humanoids, cameras with cameras, models with models), each

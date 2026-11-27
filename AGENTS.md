@@ -44,6 +44,17 @@ There is no original source. The repository was rebuilt from the live deployment
   not, so it only fails live. Pass a list of ids as one JSON parameter and read it with
   `IN (SELECT value FROM json_each(?))`, as `linksFor` and `allByIds` do. Never build `?,?,?` from a list that can grow.
 
+### Speed: D1 round trips and the edge cache
+
+- A D1 query costs about 100 ms from the Worker, so count round trips, not query cost. Run independent queries with
+  `Promise.all` or one `db.batch`, never one after another in a loop. Check with
+  `RTT=100 node scripts/route-timing.mjs` (add `REF=main` to compare) and `node scripts/cold-start-check.mjs`.
+- Read settings with `setting`/`setting$1` (cached per isolate by `epSettings`), not with a fresh `SELECT` per key.
+- `epEdge` caches public GET answers at the edge (`EP_EDGE_ALL` for everyone, `EP_EDGE_ANON` for visitors with no
+  session). Only add a route to `EP_EDGE_ALL` if its handler never reads `c.get("auth")`; otherwise use
+  `EP_EDGE_ANON`. New writes through the site invalidate it automatically; cron writes show within 60 s.
+- New logos: run `python3 scripts/logos-webp.py` so the WebP copy exists in `public/logos-webp`.
+
 ### Editing the minified frontend
 
 - Make exact string replacements (for example a Python script that asserts each search string occurs exactly once),

@@ -33,7 +33,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-27
 
-- **Admin > Database: browse every D1 table and export to Excel (PR #DB).** Julian asked for an admin tab showing the
+- **Admin > Database: browse every D1 table and export to Excel (PR #84).** Julian asked for an admin tab showing the
   databases and the information linked to them, exportable to Excel.
   - New Admin subtab **Database** (`/admin/database`, frontend `epAdminDb`, CSS block `epDb`). The first view lists
     every table grouped (Content, Site, Moderation, People, Email, Chat) with a description, row count and a

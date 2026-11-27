@@ -1018,3 +1018,14 @@ div.epchd .epcsw,div.epchd .epcsw:hover{margin:0}
 .epchd nav.epvsw a i{opacity:.6}
 .epchd+.evwrap .evlist{border-top:0}
 @media (max-width:720px){.epchd-org .epvsw button,.epchd nav.epvsw a{height:40px;font-size:.7rem;padding:0 1px}.epchd-org .epvsw,.epchd nav.epvsw{gap:20px}}
+/* epVisits: visit counts above Community Place, anonymous visitor walkers and their card (2026-11-27) */
+.epp-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--rule);margin:14px 0 0;background:var(--paper)}
+.epp-st{padding:10px 12px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.epp-st+.epp-st{border-left:1px solid var(--rule)}
+.epp-st b{font:600 1.35rem/1 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.epp-st span{font:500 .62rem/1.25 var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
+.epp-stats+.epp{margin-top:8px}
+.epp-c.epp-anon{opacity:.72}
+.epp-c.epp-anon.sel,.epp-c.epp-anon.held{opacity:1}
+.epp-vcard .epp-by{margin-bottom:6px}
+@media (max-width:640px){.epp-st{padding:8px 9px}.epp-st b{font-size:1.1rem}.epp-st span{font-size:.56rem}}

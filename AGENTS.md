@@ -188,6 +188,11 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   uses one layout like Account: the "Admin" heading, then tabs (Overview first, then one per tool), via `epAdw`.
   There is no admin bar at the top and no admin button in the bottom-right dock. Add new admin tools to
   `adminBarLinks` in the Worker and wrap their route in `epAdw` so they get the tabs.
+- The database is the source of truth for the site (Julian, 2026-11-28): every page reads its facts from the records'
+  fields, and changes are made by changing the database, not the code. Admin > Spreadsheet (`/admin/sheet`,
+  `epAdminSheet`, routes `/api/admin/sheet*`) shows every organisation, university and research lab with every field
+  as an editable sheet, plus Excel export. Columns come from `TYPES` and the data itself, so a new field shows up
+  there without extra work; keep new organisation fields in `TYPES` so they get a proper label and check.
 - Admins edit organisations' main facts and tracking from Admin > Organisations (`/admin/orgs`), without opening
   the full editor. Keep important organisation fields editable there when adding new ones. Rows can be selected
   (with Select all) to change tracking for many at once.

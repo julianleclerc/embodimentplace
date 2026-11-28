@@ -41,6 +41,11 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-28
 
+- **Lab papers get their own cron.** After #90 the papers job, chained after the minute-5 seed and banner jobs, wrote
+  nothing on the live site (no rows in `lab_papers` after two runs; the cause isn't visible without logs). It now runs
+  alone at minute 35 (`wrangler.json` crons, branch on `event.cron` in `scheduled`), OpenAlex requests time out after
+  12 s, failures are stored on the lab's row, and each run writes a summary to settings key `lab_papers_run`. Admins can
+  also run it from `POST /api/admin/lab-papers/run`.
 - **Study becomes Academia; research labs get their own record type and page; universities leave Organisations
   (Julian).** Julian said a lab should be defined as a research lab, not a product, with a page showing its head,
   information and papers; then asked to rename Study to Academia and show universities there instead of in

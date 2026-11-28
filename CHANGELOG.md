@@ -40,6 +40,28 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-28
 
+- **Organisation pages: products, funding rounds and news, first pass (PR #88).** Julian asked for products, funding
+  and news on the organisation pages, and for every product to have a photo of the robot from an official source.
+  - New seed `org-enrichment-1-2026-11` (`worker/dist/assets/seed-org-enrichment-1-2026-11.js`, run once by
+    `epSeedCron`): 1,191 dated news reposts for 619 organisations (each linking to the article, kind News, origin
+    Repost, like tracking), 514 funding rounds for 359 organisations, 66 new products for 55 makers, and photos for 24
+    existing products that had none.
+  - Product photos come from each maker's own site, were checked by eye, and are stored with the site at
+    `public/products/<slug>.webp` (like `public/logos`), not hotlinked. `data.image` is
+    `{ v: "/products/<slug>.webp", src: <official page>, orig: <image URL>, fit: "contain" }`, so the page credits the
+    source ("Photo: <site> · source"). Products with no usable official photo were left out.
+  - Funding rounds are `funding` records with a `company` link (and `investors` links when the lead investor is
+    already on the site), with `date`, `round` and `amount_usd_m` each citing the article. Amounts are only stored when
+    the headline gives an exact US-dollar figure; other currencies and "up to / nearly / over" figures are kept in the
+    summary text only. Nothing was estimated.
+  - `epSeedRun` changes: a new insert-only `funding` step (skips a round when the company already has one with the
+    same round name, date or amount, or the same source); new records from news, robots and funding are written in
+    chunks of 25 as one JSON parameter (`add` queues, `flushBulk` writes records, links joined by slug, search rows),
+    so a large seed is a few hundred statements; spec fills now save a revision of each product first.
+  - `epAssetFetch` caches `/products/*.webp|png|jpg` like `/static` (a day, then refresh in the background).
+  - Screenshots from a local run: `docs/screenshots/enrichment-1/`.
+  - Not covered yet: about 1,220 organisations got no news, about 1,480 no funding, and most organisations still have
+    no products (see the PR for the list of gaps).
 - **Study tab: universities ranked for robotics, with their research labs (Julian).** Julian asked for a Study tab that
   ranks universities for robotics and lists the labs tied to them, for choosing a bachelor's, master's or PhD, with
   research labs as a Catalogue component.

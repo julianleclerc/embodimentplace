@@ -110,11 +110,14 @@ These are the decisions Julian has made so far. Don't undo them without asking.
 - Walking uses the original `wk-leg` leg cycle in every direction. Don't add a stepping-foot animation.
 - Community "Place" shows every member's character to everyone, visitors included. Members can hide theirs
   (Account, Overview, "Show my character in Place").
-- Community shows visit counts (last 24 hours, last 7 days, total since counting began) above Place, and one
-  anonymous character (random look, no name, faded) per logged-out visitor of the last 24 hours, at most 30. A visit
+- Community shows "x members · x total visitors" under Place (Julian removed the separate visit bar), and one
+  anonymous character (random look, no name, very faded) per logged-out visitor of the last 24 hours, at most 30. A visit
   is one browser per UTC day, counted on `GET /api/me` (`epVisitCount`; bot user agents skipped). The `visits` table
   holds only sha256(daily random salt + IP + user agent); the salt is the `visit_salt` setting, replaced daily, and
   rows older than 8 days are deleted. Never store IPs or user agents for this, and never export it.
+- Logged-out visitors can Walk, always offline: starting a walk switches them to Offline for that walk
+  (`epAnonWalk` in the walker code), nothing is sent to `/api/walk`, and the Say box is hidden for them. Stopping the
+  walk puts them back Online (viewing only) unless they chose Offline themselves.
 - The card (name, position, company, info, social links) follows the member's "Who sees your card" setting
   (`prefs.profile_vis`: me, members or everyone; members is the default).
 - Changing your email needs a code sent to the new address.

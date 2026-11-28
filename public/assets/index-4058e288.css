@@ -1028,7 +1028,7 @@ main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto
 .epp-st b{font:600 1.35rem/1 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
 .epp-st span{font:500 .62rem/1.25 var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
 .epp-stats+.epp{margin-top:8px}
-.epp-c.epp-anon{opacity:.72}
+.epp-c.epp-anon{opacity:.42}
 .epp-c.epp-anon.sel,.epp-c.epp-anon.held{opacity:1}
 .epp-vcard .epp-by{margin-bottom:6px}
 @media (max-width:640px){.epp-st{padding:8px 9px}.epp-st b{font-size:1.1rem}.epp-st span{font-size:.56rem}}
@@ -1088,7 +1088,7 @@ main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto
 .epp-st b{font:600 1.35rem/1 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
 .epp-st span{font:500 .62rem/1.25 var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
 .epp-stats+.epp{margin-top:8px}
-.epp-c.epp-anon{opacity:.72}
+.epp-c.epp-anon{opacity:.42}
 .epp-c.epp-anon.sel,.epp-c.epp-anon.held{opacity:1}
 .epp-vcard .epp-by{margin-bottom:6px}
 @media (max-width:640px){.epp-st{padding:8px 9px}.epp-st b{font-size:1.1rem}.epp-st span{font-size:.56rem}}
@@ -1146,3 +1146,7 @@ main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto
 @media (max-width:700px){.ep-db{padding-bottom:84px}}
 .palette.ep-db-dlg{z-index:300}
 .ep-db-top{margin-bottom:4px}
+/* epVisits2: visit bar removed (Julian 2026-11-28); anonymous walkers fainter */
+.epp-stats{display:none}
+/* epAnonWalk: logged-out visitors walk offline only, so no talking (2026-11-28) */
+.chatw[data-uid="0"] .wk-say,.chatw[data-uid="0"] .wk-keys>span:nth-child(2){display:none}

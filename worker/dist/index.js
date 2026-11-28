@@ -14,6 +14,7 @@ import { EP_SEED_CATALOGUE_COMPONENTS_2026_11 } from "./assets/seed-catalogue-co
 import { EP_SEED_STUDY_2026_11 } from "./assets/seed-study-2026-11.js";
 import { EP_SEED_LABS_2026_11 } from "./assets/seed-labs-2026-11.js";
 import { EP_SEED_ORG_ENRICHMENT_1_2026_11 } from "./assets/seed-org-enrichment-1-2026-11.js";
+import { EP_SEED_ORG_ENRICHMENT_2_2026_11 } from "./assets/seed-org-enrichment-2-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -22846,7 +22847,12 @@ api.get("/admin/stats", async (c) => {
 });
 api.get("/r/:slug", async (c) => {
 	const rec = await onePublic(c.env.DB, c.req.param("slug"));
-	if (!rec) return c.json({ error: "Not found" }, 404);
+	if (!rec) {
+		// epMergedInto: a record merged into another (hidden, data.merged_into) sends visitors to the record it became.
+		const m = await c.env.DB.prepare("SELECT json_extract(data,'$.merged_into.v') AS m FROM records WHERE slug=? AND private=1").bind(c.req.param("slug")).first();
+		if (m?.m) return c.json({ redirect: "/r/" + String(m.m) });
+		return c.json({ error: "Not found" }, 404);
+	}
 	if (rec.type === "post" && fieldStr(rec.data, "origin") === "Repost" && fieldStr(rec.data, "link")) return c.json({ redirect: fieldStr(rec.data, "link") });
 	const { outgoing, incoming } = await linksFor(c.env.DB, [rec.id]);
 	const out = outgoing.get(rec.id) || {};
@@ -23732,7 +23738,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11, EP_SEED_STUDY_2026_11, EP_SEED_ORG_ENRICHMENT_1_2026_11, EP_SEED_LABS_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11, EP_SEED_STUDY_2026_11, EP_SEED_ORG_ENRICHMENT_1_2026_11, EP_SEED_LABS_2026_11, EP_SEED_ORG_ENRICHMENT_2_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -24001,9 +24007,68 @@ async function epSeedRun(db, seed) {
 		stmts.push(db.prepare("DELETE FROM fts WHERE rowid IN (SELECT id FROM records WHERE type = 'lab')"));
 		stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE type = 'lab'"));
 	}
+	// Fixes (approved one by one by Julian; each saves a revision of every record it changes first, and each checks the
+	// record is still in the state it expects, so a change made by hand in the meantime is left alone):
+	// - { op: "image", slug, from, image }: replace data.image only while data.image.v is still `from` (a hotlinked URL).
+	// - { op: "roles_list", slug }: data.roles.v stored as a string becomes a one-item list.
+	// - { op: "merge", from, into, roles }: links, tracking and follows of `from` move to `into` (an identical link already
+	//   on `into` wins), `into` gains the listed roles it lacks, and `from` is hidden (private) with data.merged_into, so
+	//   /api/r/<from> redirects to `into` (epMergedInto).
+	// - { op: "hide", slug, why }: a wrong record is hidden (private = 1, the reason in notes), not deleted.
+	let nFixes = 0;
+	if ((seed.fixes || []).length) {
+		const fx = [];
+		const bySlug = async (slug) => await db.prepare("SELECT id, slug, data, private, notes FROM records WHERE slug=?").bind(slug).first();
+		const rev = (ids) => fx.push(db.prepare("INSERT INTO revisions(record_id,snapshot,at) SELECT id, json_object('id',id,'type',type,'slug',slug,'name',name,'summary',summary,'body',body,'data',data,'notes',notes,'private',private,'watch',watch,'demo',demo,'created',created,'updated',updated,'author_id',author_id,'feed_at',feed_at), ? FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(ts, JSON.stringify(ids)));
+		const refts = (ids) => {
+			const idj = JSON.stringify(ids);
+			fx.push(db.prepare("DELETE FROM fts WHERE rowid IN (SELECT value FROM json_each(?))").bind(idj));
+			fx.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE id IN (SELECT value FROM json_each(?)) AND private=0").bind(idj));
+		};
+		for (const f of seed.fixes) {
+			const r = await bySlug(f.op === "merge" ? f.from : f.slug);
+			if (!r || Number(r.private)) continue;
+			let d = {};
+			try { d = JSON.parse(r.data || "{}"); } catch {}
+			if (f.op === "image") {
+				if (String(d.image?.v || "") !== f.from) continue;
+				rev([r.id]);
+				fx.push(db.prepare("UPDATE records SET data=json_set(data,'$.image',json(?)), updated=? WHERE id=?").bind(JSON.stringify(f.image), ts, r.id));
+				refts([r.id]);
+			} else if (f.op === "roles_list") {
+				if (typeof d.roles?.v !== "string") continue;
+				rev([r.id]);
+				fx.push(db.prepare("UPDATE records SET data=json_set(data,'$.roles.v',json_array(json_extract(data,'$.roles.v'))), updated=? WHERE id=?").bind(ts, r.id));
+				refts([r.id]);
+			} else if (f.op === "merge") {
+				const into = await bySlug(f.into);
+				if (!into || Number(into.private) || into.id === r.id) continue;
+				let di = {};
+				try { di = JSON.parse(into.data || "{}"); } catch {}
+				rev([r.id, into.id]);
+				const a = r.id, b = into.id;
+				fx.push(db.prepare("UPDATE links SET dst=? WHERE dst=? AND NOT EXISTS (SELECT 1 FROM links x WHERE x.src=links.src AND x.rel=links.rel AND x.dst=?)").bind(b, a, b));
+				fx.push(db.prepare("UPDATE links SET src=? WHERE src=? AND dst<>? AND NOT EXISTS (SELECT 1 FROM links x WHERE x.dst=links.dst AND x.rel=links.rel AND x.src=?)").bind(b, a, b, b));
+				fx.push(db.prepare("DELETE FROM links WHERE (dst=? AND EXISTS (SELECT 1 FROM links x WHERE x.src=links.src AND x.rel=links.rel AND x.dst=?)) OR (src=? AND EXISTS (SELECT 1 FROM links x WHERE x.dst=links.dst AND x.rel=links.rel AND x.src=?))").bind(a, b, a, b));
+				fx.push(db.prepare("UPDATE auto_news SET record_id=? WHERE record_id=? AND NOT EXISTS (SELECT 1 FROM auto_news x WHERE x.record_id=?)").bind(b, a, b));
+				fx.push(db.prepare("UPDATE follows SET company_id=? WHERE company_id=? AND NOT EXISTS (SELECT 1 FROM follows x WHERE x.company_id=? AND x.user_id=follows.user_id)").bind(b, a, b));
+				const roles = [].concat(di.roles?.v || []);
+				const more = (f.roles || []).filter((x) => !roles.includes(x));
+				if (more.length) fx.push(db.prepare("UPDATE records SET data=json_set(data,'$.roles.v',json(?)), updated=? WHERE id=?").bind(JSON.stringify(roles.concat(more)), ts, b));
+				fx.push(db.prepare("UPDATE records SET private=1, data=json_set(data,'$.merged_into',json_object('v',?)), notes=trim(COALESCE(notes,'') || ' Merged into ' || ? || ' (' || ? || ').'), updated=? WHERE id=?").bind(into.slug, into.slug, ts.slice(0, 10), ts, a));
+				refts([a, b]);
+			} else if (f.op === "hide") {
+				rev([r.id]);
+				fx.push(db.prepare("UPDATE records SET private=1, notes=trim(COALESCE(notes,'') || ' Hidden: ' || ?), updated=? WHERE id=?").bind(f.why || "", ts, r.id));
+				refts([r.id]);
+			} else continue;
+			nFixes++;
+		}
+		stmts.push(...fx);
+	}
 	if (stmts.length) await db.batch(stmts);
-	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles, labs: nLabs, funding: nFunding })).run();
-	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields, ${nOrgRoles} organisation roles, ${nLabs} research labs, ${nFunding} funding rounds`);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles, labs: nLabs, funding: nFunding, fixes: nFixes })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields, ${nOrgRoles} organisation roles, ${nLabs} research labs, ${nFunding} funding rounds, ${nFixes} fixes`);
 }
 async function epSeedCron(env) {
 	try {

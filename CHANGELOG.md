@@ -8,6 +8,13 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
+- **Defence and drone organisations: review pending.** About 109 organisations look like defence (about 50) or drone
+  (about 59) makers by name and summary. They were left out of enrichment pass 2 and not changed. Julian to decide
+  whether they stay, get hidden or get their own category. The keyword list has false positives (for example Allient
+  and Mass Magnetics are motion and magnet suppliers).
+- **Organisation coverage after enrichment pass 2.** Of 1,854 organisations, about 745 have news, 373 have funding
+  and 178 have products. Most robot makers (about 860 of 1,028) still have no products, often because their site has
+  no clear product name or photo.
 - **Academia: gaps to fill.** The 16 universities added for Study have no logos yet. RWTH Aachen, KU Leuven, DTU,
   POSTECH and Xi'an Jiaotong have no labs listed. 40 of the 117 labs have no head yet (mostly institutes and
   departments, where the director changes or was unclear), so they get no papers; fill `lead_text` (or `head_oa`) to
@@ -62,6 +69,27 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   `GET /api/admin/sheet?tab=orgs|unis|labs` and `POST /api/admin/sheet/:id` `{key, value, kind}` (`epShLoad`,
   `epShCols`, `epShParse`). Changing an HQ address (here or in Admin > Organisations) now geocodes it, so the map
   pin moves with it instead of being lost.
+- **Organisation pages, second pass; local copies of five hotlinked photos; apera merged into apera-ai; ASU roles
+  fixed (Julian).** Julian asked to update what was left from the first pass (PR #88).
+  - New seed `org-enrichment-2-2026-11` (`worker/dist/assets/seed-org-enrichment-2-2026-11.js`, run once by
+    `epSeedCron`): 74 new products for 72 makers (humanoid and embodied-AI makers first), 140 dated news reposts for
+    102 organisations and 16 funding rounds for 15 organisations. Same rules as pass 1: every item has a source URL
+    and a date, nothing is estimated, insert-only. Product photos come from the maker's own site, were checked by eye,
+    and are stored at `public/products/<slug>.webp` with `data.image.src` (page) and `orig` (file) as the credit.
+  - New seed step `fixes` in `epSeedRun`: one-off edits that check state first and save a revision before changing
+    anything. Ops: `image` (only if `data.image.v` still equals `from`), `roles_list` (only if roles is a string),
+    `merge` (moves links, tracking and follows to the kept record, adds missing roles, then makes the old record
+    private with `data.merged_into`) and `hide` (makes a record private with a note). Counted as `fixes` in the seed log.
+  - Fixes in this seed: Unitree G1, Figure 03, Agility Digit, 1X NEO and Boston Dynamics Atlas now use copies stored
+    under `public/products/` instead of hotlinked files (the original URL is kept in `image.orig`, the credit page in
+    `image.src`); Arizona State University's roles are stored as a list; `apera` (a mixed record) is merged into
+    `apera-ai`; the round `enact-pre-seed` is hidden because it was Enact Intelligence's round filed under Enact.
+  - Old slugs of merged records redirect: `GET /api/r/:slug` returns `{redirect}` to the kept record when the slug
+    belongs to a private record with `data.merged_into` (`epMergedInto`), so `/r/apera` opens `/r/apera-ai`.
+  - Not merged: `enact` (Enact, a San Francisco YC company) and `enact-intelligence` (Enact Intelligence, Zurich,
+    actuators) are different companies. Defence and drone organisations were left out of this pass.
+  - Screenshots from a local run: `docs/screenshots/enrichment-2/`.
+
 - **Study becomes Academia; research labs get their own record type and page; universities leave Organisations
   (Julian).** Julian said a lab should be defined as a research lab, not a product, with a page showing its head,
   information and papers; then asked to rename Study to Academia and show universities there instead of in

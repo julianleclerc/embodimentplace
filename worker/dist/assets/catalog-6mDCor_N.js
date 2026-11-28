@@ -474,22 +474,6 @@ function epHwExtra(a) {
 	return a;
 }
 epHwExtra(HW_CATEGORIES);
-// epStudy: research labs are Catalogue products (same record type, fields and page) with their own tab "labs", linked
-// to their university with the "maker" relation. They are shown on the Study page only, not in the Catalogue list.
-function epHwLabs(a) {
-	if (a.some((c) => c.key === "research_lab")) return a;
-	const i = a.findIndex((c) => c.key === "other_component");
-	a.splice(i < 0 ? a.length : i, 0, {
-		key: "research_lab",
-		label: "Research lab",
-		plural: "Research labs",
-		tab: "labs",
-		card_specs: ["lab_focus"],
-		columns: ["lab_focus", "lab_url"]
-	});
-	return a;
-}
-epHwLabs(HW_CATEGORIES);
 var HW_CAT = Object.fromEntries(HW_CATEGORIES.map((c) => [c.key, c]));
 var SOFTWARE_KINDS = [
 	{
@@ -657,6 +641,11 @@ var TYPE_LABELS = {
 		label: "Data pack",
 		plural: "Data packs",
 		section: "Activity"
+	},
+	lab: {
+		label: "Research lab",
+		plural: "Research labs",
+		section: "Academia"
 	}
 };
 var FEED_FILTERS = [

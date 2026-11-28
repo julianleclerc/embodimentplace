@@ -1179,3 +1179,36 @@ main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto
 .epst-how ul{padding-left:18px;margin:8px 0 12px;display:flex;flex-direction:column;gap:8px}
 .epst-how a{text-decoration:underline}
 @media (max-width:720px){.epst-row{grid-template-columns:22px 36px minmax(0,1fr) auto;gap:10px;padding:12px 0}.epst-n{font-size:.9rem;line-height:36px}.epst-av,.epst-av>*{width:36px!important;height:36px!important}.epst-sc b{font-size:1.1rem}.epst-sc span{font-size:.56rem;max-width:72px}.epst-labs .chip{font-size:.66rem}}
+/* epAcademia: the Academia page (/academia, was /study): view switch (Universities | Research labs) as underline tabs,
+   degree-level chips, then the ranked university list or the lab list. Unranked universities follow without a score.
+   epLab: a research lab's own page (/r/<slug> for type "lab"): facts, About, Papers (OpenAlex), University, other labs. */
+.epvsw button small{font:500 .62rem var(--mono);color:var(--muted);margin-left:2px}
+.epst-lv{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.epst-unr .epst-n{color:var(--muted)}
+.epst-lab{grid-template-columns:44px minmax(0,1fr) 110px}
+.epst-head{font-size:.86rem;color:var(--muted)}
+.epst-head b{color:var(--ink);font-weight:600}
+.epst-sum{margin:2px 0 0;font-size:.88rem;line-height:1.45;color:var(--ink)}
+.epst-labs button.chip{border:0;cursor:pointer;font:inherit;font-family:var(--mono);font-size:.68rem;text-transform:uppercase}
+.epst-labs .chip.on{background:var(--accent);color:#fff}
+.epst-note{margin:22px 0 8px;font-size:.85rem}
+.epst-more{font-size:.85rem;margin-top:4px;text-decoration:underline}
+.tbadge.t-lab{display:inline-block}
+.labpage{max-width:860px;margin-top:8px}
+.labpage .osec{margin-bottom:26px}
+.lab-areas{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0}
+.lab-areas .lbl{font:500 .64rem var(--mono);text-transform:uppercase;color:var(--muted);margin-right:4px}
+.lab-areas .chip{text-decoration:none}
+.lab-pnote{font-size:.86rem;margin:0 0 10px}
+.lab-papers{list-style:none;margin:12px 0 10px;padding:0;border-top:1px solid var(--rule)}
+.lab-papers li{padding:11px 0;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:3px}
+.lp-t{font-weight:600;color:var(--ink);text-decoration:none;line-height:1.35}
+.lp-t:hover{color:var(--accent);text-decoration:underline}
+.lp-a{font-size:.82rem;color:var(--muted)}
+.lp-m{font:500 .64rem var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
+.lab-uni{grid-template-columns:44px minmax(0,1fr) 120px;border-top:1px solid var(--rule)}
+.lab-sibs{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.lab-sib{display:flex;flex-direction:column;gap:3px;padding:10px 12px;border:1px solid var(--rule);text-decoration:none;color:var(--ink)}
+.lab-sib:hover{border-color:var(--ink);text-decoration:none}
+.lab-sib span{font-size:.82rem}
+@media (max-width:720px){.epst-lab,.lab-uni{grid-template-columns:36px minmax(0,1fr) auto}.lab-sibs{grid-template-columns:1fr}}

@@ -148,19 +148,28 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   and within a type items are grouped into one section per kind (humanoids, arms, quadrupeds...), never one mixed grid.
   Kind tags isolate one kind (`&kind=humanoid`). Catalogue, preview and Compare reuse the shared classes (`.epotag`,
   `.ep-wbtn`, `.chip`, `.btn`, `.listhead`/`.oblurb`); don't give them their own button or font styles.
-- **Study** (`/study`, frontend `epStudy`, Worker `GET /api/study` via `epStudy`, CSS block `epStudy`) is a top-menu tab
-  next to Catalogue that ranks universities for robotics, for students choosing a bachelor's, master's or PhD (Julian,
-  2026-11-28). Universities are ordinary organisations (role University); the ranking inputs are two fields on them:
-  `rank_csr` (CSRankings robotics: ICRA + IROS + RSS adjusted paper count 2016-2026, plus `faculty`) and `rank_qs_mech`
-  (QS by Subject 2025, Mechanical, Aeronautical & Manufacturing). The page scales research to the top university (100)
-  and QS rank r to 101 - r (0 outside the top 100), then mixes them per degree level (`EP_STUDY_W`: bachelor's 25/75,
-  master's 50/50, PhD 75/25; switch kept in `?level=`, country in `?country=`). The method and sources are explained on
-  the page; keep them in step with any change to the weights or sources. Research labs are catalogue products (same
-  record type, fields and page as robots and components), category **Research lab** (`research_lab`, fields
-  `lab_focus`, `lab_url`), linked to their university by the `maker` relation (shown as "University"). Julian decided
-  (2026-11-28) that a lab is not a component: labs have their own tab `labs` in `HW_CATEGORIES` and are shown only on
-  Study, never in the Catalogue list (`epCatalogue` filters them out, `/t/research_lab` redirects to `/study`). Their
-  page has Lab website / Study buttons instead of Compare and quotes, and no kind row.
+- **Academia** (`/academia`, was Study at `/study`, which redirects; frontend `epStudy`, Worker `GET /api/academia`
+  via `epAcademia`, `/api/study` kept as an alias, CSS blocks `epStudy` and `epAcademia`) is a top-menu tab next to
+  Catalogue for students choosing where to do a bachelor's, master's or PhD (Julian, 2026-11-28). It has two views
+  (`?view=labs`): **Universities** and **Research labs**.
+  - Universities are organisations with the role University. Julian moved them out of Organisations: `orgsPayload`
+    leaves them out of `/orgs` (grid and map), and their page's breadcrumb and badge say Academia / University. Ranked
+    universities come first, then the rest alphabetically without a score. The ranking inputs are two fields on each
+    university: `rank_csr` (CSRankings robotics: ICRA + IROS + RSS adjusted paper count 2016-2026, plus `faculty`) and
+    `rank_qs_mech` (QS by Subject 2025, Mechanical, Aeronautical & Manufacturing). Research is scaled to the top
+    university (100) and QS rank r to 101 - r (0 outside the top 100), then mixed per degree level (`EP_STUDY_W`:
+    bachelor's 25/75, master's 50/50, PhD 75/25; `?level=`, country `?country=`). The method and sources are explained
+    on the page; keep them in step with any change to the weights or sources.
+  - A research lab is its own record type, `lab` ("Research lab"), never a catalogue product (Julian, 2026-11-28). It is
+    linked to its university by `parent` (shown as University). Fields: `lead_text` (Head), `head_oa` (the head's
+    OpenAlex author id, for admins to correct a wrong match), `focus` (Research areas, tags), `website`, `founded`,
+    `members`, plus the usual organisation fields. Its page is `epLab` in the bundle (facts, About, Papers, University,
+    other labs at the same university); the Worker adds `lab` to `GET /api/r/:slug` (`epLabExtra`). University pages
+    list their labs (`epUniLabs`). Labs are not in Organisations (`orgsPayload` only reads type `company`).
+  - Papers come from OpenAlex (open data, no key), never typed in: `epLabPapersCron` (hourly, 8 labs a run, each lab
+    again after 30 days, failures retried after a day) finds the head among OpenAlex authors whose institution matches
+    the university (`epOaInstMatch`, aliases in `EP_OA_ALIASES`), or uses `head_oa`, and stores the author plus the 8
+    most recent and 8 most cited articles in table `lab_papers`. A lab without a head gets no papers.
 - List pages (Organisations, Catalogue, Events, Community) share one header: title, intro line (`.oblurb`), then the
   page switch (`.epchd .epvsw`), then search and one row of tags. On every list page (Organisations Grid/List/Map, Catalogue, Events, Community) the switch
   is a row of underline tabs (CSS `epPageTabs`; Catalogue's wrapper carries `.epchd-org` so it follows Organisations,

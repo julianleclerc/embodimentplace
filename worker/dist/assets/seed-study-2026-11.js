@@ -1,8 +1,8 @@
 // Content seed for the Study tab, 2026-11-28: robotics ranking inputs for universities and their research labs.
 // rank_csr = CSRankings robotics (ICRA, IROS, RSS), 2016-2026, sum of adjusted paper counts and number of faculty,
 // computed from CSRankings' open data (generated-author-info.csv). rank_qs_mech = QS World University Rankings by Subject
-// 2025, Mechanical, Aeronautical & Manufacturing Engineering. Labs are Catalogue products (kind Research lab) linked to
-// their university with "maker". Universities missing from the site are added as organisations. Imported once by
+// 2025, Mechanical, Aeronautical & Manufacturing Engineering. Labs were added as Catalogue products (kind Research lab)
+// linked with "maker"; seed-labs-2026-11.js turns them into "lab" records. Universities missing from the site are added as organisations. Imported once by
 // epSeedCron in index.js; see CHANGELOG.md.
 export const EP_SEED_STUDY_2026_11 = {
  "id": "study-2026-11",

@@ -1150,3 +1150,32 @@ main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto
 .epp-stats{display:none}
 /* epAnonWalk: logged-out visitors walk offline only, so no talking (2026-11-28) */
 .chatw[data-uid="0"] .wk-say,.chatw[data-uid="0"] .wk-keys>span:nth-child(2){display:none}
+
+/* epStudy: the Study page (/study). Underline tabs for degree level (epPageTabs via .epchd-org), then a ranked list:
+   position, logo, name + place + lab chips, combined score with the two source positions. Method section at the end. */
+.epst-w{margin:10px 0 0;color:var(--muted);font-size:.85rem}
+.epst-w b{color:var(--ink);font-weight:600}
+.epstl{border-top:1px solid var(--rule);margin-top:10px}
+.epst-row{display:grid;grid-template-columns:34px 44px minmax(0,1fr) 120px;align-items:start;gap:14px;padding:14px 4px;border-bottom:1px solid var(--rule)}
+.epst-row:hover{background:var(--hover)}
+.epst-n{font:600 1.05rem/44px var(--mono);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.epst-av{display:block;width:44px;height:44px;overflow:hidden}
+.epst-av>*{width:44px!important;height:44px!important;min-width:0!important;font-size:.9rem}
+.epst-av img{width:100%;height:100%;object-fit:contain}
+.epst-main{display:flex;flex-direction:column;gap:3px;min-width:0}
+.epst-name{font-weight:600;color:var(--ink);text-decoration:none;font-size:1.02rem}
+.epst-name:hover{color:var(--accent);text-decoration:none}
+.epst-sm{color:var(--muted);font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.03em}
+.epst-labs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.epst-labs .chip{text-decoration:none;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.epst-labs .chip:hover{border-color:var(--accent);color:var(--accent)}
+.epst-nolab{color:var(--muted);font-size:.8rem;margin-top:4px}
+.epst-sc{display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right}
+.epst-sc b{font:600 1.35rem/1.1 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.epst-sc span{font:500 .62rem/1.3 var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.02em}
+.epst-how{margin:36px 0 12px;padding-top:20px;border-top:1px solid var(--ink);max-width:820px}
+.epst-how h2{margin:0 0 10px;font-size:1.15rem}
+.epst-how p,.epst-how li{font-size:.92rem;line-height:1.55}
+.epst-how ul{padding-left:18px;margin:8px 0 12px;display:flex;flex-direction:column;gap:8px}
+.epst-how a{text-decoration:underline}
+@media (max-width:720px){.epst-row{grid-template-columns:22px 36px minmax(0,1fr) auto;gap:10px;padding:12px 0}.epst-n{font-size:.9rem;line-height:36px}.epst-av,.epst-av>*{width:36px!important;height:36px!important}.epst-sc b{font-size:1.1rem}.epst-sc span{font-size:.56rem;max-width:72px}.epst-labs .chip{font-size:.66rem}}

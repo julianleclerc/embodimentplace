@@ -8,6 +8,13 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
+- **Study: gaps to fill.** The 16 universities added for Study have no logos yet. RWTH Aachen, KU Leuven, DTU,
+  POSTECH and Xi'an Jiaotong have no labs listed. Several older organisations are really labs filed as universities
+  (CMU Robotics Institute, MIT CSAIL, BAIR, ETH RSL, Oxford Robotics Institute, GT IRIM, GRASP, Stanford AI Lab, Caltech
+  CAST, Toronto Robotics Institute, Edinburgh Centre for Robotics, TUM MIRMI, Texas Robotics, QUT Centre for Robotics);
+  they now overlap with the Research lab items and the new university organisations. Ask Julian before merging or
+  removing them. Seeds only fill empty fields, so a yearly ranking refresh needs a seed that overwrites
+  `rank_csr`/`rank_qs_mech`.
 - **Tracking agent needs its API key.** Tracking now uses a web-searching agent (Claude with web search). It runs
   only when the Worker has the secret `ANTHROPIC_API_KEY` (Cloudflare dashboard, Workers > embodiment-place >
   Settings > Variables and Secrets). Until then tracking falls back to RSS/Atom feeds, which most robotics companies
@@ -32,6 +39,28 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 ## Changes
 
 ### 2026-11-28
+
+- **Study tab: universities ranked for robotics, with their research labs (Julian).** Julian asked for a Study tab that
+  ranks universities for robotics and lists the labs tied to them, for choosing a bachelor's, master's or PhD, with
+  research labs as a Catalogue component.
+  - New top-menu tab **Study** (`/study`, frontend `epStudy`, CSS block `epStudy`, Worker `GET /api/study` = `epStudy`,
+    edge-cached in `EP_EDGE_ALL`). Underline tabs Bachelor's / Master's / PhD (`?level=`), search over universities and
+    labs, country filter (`?country=`), ranked rows (position, logo, name, place, lab chips, score with the Research and
+    QS positions), and a "How the ranking works" section citing the sources.
+  - Ranking: research = CSRankings robotics (ICRA, IROS, RSS, 2016-2026, adjusted counts, computed from the
+    CSRankings open data on GitHub) scaled so the top university is 100; reputation = QS World University Rankings by
+    Subject 2025, Mechanical, Aeronautical & Manufacturing Engineering (rank r scores 101 - r, 0 outside the top 100;
+    read from the QS 2025 table as mirrored by xuanxiao.org, since the 2026 table didn't load). Weights per level in
+    `EP_STUDY_W`.
+  - Catalogue > Components gets a **Research labs** kind (`research_lab`; `epHwLabs` in catalog.js and the bundle's
+    category list, view `epViewsLabs`, product fields `lab_focus` and `lab_url`). The lab's "maker" link is its
+    university. Lab pages show Lab website and Study instead of Compare and Request a quote.
+  - Seed `seed-study-2026-11.js` (runs at the next hourly cron): 66 universities (the CSRankings robotics top 50 and QS
+    Mechanical top 40, merged), of which 50 already existed and get `rank_csr`/`rank_qs_mech` filled; 16 are added as
+    University organisations (MIT, CMU, Stanford, Berkeley, Penn, Georgia Tech, UT Austin, Caltech, Edinburgh, QUT, Bonn,
+    Johns Hopkins, Toronto, ETH Zurich, Oxford, UCLA). 114 labs with homepages; most were fetched and checked on
+    2026-11-28. `epSeedRun` gained a `labs` section (chunked json_each inserts, linked by university slug or name).
+  - Screenshots `docs/screenshots/study/`.
 
 - **Community visits, second round, and walking for logged-out visitors (Julian).** The visit bar above Place is
   gone; the line under Place now reads "x members · x total visitors" (`epVisitFoot`, total = `visits.total`).

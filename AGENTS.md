@@ -148,6 +148,16 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   and within a type items are grouped into one section per kind (humanoids, arms, quadrupeds...), never one mixed grid.
   Kind tags isolate one kind (`&kind=humanoid`). Catalogue, preview and Compare reuse the shared classes (`.epotag`,
   `.ep-wbtn`, `.chip`, `.btn`, `.listhead`/`.oblurb`); don't give them their own button or font styles.
+- **Study** (`/study`, frontend `epStudy`, Worker `GET /api/study` via `epStudy`, CSS block `epStudy`) is a top-menu tab
+  next to Catalogue that ranks universities for robotics, for students choosing a bachelor's, master's or PhD (Julian,
+  2026-11-28). Universities are ordinary organisations (role University); the ranking inputs are two fields on them:
+  `rank_csr` (CSRankings robotics: ICRA + IROS + RSS adjusted paper count 2016-2026, plus `faculty`) and `rank_qs_mech`
+  (QS by Subject 2025, Mechanical, Aeronautical & Manufacturing). The page scales research to the top university (100)
+  and QS rank r to 101 - r (0 outside the top 100), then mixes them per degree level (`EP_STUDY_W`: bachelor's 25/75,
+  master's 50/50, PhD 75/25; switch kept in `?level=`, country in `?country=`). The method and sources are explained on
+  the page; keep them in step with any change to the weights or sources. Research labs are a Catalogue
+  Components kind, **Research lab** (`research_lab`, fields `lab_focus`, `lab_url`), linked to their university by the
+  `maker` relation (shown as "University"); their page has Lab website / Study buttons instead of Compare and quotes.
 - List pages (Organisations, Catalogue, Events, Community) share one header: title, intro line (`.oblurb`), then the
   page switch (`.epchd .epvsw`), then search and one row of tags. On every list page (Organisations Grid/List/Map, Catalogue, Events, Community) the switch
   is a row of underline tabs (CSS `epPageTabs`; Catalogue's wrapper carries `.epchd-org` so it follows Organisations,

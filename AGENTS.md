@@ -157,8 +157,7 @@ These are the decisions Julian has made so far. Don't undo them without asking.
     universities come first, then the rest alphabetically without a score. The ranking inputs are two fields on each
     university: `rank_csr` (CSRankings robotics: ICRA + IROS + RSS adjusted paper count 2016-2026, plus `faculty`) and
     `rank_qs_mech` (QS by Subject 2025, Mechanical, Aeronautical & Manufacturing). Research is scaled to the top
-    university (100) and QS rank r to 101 - r (0 outside the top 100), then mixed per degree level (`EP_STUDY_W`:
-    bachelor's 25/75, master's 50/50, PhD 75/25; `?level=`, country `?country=`). The method and sources are explained
+    university (100) and QS rank r to 101 - r (0 outside the top 100), then averaged with equal weight (`EP_STUDY_W` = 50/50; Julian dropped the bachelor's/master's/PhD switch on 2026-11-28, so the page has just two lists, Universities and Research labs; country `?country=`). The method and sources are explained
     on the page; keep them in step with any change to the weights or sources.
   - A research lab is its own record type, `lab` ("Research lab"), never a catalogue product (Julian, 2026-11-28). It is
     linked to its university by `parent` (shown as University). Fields: `lead_text` (Head), `head_oa` (the head's

@@ -41,6 +41,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-28
 
+- **Academia: two lists, no degree switch (Julian).** Julian asked for just two lists, Universities and Research labs,
+  with no difference between bachelor's, master's and PhD, and chose to keep the name Academia. The degree chips are
+  gone; the ranking averages research and engineering reputation 50/50 (`EP_STUDY_W`, `weight` in `/api/academia`),
+  and the method section says so. Bundle `index-f43de6e2.js`.
 - **Lab papers: OpenAlex polite pool and optional key.** The first run on the minute-35 cron reached OpenAlex, which
   answered 429 (rate limited) to the Worker's first request. Requests now carry `mailto=contact@embodiment.place`
   (OpenAlex's polite pool) and, when the Worker has the secret `OPENALEX_API_KEY` (free from openalex.org), that key.

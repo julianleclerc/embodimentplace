@@ -21409,7 +21409,7 @@ function epOaInstMatch(names, uniName) {
 	});
 }
 async function epOaGet(path) {
-	const res = await fetch(EP_OA + path, { headers: { "User-Agent": "embodiment.place (research lab pages)", Accept: "application/json" } });
+	const res = await fetch(EP_OA + path, { headers: { "User-Agent": "embodiment.place (research lab pages)", Accept: "application/json" }, signal: AbortSignal.timeout(12e3) });
 	if (!res.ok) throw new Error(`OpenAlex ${res.status}`);
 	return res.json();
 }
@@ -21452,31 +21452,46 @@ async function epLabPapersOne(db, lab, uni) {
 	}
 	await db.prepare("INSERT INTO lab_papers(record_id, author_id, n, data, checked) VALUES(?,?,?,?,?) ON CONFLICT(record_id) DO UPDATE SET author_id=excluded.author_id, n=excluded.n, data=excluded.data, checked=excluded.checked").bind(lab.id, aid || "", data.author ? data.author.works : 0, JSON.stringify(data), nowStamp()).run();
 }
+// Runs from its own cron (minute 35, see scheduled) so it has a fresh invocation and isn't held up by the minute-5 jobs.
+// Each run writes a summary to settings key lab_papers_run, so it can be checked from the database.
 async function epLabPapersCron(env) {
 	const db = env.DB;
+	const run = { at: nowStamp(), picked: 0, ok: 0, failed: 0, errors: [] };
 	try {
 		await db.prepare("CREATE TABLE IF NOT EXISTS lab_papers(record_id INTEGER PRIMARY KEY, author_id TEXT DEFAULT '', n INTEGER DEFAULT 0, data TEXT DEFAULT '{}', checked TEXT)").run();
 		const cutoff = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 19).replace("T", " ");
 		const { results } = await db.prepare(`SELECT r.*, l.dst AS uni_id FROM records r LEFT JOIN links l ON l.src = r.id AND l.rel = 'parent' LEFT JOIN lab_papers p ON p.record_id = r.id
        WHERE r.type = 'lab' AND r.private = 0 AND (COALESCE(json_extract(r.data,'$.lead_text.v'),'') != '' OR COALESCE(json_extract(r.data,'$.head_oa.v'),'') != '')
          AND (p.record_id IS NULL OR p.checked < ?) ORDER BY p.checked IS NOT NULL, p.checked, r.id LIMIT ?`).bind(cutoff, EP_LAB_PAPERS_PER_TICK).all();
+		run.picked = (results || []).length;
 		for (const raw of results || []) {
 			const lab = loadRow(raw);
 			const uni = raw.uni_id ? await db.prepare("SELECT id, name FROM records WHERE id=?").bind(raw.uni_id).first() : null;
 			try {
 				await epLabPapersOne(db, lab, uni);
+				run.ok++;
 			} catch (ex) {
-				console.log(`[lab-papers] ${lab.slug}: ${ex instanceof Error ? ex.message : String(ex)}`);
-				if (/OpenAlex 429/.test(String(ex))) break;
+				const msg = ex instanceof Error ? ex.message : String(ex);
+				run.failed++;
+				run.errors.push(`${lab.slug}: ${msg}`.slice(0, 200));
+				console.log(`[lab-papers] ${lab.slug}: ${msg}`);
 				// Failed labs are tried again in a day (the row looks 29 days old), so one bad lab can't hold up the queue.
 				const retry = new Date(Date.now() - 29 * 864e5).toISOString().slice(0, 19).replace("T", " ");
-				await db.prepare("INSERT INTO lab_papers(record_id, author_id, n, data, checked) VALUES(?, '', 0, '{}', ?) ON CONFLICT(record_id) DO UPDATE SET checked=excluded.checked").bind(lab.id, retry).run().catch(() => {});
+				await db.prepare("INSERT INTO lab_papers(record_id, author_id, n, data, checked) VALUES(?, '', 0, ?, ?) ON CONFLICT(record_id) DO UPDATE SET checked=excluded.checked").bind(lab.id, JSON.stringify({ error: msg.slice(0, 200) }), retry).run().catch(() => {});
+				if (/OpenAlex 429/.test(msg)) break;
 			}
 		}
 	} catch (ex) {
-		console.log("[lab-papers] " + (ex instanceof Error ? ex.message : String(ex)));
+		run.errors.push((ex instanceof Error ? ex.message : String(ex)).slice(0, 200));
+		console.log("[lab-papers] " + run.errors[run.errors.length - 1]);
 	}
+	await db.prepare("INSERT INTO settings(key, value) VALUES('lab_papers_run', ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(JSON.stringify(run)).run().catch(() => {});
+	return run;
 }
+api.post("/admin/lab-papers/run", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	return c.json(await epLabPapersCron(c.env));
+});
 // epAutoNews: admin "Track" toggle per organisation (table auto_news). A daily job reads the enabled ones.
 var EP_AUTONEWS_TYPES = [
 	"company",
@@ -24192,9 +24207,13 @@ var worker_entry_default = {
 		return res;
 	},
 	async scheduled(event, env, ctx) {
+		if (event.cron === "35 * * * *") {
+			ctx.waitUntil(epLabPapersCron(env));
+			return;
+		}
 		ctx.waitUntil(epDigestCron(env));
 		ctx.waitUntil(epAutoNewsCron(env));
-		ctx.waitUntil(epSeedCron(env).then(() => epBannerCron(env)).then(() => epLabPapersCron(env)));
+		ctx.waitUntil(epSeedCron(env).then(() => epBannerCron(env)));
 	}
 };
 export { LiveHub, app, worker_entry_default as default };

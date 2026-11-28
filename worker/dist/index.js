@@ -12,6 +12,7 @@ import { EP_SEED_ORG_DIRECTORY_4_2026_11 } from "./assets/seed-org-directory-4-2
 import { EP_SEED_ORG_DIRECTORY_5_2026_11 } from "./assets/seed-org-directory-5-2026-11.js";
 import { EP_SEED_CATALOGUE_COMPONENTS_2026_11 } from "./assets/seed-catalogue-components-2026-11.js";
 import { EP_SEED_STUDY_2026_11 } from "./assets/seed-study-2026-11.js";
+import { EP_SEED_LABS_2026_11 } from "./assets/seed-labs-2026-11.js";
 import { EP_SEED_ORG_ENRICHMENT_1_2026_11 } from "./assets/seed-org-enrichment-1-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
@@ -3726,8 +3727,7 @@ function categoryKey(rec) {
 		Misc: "misc",
 		Automotive: "automotive",
 		"Tool changer": "tool_changer",
-		"Other component": "other_component",
-		"Research lab": "research_lab"
+		"Other component": "other_component"
 	}[s] || s.toLowerCase().replace(/\s+/g, "_") || "misc";
 }
 function fmtValue(v) {
@@ -7026,9 +7026,20 @@ if (TYPES.product && !TYPES.product.fields.some((f) => f.key === "av_kind")) {
 	const ri = TYPES.product.fields.findIndex((f) => f.key === "regions");
 	TYPES.product.fields.splice(ri < 0 ? TYPES.product.fields.length : ri + 1, 0, { key: "cities", label: "Operating in", kind: "tags" });
 }
-// epStudy: research lab fields, editable like the other product fields.
-if (TYPES.product && !TYPES.product.fields.some((f) => f.key === "lab_focus")) {
-	TYPES.product.fields.splice(TYPES.product.fields.findIndex((f) => f.key === "misc_kind") + 1, 0, { key: "lab_focus", label: "Research focus", kind: "tags" }, { key: "lab_url", label: "Lab website", kind: "url" });
+// epAcademia: a research lab is its own record type "lab" (was "Research group"), linked to its university with
+// "parent". Head = lead_text; head_oa = the head's OpenAlex author id, set by epLabPapersCron (admins can correct it).
+if (TYPES.lab) {
+	TYPES.lab.label = "Research lab";
+	for (const f of TYPES.lab.fields) {
+		if (f.key === "lead_text") f.label = "Head";
+		if (f.key === "focus") {
+			f.label = "Research areas";
+			f.kind = "tags";
+		}
+		if (f.key === "members") f.label = "Members";
+	}
+	if (!TYPES.lab.fields.some((f) => f.key === "head_oa")) TYPES.lab.fields.splice(TYPES.lab.fields.findIndex((f) => f.key === "lead_text") + 1, 0, { key: "head_oa", label: "Head's OpenAlex ID", kind: "text" });
+	for (const r of TYPES.lab.relations || []) if (r.key === "parent") r.label = "University";
 }
 async function editPayload(c, slug, tkey) {
 	const db = c.env.DB;
@@ -16923,31 +16934,6 @@ function epViewsExtra(V) {
 	return V;
 }
 epViewsExtra(VIEWS);
-// epStudy: the Research lab view (Catalogue > Components > Research labs). A lab's "maker" link is its university.
-function epViewsLabs(V) {
-	const m = V.misc;
-	if (!m || V.research_lab) return V;
-	const fields = [
-		m.fields.find((f) => f.key === "category"),
-		{ key: "lab_focus", label: "Research focus", kind: "tags", group: "General", private: false, unit: "" },
-		{ key: "lab_url", label: "Lab website", kind: "url", group: "General", private: false, unit: "" },
-		...m.fields.filter((f) => f.group === "image")
-	].filter(Boolean);
-	const fmap = { ...m.fmap, lab_focus: { label: "Research focus", kind: "tags", unit: "" }, lab_url: { label: "Lab website", kind: "url", unit: "" } };
-	V.research_lab = {
-		...m,
-		label: "Research lab",
-		plural: "Research labs",
-		fields,
-		fmap,
-		rmap: { ...m.rmap, maker: { label: "University" } },
-		facets: ["rel:maker", "maker_country", "lab_focus"],
-		columns: ["rel:maker", "maker_country", "lab_focus"],
-		card_specs: ["lab_focus"]
-	};
-	return V;
-}
-epViewsLabs(VIEWS);
 function phModel(rec, cls = "", via) {
 	if (via) return phOf({
 		slug: via.slug,
@@ -17192,7 +17178,6 @@ async function homePayload(db, filter, original, before) {
 }
 function listSubnav(tkey, extra) {
 	const cat = HW_CAT[tkey];
-	if (cat && cat.tab === "labs") return { subnav: [] };
 	if (cat) {
 		const cats = HW_CATEGORIES.filter((c) => c.tab === cat.tab);
 		if (cat.tab === "hardware") {
@@ -17391,7 +17376,7 @@ async function listPayload(db, tkey, kind = "", when = "", before = "") {
 	const info = hw ? {
 		label: hw.label,
 		plural: hw.plural,
-		section: hw.tab === "robots" ? "Robots" : hw.tab === "components" ? "Components" : hw.tab === "labs" ? "Study" : "Hardware"
+		section: hw.tab === "robots" ? "Robots" : hw.tab === "components" ? "Components" : "Hardware"
 	} : {
 		label: TYPE_LABELS[typeKey]?.label || t?.label || tkey,
 		plural: TYPE_LABELS[typeKey]?.plural || t?.plural || tkey,
@@ -17684,7 +17669,8 @@ async function orgsPayload(db, group = "", asMap = false) {
          AND ((r.type = 'product' AND l.rel = 'maker') OR (r.type = 'post' AND l.rel = 'about'))`).bind(JSON.stringify(epIds)).all().catch(() => ({ results: [] })) : null,
 		epWantMap ? db.prepare("SELECT company_id AS id, COUNT(*) AS n FROM follows GROUP BY company_id").all().catch(() => ({ results: [] })) : null
 	]);
-	const cards = recs.map((r) => toOrgCard(r, counts.get(r.id) || {}));
+	// Universities are listed on the Academia page (epAcademia), not here.
+	const cards = recs.map((r) => toOrgCard(r, counts.get(r.id) || {})).filter((c) => !c.roles.includes("University"));
 	const byRole = (roles) => cards.filter((c) => c.roles.some((r) => roles.includes(r)));
 	const groups = ORG_GROUPS.map((g) => {
 		const items = byRole(g.roles).slice().sort((a, b) => b.out - a.out || a.name.localeCompare(b.name));
@@ -17739,6 +17725,7 @@ async function orgsPayload(db, group = "", asMap = false) {
 			for (const f of results || []) fans.set(Number(f.id), Number(f.n) || 0);
 		} catch {}
 		for (const rec of recs) {
+			if (!cardById.has(rec.id)) continue;
 			const rows = locationRows(rec).filter((r) => r.lat != null);
 			if (!rows.length) continue;
 			const focus = asStringList(fieldVal(rec.data, "focus"));
@@ -21177,8 +21164,7 @@ var EP_CAT_TAGS = [
 	{ key: "software", label: "Software" }
 ];
 async function epCatalogue(db) {
-	// Research labs (tab "labs") are products too, but they are listed on the Study page, not here (epStudy).
-	const recs = (await allPublic(db, "SELECT * FROM records WHERE type IN ('product','model','benchmark','software') AND private = 0 ORDER BY name COLLATE NOCASE")).filter((r) => r.type !== "product" || HW_CAT[categoryKey(r)]?.tab !== "labs");
+	const recs = await allPublic(db, "SELECT * FROM records WHERE type IN ('product','model','benchmark','software') AND private = 0 ORDER BY name COLLATE NOCASE");
 	const { outgoing } = await linksFor(db, recs.map((r) => r.id));
 	const relOf = (r) => {
 		const l = outgoing.get(r.id) || {};
@@ -21259,27 +21245,59 @@ async function epCatalogue(db) {
 	};
 }
 api.get("/catalogue", async (c) => c.json(await epCatalogue(c.env.DB)));
-// epStudy: the Study page (/study) ranks universities for robotics from two public sources stored on each university
-// organisation: rank_csr (CSRankings robotics: ICRA, IROS, RSS, adjusted paper count, with faculty count) and
-// rank_qs_mech (QS World University Rankings by Subject, Mechanical, Aeronautical & Manufacturing Engineering). The
-// page mixes them with weights per degree level (EP_STUDY_W). Labs are Catalogue products of kind Research lab whose
-// "maker" link is the university. Data comes from seed-study-2026-11.js; admins can edit the fields like any other.
+// epAcademia: the Academia page (/academia, was /study). It lists every university (organisations with the role
+// University, which the Organisations page leaves out) and their research labs (records of type "lab" whose "parent" is
+// the university). Universities are ranked for robotics from two public sources stored on each one: rank_csr
+// (CSRankings robotics: ICRA, IROS, RSS, adjusted paper count, with faculty count) and rank_qs_mech (QS World University
+// Rankings by Subject, Mechanical, Aeronautical & Manufacturing Engineering), mixed with weights per degree level
+// (EP_STUDY_W). Universities with neither score are listed after the ranked ones. Data comes from seed-study-2026-11.js
+// and seed-labs-2026-11.js; admins can edit the fields like any other.
 var EP_STUDY_W = {
 	bachelor: { r: 0.25, q: 0.75 },
 	master: { r: 0.5, q: 0.5 },
 	phd: { r: 0.75, q: 0.25 }
 };
-async function epStudy(db) {
-	const [unis, labs] = await Promise.all([
-		allPublic(db, "SELECT * FROM records WHERE type IN ('company','university','lab') AND private = 0 AND (json_extract(data,'$.rank_csr.v') IS NOT NULL OR json_extract(data,'$.rank_qs_mech.v') IS NOT NULL)"),
-		db.prepare("SELECT r.*, l.dst AS uni_id FROM records r JOIN links l ON l.src = r.id AND l.rel = 'maker' WHERE r.type = 'product' AND r.private = 0 AND json_extract(r.data,'$.category.v') = 'Research lab' ORDER BY r.name COLLATE NOCASE").all().then((x) => (x.results || []).map((r) => ({ ...loadRow(r), uni_id: Number(r.uni_id) })))
+async function epLabPapersMap(db) {
+	try {
+		const { results } = await db.prepare("SELECT record_id, n FROM lab_papers").all();
+		return new Map((results || []).map((r) => [Number(r.record_id), Number(r.n) || 0]));
+	} catch {
+		return new Map();
+	}
+}
+async function epAcademia(db) {
+	const [unis, labs, pn] = await Promise.all([
+		allPublic(db, "SELECT * FROM records WHERE type IN ('company','university') AND private = 0 AND (type = 'university' OR json_extract(data,'$.roles') LIKE '%\"University\"%' OR json_extract(data,'$.rank_csr.v') IS NOT NULL OR json_extract(data,'$.rank_qs_mech.v') IS NOT NULL) ORDER BY name COLLATE NOCASE"),
+		db.prepare("SELECT r.*, l.dst AS uni_id FROM records r LEFT JOIN links l ON l.src = r.id AND l.rel = 'parent' WHERE r.type = 'lab' AND r.private = 0 ORDER BY r.name COLLATE NOCASE").all().then((x) => (x.results || []).map((r) => ({ ...loadRow(r), uni_id: Number(r.uni_id) || 0 }))),
+		epLabPapersMap(db)
 	]);
+	const uniById = new Map(unis.map((u) => [Number(u.id), u]));
 	const byUni = new Map();
+	const labList = [];
 	for (const l of labs) {
 		const k = Number(l.uni_id);
-		const list = byUni.get(k) || [];
-		list.push({ slug: l.slug, name: l.name, href: `/r/${l.slug}`, summary: l.summary || "", focus: [].concat(fieldVal(l.data, "lab_focus") || []).slice(0, 4), url: fieldStr(l.data, "lab_url") });
-		byUni.set(k, list);
+		const u = uniById.get(k);
+		const item = {
+			id: l.id,
+			slug: l.slug,
+			name: l.name,
+			href: `/r/${l.slug}`,
+			summary: l.summary || "",
+			focus: asStringList(fieldVal(l.data, "focus")).slice(0, 6),
+			head: fieldStr(l.data, "lead_text"),
+			url: fieldStr(l.data, "website"),
+			papers: pn.get(Number(l.id)) || 0,
+			uni: u ? { slug: u.slug, name: u.name, href: `/r/${u.slug}` } : null,
+			country: fieldStr(l.data, "country") || (u ? fieldStr(u.data, "country") : ""),
+			city: fieldStr(l.data, "city") || (u ? fieldStr(u.data, "city") : ""),
+			ph: phModel(l, "av")
+		};
+		labList.push(item);
+		if (u) {
+			const list = byUni.get(k) || [];
+			list.push({ slug: item.slug, name: item.name, href: item.href, summary: item.summary, focus: item.focus.slice(0, 4), head: item.head });
+			byUni.set(k, list);
+		}
 	}
 	const num = (v) => (typeof v === "number" ? v : Number(v));
 	const max = Math.max(1, ...unis.map((u) => num(fieldVal(u.data, "rank_csr")) || 0));
@@ -21299,6 +21317,7 @@ async function epStudy(db) {
 			ph: phModel(u, "av"),
 			csr: score ? { score: Math.round(score * 10) / 10, faculty: num(cs.faculty) || 0, src: cs.src || "" } : null,
 			qs: qr ? { rank: qr, src: qs.src || "" } : null,
+			ranked: Boolean(score || qr),
 			r: Math.round((score / max) * 1000) / 10,
 			q: qr && qr <= 100 ? 101 - qr : 0,
 			labs: byUni.get(Number(u.id)) || []
@@ -21306,14 +21325,154 @@ async function epStudy(db) {
 	});
 	const pos = items.filter((i) => i.csr).sort((a, b) => b.csr.score - a.csr.score);
 	pos.forEach((i, n) => (i.csr.pos = n + 1));
+	const areas = {};
+	for (const l of labList) for (const f of l.focus) areas[f] = (areas[f] || 0) + 1;
 	return {
 		weights: EP_STUDY_W,
-		countries: [...new Set(items.map((i) => i.country).filter(Boolean))].sort(),
-		labs: labs.length,
+		countries: [...new Set(items.map((i) => i.country).concat(labList.map((l) => l.country)).filter(Boolean))].sort(),
+		areas: Object.entries(areas).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([k, n]) => ({ k, n })),
+		labs: labList.length,
+		lab_items: labList,
 		items
 	};
 }
-api.get("/study", async (c) => c.json(await epStudy(c.env.DB)));
+api.get("/academia", async (c) => c.json(await epAcademia(c.env.DB)));
+api.get("/study", async (c) => c.json(await epAcademia(c.env.DB)));
+// epLabExtra: what a research lab's page needs beyond the record: its university, the other labs there, and the
+// head's papers from OpenAlex (table lab_papers, filled by epLabPapersCron).
+async function epLabExtra(db, rec, out) {
+	const uniLink = (out.parent || [])[0];
+	const [uni, sibs, pp] = await Promise.all([
+		uniLink ? db.prepare("SELECT * FROM records WHERE id=? AND private=0").bind(uniLink.id).first().then((r) => (r ? loadRow(r) : null)) : null,
+		uniLink ? db.prepare("SELECT r.* FROM records r JOIN links l ON l.src = r.id AND l.rel = 'parent' WHERE l.dst = ? AND r.type = 'lab' AND r.private = 0 AND r.id != ? ORDER BY r.name COLLATE NOCASE LIMIT 24").bind(uniLink.id, rec.id).all().then((x) => (x.results || []).map(loadRow)) : [],
+		db.prepare("SELECT * FROM lab_papers WHERE record_id=?").bind(rec.id).first().catch(() => null)
+	]);
+	let papers = null;
+	if (pp && pp.data) {
+		try {
+			papers = { ...JSON.parse(pp.data), checked: pp.checked || "" };
+		} catch {}
+	}
+	const cs = uni?.data?.rank_csr || {};
+	const qs = uni?.data?.rank_qs_mech || {};
+	return { lab: {
+		university: uni ? {
+			slug: uni.slug,
+			name: uni.name,
+			href: `/r/${uni.slug}`,
+			summary: uni.summary || "",
+			country: fieldStr(uni.data, "country"),
+			city: fieldStr(uni.data, "city"),
+			website: fieldStr(uni.data, "website"),
+			ph: phModel(uni, "av"),
+			qs: Number(qs.v) || null,
+			csr: Number(cs.v) || null
+		} : null,
+		siblings: sibs.map((l) => ({ slug: l.slug, name: l.name, href: `/r/${l.slug}`, summary: l.summary || "", head: fieldStr(l.data, "lead_text"), focus: asStringList(fieldVal(l.data, "focus")).slice(0, 3) })),
+		papers
+	} };
+}
+// epLabPapersCron: papers for each research lab, taken from OpenAlex (openalex.org, open scholarly data) for the lab's
+// head. The head is found by name among OpenAlex authors whose institutions match the lab's university (or taken from
+// head_oa when an admin set it). Stored per lab in lab_papers: the author, the most recent and the most cited journal
+// and conference papers. A few labs per hourly run; each lab is checked again after 30 days.
+var EP_LAB_PAPERS_PER_TICK = 8;
+var EP_OA = "https://api.openalex.org";
+var EP_OA_ALIASES = {
+	epfl: ["ecole polytechnique federale de lausanne"],
+	kaist: ["korea advanced institute of science and technology"],
+	hkust: ["hong kong university of science and technology"],
+	"university of california, los angeles": ["ucla"],
+	"uc san diego": ["university of california, san diego"],
+	"tu darmstadt": ["technical university of darmstadt", "technische universitat darmstadt"],
+	"tu delft": ["delft university of technology"],
+	"technische universitat berlin": ["technical university of berlin"],
+	"eth zurich": ["eth zurich", "swiss federal institute of technology"],
+	"kth royal institute of technology": ["kth royal institute of technology", "royal institute of technology"],
+	"czech technical university in prague": ["czech technical university in prague"],
+	"the chinese university of hong kong": ["chinese university of hong kong"],
+	"university of tokyo": ["the university of tokyo", "university of tokyo"]
+};
+function epOaNorm(s) {
+	return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/^the /, "").replace(/\s+/g, " ").trim();
+}
+function epOaInstMatch(names, uniName) {
+	const u = epOaNorm(uniName);
+	const want = [u, ...(EP_OA_ALIASES[u] || [])].map(epOaNorm);
+	return names.some((n0) => {
+		const n = epOaNorm(n0);
+		return want.some((w) => n === w || (w.length > 8 && (n.includes(w) || w.includes(n) && n.length > 12)));
+	});
+}
+async function epOaGet(path) {
+	const res = await fetch(EP_OA + path, { headers: { "User-Agent": "embodiment.place (research lab pages)", Accept: "application/json" } });
+	if (!res.ok) throw new Error(`OpenAlex ${res.status}`);
+	return res.json();
+}
+function epOaWork(w) {
+	const loc = w.primary_location || {};
+	const authors = (w.authorships || []).map((a) => a?.author?.display_name).filter(Boolean);
+	return {
+		t: String(w.display_name || w.title || "").slice(0, 300),
+		y: w.publication_year || null,
+		d: w.publication_date || "",
+		v: loc.source?.display_name || "",
+		u: w.doi || loc.landing_page_url || w.id || "",
+		a: authors.slice(0, 6).join(", ") + (authors.length > 6 ? ", et al." : ""),
+		c: Number(w.cited_by_count) || 0
+	};
+}
+async function epLabPapersOne(db, lab, uni) {
+	const head = fieldStr(lab.data, "lead_text").split(/,| and /)[0].trim();
+	let aid = fieldStr(lab.data, "head_oa").replace(/^https?:\/\/openalex\.org\//, "").trim();
+	let author = null;
+	if (!aid && head && uni) {
+		const r = await epOaGet(`/authors?search=${encodeURIComponent(head)}&per-page=10`);
+		const hits = (r.results || []).filter((a) => {
+			const names = (a.last_known_institutions || []).map((x) => x.display_name).concat((a.affiliations || []).map((x) => x.institution?.display_name));
+			return epOaInstMatch(names, uni.name);
+		}).sort((a, b) => (b.works_count || 0) - (a.works_count || 0));
+		author = hits[0] || null;
+		aid = author ? String(author.id).replace(/^https?:\/\/openalex\.org\//, "") : "";
+	} else if (aid) author = await epOaGet(`/authors/${aid}`);
+	let data = { author: null, recent: [], cited: [] };
+	if (aid && author) {
+		const sel = "id,doi,display_name,publication_year,publication_date,primary_location,authorships,cited_by_count,type";
+		const f = `authorships.author.id:${aid},type:article`;
+		const [rec, cit] = await Promise.all([epOaGet(`/works?filter=${f}&sort=publication_date:desc&per-page=8&select=${sel}`), epOaGet(`/works?filter=${f}&sort=cited_by_count:desc&per-page=8&select=${sel}`)]);
+		data = {
+			author: { id: aid, name: author.display_name || head, url: `https://openalex.org/${aid}`, works: Number(author.works_count) || 0, cites: Number(author.cited_by_count) || 0 },
+			recent: (rec.results || []).map(epOaWork).filter((w) => w.t),
+			cited: (cit.results || []).map(epOaWork).filter((w) => w.t)
+		};
+	}
+	await db.prepare("INSERT INTO lab_papers(record_id, author_id, n, data, checked) VALUES(?,?,?,?,?) ON CONFLICT(record_id) DO UPDATE SET author_id=excluded.author_id, n=excluded.n, data=excluded.data, checked=excluded.checked").bind(lab.id, aid || "", data.author ? data.author.works : 0, JSON.stringify(data), nowStamp()).run();
+}
+async function epLabPapersCron(env) {
+	const db = env.DB;
+	try {
+		await db.prepare("CREATE TABLE IF NOT EXISTS lab_papers(record_id INTEGER PRIMARY KEY, author_id TEXT DEFAULT '', n INTEGER DEFAULT 0, data TEXT DEFAULT '{}', checked TEXT)").run();
+		const cutoff = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 19).replace("T", " ");
+		const { results } = await db.prepare(`SELECT r.*, l.dst AS uni_id FROM records r LEFT JOIN links l ON l.src = r.id AND l.rel = 'parent' LEFT JOIN lab_papers p ON p.record_id = r.id
+       WHERE r.type = 'lab' AND r.private = 0 AND (COALESCE(json_extract(r.data,'$.lead_text.v'),'') != '' OR COALESCE(json_extract(r.data,'$.head_oa.v'),'') != '')
+         AND (p.record_id IS NULL OR p.checked < ?) ORDER BY p.checked IS NOT NULL, p.checked, r.id LIMIT ?`).bind(cutoff, EP_LAB_PAPERS_PER_TICK).all();
+		for (const raw of results || []) {
+			const lab = loadRow(raw);
+			const uni = raw.uni_id ? await db.prepare("SELECT id, name FROM records WHERE id=?").bind(raw.uni_id).first() : null;
+			try {
+				await epLabPapersOne(db, lab, uni);
+			} catch (ex) {
+				console.log(`[lab-papers] ${lab.slug}: ${ex instanceof Error ? ex.message : String(ex)}`);
+				if (/OpenAlex 429/.test(String(ex))) break;
+				// Failed labs are tried again in a day (the row looks 29 days old), so one bad lab can't hold up the queue.
+				const retry = new Date(Date.now() - 29 * 864e5).toISOString().slice(0, 19).replace("T", " ");
+				await db.prepare("INSERT INTO lab_papers(record_id, author_id, n, data, checked) VALUES(?, '', 0, '{}', ?) ON CONFLICT(record_id) DO UPDATE SET checked=excluded.checked").bind(lab.id, retry).run().catch(() => {});
+			}
+		}
+	} catch (ex) {
+		console.log("[lab-papers] " + (ex instanceof Error ? ex.message : String(ex)));
+	}
+}
 // epAutoNews: admin "Track" toggle per organisation (table auto_news). A daily job reads the enabled ones.
 var EP_AUTONEWS_TYPES = [
 	"company",
@@ -22439,6 +22598,7 @@ api.get("/r/:slug", async (c) => {
 				can_remove_member: Boolean(auth.is_admin || can(auth, "claims"))
 			};
 		})() : {},
+		...rec.type === "lab" ? await epLabExtra(c.env.DB, rec, out) : {},
 		site_org: rec.slug === SITE_ORG_SLUG,
 		quote_on,
 		related: [...related.values()].map((r) => ({
@@ -23253,7 +23413,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11, EP_SEED_STUDY_2026_11, EP_SEED_ORG_ENRICHMENT_1_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11, EP_SEED_STUDY_2026_11, EP_SEED_ORG_ENRICHMENT_1_2026_11, EP_SEED_LABS_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -23481,26 +23641,46 @@ async function epSeedRun(db, seed) {
 			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(idj));
 		}
 	}
-	// Research labs (epStudy): { uni, uni_name, name, summary, data }. Each is a Catalogue product (kind Research lab) linked
-	// to its university with "maker", found by slug or, failing that, by name, so universities added by this seed's
-	// newOrgs (earlier in the same batch) work too. A lab is skipped when a product of the same name exists. Rows go in
-	// as JSON in chunks (json_each), three statements per chunk.
+	// Research labs (epAcademia): { uni, uni_name, name, summary, data }. Each is a record of type "lab" linked to its
+	// university with "parent", found by slug or, failing that, by name, so universities added by this seed's newOrgs
+	// (earlier in the same batch) work too. A lab is skipped when a lab of the same name exists. Rows go in as JSON in
+	// chunks (json_each), three statements per chunk. (The study seed's lab data uses lab_focus/lab_url; the labs seed
+	// that runs after it renames those to focus/website.)
 	let nLabs = 0;
 	if ((seed.labs || []).length) {
 		const rows = [];
+		const labNames = new Set(((await db.prepare("SELECT lower(name) AS n FROM records WHERE type IN ('lab','product')").all()).results || []).map((r) => String(r.n)));
 		for (const l of seed.labs) {
 			const lower = String(l.name || "").toLowerCase();
-			if (!lower || names.has(lower)) continue;
-			names.add(lower);
+			if (!lower || labNames.has(lower)) continue;
+			labNames.add(lower);
 			rows.push({ slug: slugFor(l.name), name: l.name, summary: l.summary || "", data: JSON.stringify(l.data || {}), uni: l.uni || "", uni_name: String(l.uni_name || "").toLowerCase() });
 		}
 		for (let i = 0; i < rows.length; i += 25) {
 			const chunk = JSON.stringify(rows.slice(i, i + 25));
-			stmts.push(db.prepare("INSERT INTO records(type,slug,name,summary,body,data,notes,private,watch,demo,created,updated,feed_at) SELECT 'product', json_extract(value,'$.slug'), json_extract(value,'$.name'), json_extract(value,'$.summary'), '', json_extract(value,'$.data'), ?, 0, 0, 0, ?, ?, ? FROM json_each(?)").bind(seed.note || "", ts, ts, ts.slice(0, 10), chunk));
-			stmts.push(db.prepare("INSERT INTO links(src,rel,dst,note,pos) SELECT p.id, 'maker', (SELECT o.id FROM records o WHERE o.type IN ('company','university','lab') AND (o.slug = json_extract(j.value,'$.uni') OR lower(o.name) = json_extract(j.value,'$.uni_name')) ORDER BY o.slug = json_extract(j.value,'$.uni') DESC LIMIT 1), '', 0 FROM json_each(?) j JOIN records p ON p.slug = json_extract(j.value,'$.slug') WHERE (SELECT o.id FROM records o WHERE o.type IN ('company','university','lab') AND (o.slug = json_extract(j.value,'$.uni') OR lower(o.name) = json_extract(j.value,'$.uni_name')) LIMIT 1) IS NOT NULL").bind(chunk));
+			stmts.push(db.prepare("INSERT INTO records(type,slug,name,summary,body,data,notes,private,watch,demo,created,updated,feed_at) SELECT 'lab', json_extract(value,'$.slug'), json_extract(value,'$.name'), json_extract(value,'$.summary'), '', json_extract(value,'$.data'), ?, 0, 0, 0, ?, ?, ? FROM json_each(?)").bind(seed.note || "", ts, ts, ts.slice(0, 10), chunk));
+			stmts.push(db.prepare("INSERT INTO links(src,rel,dst,note,pos) SELECT p.id, 'parent', (SELECT o.id FROM records o WHERE o.type IN ('company','university','lab') AND (o.slug = json_extract(j.value,'$.uni') OR lower(o.name) = json_extract(j.value,'$.uni_name')) ORDER BY o.slug = json_extract(j.value,'$.uni') DESC LIMIT 1), '', 0 FROM json_each(?) j JOIN records p ON p.slug = json_extract(j.value,'$.slug') WHERE (SELECT o.id FROM records o WHERE o.type IN ('company','university','lab') AND (o.slug = json_extract(j.value,'$.uni') OR lower(o.name) = json_extract(j.value,'$.uni_name')) LIMIT 1) IS NOT NULL").bind(chunk));
 			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE slug IN (SELECT json_extract(value,'$.slug') FROM json_each(?))").bind(chunk));
 		}
 		nLabs = rows.length;
+	}
+	// labMove (seed-labs-2026-11.js): research labs used to be Catalogue products (category Research lab, "maker" link to
+	// the university). This turns every such product, and any lab still using lab_focus/lab_url, into a "lab" record:
+	// focus and website take the old values, category goes, and the "maker" link becomes "parent". Then labHeads
+	// ({ name, head, src }) fills each lab's Head (lead_text) by lab name when it is empty.
+	if (seed.labMove) {
+		const ids = "SELECT id FROM records WHERE (type = 'product' AND json_extract(data,'$.category.v') = 'Research lab') OR (type = 'lab' AND json_extract(data,'$.lab_focus') IS NOT NULL)";
+		stmts.push(db.prepare(`UPDATE links SET rel = 'parent' WHERE rel = 'maker' AND src IN (${ids})`));
+		stmts.push(db.prepare(`UPDATE records SET type = 'lab', updated = ?, data = json_remove(json_set(data, '$.focus', json(COALESCE(json_extract(data,'$.lab_focus'), '{"v":[]}')), '$.website', json(COALESCE(json_extract(data,'$.lab_url'), '{"v":""}'))), '$.lab_focus', '$.lab_url', '$.category') WHERE id IN (${ids})`).bind(ts));
+	}
+	if ((seed.labHeads || []).length) {
+		const chunk = JSON.stringify(seed.labHeads.filter((h) => h.name && h.head).map((h) => ({ n: String(h.name).toLowerCase(), v: JSON.stringify({ v: h.head, src: h.src || "", asof: seed.asof || "" }) })));
+		stmts.push(db.prepare("UPDATE records SET updated = ?, data = json_set(data, '$.lead_text', json((SELECT json_extract(j.value,'$.v') FROM json_each(?2) j WHERE json_extract(j.value,'$.n') = lower(records.name)))) WHERE type = 'lab' AND COALESCE(json_extract(data,'$.lead_text.v'),'') = '' AND lower(name) IN (SELECT json_extract(value,'$.n') FROM json_each(?2))").bind(ts, chunk));
+		nLabs += seed.labHeads.length;
+	}
+	if (seed.labMove || (seed.labHeads || []).length) {
+		stmts.push(db.prepare("DELETE FROM fts WHERE rowid IN (SELECT id FROM records WHERE type = 'lab')"));
+		stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE type = 'lab'"));
 	}
 	if (stmts.length) await db.batch(stmts);
 	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles, labs: nLabs, funding: nFunding })).run();
@@ -23624,7 +23804,7 @@ async function epBannerCron(env) {
 // apart from walking, presence and chat) moves the cache generation in that data centre, so whoever edits sees the
 // change straight away. Changes from the hourly cron and from other data centres show within EP_EDGE_FRESH.
 // Responses carry x-ep-cache: hit | stale | miss.
-var EP_EDGE_ALL = /^\/api\/(home|ticker|board|orgs|catalogue|study|list\/[^/]+|page\/[^/]+)$/;
+var EP_EDGE_ALL = /^\/api\/(home|ticker|board|orgs|catalogue|study|academia|list\/[^/]+|page\/[^/]+)$/;
 var EP_EDGE_ANON = /^\/api\/r\/[^/]+$/;
 var EP_EDGE_NOISE = /^\/api\/(walk|online|room\/|event\/|live\/)/;
 var EP_EDGE_FRESH = 6e4;
@@ -23710,7 +23890,7 @@ var worker_entry_default = {
 	async scheduled(event, env, ctx) {
 		ctx.waitUntil(epDigestCron(env));
 		ctx.waitUntil(epAutoNewsCron(env));
-		ctx.waitUntil(epSeedCron(env).then(() => epBannerCron(env)));
+		ctx.waitUntil(epSeedCron(env).then(() => epBannerCron(env)).then(() => epLabPapersCron(env)));
 	}
 };
 export { LiveHub, app, worker_entry_default as default };

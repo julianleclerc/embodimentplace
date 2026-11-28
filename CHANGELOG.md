@@ -8,13 +8,14 @@ users, and where it lives in the code.
 
 Pick these up from here. When you start one, say so in your PR. When you finish one, move it to "Changes".
 
-- **Study: gaps to fill.** The 16 universities added for Study have no logos yet. RWTH Aachen, KU Leuven, DTU,
-  POSTECH and Xi'an Jiaotong have no labs listed. Several older organisations are really labs filed as universities
-  (CMU Robotics Institute, MIT CSAIL, BAIR, ETH RSL, Oxford Robotics Institute, GT IRIM, GRASP, Stanford AI Lab, Caltech
-  CAST, Toronto Robotics Institute, Edinburgh Centre for Robotics, TUM MIRMI, Texas Robotics, QUT Centre for Robotics);
-  they now overlap with the Research lab items and the new university organisations. Ask Julian before merging or
-  removing them. Seeds only fill empty fields, so a yearly ranking refresh needs a seed that overwrites
-  `rank_csr`/`rank_qs_mech`.
+- **Academia: gaps to fill.** The 16 universities added for Study have no logos yet. RWTH Aachen, KU Leuven, DTU,
+  POSTECH and Xi'an Jiaotong have no labs listed. 40 of the 117 labs have no head yet (mostly institutes and
+  departments, where the director changes or was unclear), so they get no papers; fill `lead_text` (or `head_oa`) to
+  add them. Several older organisations are really labs filed as universities (CMU Robotics Institute, MIT CSAIL, BAIR,
+  ETH RSL, Oxford Robotics Institute, GT IRIM, GRASP, Stanford AI Lab, Caltech CAST, Toronto Robotics Institute,
+  Edinburgh Centre for Robotics, TUM MIRMI, Texas Robotics, QUT Centre for Robotics); they now show in Academia as
+  unranked universities and overlap with the lab records. Ask Julian before merging or removing them. Seeds only fill
+  empty fields, so a yearly ranking refresh needs a seed that overwrites `rank_csr`/`rank_qs_mech`.
 - **Tracking agent needs its API key.** Tracking now uses a web-searching agent (Claude with web search). It runs
   only when the Worker has the secret `ANTHROPIC_API_KEY` (Cloudflare dashboard, Workers > embodiment-place >
   Settings > Variables and Secrets). Until then tracking falls back to RSS/Atom feeds, which most robotics companies
@@ -40,6 +41,23 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-28
 
+- **Study becomes Academia; research labs get their own record type and page; universities leave Organisations
+  (Julian).** Julian said a lab should be defined as a research lab, not a product, with a page showing its head,
+  information and papers; then asked to rename Study to Academia and show universities there instead of in
+  Organisations.
+  - Labs are records of type `lab` ("Research lab", the type was "Research group" and unused) linked to their university
+    by `parent`. Seed `seed-labs-2026-11.js` (next hourly cron) converts the 114 lab products (focus, website; the
+    `maker` link becomes `parent`), adds 3 labs the first seed skipped over duplicate names (EPFL Biorobotics Lab, ETH
+    Autonomous Systems Lab, Polimi AIRLab) and fills the head of 77 labs from their own websites.
+  - New lab page (`epLab`): head, university, place, website, About with research areas, Papers (most recent / most
+    cited, from OpenAlex via `epLabPapersCron` and table `lab_papers`), the university with its QS position, and the
+    other labs there. University pages get a Research labs section (`epUniLabs`).
+  - `/academia` (old `/study` redirects): Universities view (all 190, ranked first) and Research labs view with head,
+    research-area filter and country filter. `GET /api/academia` (`epAcademia`; `/api/study` kept).
+  - Universities are left out of `/orgs` (grid and map); their page links back to Academia.
+  - Removed the Research lab product category (`epHwLabs`, `epViewsLabs`, product fields `lab_focus`/`lab_url`) and its
+    Catalogue special cases. Bundle `index-31cd42f6.js`, CSS `index-72b24ef8.css`. Screenshots
+    `docs/screenshots/academia/`.
 - **Research labs move out of Catalogue Components into Study (Julian).** Julian said labs should be shown in Study and
   defined like a catalogue product, but they are not components. Labs keep the product record type, fields and page,
   with their own tab `labs` (`epHwLabs` in catalog.js and the bundle's category list) instead of `components`.

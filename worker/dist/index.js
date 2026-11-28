@@ -21253,14 +21253,10 @@ api.get("/catalogue", async (c) => c.json(await epCatalogue(c.env.DB)));
 // University, which the Organisations page leaves out) and their research labs (records of type "lab" whose "parent" is
 // the university). Universities are ranked for robotics from two public sources stored on each one: rank_csr
 // (CSRankings robotics: ICRA, IROS, RSS, adjusted paper count, with faculty count) and rank_qs_mech (QS World University
-// Rankings by Subject, Mechanical, Aeronautical & Manufacturing Engineering), mixed with weights per degree level
-// (EP_STUDY_W). Universities with neither score are listed after the ranked ones. Data comes from seed-study-2026-11.js
+// Rankings by Subject, Mechanical, Aeronautical & Manufacturing Engineering), averaged with equal weight (EP_STUDY_W;
+// Julian dropped the per-degree-level switch on 2026-11-28). Universities with neither score are listed after the ranked ones. Data comes from seed-study-2026-11.js
 // and seed-labs-2026-11.js; admins can edit the fields like any other.
-var EP_STUDY_W = {
-	bachelor: { r: 0.25, q: 0.75 },
-	master: { r: 0.5, q: 0.5 },
-	phd: { r: 0.75, q: 0.25 }
-};
+var EP_STUDY_W = { r: 0.5, q: 0.5 };
 async function epLabPapersMap(db) {
 	try {
 		const { results } = await db.prepare("SELECT record_id, n FROM lab_papers").all();
@@ -21332,7 +21328,7 @@ async function epAcademia(db) {
 	const areas = {};
 	for (const l of labList) for (const f of l.focus) areas[f] = (areas[f] || 0) + 1;
 	return {
-		weights: EP_STUDY_W,
+		weight: EP_STUDY_W,
 		countries: [...new Set(items.map((i) => i.country).concat(labList.map((l) => l.country)).filter(Boolean))].sort(),
 		areas: Object.entries(areas).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([k, n]) => ({ k, n })),
 		labs: labList.length,

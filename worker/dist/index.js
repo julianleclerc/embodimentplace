@@ -11,6 +11,7 @@ import { EP_SEED_ORG_DIRECTORY_3_2026_11 } from "./assets/seed-org-directory-3-2
 import { EP_SEED_ORG_DIRECTORY_4_2026_11 } from "./assets/seed-org-directory-4-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_5_2026_11 } from "./assets/seed-org-directory-5-2026-11.js";
 import { EP_SEED_CATALOGUE_COMPONENTS_2026_11 } from "./assets/seed-catalogue-components-2026-11.js";
+import { EP_SEED_STUDY_2026_11 } from "./assets/seed-study-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -3724,7 +3725,8 @@ function categoryKey(rec) {
 		Misc: "misc",
 		Automotive: "automotive",
 		"Tool changer": "tool_changer",
-		"Other component": "other_component"
+		"Other component": "other_component",
+		"Research lab": "research_lab"
 	}[s] || s.toLowerCase().replace(/\s+/g, "_") || "misc";
 }
 function fmtValue(v) {
@@ -7022,6 +7024,10 @@ if (TYPES.product && !TYPES.product.fields.some((f) => f.key === "av_kind")) {
 	TYPES.product.fields.splice(TYPES.product.fields.findIndex((f) => f.key === "misc_kind") + 1, 0, { key: "av_kind", label: "Kind", kind: "select" }, { key: "sae_level", label: "Autonomy level", kind: "select" });
 	const ri = TYPES.product.fields.findIndex((f) => f.key === "regions");
 	TYPES.product.fields.splice(ri < 0 ? TYPES.product.fields.length : ri + 1, 0, { key: "cities", label: "Operating in", kind: "tags" });
+}
+// epStudy: research lab fields, editable like the other product fields.
+if (TYPES.product && !TYPES.product.fields.some((f) => f.key === "lab_focus")) {
+	TYPES.product.fields.splice(TYPES.product.fields.findIndex((f) => f.key === "misc_kind") + 1, 0, { key: "lab_focus", label: "Research focus", kind: "tags" }, { key: "lab_url", label: "Lab website", kind: "url" });
 }
 async function editPayload(c, slug, tkey) {
 	const db = c.env.DB;
@@ -16916,6 +16922,31 @@ function epViewsExtra(V) {
 	return V;
 }
 epViewsExtra(VIEWS);
+// epStudy: the Research lab view (Catalogue > Components > Research labs). A lab's "maker" link is its university.
+function epViewsLabs(V) {
+	const m = V.misc;
+	if (!m || V.research_lab) return V;
+	const fields = [
+		m.fields.find((f) => f.key === "category"),
+		{ key: "lab_focus", label: "Research focus", kind: "tags", group: "General", private: false, unit: "" },
+		{ key: "lab_url", label: "Lab website", kind: "url", group: "General", private: false, unit: "" },
+		...m.fields.filter((f) => f.group === "image")
+	].filter(Boolean);
+	const fmap = { ...m.fmap, lab_focus: { label: "Research focus", kind: "tags", unit: "" }, lab_url: { label: "Lab website", kind: "url", unit: "" } };
+	V.research_lab = {
+		...m,
+		label: "Research lab",
+		plural: "Research labs",
+		fields,
+		fmap,
+		rmap: { ...m.rmap, maker: { label: "University" } },
+		facets: ["rel:maker", "maker_country", "lab_focus"],
+		columns: ["rel:maker", "maker_country", "lab_focus"],
+		card_specs: ["lab_focus"]
+	};
+	return V;
+}
+epViewsLabs(VIEWS);
 function phModel(rec, cls = "", via) {
 	if (via) return phOf({
 		slug: via.slug,
@@ -21216,7 +21247,7 @@ async function epCatalogue(db) {
 		};
 	});
 	// Kind sections on the page follow this order: biggest first, "other"/"misc" last.
-	const lastKey = (k) => (k.key === "other" || k.key === "misc" || k.key === "other_component" ? 1 : 0);
+	const lastKey = (k) => (k.key === "other" || k.key === "misc" || k.key === "other_component" ? 1 : k.key === "research_lab" ? 0.5 : 0);
 	for (const list of Object.values(kinds)) list.sort((x, y) => lastKey(x) - lastKey(y) || y.count - x.count || x.label.localeCompare(y.label));
 	return {
 		tags: EP_CAT_TAGS.map((t) => ({ ...t, count: items.filter((i) => i.tag === t.key).length })),
@@ -21225,6 +21256,61 @@ async function epCatalogue(db) {
 	};
 }
 api.get("/catalogue", async (c) => c.json(await epCatalogue(c.env.DB)));
+// epStudy: the Study page (/study) ranks universities for robotics from two public sources stored on each university
+// organisation: rank_csr (CSRankings robotics: ICRA, IROS, RSS, adjusted paper count, with faculty count) and
+// rank_qs_mech (QS World University Rankings by Subject, Mechanical, Aeronautical & Manufacturing Engineering). The
+// page mixes them with weights per degree level (EP_STUDY_W). Labs are Catalogue products of kind Research lab whose
+// "maker" link is the university. Data comes from seed-study-2026-11.js; admins can edit the fields like any other.
+var EP_STUDY_W = {
+	bachelor: { r: 0.25, q: 0.75 },
+	master: { r: 0.5, q: 0.5 },
+	phd: { r: 0.75, q: 0.25 }
+};
+async function epStudy(db) {
+	const [unis, labs] = await Promise.all([
+		allPublic(db, "SELECT * FROM records WHERE type IN ('company','university','lab') AND private = 0 AND (json_extract(data,'$.rank_csr.v') IS NOT NULL OR json_extract(data,'$.rank_qs_mech.v') IS NOT NULL)"),
+		db.prepare("SELECT r.*, l.dst AS uni_id FROM records r JOIN links l ON l.src = r.id AND l.rel = 'maker' WHERE r.type = 'product' AND r.private = 0 AND json_extract(r.data,'$.category.v') = 'Research lab' ORDER BY r.name COLLATE NOCASE").all().then((x) => (x.results || []).map((r) => ({ ...loadRow(r), uni_id: Number(r.uni_id) })))
+	]);
+	const byUni = new Map();
+	for (const l of labs) {
+		const k = Number(l.uni_id);
+		const list = byUni.get(k) || [];
+		list.push({ slug: l.slug, name: l.name, href: `/r/${l.slug}`, summary: l.summary || "", focus: [].concat(fieldVal(l.data, "lab_focus") || []).slice(0, 4), url: fieldStr(l.data, "lab_url") });
+		byUni.set(k, list);
+	}
+	const num = (v) => (typeof v === "number" ? v : Number(v));
+	const max = Math.max(1, ...unis.map((u) => num(fieldVal(u.data, "rank_csr")) || 0));
+	const items = unis.map((u) => {
+		const cs = u.data?.rank_csr || {};
+		const qs = u.data?.rank_qs_mech || {};
+		const score = num(cs.v) || 0;
+		const qr = num(qs.v) || 0;
+		return {
+			id: u.id,
+			slug: u.slug,
+			name: u.name,
+			href: `/r/${u.slug}`,
+			summary: u.summary || "",
+			country: fieldStr(u.data, "country"),
+			city: fieldStr(u.data, "city"),
+			ph: phModel(u, "av"),
+			csr: score ? { score: Math.round(score * 10) / 10, faculty: num(cs.faculty) || 0, src: cs.src || "" } : null,
+			qs: qr ? { rank: qr, src: qs.src || "" } : null,
+			r: Math.round((score / max) * 1000) / 10,
+			q: qr && qr <= 100 ? 101 - qr : 0,
+			labs: byUni.get(Number(u.id)) || []
+		};
+	});
+	const pos = items.filter((i) => i.csr).sort((a, b) => b.csr.score - a.csr.score);
+	pos.forEach((i, n) => (i.csr.pos = n + 1));
+	return {
+		weights: EP_STUDY_W,
+		countries: [...new Set(items.map((i) => i.country).filter(Boolean))].sort(),
+		labs: labs.length,
+		items
+	};
+}
+api.get("/study", async (c) => c.json(await epStudy(c.env.DB)));
 // epAutoNews: admin "Track" toggle per organisation (table auto_news). A daily job reads the enabled ones.
 var EP_AUTONEWS_TYPES = [
 	"company",
@@ -23164,7 +23250,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11, EP_SEED_STUDY_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -23347,9 +23433,30 @@ async function epSeedRun(db, seed) {
 			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(idj));
 		}
 	}
+	// Research labs (epStudy): { uni, uni_name, name, summary, data }. Each is a Catalogue product (kind Research lab) linked
+	// to its university with "maker", found by slug or, failing that, by name, so universities added by this seed's
+	// newOrgs (earlier in the same batch) work too. A lab is skipped when a product of the same name exists. Rows go in
+	// as JSON in chunks (json_each), three statements per chunk.
+	let nLabs = 0;
+	if ((seed.labs || []).length) {
+		const rows = [];
+		for (const l of seed.labs) {
+			const lower = String(l.name || "").toLowerCase();
+			if (!lower || names.has(lower)) continue;
+			names.add(lower);
+			rows.push({ slug: slugFor(l.name), name: l.name, summary: l.summary || "", data: JSON.stringify(l.data || {}), uni: l.uni || "", uni_name: String(l.uni_name || "").toLowerCase() });
+		}
+		for (let i = 0; i < rows.length; i += 25) {
+			const chunk = JSON.stringify(rows.slice(i, i + 25));
+			stmts.push(db.prepare("INSERT INTO records(type,slug,name,summary,body,data,notes,private,watch,demo,created,updated,feed_at) SELECT 'product', json_extract(value,'$.slug'), json_extract(value,'$.name'), json_extract(value,'$.summary'), '', json_extract(value,'$.data'), ?, 0, 0, 0, ?, ?, ? FROM json_each(?)").bind(seed.note || "", ts, ts, ts.slice(0, 10), chunk));
+			stmts.push(db.prepare("INSERT INTO links(src,rel,dst,note,pos) SELECT p.id, 'maker', (SELECT o.id FROM records o WHERE o.type IN ('company','university','lab') AND (o.slug = json_extract(j.value,'$.uni') OR lower(o.name) = json_extract(j.value,'$.uni_name')) ORDER BY o.slug = json_extract(j.value,'$.uni') DESC LIMIT 1), '', 0 FROM json_each(?) j JOIN records p ON p.slug = json_extract(j.value,'$.slug') WHERE (SELECT o.id FROM records o WHERE o.type IN ('company','university','lab') AND (o.slug = json_extract(j.value,'$.uni') OR lower(o.name) = json_extract(j.value,'$.uni_name')) LIMIT 1) IS NOT NULL").bind(chunk));
+			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE slug IN (SELECT json_extract(value,'$.slug') FROM json_each(?))").bind(chunk));
+		}
+		nLabs = rows.length;
+	}
 	if (stmts.length) await db.batch(stmts);
-	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles })).run();
-	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields, ${nOrgRoles} organisation roles`);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles, labs: nLabs })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields, ${nOrgRoles} organisation roles, ${nLabs} research labs`);
 }
 async function epSeedCron(env) {
 	try {
@@ -23469,7 +23576,7 @@ async function epBannerCron(env) {
 // apart from walking, presence and chat) moves the cache generation in that data centre, so whoever edits sees the
 // change straight away. Changes from the hourly cron and from other data centres show within EP_EDGE_FRESH.
 // Responses carry x-ep-cache: hit | stale | miss.
-var EP_EDGE_ALL = /^\/api\/(home|ticker|board|orgs|catalogue|list\/[^/]+|page\/[^/]+)$/;
+var EP_EDGE_ALL = /^\/api\/(home|ticker|board|orgs|catalogue|study|list\/[^/]+|page\/[^/]+)$/;
 var EP_EDGE_ANON = /^\/api\/r\/[^/]+$/;
 var EP_EDGE_NOISE = /^\/api\/(walk|online|room\/|event\/|live\/)/;
 var EP_EDGE_FRESH = 6e4;

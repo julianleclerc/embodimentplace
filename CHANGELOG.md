@@ -33,7 +33,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-28
 
-- **Organisation pages: products, funding rounds and news, first pass (PR #PRNUM).** Julian asked for products, funding
+- **Organisation pages: products, funding rounds and news, first pass (PR #88).** Julian asked for products, funding
   and news on the organisation pages, and for every product to have a photo of the robot from an official source.
   - New seed `org-enrichment-1-2026-11` (`worker/dist/assets/seed-org-enrichment-1-2026-11.js`, run once by
     `epSeedCron`): 1,191 dated news reposts for 619 organisations (each linking to the article, kind News, origin

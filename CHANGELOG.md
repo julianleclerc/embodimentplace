@@ -31,6 +31,16 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ## Changes
 
+### 2026-11-28
+
+- **Community visits, second round, and walking for logged-out visitors (Julian).** The visit bar above Place is
+  gone; the line under Place now reads "x members · x total visitors" (`epVisitFoot`, total = `visits.total`).
+  Anonymous walkers are fainter (`.epp-c.epp-anon` opacity .42, CSS block `epVisits2`). Logged-out visitors get the
+  Walk button instead of a login link and walk offline only: `Ie` sets `epAnonWalk` and goes Offline (`Le(!0)`) for
+  the walk, `epSeat` and `epNetPaint` respect it, no `/api/walk` posts are made, and the Say box is hidden for
+  `data-uid="0"` (CSS block `epAnonWalk`). Stopping the walk resumes the Online seat unless they chose Offline.
+  Screenshots `docs/screenshots/visits/v2-*`.
+
 ### 2026-11-27
 
 - **Admin > Database: browse every D1 table and export to Excel (PR #84).** Julian asked for an admin tab showing the

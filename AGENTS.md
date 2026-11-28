@@ -155,9 +155,12 @@ These are the decisions Julian has made so far. Don't undo them without asking.
   (QS by Subject 2025, Mechanical, Aeronautical & Manufacturing). The page scales research to the top university (100)
   and QS rank r to 101 - r (0 outside the top 100), then mixes them per degree level (`EP_STUDY_W`: bachelor's 25/75,
   master's 50/50, PhD 75/25; switch kept in `?level=`, country in `?country=`). The method and sources are explained on
-  the page; keep them in step with any change to the weights or sources. Research labs are a Catalogue
-  Components kind, **Research lab** (`research_lab`, fields `lab_focus`, `lab_url`), linked to their university by the
-  `maker` relation (shown as "University"); their page has Lab website / Study buttons instead of Compare and quotes.
+  the page; keep them in step with any change to the weights or sources. Research labs are catalogue products (same
+  record type, fields and page as robots and components), category **Research lab** (`research_lab`, fields
+  `lab_focus`, `lab_url`), linked to their university by the `maker` relation (shown as "University"). Julian decided
+  (2026-11-28) that a lab is not a component: labs have their own tab `labs` in `HW_CATEGORIES` and are shown only on
+  Study, never in the Catalogue list (`epCatalogue` filters them out, `/t/research_lab` redirects to `/study`). Their
+  page has Lab website / Study buttons instead of Compare and quotes, and no kind row.
 - List pages (Organisations, Catalogue, Events, Community) share one header: title, intro line (`.oblurb`), then the
   page switch (`.epchd .epvsw`), then search and one row of tags. On every list page (Organisations Grid/List/Map, Catalogue, Events, Community) the switch
   is a row of underline tabs (CSS `epPageTabs`; Catalogue's wrapper carries `.epchd-org` so it follows Organisations,

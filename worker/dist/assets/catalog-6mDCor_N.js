@@ -474,7 +474,8 @@ function epHwExtra(a) {
 	return a;
 }
 epHwExtra(HW_CATEGORIES);
-// epStudy: research labs are a Catalogue Components kind, linked to their university with the "maker" relation.
+// epStudy: research labs are Catalogue products (same record type, fields and page) with their own tab "labs", linked
+// to their university with the "maker" relation. They are shown on the Study page only, not in the Catalogue list.
 function epHwLabs(a) {
 	if (a.some((c) => c.key === "research_lab")) return a;
 	const i = a.findIndex((c) => c.key === "other_component");
@@ -482,7 +483,7 @@ function epHwLabs(a) {
 		key: "research_lab",
 		label: "Research lab",
 		plural: "Research labs",
-		tab: "components",
+		tab: "labs",
 		card_specs: ["lab_focus"],
 		columns: ["lab_focus", "lab_url"]
 	});

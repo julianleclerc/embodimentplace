@@ -11,6 +11,7 @@ import { EP_SEED_ORG_DIRECTORY_3_2026_11 } from "./assets/seed-org-directory-3-2
 import { EP_SEED_ORG_DIRECTORY_4_2026_11 } from "./assets/seed-org-directory-4-2026-11.js";
 import { EP_SEED_ORG_DIRECTORY_5_2026_11 } from "./assets/seed-org-directory-5-2026-11.js";
 import { EP_SEED_CATALOGUE_COMPONENTS_2026_11 } from "./assets/seed-catalogue-components-2026-11.js";
+import { EP_SEED_ORG_ENRICHMENT_1_2026_11 } from "./assets/seed-org-enrichment-1-2026-11.js";
 // node_modules/hono/dist/http-exception.js
 /**
 * `HTTPException` must be used when a fatal error such as authentication failure occurs.
@@ -23110,7 +23111,7 @@ app.route("/api", api);
 app.all("/login/debug", (c) => c.text("Not available", 404));
 // epAssetCache: the bundle files have their content hash in the name, so browsers may keep them for a year without
 // asking again (they used to re-check them on every page load). Logos and hats keep a day, then refresh in the
-// background. Logos are served as WebP (public/logos-webp, about 40% smaller) to browsers that accept it, falling back
+// background (product photos under public/products too). Logos are served as WebP (public/logos-webp, about 40% smaller) to browsers that accept it, falling back
 // to the PNG when there is no WebP copy yet (scripts/logos-webp.py makes them).
 var EP_HASHED_ASSET = /^\/assets\/index-[0-9a-f]{8}\.(js|css)$/;
 function epWithCache(res, cc, extra) {
@@ -23136,7 +23137,7 @@ async function epAssetFetch(c, path) {
 		const res = await c.env.ASSETS.fetch(req);
 		return res.status === 200 && /^image\//.test(res.headers.get("content-type") || "") ? epWithCache(res, "public, max-age=86400, stale-while-revalidate=604800", { vary: "Accept" }) : res;
 	}
-	if (/^\/static\/[^/]+\.(png|svg|webp)$/.test(path)) {
+	if (/^\/(static|products)\/[^/]+\.(png|svg|webp|jpg)$/.test(path)) {
 		const res = await c.env.ASSETS.fetch(req);
 		return res.status === 200 && /^image\//.test(res.headers.get("content-type") || "") ? epWithCache(res, "public, max-age=86400, stale-while-revalidate=604800") : res;
 	}
@@ -23164,7 +23165,7 @@ app.all("*", async (c) => {
 // there, and writes everything in one D1 batch (records, links, search index) so it stays inside the per-run query limit.
 // News comes out like a tracking repost (type post, kind News, origin Repost, about the organisation); robots are products
 // with a maker link.
-var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11];
+var EP_SEEDS = [EP_SEED_ROBOT_MAKERS_2026_11, EP_SEED_ROBOT_SPECS_2026_11, EP_SEED_ORG_OVERVIEWS_2026_11, EP_SEED_ORG_DIRECTORY_2026_11, EP_SEED_ORG_DIRECTORY_2_2026_11, EP_SEED_ORG_DIRECTORY_3_2026_11, EP_SEED_ORG_DIRECTORY_4_2026_11, EP_SEED_ORG_DIRECTORY_5_2026_11, EP_SEED_CATALOGUE_COMPONENTS_2026_11, EP_SEED_ORG_ENRICHMENT_1_2026_11];
 async function epSeedRun(db, seed) {
 	const key = "seed_" + seed.id;
 	if ((await db.prepare("SELECT value FROM settings WHERE key=?").bind(key).first())?.value) return;
@@ -23181,12 +23182,24 @@ async function epSeedRun(db, seed) {
 		slugs.add(s);
 		return s;
 	};
+	// New records (news, robots, funding) are queued and written in chunks of 25 as one JSON parameter each (records,
+	// then their links joined by slug, then their search rows), so a large seed stays at a few hundred statements.
+	const bulk = [];
 	const add = (type, name, summary, data, day, rels) => {
 		const slug = slugFor(name);
-		stmts.push(db.prepare("INSERT INTO records(type,slug,name,summary,body,data,notes,private,watch,demo,created,updated,feed_at) VALUES(?,?,?,?,'',?,?,0,0,0,?,?,?)").bind(type, slug, name, summary, JSON.stringify(data), seed.note || "", ts, ts, day || ts.slice(0, 10)));
 		let pos = 0;
-		for (const [rel, dst, note] of rels) if (orgs.has(dst)) stmts.push(db.prepare("INSERT INTO links(src,rel,dst,note,pos) SELECT id,?,?,?,? FROM records WHERE slug=?").bind(rel, dst, note, pos++, slug));
-		stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE slug=?").bind(slug));
+		const links = [];
+		for (const [rel, dst, note] of rels) if (orgs.has(dst)) links.push([rel, dst, note || "", pos++]);
+		bulk.push({ type, slug, name, summary: summary || "", data: JSON.stringify(data), day: day || ts.slice(0, 10), links });
+	};
+	const flushBulk = () => {
+		for (let i = 0; i < bulk.length; i += 25) {
+			const chunk = JSON.stringify(bulk.slice(i, i + 25));
+			stmts.push(db.prepare("INSERT INTO records(type,slug,name,summary,body,data,notes,private,watch,demo,created,updated,feed_at) SELECT json_extract(value,'$.type'), json_extract(value,'$.slug'), json_extract(value,'$.name'), json_extract(value,'$.summary'), '', json_extract(value,'$.data'), ?, 0, 0, 0, ?, ?, json_extract(value,'$.day') FROM json_each(?)").bind(seed.note || "", ts, ts, chunk));
+			stmts.push(db.prepare("INSERT INTO links(src,rel,dst,note,pos) SELECT r.id, json_extract(l.value,'$[0]'), json_extract(l.value,'$[1]'), json_extract(l.value,'$[2]'), json_extract(l.value,'$[3]') FROM json_each(?) j JOIN records r ON r.slug = json_extract(j.value,'$.slug'), json_each(json_extract(j.value,'$.links')) l").bind(chunk));
+			stmts.push(db.prepare("INSERT INTO fts(rowid,name,type,summary,body,extra) SELECT id,name,type,summary,body,data FROM records WHERE slug IN (SELECT json_extract(value,'$.slug') FROM json_each(?))").bind(chunk));
+		}
+		bulk.length = 0;
 	};
 	let nNews = 0, nRobots = 0;
 	for (const it of seed.news || []) {
@@ -23208,11 +23221,40 @@ async function epSeedRun(db, seed) {
 		add("product", r.name, r.summary, r.data, null, [["maker", Number(r.maker), ""]]);
 		nRobots++;
 	}
+	// Funding rounds: { org, name, summary, url, data: { date, round, amount_usd_m, valuation_usd_m }, investors: [org id] }.
+	// Insert-only: a round is skipped when the company already has a funding record with the same round name, date or
+	// amount, or any funding record cites the same source. Each new round is a funding record with a company link (and
+	// investor links to organisations already on the site), like one added in the editor.
+	let nFunding = 0;
+	if ((seed.funding || []).length) {
+		const have = ((await db.prepare("SELECT l.dst AS org, lower(COALESCE(json_extract(r.data,'$.round.v'),'')) AS rnd, COALESCE(json_extract(r.data,'$.date.v'),'') AS d, COALESCE(json_extract(r.data,'$.round.src'),json_extract(r.data,'$.date.src'),'') AS u, COALESCE(json_extract(r.data,'$.amount_usd_m.v'),'') AS a FROM records r JOIN links l ON l.src=r.id AND l.rel='company' WHERE r.type='funding'").all()).results || []);
+		const seen = new Set();
+		for (const h of have) {
+			if (h.rnd) seen.add(h.org + "|r|" + h.rnd);
+			if (h.d) seen.add(h.org + "|d|" + h.d);
+			if (h.u) seen.add("u|" + h.u);
+			if (h.a !== "" && h.a != null) seen.add(h.org + "|a|" + Number(h.a));
+		}
+		for (const f of seed.funding) {
+			const org = Number(f.org);
+			if (!orgs.has(org)) continue;
+			const rnd = String(f.data?.round?.v || "").toLowerCase(), d = String(f.data?.date?.v || ""), u = String(f.url || ""), a = f.data?.amount_usd_m?.v;
+			if ((rnd && seen.has(org + "|r|" + rnd)) || (d && seen.has(org + "|d|" + d)) || (u && seen.has("u|" + u)) || (a != null && seen.has(org + "|a|" + Number(a)))) continue;
+			if (a != null) seen.add(org + "|a|" + Number(a));
+			if (rnd) seen.add(org + "|r|" + rnd);
+			if (d) seen.add(org + "|d|" + d);
+			if (u) seen.add("u|" + u);
+			add("funding", f.name, f.summary || "", f.data || {}, d || null, [["company", org, ""], ...(f.investors || []).filter((id) => Number(id) !== org).map((id) => ["investors", Number(id), ""])]);
+			nFunding++;
+		}
+	}
+	flushBulk();
 	// Spec fills: { slug, data: { field: { v, src, asof } } }. Only fields that are still empty are written.
 	let nSpecs = 0;
 	if ((seed.specs || []).length) {
 		const rows = ((await db.prepare("SELECT id, slug, data FROM records WHERE type='product' AND slug IN (SELECT value FROM json_each(?))").bind(JSON.stringify(seed.specs.map((x) => x.slug))).all()).results || []);
 		const bySlug = new Map(rows.map((r) => [String(r.slug), r]));
+		const specIds = [], specUps = [];
 		for (const sp of seed.specs) {
 			const row = bySlug.get(sp.slug);
 			if (!row) continue;
@@ -23227,8 +23269,12 @@ async function epSeedRun(db, seed) {
 			}
 			if (!changed) continue;
 			nSpecs += changed;
-			stmts.push(db.prepare("UPDATE records SET data=?, updated=? WHERE id=?").bind(JSON.stringify(data), ts, row.id));
+			specIds.push(Number(row.id));
+			specUps.push(db.prepare("UPDATE records SET data=?, updated=? WHERE id=?").bind(JSON.stringify(data), ts, row.id));
 		}
+		// A revision of each changed product is saved first (same snapshot as an edit), so a fill can be undone.
+		if (specIds.length) stmts.push(db.prepare("INSERT INTO revisions(record_id,snapshot,at) SELECT id, json_object('id',id,'type',type,'slug',slug,'name',name,'summary',summary,'body',body,'data',data,'notes',notes,'private',private,'watch',watch,'demo',demo,'created',created,'updated',updated,'author_id',author_id,'feed_at',feed_at), ? FROM records WHERE id IN (SELECT value FROM json_each(?))").bind(ts, JSON.stringify(specIds)));
+		stmts.push(...specUps);
 	}
 	// Overview fills: { slug, summary, body }. Only organisations whose summary or body is still empty are touched, and
 	// only the empty field is written; existing text is never overwritten. Each changed record gets a revision first
@@ -23348,8 +23394,8 @@ async function epSeedRun(db, seed) {
 		}
 	}
 	if (stmts.length) await db.batch(stmts);
-	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles })).run();
-	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields, ${nOrgRoles} organisation roles`);
+	await db.prepare("INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(key, JSON.stringify({ at: ts, news: nNews, robots: nRobots, specs: nSpecs, orgs: nOrgs, new_orgs: nNewOrgs, org_fields: nOrgFields, org_roles: nOrgRoles, funding: nFunding })).run();
+	console.log(`[seed] ${seed.id}: ${nNews} news, ${nRobots} robots, ${nSpecs} specs, ${nOrgs} overviews, ${nNewOrgs} new organisations, ${nOrgFields} organisation fields, ${nOrgRoles} organisation roles, ${nFunding} funding rounds`);
 }
 async function epSeedCron(env) {
 	try {

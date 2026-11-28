@@ -1212,3 +1212,56 @@ main.wrap:not(:has(>.home2)){max-width:1296px;margin-left:auto;margin-right:auto
 .lab-sib:hover{border-color:var(--ink);text-decoration:none}
 .lab-sib span{font-size:.82rem}
 @media (max-width:720px){.epst-lab,.lab-uni{grid-template-columns:36px minmax(0,1fr) auto}.lab-sibs{grid-template-columns:1fr}}
+
+/* epSheet: Admin > Spreadsheet (epAdminSheet, epShCell) */
+.ep-sh{display:flex;flex-direction:column;gap:12px}
+.ep-sh.busy .ep-sh-wrap{opacity:.55}
+.ep-sh-xl{display:flex;gap:8px;flex-wrap:wrap}
+.ep-sh-tabs{margin:0}
+.ep-sh-tabs .cpill{background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.ep-sh-tabs small{opacity:.7}
+.ep-sh-bar{margin:0;align-items:center;flex-wrap:wrap}
+.ep-sh-bar .ep-ao-q{flex:1 1 220px;min-width:0}
+.ep-sh-bar select{font:inherit;font-size:.86rem;padding:7px 8px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);max-width:100%}
+.ep-sh-cols{position:relative}
+.ep-sh-cols summary{cursor:pointer;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;padding:9px 10px;border:1px solid var(--rule);background:var(--paper);list-style:none;white-space:nowrap}
+.ep-sh-cols summary::-webkit-details-marker{display:none}
+.ep-sh-colp{position:absolute;right:0;top:calc(100% + 4px);z-index:20;background:var(--paper);border:1px solid var(--rule);box-shadow:0 8px 24px rgba(0,0,0,.12);padding:10px 14px;width:min(340px,86vw);max-height:60vh;overflow:auto;display:flex;flex-direction:column;gap:4px}
+.ep-sh-colp p{margin:0 0 6px;font-size:.86rem}
+.ep-sh-colp label{display:flex;gap:8px;align-items:center;font-size:.88rem;cursor:pointer}
+.ep-sh-msg{margin:0;padding:8px 12px;border-left:3px solid var(--accent);background:var(--paper);font-size:.88rem}
+.ep-sh-msg.bad{border-left-color:#c0392b;color:#c0392b}
+.ep-sh-wrap{max-height:72vh}
+.ep-sh-tab{font-size:.84rem;width:max-content;min-width:100%}
+.ep-sh-tab th,.ep-sh-tab td{border-right:1px solid var(--hair)}
+.ep-sh-tab thead th{padding:0;z-index:2}
+.ep-sh-tab thead th button{all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:2px;padding:7px 10px;cursor:pointer;width:100%}
+.ep-sh-tab thead tr.ep-sh-grp th{padding:5px 10px;font-size:.6rem;letter-spacing:.08em;color:var(--muted);background:var(--paper);border-bottom:1px solid var(--hair);cursor:default;top:0}
+.ep-sh-tab thead tr:nth-child(2) th{top:23px}
+.ep-sh-hl{display:flex;gap:4px;align-items:center}
+.ep-sh-ro{font-style:normal;font-size:.6rem;opacity:.6}
+.ep-sh-fill{font-size:.62rem;color:var(--accent);letter-spacing:0}
+.ep-sh-fill.full{color:var(--muted)}
+.ep-sh-fill.none{color:#c0392b}
+table.data.ep-sh-tab tbody tr:hover{background:none;color:inherit}
+table.data.ep-sh-tab tbody tr:hover td{background:color-mix(in srgb,var(--ink) 4%,var(--paper))}
+.ep-sh-tab tbody tr.hid td{color:var(--muted)}
+.ep-sh-c{white-space:nowrap;max-width:280px;overflow:hidden;text-overflow:ellipsis;padding:7px 10px}
+.ep-sh-c.ed{cursor:text}
+.ep-sh-c.ed:hover{box-shadow:inset 0 0 0 1px var(--rule)}
+.ep-sh-c.ed:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.ep-sh-c.ro{color:var(--muted)}
+.ep-sh-c.k-number,.ep-sh-c.k-year{font-family:var(--mono);text-align:right}
+.ep-sh-c.busy{opacity:.5}
+.ep-sh-c.on{padding:0;overflow:visible;max-width:none;box-shadow:inset 0 0 0 2px var(--accent)}
+.ep-sh-c.on input,.ep-sh-c.on textarea{box-sizing:border-box;width:100%;min-width:220px;border:0;padding:7px 10px;font:inherit;background:var(--paper);color:var(--ink);outline:0}
+.ep-sh-c.on textarea{min-width:320px;resize:vertical;white-space:pre-wrap}
+.ep-sh-add{color:var(--muted);opacity:0}
+.ep-sh-c.ed:hover .ep-sh-add,.ep-sh-c.ed:focus .ep-sh-add{opacity:1}
+.ep-sh-bool{display:flex;justify-content:center;cursor:pointer}
+.ep-sh-first{position:sticky;left:0;z-index:1;background:var(--paper)}
+.ep-sh-tab thead th.ep-sh-first{z-index:3;background:var(--bg)}
+.ep-sh-tab td.ep-sh-first{font-weight:500;max-width:220px;box-shadow:1px 0 0 var(--rule),inset 0 -1px 0 var(--hair)}
+.ep-sh-open{margin-left:6px;text-decoration:none;color:var(--muted);font-size:.8rem}
+.ep-sh-open:hover{color:var(--accent)}
+@media (max-width:700px){.ep-sh-xl{width:100%}.ep-sh-xl .ep-db-xl{flex:1 1 auto}.ep-sh-wrap{max-height:68vh}.ep-sh-tab td.ep-sh-first{max-width:140px}.ep-sh-c{max-width:200px}.ep-sh-bar select{flex:1 1 auto}}

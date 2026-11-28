@@ -2674,6 +2674,10 @@ function adminBarLinks(auth, counts) {
 		href: "/admin/orgs",
 		label: "Organisations"
 	});
+	if (auth.is_admin) links.push({
+		href: "/admin/sheet",
+		label: "Spreadsheet"
+	});
 	if (can(auth, "review") || can(auth, "claims")) {
 		const n = counts?.review;
 		links.push({
@@ -22072,7 +22076,9 @@ api.post("/admin/orgs/:slug", async (c) => {
 		if (!addr) {
 			if (i >= 0) loc.splice(i, 1);
 		} else if (!cur || cur.address !== addr) {
-			const next = { kind: "HQ", address: addr };
+			// Geocode the new address so the organisation keeps its pin on the map.
+			const hit = await geocode(addr).catch(() => null);
+			const next = hit ? { kind: "HQ", address: addr, lat: hit.lat, lon: hit.lon } : { kind: "HQ", address: addr };
 			if (i >= 0) loc[i] = next;
 			else loc.unshift(next);
 		}
@@ -22095,6 +22101,304 @@ api.post("/admin/orgs/:slug", async (c) => {
 	}
 	const fresh = await c.env.DB.prepare(EP_AO_SQL + " AND r.id=?").bind(row.id).first();
 	return c.json({ ok: true, org: epAoRow(fresh, await epAoCounts(c.env.DB)) });
+});
+// epSheet: Admin > Spreadsheet (/admin/sheet). Every organisation, university or research lab as one row and every
+// field as one column, edited cell by cell straight into the record (saveRecord, so revisions, search and the edge
+// cache stay right), plus an Excel export. Columns come from the type's fields in TYPES, then any other data key the
+// records hold, then their links (read only; links are edited on the record's own editor).
+var EP_SH_TABS = {
+	orgs: { label: "Organisations", schema: "company" },
+	unis: { label: "Universities", schema: "university" },
+	labs: { label: "Research labs", schema: "lab" }
+};
+var EP_SH_ROLES = ["Robot maker", "Model lab", "Software developer", "Supplier", "Compute", "Integrator", "Entertainment", "University", "Research lab", "Investor", "Customer", "Media"];
+var EP_SH_STAGES = ["Pre-seed", "Seed", "Series A", "Series B", "Series C", "Series D+", "Public", "Acquired", "Closed", "Corporate"];
+var EP_SH_UNI = "(r.type = 'university' OR json_extract(r.data,'$.roles') LIKE '%\"University\"%')";
+var EP_SH_SKIP = ["locations", "image", "labs"];
+var EP_SH_LISTS = ["multi", "tags"];
+function epShWhere(tab) {
+	if (tab === "labs") return "r.type = 'lab'";
+	if (tab === "unis") return "r.type IN ('company','university') AND " + EP_SH_UNI;
+	return "r.type = 'company' AND NOT " + EP_SH_UNI;
+}
+function epShTabOf(row) {
+	if (row.type === "lab") return "labs";
+	if (row.type === "university") return "unis";
+	const roles = fieldAny(parseData(row.data), "roles");
+	return Array.isArray(roles) && roles.includes("University") ? "unis" : "orgs";
+}
+var EP_SH_LABELS = { hq: "HQ (old text field)", city: "City", rank_csr: "CSRankings robotics score", rank_qs_mech: "QS rank, Mechanical", faculty: "Robotics faculty", lead_text: "Head", head_oa: "Head's OpenAlex ID", members: "Members", focus: "Research areas" };
+function epShLabel(key) {
+	if (EP_SH_LABELS[key]) return EP_SH_LABELS[key];
+	const s = String(key).replace(/_/g, " ");
+	return s.charAt(0).toUpperCase() + s.slice(1);
+}
+function epShHq(d) {
+	const loc = Array.isArray(fieldAny(d, "locations")) ? fieldAny(d, "locations") : [];
+	const hq = loc.find((l) => l && l.kind === "HQ") || null;
+	const other = loc.filter((l) => l && l !== hq).map((l) => (l.kind ? l.kind + ": " : "") + String(l.address || l.city || "")).filter((s) => s.trim());
+	return { hq: hq ? String(hq.address || "") : "", offices: other.join("; ") };
+}
+// Kind of a data key that the type's fields don't describe, guessed from the values it holds.
+function epShGuess(vals) {
+	let num = 0, list = 0, obj = 0, any = 0;
+	for (const v of vals) {
+		if (v == null || v === "") continue;
+		any++;
+		if (Array.isArray(v)) v.every((x) => x == null || typeof x !== "object") ? list++ : obj++;
+		else if (typeof v === "object") obj++;
+		else if (typeof v === "number") num++;
+	}
+	if (obj) return "json";
+	if (list) return "multi";
+	if (any && num === any) return "number";
+	return "text";
+}
+function epShCols(tab, rows) {
+	const T = TYPES[EP_SH_TABS[tab].schema] || { fields: [], relations: [] };
+	const cols = [
+		{ key: "name", label: "Name", kind: "text", edit: true, group: "Record" },
+		{ key: "slug", label: "Slug", kind: "text", edit: false, group: "Record" },
+		{ key: "summary", label: "Summary", kind: "longtext", edit: true, group: "Record" },
+		{ key: "private", label: "Hidden", kind: "bool", edit: true, group: "Record" },
+		{ key: "image", label: "Logo", kind: "url", edit: true, group: "Record" },
+		{ key: "loc_hq", label: "HQ address", kind: "text", edit: true, group: "Location" },
+		{ key: "loc_other", label: "Other offices", kind: "text", edit: false, group: "Location" }
+	];
+	const seen = new Set(cols.map((c) => c.key));
+	for (const f of T.fields || []) {
+		if (seen.has(f.key) || f.kind === "locations") continue;
+		seen.add(f.key);
+		cols.push({ key: f.key, label: f.label || epShLabel(f.key), kind: f.kind || "text", edit: true, group: f.private ? "Private" : "Fields", private: !!f.private });
+	}
+	const extra = new Map();
+	for (const r of rows) for (const k of Object.keys(r.d)) if (!seen.has(k) && !EP_SH_SKIP.includes(k)) {
+		if (!extra.has(k)) extra.set(k, []);
+		extra.get(k).push(fieldAny(r.d, k));
+	}
+	for (const [k, vals] of [...extra.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))) {
+		const kind = epShGuess(vals);
+		cols.push({ key: k, label: epShLabel(k), kind, edit: kind !== "json", group: "Other data" });
+	}
+	return cols;
+}
+function epShVal(col, r) {
+	if (col.key === "name") return r.name;
+	if (col.key === "slug") return r.slug;
+	if (col.key === "summary") return r.summary;
+	if (col.key === "private") return r.private;
+	if (col.key === "loc_hq") return epShHq(r.d).hq;
+	if (col.key === "loc_other") return epShHq(r.d).offices;
+	const v = fieldAny(r.d, col.key);
+	if (v == null || v === "") return null;
+	if (col.kind === "json") return JSON.stringify(v);
+	if (EP_SH_LISTS.includes(col.kind)) return (Array.isArray(v) ? v : [v]).map((x) => typeof x === "object" ? JSON.stringify(x) : String(x)).filter(Boolean);
+	if (Array.isArray(v)) return v.map(String).join("; ");
+	if (typeof v === "object") return JSON.stringify(v);
+	return v;
+}
+function epShRowOut(cols, r) {
+	const cells = {};
+	for (const c of cols) if (!c.link) {
+		const v = epShVal(c, r);
+		if (v != null && v !== "" && !(Array.isArray(v) && !v.length)) cells[c.key] = v;
+	}
+	return { id: r.id, slug: r.slug, type: r.type, updated: r.updated, cells };
+}
+// Links in and out of each row, as columns "<relation>" (out) and "<type> (<relation>)" (in), names joined.
+async function epShLinks(db, ids, tab) {
+	const T = TYPES[EP_SH_TABS[tab].schema] || {};
+	const relLabel = Object.fromEntries((T.relations || []).map((x) => [x.key, x.label]));
+	const J = JSON.stringify(ids);
+	const [outQ, inQ] = await db.batch([
+		db.prepare("SELECT l.src AS me, l.rel, r.name FROM links l JOIN records r ON r.id=l.dst WHERE l.src IN (SELECT value FROM json_each(?1)) ORDER BY l.pos, r.name"),
+		db.prepare("SELECT l.dst AS me, l.rel, r.type, r.name FROM links l JOIN records r ON r.id=l.src WHERE l.dst IN (SELECT value FROM json_each(?1)) AND r.type NOT IN ('post','paper') ORDER BY r.name")
+	].map((s) => s.bind(J)));
+	const cols = new Map(), vals = new Map();
+	const add = (me, key, label, name) => {
+		if (!cols.has(key)) cols.set(key, { key, label, kind: "multi", edit: false, link: true, group: "Links" });
+		const m = vals.get(me) || {};
+		(m[key] = m[key] || []).push(String(name));
+		vals.set(me, m);
+	};
+	for (const x of outQ.results || []) add(Number(x.me), "out:" + x.rel, relLabel[x.rel] || epShLabel(x.rel), x.name);
+	const TL = { product: "Products", model: "Models", lab: "Research labs", company: "Organisations", university: "Universities", funding: "Funding rounds", deployment: "Deployments", event: "Events", datapack: "Data packs", person: "People", software: "Software" };
+	for (const x of inQ.results || []) add(Number(x.me), "in:" + x.type + ":" + x.rel, (TL[x.type] || epShLabel(x.type)) + " (" + x.rel.replace(/_/g, " ") + ")", x.name);
+	let posts = new Map();
+	try {
+		const rs = await db.prepare("SELECT l.dst AS me, COUNT(*) AS n FROM links l JOIN records r ON r.id=l.src WHERE l.dst IN (SELECT value FROM json_each(?1)) AND r.type IN ('post','paper') GROUP BY l.dst").bind(J).all();
+		for (const x of rs.results || []) posts.set(Number(x.me), Number(x.n));
+	} catch {}
+	const list = [...cols.values()].sort((a, b) => (a.key < b.key ? -1 : 1));
+	list.push({ key: "posts", label: "News and papers", kind: "number", edit: false, link: true, group: "Links" });
+	return { cols: list, vals, posts };
+}
+async function epShLoad(db, tab) {
+	const { results } = await db.prepare("SELECT r.id, r.type, r.slug, r.name, r.summary, r.data, r.private, r.updated FROM records r WHERE " + epShWhere(tab) + " ORDER BY r.name COLLATE NOCASE").all();
+	const rows = (results || []).map((r) => ({ id: Number(r.id), type: String(r.type), slug: String(r.slug), name: String(r.name), summary: String(r.summary || ""), private: Number(r.private || 0) ? 1 : 0, updated: r.updated ?? null, d: parseData(r.data) }));
+	const cols = epShCols(tab, rows);
+	const ln = rows.length ? await epShLinks(db, rows.map((r) => r.id), tab) : { cols: [], vals: new Map(), posts: new Map() };
+	cols.push(...ln.cols);
+	const out = rows.map((r) => {
+		const o = epShRowOut(cols, r);
+		Object.assign(o.cells, ln.vals.get(r.id) || {});
+		const n = ln.posts.get(r.id);
+		if (n) o.cells.posts = n;
+		return o;
+	});
+	return { cols, rows: out };
+}
+function epShOptions(cols, rows) {
+	const opts = {};
+	for (const c of cols) {
+		if (c.key === "roles") opts.roles = EP_SH_ROLES;
+		else if (c.key === "stage") opts.stage = EP_SH_STAGES;
+		else if (c.edit && (c.kind === "select" || EP_SH_LISTS.includes(c.kind) || c.key === "country" || c.key === "city")) {
+			const set = new Map();
+			for (const r of rows) for (const v of [].concat(r.cells[c.key] ?? [])) {
+				const s = String(v);
+				set.set(s, (set.get(s) || 0) + 1);
+			}
+			if (set.size) opts[c.key] = [...set.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 300).map((x) => x[0]);
+		}
+	}
+	return opts;
+}
+api.get("/admin/sheet", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const tab = EP_SH_TABS[c.req.query("tab")] ? c.req.query("tab") : "orgs";
+	const db = c.env.DB;
+	const [main, counts] = await Promise.all([epShLoad(db, tab), db.batch(Object.keys(EP_SH_TABS).map((k) => db.prepare("SELECT COUNT(*) AS n FROM records r WHERE " + epShWhere(k))))]);
+	const tabs = Object.keys(EP_SH_TABS).map((k, i) => ({ key: k, label: EP_SH_TABS[k].label, rows: Number(counts[i].results?.[0]?.n || 0) }));
+	return c.json({ tab, tabs, cols: main.cols, rows: main.rows, options: epShOptions(main.cols, main.rows) });
+});
+api.get("/admin/sheet/export", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const one = EP_SH_TABS[c.req.query("tab")] ? c.req.query("tab") : null;
+	const sheets = [];
+	for (const tab of one ? [one] : Object.keys(EP_SH_TABS)) {
+		const { cols, rows } = await epShLoad(c.env.DB, tab);
+		sheets.push({
+			name: EP_SH_TABS[tab].label,
+			cols: ["id", ...cols.map((x) => x.label)],
+			rows: rows.map((r) => [r.id, ...cols.map((x) => {
+				const v = r.cells[x.key];
+				if (v == null) return null;
+				if (x.kind === "bool") return v ? "yes" : "";
+				return Array.isArray(v) ? v.join("; ") : v;
+			})])
+		});
+	}
+	const day = (/* @__PURE__ */ new Date()).toISOString().slice(0, 10);
+	const file = "embodiment-place-" + (one ? one : "organisations-universities-labs") + "-" + day + ".xlsx";
+	return new Response(await epXlsx(sheets), { headers: {
+		"content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+		"content-disposition": "attachment; filename=\"" + file + "\"",
+		"cache-control": "no-store"
+	} });
+});
+// One cell: { key, value }. Lists come as arrays or text split on ";" or new lines. Empty clears the field.
+function epShParse(col, raw) {
+	const empty = raw == null || raw === "" || Array.isArray(raw) && !raw.length;
+	if (col.kind === "bool") return { v: raw === true || raw === 1 || /^(1|yes|true|y)$/i.test(String(raw ?? "").trim()) ? 1 : 0 };
+	if (empty) return { v: null };
+	if (EP_SH_LISTS.includes(col.kind)) {
+		const parts = (Array.isArray(raw) ? raw : String(raw).split(/[;\n]/)).map((x) => String(x).trim().slice(0, 120)).filter(Boolean);
+		const out = [];
+		for (const p of parts) {
+			let v = p;
+			if (col.key === "roles") {
+				v = EP_SH_ROLES.find((x) => x.toLowerCase() === p.toLowerCase());
+				if (!v) return { error: "\"" + p + "\" isn't a role. Roles: " + EP_SH_ROLES.join(", ") + "." };
+			}
+			if (!out.some((x) => x.toLowerCase() === v.toLowerCase())) out.push(v);
+		}
+		return { v: out.length ? out.slice(0, 40) : null };
+	}
+	let s = String(Array.isArray(raw) ? raw.join("; ") : raw).trim();
+	if (!s) return { v: null };
+	if (col.kind === "number" || col.kind === "year") {
+		const t = s.replace(/[\s,_]/g, "");
+		if (!/^-?\d+(\.\d+)?$/.test(t)) return { error: col.label + " must be a number." };
+		const n = Number(t);
+		if (col.kind === "year" && (!Number.isInteger(n) || n < 1000 || n > 2100)) return { error: col.label + " must be a year, like 2016." };
+		return { v: n };
+	}
+	if (col.kind === "url") {
+		if (col.key === "image" && s.startsWith("/")) return { v: s.slice(0, 500) };
+		if (!/^https?:\/\//i.test(s)) s = "https://" + s;
+		if (!/^https?:\/\/[^\s/]+\.[^\s]+/i.test(s)) return { error: col.label + " must be a web address." };
+		return { v: s.slice(0, 500) };
+	}
+	if (col.key === "stage") {
+		const v = EP_SH_STAGES.find((x) => x.toLowerCase() === s.toLowerCase());
+		if (!v) return { error: "Stage must be one of: " + EP_SH_STAGES.join(", ") + "." };
+		return { v };
+	}
+	return { v: s.slice(0, col.kind === "longtext" ? 4e3 : col.key === "summary" ? 300 : 500) };
+}
+api.post("/admin/sheet/:id", async (c) => {
+	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);
+	const db = c.env.DB;
+	const row = await db.prepare("SELECT * FROM records WHERE id=? AND type IN ('company','university','lab')").bind(Number(c.req.param("id"))).first();
+	if (!row) return c.json({ error: "Not found" }, 404);
+	let b = {};
+	try {
+		b = await c.req.json();
+	} catch {
+		return c.json({ error: "Bad request" }, 400);
+	}
+	const tab = epShTabOf(row);
+	const data = parseData(row.data);
+	const me = { id: Number(row.id), type: String(row.type), slug: String(row.slug), name: String(row.name), summary: String(row.summary || ""), private: Number(row.private || 0) ? 1 : 0, updated: row.updated ?? null, d: data };
+	const cols = epShCols(tab, [me]);
+	const key = String(b.key || "");
+	let col = cols.find((x) => x.key === key);
+	// A column of other data this record doesn't hold yet (or holds in another shape): take the sheet's kind.
+	const hint = ["number", "multi", "text"].includes(b.kind) ? b.kind : "text";
+	if (col && col.group === "Other data" && col.edit) col = { ...col, kind: hint };
+	if (!col && /^[a-z][a-z0-9_]{0,40}$/.test(key) && !EP_SH_SKIP.includes(key) && !["loc_hq", "loc_other", "posts", "name", "slug", "summary", "private"].includes(key)) col = { key, label: epShLabel(key), kind: hint, edit: true, group: "Other data" };
+	if (!col || !col.edit) return c.json({ error: "That column can't be edited here." }, 400);
+	const p = epShParse(col, b.value);
+	if (p.error) return c.json({ error: p.error }, 400);
+	let name = me.name, summary = me.summary, priv = me.private;
+	if (key === "name") {
+		if (!p.v) return c.json({ error: "Name is required." }, 400);
+		name = String(p.v).slice(0, 200);
+	} else if (key === "summary") summary = p.v == null ? "" : String(p.v);
+	else if (key === "private") priv = p.v;
+	else if (key === "loc_hq") {
+		const loc = Array.isArray(fieldAny(data, "locations")) ? [...fieldAny(data, "locations")] : [];
+		const i = loc.findIndex((l) => l && l.kind === "HQ");
+		const addr = p.v == null ? "" : String(p.v).slice(0, 200);
+		if (!addr) {
+			if (i >= 0) loc.splice(i, 1);
+		} else if (i < 0 || loc[i].address !== addr) {
+			// Geocode the new address so the organisation keeps its pin on the map.
+			const hit = await geocode(addr).catch(() => null);
+			const next = hit ? { kind: "HQ", address: addr, lat: hit.lat, lon: hit.lon } : { kind: "HQ", address: addr };
+			if (i >= 0) loc[i] = next;
+			else loc.unshift(next);
+		}
+		const keep = data.locations && typeof data.locations === "object" && !Array.isArray(data.locations) ? data.locations : {};
+		if (loc.length) data.locations = { ...keep, v: loc };
+		else delete data.locations;
+	} else if (p.v == null) delete data[key];
+	else {
+		const old = data[key] && typeof data[key] === "object" && !Array.isArray(data[key]) && "v" in data[key] ? data[key] : {};
+		if (JSON.stringify(old.v) !== JSON.stringify(p.v)) {
+			const keep = { ...old };
+			delete keep.src;
+			delete keep.asof;
+			data[key] = { ...keep, v: p.v };
+		}
+	}
+	await saveRecord(db, me.id, me.type, name, summary, String(row.body || ""), data, String(row.notes || ""), priv, Number(row.watch || 0), null);
+	const fresh = await db.prepare("SELECT id, type, slug, name, summary, data, private, updated FROM records WHERE id=?").bind(me.id).first();
+	const r2 = { id: me.id, type: String(fresh.type), slug: String(fresh.slug), name: String(fresh.name), summary: String(fresh.summary || ""), private: Number(fresh.private || 0) ? 1 : 0, updated: fresh.updated ?? null, d: parseData(fresh.data) };
+	const outCols = epShCols(tab, [r2]).map((x) => x.key === col.key ? col : x);
+	if (!outCols.some((x) => x.key === col.key)) outCols.push(col);
+	return c.json({ ok: true, row: epShRowOut(outCols, r2) });
 });
 api.get("/admin/site", async (c) => {
 	if (!c.get("auth").is_admin) return c.json({ error: "Not found" }, 404);

@@ -21382,6 +21382,9 @@ async function epLabExtra(db, rec, out) {
 // and conference papers. A few labs per hourly run; each lab is checked again after 30 days.
 var EP_LAB_PAPERS_PER_TICK = 8;
 var EP_OA = "https://api.openalex.org";
+// OpenAlex answered 429 to the Worker's first unauthenticated request (2026-11-28), so requests now carry the site's own
+// contact address (mailto, OpenAlex's "polite pool") and, when the Worker has the secret OPENALEX_API_KEY, that key.
+var EP_OA_KEY = "";
 var EP_OA_ALIASES = {
 	epfl: ["ecole polytechnique federale de lausanne"],
 	kaist: ["korea advanced institute of science and technology"],
@@ -21409,8 +21412,9 @@ function epOaInstMatch(names, uniName) {
 	});
 }
 async function epOaGet(path) {
-	const res = await fetch(EP_OA + path, { headers: { "User-Agent": "embodiment.place (research lab pages)", Accept: "application/json" }, signal: AbortSignal.timeout(12e3) });
-	if (!res.ok) throw new Error(`OpenAlex ${res.status}`);
+	const q = `mailto=${encodeURIComponent(CONTACT_EMAIL)}` + (EP_OA_KEY ? `&api_key=${encodeURIComponent(EP_OA_KEY)}` : "");
+	const res = await fetch(EP_OA + path + (path.includes("?") ? "&" : "?") + q, { headers: { "User-Agent": "embodiment.place (research lab pages)", Accept: "application/json" }, signal: AbortSignal.timeout(12e3) });
+	if (!res.ok) throw new Error(`OpenAlex ${res.status}${res.status === 429 ? " " + (await res.text().catch(() => "")).slice(0, 120) : ""}`);
 	return res.json();
 }
 function epOaWork(w) {
@@ -21456,7 +21460,8 @@ async function epLabPapersOne(db, lab, uni) {
 // Each run writes a summary to settings key lab_papers_run, so it can be checked from the database.
 async function epLabPapersCron(env) {
 	const db = env.DB;
-	const run = { at: nowStamp(), picked: 0, ok: 0, failed: 0, errors: [] };
+	const run = { at: nowStamp(), picked: 0, ok: 0, failed: 0, errors: [], key: Boolean(env.OPENALEX_API_KEY) };
+	EP_OA_KEY = String(env.OPENALEX_API_KEY || "");
 	try {
 		await db.prepare("CREATE TABLE IF NOT EXISTS lab_papers(record_id INTEGER PRIMARY KEY, author_id TEXT DEFAULT '', n INTEGER DEFAULT 0, data TEXT DEFAULT '{}', checked TEXT)").run();
 		const cutoff = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 19).replace("T", " ");

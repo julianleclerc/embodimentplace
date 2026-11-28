@@ -168,7 +168,7 @@ These are the decisions Julian has made so far. Don't undo them without asking.
     list their labs (`epUniLabs`). Labs are not in Organisations (`orgsPayload` only reads type `company`).
   - Papers come from OpenAlex (open data, no key), never typed in: `epLabPapersCron` (its own cron at minute 35, 8 labs
     a run, each lab again after 30 days, failures retried after a day; each run's summary is in settings key
-    `lab_papers_run`, and admins can run it with `POST /api/admin/lab-papers/run`) finds the head among OpenAlex authors whose institution matches
+    `lab_papers_run`, and admins can run it with `POST /api/admin/lab-papers/run`). Requests send `mailto` = the site contact address and the secret `OPENALEX_API_KEY` when set finds the head among OpenAlex authors whose institution matches
     the university (`epOaInstMatch`, aliases in `EP_OA_ALIASES`), or uses `head_oa`, and stores the author plus the 8
     most recent and 8 most cited articles in table `lab_papers`. A lab without a head gets no papers.
 - List pages (Organisations, Catalogue, Events, Community) share one header: title, intro line (`.oblurb`), then the

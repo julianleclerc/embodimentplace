@@ -41,6 +41,10 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-28
 
+- **Lab papers: OpenAlex polite pool and optional key.** The first run on the minute-35 cron reached OpenAlex, which
+  answered 429 (rate limited) to the Worker's first request. Requests now carry `mailto=contact@embodiment.place`
+  (OpenAlex's polite pool) and, when the Worker has the secret `OPENALEX_API_KEY` (free from openalex.org), that key.
+  The run summary in settings `lab_papers_run` says whether a key was used and keeps the start of a 429 reply.
 - **Lab papers get their own cron.** After #90 the papers job, chained after the minute-5 seed and banner jobs, wrote
   nothing on the live site (no rows in `lab_papers` after two runs; the cause isn't visible without logs). It now runs
   alone at minute 35 (`wrangler.json` crons, branch on `event.cron` in `scheduled`), OpenAlex requests time out after

@@ -17192,6 +17192,7 @@ async function homePayload(db, filter, original, before) {
 }
 function listSubnav(tkey, extra) {
 	const cat = HW_CAT[tkey];
+	if (cat && cat.tab === "labs") return { subnav: [] };
 	if (cat) {
 		const cats = HW_CATEGORIES.filter((c) => c.tab === cat.tab);
 		if (cat.tab === "hardware") {
@@ -17390,7 +17391,7 @@ async function listPayload(db, tkey, kind = "", when = "", before = "") {
 	const info = hw ? {
 		label: hw.label,
 		plural: hw.plural,
-		section: hw.tab === "robots" ? "Robots" : hw.tab === "components" ? "Components" : "Hardware"
+		section: hw.tab === "robots" ? "Robots" : hw.tab === "components" ? "Components" : hw.tab === "labs" ? "Study" : "Hardware"
 	} : {
 		label: TYPE_LABELS[typeKey]?.label || t?.label || tkey,
 		plural: TYPE_LABELS[typeKey]?.plural || t?.plural || tkey,
@@ -21176,7 +21177,8 @@ var EP_CAT_TAGS = [
 	{ key: "software", label: "Software" }
 ];
 async function epCatalogue(db) {
-	const recs = await allPublic(db, "SELECT * FROM records WHERE type IN ('product','model','benchmark','software') AND private = 0 ORDER BY name COLLATE NOCASE");
+	// Research labs (tab "labs") are products too, but they are listed on the Study page, not here (epStudy).
+	const recs = (await allPublic(db, "SELECT * FROM records WHERE type IN ('product','model','benchmark','software') AND private = 0 ORDER BY name COLLATE NOCASE")).filter((r) => r.type !== "product" || HW_CAT[categoryKey(r)]?.tab !== "labs");
 	const { outgoing } = await linksFor(db, recs.map((r) => r.id));
 	const relOf = (r) => {
 		const l = outgoing.get(r.id) || {};
@@ -21248,7 +21250,7 @@ async function epCatalogue(db) {
 		};
 	});
 	// Kind sections on the page follow this order: biggest first, "other"/"misc" last.
-	const lastKey = (k) => (k.key === "other" || k.key === "misc" || k.key === "other_component" ? 1 : k.key === "research_lab" ? 0.5 : 0);
+	const lastKey = (k) => (k.key === "other" || k.key === "misc" || k.key === "other_component" ? 1 : 0);
 	for (const list of Object.values(kinds)) list.sort((x, y) => lastKey(x) - lastKey(y) || y.count - x.count || x.label.localeCompare(y.label));
 	return {
 		tags: EP_CAT_TAGS.map((t) => ({ ...t, count: items.filter((i) => i.tag === t.key).length })),

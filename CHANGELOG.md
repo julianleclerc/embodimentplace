@@ -40,6 +40,13 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
 
 ### 2026-11-28
 
+- **Research labs move out of Catalogue Components into Study (Julian).** Julian said labs should be shown in Study and
+  defined like a catalogue product, but they are not components. Labs keep the product record type, fields and page,
+  with their own tab `labs` (`epHwLabs` in catalog.js and the bundle's category list) instead of `components`.
+  `epCatalogue` leaves them out, so Catalogue > Components is back to hands, teleoperation and tool changers.
+  `listSubnav` and the record page's kind row (`Kr`) show nothing for labs, `/t/research_lab` redirects to `/study`
+  (`Rr`), and the Study intro no longer links to the Catalogue. No data change. Screenshots `docs/screenshots/study/labs-*`.
+
 - **Organisation pages: products, funding rounds and news, first pass (PR #88).** Julian asked for products, funding
   and news on the organisation pages, and for every product to have a photo of the robot from an official source.
   - New seed `org-enrichment-1-2026-11` (`worker/dist/assets/seed-org-enrichment-1-2026-11.js`, run once by
@@ -74,7 +81,7 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
     Subject 2025, Mechanical, Aeronautical & Manufacturing Engineering (rank r scores 101 - r, 0 outside the top 100;
     read from the QS 2025 table as mirrored by xuanxiao.org, since the 2026 table didn't load). Weights per level in
     `EP_STUDY_W`.
-  - Catalogue > Components gets a **Research labs** kind (`research_lab`; `epHwLabs` in catalog.js and the bundle's
+  - Research labs are a new product category (`research_lab`; first shown under Catalogue > Components, moved to Study only in the follow-up above; `epHwLabs` in catalog.js and the bundle's
     category list, view `epViewsLabs`, product fields `lab_focus` and `lab_url`). The lab's "maker" link is its
     university. Lab pages show Lab website and Study instead of Compare and Request a quote.
   - Seed `seed-study-2026-11.js` (runs at the next hourly cron): 66 universities (the CSRankings robotics top 50 and QS

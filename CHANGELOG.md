@@ -46,6 +46,22 @@ Pick these up from here. When you start one, say so in your PR. When you finish 
   alone at minute 35 (`wrangler.json` crons, branch on `event.cron` in `scheduled`), OpenAlex requests time out after
   12 s, failures are stored on the lab's row, and each run writes a summary to settings key `lab_papers_run`. Admins can
   also run it from `POST /api/admin/lab-papers/run`.
+- **Admin > Spreadsheet: organisations, universities and labs as one editable sheet (Julian).** Julian asked for an
+  Excel-style view of the organisation database in Admin, with all the information, so the database is the single
+  source of truth and changes to the site are made by changing the database. New admin tab Spreadsheet
+  (`/admin/sheet`, frontend `epAdminSheet` / `epShCell`, CSS block `epSheet`) with three sheets: Organisations,
+  Universities, Research labs (same split as `/orgs` and `/academia`). One row per record, one column per field:
+  the record's name, summary, hidden flag and logo, HQ address, every field of the type in `TYPES`
+  (company / university / lab), then any other data key the records hold ("Other data", kind guessed from the
+  values), then links in and out (products, investors, funding rounds, labs...) and the news count, read only.
+  Each header shows how many rows are filled in; "Show: Missing <field>" lists the gaps; columns can be hidden
+  (saved per browser). Tapping a cell edits it in place and Enter or leaving the cell saves it through
+  `saveRecord` (revision kept, search reindexed, edge cache bumped), with checks per kind: numbers and years,
+  web addresses, roles and stage from their fixed lists, lists split on ";". A changed value drops that field's
+  old source. Export to Excel per sheet or all three (`GET /api/admin/sheet/export`, reuses `epXlsx`). Worker:
+  `GET /api/admin/sheet?tab=orgs|unis|labs` and `POST /api/admin/sheet/:id` `{key, value, kind}` (`epShLoad`,
+  `epShCols`, `epShParse`). Changing an HQ address (here or in Admin > Organisations) now geocodes it, so the map
+  pin moves with it instead of being lost.
 - **Study becomes Academia; research labs get their own record type and page; universities leave Organisations
   (Julian).** Julian said a lab should be defined as a research lab, not a product, with a page showing its head,
   information and papers; then asked to rename Study to Academia and show universities there instead of in

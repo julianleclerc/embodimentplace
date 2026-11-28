@@ -1,0 +1,51 @@
+{
+  "id": 1047,
+  "type": "company",
+  "slug": "badger-technologies",
+  "name": "Badger Technologies",
+  "summary": "Autonomous retail robots that scan store shelves for stock, pricing and safety issues.",
+  "body": "Shelves go out of stock. Prices fall out of compliance. Safety hazards go undetected. And store teams are stretched too thin to catch it all before it hits the bottom line. Badger fixes that.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.badger-technologies.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.badger-technologies.com/"
+    },
+    "image": {
+      "v": "/logos/badger-technologies.png",
+      "fit": "contain",
+      "src": "https://www.badger-technologies.com/.resources/jabil-main/themes/badger-technologies-2019/src/img/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Nicholasville",
+      "src": "https://www.linkedin.com/company/badgersolutions",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/badgersolutions",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "350 E Brannon Rd, Nicholasville, Kentucky 40356, United States",
+          "lat": 37.957015,
+          "lon": -84.539273,
+          "src": "https://www.linkedin.com/company/badgersolutions"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

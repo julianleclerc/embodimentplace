@@ -1,0 +1,51 @@
+{
+  "id": 1109,
+  "type": "company",
+  "slug": "ory-laboratory",
+  "name": "Ory Laboratory",
+  "summary": "At OryLab, we build technology that lets people be present, even when they can't be there in person.",
+  "body": "Loneliness is one of the defining challenges of our time. The World Health Organization estimates it affects 1 in 6 people worldwide. We believe no one should be cut off from work, friends or society because of illness, disability, caregiving or distance.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://orylab.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://orylab.com/"
+    },
+    "image": {
+      "v": "/logos/ory-laboratory.png",
+      "fit": "contain",
+      "src": "https://orylab.com/wp-content/uploads/ory_fabicon_g.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "中央区",
+      "src": "https://jp.linkedin.com/company/orylab",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/orylab",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "日本橋本町3-8-3, 中央区, 東京都 103-0023, Japan",
+          "lat": 35.670644,
+          "lon": 139.771992,
+          "src": "https://jp.linkedin.com/company/orylab"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

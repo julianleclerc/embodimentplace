@@ -31,6 +31,8 @@ CREATE VIRTUAL TABLE fts USING fts5(name, type, summary, body, extra, tokenize='
 
 CREATE TABLE intros(id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE, target_kind TEXT NOT NULL, target_id INTEGER NOT NULL, note TEXT DEFAULT '', status TEXT NOT NULL DEFAULT 'pending', admin_note TEXT DEFAULT '', created TEXT, decided TEXT);
 
+CREATE TABLE lab_papers(record_id INTEGER PRIMARY KEY, author_id TEXT DEFAULT '', n INTEGER DEFAULT 0, data TEXT DEFAULT '{}', checked TEXT);
+
 CREATE TABLE likes(user_id INTEGER NOT NULL, record_id INTEGER NOT NULL REFERENCES records(id) ON DELETE CASCADE,
         created TEXT, PRIMARY KEY(user_id, record_id));
 
@@ -89,6 +91,8 @@ CREATE TABLE user_follows(follower_id INTEGER NOT NULL REFERENCES users(id) ON D
 CREATE TABLE users(
         id INTEGER PRIMARY KEY, username TEXT UNIQUE NOT NULL COLLATE NOCASE, name TEXT NOT NULL,
         pw TEXT NOT NULL, role TEXT NOT NULL DEFAULT 'user', disabled INTEGER DEFAULT 0, created TEXT, profile TEXT DEFAULT '{}', pinned_id INTEGER, prefs TEXT DEFAULT '{}', totp TEXT DEFAULT '', totp_step INTEGER DEFAULT 0, recovery TEXT DEFAULT '[]', suspended_until TEXT DEFAULT '', suspend_reason TEXT DEFAULT '');
+
+CREATE TABLE visits(day TEXT NOT NULL, h TEXT NOT NULL, ts INTEGER NOT NULL, m INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(day, h));
 
 CREATE TABLE watch_sources(id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE, kind TEXT NOT NULL, ref TEXT NOT NULL, created TEXT, UNIQUE(user_id, kind, ref));
 

@@ -1,0 +1,27 @@
+{
+  "id": 2102,
+  "type": "lab",
+  "slug": "munich-institute-of-robotics-and-machine-intelligence-mirmi",
+  "name": "Munich Institute of Robotics and Machine Intelligence (MIRMI)",
+  "summary": "TUM's integrative research centre for robotics and machine intelligence.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Humanoids",
+        "Medical robots",
+        "Robot learning"
+      ],
+      "src": "https://www.mirmi.tum.de/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mirmi.tum.de/",
+      "src": "https://www.mirmi.tum.de/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

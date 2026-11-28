@@ -1,0 +1,51 @@
+{
+  "id": 1477,
+  "type": "company",
+  "slug": "goodbytz",
+  "name": "GoodBytz",
+  "summary": "Develops autonomous modular robotic kitchen systems for hospitality and food service.",
+  "body": "Fresh food has to work every day. At goodBytz, we build autonomous cooking systems designed for real operations. We combine hospitality and technology to make freshly cooked food a reliable part of daily operations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/173-goodbytz",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.goodbytz.com/"
+    },
+    "image": {
+      "v": "/logos/goodbytz.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a12ae2b9a037d96fda6d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hamburg",
+      "src": "https://de.linkedin.com/company/goodbytz",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/goodbytz",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Werner-Otto Straße, Hamburg, HH 22179, Germany",
+          "lat": 53.600641,
+          "lon": 10.069209,
+          "src": "https://de.linkedin.com/company/goodbytz"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

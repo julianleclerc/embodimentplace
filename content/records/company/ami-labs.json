@@ -1,0 +1,51 @@
+{
+  "id": 1237,
+  "type": "company",
+  "slug": "ami-labs",
+  "name": "AMI Labs",
+  "summary": "AMI - Advanced Machine Intelligence - builds world-model-based AI that understands the real world.",
+  "body": "We develop safe, controllable intelligent systems for industry, robotics, healthcare, and beyond.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://amilabs.xyz/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://amilabs.xyz/"
+    },
+    "image": {
+      "v": "/logos/ami-labs.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6968f95cf64678111b0f9968/6970a7533cac6b6ee8014af0_webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Paris",
+      "src": "https://pitchbook.com/profiles/company/1232257-78",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://pitchbook.com/profiles/company/1232257-78",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "10 Rue de Penthièvre, 75008 Paris, France",
+          "lat": 48.873093,
+          "lon": 2.316565,
+          "src": "https://pitchbook.com/profiles/company/1232257-78"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

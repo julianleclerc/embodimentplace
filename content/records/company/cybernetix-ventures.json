@@ -1,0 +1,51 @@
+{
+  "id": 1191,
+  "type": "company",
+  "slug": "cybernetix-ventures",
+  "name": "Cybernetix Ventures",
+  "summary": "Cybernetix Ventures is a venture capital firm leading the way for investment into early-stage robotics, automation, and AI startups.",
+  "body": "Cybernetix Ventures is a venture capital firm investing in pre-seed, seed, and Series A startups for manufacturing, logistics, construction, and healthcare.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://cybernetix.vc/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cybernetix.vc/"
+    },
+    "image": {
+      "v": "/logos/cybernetix-ventures.png",
+      "fit": "contain",
+      "src": "https://cybernetix.vc/wp-content/uploads/cropped-cv-favicon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boston",
+      "src": "https://www.linkedin.com/company/cybernetix-ventures",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/cybernetix-ventures",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Boston, Massachusetts , United States",
+          "lat": 42.358834,
+          "lon": -71.05783,
+          "src": "https://www.linkedin.com/company/cybernetix-ventures"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

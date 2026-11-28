@@ -1,0 +1,51 @@
+{
+  "id": 1776,
+  "type": "company",
+  "slug": "xdof",
+  "name": "XDOF",
+  "summary": "Robotics infrastructure company building data pipelines, teleoperation tools and annotation systems for training general-purpose robots.",
+  "body": "XDOF is the infrastructure partner for the world's most ambitious robotics builders. We build the tools, data and services that accelerate the future of physical AI. We are hiring!",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1828-xdof",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.xdof.ai/"
+    },
+    "image": {
+      "v": "/logos/xdof.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/e98fb44a63420d23e3d5.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Mateo",
+      "src": "https://roboticsconnected.com/companies/1828-xdof",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1828-xdof",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Mateo, United States",
+          "lat": 37.496904,
+          "lon": -122.333057,
+          "src": "https://roboticsconnected.com/companies/1828-xdof"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

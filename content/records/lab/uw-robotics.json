@@ -1,0 +1,26 @@
+{
+  "id": 2176,
+  "type": "lab",
+  "slug": "uw-robotics",
+  "name": "UW Robotics",
+  "summary": "Robotics at the Allen School.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Manipulation"
+      ],
+      "src": "https://robotics.cs.washington.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.cs.washington.edu/",
+      "src": "https://robotics.cs.washington.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

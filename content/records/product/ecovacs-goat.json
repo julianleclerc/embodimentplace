@@ -1,0 +1,23 @@
+{
+  "id": 3422,
+  "type": "product",
+  "slug": "ecovacs-goat",
+  "name": "Ecovacs GOAT",
+  "summary": "Explore GOAT robotic lawn mower models from ECOVACS, designed for smarter, more precise and more hands-free lawn care.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/ecovacs-goat.webp",
+      "src": "https://www.ecovacs.com/us/goat-robotic-lawn-mower",
+      "orig": "https://site-static.ecovacs.com/upload/image/official_model/2026/05/11/090023_7672$_8_compressed1.jpeg?x-oss-process=image/format,webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ecovacs.com/us/goat-robotic-lawn-mower"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

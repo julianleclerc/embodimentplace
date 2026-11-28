@@ -1,0 +1,51 @@
+{
+  "id": 1136,
+  "type": "company",
+  "slug": "aethon",
+  "name": "Aethon",
+  "summary": "ST Engineering, Aethon provides mobile robotics solutions to the healthcare and hospitality markets.",
+  "body": "We engineer, sell and support solutions to automate the transportation of goods and supplies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.linkedin.com/company/aethon",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.aethon.com/"
+    },
+    "image": {
+      "v": "/logos/aethon.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.aethon.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/aethon",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/aethon",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "200 Business Center Dr, Pittsburgh, Pennsylvania 15205, United States",
+          "lat": 40.440697,
+          "lon": -80.002567,
+          "src": "https://www.linkedin.com/company/aethon"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

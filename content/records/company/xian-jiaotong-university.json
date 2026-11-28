@@ -1,0 +1,63 @@
+{
+  "id": 1382,
+  "type": "company",
+  "slug": "xian-jiaotong-university",
+  "name": "Xi'an Jiaotong University",
+  "summary": "University in Xi'an, China.",
+  "body": "Recent robotics work includes “OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation”. OpenAlex lists 415 robotics, humanoid, embodied-AI or manipulation papers from Xi'an Jiaotong University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.48550/arxiv.2505.03912",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.xjtu.edu.cn/"
+    },
+    "image": {
+      "v": "/logos/xian-jiaotong-university.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.xjtu.edu.cn&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Xi'an",
+      "src": "https://www.wikidata.org/wiki/Q981237",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q981237",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Xi'an, China",
+          "lat": 34.244722,
+          "lon": 108.983611,
+          "src": "https://www.wikidata.org/wiki/Q981237"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 13.5,
+      "faculty": 14,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 37,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

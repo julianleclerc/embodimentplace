@@ -1,0 +1,44 @@
+{
+  "id": 2007,
+  "type": "company",
+  "slug": "dayan-technology",
+  "name": "Dayan Technology",
+  "summary": "Makes tactile data gloves, a tactile foundation model and a contact-mechanics simulation engine for embodied AI.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://eu.36kr.com/en/p/4087367217363589",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hangzhou",
+      "src": "https://justraised.io/rounds/3342",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://justraised.io/rounds/3342",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hangzhou, Zhejiang, China",
+          "lat": 30.248963,
+          "lon": 120.205234,
+          "src": "https://justraised.io/rounds/3342"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

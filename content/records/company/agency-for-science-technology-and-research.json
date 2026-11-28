@@ -1,0 +1,51 @@
+{
+  "id": 1388,
+  "type": "company",
+  "slug": "agency-for-science-technology-and-research",
+  "name": "Agency for Science, Technology and Research",
+  "summary": "Government agency in Singapore.",
+  "body": "Recent robotics work includes “A review of learning-based dynamics models for robotic manipulation”. OpenAlex lists 82 robotics, humanoid, embodied-AI or manipulation papers from Agency for Science, Technology and Research since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://doi.org/10.1126/scirobotics.adt1497",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.a-star.edu.sg/"
+    },
+    "image": {
+      "v": "/logos/agency-for-science-technology-and-research.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.a-star.edu.sg&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://www.wikidata.org/wiki/Q1101188",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://www.wikidata.org/wiki/Q1101188",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Singapore, Singapore",
+          "lat": 1.299156,
+          "lon": 103.787549,
+          "src": "https://www.wikidata.org/wiki/Q1101188"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

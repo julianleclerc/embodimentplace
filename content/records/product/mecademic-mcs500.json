@@ -1,0 +1,28 @@
+{
+  "id": 3443,
+  "type": "product",
+  "slug": "mecademic-mcs500",
+  "name": "Mecademic MCS500",
+  "summary": "Elevate your automation with Mecademic's MCS500 SCARA robot. The world’s most compact and precise, it offers unmatched speed and efficiency for high-speed tasks.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/mecademic-mcs500.webp",
+      "src": "https://mecademic.com/industrial-robots-mecademic/mcs500-scara-robot/",
+      "orig": "https://mecademic.com/wp-content/uploads/2025/04/mcs500-scara-robot-with-power-supply-768x640.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Arm",
+      "src": "https://mecademic.com/industrial-robots-mecademic/mcs500-scara-robot/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mecademic.com/industrial-robots-mecademic/mcs500-scara-robot/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

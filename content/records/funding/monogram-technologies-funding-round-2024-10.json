@@ -1,0 +1,23 @@
+{
+  "id": 3769,
+  "type": "funding",
+  "slug": "monogram-technologies-funding-round-2024-10",
+  "name": "Monogram Technologies funding round (2024-10)",
+  "summary": "Raised $13 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-10-02",
+      "src": "https://www.miamiherald.com/press-releases/article293391349.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 13,
+      "src": "https://www.miamiherald.com/press-releases/article293391349.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-10-02"
+}

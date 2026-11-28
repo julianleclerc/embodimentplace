@@ -1,0 +1,23 @@
+{
+  "id": 3410,
+  "type": "product",
+  "slug": "agilox-ofl",
+  "name": "AGILOX OFL",
+  "summary": "AMR automation done right: scissor-free and AI-assisted free lifter AGILOX OFL to increase efficiency and reduce costs in your operations. See details!",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/agilox-ofl.webp",
+      "src": "https://www.agilox.net/en/product/agilox-ofl/",
+      "orig": "https://www.agilox.net/media/agilox_ofl_loadcarrier_555x751-555x751.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.agilox.net/en/product/agilox-ofl/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1963,
+  "type": "company",
+  "slug": "morai",
+  "name": "MORAI",
+  "summary": "Builds a digital twin simulation platform for testing autonomous systems before they reach the road or sky.",
+  "body": "MORAI is a South Korean startup developing a virtual simulation environment for testing autonomous driving software.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3497-morai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.morai.ai/"
+    },
+    "image": {
+      "v": "/logos/morai.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/media/abc373_56e655efd51a4ce49ea41d970251d811%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/abc373_56e655efd51a4ce49ea41d970251d811%7Emv2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul",
+      "src": "https://kr.linkedin.com/company/morai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://kr.linkedin.com/company/morai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "415, Teheran-ro, Gangnam-gu, Seoul, South Korea",
+          "lat": 37.505703,
+          "lon": 127.051717,
+          "src": "https://kr.linkedin.com/company/morai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

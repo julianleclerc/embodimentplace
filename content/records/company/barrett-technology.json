@@ -1,0 +1,52 @@
+{
+  "id": 1810,
+  "type": "company",
+  "slug": "barrett-technology",
+  "name": "Barrett Technology",
+  "summary": "Newton, Massachusetts maker of robotics and drive technology, founded in 1988 by Bill Townsend.",
+  "body": "Barrett Technology is the pioneer in robots that work hand-in-hand with people. Barrett’s robots, such as WAM® and BURT®, operate on Barrett’s novel gearless mechanisms, driven by its world-class Puck® motor controllers, and accessed through its open-source software.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/2014-barrett-technology",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://barrett.com/"
+    },
+    "image": {
+      "v": "/logos/barrett-technology.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/7726cd473fe55373b4bf.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Newton",
+      "src": "https://www.linkedin.com/company/barrett-technology-llc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/barrett-technology-llc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "73 Chapel St., Newton, MA 02458, United States",
+          "lat": 42.362186,
+          "lon": -71.201142,
+          "src": "https://www.linkedin.com/company/barrett-technology-llc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

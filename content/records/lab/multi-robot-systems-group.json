@@ -1,0 +1,31 @@
+{
+  "id": 2179,
+  "type": "lab",
+  "slug": "multi-robot-systems-group",
+  "name": "Multi-robot Systems Group",
+  "summary": "Drone swarms and multi-robot systems.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Aerial robots",
+        "Multi-robot"
+      ],
+      "src": "https://mrs.fel.cvut.cz/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mrs.fel.cvut.cz/",
+      "src": "https://mrs.fel.cvut.cz/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Martin Saska",
+      "src": "https://mrs.fel.cvut.cz/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

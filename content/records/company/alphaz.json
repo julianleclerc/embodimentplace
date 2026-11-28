@@ -1,0 +1,54 @@
+{
+  "id": 1546,
+  "type": "company",
+  "slug": "alphaz",
+  "name": "AlphaZ",
+  "summary": "Builds autonomy software for mobile robots operating in construction, security, and industrial inspection.",
+  "body": "The company develops foundation models and AI systems that enable robots to understand context and adapt reliably in complex real-world environments. Headquartered in Los Angeles, AlphaZ was founded in 2024 by roboticists from NASA JPL, MIT, and Carnegie Mellon University.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Model lab",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/315-alphaz",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://alpha-z.ai/"
+    },
+    "image": {
+      "v": "/logos/alphaz.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4651d554913723fa2bd8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Baldwin Park",
+      "src": "https://roboticsconnected.com/companies/315-alphaz",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/315-alphaz",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Baldwin Park, United States",
+          "lat": 34.085474,
+          "lon": -117.961176,
+          "src": "https://roboticsconnected.com/companies/315-alphaz"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

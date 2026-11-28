@@ -1,0 +1,51 @@
+{
+  "id": 1159,
+  "type": "company",
+  "slug": "microport-medbot",
+  "name": "MicroPort MedBot",
+  "summary": "Shanghai MicroPort® MedBot (Group) Co., Ltd., a robotics-specialized subsidiary of Shanghai MicroPort® Medical (Group) Co., Ltd.",
+  "body": "Headquartered in Shanghai, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.medbotsurgical.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.medbotsurgical.com/"
+    },
+    "image": {
+      "v": "/logos/microport-medbot.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.medbotsurgical.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://cn.linkedin.com/company/microport-medbot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/microport-medbot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1601 Zhangdong Road Z.J. Hi-Tech Park, Shanghai  MicroPort® Official Website Recruitment Contact Us Legal Statement Cookies, Shanghai, SH 201210, China",
+          "lat": 31.204331,
+          "lon": 121.630855,
+          "src": "https://cn.linkedin.com/company/microport-medbot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

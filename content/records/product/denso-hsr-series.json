@@ -1,0 +1,23 @@
+{
+  "id": 3419,
+  "type": "product",
+  "slug": "denso-hsr-series",
+  "name": "DENSO HSR Series",
+  "summary": "HSR Series, a robot from DENSO Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/denso-hsr-series.webp",
+      "src": "https://www.densorobotics.com/products/4-axis/hsr-series/",
+      "orig": "https://www.densorobotics.com/wp-content/uploads/2024/12/1703_HSR055_side01-480x548.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.densorobotics.com/products/4-axis/hsr-series/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

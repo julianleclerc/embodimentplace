@@ -1,0 +1,27 @@
+{
+  "id": 2146,
+  "type": "lab",
+  "slug": "qut-centre-for-robotics-2",
+  "name": "QUT Centre for Robotics",
+  "summary": "Robotic vision, agriculture and field robots.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Perception",
+        "Field robots",
+        "Robot learning"
+      ],
+      "src": "https://research.qut.edu.au/qcr/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://research.qut.edu.au/qcr/",
+      "src": "https://research.qut.edu.au/qcr/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

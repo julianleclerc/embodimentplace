@@ -1,0 +1,23 @@
+{
+  "id": 3685,
+  "type": "funding",
+  "slug": "ugo-series-b",
+  "name": "ugo Series B",
+  "summary": "Closed a Series B round, led by NTT West as the.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-04-21",
+      "src": "https://thebridge.jp/en/2026/04/ugo-developer-of-business-oriented-robots-secures-additional-series-b-funding-led-by-ntt-west",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://thebridge.jp/en/2026/04/ugo-developer-of-business-oriented-robots-secures-additional-series-b-funding-led-by-ntt-west",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-04-21"
+}

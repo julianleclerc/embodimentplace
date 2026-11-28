@@ -1,0 +1,38 @@
+{
+  "id": 2067,
+  "type": "product",
+  "slug": "allegro-hand-v4",
+  "name": "Allegro Hand V4",
+  "summary": "Four-finger, 16-joint research hand popular in robot-learning labs.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://www.knoxlabs.com/products/wonik-robotics-allegro-hand-v4",
+      "asof": "2026-11"
+    },
+    "h_kind": {
+      "v": "Dexterous hand",
+      "src": "https://www.knoxlabs.com/products/wonik-robotics-allegro-hand-v4",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 16,
+      "src": "https://www.knoxlabs.com/products/wonik-robotics-allegro-hand-v4",
+      "asof": "2026-11"
+    },
+    "active_dof": {
+      "v": 16,
+      "src": "https://www.knoxlabs.com/products/wonik-robotics-allegro-hand-v4",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://www.knoxlabs.com/products/wonik-robotics-allegro-hand-v4",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-27 22:05:17",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1121,
+  "type": "company",
+  "slug": "torc-robotics",
+  "name": "Torc Robotics",
+  "summary": "Torc Robotics, headquartered in Blacksburg, Virginia, offers a complete autonomous software solution for the trucking/freight industry.",
+  "body": "Torc was acquired by Daimler – the largest heavy-duty truck manufacturer in North America – in August 2019. We are working together to develop highly automated trucks to improve the safety and efficiency of transporting goods.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.torc.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.torc.ai/"
+    },
+    "image": {
+      "v": "/logos/torc-robotics.png",
+      "fit": "contain",
+      "src": "https://torc.ai/wp-content/uploads/2024/04/torc_circle_icon-2-1.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Blacksburg",
+      "src": "https://www.linkedin.com/company/torc-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/torc-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "405 Partnership Drive, Blacksburg, VA 24060, United States",
+          "lat": 37.18972,
+          "lon": -80.392328,
+          "src": "https://www.linkedin.com/company/torc-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

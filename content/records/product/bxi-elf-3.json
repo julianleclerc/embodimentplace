@@ -1,0 +1,28 @@
+{
+  "id": 3415,
+  "type": "product",
+  "slug": "bxi-elf-3",
+  "name": "BXI Elf 3",
+  "summary": "Explore the Elf 3 31-DOF bipedal research robot, with ROS2 SDK, MuJoCo simulation and teleoperation. Review hardware specifications and discuss development requirements.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/bxi-elf-3.webp",
+      "src": "https://www.bxirobotics.com/robots/humanoid-robot",
+      "orig": "https://www.bxirobotics.com/og/humanoid-robot.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.bxirobotics.com/robots/humanoid-robot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bxirobotics.com/robots/humanoid-robot"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

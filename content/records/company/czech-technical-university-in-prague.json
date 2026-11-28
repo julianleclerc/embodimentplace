@@ -1,0 +1,58 @@
+{
+  "id": 1350,
+  "type": "company",
+  "slug": "czech-technical-university-in-prague",
+  "name": "Czech Technical University in Prague",
+  "summary": "Czech public university.",
+  "body": "Recent robotics work includes “REALM: A Real-to-Sim Validated Benchmark for Generalization in Robotic Manipulation”. OpenAlex lists 81 robotics, humanoid, embodied-AI or manipulation papers from Czech Technical University in Prague since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/lra.2026.3692088",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cvut.cz/"
+    },
+    "image": {
+      "v": "/logos/czech-technical-university-in-prague.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/CVUT_logo.jpg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Prague",
+      "src": "https://www.wikidata.org/wiki/Q1329478",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Czech Republic",
+      "src": "https://www.wikidata.org/wiki/Q1329478",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Prague, Czech Republic",
+          "lat": 50.102167,
+          "lon": 14.388472,
+          "src": "https://www.wikidata.org/wiki/Q1329478"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 31.2,
+      "faculty": 14,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

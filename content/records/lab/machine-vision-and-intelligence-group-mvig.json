@@ -1,0 +1,31 @@
+{
+  "id": 2199,
+  "type": "lab",
+  "slug": "machine-vision-and-intelligence-group-mvig",
+  "name": "Machine Vision and Intelligence Group (MVIG)",
+  "summary": "Grasping, perception and embodied AI.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Manipulation",
+        "Perception"
+      ],
+      "src": "https://www.mvig.org/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mvig.org/",
+      "src": "https://www.mvig.org/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Cewu Lu",
+      "src": "https://www.mvig.org/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,53 @@
+{
+  "id": 1679,
+  "type": "company",
+  "slug": "trener",
+  "name": "Trener",
+  "summary": "Physical AI company building Acteris, a vendor-agnostic intelligence layer for industrial robots.",
+  "body": "Trener Robotics is a Physical AI company building the intelligence layer for industrial robots. Headquartered in San Jose, California and Trondheim, Norway, we transform robots from rigid, scripted machines into intelligent, self-learning systems that operate reliably in real production environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Model lab"
+      ],
+      "src": "https://roboticsconnected.com/companies/1225-trener",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://trener.ai/"
+    },
+    "image": {
+      "v": "/logos/trener.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/b71744e3a5cea59bcebe.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Jose",
+      "src": "https://roboticsconnected.com/companies/1225-trener",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1225-trener",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Jose, United States",
+          "lat": 37.336166,
+          "lon": -121.890591,
+          "src": "https://roboticsconnected.com/companies/1225-trener"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

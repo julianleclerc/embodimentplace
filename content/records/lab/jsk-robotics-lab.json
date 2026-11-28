@@ -1,0 +1,31 @@
+{
+  "id": 2122,
+  "type": "lab",
+  "slug": "jsk-robotics-lab",
+  "name": "JSK Robotics Lab",
+  "summary": "Humanoid and life-support robots.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Humanoids",
+        "Manipulation"
+      ],
+      "src": "https://www.jsk.t.u-tokyo.ac.jp/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.jsk.t.u-tokyo.ac.jp/",
+      "src": "https://www.jsk.t.u-tokyo.ac.jp/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Kei Okada",
+      "src": "https://www.jsk.t.u-tokyo.ac.jp/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

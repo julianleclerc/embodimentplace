@@ -1,0 +1,52 @@
+{
+  "id": 1722,
+  "type": "company",
+  "slug": "slamcore",
+  "name": "Slamcore",
+  "summary": "Makes vision-based location tracking for factories and warehouses.",
+  "body": "Slamcore delivers spatial intelligence that transforms material handling equipment into connected, safety-aware assets.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1364-slamcore",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.slamcore.com/"
+    },
+    "image": {
+      "v": "/logos/slamcore.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/651e4e7d8b0e65805ad5.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://uk.linkedin.com/company/slamcore-limited",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/slamcore-limited",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "215-221 Borough High Street, London, England, United Kingdom",
+          "lat": 51.50524,
+          "lon": -0.089496,
+          "src": "https://uk.linkedin.com/company/slamcore-limited"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

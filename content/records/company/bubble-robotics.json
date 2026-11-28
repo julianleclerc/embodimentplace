@@ -1,0 +1,51 @@
+{
+  "id": 1462,
+  "type": "company",
+  "slug": "bubble-robotics",
+  "name": "Bubble Robotics",
+  "summary": "Develops autonomous underwater robotic systems for offshore infrastructure monitoring.",
+  "body": "Bubble designs and operates fleets of integrated autonomous surface–subsea robotic systems that remain at sea for up to six months, delivering continuous inspection, survey, and underwater monitoring without ever sending vessels or crews to sea.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/147-bubble-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bubble-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/bubble-robotics.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/a60f659b-d0f8-4d47-a2e3-3443900fa674.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/bubble-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/bubble-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zürich, Switzerland, Switzerland",
+          "lat": 46.939424,
+          "lon": 7.465359,
+          "src": "https://ch.linkedin.com/company/bubble-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

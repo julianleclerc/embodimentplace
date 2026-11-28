@@ -1,0 +1,23 @@
+{
+  "id": 3839,
+  "type": "funding",
+  "slug": "microsure-series-b2",
+  "name": "Microsure Series B2",
+  "summary": "Raised €38 million in a Series B2 round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-10-04",
+      "src": "https://www.prnewswire.com/news-releases/microsure-secures-38-million-to-advance-its-microsurgical-robot-musa-3-301946937.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B2",
+      "src": "https://www.prnewswire.com/news-releases/microsure-secures-38-million-to-advance-its-microsurgical-robot-musa-3-301946937.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-10-04"
+}

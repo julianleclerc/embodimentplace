@@ -1,0 +1,51 @@
+{
+  "id": 1485,
+  "type": "company",
+  "slug": "marble",
+  "name": "Marble",
+  "summary": "Develops advanced UAV technology and software for maritime surveillance.",
+  "body": "Marble creates the raw, high-resolution understanding of a changing planet to guide society toward better outcomes.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/188-marble",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://marble.aero/"
+    },
+    "image": {
+      "v": "/logos/marble.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1a4f2f1ae5624d883c7a.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chippenham",
+      "src": "https://uk.linkedin.com/company/marble-aerospace",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/marble-aerospace",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Heywood Barn, Chippenham, Wiltshire SN146LS, United Kingdom",
+          "lat": 51.458762,
+          "lon": -2.115903,
+          "src": "https://uk.linkedin.com/company/marble-aerospace"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

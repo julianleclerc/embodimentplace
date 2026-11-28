@@ -1,0 +1,51 @@
+{
+  "id": 1916,
+  "type": "company",
+  "slug": "watonomous",
+  "name": "WATonomous",
+  "summary": "Student-run design team at the University of Waterloo, Ontario, focused on autonomy and robotics software.",
+  "body": "WATonomous is an Engineering Student Design Team at the University of Waterloo focused on autonomous vehicle research and development. It is an interdisciplinary team that is a cornerstone of the strong Autonomous Driving research ecosystem at the University of Waterloo.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3012-watonomous",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.watonomous.ca/"
+    },
+    "image": {
+      "v": "/logos/watonomous.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/982670007854182401/JJW-90Yu_400x400.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Waterloo",
+      "src": "https://ca.linkedin.com/company/watonomous",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/watonomous",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "200 University Avenue, Waterloo, Ontario N2L3G1, Canada",
+          "lat": 43.469719,
+          "lon": -80.540921,
+          "src": "https://ca.linkedin.com/company/watonomous"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

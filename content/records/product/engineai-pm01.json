@@ -1,0 +1,28 @@
+{
+  "id": 3424,
+  "type": "product",
+  "slug": "engineai-pm01",
+  "name": "EngineAI PM01",
+  "summary": "PM01, a humanoid robot from EngineAI.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/engineai-pm01.webp",
+      "src": "https://www.engineai.com.cn/product-pm01.html",
+      "orig": "https://cn-engineai-1304599088.cos.ap-guangzhou.myqcloud.com/uploads/upload/images/20251114/a88d2a8fb4c53fdb74743b6950a8702c.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.engineai.com.cn/product-pm01.html",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.engineai.com.cn/product-pm01.html"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

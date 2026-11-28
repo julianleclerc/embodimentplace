@@ -1,0 +1,35 @@
+{
+  "id": 2070,
+  "type": "product",
+  "slug": "trossen-widowx-aloha-set",
+  "name": "Trossen WidowX ALOHA Set",
+  "summary": "Bimanual leader-follower arm kit for teleoperation and imitation-learning data, based on Stanford's ALOHA.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Teleoperation",
+      "src": "https://www.trossenrobotics.com/widowx-aloha-set",
+      "asof": "2026-11"
+    },
+    "dc_kind": {
+      "v": "Leader-follower arms",
+      "src": "https://www.trossenrobotics.com/widowx-aloha-set",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://www.trossenrobotics.com/widowx-aloha-set",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/trossen-widowx-aloha-set.webp",
+      "src": "https://www.trossenrobotics.com/widowx-aloha-set",
+      "orig": "https://static.wixstatic.com/media/d3716d_cf083398c1ab467495620daf4a9db20b%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/d3716d_cf083398c1ab467495620daf4a9db20b%7Emv2.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

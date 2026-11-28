@@ -1,0 +1,51 @@
+{
+  "id": 1974,
+  "type": "company",
+  "slug": "boardwalk-robotics",
+  "name": "Boardwalk Robotics",
+  "summary": "IHMC spin-out building Alex, an upper-body humanoid for manufacturing, logistics and research.",
+  "body": "Humanoids transforming your workplace.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://humano.one/companies/boardwalk-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.boardwalkrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/boardwalk-robotics.png",
+      "fit": "contain",
+      "src": "https://www.boardwalkrobotics.com/_assets/33051af18aa97ab9782c.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pensacola",
+      "src": "https://www.linkedin.com/company/boardwalk-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/boardwalk-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pensacola, FL, United States",
+          "lat": 30.421309,
+          "lon": -87.216915,
+          "src": "https://www.linkedin.com/company/boardwalk-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1038,
+  "type": "company",
+  "slug": "avidbots",
+  "name": "Avidbots",
+  "summary": "Our vision is to expand humanity’s potential through robotics and automation.",
+  "body": "We design and build autonomous cleaning technology that empowers organizations and their workers to become more productive and efficient versions of themselves.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://avidbots.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://avidbots.com/"
+    },
+    "image": {
+      "v": "/logos/avidbots.png",
+      "fit": "contain",
+      "src": "https://avidbots.com/_resources/themes/main/images/favicons/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kitchener",
+      "src": "https://ca.linkedin.com/company/avidbots-corp",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/avidbots-corp",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "975 Bleams Road, Kitchener, Ontario N2R 1K5, Canada",
+          "lat": 43.403564,
+          "lon": -80.486451,
+          "src": "https://ca.linkedin.com/company/avidbots-corp"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

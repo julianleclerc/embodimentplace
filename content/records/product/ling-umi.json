@@ -1,0 +1,28 @@
+{
+  "id": 3438,
+  "type": "product",
+  "slug": "ling-umi",
+  "name": "Ling Umi",
+  "summary": "LivUMI captures synchronized vision, pose, gripper and tactile data for embodied model training.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/ling-umi.webp",
+      "src": "https://www.livsynrobotics.com/en/products/umi",
+      "orig": "https://www.livsynrobotics.com/images/products/umi.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Teleoperation",
+      "src": "https://www.livsynrobotics.com/en/products/umi",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.livsynrobotics.com/en/products/umi"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

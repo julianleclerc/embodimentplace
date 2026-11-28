@@ -1,0 +1,51 @@
+{
+  "id": 1657,
+  "type": "company",
+  "slug": "eureka-robotics",
+  "name": "Eureka Robotics",
+  "summary": "Singapore-based robotics and machine vision company that spun out of Nanyang Technological University in 2018.",
+  "body": "Eureka Robotics' AI Vision System is an integrated solution of 3D camera, controller and software for bin picking and vision-guided robotics. A super-model trained on millions of parts, together with software accessible to entry-level users, reduces deployment time by months compared to conventional vision projects.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1054-eureka-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://eurekarobotics.com/"
+    },
+    "image": {
+      "v": "/logos/eureka-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a3cac647af0f659121e7.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://roboticsconnected.com/companies/1054-eureka-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://roboticsconnected.com/companies/1054-eureka-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Singapore, Singapore",
+          "lat": 1.289918,
+          "lon": 103.851907,
+          "src": "https://roboticsconnected.com/companies/1054-eureka-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

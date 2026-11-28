@@ -1,0 +1,28 @@
+{
+  "id": 3771,
+  "type": "funding",
+  "slug": "cornerstone-robotics-series-d",
+  "name": "Cornerstone Robotics Series D",
+  "summary": "Raised $200m in a Series D round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-12",
+      "src": "https://www.msn.com/en-us/money/companies/cornerstone-robotics-raises-200m-for-technology-advancement/ar-AA1QiJN1",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series D",
+      "src": "https://www.msn.com/en-us/money/companies/cornerstone-robotics-raises-200m-for-technology-advancement/ar-AA1QiJN1",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 200,
+      "src": "https://www.msn.com/en-us/money/companies/cornerstone-robotics-raises-200m-for-technology-advancement/ar-AA1QiJN1",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-12"
+}

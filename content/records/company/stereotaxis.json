@@ -1,0 +1,51 @@
+{
+  "id": 1701,
+  "type": "company",
+  "slug": "stereotaxis",
+  "name": "Stereotaxis",
+  "summary": "St. Louis-based medical technology company developing robotic magnetic navigation systems for minimally invasive endovascular procedures.",
+  "body": "Pioneering Endovascular Robotics | Global leader in robotic technologies to enhance the treatment of arrhythmias & perform endovascular procedures",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1271-stereotaxis",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.stereotaxis.com/"
+    },
+    "image": {
+      "v": "/logos/stereotaxis.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/41bf9755794816b8d2e7.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "St Louis",
+      "src": "https://www.linkedin.com/company/stereotaxis",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/stereotaxis",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "710 N Tucker Blvd, St Louis, Missouri 63101, United States",
+          "lat": 38.632963,
+          "lon": -90.195984,
+          "src": "https://www.linkedin.com/company/stereotaxis"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

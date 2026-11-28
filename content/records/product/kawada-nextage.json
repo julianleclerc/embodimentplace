@@ -1,0 +1,28 @@
+{
+  "id": 3434,
+  "type": "product",
+  "slug": "kawada-nextage",
+  "name": "Kawada NEXTAGE",
+  "summary": "NEXTAGE, a humanoid robot from Kawada Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/kawada-nextage.webp",
+      "src": "https://www.kawadarobot.co.jp/",
+      "orig": "https://www.kawadarobot.co.jp/cms/wp-content/themes/kawada-2025/asset/img/top-bg-mv-pc.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.kawadarobot.co.jp/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.kawadarobot.co.jp/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

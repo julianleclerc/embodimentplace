@@ -1,0 +1,51 @@
+{
+  "id": 1245,
+  "type": "company",
+  "slug": "energy-robotics",
+  "name": "Energy Robotics",
+  "summary": "Korial is the enterprise artificial intelligence platform that makes fully autonomous industrial operations possible – across any asset, any device, any environment, and any scale.",
+  "body": "By unifying robots, drones, sensors, and data into one AI operating layer, it continuously turns raw telemetry into verified insight and orchestrated action that improves safety, reliability and efficiency.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.korial.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.korial.com/"
+    },
+    "image": {
+      "v": "/logos/energy-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/69cba68755c8be38e980bc5c/69fdc04ce5ee9fa64c7bc247_Webclip%20(2).png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Darmstadt",
+      "src": "https://de.linkedin.com/company/korialhq",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/korialhq",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hilpertstraße 31, Darmstadt, Hesse 64295, Germany",
+          "lat": 49.862505,
+          "lon": 8.623432,
+          "src": "https://de.linkedin.com/company/korialhq"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

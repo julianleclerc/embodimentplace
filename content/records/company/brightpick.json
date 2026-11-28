@@ -1,0 +1,51 @@
+{
+  "id": 1043,
+  "type": "company",
+  "slug": "brightpick",
+  "name": "Brightpick",
+  "summary": "Brightpick is a leader in AI-powered robotic solutions for warehouses.",
+  "body": "Brightpick offers multi-purpose AI robots for warehouses to easily automate every step of their order fulfillment.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://brightpick.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://brightpick.ai/"
+    },
+    "image": {
+      "v": "/logos/brightpick.png",
+      "fit": "contain",
+      "src": "https://brightpick.ai/wp-content/themes/brightpick/assets/img/favicon/android-icon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://www.linkedin.com/company/brightpick",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/brightpick",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "8801 Wall St, Austin, Texas 78754, United States",
+          "lat": 30.340657,
+          "lon": -97.670556,
+          "src": "https://www.linkedin.com/company/brightpick"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

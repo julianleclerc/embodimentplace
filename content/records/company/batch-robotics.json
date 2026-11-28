@@ -1,0 +1,52 @@
+{
+  "id": 1623,
+  "type": "company",
+  "slug": "batch-robotics",
+  "name": "Batch Robotics",
+  "summary": "Develops AI-driven software that enables industrial robots to automate small-batch manufacturing without traditional programming.",
+  "body": "AI-Learning for Industrial Robots. We make robots smarter, enabling small batch automation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/863-batch-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.batch-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/batch-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/60c2b41c3738c6ab3edd.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://roboticsconnected.com/companies/863-batch-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/863-batch-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://roboticsconnected.com/companies/863-batch-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

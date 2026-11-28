@@ -1,0 +1,58 @@
+{
+  "id": 1291,
+  "type": "company",
+  "slug": "university-of-colorado-boulder",
+  "name": "University of Colorado Boulder",
+  "summary": "Public university in Boulder, Colorado, United States, and flagship of the University of Colorado System.",
+  "body": "Recent robotics work includes “Advancing physical intelligence for autonomous soft robots”. OpenAlex lists 82 robotics, humanoid, embodied-AI or manipulation papers from University of Colorado Boulder since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1126/scirobotics.ads1292",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.colorado.edu/"
+    },
+    "image": {
+      "v": "/logos/university-of-colorado-boulder.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/UC_Boulder_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boulder",
+      "src": "https://www.wikidata.org/wiki/Q736674",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q736674",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Boulder, United States",
+          "lat": 40.006667,
+          "lon": -105.267222,
+          "src": "https://www.wikidata.org/wiki/Q736674"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 26.8,
+      "faculty": 12,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

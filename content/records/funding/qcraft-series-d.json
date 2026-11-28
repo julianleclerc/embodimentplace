@@ -1,0 +1,28 @@
+{
+  "id": 3600,
+  "type": "funding",
+  "slug": "qcraft-series-d",
+  "name": "QCraft Series D",
+  "summary": "Raised $100 million in a Series D round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-03-22",
+      "src": "https://www.businesswire.com/news/home/20260322358063/en/QCraft-Closes-%24100-Million-New-Series-D-Financing-to-Advance-Physical-AI-for-Autonomous-Driving-and-Mobility",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series D",
+      "src": "https://www.businesswire.com/news/home/20260322358063/en/QCraft-Closes-%24100-Million-New-Series-D-Financing-to-Advance-Physical-AI-for-Autonomous-Driving-and-Mobility",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 100,
+      "src": "https://www.businesswire.com/news/home/20260322358063/en/QCraft-Closes-%24100-Million-New-Series-D-Financing-to-Advance-Physical-AI-for-Autonomous-Driving-and-Mobility",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-03-22"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1168,
+  "type": "company",
+  "slug": "luma-ai",
+  "name": "Luma AI",
+  "summary": "Luma AI’s mission is to build Multimodal AGI: AI that can generate, understand, and operate in the physical world.",
+  "body": "We develop multimodal models across video, 3D, and generative media, and ship them in products like Dream Machine to help creators and teams turn ideas into compelling visuals—fast.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://lumalabs.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://lumalabs.ai/"
+    },
+    "image": {
+      "v": "/logos/luma-ai.png",
+      "fit": "contain",
+      "src": "https://lumalabs.ai/favicons/favicon-black.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco Bay Area",
+      "src": "https://www.linkedin.com/company/lumalabsai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/lumalabsai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco Bay Area, CA, United States",
+          "lat": 37.788497,
+          "lon": -122.355847,
+          "src": "https://www.linkedin.com/company/lumalabsai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

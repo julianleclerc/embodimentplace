@@ -1,0 +1,51 @@
+{
+  "id": 1908,
+  "type": "company",
+  "slug": "vetaion",
+  "name": "Vetaion",
+  "summary": "Munich-area startup building a fully automated production facility for control cabinets (Schaltschränke).",
+  "body": "Vetaion is an AI-native manufacturer of control cabinets with highly automated production starting from batch size 1, supporting the Mittelstand mechanical and plant engineering sector. The production relies on our own operating system for controlling production and administrative tasks.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2996-vetaion",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.vetaion.com/"
+    },
+    "image": {
+      "v": "/logos/vetaion.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6aeaee4581ad2fe119a5f0ce/6af1777d42acd2530bd1b245_Favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Garching bei München",
+      "src": "https://roboticsconnected.com/companies/2996-vetaion",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/2996-vetaion",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Garching bei München, Germany",
+          "lat": 48.251388,
+          "lon": 11.650966,
+          "src": "https://roboticsconnected.com/companies/2996-vetaion"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

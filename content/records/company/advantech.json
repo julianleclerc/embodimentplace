@@ -1,0 +1,53 @@
+{
+  "id": 1821,
+  "type": "company",
+  "slug": "advantech",
+  "name": "Advantech",
+  "summary": "Taiwan-headquartered provider of industrial computing hardware, embedded systems and Internet of Things platforms.",
+  "body": "Its catalogue spans embedded computers, industrial automation and I/O, edge AI systems, machine vision cameras and industrial networking products. The company sells into factory automation, healthcare, retail, transportation and energy markets.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2048-advantech",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.advantech.com/"
+    },
+    "image": {
+      "v": "/logos/advantech.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5ab6f08e592c39463faa.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Neihu District",
+      "src": "https://tw.linkedin.com/company/advantech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Taiwan",
+      "src": "https://tw.linkedin.com/company/advantech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "No. 1, Alley 20, Lane 26, Rueiguang Road, Neihu District, Taipei 114 Taiwan, Taiwan",
+          "lat": 24.152045,
+          "lon": 120.668999,
+          "src": "https://tw.linkedin.com/company/advantech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

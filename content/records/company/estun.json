@@ -1,0 +1,46 @@
+{
+  "id": 1094,
+  "type": "company",
+  "slug": "estun",
+  "name": "Estun",
+  "summary": "Estun Automation (listed in Shenzhen, code 002747) was established in 1993,from the first day of its founded, the company has taken the Integrity, focus, grow together as the foundation of the…",
+  "body": "Headquartered in Nanjing, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://www.estun.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.estun.com/"
+    },
+    "city": {
+      "v": "Nanjing",
+      "src": "https://cn.linkedin.com/company/estun",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/estun",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "No. 1888, Jiyin Road, Jiangning Economic Development Zone, Nanjing, Nanjing, Jiangsu 211106, China",
+          "lat": 32.088724,
+          "lon": 118.791746,
+          "src": "https://cn.linkedin.com/company/estun"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

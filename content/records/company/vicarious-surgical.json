@@ -1,0 +1,45 @@
+{
+  "id": 1156,
+  "type": "company",
+  "slug": "vicarious-surgical",
+  "name": "Vicarious Surgical",
+  "summary": "At Vicarious Surgical we are revolutionizing the field of surgical robotics.",
+  "body": "We seek to improve the lives of patients, enhance the ability of surgeons, and expand worldwide access to high-quality care through the use of surgical robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.vicarioussurgical.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.vicarioussurgical.com/"
+    },
+    "city": {
+      "v": "Waltham",
+      "src": "https://www.linkedin.com/company/vicarious-surgical",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/vicarious-surgical",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "78 Fourth Ave, Waltham, Massachusetts 02451, United States",
+          "lat": 42.392543,
+          "lon": -71.258048,
+          "src": "https://www.linkedin.com/company/vicarious-surgical"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

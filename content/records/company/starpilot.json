@@ -1,0 +1,51 @@
+{
+  "id": 1855,
+  "type": "company",
+  "slug": "starpilot",
+  "name": "Starpilot",
+  "summary": "Describes itself as an Applied Robotics Lab, aiming to build physical capabilities beyond what humans can accomplish alone.",
+  "body": "Starpilot builds the operating system for the physical world, enabling robots to perform human tasks with deterministic reliability. We combine low-latency teleoperation with advanced data capture to solve the \"last mile\" of automation. Request Data → https://www.starpilot.ai",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2440-starpilot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.starpilot.ai/"
+    },
+    "image": {
+      "v": "/logos/starpilot.png",
+      "fit": "contain",
+      "src": "https://starpilot.ai/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Brooklyn",
+      "src": "https://roboticsconnected.com/companies/2440-starpilot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2440-starpilot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Brooklyn, United States",
+          "lat": 40.652601,
+          "lon": -73.949721,
+          "src": "https://roboticsconnected.com/companies/2440-starpilot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

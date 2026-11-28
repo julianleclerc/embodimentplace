@@ -1,0 +1,51 @@
+{
+  "id": 1508,
+  "type": "company",
+  "slug": "tg0",
+  "name": "TG0",
+  "summary": "Develops intelligent material-interface technology that embeds AI into everyday surfaces, enabling touch-sensitive and pressure-mapping capabilities for seamless…",
+  "body": "We are an IP-focused start-up commercialising a platform technology to create novel tactile control products. Our partners and clients include prolific brands and manufacturers in the consumer and automotive sectors.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/224-tg0",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://tg0.co.uk/"
+    },
+    "image": {
+      "v": "/logos/tg0.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/68f6bb7a-aed2-4da5-9afd-23ad401d438b.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/224-tg0",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/224-tg0",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/224-tg0"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

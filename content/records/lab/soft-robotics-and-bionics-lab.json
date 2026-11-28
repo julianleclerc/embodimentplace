@@ -1,0 +1,30 @@
+{
+  "id": 2141,
+  "type": "lab",
+  "slug": "soft-robotics-and-bionics-lab",
+  "name": "Soft Robotics and Bionics Lab",
+  "summary": "Soft and bio-inspired robots.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Soft robots"
+      ],
+      "src": "https://softrobotics.snu.ac.kr/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://softrobotics.snu.ac.kr/",
+      "src": "https://softrobotics.snu.ac.kr/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Yong-Lae Park",
+      "src": "https://softrobotics.snu.ac.kr/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

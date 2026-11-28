@@ -1,0 +1,31 @@
+{
+  "id": 2193,
+  "type": "lab",
+  "slug": "learning-algorithms-and-systems-lab-lasa",
+  "name": "Learning Algorithms and Systems Lab (LASA)",
+  "summary": "Learning from demonstration and compliant control.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Manipulation"
+      ],
+      "src": "https://www.epfl.ch/labs/lasa/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.epfl.ch/labs/lasa/",
+      "src": "https://www.epfl.ch/labs/lasa/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Aude Billard",
+      "src": "https://www.epfl.ch/labs/lasa/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

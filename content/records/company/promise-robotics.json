@@ -1,0 +1,51 @@
+{
+  "id": 1805,
+  "type": "company",
+  "slug": "promise-robotics",
+  "name": "Promise Robotics",
+  "summary": "Builds a cloud-based production platform that combines AI, factory operations and robotic execution for homebuilding.",
+  "body": "#robotics #AI #construction #sustainability #advancedmanufacturing",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2002-promise-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://promiserobotics.com/"
+    },
+    "image": {
+      "v": "/logos/promise-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5cc6abc8e7a7fe0b9a5e.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Toronto",
+      "src": "https://roboticsconnected.com/companies/2002-promise-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://roboticsconnected.com/companies/2002-promise-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Toronto, Canada",
+          "lat": 43.653482,
+          "lon": -79.383935,
+          "src": "https://roboticsconnected.com/companies/2002-promise-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

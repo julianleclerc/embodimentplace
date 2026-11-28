@@ -1,0 +1,51 @@
+{
+  "id": 1367,
+  "type": "company",
+  "slug": "korea-university",
+  "name": "Korea University",
+  "summary": "University in Seoul, South Korea.",
+  "body": "Recent robotics work includes “Promoting sustainable logistics in the electronics industry: Circular intuitionistic fuzzy framework for evaluating smart robotics technologies”. OpenAlex lists 236 robotics, humanoid, embodied-AI or manipulation papers from Korea University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1016/j.eswa.2025.128031",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.korea.ac.kr/"
+    },
+    "image": {
+      "v": "/logos/korea-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Korea_University_logotype_%28English_version%29.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seongbuk District",
+      "src": "https://www.wikidata.org/wiki/Q39997",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://www.wikidata.org/wiki/Q39997",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seongbuk District, South Korea",
+          "lat": 37.589167,
+          "lon": 127.0325,
+          "src": "https://www.wikidata.org/wiki/Q39997"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

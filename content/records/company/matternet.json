@@ -1,0 +1,51 @@
+{
+  "id": 1143,
+  "type": "company",
+  "slug": "matternet",
+  "name": "Matternet",
+  "summary": "Matternet is the leading developer of commercial drone delivery systems for urban and suburban environments.",
+  "body": "The company ships the Matternet M2 drone and Matternet Software Platform and operates its technology directly for customers or in partnership with logistics organizations, such as UPS.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.matternet.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.matternet.com/"
+    },
+    "image": {
+      "v": "/logos/matternet.png",
+      "fit": "contain",
+      "src": "https://images.squarespace-cdn.com/content/v1/6695c6f810dd274bb43320fb/1721091903919-VIGJS82WI8RJ0K15K6GD/Matternet_Logo_BLK.png?format=1500w",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mountain View",
+      "src": "https://www.linkedin.com/company/matternet-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/matternet-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "185 E Dana St, Mountain View, California 94041, United States",
+          "lat": 37.386155,
+          "lon": -122.065473,
+          "src": "https://www.linkedin.com/company/matternet-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

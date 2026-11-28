@@ -1,0 +1,51 @@
+{
+  "id": 1829,
+  "type": "company",
+  "slug": "rogue-cortex",
+  "name": "Rogue Cortex",
+  "summary": "Early-stage British company founded in 2026 by Arnaud Thiercelin, with its registered office in London and a listed headquarters in Guildford.",
+  "body": "Rogue Cortex offers developer tools (software and hardware) that enables anyone creating robotics systems and solutions to achieve more, faster and cheaper.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2138-rogue-cortex",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://roguecortex.com/"
+    },
+    "image": {
+      "v": "/logos/rogue-cortex.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5d0185a20c95d16deb60.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/2138-rogue-cortex",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/2138-rogue-cortex",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/2138-rogue-cortex"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

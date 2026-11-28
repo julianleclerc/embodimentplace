@@ -1,0 +1,52 @@
+{
+  "id": 2020,
+  "type": "company",
+  "slug": "octapulse",
+  "name": "OctaPulse",
+  "summary": "Uses robotics and computer vision to automate fish inspection for aquaculture farms.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://news.ycombinator.com/item?id=47220320",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tryoctapulse.com/"
+    },
+    "image": {
+      "v": "/logos/octapulse.png",
+      "fit": "contain",
+      "src": "https://www.tryoctapulse.com/V12.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Frisco",
+      "src": "https://www.ycombinator.com/companies/octapulse",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/octapulse",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Frisco, Texas, United States",
+          "lat": 33.1506,
+          "lon": -96.823818,
+          "src": "https://www.ycombinator.com/companies/octapulse"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1151,
+  "type": "company",
+  "slug": "verdant-robotics",
+  "name": "Verdant Robotics",
+  "summary": "Verdant Robotics’ SharpShooter is the only precision application system that aims before it applies—delivering unmatched accuracy for weeding, thinning, and beneficial applications.",
+  "body": "With technology designed and tested to fit current cropping practices, and the reliability you require, it delivers pinpoint applications to weeds and crops of all sizes—from dime to dinner-plate-sized—without slowing down.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.verdantrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.verdantrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/verdant-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6792b4ac8a0083e26da102a8/67a290f82f667663b01d1711_webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hayward",
+      "src": "https://www.linkedin.com/company/verdantrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/verdantrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hayward, CA, United States",
+          "lat": 37.668821,
+          "lon": -122.080796,
+          "src": "https://www.linkedin.com/company/verdantrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

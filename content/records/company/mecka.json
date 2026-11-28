@@ -15,7 +15,15 @@
     },
     "roles": {
       "v": [
-        "Supplier"
+        "Supplier",
+        "Software developer"
+      ],
+      "more": [
+        {
+          "role": "Software developer",
+          "src": "https://roboticsconnected.com/companies/836-mecka",
+          "asof": "2026-11"
+        }
       ]
     },
     "city": {
@@ -36,6 +44,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-25 03:05:08",
+  "updated": "2026-11-27 22:05:12",
   "feed_at": null
 }

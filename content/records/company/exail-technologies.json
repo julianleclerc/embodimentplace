@@ -1,0 +1,51 @@
+{
+  "id": 1691,
+  "type": "company",
+  "slug": "exail-technologies",
+  "name": "Exail Technologies",
+  "summary": "French high-tech group formed in 2022 from the merger of ECA Group and iXblue.",
+  "body": "Exail is a leading high-tech industrial company specializing in cutting-edge robotics, maritime, navigation, aerospace and photonics technologies. With a strong entrepreneurial culture, Exail delivers unrivaled performance, reliability and safety to its civil and defense clients operating in severe environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1253-exail-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.exail.com/"
+    },
+    "image": {
+      "v": "/logos/exail-technologies.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/b73ad88d92315329f35c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Paris",
+      "src": "https://roboticsconnected.com/companies/1253-exail-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://roboticsconnected.com/companies/1253-exail-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Paris, France",
+          "lat": 48.853495,
+          "lon": 2.348391,
+          "src": "https://roboticsconnected.com/companies/1253-exail-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

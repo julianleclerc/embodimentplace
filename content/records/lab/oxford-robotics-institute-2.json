@@ -1,0 +1,27 @@
+{
+  "id": 2203,
+  "type": "lab",
+  "slug": "oxford-robotics-institute-2",
+  "name": "Oxford Robotics Institute",
+  "summary": "Oxford's robotics institute.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Field robots",
+        "Legged locomotion",
+        "Perception"
+      ],
+      "src": "https://ori.ox.ac.uk/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ori.ox.ac.uk/",
+      "src": "https://ori.ox.ac.uk/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

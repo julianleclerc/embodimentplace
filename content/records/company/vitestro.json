@@ -1,0 +1,51 @@
+{
+  "id": 1672,
+  "type": "company",
+  "slug": "vitestro",
+  "name": "Vitestro",
+  "summary": "Utrecht-based medical robotics company developing Aletta®, an autonomous robotic phlebotomy device that automates diagnostic blood collection.",
+  "body": "Vitestro will be the first to bring autonomous blood drawing technology to European hospitals. Blood drawing, performed billions of times per year worldwide, is key to clinical diagnosis.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1109-vitestro",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vitestro.com/"
+    },
+    "image": {
+      "v": "/logos/vitestro.png",
+      "fit": "contain",
+      "src": "https://vitestro.b-cdn.net/app/uploads/2026/01/cropped-vitestro-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Utrecht",
+      "src": "https://nl.linkedin.com/company/vitestro",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/vitestro",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Europalaan 500, Utrecht, 3526KS, Netherlands",
+          "lat": 52.062999,
+          "lon": 5.108159,
+          "src": "https://nl.linkedin.com/company/vitestro"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

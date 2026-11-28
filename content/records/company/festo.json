@@ -8,10 +8,18 @@
   "data": {
     "roles": {
       "v": [
-        "Supplier"
+        "Supplier",
+        "Robot maker"
       ],
       "src": "https://festo.com/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Robot maker",
+          "src": "https://roboticsconnected.com/companies/3297-festo",
+          "asof": "2026-11"
+        }
+      ]
     },
     "website": {
       "v": "https://festo.com/"
@@ -46,6 +54,6 @@
     }
   },
   "created": "2026-11-26 02:05:08",
-  "updated": "2026-11-26 02:05:08",
+  "updated": "2026-11-27 22:05:12",
   "feed_at": "2026-11-26"
 }

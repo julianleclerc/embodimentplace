@@ -1,0 +1,52 @@
+{
+  "id": 989,
+  "type": "company",
+  "slug": "nxp-semiconductors",
+  "name": "NXP Semiconductors",
+  "summary": "Microcontrollers, application and communication processors, connectivity, analog, radio and security chips, and sensors, mainly for cars and industry.",
+  "body": "We anticipate tomorrow’s needs—navigating a changing world by bringing together technology's brightest minds to build game-changing solutions that propel us forward. NXP Semiconductors N.V.",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute",
+        "Supplier"
+      ],
+      "src": "https://www.nxp.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.nxp.com/"
+    },
+    "image": {
+      "v": "/logos/nxp-semiconductors.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.nxp.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Eindhoven",
+      "src": "https://nl.linkedin.com/company/nxp-semiconductors",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/nxp-semiconductors",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "High Tech Campus 60, Eindhoven, Noord-Brabant 5656 AG, Netherlands",
+          "lat": 51.408888,
+          "lon": 5.460391,
+          "src": "https://nl.linkedin.com/company/nxp-semiconductors"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

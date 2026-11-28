@@ -1,0 +1,28 @@
+{
+  "id": 2084,
+  "type": "product",
+  "slug": "mobileye-drive",
+  "name": "Mobileye Drive",
+  "summary": "Mobileye's self-driving system for robotaxis and driverless shuttles.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Automotive",
+      "src": "https://www.mobileye.com",
+      "asof": "2026-11"
+    },
+    "av_kind": {
+      "v": "Driver system",
+      "src": "https://www.mobileye.com",
+      "asof": "2026-11"
+    },
+    "sae_level": {
+      "v": "Level 4",
+      "src": "https://www.mobileye.com",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-27 22:05:17",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,26 @@
+{
+  "id": 2118,
+  "type": "lab",
+  "slug": "berkeley-artificial-intelligence-research-bair",
+  "name": "Berkeley Artificial Intelligence Research (BAIR)",
+  "summary": "Berkeley's AI lab, a leader in robot learning.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Perception"
+      ],
+      "src": "https://bair.berkeley.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://bair.berkeley.edu/",
+      "src": "https://bair.berkeley.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

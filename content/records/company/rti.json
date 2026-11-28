@@ -1,0 +1,51 @@
+{
+  "id": 1064,
+  "type": "company",
+  "slug": "rti",
+  "name": "RTI",
+  "summary": "Maker of RTI Connext, a real-time data streaming framework used in robotics and physical AI systems.",
+  "body": "Working as one. RTI Connext® is the Real-Time Data Streaming Platform for Physical AI. RTI Connext software is the critical nervous system for over 2,000 designs across Aerospace and Defense, MedTech, Automotive, and Robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.rti.com/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rti.com/"
+    },
+    "image": {
+      "v": "/logos/rti.png",
+      "fit": "contain",
+      "src": "https://www.rti.com/hubfs/Master%20Graphics%20Folder/Logos/RTI/RTI-Logo-rev.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sunnyvale",
+      "src": "https://www.linkedin.com/company/rti",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/rti",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "232 E Java Drive, Sunnyvale, CA 94089, United States",
+          "lat": 37.410455,
+          "lon": -122.016139,
+          "src": "https://www.linkedin.com/company/rti"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

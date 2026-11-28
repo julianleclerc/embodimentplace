@@ -1,0 +1,28 @@
+{
+  "id": 3465,
+  "type": "product",
+  "slug": "wirobotics-allex",
+  "name": "WIRobotics ALLEX",
+  "summary": "ALLEX, a humanoid robot from WIRobotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/wirobotics-allex.webp",
+      "src": "https://www.wirobotics.com/main",
+      "orig": "https://www.wirobotics.com/_next/image?url=https%3A%2F%2Fd2nxb27ysr05sd.cloudfront.net%2Fbanner%2Fmain%2Fallex-banner-2.png&w=3840&q=75",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.wirobotics.com/main",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.wirobotics.com/main"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

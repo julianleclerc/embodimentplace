@@ -1,0 +1,26 @@
+{
+  "id": 3983,
+  "type": "lab",
+  "slug": "polimi-airlab",
+  "name": "Polimi AIRLab",
+  "summary": "AI and robotics lab.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Field robots"
+      ],
+      "src": "https://airlab.deib.polimi.it/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://airlab.deib.polimi.it/",
+      "src": "https://airlab.deib.polimi.it/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 07:05:09",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 1186,
+  "type": "company",
+  "slug": "intuition-robotics",
+  "name": "Intuition Robotics",
+  "summary": "Intuition Robotics is on a mission to care for our older adult population with an empathetic AI companion, allowing them to live healthier, happier and more independent lives.",
+  "body": "Our ground breaking technology synthesizes empathy to create an AI companion that establishes a trusted relationship, maintains high engagement and drives behavior change in older adults.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.intuitionrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.intuitionrobotics.com/"
+    },
+    "city": {
+      "v": "Palo Alto",
+      "src": "https://www.linkedin.com/company/intuition-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/intuition-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2345 Yale St, Palo Alto, California 94306, United States",
+          "lat": 37.424607,
+          "lon": -122.147132,
+          "src": "https://www.linkedin.com/company/intuition-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

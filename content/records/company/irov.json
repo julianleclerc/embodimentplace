@@ -1,0 +1,52 @@
+{
+  "id": 1841,
+  "type": "company",
+  "slug": "irov",
+  "name": "IROV",
+  "summary": "EyeROV (IROV Technologies Pvt.",
+  "body": "EyeROV (IROV Technologies Pvt. Ltd), is an India-based Marine Robotics and AI deeptech company headquartered in Kochi. We design and deploy advanced unmanned underwater and surface systems that make subsea inspection, monitoring, search-and-rescue, and intervention safer, faster, and more data-rich.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2332-irov",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://eyerov.com/"
+    },
+    "image": {
+      "v": "/logos/irov.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/694e50cb654ff668f686.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ernakulam",
+      "src": "https://in.linkedin.com/company/eyerov",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/eyerov",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kunnathunad Panchayath, Ernakulam, Kerala 683562, India",
+          "lat": 10.038395,
+          "lon": 76.507414,
+          "src": "https://in.linkedin.com/company/eyerov"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

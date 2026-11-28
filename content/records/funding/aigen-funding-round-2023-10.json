@@ -1,0 +1,23 @@
+{
+  "id": 3601,
+  "type": "funding",
+  "slug": "aigen-funding-round-2023-10",
+  "name": "Aigen funding round (2023-10)",
+  "summary": "Raised $12M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-10-13",
+      "src": "https://www.geekwire.com/2023/aigen-a-seattle-startup-that-sells-a-solar-powered-weed-thumping-robot-lands-12m/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 12,
+      "src": "https://www.geekwire.com/2023/aigen-a-seattle-startup-that-sells-a-solar-powered-weed-thumping-robot-lands-12m/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-10-13"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3838,
+  "type": "funding",
+  "slug": "microsure-funding-round-2021-05",
+  "name": "Microsure funding round (2021-05)",
+  "summary": "Raised $3.25M, led by Dutch investment agency Invest-NL NV.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2021-05-10",
+      "src": "https://www.bioworld.com/articles/506979-microsure-raises-325m-to-fund-development-of-its-microsurgery-robot?v=preview",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 3.25,
+      "src": "https://www.bioworld.com/articles/506979-microsure-raises-325m-to-fund-development-of-its-microsurgery-robot?v=preview",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2021-05-10"
+}

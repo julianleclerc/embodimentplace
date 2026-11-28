@@ -1,0 +1,45 @@
+{
+  "id": 2064,
+  "type": "product",
+  "slug": "shadow-dexterous-hand",
+  "name": "Shadow Dexterous Hand",
+  "summary": "Anthropomorphic five-finger research hand with 24 joints, 20 of them actuated.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://www.shadowrobot.com/dexterous-hand/",
+      "asof": "2026-11"
+    },
+    "h_kind": {
+      "v": "Dexterous hand",
+      "src": "https://www.shadowrobot.com/dexterous-hand/",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 24,
+      "src": "https://www.shadowrobot.com/dexterous-hand/",
+      "asof": "2026-11"
+    },
+    "active_dof": {
+      "v": 20,
+      "src": "https://www.shadowrobot.com/dexterous-hand/",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://www.shadowrobot.com/dexterous-hand/",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/shadow-dexterous-hand.webp",
+      "src": "https://shadowrobot.com/dexterous-hand-series/",
+      "orig": "https://shadowrobot.com/wp-content/uploads/2022/04/Shadow-Robot-Co3721HR-copy-2-e1650536420490-1536x828.png.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

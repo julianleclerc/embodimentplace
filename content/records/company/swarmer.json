@@ -1,0 +1,51 @@
+{
+  "id": 1905,
+  "type": "company",
+  "slug": "swarmer",
+  "name": "Swarmer",
+  "summary": "Defence technology company building vendor-agnostic software that lets one operator control hundreds of autonomous platforms in real time.",
+  "body": "Its platform coordinates drones, uncrewed surface vessels, ground vehicles and stationary launchers within a single swarm. The technology was born from combat operations in Ukraine, where it was first deployed in April 2024 and has since flown more than 100,000 missions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2992-swarmer",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://getswarmer.com/"
+    },
+    "image": {
+      "v": "/logos/swarmer.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/2052706867734814724/e7_3mXqm_400x400.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://roboticsconnected.com/companies/2992-swarmer",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2992-swarmer",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, United States",
+          "lat": 30.264926,
+          "lon": -97.747409,
+          "src": "https://roboticsconnected.com/companies/2992-swarmer"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

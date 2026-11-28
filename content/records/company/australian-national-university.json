@@ -1,0 +1,51 @@
+{
+  "id": 1395,
+  "type": "company",
+  "slug": "australian-national-university",
+  "name": "Australian National University",
+  "summary": "National research university in Canberra, Australian Capital Territory.",
+  "body": "Recent robotics work includes “Hazards in Daily Life? Enabling Robots to Proactively Detect and Resolve Anomalies”. OpenAlex lists 61 robotics, humanoid, embodied-AI or manipulation papers from Australian National University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.18653/v1/2025.naacl-long.379",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.anu.edu.au/"
+    },
+    "image": {
+      "v": "/logos/australian-national-university.png",
+      "fit": "contain",
+      "src": "https://d1zkbwgd2iyy9p.cloudfront.net/themes/custom/webstyle/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Canberra",
+      "src": "https://www.wikidata.org/wiki/Q127990",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://www.wikidata.org/wiki/Q127990",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Canberra, Australia",
+          "lat": -35.2778,
+          "lon": 149.1205,
+          "src": "https://www.wikidata.org/wiki/Q127990"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

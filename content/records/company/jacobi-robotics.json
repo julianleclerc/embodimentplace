@@ -1,0 +1,52 @@
+{
+  "id": 1028,
+  "type": "company",
+  "slug": "jacobi-robotics",
+  "name": "Jacobi Robotics",
+  "summary": "Accelerating the adoption of robot automation",
+  "body": "A software development platform for robot arms - develop robot arms 10x faster with friendly APIs and cutting-edge algorithms.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://jacobirobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://jacobirobotics.com/"
+    },
+    "image": {
+      "v": "/logos/jacobi-robotics.png",
+      "fit": "contain",
+      "src": "https://jacobirobotics.com/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Emeryville",
+      "src": "https://www.linkedin.com/company/jacobi-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/jacobi-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Emeryville, California, United States",
+          "lat": 37.831409,
+          "lon": -122.286527,
+          "src": "https://www.linkedin.com/company/jacobi-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1457,
+  "type": "company",
+  "slug": "autodiscovery",
+  "name": "Autodiscovery",
+  "summary": "Mobile robotics system integrator and UK distributor for AgileX and Unitree robot platforms, serving industries including agriculture, logistics, and defence.",
+  "body": "Autodiscovery is the fastest growing robotics first company in the UK. Autodiscovery is a field robotics system integrator working on embodied intelligence. We are creating the next generation AGI that lives inside robots in the real world.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/133-autodiscovery",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://autodiscovery.co.uk/"
+    },
+    "image": {
+      "v": "/logos/autodiscovery.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/e64e1a5e6b978425f133.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Wantage",
+      "src": "https://roboticsconnected.com/companies/133-autodiscovery",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/133-autodiscovery",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Wantage, United Kingdom",
+          "lat": 51.588597,
+          "lon": -1.426537,
+          "src": "https://roboticsconnected.com/companies/133-autodiscovery"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

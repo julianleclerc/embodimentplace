@@ -1,0 +1,53 @@
+{
+  "id": 1428,
+  "type": "company",
+  "slug": "reazon-human-interaction-lab",
+  "name": "Reazon Human Interaction Lab",
+  "summary": "Building foundation models that empower humanoid robots to interact intelligently and meaningfully with humans in real-world environments.",
+  "body": "The Reazon Human Interaction Lab is the R&D division of Reazon Holdings, focused on bringing the physical world to artificial intelligence.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Model lab"
+      ],
+      "src": "https://roboticsconnected.com/companies/72-reazon-human-interaction-lab",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://research.reazon.jp/"
+    },
+    "image": {
+      "v": "/logos/reazon-human-interaction-lab.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/15022865247d9fc6d0e6.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://roboticsconnected.com/companies/72-reazon-human-interaction-lab",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://roboticsconnected.com/companies/72-reazon-human-interaction-lab",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.67686,
+          "lon": 139.763895,
+          "src": "https://roboticsconnected.com/companies/72-reazon-human-interaction-lab"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1065,
+  "type": "company",
+  "slug": "apexai",
+  "name": "Apex.AI",
+  "summary": "Apex.AI is an international software company specializing in the development of safety-certified, developer-friendly, and scalable software for mobility systems, aiming to accelerate the transition…",
+  "body": "Apex.AI is an international software company specializing in the development of safety-certified, developer-friendly, and scalable software for mobility systems, aiming to accelerate the transition to software-defined vehicles and mobility.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.apex.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.apex.ai/"
+    },
+    "image": {
+      "v": "/logos/apexai.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/media/984e93_d2b4383ea6c54377816a7e38e7a751b9%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/984e93_d2b4383ea6c54377816a7e38e7a751b9%7Emv2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Palo Alto",
+      "src": "https://www.linkedin.com/company/apex-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/apex-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "844 E Charleston Rd, Palo Alto, California 94303, United States",
+          "lat": 37.421638,
+          "lon": -122.103332,
+          "src": "https://www.linkedin.com/company/apex-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,34 @@
+{
+  "id": 3287,
+  "type": "post",
+  "slug": "robocurve-gpt-62-astra-hits-97-on-robodojo-rc-tier-1",
+  "name": "Robocurve: GPT-6.2 Astra hits 97% on RoboDojo-RC Tier 1",
+  "summary": "According to Robocurve via X, GPT-6.2 Astra on Codex achieved 97% on RoboDojo-RC Tier 1 across 120 real-world robot trials, prompting retirement of ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-23"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "blockchain.news"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://blockchain.news/ainews/gpt-6-2-astra-hits-97-on-robodojo-rc-tier-1"
+    },
+    "image": {
+      "v": "https://blockchainstock.blob.core.windows.net/features/2242046FCF14090589D5A49FFC590D13A9AF6032D71ECDBD82C9F012CD661799.jpg",
+      "fit": "cover",
+      "src": "https://blockchain.news/ainews/gpt-6-2-astra-hits-97-on-robodojo-rc-tier-1",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-23"
+}

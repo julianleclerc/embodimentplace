@@ -1,0 +1,51 @@
+{
+  "id": 1737,
+  "type": "company",
+  "slug": "hydromea",
+  "name": "Hydromea",
+  "summary": "Swiss underwater robotics and communication company, spun out of EPFL, building autonomous underwater vehicles and wireless subsea data links.",
+  "body": "We focus on how submerged assets data acquisition and exchange, processing and analysis can be effortlessly scaled to revolutionise the industry's monitoring capabilities of critical assets.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1511-hydromea",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hydromea.com/"
+    },
+    "image": {
+      "v": "/logos/hydromea.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d75e6768fdb4e35d589c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Renens",
+      "src": "https://ch.linkedin.com/company/hydromea",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/hydromea",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Avenue de Longemalle 9, Renens, Vaud 1020, Switzerland",
+          "lat": 46.527515,
+          "lon": 6.59263,
+          "src": "https://ch.linkedin.com/company/hydromea"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3873,
+  "type": "funding",
+  "slug": "visionnav-robotics-funding-round-2022-04",
+  "name": "VisionNav Robotics funding round (2022-04)",
+  "summary": "Raised $80m.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-04-29",
+      "src": "https://www.prnewswire.com/news-releases/visionnav-robotics-raises-80m-in-c-round-leading-the-largest-funding-in-driverless-industrial-vehicles-field-301532556.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 80,
+      "src": "https://www.prnewswire.com/news-releases/visionnav-robotics-raises-80m-in-c-round-leading-the-largest-funding-in-driverless-industrial-vehicles-field-301532556.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-04-29"
+}

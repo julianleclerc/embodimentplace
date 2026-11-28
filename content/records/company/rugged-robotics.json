@@ -1,0 +1,51 @@
+{
+  "id": 1707,
+  "type": "company",
+  "slug": "rugged-robotics",
+  "name": "Rugged Robotics",
+  "summary": "Builds an autonomous robot that prints full-scale layouts directly onto concrete slabs, replacing manual chalk-based field layout on construction sites.",
+  "body": "Rugged Robotics is a modern, solution-oriented company based in Houston Texas. We combine experience and expertise from the construction and robotics industries to build practical solutions to real-world problems faced by construction crews every day.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1315-rugged-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://rugged-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/rugged-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/15b0222ab8f4b89cbeba.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Houston",
+      "src": "https://www.linkedin.com/company/rugged-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/rugged-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "205 Roberts St, Houston, Texas 77003, United States",
+          "lat": 29.750778,
+          "lon": -95.340478,
+          "src": "https://www.linkedin.com/company/rugged-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

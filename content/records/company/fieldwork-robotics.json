@@ -1,0 +1,51 @@
+{
+  "id": 1049,
+  "type": "company",
+  "slug": "fieldwork-robotics",
+  "name": "Fieldwork Robotics",
+  "summary": "We develop soft, adaptive and modular harvesting robotic platforms able to operate in non-controllable environments, such as agriculture fields, alongside people on non-repetitive tasks",
+  "body": "Reducing harvesting costs; Picking better quality fruit Augmenting labour to boost harvests for the £2.6bn raspberry market OUR MISSION Fieldwork Robotics is on",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://fieldworkrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://fieldworkrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/fieldwork-robotics.png",
+      "fit": "contain",
+      "src": "https://fieldworkrobotics.com/wp-content/uploads/favicon-1-300x300.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cambridge",
+      "src": "https://uk.linkedin.com/company/fwr-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/fwr-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "347 Cherry Hinton Road, Cambridge, Cambridgeshire CB1 8DH, United Kingdom",
+          "lat": 52.187666,
+          "lon": 0.155765,
+          "src": "https://uk.linkedin.com/company/fwr-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 2162,
+  "type": "lab",
+  "slug": "hamlyn-centre",
+  "name": "Hamlyn Centre",
+  "summary": "Medical and surgical robotics.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Medical robots"
+      ],
+      "src": "https://www.imperial.ac.uk/hamlyn-centre/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.imperial.ac.uk/hamlyn-centre/",
+      "src": "https://www.imperial.ac.uk/hamlyn-centre/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

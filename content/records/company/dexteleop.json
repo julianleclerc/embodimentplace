@@ -1,0 +1,52 @@
+{
+  "id": 955,
+  "type": "company",
+  "slug": "dexteleop",
+  "name": "DexTeleop",
+  "summary": "LingYu Robotics is an AI robotics company building robots and the data infrastructure to turn real-world interactions into training-ready data.",
+  "body": "Our self-developed LingYu TA series already operates in real-world environments across retail, hospitality, and other service settings.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://www.dexteleop.com/zh",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.dexteleop.com/"
+    },
+    "image": {
+      "v": "/logos/dexteleop.png",
+      "fit": "contain",
+      "src": "https://www.dexteleop.com/site-logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

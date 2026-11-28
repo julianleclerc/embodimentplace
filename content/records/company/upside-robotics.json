@@ -1,0 +1,51 @@
+{
+  "id": 1888,
+  "type": "company",
+  "slug": "upside-robotics",
+  "name": "Upside Robotics",
+  "summary": "Builds solar-powered, autonomous field robots that deliver nitrogen and other nutrients to corn in small, precise doses.",
+  "body": "Upside Robotics develops and deploys autonomous, AI-enabled field robots that help corn growers apply nutrients when and where crops need them.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2791-upside-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://upsiderobotics.com/"
+    },
+    "image": {
+      "v": "/logos/upside-robotics.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/oJlLSED0L946lIu1kEIXmgfqIc.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Waterloo",
+      "src": "https://roboticsconnected.com/companies/2791-upside-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://roboticsconnected.com/companies/2791-upside-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Waterloo, Canada",
+          "lat": 43.46527,
+          "lon": -80.522296,
+          "src": "https://roboticsconnected.com/companies/2791-upside-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

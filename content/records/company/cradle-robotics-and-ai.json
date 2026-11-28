@@ -1,0 +1,52 @@
+{
+  "id": 1587,
+  "type": "company",
+  "slug": "cradle-robotics-and-ai",
+  "name": "CRADLE Robotics and AI",
+  "summary": "Collaborative research centre combining Amentum's industrial expertise in robotics and autonomous systems with the University of Manchester's research capabilities.",
+  "body": "Empowering UK and global industries with advanced Robotics and Autonomous Systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/681-cradle-robotics-and-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cradlerobotics.co.uk/"
+    },
+    "image": {
+      "v": "/logos/cradle-robotics-and-ai.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5fea9d94e70acc6883ad.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Manchester",
+      "src": "https://uk.linkedin.com/company/cradle-robotics-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/cradle-robotics-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Booth Street East, Manchester, M13 9PL, United Kingdom",
+          "lat": 53.469091,
+          "lon": -2.233351,
+          "src": "https://uk.linkedin.com/company/cradle-robotics-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

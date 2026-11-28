@@ -1,0 +1,23 @@
+{
+  "id": 3754,
+  "type": "funding",
+  "slug": "ecorobotix-funding-round-2023-05",
+  "name": "Ecorobotix funding round (2023-05)",
+  "summary": "Raised $52M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-05-09",
+      "src": "https://ktla.com/business/press-releases/ein-presswire/632469111/swiss-agtech-company-ecorobotix-raises-52m-in-new-funding/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 52,
+      "src": "https://ktla.com/business/press-releases/ein-presswire/632469111/swiss-agtech-company-ecorobotix-raises-52m-in-new-funding/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-05-09"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3408,
+  "type": "product",
+  "slug": "aethon-evs",
+  "name": "Aethon EVS",
+  "summary": "Aethon's autonomous mobile robots for EVS departments move clean and soiled linen, trash and regulated medical waste and free up your staff.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/aethon-evs.webp",
+      "src": "https://aethon.com/mobile-robots-for-hospital-evs/",
+      "orig": "https://cdn.aethon.com/wp-content/uploads/2026/08/AethonT3WithCart.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://aethon.com/mobile-robots-for-hospital-evs/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

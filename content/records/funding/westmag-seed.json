@@ -1,0 +1,28 @@
+{
+  "id": 3934,
+  "type": "funding",
+  "slug": "westmag-seed",
+  "name": "Westmag Seed",
+  "summary": "Raised $11 million in a Seed round, led by Andreessen Horowitz.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-06-04",
+      "src": "https://pulse2.com/westmag-raises-11-million-seed-funding-to-build-americas-drone-motor-and-robot-actuator-industry/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://pulse2.com/westmag-raises-11-million-seed-funding-to-build-americas-drone-motor-and-robot-actuator-industry/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 11,
+      "src": "https://pulse2.com/westmag-raises-11-million-seed-funding-to-build-americas-drone-motor-and-robot-actuator-industry/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-06-04"
+}

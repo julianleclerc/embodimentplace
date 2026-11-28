@@ -1,0 +1,23 @@
+{
+  "id": 3475,
+  "type": "funding",
+  "slug": "robotera-series-a",
+  "name": "Robotera Series A",
+  "summary": "Raised RMB 1 billion in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-26",
+      "src": "https://sg.finance.yahoo.com/news/embodied-intelligence-pioneer-robotera-secures-072400331.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://sg.finance.yahoo.com/news/embodied-intelligence-pioneer-robotera-secures-072400331.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-26"
+}

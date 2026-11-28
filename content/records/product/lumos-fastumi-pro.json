@@ -1,0 +1,28 @@
+{
+  "id": 3441,
+  "type": "product",
+  "slug": "lumos-fastumi-pro",
+  "name": "Lumos FastUMI Pro",
+  "summary": "Lumos FastUMI Pro, a teleoperation and data-capture system from Lumos.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/lumos-fastumi-pro.webp",
+      "src": "https://www.lumosbot.tech/products/fastumi-pro",
+      "orig": "https://delivery.lumosbot.tech/www/lumos-website/images/products/fastumi-pro/front.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Teleoperation",
+      "src": "https://www.lumosbot.tech/products/fastumi-pro",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lumosbot.tech/products/fastumi-pro"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

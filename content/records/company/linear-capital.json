@@ -1,0 +1,51 @@
+{
+  "id": 1204,
+  "type": "company",
+  "slug": "linear-capital",
+  "name": "Linear Capital",
+  "summary": "We strive to be the best Data Intelligence Technology Fund in China.",
+  "body": "The general characteristics of the companies we care about are: data-based, AI-driven, and commercially-applicable. As of today, the total valuation of companies invested by Linear Capital has reached approximately US $15 billion.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.linear.vc/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.linear.vc/"
+    },
+    "image": {
+      "v": "/logos/linear-capital.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/68cd2653adabd6e406c6229a/68cd2653adabd6e406c6246e_Linear%20Webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "shanghai",
+      "src": "https://cn.linkedin.com/company/linear-venture",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/linear-venture",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "381 Panyu Road, Changning District, shanghai, 200000, China",
+          "lat": 31.206386,
+          "lon": 121.425702,
+          "src": "https://cn.linkedin.com/company/linear-venture"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

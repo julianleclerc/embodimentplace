@@ -1,0 +1,51 @@
+{
+  "id": 1773,
+  "type": "company",
+  "slug": "xpak-robotics",
+  "name": "XPAK Robotics",
+  "summary": "Designs and builds packaging automation equipment, centred on robotic case erectors, palletisers and delta robot work cells.",
+  "body": "Its patented COBOXX and ROBOX systems form boxes on demand without changeovers, which suits varied production runs. The company works closely with customers to tailor each work cell to their production environment, offering around-the-clock engineering support and on-site services.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1817-xpak-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.xpakrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/xpak-robotics.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/f1e88e38-23e7-47dc-bcf3-1691698f6374.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "North Brunswick",
+      "src": "https://roboticsconnected.com/companies/1817-xpak-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1817-xpak-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "North Brunswick, United States",
+          "lat": 40.453925,
+          "lon": -74.476545,
+          "src": "https://roboticsconnected.com/companies/1817-xpak-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

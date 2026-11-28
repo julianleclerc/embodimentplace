@@ -1,0 +1,45 @@
+{
+  "id": 945,
+  "type": "company",
+  "slug": "noematrix",
+  "name": "Noematrix",
+  "summary": "Noematrix Intelligence is a leading company in general-purpose robotic intelligence (Embodied AI), focusing on the research and development of large models of \"force-centered\" embodied intelligence…",
+  "body": "Noematrix Intelligence is a leading company in general-purpose robotic intelligence (Embodied AI), focusing on the research and development of large models of \"force-centered\" embodied intelligence and related infrastructure.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://www.noematrix.ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.noematrix.ai/"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

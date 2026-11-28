@@ -1,0 +1,52 @@
+{
+  "id": 1987,
+  "type": "company",
+  "slug": "lute",
+  "name": "Lute",
+  "summary": "Physical AI company building tactile foundation models (Lute-0) for retail and logistics robots.",
+  "body": "Lute's mission is to tackle labour shortages and demographic challenges through physical AI. We address the needs of industries that are facing a shortage of skilled workers beginning with logistics, manufacturing, and retail.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://www.lute.one/news/seed/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lute.one/"
+    },
+    "image": {
+      "v": "/logos/lute.png",
+      "fit": "contain",
+      "src": "https://www.lute.one/_astro/lute-icon-black.CUWyD6qK.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Warsaw",
+      "src": "https://krsly.pl/firma/0001204225",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Poland",
+      "src": "https://krsly.pl/firma/0001204225",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "ul. Bracka 25, 00-028 Warsaw, Poland",
+          "lat": 52.232071,
+          "lon": 21.016378,
+          "src": "https://krsly.pl/firma/0001204225"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

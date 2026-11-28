@@ -1,0 +1,51 @@
+{
+  "id": 1964,
+  "type": "company",
+  "slug": "t2",
+  "name": "T2",
+  "summary": "Tokyo-based autonomous driving company developing Level 4 self-driving trucks for trunk-route freight between major logistics hubs.",
+  "body": "Its in-house stack combines bird's-eye-view perception, high-precision self-localisation, vision-language scene understanding and heavy-vehicle motion control. The company says more than 50 transport firms have adopted its Level 2 systems since 2024, and it has demonstrated a roughly 500 km highway run.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3498-t2",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://t2.auto/"
+    },
+    "image": {
+      "v": "/logos/t2.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/3498/1794343411766.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://roboticsconnected.com/companies/3498-t2",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://roboticsconnected.com/companies/3498-t2",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.67686,
+          "lon": 139.763895,
+          "src": "https://roboticsconnected.com/companies/3498-t2"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

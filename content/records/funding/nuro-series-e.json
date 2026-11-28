@@ -1,0 +1,28 @@
+{
+  "id": 3646,
+  "type": "funding",
+  "slug": "nuro-series-e",
+  "name": "Nuro Series E",
+  "summary": "Raised $106 million in a Series E round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-04-09",
+      "src": "https://www.pymnts.com/news/investment-tracker/2025/nuro-raises-106-million-to-scale-autonomous-vehicle-technology-platform/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series E",
+      "src": "https://www.pymnts.com/news/investment-tracker/2025/nuro-raises-106-million-to-scale-autonomous-vehicle-technology-platform/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 106,
+      "src": "https://www.pymnts.com/news/investment-tracker/2025/nuro-raises-106-million-to-scale-autonomous-vehicle-technology-platform/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-04-09"
+}

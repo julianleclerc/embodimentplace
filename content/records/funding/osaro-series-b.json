@@ -1,0 +1,28 @@
+{
+  "id": 3552,
+  "type": "funding",
+  "slug": "osaro-series-b",
+  "name": "OSARO Series B",
+  "summary": "Raised $16M in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2019-10-03",
+      "src": "https://www.businesswire.com/news/home/20191003005321/en/OSARO-Raises-16M-in-Series-B-Funding-Attracting-New-Venture-Capital-for-Machine-Learning-Software-for-Industrial-Automation",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.businesswire.com/news/home/20191003005321/en/OSARO-Raises-16M-in-Series-B-Funding-Attracting-New-Venture-Capital-for-Machine-Learning-Software-for-Industrial-Automation",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 16,
+      "src": "https://www.businesswire.com/news/home/20191003005321/en/OSARO-Raises-16M-in-Series-B-Funding-Attracting-New-Venture-Capital-for-Machine-Learning-Software-for-Industrial-Automation",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2019-10-03"
+}

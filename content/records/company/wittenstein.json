@@ -1,0 +1,51 @@
+{
+  "id": 1249,
+  "type": "company",
+  "slug": "wittenstein",
+  "name": "WITTENSTEIN",
+  "summary": "WITTENSTEIN offers all main technologies for electromagnetic drive systems: Servo gearboxes, servo motors, servo regulators, sensors, software, servo actuators.",
+  "body": "Headquartered in Igersheim, Germany.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.wittenstein-group.com/en-us",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.wittenstein-group.com/"
+    },
+    "image": {
+      "v": "/logos/wittenstein.png",
+      "fit": "contain",
+      "src": "https://www.wittenstein-group.com/_assets/69170282a9de2cd205002f9779c24fff/Icons/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Igersheim",
+      "src": "https://www.wikidata.org/wiki/Q2586768",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://www.wikidata.org/wiki/Q2586768",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Igersheim, Germany",
+          "lat": 49.493567,
+          "lon": 9.817934,
+          "src": "https://www.wikidata.org/wiki/Q2586768"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

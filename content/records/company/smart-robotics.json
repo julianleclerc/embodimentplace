@@ -1,0 +1,51 @@
+{
+  "id": 1669,
+  "type": "company",
+  "slug": "smart-robotics",
+  "name": "Smart Robotics",
+  "summary": "Builds AI-driven pick-and-place robotic cells for warehouse and production intralogistics.",
+  "body": "Smart Robotics is Europe’s go-to partner for robotic and cobot palletizing, depalletizing, and item picking — all built in-house and centered around our customers’ needs.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1104-smart-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://smart-robotics.io/"
+    },
+    "image": {
+      "v": "/logos/smart-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/279940153fbc924f6bb1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Best",
+      "src": "https://nl.linkedin.com/company/smart-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/smart-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "De Rijn 6C, Best, North Brabant 5684 PJ, Netherlands",
+          "lat": 51.485898,
+          "lon": 5.388683,
+          "src": "https://nl.linkedin.com/company/smart-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

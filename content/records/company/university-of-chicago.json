@@ -1,0 +1,51 @@
+{
+  "id": 1286,
+  "type": "company",
+  "slug": "university-of-chicago",
+  "name": "University of Chicago",
+  "summary": "Private university in Chicago, Illinois.",
+  "body": "Recent robotics work includes “GRAPE: Generalizing Robot Policy via Preference Alignment”. OpenAlex lists 164 robotics, humanoid, embodied-AI or manipulation papers from University of Chicago since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/icra57385.2026.11695972",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://uchicago.edu/"
+    },
+    "image": {
+      "v": "/logos/university-of-chicago.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Chicago_wordmark.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chicago",
+      "src": "https://www.wikidata.org/wiki/Q131252",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q131252",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Chicago, United States",
+          "lat": 41.789722,
+          "lon": -87.599722,
+          "src": "https://www.wikidata.org/wiki/Q131252"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1948,
+  "type": "company",
+  "slug": "mvtec",
+  "name": "MVTec",
+  "summary": "Develops machine vision software for industrial automation, sold as hardware-independent products that combine classic image processing with AI.",
+  "body": "MVTec Software GmbH is a leading international manufacturer of software for machine vision. MVTec products are used in a wide range of industries, such as semiconductor and electronics manufacturing, battery production, agriculture and food, as well as logistics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/3294-mvtec",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mvtec.com/"
+    },
+    "image": {
+      "v": "/logos/mvtec.png",
+      "fit": "contain",
+      "src": "https://www.mvtec.com/_assets/fa5d75f93fd301e76fbd9a7276a24d9e/Icons/Favicons/apple-touch-icon.png?1793007383",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://de.linkedin.com/company/mvtec-software-gmbh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/mvtec-software-gmbh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Arnulfstr. 205, Munich, 80634, Germany",
+          "lat": 48.14945,
+          "lon": 11.521002,
+          "src": "https://de.linkedin.com/company/mvtec-software-gmbh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

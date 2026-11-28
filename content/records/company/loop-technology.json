@@ -1,0 +1,52 @@
+{
+  "id": 1813,
+  "type": "company",
+  "slug": "loop-technology",
+  "name": "Loop Technology",
+  "summary": "UK industrial automation and robotics specialist, founded in 1998 and based in Poundbury, Dorchester.",
+  "body": "Loop Technology is an industrial automation and robotics specialist for the high value manufacturing sector including aerospace, defence, and renewable energy. Loop Technology specialise in machine vision, motion control and industrial robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2028-loop-technology-ltd",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://looptechnology.com/"
+    },
+    "image": {
+      "v": "/logos/loop-technology.png",
+      "fit": "contain",
+      "src": "https://looptechnology.com/wp-content/uploads/2019/01/cropped-favicon-site-icon-1-1-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dorchester",
+      "src": "https://uk.linkedin.com/company/loop-technology-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/loop-technology-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "The Loop Technology Centre, Dorchester, Dorset DT1 3EW, United Kingdom",
+          "lat": 50.713206,
+          "lon": -2.437123,
+          "src": "https://uk.linkedin.com/company/loop-technology-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

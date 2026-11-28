@@ -1,0 +1,51 @@
+{
+  "id": 1108,
+  "type": "company",
+  "slug": "avatarin",
+  "name": "avatarin",
+  "summary": "ANA spin-out building avatar robots for remote presence.",
+  "body": "Avatarin redefines how people meet, communicate, and share experiences — anytime, anywhere. By combining robotics and AI communication, we help organizations overcome physical and resource barriers to bring people closer together.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://jp.linkedin.com/company/avatarin",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.avatarin.com/"
+    },
+    "image": {
+      "v": "/logos/avatarin.png",
+      "fit": "contain",
+      "src": "https://www.avatarin.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chuo",
+      "src": "https://jp.linkedin.com/company/avatarin",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/avatarin",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3-3-9, Nihonbashi Muromachi,, Chuo, Tokyo 103-0022, Japan",
+          "lat": 35.687974,
+          "lon": 139.772824,
+          "src": "https://jp.linkedin.com/company/avatarin"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

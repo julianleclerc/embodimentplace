@@ -1,0 +1,23 @@
+{
+  "id": 3605,
+  "type": "funding",
+  "slug": "ami-labs-funding-round-2026-03",
+  "name": "AMI Labs funding round (2026-03)",
+  "summary": "Raised $1.03B.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-03-09",
+      "src": "https://finance.yahoo.com/news/yann-lecun-ami-labs-raises-050000121.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1030,
+      "src": "https://finance.yahoo.com/news/yann-lecun-ami-labs-raises-050000121.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-03-09"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1919,
+  "type": "company",
+  "slug": "yardstick-robotics",
+  "name": "Yardstick Robotics",
+  "summary": "German maker of AI-enabled robots built for extreme and unpredictable environments.",
+  "body": "Its flagship YARO Cobot is a ruggedised arm with hard-coated aluminium construction, IP67/IP69 protection, force control and an operating range of -20°C to 50°C. The company designs and manufactures its robots in Bremen, and operates as a subsidiary of Rheinmetall AG. Its cobots and mobile platforms target offshore, outdoor, underwater and space work.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3094-yardstick-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://yardstick-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/yardstick-robotics.png",
+      "fit": "contain",
+      "src": "https://yardstick-robotics.com/wp-content/uploads/2025/03/cropped-favicon-Rheinmetall-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bremen",
+      "src": "https://roboticsconnected.com/companies/3094-yardstick-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/3094-yardstick-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bremen, Germany",
+          "lat": 53.07582,
+          "lon": 8.807165,
+          "src": "https://roboticsconnected.com/companies/3094-yardstick-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

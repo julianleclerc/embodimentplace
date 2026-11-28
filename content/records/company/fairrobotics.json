@@ -1,0 +1,51 @@
+{
+  "id": 1957,
+  "type": "company",
+  "slug": "fairrobotics",
+  "name": "FairRobotics",
+  "summary": "Robotics and Physical AI branch of FairConsult 24|7, a German software consultancy long rooted in the energy and utilities sector.",
+  "body": "About FairRobotics Different Robots. One Platform. Endless Possibilities. At FairRobotics, we are driving the future of intelligent automation by combining Physical AI, humanoid robotics, and enterprise integration.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/3404-fairrobotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fairconsult24-7.de/"
+    },
+    "image": {
+      "v": "/logos/fairrobotics.png",
+      "fit": "contain",
+      "src": "https://fairconsult24-7.de/wp-content/uploads/2025/08/cropped-android-chrome-512x512-1-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Heidelberg",
+      "src": "https://roboticsconnected.com/companies/3404-fairrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/3404-fairrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Heidelberg, Germany",
+          "lat": 49.409358,
+          "lon": 8.694724,
+          "src": "https://roboticsconnected.com/companies/3404-fairrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

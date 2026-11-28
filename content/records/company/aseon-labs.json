@@ -1,0 +1,51 @@
+{
+  "id": 914,
+  "type": "company",
+  "slug": "aseon-labs",
+  "name": "Aseon Labs",
+  "summary": "Robotic pitstops for self-driving cars.",
+  "body": "Aseon Labs builds robotic pitstops for self-driving cars. Autonomous vehicles can drive themselves, but they still rely on humans and centralized depots for charging, cleaning and servicing multiple times per day. Y Combinator Spring 2026 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://aseon.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://aseon.com/"
+    },
+    "image": {
+      "v": "/logos/aseon-labs.png",
+      "fit": "contain",
+      "src": "https://aseon.com/android-chrome-512x512.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.ycombinator.com/companies/aseon-labs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/aseon-labs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.ycombinator.com/companies/aseon-labs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

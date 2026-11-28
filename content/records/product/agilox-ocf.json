@@ -1,0 +1,23 @@
+{
+  "id": 3411,
+  "type": "product",
+  "slug": "agilox-ocf",
+  "name": "AGILOX OCF",
+  "summary": "The AGILOX OCF is a self-driving counterbalanced forklift (AMR). ► Find out more about driverless logistics robots & AMRs here!",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/agilox-ocf.webp",
+      "src": "https://www.agilox.net/en/product/agilox-ocf/",
+      "orig": "https://www.agilox.net/media/ocf-3.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.agilox.net/en/product/agilox-ocf/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

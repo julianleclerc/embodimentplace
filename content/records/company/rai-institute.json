@@ -1,0 +1,51 @@
+{
+  "id": 1720,
+  "type": "company",
+  "slug": "rai-institute",
+  "name": "RAI Institute",
+  "summary": "The RAI Institute (Robotics and AI Institute) is a research organisation working to solve fundamental problems in robotics and artificial intelligence.",
+  "body": "We aim to solve the most important and fundamental problems in robotics and AI. (Formerly The AI Institute)",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://roboticsconnected.com/companies/1357-rai-institute",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://rai-inst.com/"
+    },
+    "image": {
+      "v": "/logos/rai-institute.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9895719443b00d2d39e8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cambridge",
+      "src": "https://www.linkedin.com/company/rai-inst",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/rai-inst",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "145 Broadway, Cambridge, MA 02142, United States",
+          "lat": 42.364883,
+          "lon": -71.088934,
+          "src": "https://www.linkedin.com/company/rai-inst"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

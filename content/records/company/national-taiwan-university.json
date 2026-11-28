@@ -1,0 +1,51 @@
+{
+  "id": 1402,
+  "type": "company",
+  "slug": "national-taiwan-university",
+  "name": "National Taiwan University",
+  "summary": "National university located in Taipei, Taiwan.",
+  "body": "Recent robotics work includes “Multi‐Material Additive Manufacturing of Soft Robotic Systems: A Comprehensive Review”. OpenAlex lists 157 robotics, humanoid, embodied-AI or manipulation papers from National Taiwan University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1002/adrr.202500064",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ntu.edu.tw/"
+    },
+    "image": {
+      "v": "/logos/national-taiwan-university.png",
+      "fit": "contain",
+      "src": "https://www.ntu.edu.tw/images/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Da'an District",
+      "src": "https://www.wikidata.org/wiki/Q32746",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Taiwan",
+      "src": "https://www.wikidata.org/wiki/Q32746",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Da'an District, Taiwan",
+          "lat": 25.016817,
+          "lon": 121.538457,
+          "src": "https://www.wikidata.org/wiki/Q32746"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3922,
+  "type": "funding",
+  "slug": "jacobi-robotics-funding-round-2024-07",
+  "name": "Jacobi Robotics funding round (2024-07)",
+  "summary": "Raised $5 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-07-26",
+      "src": "https://pulse2.com/jacobi-robotics-ai-based-motion-planning-tech-company-raises-5-million/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 5,
+      "src": "https://pulse2.com/jacobi-robotics-ai-based-motion-planning-tech-company-raises-5-million/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-07-26"
+}

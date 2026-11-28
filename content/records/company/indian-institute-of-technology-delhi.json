@@ -1,0 +1,51 @@
+{
+  "id": 1390,
+  "type": "company",
+  "slug": "indian-institute-of-technology-delhi",
+  "name": "Indian Institute of Technology Delhi",
+  "summary": "Public research university located in Delhi.",
+  "body": "Recent robotics work includes “Deposition strategy correlation with texture development, geometric homogeneity, and mechanical anisotropy in robotic WAAM-fabricated aluminum alloy thick walls”. OpenAlex lists 42 robotics, humanoid, embodied-AI or manipulation papers from Indian Institute of Technology Delhi since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1016/j.jmapro.2025.03.121",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.iitd.ac.in/"
+    },
+    "image": {
+      "v": "/logos/indian-institute-of-technology-delhi.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.iitd.ac.in&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Delhi",
+      "src": "https://www.wikidata.org/wiki/Q1194650",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://www.wikidata.org/wiki/Q1194650",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Delhi, India",
+          "lat": 28.54358,
+          "lon": 77.19312,
+          "src": "https://www.wikidata.org/wiki/Q1194650"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

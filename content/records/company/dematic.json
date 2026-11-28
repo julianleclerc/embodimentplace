@@ -1,0 +1,51 @@
+{
+  "id": 1266,
+  "type": "company",
+  "slug": "dematic",
+  "name": "Dematic",
+  "summary": "The Mind Behind the Machine Dematic is a trusted partner in intelligent automation for the supply chain, helping organizations design, build, and evolve solutions that perform in the real world.",
+  "body": "Your operation in mind. Always. We design solutions that think ahead, supporting better decisions across manufacturing, warehousing, and distribution.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator"
+      ],
+      "src": "https://www.dematic.com/en-us/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.dematic.com/"
+    },
+    "image": {
+      "v": "/logos/dematic.png",
+      "fit": "contain",
+      "src": "https://www.dematic.com/content/dam/dematic/images/brand/dematic-apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Atlanta",
+      "src": "https://www.linkedin.com/company/dematic",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/dematic",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "756 W Peachtree St NW, Atlanta, Georgia 30308, United States",
+          "lat": 33.776839,
+          "lon": -84.386938,
+          "src": "https://www.linkedin.com/company/dematic"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

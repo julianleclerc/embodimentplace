@@ -1,0 +1,51 @@
+{
+  "id": 1662,
+  "type": "company",
+  "slug": "firestorm",
+  "name": "Firestorm",
+  "summary": "Builds xCell, a containerised expeditionary microfactory that 3D-prints and assembles modular unmanned aerial systems near the point of need.",
+  "body": "We are building the future of modular, open-source architectures supporting the Department of Defense requirements to create Affordable Mass. Firestorm is redefining military expectations for on-site modularity to support the widest array of mission areas.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1076-firestorm",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://launchfirestorm.com/"
+    },
+    "image": {
+      "v": "/logos/firestorm.png",
+      "fit": "contain",
+      "src": "https://launchfirestorm.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Diego",
+      "src": "https://roboticsconnected.com/companies/1076-firestorm",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1076-firestorm",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Diego, United States",
+          "lat": 32.715706,
+          "lon": -117.163828,
+          "src": "https://roboticsconnected.com/companies/1076-firestorm"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

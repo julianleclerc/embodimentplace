@@ -1,0 +1,51 @@
+{
+  "id": 1912,
+  "type": "company",
+  "slug": "svt-robotics",
+  "name": "SVT Robotics",
+  "summary": "Builds SOFTBOT, a software platform that connects industrial systems such as warehouse management software, robots and automation equipment through a standardised…",
+  "body": "SVT Robotics is a software provider that helps organizations integrate, optimize, and scale industrial software, hardware, and enterprise applications with the data infrastructure required to power enterprise and physical AI.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3002-svt-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.svtrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/svt-robotics.png",
+      "fit": "contain",
+      "src": "https://www.svtrobotics.com/wp-content/uploads/2023/11/cropped-favicon-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Norfolk",
+      "src": "https://www.linkedin.com/company/svt-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/svt-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "730 W 20th St, Norfolk, Virginia 23517, United States",
+          "lat": 36.869922,
+          "lon": -76.295156,
+          "src": "https://www.linkedin.com/company/svt-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

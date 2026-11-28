@@ -1,0 +1,51 @@
+{
+  "id": 1102,
+  "type": "company",
+  "slug": "axelera-ai",
+  "name": "Axelera AI",
+  "summary": "Axelera AI delivers an AI-native game-changing hardware and software platform to accelerate artificial intelligence.",
+  "body": "Headquartered in the AI Innovation Center of the High Tech Campus in Eindhoven, Axelera AI has R&D offices in Belgium, Switzerland, UK and Italy and operations in 15 European countries .",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute"
+      ],
+      "src": "https://axelera.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://axelera.ai/"
+    },
+    "image": {
+      "v": "/logos/axelera-ai.png",
+      "fit": "contain",
+      "src": "https://axelera.ai/hubfs/Axelera_February2025/images/cropped-favicon-axelera-270x270_@180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Eindhoven",
+      "src": "https://nl.linkedin.com/company/axelera-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/axelera-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "HTC5, High Tech Campus, Eindhoven, 5656 AE, Netherlands",
+          "lat": 51.40998,
+          "lon": 5.45474,
+          "src": "https://nl.linkedin.com/company/axelera-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

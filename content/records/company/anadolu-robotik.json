@@ -1,0 +1,51 @@
+{
+  "id": 1902,
+  "type": "company",
+  "slug": "anadolu-robotik",
+  "name": "Anadolu Robotik",
+  "summary": "Builds unmanned underwater and surface vehicles, including remotely operated vehicles (ROVs) such as the ARGON series and the ARIDA unmanned surface vessel.",
+  "body": "Firmamız, 2021 yılında, Erciyes Teknopark’ta kuruldu. Bu adım, ülkemizin teknolojik ilerlemesine ve insansız sistemler alanındaki başarılarına katkı yapma hedefimizin başlangıcı oldu. Kocaeli Gölcük'te bulunan fabrikamızda kurduğumuz altyapı sayesinde kritik insansız deniz sistemlerin üretimine devam etmekteyiz.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2903-anadolu-robotik",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.anadolurobotik.com/"
+    },
+    "image": {
+      "v": "/logos/anadolu-robotik.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.anadolurobotik.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kocaeli",
+      "src": "https://tr.linkedin.com/company/anadolu-robotik",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Turkey",
+      "src": "https://tr.linkedin.com/company/anadolu-robotik",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Sepetlipınar, Gelincik Sk. A blok No:19/1, 41275, Kocaeli, Başiskele, Turkey",
+          "lat": 40.702057,
+          "lon": 29.879404,
+          "src": "https://tr.linkedin.com/company/anadolu-robotik"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

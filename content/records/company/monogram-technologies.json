@@ -1,0 +1,51 @@
+{
+  "id": 1158,
+  "type": "company",
+  "slug": "monogram-technologies",
+  "name": "Monogram Technologies",
+  "summary": "Zimmer Biomet is a global medical technology leader with a comprehensive portfolio designed to maximize mobility and improve health.",
+  "body": "We advance our mission to alleviate pain and improve the quality of life for patients around the world with our innovative products and suite of integrated digital and robotic technologies leverage data, data analytics and artificial intelligence.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.monogramtechnologies.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.monogramtechnologies.com/"
+    },
+    "image": {
+      "v": "/logos/monogram-technologies.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/65031d3a409ee83435080102/6a57d897b3f7d9e9bfe1275f_Z-Icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Warsaw",
+      "src": "https://www.linkedin.com/company/zimmerbiomet",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/zimmerbiomet",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "345 East Main Street, Warsaw, Indiana 46580, United States",
+          "lat": 41.239168,
+          "lon": -85.854751,
+          "src": "https://www.linkedin.com/company/zimmerbiomet"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

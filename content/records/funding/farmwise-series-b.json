@@ -1,0 +1,28 @@
+{
+  "id": 3758,
+  "type": "funding",
+  "slug": "farmwise-series-b",
+  "name": "FarmWise Series B",
+  "summary": "Raised $45M in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-06-01",
+      "src": "https://www.prnewswire.com/news-releases/farmwise-raises-45m-series-b-to-expand-ai-powered-farm-equipment-in-us-farms-301558575.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.prnewswire.com/news-releases/farmwise-raises-45m-series-b-to-expand-ai-powered-farm-equipment-in-us-farms-301558575.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 45,
+      "src": "https://www.prnewswire.com/news-releases/farmwise-raises-45m-series-b-to-expand-ai-powered-farm-equipment-in-us-farms-301558575.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-06-01"
+}

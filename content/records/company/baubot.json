@@ -1,0 +1,51 @@
+{
+  "id": 1530,
+  "type": "company",
+  "slug": "baubot",
+  "name": "Baubot",
+  "summary": "Develops mobile robotic systems for construction automation.",
+  "body": "fischer BAUBOT is an Austrian company based in Vienna focused on the development and production of mobile robotic solutions for the construction industry.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/262-baubot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.baubot.com/"
+    },
+    "image": {
+      "v": "/logos/baubot.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a9484be0daf434bd2443.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Wien",
+      "src": "https://at.linkedin.com/company/baubot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Austria",
+      "src": "https://at.linkedin.com/company/baubot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Gutheil-Schodergasse 8-12, Wien, 1100, Austria",
+          "lat": 48.185719,
+          "lon": 16.422159,
+          "src": "https://at.linkedin.com/company/baubot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

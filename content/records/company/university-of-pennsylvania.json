@@ -1,0 +1,51 @@
+{
+  "id": 2088,
+  "type": "company",
+  "slug": "university-of-pennsylvania",
+  "name": "University of Pennsylvania",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.upenn.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.upenn.edu/"
+    },
+    "city": {
+      "v": "Philadelphia"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Philadelphia, United States",
+          "lat": 39.9522,
+          "lon": -75.1932
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 84.4,
+      "faculty": 19,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 84,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1447,
+  "type": "company",
+  "slug": "artimus-robotics",
+  "name": "Artimus Robotics",
+  "summary": "Develops HASEL artificial muscles: soft electric actuators inspired by biological muscle, offering silent operation and energy efficiency for robotic applications.",
+  "body": "Artimus Robotics is providing life-like motion to the next generation of robotics and automation. Inspired by nature, we are taking a radically new approach to actuation by introducing HASEL artificial muscles.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/117-artimus-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.artimusrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/artimus-robotics.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/ficons/8aba93_6e856a511cc74f29bea68ff62a95c66a%7Emv2.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boulder",
+      "src": "https://roboticsconnected.com/companies/117-artimus-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/117-artimus-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Boulder, United States",
+          "lat": 40.014986,
+          "lon": -105.270545,
+          "src": "https://roboticsconnected.com/companies/117-artimus-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

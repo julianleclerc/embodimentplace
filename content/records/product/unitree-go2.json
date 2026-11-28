@@ -60,9 +60,16 @@
       "v": 1600,
       "src": "https://www.unitree.com/go2/",
       "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/unitree-go2.webp",
+      "src": "https://www.unitree.com/go2/",
+      "orig": "https://www.unitree.com/images/11d0a76afbb74e8fb7f692652b4c33e0_800x800.png",
+      "fit": "contain",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-24 06:05:09",
+  "updated": "2026-11-28 03:05:16",
   "feed_at": "2026-11-22"
 }

@@ -1,0 +1,51 @@
+{
+  "id": 1592,
+  "type": "company",
+  "slug": "d-orbit",
+  "name": "D-Orbit",
+  "summary": "Designs and operates orbital transfer vehicles for satellite transportation and in-orbit servicing.",
+  "body": "D-Orbit is a global market leader in the space logistics and transportation service industries with a track record of space-proven technologies and successful missions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/694-d-orbit",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dorbit.space/"
+    },
+    "image": {
+      "v": "/logos/d-orbit.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d153a51e095e64852dc0.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Fino Mornasco",
+      "src": "https://it.linkedin.com/company/d-orbit",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Italy",
+      "src": "https://it.linkedin.com/company/d-orbit",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Viale Risorgimento, 57, Fino Mornasco, Como 22073, Italy",
+          "lat": 45.747352,
+          "lon": 9.043515,
+          "src": "https://it.linkedin.com/company/d-orbit"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

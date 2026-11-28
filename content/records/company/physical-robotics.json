@@ -1,0 +1,51 @@
+{
+  "id": 1626,
+  "type": "company",
+  "slug": "physical-robotics",
+  "name": "Physical Robotics",
+  "summary": "Develops upper-body humanoid robots designed to perform dexterous tasks in dynamic environments.",
+  "body": "The company focuses on the torso and arms rather than legs, enabling faster development and enhanced stability whilst maintaining precision in complex operations. Their flagship product, Robot Pi (π), targets roles in manufacturing, healthcare, logistics and hazardous environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/867-physical-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.physicalrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/physical-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/37f0245e6801e2d847ab.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Moss",
+      "src": "https://roboticsconnected.com/companies/867-physical-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://roboticsconnected.com/companies/867-physical-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Moss, Norway",
+          "lat": 59.414668,
+          "lon": 10.659658,
+          "src": "https://roboticsconnected.com/companies/867-physical-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

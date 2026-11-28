@@ -1,0 +1,52 @@
+{
+  "id": 2014,
+  "type": "company",
+  "slug": "robotx",
+  "name": "RobotX",
+  "summary": "Builds Xmind, a hardware-agnostic robot brain for humanoid, quadruped and wheeled robots.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://x.com/RobotXOfficial/status/2037052563254894946",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://usrobotx.com/"
+    },
+    "image": {
+      "v": "/logos/robotx.png",
+      "fit": "contain",
+      "src": "https://usrobotx.com/icon.png?icon.01_.ab~qeun-8.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Irvine",
+      "src": "https://usrobotx.com/about",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://usrobotx.com/about",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "17901 Von Karman Ave, Ste 420, Irvine, CA 92614, United States",
+          "lat": 33.685697,
+          "lon": -117.825981,
+          "src": "https://usrobotx.com/about"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

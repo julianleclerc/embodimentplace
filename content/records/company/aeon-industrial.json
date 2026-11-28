@@ -1,0 +1,51 @@
+{
+  "id": 1416,
+  "type": "company",
+  "slug": "aeon-industrial",
+  "name": "Aeon Industrial",
+  "summary": "Defence-technology company building autonomous tactical weapon systems for frontline warfighters.",
+  "body": "Aeon is a vertically integrated defense manufacturer developing and producing advanced strike systems and critical subsystems at industrial scale.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/43-aeon-industrial",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.aeonindustrial.com/"
+    },
+    "image": {
+      "v": "/logos/aeon-industrial.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/0b73a850da47658fa5a7.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://roboticsconnected.com/companies/43-aeon-industrial",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/43-aeon-industrial",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, United States",
+          "lat": 30.264926,
+          "lon": -97.747409,
+          "src": "https://roboticsconnected.com/companies/43-aeon-industrial"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

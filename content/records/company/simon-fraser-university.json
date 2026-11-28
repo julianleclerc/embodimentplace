@@ -1,0 +1,51 @@
+{
+  "id": 1320,
+  "type": "company",
+  "slug": "simon-fraser-university",
+  "name": "Simon Fraser University",
+  "summary": "Public research university in Greater Vancouver, British Columbia, Canada.",
+  "body": "Robotics: SFU Robotics Research Group | SFU Robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://robotics.sfu.ca/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sfu.ca/"
+    },
+    "image": {
+      "v": "/logos/simon-fraser-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SFU-block-logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Surrey",
+      "src": "https://www.wikidata.org/wiki/Q201603",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://www.wikidata.org/wiki/Q201603",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Surrey, Canada",
+          "lat": 49.278176,
+          "lon": -122.919394,
+          "src": "https://www.wikidata.org/wiki/Q201603"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

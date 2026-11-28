@@ -1,0 +1,23 @@
+{
+  "id": 3830,
+  "type": "funding",
+  "slug": "elroy-air-funding-round-2026-09",
+  "name": "Elroy Air funding round (2026-09)",
+  "summary": "Raised $175 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-09-24",
+      "src": "https://www.morningstar.com/news/business-wire/20260924206922/elroy-air-announces-upsizing-of-pipe-investments-to-175-million-with-participation-from-lockheed-martin-ventures",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 175,
+      "src": "https://www.morningstar.com/news/business-wire/20260924206922/elroy-air-announces-upsizing-of-pipe-investments-to-175-million-with-participation-from-lockheed-martin-ventures",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-09-24"
+}

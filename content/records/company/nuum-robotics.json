@@ -1,0 +1,51 @@
+{
+  "id": 920,
+  "type": "company",
+  "slug": "nuum-robotics",
+  "name": "Nuum Robotics",
+  "summary": "Snake-like robots for maintenance inside machinery.",
+  "body": "Y Combinator Winter 2027 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://nuumrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://nuumrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/nuum-robotics.png",
+      "fit": "contain",
+      "src": "https://nuumrobotics.com/assets/favicon.png?v=whiteout-rounded-2",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Waterloo",
+      "src": "https://www.ycombinator.com/companies/nuum-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://www.ycombinator.com/companies/nuum-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Waterloo, ON, Canada",
+          "lat": 43.46527,
+          "lon": -80.522296,
+          "src": "https://www.ycombinator.com/companies/nuum-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

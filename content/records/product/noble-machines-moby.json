@@ -1,0 +1,28 @@
+{
+  "id": 3449,
+  "type": "product",
+  "slug": "noble-machines-moby",
+  "name": "Noble Machines Moby",
+  "summary": "Moby, a humanoid robot from Noble Machines.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/noble-machines-moby.webp",
+      "src": "https://www.noblemachines.ai/",
+      "orig": "https://www.noblemachines.ai/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwg3g1rbz%2Fproduction%2Fca582de9be2677c12643dba55119cf88d79b146b-716x438.jpg&w=3840&q=75",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.noblemachines.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.noblemachines.ai/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

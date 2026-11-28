@@ -1,0 +1,28 @@
+{
+  "id": 3931,
+  "type": "funding",
+  "slug": "pronto-series-b",
+  "name": "Pronto Series B",
+  "summary": "Raised $20 mn in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-05-07",
+      "src": "https://www.vccircle.com/prontosnags-20-mn-in-extended-series-b-round-as-valuation-doubles",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.vccircle.com/prontosnags-20-mn-in-extended-series-b-round-as-valuation-doubles",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 20,
+      "src": "https://www.vccircle.com/prontosnags-20-mn-in-extended-series-b-round-as-valuation-doubles",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-05-07"
+}

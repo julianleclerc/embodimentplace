@@ -1,0 +1,26 @@
+{
+  "id": 2192,
+  "type": "lab",
+  "slug": "center-for-robotics-and-biosystems",
+  "name": "Center for Robotics and Biosystems",
+  "summary": "Northwestern's robotics centre and MS in Robotics.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Manipulation",
+        "Bio-inspired robots"
+      ],
+      "src": "https://robotics.northwestern.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.northwestern.edu/",
+      "src": "https://robotics.northwestern.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1960,
+  "type": "company",
+  "slug": "autowipebot-jiajingcat",
+  "name": "AutoWipeBot - JIAJINGCAT",
+  "summary": "Shenzhen-based manufacturer of window cleaning robots, offering OEM, ODM and private-label services to commercial partners.",
+  "body": "Its J1 platform features 8000Pa suction, ultrasonic misting and a slim 60mm body designed for high-rise and frameless glass. The company sells strictly B2B to distributors, brand owners, retailers and commercial cleaning firms, with no consumer sales.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3427-autowipebot-jiajingcat",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.autowipebot.com/"
+    },
+    "image": {
+      "v": "/logos/autowipebot-jiajingcat.png",
+      "fit": "contain",
+      "src": "https://www.autowipebot.com/favicon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://roboticsconnected.com/companies/3427-autowipebot-jiajingcat",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://roboticsconnected.com/companies/3427-autowipebot-jiajingcat",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://roboticsconnected.com/companies/3427-autowipebot-jiajingcat"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1453,
+  "type": "company",
+  "slug": "astrolab",
+  "name": "Astrolab",
+  "summary": "Develops commercial planetary surface mobility vehicles specialised for the Moon and Mars.",
+  "body": "Astrolab, The Lunar Operations Company, designs and builds the systems and hardware the lunar economy will come to depend on: rovers, power, and connectivity for sustained operations on the Moon. Its LUNAR OS integrates mobility, power, and data processing.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/124-astrolab",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.astrolab.space/"
+    },
+    "image": {
+      "v": "/logos/astrolab.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/ce76e43344f086a3b736.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hawthorne",
+      "src": "https://roboticsconnected.com/companies/124-astrolab",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/124-astrolab",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hawthorne, United States",
+          "lat": 33.912827,
+          "lon": -118.342612,
+          "src": "https://roboticsconnected.com/companies/124-astrolab"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

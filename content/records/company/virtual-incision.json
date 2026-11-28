@@ -1,0 +1,51 @@
+{
+  "id": 1164,
+  "type": "company",
+  "slug": "virtual-incision",
+  "name": "Virtual Incision",
+  "summary": "Virtual Incision is on a mission to simplify robotic-assisted surgery (RAS), so more patients and their surgeons can access its benefits every day.",
+  "body": "Headquartered in Lincoln, Nebraska, and holding over 200 patents and patent applications, the company is developing MIRA, the first-of-its-kind miniature, and highly accessible RAS platform. With MIRA, our goal is to make every operating room RAS-ready. https://virtualincision.com",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://virtualincision.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://virtualincision.com/"
+    },
+    "image": {
+      "v": "/logos/virtual-incision.png",
+      "fit": "contain",
+      "src": "https://virtualincision.com/wp-content/uploads/2022/07/VIC-logo-icon-400-80x80.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Lincoln",
+      "src": "https://www.linkedin.com/company/virtual-incision-corporation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/virtual-incision-corporation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1501 Old Cheney Rd, Lincoln, Nebraska 68512, United States",
+          "lat": 40.755135,
+          "lon": -96.700418,
+          "src": "https://www.linkedin.com/company/virtual-incision-corporation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

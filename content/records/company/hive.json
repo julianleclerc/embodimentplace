@@ -1,0 +1,51 @@
+{
+  "id": 1478,
+  "type": "company",
+  "slug": "hive",
+  "name": "HIVE",
+  "summary": "Develops an AI-powered retrofit module that retrofits industrial machinery such as excavators, wheel loaders, forklifts and haulers with autonomous capabilities.",
+  "body": "HIVE builds the silicon brain that makes any machine intelligent. The brain works with the machines you already own, connecting them into one coordinated fleet, providing unlimited access to skilled industrial labour. Our team understands industrial operations from the inside.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/175-hive",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://hiveautonomy.no/"
+    },
+    "image": {
+      "v": "/logos/hive.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/48b232e6798e27545874.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://uk.linkedin.com/company/hiveautonomy",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/hiveautonomy",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "27 Old Gloucester Street, London, England WC1N 3AF, United Kingdom",
+          "lat": 51.521894,
+          "lon": -0.124394,
+          "src": "https://uk.linkedin.com/company/hiveautonomy"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

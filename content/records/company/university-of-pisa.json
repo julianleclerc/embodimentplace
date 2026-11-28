@@ -1,0 +1,51 @@
+{
+  "id": 1352,
+  "type": "company",
+  "slug": "university-of-pisa",
+  "name": "University of Pisa",
+  "summary": "Italian public research university located in Pisa.",
+  "body": "Robotics: Ingegneria robotica e dell&#039;automazione ~ UNIPI.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.unipi.it/education/courses/master-degree/robotics-and-automation-engineering-wim-lm-en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.unipi.it/"
+    },
+    "image": {
+      "v": "/logos/university-of-pisa.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_University_of_Pisa.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pisa",
+      "src": "https://www.wikidata.org/wiki/Q645663",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Italy",
+      "src": "https://www.wikidata.org/wiki/Q645663",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pisa, Italy",
+          "lat": 43.716508,
+          "lon": 10.398458,
+          "src": "https://www.wikidata.org/wiki/Q645663"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

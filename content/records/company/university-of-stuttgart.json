@@ -1,0 +1,51 @@
+{
+  "id": 1324,
+  "type": "company",
+  "slug": "university-of-stuttgart",
+  "name": "University of Stuttgart",
+  "summary": "German public university.",
+  "body": "Recent robotics work includes “DELTA: Decomposed Efficient Long-Term Robot Task Planning Using Large Language Models”. OpenAlex lists 194 robotics, humanoid, embodied-AI or manipulation papers from University of Stuttgart since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/icra55743.2025.11127838",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.uni-stuttgart.de/"
+    },
+    "image": {
+      "v": "/logos/university-of-stuttgart.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Universit%C3%A4t_Stuttgart_Logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Stuttgart",
+      "src": "https://www.wikidata.org/wiki/Q122453",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://www.wikidata.org/wiki/Q122453",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Stuttgart, Germany",
+          "lat": 48.7817,
+          "lon": 9.1752,
+          "src": "https://www.wikidata.org/wiki/Q122453"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

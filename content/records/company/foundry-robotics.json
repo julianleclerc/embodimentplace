@@ -1,0 +1,52 @@
+{
+  "id": 2055,
+  "type": "company",
+  "slug": "foundry-robotics",
+  "name": "Foundry Robotics",
+  "summary": "AI-first robotics company automating assembly to rebuild American manufacturing.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2033543821112524804",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://foundryrobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/foundry-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6acf535ca9534c6f869878dc/6adfc60137162e8acd6cc2ca_Favicon%20(2).png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Emeryville",
+      "src": "https://foundryrobotics.ai/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://foundryrobotics.ai/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Emeryville, California, United States",
+          "lat": 37.831409,
+          "lon": -122.286527,
+          "src": "https://foundryrobotics.ai/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

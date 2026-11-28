@@ -1,0 +1,52 @@
+{
+  "id": 1717,
+  "type": "company",
+  "slug": "roboauto",
+  "name": "Roboauto",
+  "summary": "Builds autonomy, teleoperation, anti-collision, sensing and perception software for vehicles and heavy machinery.",
+  "body": "Roboauto is a software partner for hardware across domains—microchips to trains—specializing in AI, Python and C++ development for autonomous systems, perception, real-time sensor processing and custom solutions to help partners innovate and adopt future technologies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1334-roboauto",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://roboauto.tech/"
+    },
+    "image": {
+      "v": "/logos/roboauto.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1637491bb36591c47bf0.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Brno",
+      "src": "https://cz.linkedin.com/company/roboauto",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Czech Republic",
+      "src": "https://cz.linkedin.com/company/roboauto",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Šumavská 15, Brno, South Moravian Region 602 00, Czech Republic",
+          "lat": 49.212074,
+          "lon": 16.59856,
+          "src": "https://cz.linkedin.com/company/roboauto"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

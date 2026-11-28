@@ -1,0 +1,51 @@
+{
+  "id": 1372,
+  "type": "company",
+  "slug": "nanjing-university",
+  "name": "Nanjing University",
+  "summary": "Public university in Nanjing, China.",
+  "body": "Recent robotics work includes “Multi-agent embodied AI: advances and future directions”. OpenAlex lists 302 robotics, humanoid, embodied-AI or manipulation papers from Nanjing University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1007/s11432-025-4820-4",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.nju.edu.cn/main.htm/"
+    },
+    "image": {
+      "v": "/logos/nanjing-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Motto_of_Nanjing_University_.jpg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Nanjing",
+      "src": "https://www.wikidata.org/wiki/Q683580",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q683580",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Nanjing, China",
+          "lat": 32.05611,
+          "lon": 118.775,
+          "src": "https://www.wikidata.org/wiki/Q683580"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3614,
+  "type": "funding",
+  "slug": "humble-robotics-series-a",
+  "name": "Humble Robotics Series A",
+  "summary": "Raised $51 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-05",
+      "src": "https://www.businesswire.com/news/home/20261105576352/en/Humble-Robotics-Raises-%2451-Million-Series-A-to-Scale-Its-Unified-Approach-to-Autonomous-and-Electric-Freight",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.businesswire.com/news/home/20261105576352/en/Humble-Robotics-Raises-%2451-Million-Series-A-to-Scale-Its-Unified-Approach-to-Autonomous-and-Electric-Freight",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 51,
+      "src": "https://www.businesswire.com/news/home/20261105576352/en/Humble-Robotics-Raises-%2451-Million-Series-A-to-Scale-Its-Unified-Approach-to-Autonomous-and-Electric-Freight",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-05"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1816,
+  "type": "company",
+  "slug": "icon-technology-inc",
+  "name": "ICON Technology, Inc.",
+  "summary": "Develops robotic 3D printing systems for construction, sold as the Titan printer with its BuildOS software, materials and training.",
+  "body": "ICON is the global leader in construction automation, developing robotics, intelligent software systems, and advanced materials that are changing the way the world builds on Earth and beyond. For more information visit www.iconbuild.com or follow on X™, Instagram®, Facebook®, YouTube®, or Threads® (@ICON3DTech).",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2032-icon-technology-inc",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.iconbuild.com/"
+    },
+    "image": {
+      "v": "/logos/icon-technology-inc.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/7a789b2e2e6f59f0fda1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://www.linkedin.com/company/icon3dtech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/icon3dtech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "220 E Saint Elmo Rd, Austin, Texas 78745, United States",
+          "lat": 30.216863,
+          "lon": -97.763724,
+          "src": "https://www.linkedin.com/company/icon3dtech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

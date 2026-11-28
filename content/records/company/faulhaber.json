@@ -1,0 +1,51 @@
+{
+  "id": 968,
+  "type": "company",
+  "slug": "faulhaber",
+  "name": "FAULHABER",
+  "summary": "Small and miniature drive systems: DC and brushless DC micromotors, stepper and linear motors, precision gearheads, encoders and drive electronics.",
+  "body": "Germany is one of the most important sales markets for FAULHABER drive systems. At the company group's largest and oldest location, the focus is on innovation leadership and comprehensive technological know-how in research, development and production.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.faulhaber.com/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.faulhaber.com/"
+    },
+    "image": {
+      "v": "/logos/faulhaber.png",
+      "fit": "contain",
+      "src": "https://www.faulhaber.com/Manifest/android-icon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Schönaich",
+      "src": "https://de.linkedin.com/company/faulhaber-drive-systems",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/faulhaber-drive-systems",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Faulhaberstraße 1, Schönaich, 71101, Germany",
+          "lat": 48.668299,
+          "lon": 9.070728,
+          "src": "https://de.linkedin.com/company/faulhaber-drive-systems"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

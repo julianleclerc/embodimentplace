@@ -15,9 +15,16 @@
       "v": 2,
       "src": "https://www.agile-robots.com/en/products/humanoid-robots/agile-one/",
       "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/agile-one.webp",
+      "src": "https://www.agile-robots.com/en/products/humanoid-robots/agile-one/",
+      "orig": "https://www.agile-robots.com/media/_processed_/3/6/csm_AgileRobots-AgileONE-Content-Pose-Front_66a5404261.png",
+      "fit": "contain",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-24 06:05:09",
+  "updated": "2026-11-28 03:05:16",
   "feed_at": "2026-11-22"
 }

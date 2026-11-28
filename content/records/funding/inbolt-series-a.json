@@ -1,0 +1,23 @@
+{
+  "id": 3925,
+  "type": "funding",
+  "slug": "inbolt-series-a",
+  "name": "Inbolt Series A",
+  "summary": "Raised €15 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-09-18",
+      "src": "https://menafn.com/1108691148/MIG-Capital-Portfolio-Company-Inbolt-Raises-15-Million-In-Series-A-To-Further-Develop-AI-Powered-3D-Vision-In-Robots",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://menafn.com/1108691148/MIG-Capital-Portfolio-Company-Inbolt-Raises-15-Million-In-Series-A-To-Further-Develop-AI-Powered-3D-Vision-In-Robots",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-09-18"
+}

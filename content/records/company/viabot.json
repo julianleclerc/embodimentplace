@@ -1,0 +1,51 @@
+{
+  "id": 1686,
+  "type": "company",
+  "slug": "viabot",
+  "name": "Viabot",
+  "summary": "Builds the Viabot One, an autonomous outdoor robot that sweeps, self-empties, recharges and reports back without an operator.",
+  "body": "Headquartered in Santa Clara, Calif., Viabot™ (“Viabot”) is a leading technology company tackling trash, debris, and soft security at scale for big-box retailers, utility companies, corporate and academic institutions within the United States.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1241-viabot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://viabot.com/"
+    },
+    "image": {
+      "v": "/logos/viabot.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/578a51de5d51d41280ae.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Clara",
+      "src": "https://www.linkedin.com/company/viabot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/viabot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3171 Jay St, Santa Clara, California 95054, United States",
+          "lat": 37.379748,
+          "lon": -121.961566,
+          "src": "https://www.linkedin.com/company/viabot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

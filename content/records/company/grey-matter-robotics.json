@@ -1,0 +1,52 @@
+{
+  "id": 1798,
+  "type": "company",
+  "slug": "grey-matter-robotics",
+  "name": "Grey Matter Robotics",
+  "summary": "Industrial automation firm based in Vadodara, Gujarat, building gantry systems and robot cells for CNC machine tending.",
+  "body": "Welcome to Grey Matter Robotics Pvt Ltd! We are a leading manufacturer of 3 to 4-axis gantry systems for various pick and place automation applications like CNC machine tending , packaging, palletizing, loading and unloading, and more.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1976-grey-matter-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gmrpl.in/"
+    },
+    "image": {
+      "v": "/logos/grey-matter-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/ea9599d3ea6a93677f2d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "vadodara",
+      "src": "https://in.linkedin.com/company/greymatterauto",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/greymatterauto",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "93/35, G.I.D.C makarpura, vadodara, gujarat 390010, India",
+          "lat": 22.297314,
+          "lon": 73.194257,
+          "src": "https://in.linkedin.com/company/greymatterauto"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

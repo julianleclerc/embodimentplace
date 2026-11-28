@@ -1,0 +1,52 @@
+{
+  "id": 1235,
+  "type": "company",
+  "slug": "orbifold-ai",
+  "name": "Orbifold AI",
+  "summary": "Orbifold is building the Human–Robot Learning Infrastructure - the distributed platform that enables every robot to learn from human experience.",
+  "body": "Headquartered in Palo Alto, United States.",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute",
+        "Software developer"
+      ],
+      "src": "https://www.orbifold.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.orbifold.ai/"
+    },
+    "image": {
+      "v": "/logos/orbifold-ai.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/68e58b930f0c3e53f7ea9439/6aacd915540487467d0e5488_orbifold_ai_logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Palo Alto",
+      "src": "https://www.linkedin.com/company/orbifold-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/orbifold-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Palo Alto, California, United States",
+          "lat": 37.444329,
+          "lon": -122.159847,
+          "src": "https://www.linkedin.com/company/orbifold-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1021,
+  "type": "company",
+  "slug": "piap-space",
+  "name": "PIAP Space",
+  "summary": "Polish robotics company spun off from the Łukasiewicz PIAP institute, building space robotics.",
+  "body": "A spin-off of the Łukasiewicz Research Network Industrial Institute for Automation and Measurements (Ł-PIAP), established in 2017.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://piap.space/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://piap.space/"
+    },
+    "image": {
+      "v": "/logos/piap-space.png",
+      "fit": "contain",
+      "src": "https://piap.space/wp-content/themes/piap/dist/images/header_logo_fce508cc.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Warszawa",
+      "src": "https://pl.linkedin.com/company/piapspace",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Poland",
+      "src": "https://pl.linkedin.com/company/piapspace",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Aleje Jerozolimskie 202, Warszawa, Mazowieckie 02-486, Poland",
+          "lat": 52.193511,
+          "lon": 20.922392,
+          "src": "https://pl.linkedin.com/company/piapspace"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

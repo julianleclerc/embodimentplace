@@ -1,0 +1,23 @@
+{
+  "id": 3980,
+  "type": "funding",
+  "slug": "parallax-worlds-funding-round-2025-11",
+  "name": "Parallax Worlds funding round (2025-11)",
+  "summary": "Raised $4.9M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-20",
+      "src": "https://finance.yahoo.com/news/parallax-worlds-raises-4-9m-130000181.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 4.9,
+      "src": "https://finance.yahoo.com/news/parallax-worlds-raises-4-9m-130000181.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-20"
+}

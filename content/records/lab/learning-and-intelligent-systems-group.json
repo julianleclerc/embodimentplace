@@ -1,0 +1,31 @@
+{
+  "id": 2111,
+  "type": "lab",
+  "slug": "learning-and-intelligent-systems-group",
+  "name": "Learning and Intelligent Systems Group",
+  "summary": "Task and motion planning with learning.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Planning"
+      ],
+      "src": "https://lis.csail.mit.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://lis.csail.mit.edu/",
+      "src": "https://lis.csail.mit.edu/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Leslie Pack Kaelbling, Tomás Lozano-Pérez",
+      "src": "https://lis.csail.mit.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

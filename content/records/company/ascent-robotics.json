@@ -1,0 +1,46 @@
+{
+  "id": 1107,
+  "type": "company",
+  "slug": "ascent-robotics",
+  "name": "Ascent Robotics",
+  "summary": "Ascent Robotics provides advanced robotics software that can handle a diverse range of objects with flexibility and operate autonomously in response to the on-site environment, while also…",
+  "body": "Ascent Robotics provides advanced robotics software that can handle a diverse range of objects with flexibility and operate autonomously in response to the on-site environment, while also collaborating with humans.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://ascent.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ascent.ai/"
+    },
+    "city": {
+      "v": "Shibuya-ku",
+      "src": "https://jp.linkedin.com/company/ascent-robotics-inc.",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/ascent-robotics-inc.",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1-6-10 Hiroo, Shibuya-ku, Tokyo 150-0012, Japan",
+          "lat": 35.652257,
+          "lon": 139.717584,
+          "src": "https://jp.linkedin.com/company/ascent-robotics-inc."
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

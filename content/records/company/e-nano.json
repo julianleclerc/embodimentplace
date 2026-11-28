@@ -1,0 +1,53 @@
+{
+  "id": 1602,
+  "type": "company",
+  "slug": "e-nano",
+  "name": "E-Nano",
+  "summary": "Builds an automation stack combining robotics, sensing systems, edge computing, and artificial intelligence to measure, monitor, and manage real-world environments.",
+  "body": "E-Nano is combining cutting-edge robotics and AI to enhance professional sports playing surfaces. Through automated analysis and real-time data-driven recommendations, we reduce costs, resource-use, and player injury whilst improving sustainability and performance.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/730-e-nano",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.e-nano.io/"
+    },
+    "image": {
+      "v": "/logos/e-nano.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/8b97eff4925ea45821f9.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/730-e-nano",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/730-e-nano",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/730-e-nano"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

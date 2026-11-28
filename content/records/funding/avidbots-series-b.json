@@ -1,0 +1,23 @@
+{
+  "id": 3732,
+  "type": "funding",
+  "slug": "avidbots-series-b",
+  "name": "Avidbots Series B",
+  "summary": "Raised $31.5 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2019-03-21",
+      "src": "https://betakit.com/avidbots-raises-31-5-million-cad-series-b-for-floor-cleaning-robots/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://betakit.com/avidbots-raises-31-5-million-cad-series-b-for-floor-cleaning-robots/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2019-03-21"
+}

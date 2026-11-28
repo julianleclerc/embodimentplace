@@ -1,0 +1,51 @@
+{
+  "id": 1083,
+  "type": "company",
+  "slug": "zimmer-group",
+  "name": "Zimmer Group",
+  "summary": "ZIMMER Group is based in Rheinau – Freistett, Germany and is a family-owned and operated company.",
+  "body": "Success through innovation: Your partner for customized automation, components & systems for future-oriented solutions. Find out more!",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.zimmer-group.com/en-us/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.zimmer-group.com/"
+    },
+    "image": {
+      "v": "/logos/zimmer-group.png",
+      "fit": "contain",
+      "src": "https://www.zimmer-group.com/img/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Rheinau",
+      "src": "https://de.linkedin.com/company/zimmer-group",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/zimmer-group",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Am Glockenloch 2, Rheinau, Baden-Württemberg 77866, Germany",
+          "lat": 48.674041,
+          "lon": 7.927643,
+          "src": "https://de.linkedin.com/company/zimmer-group"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

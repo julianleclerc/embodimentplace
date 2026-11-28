@@ -1,0 +1,26 @@
+{
+  "id": 2175,
+  "type": "lab",
+  "slug": "purdue-robotics-accelerator",
+  "name": "Purdue Robotics Accelerator",
+  "summary": "Purdue's hub connecting its robotics labs.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Field robots"
+      ],
+      "src": "https://www.purdue.edu/robotics/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.purdue.edu/robotics/",
+      "src": "https://www.purdue.edu/robotics/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

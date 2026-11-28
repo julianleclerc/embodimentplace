@@ -1,0 +1,28 @@
+{
+  "id": 3471,
+  "type": "product",
+  "slug": "roboparty-roboto-01",
+  "name": "RoboParty ROBOTO 01",
+  "summary": "ROBOTO 01, a humanoid robot from RoboParty.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/roboparty-roboto-01.webp",
+      "src": "https://roboparty.com/",
+      "orig": "https://roboparty.com/images/home/hero-roboto-01.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://roboparty.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://roboparty.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

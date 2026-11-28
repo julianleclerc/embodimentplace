@@ -1,0 +1,51 @@
+{
+  "id": 953,
+  "type": "company",
+  "slug": "arx-robotics",
+  "name": "ARX Robotics",
+  "summary": "Release timeline of ARX robots: A5, AC 2, AC one, LIFT 2, X7, LIFT, R5, X5.",
+  "body": "Headquartered in Beijing, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://arx-x.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://arx-x.com/"
+    },
+    "image": {
+      "v": "/logos/arx-robotics.png",
+      "fit": "contain",
+      "src": "https://arx-x.com/assets/img/arx-logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

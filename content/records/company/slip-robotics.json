@@ -1,0 +1,52 @@
+{
+  "id": 1134,
+  "type": "company",
+  "slug": "slip-robotics",
+  "name": "Slip Robotics",
+  "summary": "Automated loading robots (SlipBots) that load and unload trucks in minutes.",
+  "body": "The SlipBot robots-as-a-service network drives 10x improvements in safety, speed, and savings across the supply chain. 🚚 Truckers shouldn't wait. 👷‍♂️ Forklift drivers shouldn't risk it. ⚡ Auto-load/unload any truck in 5 minutes with SlipBots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://www.sliprobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sliprobotics.com/"
+    },
+    "image": {
+      "v": "/logos/slip-robotics.png",
+      "fit": "contain",
+      "src": "https://www.sliprobotics.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Atlanta",
+      "src": "https://www.linkedin.com/company/slip-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/slip-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Atlanta, Georgia, United States",
+          "lat": 33.754466,
+          "lon": -84.389815,
+          "src": "https://www.linkedin.com/company/slip-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

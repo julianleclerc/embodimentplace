@@ -1,0 +1,51 @@
+{
+  "id": 884,
+  "type": "company",
+  "slug": "aerones",
+  "name": "Aerones",
+  "summary": "Robotics for wind turbine maintenance.",
+  "body": "We have created a robotic system for wind turbine blade maintenance. It can perform tasks such as lightning conductivity testing, high-resolution inspection, drainage hole cleaning, cleaning, painting and leading-edge repair. Y Combinator Winter 2018 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://aerones.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://aerones.com/"
+    },
+    "image": {
+      "v": "/logos/aerones.png",
+      "fit": "contain",
+      "src": "https://aerones.com/wp-content/uploads/2022/03/Aerones-logo_small-square-1-1-200x200.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Riga",
+      "src": "https://lv.linkedin.com/company/aerones",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Latvia",
+      "src": "https://lv.linkedin.com/company/aerones",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Katlakalna iela 11, Riga, LV-1073, Latvia",
+          "lat": 56.928793,
+          "lon": 24.199869,
+          "src": "https://lv.linkedin.com/company/aerones"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1677,
+  "type": "company",
+  "slug": "4ag-robotics",
+  "name": "4AG Robotics",
+  "summary": "Builds fully autonomous, vision-guided robots that pick, trim and pack mushrooms.",
+  "body": "4AG Robotics builds harvesting robots that redefine what's possible in mushroom farming. The end-to-end harvesting process from picking and trimming to packing mushrooms, done autonomously with our HX800 robot, with the accuracy and precision of an experienced human picker, 24/7.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1201-4ag-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://4ag.ai/"
+    },
+    "image": {
+      "v": "/logos/4ag-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5721efde029be319a6ac.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Salmon Arm",
+      "src": "https://ca.linkedin.com/company/4ag-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/4ag-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "5450 Auto Rd SE, Salmon Arm, British Columbia V1E 1X1, Canada",
+          "lat": 50.692574,
+          "lon": -119.251006,
+          "src": "https://ca.linkedin.com/company/4ag-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

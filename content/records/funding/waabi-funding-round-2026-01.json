@@ -1,0 +1,23 @@
+{
+  "id": 3558,
+  "type": "funding",
+  "slug": "waabi-funding-round-2026-01",
+  "name": "Waabi funding round (2026-01)",
+  "summary": "Raised US$1 billion.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-01-27",
+      "src": "https://www.timescolonist.com/national-business/waabi-secures-us1-billion-in-funding-as-it-pushes-self-driving-trucks-robotaxis-11800225",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1000,
+      "src": "https://www.timescolonist.com/national-business/waabi-secures-us1-billion-in-funding-as-it-pushes-self-driving-trucks-robotaxis-11800225",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-01-27"
+}

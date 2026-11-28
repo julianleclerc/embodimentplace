@@ -1,0 +1,28 @@
+{
+  "id": 2078,
+  "type": "product",
+  "slug": "weride-robotaxi-gxr",
+  "name": "WeRide Robotaxi GXR",
+  "summary": "Driverless robotaxi in commercial service in China and the Middle East.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Automotive",
+      "src": "https://www.weride.ai",
+      "asof": "2026-11"
+    },
+    "av_kind": {
+      "v": "Robotaxi",
+      "src": "https://www.weride.ai",
+      "asof": "2026-11"
+    },
+    "sae_level": {
+      "v": "Level 4",
+      "src": "https://www.weride.ai",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-27 22:05:17",
+  "feed_at": "2026-11-27"
+}

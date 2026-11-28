@@ -1,0 +1,51 @@
+{
+  "id": 1787,
+  "type": "company",
+  "slug": "urbx",
+  "name": "Urbx",
+  "summary": "Builds autonomous vertical storage and goods-to-person robotic systems for e-commerce, omnichannel and retail fulfilment.",
+  "body": "Helping brands distribute & customers purchase in a frictionless way.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1923-urbx",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://urbx.com/"
+    },
+    "image": {
+      "v": "/logos/urbx.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/733de595b45b3b4f8347.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boston",
+      "src": "https://www.linkedin.com/company/urbx",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/urbx",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "12 Channel St, Boston, Massachusetts 02210, United States",
+          "lat": 42.345492,
+          "lon": -71.036844,
+          "src": "https://www.linkedin.com/company/urbx"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

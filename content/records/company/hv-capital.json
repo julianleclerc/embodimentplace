@@ -1,0 +1,51 @@
+{
+  "id": 1213,
+  "type": "company",
+  "slug": "hv-capital",
+  "name": "HV Capital",
+  "summary": "HV is one of the leading early-stage and growth investors in Europe.",
+  "body": "With nine fund generations in 26 years and €2.8 bn in managed assets, HV is one of the continent's most active investors. The investment team has many years of experience in identifying European startups with great potential for success.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://hvcapital.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://hvcapital.com/"
+    },
+    "image": {
+      "v": "/logos/hv-capital.png",
+      "fit": "contain",
+      "src": "https://hvcapital.com/favicon.ico?favicon.28gntqil40fai.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "München",
+      "src": "https://de.linkedin.com/company/hvcapital",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/hvcapital",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kaiserstraße 14b, München, Bayern 80801, Germany",
+          "lat": 48.161074,
+          "lon": 11.584581,
+          "src": "https://de.linkedin.com/company/hvcapital"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

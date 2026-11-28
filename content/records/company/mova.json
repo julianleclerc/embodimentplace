@@ -1,0 +1,51 @@
+{
+  "id": 1895,
+  "type": "company",
+  "slug": "mova",
+  "name": "MOVA",
+  "summary": "Designs AI-powered smart home and outdoor appliances.",
+  "body": "Its catalogue spans robot vacuums, robot lawn mowers, pool cleaners, window cleaning robots, wet and dry vacuums, personal care devices, kitchen appliances, pet care products and air purifiers. The company presents itself as a premium AI smart living brand, organising its range around six scenarios: home cleaning, smart outdoor, personal care, kitchen appliances, pet care and air purification.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2876-mova",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mova.tech/"
+    },
+    "image": {
+      "v": "/logos/mova.png",
+      "fit": "contain",
+      "src": "https://www.mova.tech/cdn/shop/files/MOVA_LOGO_f4a43962-86b7-40b4-a4b1-857777ed89b2.png?v=1765937681",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Suzhou",
+      "src": "https://roboticsconnected.com/companies/2876-mova",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://roboticsconnected.com/companies/2876-mova",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Suzhou, China",
+          "lat": 31.311123,
+          "lon": 120.621288,
+          "src": "https://roboticsconnected.com/companies/2876-mova"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

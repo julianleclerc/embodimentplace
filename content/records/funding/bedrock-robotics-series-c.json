@@ -1,0 +1,28 @@
+{
+  "id": 3566,
+  "type": "funding",
+  "slug": "bedrock-robotics-series-c",
+  "name": "Bedrock Robotics Series C",
+  "summary": "Raised $600M in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-10-26",
+      "src": "https://thenextweb.com/news/bedrock-robotics-600m-series-c-4-1bn-valuation",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://thenextweb.com/news/bedrock-robotics-600m-series-c-4-1bn-valuation",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 600,
+      "src": "https://thenextweb.com/news/bedrock-robotics-600m-series-c-4-1bn-valuation",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-10-26"
+}

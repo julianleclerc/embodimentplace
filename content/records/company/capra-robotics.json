@@ -1,0 +1,51 @@
+{
+  "id": 1568,
+  "type": "company",
+  "slug": "capra-robotics",
+  "name": "Capra Robotics",
+  "summary": "Builds a modular mobile robot platform designed for autonomous operations across multiple verticals.",
+  "body": "We design and manufacture autonomous mobile robots for real-world operations – indoors, outdoors, across facilities, and in public-facing environments. Simple, robust, and easy to integrate, our robots work seamlessly within existing workflows and infrastructure.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/384-capra-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://capra.ooo/"
+    },
+    "image": {
+      "v": "/logos/capra-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1bec56633aaa9554de62.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Viby J",
+      "src": "https://dk.linkedin.com/company/caprarobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/caprarobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Skanderborgvej 232A, Viby J, Middle Jutland 8260, Denmark",
+          "lat": 56.122019,
+          "lon": 10.159695,
+          "src": "https://dk.linkedin.com/company/caprarobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

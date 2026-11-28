@@ -1,0 +1,52 @@
+{
+  "id": 1545,
+  "type": "company",
+  "slug": "ajuno",
+  "name": "Ajuno",
+  "summary": "UK-based drone consultancy that unites organisations seeking to adopt drone capabilities with the best available solutions for their needs.",
+  "body": "We deliver transformational change via board-level drone strategies and delivery. Replacing outdated activities of today with better, cost-effective and safer alternatives. Delivering huge cost savings, improving safety, and enabling enterprises to access new possibilities to accelerate their strategies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/312-ajuno",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ajuno.solutions/"
+    },
+    "image": {
+      "v": "/logos/ajuno.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/734bd90e0d69af0f11a8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Henley-on-Thames",
+      "src": "https://roboticsconnected.com/companies/312-ajuno",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/312-ajuno",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Henley-on-Thames, United Kingdom",
+          "lat": 51.537579,
+          "lon": -0.905029,
+          "src": "https://roboticsconnected.com/companies/312-ajuno"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 2196,
+  "type": "lab",
+  "slug": "michigan-robotics",
+  "name": "Michigan Robotics",
+  "summary": "A full robotics department offering bachelor's, master's and PhD degrees.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Legged locomotion",
+        "Autonomous driving",
+        "Manipulation"
+      ],
+      "src": "https://robotics.umich.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.umich.edu/",
+      "src": "https://robotics.umich.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

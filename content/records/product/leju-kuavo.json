@@ -1,0 +1,28 @@
+{
+  "id": 3437,
+  "type": "product",
+  "slug": "leju-kuavo",
+  "name": "Leju Kuavo",
+  "summary": "KUAVO 4Pro is a full-size humanoid robot with efficient learning and imitation learning, plus a large-model Q&A system, for commercial service, industrial manufacturing, research, home service, smart city and special…",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/leju-kuavo.webp",
+      "src": "https://www.lejurobot.com/en/products/kuavo-my",
+      "orig": "https://website-file.lejugym.com/images/8765f6379e4ea5a45566c7a1dccc44ee.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.lejurobot.com/en/products/kuavo-my",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lejurobot.com/en/products/kuavo-my"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

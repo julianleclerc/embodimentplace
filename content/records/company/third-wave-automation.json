@@ -1,0 +1,51 @@
+{
+  "id": 1131,
+  "type": "company",
+  "slug": "third-wave-automation",
+  "name": "Third Wave Automation",
+  "summary": "At Third Wave Automation, the Shared Autonomy Platform brings people and autonomous forklifts together to run warehouses more safely and productively than either could alone.",
+  "body": "Machine learning handles the driving; human operators provide oversight from anywhere, stepping in only when needed.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://thirdwave.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://thirdwave.ai/"
+    },
+    "image": {
+      "v": "/logos/third-wave-automation.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/yzNMsJtKZAnxm2rRpxyaQuOQIk.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Union City",
+      "src": "https://www.linkedin.com/company/thirdwaveautomation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/thirdwaveautomation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "30118 Eigenbrodt way, Union City, CA 94587, United States",
+          "lat": 37.609155,
+          "lon": -122.071405,
+          "src": "https://www.linkedin.com/company/thirdwaveautomation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

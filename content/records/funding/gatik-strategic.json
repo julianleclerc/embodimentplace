@@ -1,0 +1,23 @@
+{
+  "id": 3650,
+  "type": "funding",
+  "slug": "gatik-strategic",
+  "name": "Gatik Strategic",
+  "summary": "Closed a Strategic round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-08-20",
+      "src": "https://www.theautochannel.com/news/2024/08/21/1420166-autonomous-trucking-leader-gatik-secures-strategic-investment-from-nippon-express.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Strategic",
+      "src": "https://www.theautochannel.com/news/2024/08/21/1420166-autonomous-trucking-leader-gatik-secures-strategic-investment-from-nippon-express.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-08-20"
+}

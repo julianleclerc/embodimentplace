@@ -1,0 +1,51 @@
+{
+  "id": 1195,
+  "type": "company",
+  "slug": "promus-ventures",
+  "name": "Promus Ventures",
+  "summary": "An experienced and globally focused venture capital company, we are split between the US and Europe.",
+  "body": "We partner with ambitious DeepTech entrepreneurs who leverage transformational technologies to digitize large, mature industries. We lead financing rounds, take board seats, and roll up our sleeves to help startups build world-class companies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://promusventures.com/portfolio/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://promusventures.com/"
+    },
+    "image": {
+      "v": "/logos/promus-ventures.png",
+      "fit": "contain",
+      "src": "https://promusventures.com/wp-content/themes/promus/assets/favicon/favicon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chicago",
+      "src": "https://www.linkedin.com/company/promus-ventures",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/promus-ventures",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "30 S. Wacker Dr., Chicago, IL 60606, United States",
+          "lat": 41.880863,
+          "lon": -87.637529,
+          "src": "https://www.linkedin.com/company/promus-ventures"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

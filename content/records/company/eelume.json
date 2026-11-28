@@ -1,0 +1,51 @@
+{
+  "id": 1606,
+  "type": "company",
+  "slug": "eelume",
+  "name": "Eelume",
+  "summary": "Norwegian robotics company developing all-terrain autonomous underwater vehicles (AUVs) for subsea inspection, maintenance and repair operations.",
+  "body": "Eelume is a leading provider of innovative underwater technology solutions. With a commitment to sustainability and cutting-edge engineering, Eelume strives to push the boundaries of underwater exploration while minimizing environmental impact.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/737-eelume",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.eelume.com/"
+    },
+    "image": {
+      "v": "/logos/eelume.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/563546bfa18129cc419d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Trondheim",
+      "src": "https://no.linkedin.com/company/eelume",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://no.linkedin.com/company/eelume",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Transittgata 10, Trondheim, 7042, Norway",
+          "lat": 63.439722,
+          "lon": 10.413343,
+          "src": "https://no.linkedin.com/company/eelume"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

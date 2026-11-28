@@ -1,0 +1,34 @@
+{
+  "id": 3317,
+  "type": "post",
+  "slug": "renesas-rzt2n-mpu-targets-industrial-automation",
+  "name": "Renesas RZ/T2N MPU targets industrial automation",
+  "summary": "The RZ/T2N MPU runs on a Dual Cortex-A55 (1200 MHz) and a Dual Cortex-R52 (800 MHz). And it handles motor control for up to four axes, industrial Ethernet and Linux application processing on a single ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-20"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "electronicsweekly.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.electronicsweekly.com/news/products/micros/renesas-rz-t2n-mpu-targets-industrial-automation-2026-11/"
+    },
+    "image": {
+      "v": "https://static.electronicsweekly.com/wp-content/uploads/2026/11/19214944/REN2619_RZT2N_notext.webp",
+      "fit": "cover",
+      "src": "https://www.electronicsweekly.com/news/products/micros/renesas-rz-t2n-mpu-targets-industrial-automation-2026-11/",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-20"
+}

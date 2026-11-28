@@ -1,0 +1,51 @@
+{
+  "id": 1549,
+  "type": "company",
+  "slug": "astroscale",
+  "name": "Astroscale",
+  "summary": "Global leader in on-orbit servicing spacecraft and technologies.",
+  "body": "Founded in 2013, Astroscale is the global leader in on-orbit servicing, dedicated to the secure and sustainable development of space.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/332-astroscale",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.astroscale.com/"
+    },
+    "image": {
+      "v": "/logos/astroscale.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/eba97b7b5a66dadfd9f5.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sumida",
+      "src": "https://jp.linkedin.com/company/astroscale",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/astroscale",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hulic Kinshicho Collabo Tree, Sumida, Tokyo 130-0013, Japan",
+          "lat": 35.71042,
+          "lon": 139.801742,
+          "src": "https://jp.linkedin.com/company/astroscale"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

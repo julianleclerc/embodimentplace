@@ -1,0 +1,23 @@
+{
+  "id": 3510,
+  "type": "funding",
+  "slug": "nomagic-funding-round-2020-02",
+  "name": "Nomagic funding round (2020-02)",
+  "summary": "Raised $8.6M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2020-02-04",
+      "src": "https://sg.news.yahoo.com/nomagic-startup-poland-picks-8-121556400.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 8.6,
+      "src": "https://sg.news.yahoo.com/nomagic-startup-poland-picks-8-121556400.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2020-02-04"
+}

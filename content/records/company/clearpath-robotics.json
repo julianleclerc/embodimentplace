@@ -15,7 +15,21 @@
     },
     "roles": {
       "v": [
-        "Robot maker"
+        "Robot maker",
+        "Integrator",
+        "Supplier"
+      ],
+      "more": [
+        {
+          "role": "Integrator",
+          "src": "https://clearpathrobotics.com/",
+          "asof": "2026-11"
+        },
+        {
+          "role": "Supplier",
+          "src": "https://clearpathrobotics.com/",
+          "asof": "2026-11"
+        }
       ]
     },
     "city": {
@@ -36,6 +50,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-25 03:05:08",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": null
 }

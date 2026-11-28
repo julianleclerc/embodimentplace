@@ -1,0 +1,28 @@
+{
+  "id": 3458,
+  "type": "product",
+  "slug": "realbotix-series-1",
+  "name": "Realbotix Series 1",
+  "summary": "Realbotix Series 1 humanoid robots: lifelike faces, conversational AI, and four personas, built in Las Vegas. Reserve yours from the initial manufacturing batch.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/realbotix-series-1.webp",
+      "src": "https://www.realbotix.com/",
+      "orig": "https://www.realbotix.com/_next/image?url=%2Fhome%2Fecho-robots-all.jpg&w=3840&q=75&dpl=dpl_CvS1HghmeWVK3z4WA2ULrC68dwiS",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.realbotix.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.realbotix.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

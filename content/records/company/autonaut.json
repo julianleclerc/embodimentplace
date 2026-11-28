@@ -1,0 +1,51 @@
+{
+  "id": 1458,
+  "type": "company",
+  "slug": "autonaut",
+  "name": "AutoNaut",
+  "summary": "Manufactures uncrewed surface vessels powered by patented wave foil technology and solar panels for autonomous maritime operations.",
+  "body": "AutoNaut USV is a wave propelled Uncrewed Surface Vessel that can be deployed offshore for multiple months, collecting data for a range of applications and industries including: Oil, Gas and Offshore Renewables, Defence and Security Services and Research and Academia.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/136-autonaut",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://autonautusv.com/"
+    },
+    "image": {
+      "v": "/logos/autonaut.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/136/1790850727103.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Okehampton",
+      "src": "https://uk.linkedin.com/company/autonaut-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/autonaut-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "AutoNaut Ltd, Okehampton, Devon EX20 1BQ, United Kingdom",
+          "lat": 50.737667,
+          "lon": -4.000316,
+          "src": "https://uk.linkedin.com/company/autonaut-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

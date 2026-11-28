@@ -1,0 +1,52 @@
+{
+  "id": 2032,
+  "type": "company",
+  "slug": "saturn-dynamics",
+  "name": "Saturn Dynamics",
+  "summary": "Research company building world foundation models so robots can predict physical outcomes.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Research lab"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2118810909602644006",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.saturndynamics.com/"
+    },
+    "image": {
+      "v": "/logos/saturn-dynamics.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/QVkZKU9IFsT40iqrTiOBRbpuPFM.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://www.saturndynamics.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.saturndynamics.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://www.saturndynamics.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

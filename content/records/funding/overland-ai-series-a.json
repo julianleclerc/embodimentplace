@@ -1,0 +1,28 @@
+{
+  "id": 3787,
+  "type": "funding",
+  "slug": "overland-ai-series-a",
+  "name": "Overland AI Series A",
+  "summary": "Raised $32 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-01-18",
+      "src": "https://pulse2.com/overland-ai-32-million-series-a-raised-to-power-ground-ops-for-modern-defenses/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://pulse2.com/overland-ai-32-million-series-a-raised-to-power-ground-ops-for-modern-defenses/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 32,
+      "src": "https://pulse2.com/overland-ai-32-million-series-a-raised-to-power-ground-ops-for-modern-defenses/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-01-18"
+}

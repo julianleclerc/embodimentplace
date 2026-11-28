@@ -1,0 +1,23 @@
+{
+  "id": 3506,
+  "type": "funding",
+  "slug": "zerith-angel",
+  "name": "Zerith Angel",
+  "summary": "Closed an Angel round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-02-08",
+      "src": "https://autonews.gasgoo.com/articles/market-industry/70035891",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Angel",
+      "src": "https://autonews.gasgoo.com/articles/market-industry/70035891",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-02-08"
+}

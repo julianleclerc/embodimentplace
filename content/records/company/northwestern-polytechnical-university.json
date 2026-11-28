@@ -1,0 +1,45 @@
+{
+  "id": 1383,
+  "type": "company",
+  "slug": "northwestern-polytechnical-university",
+  "name": "Northwestern Polytechnical University",
+  "summary": "University in China.",
+  "body": "Recent robotics work includes “SMNet: A Novel Compositional Generalization Model for Industrial Robot Multijoint Fault Diagnosis”. OpenAlex lists 355 robotics, humanoid, embodied-AI or manipulation papers from Northwestern Polytechnical University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/jiot.2026.3652582",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.nwpu.edu.cn/"
+    },
+    "city": {
+      "v": "Xi'an",
+      "src": "https://www.wikidata.org/wiki/Q832550",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q832550",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Xi'an, China",
+          "lat": 34.244722,
+          "lon": 108.911667,
+          "src": "https://www.wikidata.org/wiki/Q832550"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

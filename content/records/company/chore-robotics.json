@@ -1,0 +1,51 @@
+{
+  "id": 1759,
+  "type": "company",
+  "slug": "chore-robotics",
+  "name": "Chore Robotics",
+  "summary": "Southern California physical-AI company building a single autonomous base robot that swaps between seasonal utility attachments.",
+  "body": "Chore Robotics, Inc. is a leading robotics and AI company redefining how indoor and outdoor spaces are maintained. We have developed a universal, autonomous robotic platform that tackles every seasonal chore through a highly efficient quick-swap modular system.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1722-chore-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://chorerobots.ai/"
+    },
+    "image": {
+      "v": "/logos/chore-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/70b717cf3377084aed5d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Irvine",
+      "src": "https://www.linkedin.com/company/chore-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/chore-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "15 Hubble, Irvine, California 92618, United States",
+          "lat": 33.641424,
+          "lon": -117.741571,
+          "src": "https://www.linkedin.com/company/chore-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

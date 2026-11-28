@@ -1,0 +1,23 @@
+{
+  "id": 3451,
+  "type": "product",
+  "slug": "opentrons-ot-2",
+  "name": "Opentrons OT-2",
+  "summary": "Lab automation has never been easier. The OT-2 can automate hundreds of life science protocols and workflows. If you can manually pipette it, you can automate it.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/opentrons-ot-2.webp",
+      "src": "https://opentrons.com/robots/ot-2",
+      "orig": "https://opentrons.com/wp-content/uploads/2022/12/ot2-photo.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://opentrons.com/robots/ot-2"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

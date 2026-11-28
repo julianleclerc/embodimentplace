@@ -45,9 +45,16 @@
       "v": "IP67",
       "src": "https://www.ghostrobotics.io/vision-60",
       "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/ghost-robotics-vision-60.webp",
+      "src": "https://www.ghostrobotics.io/vision-60",
+      "orig": "https://cdn.prod.website-files.com/67b418349cd29a4f7829b4a5/67d917d1281ea63102b65004_Images.avif",
+      "fit": "contain",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-24 06:05:09",
+  "updated": "2026-11-28 03:05:16",
   "feed_at": "2026-11-22"
 }

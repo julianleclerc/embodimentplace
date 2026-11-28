@@ -1,0 +1,51 @@
+{
+  "id": 1203,
+  "type": "company",
+  "slug": "cdh-investments",
+  "name": "CDH Investments",
+  "summary": "Established in 2002, CDH Investments is one of the leading alternative investment fund managers focused on China today with over US$19 billion of assets under management, as of December 31, 2019.",
+  "body": "CDH was founded by WU Shangzhi, JIAO Shuge and four other investment professionals who worked together in the direct investment department of China International Capital Corporation beginning in 1995.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.cdhfund.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.cdhfund.com/"
+    },
+    "image": {
+      "v": "/logos/cdh-investments.png",
+      "fit": "contain",
+      "src": "https://www.cdhfund.com/favicon.ico?v=20250805145840",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kowloon",
+      "src": "https://hk.linkedin.com/company/cdh-investments",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Hong Kong",
+      "src": "https://hk.linkedin.com/company/cdh-investments",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1503 International Commerce Center, Kowloon, Hong Kong",
+          "lat": 22.304925,
+          "lon": 114.1616,
+          "src": "https://hk.linkedin.com/company/cdh-investments"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

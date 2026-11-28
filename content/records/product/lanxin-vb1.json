@@ -1,0 +1,28 @@
+{
+  "id": 3435,
+  "type": "product",
+  "slug": "lanxin-vb1",
+  "name": "Lanxin VB1",
+  "summary": "VB1, a humanoid robot from Lanxin Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/lanxin-vb1.webp",
+      "src": "https://www.lanxinrobotics.com/humanoid-robots/vb1/",
+      "orig": "https://www.lanxinrobotics.com/wp-content/uploads/2026/01/English-scaled.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.lanxinrobotics.com/humanoid-robots/vb1/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lanxinrobotics.com/humanoid-robots/vb1/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

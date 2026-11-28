@@ -1,0 +1,51 @@
+{
+  "id": 1309,
+  "type": "company",
+  "slug": "tufts-university",
+  "name": "Tufts University",
+  "summary": "Private research university in Medford/Somerville, Massachusetts.",
+  "body": "Recent robotics work includes “Principles and Guidelines for Evaluating Social Robot Navigation Algorithms”. OpenAlex lists 66 robotics, humanoid, embodied-AI or manipulation papers from Tufts University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1145/3700599",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://tufts.edu/"
+    },
+    "image": {
+      "v": "/logos/tufts-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tufts_University_wordmark.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Medford",
+      "src": "https://www.wikidata.org/wiki/Q49120",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q49120",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Medford, United States",
+          "lat": 42.406949,
+          "lon": -71.11982,
+          "src": "https://www.wikidata.org/wiki/Q49120"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 998,
+  "type": "company",
+  "slug": "skf",
+  "name": "SKF",
+  "summary": "Bearings, seals, lubrication systems and condition monitoring.",
+  "body": "We fight friction to move the world forward. 20% of all energy consumed is spent overcoming friction. At SKF, we’re constantly fighting that friction, to reduce energy waste and make the most of the resources we have.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://se.linkedin.com/company/skf",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.skf.com/"
+    },
+    "image": {
+      "v": "/logos/skf.png",
+      "fit": "contain",
+      "src": "https://www.skf.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Göteborg",
+      "src": "https://se.linkedin.com/company/skf",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Sweden",
+      "src": "https://se.linkedin.com/company/skf",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Sven Wingquist Gata 2, Göteborg, Sweden SE-415 50, Sweden",
+          "lat": 59.338275,
+          "lon": 18.071893,
+          "src": "https://se.linkedin.com/company/skf"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

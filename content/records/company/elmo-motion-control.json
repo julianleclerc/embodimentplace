@@ -1,0 +1,51 @@
+{
+  "id": 1092,
+  "type": "company",
+  "slug": "elmo-motion-control",
+  "name": "Elmo Motion Control",
+  "summary": "Elmo Motion Control is a global leading company of motion control intelligence solution.",
+  "body": "Since 1988 the Company designs and manufactures ultra-advanced servo drives and network motion controllers that are small, smart and simple cutting-edge solutions for any need.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.elmomc.com",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.elmomc.com/"
+    },
+    "image": {
+      "v": "/logos/elmo-motion-control.png",
+      "fit": "contain",
+      "src": "https://www.elmomc.com/wp-content/uploads/2026/11/elmo-logo-icon-200x200.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Petach-Tikva",
+      "src": "https://il.linkedin.com/company/elmomotioncontrol",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://il.linkedin.com/company/elmomotioncontrol",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "60 Amal St. P.O. Box 3078, Petach-Tikva, Israel 49516, Israel",
+          "lat": 32.087764,
+          "lon": 34.885998,
+          "src": "https://il.linkedin.com/company/elmomotioncontrol"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

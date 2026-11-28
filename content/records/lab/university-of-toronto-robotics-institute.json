@@ -1,0 +1,27 @@
+{
+  "id": 2183,
+  "type": "lab",
+  "slug": "university-of-toronto-robotics-institute",
+  "name": "University of Toronto Robotics Institute",
+  "summary": "Toronto's robotics institute and robotics engineering programmes.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Aerial robots",
+        "Medical robots"
+      ],
+      "src": "https://robotics.utoronto.ca/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.utoronto.ca/",
+      "src": "https://robotics.utoronto.ca/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

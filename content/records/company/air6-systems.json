@@ -1,0 +1,51 @@
+{
+  "id": 1889,
+  "type": "company",
+  "slug": "air6-systems",
+  "name": "AIR6 Systems",
+  "summary": "Designs and manufactures high-performance drones (UAVs) capable of carrying payloads of up to 10 kg.",
+  "body": "AIR6 SYSTEMS is a developer and manufacturer of enterprise drones. The Company manufactures high-performance turnkey drone systems for industrial and government applications.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2863-air6-systems-airborne-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.air6systems.com/"
+    },
+    "image": {
+      "v": "/logos/air6-systems.png",
+      "fit": "contain",
+      "src": "https://www.air6systems.com/wp-content/uploads/2021/05/cropped-Profile-Picture3-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Klagenfurt am Wörthersee",
+      "src": "https://at.linkedin.com/company/air6-systems",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Austria",
+      "src": "https://at.linkedin.com/company/air6-systems",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pharmaziegasse 5, Klagenfurt am Wörthersee, Kärnten 9020, Austria",
+          "lat": 46.611843,
+          "lon": 14.341498,
+          "src": "https://at.linkedin.com/company/air6-systems"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

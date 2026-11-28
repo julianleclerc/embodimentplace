@@ -1,0 +1,51 @@
+{
+  "id": 1140,
+  "type": "company",
+  "slug": "percepto",
+  "name": "Percepto",
+  "summary": "Autonomous drone-in-a-box inspection and monitoring.",
+  "body": "Headquartered in Austin, United States.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://percepto.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://percepto.com/"
+    },
+    "image": {
+      "v": "/logos/percepto.png",
+      "fit": "contain",
+      "src": "https://percepto.com/wp-content/uploads/2019/03/cropped-Favicon-300x300.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://percepto.com/contact/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://percepto.com/contact/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "8310-1 N. Capital of Texas Highway, Suite 150, Austin, TX 78731, United States",
+          "lat": 30.373592,
+          "lon": -97.725425,
+          "src": "https://percepto.com/contact/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

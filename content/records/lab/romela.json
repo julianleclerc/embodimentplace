@@ -1,0 +1,31 @@
+{
+  "id": 2211,
+  "type": "lab",
+  "slug": "romela",
+  "name": "RoMeLa",
+  "summary": "Robotics and Mechanisms Laboratory, humanoids and novel robots.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Humanoids",
+        "Legged locomotion"
+      ],
+      "src": "https://www.romela.org/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.romela.org/",
+      "src": "https://www.romela.org/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Dennis Hong",
+      "src": "https://www.romela.org/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

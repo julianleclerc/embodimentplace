@@ -15,7 +15,21 @@
     },
     "roles": {
       "v": [
-        "Software developer"
+        "Software developer",
+        "Model lab",
+        "Robot maker"
+      ],
+      "more": [
+        {
+          "role": "Model lab",
+          "src": "https://huggingface.co/blog/smolvla",
+          "asof": "2026-11"
+        },
+        {
+          "role": "Robot maker",
+          "src": "https://huggingface.co/blog/reachy-mini",
+          "asof": "2026-11"
+        }
       ]
     },
     "city": {
@@ -36,6 +50,6 @@
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-25 03:05:08",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": null
 }

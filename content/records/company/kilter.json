@@ -1,0 +1,51 @@
+{
+  "id": 1481,
+  "type": "company",
+  "slug": "kilter",
+  "name": "Kilter",
+  "summary": "Develops autonomous field robots for plant-level weed control using AI-driven crop recognition and patented Single Drop Technology.",
+  "body": "At Kilter, we're on a mission to return the land we borrow and restore balance to our planet. We develop autonomous weeding robots to improve farming practices and accelerate the transition to a sustainable food system. Join us in solving our challenges and embracing life in harmony with nature.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/182-kilter",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.kiltersystems.com/"
+    },
+    "image": {
+      "v": "/logos/kilter.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/221546949c8d4d567c1f.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Langhus",
+      "src": "https://roboticsconnected.com/companies/182-kilter",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://roboticsconnected.com/companies/182-kilter",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Langhus, Norway",
+          "lat": 59.749673,
+          "lon": 10.836611,
+          "src": "https://roboticsconnected.com/companies/182-kilter"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

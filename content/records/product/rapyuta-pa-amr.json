@@ -1,0 +1,23 @@
+{
+  "id": 3457,
+  "type": "product",
+  "slug": "rapyuta-pa-amr",
+  "name": "Rapyuta PA-AMR",
+  "summary": "PA-AMR, a robot from Rapyuta Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/rapyuta-pa-amr.webp",
+      "src": "https://www.rapyuta-robotics.com/solutions-pa-amr/",
+      "orig": "https://www.rapyuta-robotics.com/wp-content/uploads/2023/10/amr_gen3_views.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rapyuta-robotics.com/solutions-pa-amr/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

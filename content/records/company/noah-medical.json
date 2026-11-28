@@ -1,0 +1,51 @@
+{
+  "id": 1775,
+  "type": "company",
+  "slug": "noah-medical",
+  "name": "Noah Medical",
+  "summary": "Builds the Galaxy System, a navigated robotic bronchoscopy platform for pulmonary diagnostics.",
+  "body": "Noah Medical is building the future of medical robotics. Our next generation robotic platform targets early diagnosis and treatment of patients across multiple indications.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1825-noah-medical",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.noahmed.com/"
+    },
+    "image": {
+      "v": "/logos/noah-medical.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/6395e311c77c7b23a5ce.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Carlos",
+      "src": "https://www.linkedin.com/company/noahmed",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/noahmed",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Carlos, San Carlos, California 94070, United States",
+          "lat": 37.507567,
+          "lon": -122.259971,
+          "src": "https://www.linkedin.com/company/noahmed"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

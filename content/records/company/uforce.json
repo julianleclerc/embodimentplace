@@ -1,0 +1,51 @@
+{
+  "id": 1512,
+  "type": "company",
+  "slug": "uforce",
+  "name": "Uforce",
+  "summary": "Ukrainian-founded defence technology company headquartered in London that develops and integrates combat-proven unmanned systems across air, land, and sea domains.",
+  "body": "UFORCE builds the world's most battle-proven autonomous weapons systems. Over 300,000 real combat missions. Sea, air, land, and intercept. Iterated under fire in Ukraine and now scaling globally for allied militaries.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/230-uforce",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.uforce.com/"
+    },
+    "image": {
+      "v": "/logos/uforce.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/36899aa2935e98511c6f.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/230-uforce",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/230-uforce",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/230-uforce"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

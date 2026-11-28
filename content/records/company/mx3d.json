@@ -1,0 +1,53 @@
+{
+  "id": 1953,
+  "type": "company",
+  "slug": "mx3d",
+  "name": "MX3D",
+  "summary": "Amsterdam company specialising in robotic wire arc additive manufacturing (WAAM), which uses welding robots to print large metal parts layer by layer.",
+  "body": "MX3D is an Amsterdam-based company in industrial 3D metal printing, specialising in large-scale Wire Arc Additive Manufacturing (WAAM). We provide both turnkey M-Metal AM Systems for in-house production and qualified Print on Demand services from our extensive factory.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/3367-mx3d",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mx3d.com/"
+    },
+    "image": {
+      "v": "/logos/mx3d.png",
+      "fit": "contain",
+      "src": "https://mx3d.com/wp-content/uploads/2025/09/favicon-mx3d-300x300.avif",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Amsterdam",
+      "src": "https://roboticsconnected.com/companies/3367-mx3d",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://roboticsconnected.com/companies/3367-mx3d",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Amsterdam, Netherlands",
+          "lat": 52.37308,
+          "lon": 4.892453,
+          "src": "https://roboticsconnected.com/companies/3367-mx3d"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

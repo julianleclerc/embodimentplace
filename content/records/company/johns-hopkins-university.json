@@ -1,0 +1,46 @@
+{
+  "id": 2097,
+  "type": "company",
+  "slug": "johns-hopkins-university",
+  "name": "Johns Hopkins University",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.jhu.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.jhu.edu/"
+    },
+    "city": {
+      "v": "Baltimore"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Baltimore, United States",
+          "lat": 39.3299,
+          "lon": -76.6205
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 32.9,
+      "faculty": 22,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

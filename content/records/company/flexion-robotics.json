@@ -1,0 +1,51 @@
+{
+  "id": 1026,
+  "type": "company",
+  "slug": "flexion-robotics",
+  "name": "Flexion Robotics",
+  "summary": "We are building the autonomy stack for humanoid robots - from command to control, from manipulation to locomotion, across any hardware and task.",
+  "body": "Leveraging the power of simulation and reinforcement learning, our software scales to the real world with minimal human involvement.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://flexion.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://flexion.ai/"
+    },
+    "image": {
+      "v": "/logos/flexion-robotics.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/YoPkmaS6Pxjs4kfOa6ehz70MQII.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zurich",
+      "src": "https://ch.linkedin.com/company/flexion-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/flexion-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Affolternstrasse 42, Zurich, 8050, Switzerland",
+          "lat": 47.411843,
+          "lon": 8.541956,
+          "src": "https://ch.linkedin.com/company/flexion-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

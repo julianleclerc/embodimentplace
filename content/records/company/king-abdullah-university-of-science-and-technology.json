@@ -1,0 +1,51 @@
+{
+  "id": 1401,
+  "type": "company",
+  "slug": "king-abdullah-university-of-science-and-technology",
+  "name": "King Abdullah University of Science and Technology",
+  "summary": "University in Thuwal, Saudi Arabia.",
+  "body": "Recent robotics work includes “EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents”. OpenAlex lists 41 robotics, humanoid, embodied-AI or manipulation papers from King Abdullah University of Science and Technology since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.48550/arxiv.2410.22662",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.kaust.edu.sa/"
+    },
+    "image": {
+      "v": "/logos/king-abdullah-university-of-science-and-technology.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.kaust.edu.sa&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Jeddah",
+      "src": "https://www.wikidata.org/wiki/Q1463036",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Saudi Arabia",
+      "src": "https://www.wikidata.org/wiki/Q1463036",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Jeddah, Saudi Arabia",
+          "lat": 22.309722,
+          "lon": 39.105278,
+          "src": "https://www.wikidata.org/wiki/Q1463036"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

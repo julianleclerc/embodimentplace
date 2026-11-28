@@ -1,0 +1,53 @@
+{
+  "id": 1825,
+  "type": "company",
+  "slug": "absolute-robotics",
+  "name": "Absolute Robotics",
+  "summary": "Bristol-based cobot integrator and core division of the Absolute Group.",
+  "body": "Absolute Robotics offers industrial automation solutions using collaborative robots / cobots. We are a small, agile company excited about the opportunity to bring a pragmatic approach to automation using the incredible versatility and low cost of cobots. We enable UK companies to be competitive on the world stage.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/2061-absolute-robotics-ltd",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.absoluterobotics.uk/"
+    },
+    "image": {
+      "v": "/logos/absolute-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9722ea1784c900662302.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bristol",
+      "src": "https://uk.linkedin.com/company/absoluterobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/absoluterobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Future Space, Filton Road, Stoke Gifford, Bristol, England BS34 8RB, United Kingdom",
+          "lat": 51.511758,
+          "lon": -2.556961,
+          "src": "https://uk.linkedin.com/company/absoluterobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

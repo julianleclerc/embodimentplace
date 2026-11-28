@@ -1,0 +1,28 @@
+{
+  "id": 3944,
+  "type": "funding",
+  "slug": "all3-seed",
+  "name": "All3 Seed",
+  "summary": "Raised $25m in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-04-29",
+      "src": "https://thenextweb.com/news/all3-25m-seed-construction-robots-ai-housing",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://thenextweb.com/news/all3-25m-seed-construction-robots-ai-housing",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 25,
+      "src": "https://thenextweb.com/news/all3-25m-seed-construction-robots-ai-housing",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-04-29"
+}

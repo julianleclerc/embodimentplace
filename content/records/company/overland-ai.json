@@ -1,0 +1,52 @@
+{
+  "id": 1238,
+  "type": "company",
+  "slug": "overland-ai",
+  "name": "Overland AI",
+  "summary": "Ground combat is defined by unforgiving terrain, harsh conditions, and split-second decisions.",
+  "body": "At Overland AI, we enhance ground power while protecting lives.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://www.overland.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.overland.ai/"
+    },
+    "image": {
+      "v": "/logos/overland-ai.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6a82557bdcdb492682708bdb/6a8268f82ac30f8359b3fb64_overland-mark.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seattle",
+      "src": "https://www.linkedin.com/company/overland-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/overland-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seattle, WA, United States",
+          "lat": 47.603832,
+          "lon": -122.330062,
+          "src": "https://www.linkedin.com/company/overland-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1524,
+  "type": "company",
+  "slug": "ava-robotics",
+  "name": "Ava Robotics",
+  "summary": "Develops autonomous telepresence robots that enable remote collaboration and workplace productivity.",
+  "body": "Ava Robotics is a robotics technology company that designs and builds intelligent robots for the workplace. Delivering on a vision of robots working with and for people, Ava's technology emphasizes user experience, safety and autonomous mobility to empower people, while advancing business operations and access.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/251-ava-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.avarobotics.com/"
+    },
+    "image": {
+      "v": "/logos/ava-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/10ea10f14ff2d6758a66.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boston",
+      "src": "https://www.linkedin.com/company/ava-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/ava-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "12 Channel St, Boston, Massachusetts 02210, United States",
+          "lat": 42.345492,
+          "lon": -71.036844,
+          "src": "https://www.linkedin.com/company/ava-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

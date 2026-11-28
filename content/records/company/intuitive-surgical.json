@@ -1,0 +1,51 @@
+{
+  "id": 1153,
+  "type": "company",
+  "slug": "intuitive-surgical",
+  "name": "Intuitive Surgical",
+  "summary": "Intuitive (Nasdaq: ISRG), headquartered in Sunnyvale, Calif., is a global technology leader in minimally invasive care and the pioneer of robotic-assisted surgery.",
+  "body": "At Intuitive, we believe that minimally invasive care is life-enhancing care. Through ingenuity and intelligent technology, we expand the potential of physicians to heal without constraints.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.linkedin.com/company/intuitivesurgical",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.intuitive.com/"
+    },
+    "image": {
+      "v": "/logos/intuitive-surgical.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.intuitive.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "California",
+      "src": "https://www.linkedin.com/company/intuitivesurgical",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/intuitivesurgical",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1020 Kifer Road, Building 108, California, 94086, United States",
+          "lat": 38.663684,
+          "lon": -121.383791,
+          "src": "https://www.linkedin.com/company/intuitivesurgical"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

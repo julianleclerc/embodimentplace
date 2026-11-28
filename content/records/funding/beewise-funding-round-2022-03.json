@@ -1,0 +1,23 @@
+{
+  "id": 3876,
+  "type": "funding",
+  "slug": "beewise-funding-round-2022-03",
+  "name": "Beewise funding round (2022-03)",
+  "summary": "Raised $80M, led by New York-based global venture capital.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-03-30",
+      "src": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-702718",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 80,
+      "src": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-702718",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-03-30"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1695,
+  "type": "company",
+  "slug": "kraken-robotics",
+  "name": "Kraken Robotics",
+  "summary": "Marine technology company building subsea sensors, power systems and robotic platforms.",
+  "body": "Kraken Robotics is a global marine technology company transforming subsea intelligence through advanced sensors, software, and integrated systems. Serving defence, offshore energy, and ocean science markets, the company delivers actionable insights in challenging underwater environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/1260-kraken-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.krakenrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/kraken-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/c7025bb11440b5e14114.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mount Pearl Park",
+      "src": "https://ca.linkedin.com/company/krakenrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/krakenrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "189 Glencoe Dr, Mount Pearl Park, Newfoundland and Labrador A1N 4P7, Canada",
+          "lat": 47.573347,
+          "lon": -52.733309,
+          "src": "https://ca.linkedin.com/company/krakenrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

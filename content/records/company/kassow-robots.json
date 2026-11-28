@@ -1,0 +1,51 @@
+{
+  "id": 1177,
+  "type": "company",
+  "slug": "kassow-robots",
+  "name": "Kassow Robots",
+  "summary": "True to the motto of “strong, fast, simple,” Copenhagen-based Kassow Robots develops and manufactures highly efficient and lightweight 7-axis robots for industrial applications.",
+  "body": "Despite their extensive reach, these cobots are not only extremely strong and fast, but can also be deployed in the tightest of spaces thanks to the enormous maneuverability afforded by the 7th axis.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.kassowrobots.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.kassowrobots.com/"
+    },
+    "image": {
+      "v": "/logos/kassow-robots.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/63d54839f7e09bd5bf27f6c2/645b68dcd1c7c9a474274ee9_Webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kastrup",
+      "src": "https://dk.linkedin.com/company/kassow-robots-aps",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/kassow-robots-aps",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kajakvej, Kastrup, Capital Region of Denmark 2770, Denmark",
+          "lat": 55.637465,
+          "lon": 12.653981,
+          "src": "https://dk.linkedin.com/company/kassow-robots-aps"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

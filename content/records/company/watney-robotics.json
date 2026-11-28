@@ -1,0 +1,51 @@
+{
+  "id": 2002,
+  "type": "company",
+  "slug": "watney-robotics",
+  "name": "Watney Robotics",
+  "summary": "Builds robots that work inside data centres.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://dealroom.co/blog/data-centre-robot-startup-watney-raises-80m-series-a",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://watney.com/"
+    },
+    "image": {
+      "v": "/logos/watney-robotics.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/jMH9xGPlKFpWWg3pU5Au66Srpps.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.linkedin.com/company/watneyrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/watneyrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, California, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.linkedin.com/company/watneyrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

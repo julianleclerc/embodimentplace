@@ -1,0 +1,51 @@
+{
+  "id": 1194,
+  "type": "company",
+  "slug": "calibrate-ventures",
+  "name": "Calibrate Ventures",
+  "summary": "Calibrate Ventures is an early-stage venture capital firm that partners with technical founders putting deep tech to work to transform major industries.",
+  "body": "Calibrate uses its expertise in AI, computer vision, machine learning and robotics to invest in technologies with applications in food, health, logistics, and manufacturing.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.calibratevc.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.calibratevc.com/"
+    },
+    "image": {
+      "v": "/logos/calibrate-ventures.png",
+      "fit": "contain",
+      "src": "https://www.calibratevc.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.linkedin.com/company/calibrate-ventures",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/calibrate-ventures",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "City of, Los Angeles, CA, United States",
+          "lat": 34.164271,
+          "lon": -118.467763,
+          "src": "https://www.linkedin.com/company/calibrate-ventures"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

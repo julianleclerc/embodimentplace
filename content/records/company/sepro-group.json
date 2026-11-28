@@ -1,0 +1,51 @@
+{
+  "id": 1875,
+  "type": "company",
+  "slug": "sepro-group",
+  "name": "Sepro Group",
+  "summary": "Designs Cartesian robots and automation systems for injection moulding machines, helping plastics processors load, unload and handle parts with precision.",
+  "body": "Founded in 1973, SEPRO was one of the first companies in the world to develop Cartesian CNC robots for injection molding machines.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2653-sepro-group",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sepro-group.com/"
+    },
+    "image": {
+      "v": "/logos/sepro-group.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/92ce60c2-89c0-4962-a685-d1eff29aefeb.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "La Roche sur Yon",
+      "src": "https://fr.linkedin.com/company/seprogroup",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/seprogroup",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rue Henry Bessemer Zone Acti Est CS 10084, La Roche sur Yon, 85003, France",
+          "lat": 46.23373,
+          "lon": 5.353878,
+          "src": "https://fr.linkedin.com/company/seprogroup"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

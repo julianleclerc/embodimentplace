@@ -1,0 +1,51 @@
+{
+  "id": 1628,
+  "type": "company",
+  "slug": "nautica-technologies",
+  "name": "Nautica Technologies",
+  "summary": "Develops HYDRA™, an autonomous robotic antifouling system for ship hull maintenance.",
+  "body": "The ocean powers global trade, energy and connectivity. At Nautica Technologies, we are developing resident autonomous robot swarms to keep its critical infrastructure resilient.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/869-nautica-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://nauticatechnologies.com/"
+    },
+    "image": {
+      "v": "/logos/nautica-technologies.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/514e9990dc1cb165981c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zürich",
+      "src": "https://roboticsconnected.com/companies/869-nautica-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://roboticsconnected.com/companies/869-nautica-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zürich, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042,
+          "src": "https://roboticsconnected.com/companies/869-nautica-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3496,
+  "type": "funding",
+  "slug": "futuring-robot-angel",
+  "name": "Futuring Robot Angel",
+  "summary": "Raised CNY 200 million in an Angel round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-01-12",
+      "src": "https://autonews.gasgoo.com/articles/icv/futuring-robot-closes-cny-200-million-angel-round-2010697823383564289",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Angel",
+      "src": "https://autonews.gasgoo.com/articles/icv/futuring-robot-closes-cny-200-million-angel-round-2010697823383564289",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-01-12"
+}

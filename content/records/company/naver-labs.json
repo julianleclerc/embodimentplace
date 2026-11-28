@@ -9,10 +9,18 @@
     "roles": {
       "v": [
         "Research lab",
-        "Robot maker"
+        "Robot maker",
+        "Model lab"
       ],
       "src": "https://www.naverlabs.com/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Model lab",
+          "src": "https://www.naverlabs.com/",
+          "asof": "2026-11"
+        }
+      ]
     },
     "website": {
       "v": "https://www.naverlabs.com/"
@@ -47,6 +55,6 @@
     }
   },
   "created": "2026-11-25 22:05:10",
-  "updated": "2026-11-25 22:05:10",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": "2026-11-25"
 }

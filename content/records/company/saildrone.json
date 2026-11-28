@@ -1,0 +1,51 @@
+{
+  "id": 1774,
+  "type": "company",
+  "slug": "saildrone",
+  "name": "Saildrone",
+  "summary": "Builds wind- and solar-powered autonomous surface vessels, often called ocean drones, for maritime domain awareness, anti-submarine warfare, seafloor mapping and…",
+  "body": "Saildrone is a maritime defense company with a relentless passion for performance. Built to operate in the world’s harshest environments, Saildrone’s autonomous systems deliver payload effects and persistent, wide-area intelligence, enabling informed decisions across the spectrum of defense missions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1824-saildrone",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.saildrone.com/"
+    },
+    "image": {
+      "v": "/logos/saildrone.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/bac35ddaf24dd18f33ea.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Alameda",
+      "src": "https://roboticsconnected.com/companies/1824-saildrone",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1824-saildrone",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Alameda, United States",
+          "lat": 37.609029,
+          "lon": -121.899142,
+          "src": "https://roboticsconnected.com/companies/1824-saildrone"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

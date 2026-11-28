@@ -1,0 +1,23 @@
+{
+  "id": 3545,
+  "type": "funding",
+  "slug": "phymi-seed",
+  "name": "PHYMI Seed",
+  "summary": "Raised nearly US$100 million in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-09-09",
+      "src": "https://technode.com/2026/09/10/embodied-ai-startup-phymi-raises-nearly-us100-million-in-seed-funding/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://technode.com/2026/09/10/embodied-ai-startup-phymi-raises-nearly-us100-million-in-seed-funding/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-09-09"
+}

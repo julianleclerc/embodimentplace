@@ -1,0 +1,52 @@
+{
+  "id": 1807,
+  "type": "company",
+  "slug": "raise-robotics",
+  "name": "Raise Robotics",
+  "summary": "Builds reconfigurable robotic work cells that automate high-risk construction tasks such as layout, drilling, fastening, scanning and coating.",
+  "body": "Let's Build.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2005-raise-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://raiserobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/raise-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/65cae92eaf0a0f55a380.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://roboticsconnected.com/companies/2005-raise-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2005-raise-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://roboticsconnected.com/companies/2005-raise-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

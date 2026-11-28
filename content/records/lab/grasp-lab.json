@@ -1,0 +1,27 @@
+{
+  "id": 2113,
+  "type": "lab",
+  "slug": "grasp-lab",
+  "name": "GRASP Lab",
+  "summary": "Penn's interdisciplinary robotics lab, home of the ROBO master's.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Aerial robots",
+        "Perception",
+        "Manipulation"
+      ],
+      "src": "https://www.grasp.upenn.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.grasp.upenn.edu/",
+      "src": "https://www.grasp.upenn.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

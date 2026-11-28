@@ -1,0 +1,51 @@
+{
+  "id": 1924,
+  "type": "company",
+  "slug": "prime-robotics",
+  "name": "Prime Robotics",
+  "summary": "Denver-based warehouse and factory automation company that designs its own robots, writes the orchestration software and engineers the stations that run them.",
+  "body": "Prime Robotics is a global provider of intelligent end-to-end automation solutions and autonomous mobile robots for the warehouse, distribution, e-commerce, and material handling industries.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3101-prime-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://primerobotics.com/"
+    },
+    "image": {
+      "v": "/logos/prime-robotics.png",
+      "fit": "contain",
+      "src": "https://www.primerobotics.com/wp-content/uploads/2024/09/cropped-favicons-02-192x192-1.webp#on-ink",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Golden",
+      "src": "https://www.linkedin.com/company/primerobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/primerobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1597 Cole Blvd, Golden, Colorado 80401, United States",
+          "lat": 39.754635,
+          "lon": -105.22058,
+          "src": "https://www.linkedin.com/company/primerobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3672,
+  "type": "funding",
+  "slug": "mujin-growth",
+  "name": "Mujin Growth",
+  "summary": "Raised US$ 233 million in a Growth round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-12-02",
+      "src": "https://finance.yahoo.com/news/mujin-raises-us-233-million-140000051.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Growth",
+      "src": "https://finance.yahoo.com/news/mujin-raises-us-233-million-140000051.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 233,
+      "src": "https://finance.yahoo.com/news/mujin-raises-us-233-million-140000051.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-12-02"
+}

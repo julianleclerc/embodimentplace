@@ -1,0 +1,26 @@
+{
+  "id": 2144,
+  "type": "lab",
+  "slug": "edinburgh-centre-for-robotics-2",
+  "name": "Edinburgh Centre for Robotics",
+  "summary": "Joint centre with Heriot-Watt, with a robotics PhD training centre.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Field robots"
+      ],
+      "src": "https://www.edinburgh-robotics.org/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.edinburgh-robotics.org/",
+      "src": "https://www.edinburgh-robotics.org/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

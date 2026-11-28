@@ -1,0 +1,51 @@
+{
+  "id": 1339,
+  "type": "company",
+  "slug": "university-of-bristol",
+  "name": "University of Bristol",
+  "summary": "Research university located in Bristol, United Kingdom.",
+  "body": "Recent robotics work includes “A Survey on Vision--Language--Action Models for Embodied AI”. OpenAlex lists 182 robotics, humanoid, embodied-AI or manipulation papers from University of Bristol since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/tnnls.2025.3650584",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://bristol.ac.uk/"
+    },
+    "image": {
+      "v": "/logos/university-of-bristol.png",
+      "fit": "contain",
+      "src": "https://bristol.ac.uk/assets/responsive-web-project/2.7.8/favicons/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "City of Bristol",
+      "src": "https://www.wikidata.org/wiki/Q459506",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.wikidata.org/wiki/Q459506",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "City of Bristol, United Kingdom",
+          "lat": 51.456389,
+          "lon": -2.604444,
+          "src": "https://www.wikidata.org/wiki/Q459506"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

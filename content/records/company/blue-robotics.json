@@ -1,0 +1,53 @@
+{
+  "id": 1557,
+  "type": "company",
+  "slug": "blue-robotics",
+  "name": "Blue Robotics",
+  "summary": "Manufactures affordable, high-performance underwater robotics systems including remotely operated vehicles (ROVs) and autonomous surface vessels (USVs).",
+  "body": "Blue Robotics makes low-cost, high-performance components for marine robotics to enable the next generation of ocean exploration! Based in Torrance, CA, we are a young and innovative company with a diverse and international customer base.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/352-blue-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://bluerobotics.com/"
+    },
+    "image": {
+      "v": "/logos/blue-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/fce6b2c40b132cabc9f1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Torrance",
+      "src": "https://www.linkedin.com/company/blue-robotics-inc-",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/blue-robotics-inc-",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2740 California St, Torrance, California 90503, United States",
+          "lat": 33.841732,
+          "lon": -118.335393,
+          "src": "https://www.linkedin.com/company/blue-robotics-inc-"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

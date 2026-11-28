@@ -1,0 +1,51 @@
+{
+  "id": 1835,
+  "type": "company",
+  "slug": "acta-robotics",
+  "name": "Acta Robotics",
+  "summary": "Brazilian company building autonomous robots for events, logistics and industry.",
+  "body": "Robôs para logística, indústria e eventos. Aumente sua produtividade ou sua visibilidade de maneira rápida e inteligente. Agende um teste e veja o robô em ação na sua empresa.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2149-acta-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.actarobotics.com/"
+    },
+    "image": {
+      "v": "/logos/acta-robotics.png",
+      "fit": "contain",
+      "src": "https://www.actarobotics.com/favicon-180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Campinas",
+      "src": "https://br.linkedin.com/company/acta-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Brazil",
+      "src": "https://br.linkedin.com/company/acta-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "AV Francisco Jose DE Camargo Andrade 30, Campinas, SP, Brazil",
+          "lat": -22.884803,
+          "lon": -47.074481,
+          "src": "https://br.linkedin.com/company/acta-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

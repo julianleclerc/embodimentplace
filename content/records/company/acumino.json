@@ -1,0 +1,52 @@
+{
+  "id": 1415,
+  "type": "company",
+  "slug": "acumino",
+  "name": "Acumino",
+  "summary": "Builds task-specific Physical AI models for dexterous industrial automation, enabling robots to handle flexible objects, assembly, material deposition, and packaging.",
+  "body": "Acumino offers next-generation, AI powered robot models for the execution of highly dexterous tasks in industrial automation settings.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/40-acumino",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://acumino.ai/"
+    },
+    "image": {
+      "v": "/logos/acumino.png",
+      "fit": "contain",
+      "src": "https://acumino.ai/favicon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boston",
+      "src": "https://www.linkedin.com/company/acuminoai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/acuminoai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "12 Channel St, Boston, Massachusetts 02210, United States",
+          "lat": 42.345492,
+          "lon": -71.036844,
+          "src": "https://www.linkedin.com/company/acuminoai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

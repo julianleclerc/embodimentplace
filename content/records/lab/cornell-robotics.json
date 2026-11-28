@@ -1,0 +1,27 @@
+{
+  "id": 2149,
+  "type": "lab",
+  "slug": "cornell-robotics",
+  "name": "Cornell Robotics",
+  "summary": "Cornell's robotics community across departments.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Soft robots",
+        "Human-robot interaction"
+      ],
+      "src": "https://robotics.cornell.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.cornell.edu/",
+      "src": "https://robotics.cornell.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

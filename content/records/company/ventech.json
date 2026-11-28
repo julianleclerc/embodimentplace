@@ -1,0 +1,51 @@
+{
+  "id": 1226,
+  "type": "company",
+  "slug": "ventech",
+  "name": "Ventech",
+  "summary": "Founded on the core principle that the next wave of tech is born in the startup streets - the natural environment of tomorrow’s innovation superstars - Ventech has been a pioneer on the European…",
+  "body": "Founded on the core principle that the next wave of tech is born in the startup streets - the natural environment of tomorrow’s innovation superstars - Ventech has been a pioneer on the European venture capital scene for over two decades.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://ventechvc.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ventechvc.com/"
+    },
+    "image": {
+      "v": "/logos/ventech.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6655a20a701d893a90265aaa/6655a55812aa2a0f3d15db7d_webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Paris",
+      "src": "https://fr.linkedin.com/company/ventech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/ventech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "47 avenue de l'Opéra, Paris, 75002, France",
+          "lat": 48.869465,
+          "lon": 2.332598,
+          "src": "https://fr.linkedin.com/company/ventech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

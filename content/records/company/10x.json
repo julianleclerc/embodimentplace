@@ -1,0 +1,51 @@
+{
+  "id": 1412,
+  "type": "company",
+  "slug": "10x",
+  "name": "10x",
+  "summary": "Develops physical AI agents: compact mobile manipulators designed for construction task automation.",
+  "body": "Their flagship robot uses a telescopic arm with advanced tool-use intelligence, employing computer vision and machine learning to autonomously operate power tools in complex indoor environments. The company addresses labour shortages, safety concerns, and productivity challenges across the construction sector.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/36-10x",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://origin.tech/"
+    },
+    "image": {
+      "v": "/logos/10x.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4508af7cae4f6da6ea90.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bangalore",
+      "src": "https://roboticsconnected.com/companies/36-10x",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://roboticsconnected.com/companies/36-10x",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bangalore, India",
+          "lat": 12.976794,
+          "lon": 77.590082,
+          "src": "https://roboticsconnected.com/companies/36-10x"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

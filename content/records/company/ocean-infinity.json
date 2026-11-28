@@ -1,0 +1,51 @@
+{
+  "id": 1642,
+  "type": "company",
+  "slug": "ocean-infinity",
+  "name": "Ocean Infinity",
+  "summary": "Marine technology company that uses robotic vessels, autonomous underwater vehicles and software to collect ocean and seabed data at scale.",
+  "body": "Ocean Infinity is a technology-driven company transforming how ocean operations are carried out. We design, build and operate robotic and uncrewed systems to perform complex work at sea - safer, smarter and with less environmental impact.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1007-ocean-infinity",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://oceaninfinity.com/"
+    },
+    "image": {
+      "v": "/logos/ocean-infinity.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5563185c437788a470ba.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://roboticsconnected.com/companies/1007-ocean-infinity",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1007-ocean-infinity",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, United States",
+          "lat": 30.264926,
+          "lon": -97.747409,
+          "src": "https://roboticsconnected.com/companies/1007-ocean-infinity"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

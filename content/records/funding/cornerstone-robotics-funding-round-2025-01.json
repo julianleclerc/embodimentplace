@@ -1,0 +1,18 @@
+{
+  "id": 3770,
+  "type": "funding",
+  "slug": "cornerstone-robotics-funding-round-2025-01",
+  "name": "Cornerstone Robotics funding round (2025-01)",
+  "summary": "Raised over US$70 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-01-12",
+      "src": "https://sg.finance.yahoo.com/news/cornerstone-robotics-raises-over-us-010500788.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-01-12"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1971,
+  "type": "company",
+  "slug": "ga-robot",
+  "name": "G&A ROBOT",
+  "summary": "Canadian company building robotic beverage, ice cream and food-service systems.",
+  "body": "Gourmet & Accessible - Smart Café In A Box: Experience the next generation of foodservice with G&A ROBOT automated vending solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/4001-g-and-a-robot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://garobot.com/"
+    },
+    "image": {
+      "v": "/logos/ga-robot.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/7emaXDQebt7NVOa5hk3PJTVnGs.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Vancouver",
+      "src": "https://ca.linkedin.com/company/g-a-robot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/g-a-robot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2999 Underhill Ave, Vancouver, British Columbia V5A 3C2, Canada",
+          "lat": 49.258523,
+          "lon": -122.928464,
+          "src": "https://ca.linkedin.com/company/g-a-robot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

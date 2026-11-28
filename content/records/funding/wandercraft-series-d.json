@@ -1,0 +1,28 @@
+{
+  "id": 3479,
+  "type": "funding",
+  "slug": "wandercraft-series-d",
+  "name": "Wandercraft Series D",
+  "summary": "Raised $75M in a Series D round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-06-10",
+      "src": "https://venturebeat.com/games/wandercraft-raises-75m-for-acceleration-of-ai-powered-humanoid-robotics-and-exoskeletons/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series D",
+      "src": "https://venturebeat.com/games/wandercraft-raises-75m-for-acceleration-of-ai-powered-humanoid-robotics-and-exoskeletons/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 75,
+      "src": "https://venturebeat.com/games/wandercraft-raises-75m-for-acceleration-of-ai-powered-humanoid-robotics-and-exoskeletons/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-06-10"
+}

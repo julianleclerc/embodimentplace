@@ -1,0 +1,31 @@
+{
+  "id": 2190,
+  "type": "lab",
+  "slug": "humans-to-robots-lab",
+  "name": "Humans To Robots Lab",
+  "summary": "Robots that understand language and work with people.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Human-robot interaction",
+        "Robot learning"
+      ],
+      "src": "https://h2r.cs.brown.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://h2r.cs.brown.edu/",
+      "src": "https://h2r.cs.brown.edu/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Stefanie Tellex",
+      "src": "https://h2r.cs.brown.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

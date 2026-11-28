@@ -1,0 +1,52 @@
+{
+  "id": 2036,
+  "type": "company",
+  "slug": "grizzly",
+  "name": "Grizzly",
+  "summary": "Building AI-native heavy machines, starting with an excavator with general intelligence.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2100947960267776112",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://grizzhq.com/"
+    },
+    "image": {
+      "v": "/logos/grizzly.png",
+      "fit": "contain",
+      "src": "https://grizzhq.com/images/grizzly-logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://x.com/StealthCoSpy/status/2100947960267776112",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://x.com/StealthCoSpy/status/2100947960267776112",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, California, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://x.com/StealthCoSpy/status/2100947960267776112"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

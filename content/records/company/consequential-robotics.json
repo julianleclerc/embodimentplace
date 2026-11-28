@@ -1,0 +1,52 @@
+{
+  "id": 1492,
+  "type": "company",
+  "slug": "consequential-robotics",
+  "name": "Consequential Robotics",
+  "summary": "Develops biomimetic service robots for homecare, health, education, and lifestyle applications.",
+  "body": "Consequential Robotics is a service robotics start-up developing innovative solutions for applications in education, healthcare and research with the main focus on developing assistive robotic systems that will enhance quality of life as people age.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/200-consequential-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://consequentialrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/consequential-robotics.png",
+      "fit": "contain",
+      "src": "https://assets.squarespace.com/universal/default-favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bristol",
+      "src": "https://uk.linkedin.com/company/consequential-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/consequential-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "UWE Frenchay, Bristol, BS16 1QY, United Kingdom",
+          "lat": 51.500768,
+          "lon": -2.550311,
+          "src": "https://uk.linkedin.com/company/consequential-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

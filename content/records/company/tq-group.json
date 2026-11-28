@@ -1,0 +1,51 @@
+{
+  "id": 1250,
+  "type": "company",
+  "slug": "tq-group",
+  "name": "TQ-Group",
+  "summary": "Can technology make the world a better place?",
+  "body": "At TQ-Systems, we believe in this and are looking for people who want to do things together with us. With more than 1,400 employees, we produce and develop electronic assemblies at ten locations in Germany, one location in Switzerland and one in Shanghai.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.tq-group.com/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tq-group.com/"
+    },
+    "image": {
+      "v": "/logos/tq-group.png",
+      "fit": "contain",
+      "src": "https://www.tq-group.com/fileadmin/html/img/logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seefeld",
+      "src": "https://de.linkedin.com/company/tq-group",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/tq-group",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mühlstraße 2, Gut Delling, Seefeld, Bavaria 82229, Germany",
+          "lat": 48.058386,
+          "lon": 11.236398,
+          "src": "https://de.linkedin.com/company/tq-group"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

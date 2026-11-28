@@ -1,0 +1,28 @@
+{
+  "id": 3866,
+  "type": "funding",
+  "slug": "mach-industries-series-c",
+  "name": "Mach Industries Series C",
+  "summary": "Raised $300 million in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-06-02",
+      "src": "https://finance.yahoo.com/markets/stocks/articles/mach-industries-raises-300-million-130000319.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://finance.yahoo.com/markets/stocks/articles/mach-industries-raises-300-million-130000319.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 300,
+      "src": "https://finance.yahoo.com/markets/stocks/articles/mach-industries-raises-300-million-130000319.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-06-02"
+}

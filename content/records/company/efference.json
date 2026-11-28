@@ -1,0 +1,51 @@
+{
+  "id": 908,
+  "type": "company",
+  "slug": "efference",
+  "name": "Efference",
+  "summary": "Perception and compute stack for data-driven robotics: data collection, teleoperation and model inference.",
+  "body": "Y Combinator Fall 2025 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://efference.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://efference.ai/"
+    },
+    "image": {
+      "v": "/logos/efference.png",
+      "fit": "contain",
+      "src": "https://efference.ai/assets/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.linkedin.com/company/efference",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/efference",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1643 Powell St, San Francisco, California 94133, United States",
+          "lat": 37.799778,
+          "lon": -122.411023,
+          "src": "https://www.linkedin.com/company/efference"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

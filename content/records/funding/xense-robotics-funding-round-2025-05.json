@@ -1,0 +1,23 @@
+{
+  "id": 3920,
+  "type": "funding",
+  "slug": "xense-robotics-funding-round-2025-05",
+  "name": "Xense Robotics funding round (2025-05)",
+  "summary": "Raised $10m.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-05-06",
+      "src": "https://www.techinasia.com/news/shanghais-xense-robotics-raises-10m-tactile-sensing-tech?ai-allowed=1",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 10,
+      "src": "https://www.techinasia.com/news/shanghais-xense-robotics-raises-10m-tactile-sensing-tech?ai-allowed=1",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-05-06"
+}

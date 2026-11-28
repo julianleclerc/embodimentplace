@@ -1,0 +1,23 @@
+{
+  "id": 3623,
+  "type": "funding",
+  "slug": "mosaico-seed",
+  "name": "Mosaico Seed",
+  "summary": "Raised €7.5M in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-15",
+      "src": "https://www.roboticstomorrow.com/news/2026/11/16/open-source-data-orchestration-platform-mosaico-raises-%E2%82%AC75m-to-boost-ai-development-in-robotics-and-iot/27382/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.roboticstomorrow.com/news/2026/11/16/open-source-data-orchestration-platform-mosaico-raises-%E2%82%AC75m-to-boost-ai-development-in-robotics-and-iot/27382/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-15"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1013,
+  "type": "company",
+  "slug": "airoa",
+  "name": "AIRoA",
+  "summary": "AIRoA is a global and open initiative that integrates AI and robotics to develop foundation models and data ecosystems that enable robots to understand and interact with the real world.",
+  "body": "Our mission is to develop and promote open platforms and datasets for robotic foundation models, creating a shared infrastructure that empowers the next generation of intelligent and autonomous systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab",
+        "Model lab"
+      ],
+      "src": "https://airoa.org/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://airoa.org/"
+    },
+    "image": {
+      "v": "/logos/airoa.png",
+      "fit": "contain",
+      "src": "https://airoa.org/wp-content/themes/airoa/assets/img/common/logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://airoa.org/contact/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://airoa.org/contact/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo Ryutsu Center Building A, 6-1-1 Heiwajima, Ota-ku, Tokyo 143-0006, Japan",
+          "lat": 35.582867,
+          "lon": 139.746029,
+          "src": "https://airoa.org/contact/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

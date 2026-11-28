@@ -1,0 +1,51 @@
+{
+  "id": 1652,
+  "type": "company",
+  "slug": "endiatx",
+  "name": "Endiatx",
+  "summary": "Developing a new generation of swallowable robots designed to operate inside the human body, starting with the stomach.",
+  "body": "Endiatx is developing a new generation of robotic technologies designed to operate inside the human body. We’re starting with the stomach.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1039-endiatx",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://endiatx.com/"
+    },
+    "image": {
+      "v": "/logos/endiatx.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/64b85169af2ec0a82165.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hayward",
+      "src": "https://www.linkedin.com/company/endiatxinc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/endiatxinc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "25545 Whitesell St, Hayward, California 94545, United States",
+          "lat": 37.629018,
+          "lon": -122.127158,
+          "src": "https://www.linkedin.com/company/endiatxinc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

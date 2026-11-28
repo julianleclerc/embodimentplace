@@ -1,0 +1,51 @@
+{
+  "id": 1925,
+  "type": "company",
+  "slug": "elistair",
+  "name": "Elistair",
+  "summary": "Designs tethered drone systems that give military, security and public safety teams continuous aerial overwatch without the battery swaps and landings of conventional…",
+  "body": "Its portfolio includes the Khronos automatic DroneBox, the Safe-T 2 and Ligh-T 4 tether stations, and a fleet of compatible drone platforms. The company was founded in 2014 and is headquartered near Lyon, France, with a North American office in Wilmington, North Carolina and a Boston presence.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3102-elistair",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://elistair.com/"
+    },
+    "image": {
+      "v": "/logos/elistair.png",
+      "fit": "contain",
+      "src": "https://elistair.com/wp-content/uploads/2026/06/cropped-Elistair_Tethered-drone-company-favicon-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dardilly",
+      "src": "https://roboticsconnected.com/companies/3102-elistair",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://roboticsconnected.com/companies/3102-elistair",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Dardilly, France",
+          "lat": 45.806499,
+          "lon": 4.75377,
+          "src": "https://roboticsconnected.com/companies/3102-elistair"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

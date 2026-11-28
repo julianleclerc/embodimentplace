@@ -1,0 +1,23 @@
+{
+  "id": 3870,
+  "type": "funding",
+  "slug": "forterra-funding-round-2025-08",
+  "name": "Forterra funding round (2025-08)",
+  "summary": "Raised $93M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-08-22",
+      "src": "https://www.bizjournals.com/washington/inno/stories/fundings/2025/08/22/forterra-autonomous-driving-system-investment.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 93,
+      "src": "https://www.bizjournals.com/washington/inno/stories/fundings/2025/08/22/forterra-autonomous-driving-system-investment.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-08-22"
+}

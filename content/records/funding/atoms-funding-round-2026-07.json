@@ -1,0 +1,23 @@
+{
+  "id": 3527,
+  "type": "funding",
+  "slug": "atoms-funding-round-2026-07",
+  "name": "Atoms funding round (2026-07)",
+  "summary": "Raised $1.7B.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-07-23",
+      "src": "https://www.msn.com/en-in/money/news/travis-kalanicks-atoms-secures-17b-funding-ben-horowitz-joins/ar-AA28z25b",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1700,
+      "src": "https://www.msn.com/en-in/money/news/travis-kalanicks-atoms-secures-17b-funding-ben-horowitz-joins/ar-AA28z25b",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-07-23"
+}

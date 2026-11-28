@@ -1,0 +1,23 @@
+{
+  "id": 3825,
+  "type": "funding",
+  "slug": "august-robotics-funding-round-2026-05",
+  "name": "August Robotics funding round (2026-05)",
+  "summary": "Raised $42m, led by Big Pi Ventures.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-05-22",
+      "src": "https://www.msn.com/en-au/money/news/august-robotics-raises-42m-to-scale-up-new-robotic-systems/ar-AA23Rs9A",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 42,
+      "src": "https://www.msn.com/en-au/money/news/august-robotics-raises-42m-to-scale-up-new-robotic-systems/ar-AA23Rs9A",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-05-22"
+}

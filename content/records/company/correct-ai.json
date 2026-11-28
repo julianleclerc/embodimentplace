@@ -1,0 +1,52 @@
+{
+  "id": 1830,
+  "type": "company",
+  "slug": "correct-ai",
+  "name": "Correct-AI",
+  "summary": "Develops AI-driven collision avoidance, mapping, and path planning systems for heavy equipment and industrial worksites.",
+  "body": "Its PROX-EYE line uses cameras and LiDAR for hazard detection around operating machines, while FIELD-EYE and CABIN-EYE cover site awareness and in-cab driver monitoring. The company is also advancing machine perception, localisation and control for autonomous heavy equipment.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/2139-correct-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://correct-ai.com/"
+    },
+    "image": {
+      "v": "/logos/correct-ai.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d3d7bec7a0590bf4d84c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Edmonton",
+      "src": "https://ca.linkedin.com/company/correct-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/correct-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "10050 112 St NW, Edmonton, Alberta T5K 2J1, Canada",
+          "lat": 53.540148,
+          "lon": -113.514408,
+          "src": "https://ca.linkedin.com/company/correct-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

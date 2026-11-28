@@ -1,0 +1,45 @@
+{
+  "id": 1222,
+  "type": "company",
+  "slug": "mac-venture-capital",
+  "name": "MaC Venture Capital",
+  "summary": "MaC Venture Capital is the result of the merger between successful Los Angeles and Bay Area based Seed funds, Cross Culture Ventures and M Ventures.",
+  "body": "MaC Venture Capital is an early stage venture capital firm focused on finding ideas, technology, and products that can become infectious. We invest in technology companies that benefit from shifts in cultural trends and behaviors in an increasingly diverse global marketplace.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://macventurecapital.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://macventurecapital.com/"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.linkedin.com/company/mac-venture-capital",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/mac-venture-capital",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, CA, United States",
+          "lat": 34.053692,
+          "lon": -118.242768,
+          "src": "https://www.linkedin.com/company/mac-venture-capital"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

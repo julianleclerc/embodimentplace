@@ -1,0 +1,51 @@
+{
+  "id": 1846,
+  "type": "company",
+  "slug": "fulcrumair",
+  "name": "FulcrumAir",
+  "summary": "Builds remotely operated robotic tools for overhead power line work.",
+  "body": "Its LineFly drone-carried tools and manually deployed LineSpider tools install bird diverters, spacers and other hardware on energised transmission and distribution lines. The company says its systems remove people from work at height, cut installation time by three to seven times and lower carbon emissions by around 95 percent compared with helicopter-based methods.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2342-fulcrumair",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://fulcrumair.com/"
+    },
+    "image": {
+      "v": "/logos/fulcrumair.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/612145d8f5b84d742c44.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Calgary",
+      "src": "https://roboticsconnected.com/companies/2342-fulcrumair",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://roboticsconnected.com/companies/2342-fulcrumair",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Calgary, Canada",
+          "lat": 51.045606,
+          "lon": -114.057541,
+          "src": "https://roboticsconnected.com/companies/2342-fulcrumair"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

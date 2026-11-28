@@ -1,0 +1,52 @@
+{
+  "id": 1932,
+  "type": "company",
+  "slug": "intec-robotics",
+  "name": "Intec Robotics",
+  "summary": "Italian firm based in Travagliato, near Brescia, that designs and builds robotic machines for surface finishing.",
+  "body": "With over 25 years of experience in industrial robotics and beyond 500 machines in production in more than 20 countries, we provide the ultimate solutions for surface finishing.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/3186-intec-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://intecrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/intec-robotics.png",
+      "fit": "contain",
+      "src": "https://intecrobotics.com/wp-content/uploads/2021/11/cropped-intec-robotics-logo-squared-white-squared.png?w=180",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Travagliato",
+      "src": "https://it.linkedin.com/company/intecrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Italy",
+      "src": "https://it.linkedin.com/company/intecrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Via Santa Maria Crocefissa di Rosa, 1, Travagliato, Brescia 25039, Italy",
+          "lat": 45.577943,
+          "lon": 10.009747,
+          "src": "https://it.linkedin.com/company/intecrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

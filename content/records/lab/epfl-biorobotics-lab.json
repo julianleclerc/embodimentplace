@@ -1,0 +1,31 @@
+{
+  "id": 3981,
+  "type": "lab",
+  "slug": "epfl-biorobotics-lab",
+  "name": "EPFL Biorobotics Lab",
+  "summary": "Bio-inspired locomotion robots.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Bio-inspired robots",
+        "Legged locomotion"
+      ],
+      "src": "https://www.epfl.ch/labs/biorob/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.epfl.ch/labs/biorob/",
+      "src": "https://www.epfl.ch/labs/biorob/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Auke Jan Ijspeert",
+      "src": "https://www.epfl.ch/labs/biorob/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 07:05:09",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

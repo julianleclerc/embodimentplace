@@ -1,0 +1,51 @@
+{
+  "id": 1619,
+  "type": "company",
+  "slug": "9-mothers",
+  "name": "9 Mothers",
+  "summary": "Builds AI-powered counter-drone defence systems for military use.",
+  "body": "Cost effective C-UAS. AI detection, tracking and defensive systems. EDDA is our first counter suicide drone system, effectively stopping fast moving small drones.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/856-9-mothers",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://9mothers.com/"
+    },
+    "image": {
+      "v": "/logos/9-mothers.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/00cc191e3a10242dca43.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://www.linkedin.com/company/9-mothers",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/9-mothers",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1606 Headway Circle, Austin, Texas 78754, United States",
+          "lat": 30.334399,
+          "lon": -97.683144,
+          "src": "https://www.linkedin.com/company/9-mothers"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

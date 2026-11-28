@@ -1,0 +1,45 @@
+{
+  "id": 1044,
+  "type": "company",
+  "slug": "xyz-robotics",
+  "name": "XYZ Robotics",
+  "summary": "XYZ Robotics' mission is to accelerate the advent of autonomous robotic perception and manipulation.",
+  "body": "The company develops mobile manipulation robots (MMR). These MMRs pioneer automation in truck loading, unloading, and case picking.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://de.linkedin.com/company/xyz-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://xyzrobotics.ai/"
+    },
+    "city": {
+      "v": "Neuss",
+      "src": "https://de.linkedin.com/company/xyz-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/xyz-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Jagenbergstraße 15A, Neuss, North Rhine-Westphalia 41468, Germany",
+          "lat": 51.16594,
+          "lon": 6.760152,
+          "src": "https://de.linkedin.com/company/xyz-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

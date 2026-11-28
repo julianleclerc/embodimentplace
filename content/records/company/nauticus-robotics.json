@@ -1,0 +1,53 @@
+{
+  "id": 1698,
+  "type": "company",
+  "slug": "nauticus-robotics",
+  "name": "Nauticus Robotics",
+  "summary": "Builds autonomous electric underwater vehicles, the Aquanaut® platform, and licenses its Nauticus ToolKITT™ autonomy software, which can be retrofitted onto third-party…",
+  "body": "Nauticus Robotics, Inc. (Nasdaq: KITT) is a Houston-area developer of ocean robots, autonomy software and services delivered to the ocean industries.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1265-nauticus-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://nauticusrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/nauticus-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/71d46f777a602b86447a.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Webster",
+      "src": "https://www.linkedin.com/company/nauticus-robotics-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/nauticus-robotics-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "17146 Feathercraft Lane, Webster, Texas 77598, United States",
+          "lat": 29.548278,
+          "lon": -95.121443,
+          "src": "https://www.linkedin.com/company/nauticus-robotics-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

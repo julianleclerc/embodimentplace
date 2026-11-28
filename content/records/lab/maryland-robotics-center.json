@@ -1,0 +1,27 @@
+{
+  "id": 2133,
+  "type": "lab",
+  "slug": "maryland-robotics-center",
+  "name": "Maryland Robotics Center",
+  "summary": "UMD's robotics centre, with a robotics master's (MEng).",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Field robots",
+        "Medical robots",
+        "Aerial robots"
+      ],
+      "src": "https://robotics.umd.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.umd.edu/",
+      "src": "https://robotics.umd.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 2072,
+  "type": "product",
+  "slug": "ati-qc-7-robotic-tool-changer",
+  "name": "ATI QC-7 Robotic Tool Changer",
+  "summary": "Lightweight automatic tool changer for cobots and small robots.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Tool changer",
+      "src": "https://www.ati-ia.com/products/toolchanger/QC.aspx?ID=QC-7",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://www.ati-ia.com/products/toolchanger/QC.aspx?ID=QC-7",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/ati-qc-7-robotic-tool-changer.webp",
+      "src": "https://www.ati-ia.com/products/toolchanger/QC.aspx?ID=QC-7",
+      "orig": "https://www.ati-ia.com/app_content/product_images/9120-007M-IP-10719.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

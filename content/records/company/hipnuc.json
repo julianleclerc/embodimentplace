@@ -1,0 +1,51 @@
+{
+  "id": 978,
+  "type": "company",
+  "slug": "hipnuc",
+  "name": "HiPNUC",
+  "summary": "IMUs, attitude and navigation sensors and tilt sensors.",
+  "body": "Headquartered in Beijing, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.hipnuc.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hipnuc.com/"
+    },
+    "image": {
+      "v": "/logos/hipnuc.png",
+      "fit": "contain",
+      "src": "https://www.hipnuc.com/static/images/brand.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beijing, China",
+          "lat": 39.905714,
+          "lon": 116.391297,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

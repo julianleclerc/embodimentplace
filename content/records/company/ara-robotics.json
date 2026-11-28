@@ -1,0 +1,51 @@
+{
+  "id": 1442,
+  "type": "company",
+  "slug": "ara-robotics",
+  "name": "Ara Robotics",
+  "summary": "Develops modular, autonomous robots for commercial facility maintenance and operations.",
+  "body": "ARA designs and manufactures disruptive autonomous mobile commercial/industrial service robots and floor maintenance ecosystems. Our robots inspect, vacuum, scrub, wash, polish and decontaminate all types of floors and even maintain itself in complete autonomy with their patented design.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/106-ara-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ararobotics.eu/"
+    },
+    "image": {
+      "v": "/logos/ara-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/aa7608859ace7e36bedb.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ankara",
+      "src": "https://tr.linkedin.com/company/ararobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Turkey",
+      "src": "https://tr.linkedin.com/company/ararobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Koc Kuleleri A Blok, Ankara, Çankaya 06540, Turkey",
+          "lat": 39.920776,
+          "lon": 32.85405,
+          "src": "https://tr.linkedin.com/company/ararobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

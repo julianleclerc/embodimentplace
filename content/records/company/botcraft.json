@@ -1,0 +1,51 @@
+{
+  "id": 1958,
+  "type": "company",
+  "slug": "botcraft",
+  "name": "BotCraft",
+  "summary": "German software specialist for Industry 4.0, combining embedded systems, cloud-native architecture, robotics and DevOps.",
+  "body": "BotCraft ist ein spezialisierter Dienstleister für Konnektivitätslösungen an Maschinen, Bauteilen oder Produkten. Diese Lösungen bilden den Unterbau an Schnittstellen für AIoT, iRPA oder Industrie 4.0 Systeme.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3425-botcraft",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://botcraft.de/"
+    },
+    "image": {
+      "v": "/logos/botcraft.png",
+      "fit": "contain",
+      "src": "https://botcraft.de/apple-touch-icon-152x152.png?v=1.0",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "München",
+      "src": "https://de.linkedin.com/company/botcraft",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/botcraft",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Taunusstraße 45, München, Bavaria 80807, Germany",
+          "lat": 48.189101,
+          "lon": 11.581618,
+          "src": "https://de.linkedin.com/company/botcraft"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

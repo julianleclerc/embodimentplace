@@ -1,0 +1,28 @@
+{
+  "id": 3784,
+  "type": "funding",
+  "slug": "graymatter-robotics-seed",
+  "name": "GrayMatter Robotics Seed",
+  "summary": "Raised $4.1 million in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2021-10-03",
+      "src": "https://pulse2.com/graymatter-robotics-secures-4-1-million-in-seed-funding/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://pulse2.com/graymatter-robotics-secures-4-1-million-in-seed-funding/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 4.1,
+      "src": "https://pulse2.com/graymatter-robotics-secures-4-1-million-in-seed-funding/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2021-10-03"
+}

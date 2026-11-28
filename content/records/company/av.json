@@ -1,0 +1,51 @@
+{
+  "id": 1523,
+  "type": "company",
+  "slug": "av",
+  "name": "AV",
+  "summary": "Develops mission-critical autonomous systems for defence customers worldwide.",
+  "body": "At AV, we build shoulder-to-shoulder with our customers, delivering systems shaped by real-world missions, not theoretical requirements.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/250-av",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.avinc.com/"
+    },
+    "image": {
+      "v": "/logos/av.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/b8eb69f1d079b1f5892b.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Arlington",
+      "src": "https://www.linkedin.com/company/avinc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/avinc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "241 18th St S, Arlington, Virginia 22202, United States",
+          "lat": 38.858354,
+          "lon": -77.050317,
+          "src": "https://www.linkedin.com/company/avinc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

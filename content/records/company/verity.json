@@ -1,0 +1,51 @@
+{
+  "id": 1671,
+  "type": "company",
+  "slug": "verity",
+  "name": "Verity",
+  "summary": "Zurich-based company building autonomous indoor drones that scan warehouse inventory.",
+  "body": "Warehouse intelligence for enterprise operations. The Verity Warehouse Intelligence Platform supports retailers, manufacturers, and 3PLs who require continuous, autonomous visibility into inventory and operational health.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1108-verity",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.verity.net/"
+    },
+    "image": {
+      "v": "/logos/verity.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/aba6be65147456f317bf.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zurich",
+      "src": "https://ch.linkedin.com/company/verity-ag",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/verity-ag",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Binzmühlestrasse 81, Zurich, Switzerland",
+          "lat": 47.41373,
+          "lon": 8.542158,
+          "src": "https://ch.linkedin.com/company/verity-ag"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

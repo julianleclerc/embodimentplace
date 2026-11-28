@@ -1,0 +1,28 @@
+{
+  "id": 3894,
+  "type": "funding",
+  "slug": "havocai-seed",
+  "name": "HavocAI Seed",
+  "summary": "Raised $11 million in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-09-20",
+      "src": "https://pulse2.com/havocai-11-million-seed-raised-for-transforming-autonomous-uncrewed-surface-vessel-operations/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://pulse2.com/havocai-11-million-seed-raised-for-transforming-autonomous-uncrewed-surface-vessel-operations/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 11,
+      "src": "https://pulse2.com/havocai-11-million-seed-raised-for-transforming-autonomous-uncrewed-surface-vessel-operations/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-09-20"
+}

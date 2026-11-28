@@ -1,0 +1,51 @@
+{
+  "id": 1621,
+  "type": "company",
+  "slug": "beex",
+  "name": "BeeX",
+  "summary": "Operates fully autonomous underwater drones for subsea inspection across defence, energy, and coastal infrastructure.",
+  "body": "BeeX designs and operates a fleet of fully autonomous underwater drones aimed at transforming underwater capabilities at scale. Where traditional inspection requires teams of specialists and large supporting vessels offshore, BeeX drones operate entirely on their own.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/861-beex",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.beex.sg/"
+    },
+    "image": {
+      "v": "/logos/beex.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1e4dbdfe9724e7aa4da0.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://sg.linkedin.com/company/beexsg",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://sg.linkedin.com/company/beexsg",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "5 Engineering Drive 1, Singapore, 117608, Singapore",
+          "lat": 1.301068,
+          "lon": 103.771896,
+          "src": "https://sg.linkedin.com/company/beexsg"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

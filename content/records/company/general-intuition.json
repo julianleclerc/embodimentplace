@@ -1,0 +1,51 @@
+{
+  "id": 1166,
+  "type": "company",
+  "slug": "general-intuition",
+  "name": "General Intuition",
+  "summary": "Researchers trained the world’s most powerful foundation models on words.",
+  "body": "But human intelligence far exceeds the origin of language; it emerged over millennia of interaction, exploration, and the ceaseless negotiation of intent, action, and consequences in unbounded environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://www.generalintuition.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.generalintuition.com/"
+    },
+    "image": {
+      "v": "/logos/general-intuition.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/68b73cd966b9c097c35f357b/68d31bc35b8d5b398f8aa81a_256x256_webclip_general_intuition.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://www.cbinsights.com/company/general-intuition",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.cbinsights.com/company/general-intuition",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "12 West 21st Street, 12th Floor, New York, NY 10010, United States",
+          "lat": 40.712728,
+          "lon": -74.006015,
+          "src": "https://www.cbinsights.com/company/general-intuition"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

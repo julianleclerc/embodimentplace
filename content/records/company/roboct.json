@@ -1,0 +1,45 @@
+{
+  "id": 934,
+  "type": "company",
+  "slug": "roboct",
+  "name": "RoboCT",
+  "summary": "RoboCT has got 5 series of lower limb exoskeletons including UGO, Kid GO, GOGO, Bedside Exoskeleton and DEUS to meet multiple rehabilitation needs.",
+  "body": "Headquartered in Hangzhou, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.roboct.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.roboct.com/"
+    },
+    "city": {
+      "v": "Hangzhou",
+      "src": "https://cn.linkedin.com/company/roboct",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/roboct",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "7F-01B, Block 2, No.1326 West Wenyi Road, Hangzhou, Zhejiang 311121, China",
+          "lat": 30.248963,
+          "lon": 120.205234,
+          "src": "https://cn.linkedin.com/company/roboct"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

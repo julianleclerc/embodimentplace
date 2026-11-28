@@ -1,0 +1,51 @@
+{
+  "id": 1078,
+  "type": "company",
+  "slug": "senseglove",
+  "name": "SenseGlove",
+  "summary": "SenseGlove develops force and haptic feedback gloves that enable professionals to feel virtual objects and interact with them more efficiently for VR training and research purposes.",
+  "body": "Since 2018, the gloves have been applied by over 500 companies: Volkswagen, European Space Agency, the University of Cambridge, Procter and Gamble, etc.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://senseglove.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://senseglove.com/"
+    },
+    "image": {
+      "v": "/logos/senseglove.png",
+      "fit": "contain",
+      "src": "https://senseglove.com/wp-content/uploads/2020/04/Senseglove-favicon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Rotterdam",
+      "src": "https://nl.linkedin.com/company/senseglove",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/senseglove",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Keilestraat 9c, Rotterdam, South Holland 3029 BP, Netherlands",
+          "lat": 51.924442,
+          "lon": 4.47775,
+          "src": "https://nl.linkedin.com/company/senseglove"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

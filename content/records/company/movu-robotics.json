@@ -1,0 +1,51 @@
+{
+  "id": 1716,
+  "type": "company",
+  "slug": "movu-robotics",
+  "name": "Movu Robotics",
+  "summary": "Belgian warehouse automation company based in Lokeren, East Flanders, and part of the stow Group.",
+  "body": "Movu Robotics, a member of stow Group, is a new warehouse automation brand that stands out by bringing easier logistics automation solutions to the world’s warehouses. No warehouse left behind.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1333-movu-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.movu-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/movu-robotics.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/d2a809d7-a968-41fb-95d4-6e03eeb4698b.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Lokeren",
+      "src": "https://be.linkedin.com/company/movu-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Belgium",
+      "src": "https://be.linkedin.com/company/movu-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Brandstraat 30, Lokeren, Flemish Region 9160, Belgium",
+          "lat": 51.148382,
+          "lon": 3.944247,
+          "src": "https://be.linkedin.com/company/movu-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

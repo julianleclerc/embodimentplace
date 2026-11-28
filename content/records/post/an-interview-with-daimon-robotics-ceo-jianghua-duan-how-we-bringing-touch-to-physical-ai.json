@@ -1,0 +1,28 @@
+{
+  "id": 2575,
+  "type": "post",
+  "slug": "an-interview-with-daimon-robotics-ceo-jianghua-duan-how-we-bringing-touch-to-physical-ai",
+  "name": "An Interview with Daimon Robotics CEO Jianghua Duan: How We Bringing Touch to Physical AI",
+  "summary": "A camera can identify a paper cup and guide a robot toward it. It cannot directly tell the robot how tightly to grip once its fingers make contact. Too little force and the cup slips; too much and it ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-09-30"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "techtimes.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.techtimes.com/articles/328280/20260930/daimon-robotics-ceo-jianghua-duan-tactile-physical-ai.htm"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-09-30"
+}

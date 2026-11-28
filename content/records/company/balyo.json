@@ -1,0 +1,51 @@
+{
+  "id": 1133,
+  "type": "company",
+  "slug": "balyo",
+  "name": "BALYO",
+  "summary": "Balyo is a global leader in driverless warehouse solutions for manufacturing and warehousing.",
+  "body": "With a focus on safety and high-bay storage, our solutions help clients boost productivity while avoiding expensive infrastructure changes.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.balyo.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.balyo.com/"
+    },
+    "image": {
+      "v": "/logos/balyo.png",
+      "fit": "contain",
+      "src": "https://www.balyo.com/hubfs/Markentive/BAL20001-shape.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Arcueil",
+      "src": "https://fr.linkedin.com/company/balyo",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/balyo",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "74 Av Vladimir Ilitch Lenine, Arcueil, Île-de-France 94110, France",
+          "lat": 48.81255,
+          "lon": 2.331841,
+          "src": "https://fr.linkedin.com/company/balyo"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

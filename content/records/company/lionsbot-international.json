@@ -1,0 +1,51 @@
+{
+  "id": 1702,
+  "type": "company",
+  "slug": "lionsbot-international",
+  "name": "LionsBot International",
+  "summary": "Designs and engineers autonomous commercial cleaning robots, including the R5 scrubber, the R3 Scrub Pro compact scrubber and the R3 Vac autonomous vacuum.",
+  "body": "Proudly designed and made in Singapore, LionsBot is a growing name for autonomous smart floor cleaning robots. The company has won multiple accolades for its range of products including Interclean Innovation Award 2020, IF Design Award, Forbes Asia 100 to Watch, Financial Times’ list of High-growth companies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1298-lionsbot-international",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lionsbot.com/"
+    },
+    "image": {
+      "v": "/logos/lionsbot-international.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/ef9d8609ee523d9455ea.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://sg.linkedin.com/company/lionsbot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://sg.linkedin.com/company/lionsbot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "84 Punggol Way, Singapore, 829911, Singapore",
+          "lat": 1.414495,
+          "lon": 103.908167,
+          "src": "https://sg.linkedin.com/company/lionsbot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

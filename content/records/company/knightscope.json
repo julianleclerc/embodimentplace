@@ -1,0 +1,51 @@
+{
+  "id": 1037,
+  "type": "company",
+  "slug": "knightscope",
+  "name": "Knightscope",
+  "summary": "Knightscope (NASDAQ: KSCP) is a managed service provider building the nation's first Autonomous Security Force.",
+  "body": "Knightscope integrates autonomous machines, AI-driven orchestration software, and licensed Augmented Security Agents into one accountable security operation designed to deter, detect, and respond to security threats in real time.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://knightscope.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://knightscope.com/"
+    },
+    "image": {
+      "v": "/logos/knightscope.png",
+      "fit": "contain",
+      "src": "https://knightscope.com/hubfs/raw_assets/public/knightscope/assets/knightscope-logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sunnyvale",
+      "src": "https://www.linkedin.com/company/knightscope-inc-",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/knightscope-inc-",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "305 N Mathilda Ave, Sunnyvale, California 94085, United States",
+          "lat": 37.385516,
+          "lon": -122.0314,
+          "src": "https://www.linkedin.com/company/knightscope-inc-"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

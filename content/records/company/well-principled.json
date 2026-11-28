@@ -1,0 +1,52 @@
+{
+  "id": 891,
+  "type": "company",
+  "slug": "well-principled",
+  "name": "Well Principled",
+  "summary": "The neural engine for autonomous robots.",
+  "body": "We aren’t building AI to replace \"knowledge work” that requires neither, but to bolster the working human intellect which has never failed to discover new paths to prosperity. Y Combinator Summer 2019 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://wellprincipled.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://wellprincipled.com/"
+    },
+    "image": {
+      "v": "/logos/well-principled.png",
+      "fit": "contain",
+      "src": "https://wellprincipled.com/apple-touch-icon.png?v=zXbpqENEz8",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "St. Louis",
+      "src": "https://www.ycombinator.com/companies/well-principled",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/well-principled",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "St. Louis, MO, United States",
+          "lat": 38.625406,
+          "lon": -90.190009,
+          "src": "https://www.ycombinator.com/companies/well-principled"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

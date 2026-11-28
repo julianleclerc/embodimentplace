@@ -1,0 +1,51 @@
+{
+  "id": 1081,
+  "type": "company",
+  "slug": "movella",
+  "name": "Movella",
+  "summary": "MOVELLA is een organisatie die sporten en bewegen in de maatschappij stimuleert voor jong en oud.",
+  "body": "Je beleeft het meeste plezier aan je sport als je deze goed beheerst. Bij veel verenigingen ontbreekt de capaciteit om alle kinderen de sport goed onder de knie te laten krijgen.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.xsens.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.xsens.com/"
+    },
+    "image": {
+      "v": "/logos/movella.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.xsens.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Henderson",
+      "src": "https://www.sec.gov/Archives/edgar/data/1839132/000162828025003174/movellaform15.htm",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.sec.gov/Archives/edgar/data/1839132/000162828025003174/movellaform15.htm",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3535 Executive Terminal Drive, Suite 110, Henderson, NV 89052, United States",
+          "lat": 36.030139,
+          "lon": -114.981549,
+          "src": "https://www.sec.gov/Archives/edgar/data/1839132/000162828025003174/movellaform15.htm"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

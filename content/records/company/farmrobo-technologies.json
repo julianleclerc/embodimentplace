@@ -1,0 +1,45 @@
+{
+  "id": 1768,
+  "type": "company",
+  "slug": "farmrobo-technologies",
+  "name": "FarmRobo Technologies",
+  "summary": "Builds electric, remote-controlled agricultural robots in India, with its flagship R1 and newer R1v2 and R5 platforms.",
+  "body": "FarmRobo builds electric farm robots that take over the hard, repetitive work Indian farms struggle to find labour for: weeding, spraying, mowing, tillage and haulage. Agriculture employs close to 45% of India's workforce, and that workforce is shrinking.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1804-farmrobo-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.farmrobo.in/"
+    },
+    "city": {
+      "v": "Patancheru",
+      "src": "https://in.linkedin.com/company/farmrobo-technologies-pvt-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/farmrobo-technologies-pvt-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Muthangi Nagar Road, Patancheru, Telangana 502300, India",
+          "lat": 17.528609,
+          "lon": 78.267425,
+          "src": "https://in.linkedin.com/company/farmrobo-technologies-pvt-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

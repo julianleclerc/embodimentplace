@@ -1,0 +1,51 @@
+{
+  "id": 1267,
+  "type": "company",
+  "slug": "ottopia",
+  "name": "Ottopia",
+  "summary": "Ottopia offers the first Hybrid AI platform for vehicles | Human + AI > AI.",
+  "body": "Ottopia powers driverless experiences by combining the best of artificial and human intelligence, setting the standard for scalable unmanned ground operations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.ottopia.tech/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ottopia.tech/"
+    },
+    "image": {
+      "v": "/logos/ottopia.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/658b120861cdc354345cde9f/659d2d8769c2c052fa3a8892_Webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tel Aviv",
+      "src": "https://il.linkedin.com/company/ottopia",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://il.linkedin.com/company/ottopia",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hamelacha st. 2, Tel Aviv, 6721502, Israel",
+          "lat": 32.022198,
+          "lon": 34.861962,
+          "src": "https://il.linkedin.com/company/ottopia"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

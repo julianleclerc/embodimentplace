@@ -1,0 +1,51 @@
+{
+  "id": 1434,
+  "type": "company",
+  "slug": "annin-robotics",
+  "name": "Annin Robotics",
+  "summary": "Develops the AR4, a low-cost, open-source 6-axis industrial robot arm designed to fit on a desk.",
+  "body": "The AR4 is a low-cost, open-source 6DOF industrial robot that fits right on your desk. Want to build one? You can, whether you machine it from aluminum or 3D print the parts yourself.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/94-annin-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://anninrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/annin-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/10e1ce3b8626d34109e9.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Emmett",
+      "src": "https://roboticsconnected.com/companies/94-annin-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/94-annin-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Emmett, United States",
+          "lat": 39.307218,
+          "lon": -96.056105,
+          "src": "https://roboticsconnected.com/companies/94-annin-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

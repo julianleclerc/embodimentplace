@@ -1,0 +1,23 @@
+{
+  "id": 3447,
+  "type": "product",
+  "slug": "neobotix-rox-trike",
+  "name": "Neobotix ROX-Trike",
+  "summary": "ROX-Trike, a robot from Neobotix.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/neobotix-rox-trike.webp",
+      "src": "https://neobotix-robots.com/en/products/mobile-robots/mobile-robot-rox/rox-trike/index.html",
+      "orig": "https://neobotix-robots.com/media/images/produkte/Basisplattformen/ROX/Fahrwerk_ROX-Trike_HQ.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://neobotix-robots.com/en/products/mobile-robots/mobile-robot-rox/rox-trike/index.html"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1729,
+  "type": "company",
+  "slug": "reliable-robotics",
+  "name": "Reliable Robotics",
+  "summary": "Builds the Reliable Autonomy System, a flight automation platform that lets aircraft operate without an onboard pilot.",
+  "body": "The Reliable autonomous flight system will enable a future where air transportation is safer, more convenient and fundamentally transformative to the way goods and people move around the planet.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1384-reliable-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://reliable.co/"
+    },
+    "image": {
+      "v": "/logos/reliable-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/3446ac4bcf0eea3325e2.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mountain View",
+      "src": "https://roboticsconnected.com/companies/1384-reliable-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1384-reliable-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mountain View, United States",
+          "lat": 37.389389,
+          "lon": -122.08321,
+          "src": "https://roboticsconnected.com/companies/1384-reliable-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

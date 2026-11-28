@@ -1,0 +1,51 @@
+{
+  "id": 1850,
+  "type": "company",
+  "slug": "warp-sciences",
+  "name": "Warp Sciences",
+  "summary": "Combines expert chemists, AI and robotics to make and test the molecules drug discovery teams need.",
+  "body": "Our mission is to help the world discover new medicines faster—and build the capacity to do it here in America. We bring AI, robotics, and life sciences together in automated labs that design, run, and learn from experiments, with each experiment making the next one better. We’re not developing drugs of our own.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2403-warp-sciences",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://warp.xyz/"
+    },
+    "image": {
+      "v": "/logos/warp-sciences.png",
+      "fit": "contain",
+      "src": "https://warp.xyz/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "South San Francisco",
+      "src": "https://roboticsconnected.com/companies/2403-warp-sciences",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2403-warp-sciences",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "South San Francisco, United States",
+          "lat": 37.65354,
+          "lon": -122.416866,
+          "src": "https://roboticsconnected.com/companies/2403-warp-sciences"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

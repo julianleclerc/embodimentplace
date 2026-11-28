@@ -1,0 +1,51 @@
+{
+  "id": 1344,
+  "type": "company",
+  "slug": "eindhoven-university-of-technology",
+  "name": "Eindhoven University of Technology",
+  "summary": "Public technical university in Eindhoven, Netherlands.",
+  "body": "Robotics: Advanced Robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.tue.nl/en/research/research-areas/robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.tue.nl/"
+    },
+    "image": {
+      "v": "/logos/eindhoven-university-of-technology.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eindhoven_University_of_Technology_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Eindhoven",
+      "src": "https://www.wikidata.org/wiki/Q280824",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://www.wikidata.org/wiki/Q280824",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Eindhoven, Netherlands",
+          "lat": 51.448056,
+          "lon": 5.489722,
+          "src": "https://www.wikidata.org/wiki/Q280824"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

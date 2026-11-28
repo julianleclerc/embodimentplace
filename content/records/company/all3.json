@@ -1,0 +1,52 @@
+{
+  "id": 1426,
+  "type": "company",
+  "slug": "all3",
+  "name": "All3",
+  "summary": "Has re-engineered construction through three integrated technologies: the Mantis autonomous legged robot for on-site assembly, AI-powered design software, and robotic…",
+  "body": "All3 is a construction technology company that’s redefining how buildings are designed and built. By combining AI-powered design with robotic fabrication, All3 enables developers to deliver custom, sustainable buildings at the cost and speed of mass production.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/62-all3",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://all3.com/"
+    },
+    "image": {
+      "v": "/logos/all3.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9fe7c0e91bbb2c127c9e.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/62-all3",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/62-all3",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/62-all3"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

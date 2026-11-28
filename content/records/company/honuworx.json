@@ -1,0 +1,52 @@
+{
+  "id": 1479,
+  "type": "company",
+  "slug": "honuworx",
+  "name": "HonuWorx",
+  "summary": "Develops autonomous subsea inspection and intervention systems designed to reduce reliance on large crewed vessels and enable all-weather operations.",
+  "body": "The company offers uncrewed platforms coupled with cloud-based control software for persistent underwater missions. Operating in the subsea robotics sector, HonuWorx targets energy, defence and maritime industries.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/176-honuworx",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://honu-x.com/"
+    },
+    "image": {
+      "v": "/logos/honuworx.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/ed3f553ece8085ef5d67.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Aberdeen",
+      "src": "https://roboticsconnected.com/companies/176-honuworx",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/176-honuworx",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Aberdeen, United Kingdom",
+          "lat": 57.148243,
+          "lon": -2.092809,
+          "src": "https://roboticsconnected.com/companies/176-honuworx"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

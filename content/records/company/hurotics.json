@@ -1,0 +1,51 @@
+{
+  "id": 1116,
+  "type": "company",
+  "slug": "hurotics",
+  "name": "Hurotics",
+  "summary": "Founded with the mission to enrich everyday life, HUROTICS Inc.",
+  "body": "Develops wearable robotic technology for wellness and sports.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://hurotics.com/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://hurotics.com/"
+    },
+    "image": {
+      "v": "/logos/hurotics.png",
+      "fit": "contain",
+      "src": "https://hurotics.com/assets/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul",
+      "src": "https://kr.linkedin.com/company/hurotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://kr.linkedin.com/company/hurotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.566679,
+          "lon": 126.978291,
+          "src": "https://kr.linkedin.com/company/hurotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

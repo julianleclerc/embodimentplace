@@ -1,0 +1,51 @@
+{
+  "id": 1661,
+  "type": "company",
+  "slug": "filics",
+  "name": "Filics",
+  "summary": "Munich-based developer of autonomous transport systems for intralogistics.",
+  "body": "Filics defines a new generation of autonomous mobile robots by reducing current solutions to a minimum. Our platform provides a simple, flexible and fast solution to automate all ground-based intra-logistics processes.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1074-filics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.filics.eu/"
+    },
+    "image": {
+      "v": "/logos/filics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/e26640dee878d5f72185.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://de.linkedin.com/company/filics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/filics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Geretsrieder Straße 10, Munich, Bavaria 81379, Germany",
+          "lat": 48.100425,
+          "lon": 11.533883,
+          "src": "https://de.linkedin.com/company/filics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

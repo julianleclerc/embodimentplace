@@ -1,0 +1,51 @@
+{
+  "id": 1745,
+  "type": "company",
+  "slug": "bellboy-robotics",
+  "name": "Bellboy Robotics",
+  "summary": "Builds Billie, a robotic workforce designed to work alongside people in real-world environments.",
+  "body": "Billie is the operating system for physical AI, connecting people, agents, and robots to work as one team. We believe physical AI shouldn't be limited to factories but accessible to everyday businesses in the real world.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1629-bellboy-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bellboy-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/bellboy-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/aa583eb0b5561d904cab.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tel Aviv",
+      "src": "https://roboticsconnected.com/companies/1629-bellboy-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://roboticsconnected.com/companies/1629-bellboy-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tel Aviv, Israel",
+          "lat": 32.0853,
+          "lon": 34.781806,
+          "src": "https://roboticsconnected.com/companies/1629-bellboy-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

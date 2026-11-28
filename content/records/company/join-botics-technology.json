@@ -1,0 +1,51 @@
+{
+  "id": 1793,
+  "type": "company",
+  "slug": "join-botics-technology",
+  "name": "Join Botics Technology",
+  "summary": "Bengaluru-based education company offering STEM, robotics and AI programmes for schools and colleges.",
+  "body": "Join Botics Technology Pvt. Ltd. is a leading EdTech company empowering the next generation of innovators through experiential learning, robotics, and AI education.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1966-join-botics-technology",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://joinbotics.com/"
+    },
+    "image": {
+      "v": "/logos/join-botics-technology.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4661dccd97f6d21b3aeb.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bengaluru East",
+      "src": "https://in.linkedin.com/company/join-botics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/join-botics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kodigehalli Main Road, Bengaluru East, Karnataka 560036, India",
+          "lat": 12.997438,
+          "lon": 77.72114,
+          "src": "https://in.linkedin.com/company/join-botics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1147,
+  "type": "company",
+  "slug": "tevel-aerobotics",
+  "name": "Tevel Aerobotics",
+  "summary": "Tevel is addressing the extreme shortage in agricultural labor through fruit-picking Flying Autonomous Robots™.",
+  "body": "Founded in 2017 by CEO Yaniv Maor, Tevel’s flying robots are powered by state-of-the-art artificial intelligence and computer vision algorithms, enabling them to delicately pick fruit and optimize the harvesting process.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.tevel-tech.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tevel-tech.com/"
+    },
+    "image": {
+      "v": "/logos/tevel-aerobotics.png",
+      "fit": "contain",
+      "src": "https://www.tevel-tech.com/wp-content/uploads/2020/03/Tevel-Logo-RGB.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Gedera",
+      "src": "https://il.linkedin.com/company/tevel-aerobotics-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://il.linkedin.com/company/tevel-aerobotics-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Agridera Farm, Gedera, 7075002, Israel",
+          "lat": 31.811775,
+          "lon": 34.780388,
+          "src": "https://il.linkedin.com/company/tevel-aerobotics-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

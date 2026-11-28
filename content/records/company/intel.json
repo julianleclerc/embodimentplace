@@ -1,0 +1,51 @@
+{
+  "id": 980,
+  "type": "company",
+  "slug": "intel",
+  "name": "Intel",
+  "summary": "Processors (CPUs) for PCs, servers and robot computers, and chip factories.",
+  "body": "Deliver AI at scale across cloud, data center, edge, and client with comprehensive hardware and software solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute"
+      ],
+      "src": "https://www.intel.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.intel.com/"
+    },
+    "image": {
+      "v": "/logos/intel.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.intel.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Clara",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Santa Clara, United States",
+          "lat": 37.233325,
+          "lon": -121.684635,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

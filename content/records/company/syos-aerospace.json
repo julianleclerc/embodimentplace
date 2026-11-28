@@ -1,0 +1,52 @@
+{
+  "id": 1840,
+  "type": "company",
+  "slug": "syos-aerospace",
+  "name": "SYOS Aerospace",
+  "summary": "Manufactures uncrewed vehicles across air, land, sea and subsurface domains, including fixed-wing and heavy lift UAS, UGVs, USVs and UUVs.",
+  "body": "SYOS is a rapidly growing uncrewed systems technology company tackling real-world challenges across air, land, sea and subsurface domains.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2330-syos-aerospace",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://syos-aerospace.com/"
+    },
+    "image": {
+      "v": "/logos/syos-aerospace.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/17bfd952561a7c82daa7.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mount Maunganui",
+      "src": "https://roboticsconnected.com/companies/2330-syos-aerospace",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "New Zealand",
+      "src": "https://roboticsconnected.com/companies/2330-syos-aerospace",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mount Maunganui, New Zealand",
+          "lat": -37.638022,
+          "lon": 176.183884,
+          "src": "https://roboticsconnected.com/companies/2330-syos-aerospace"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

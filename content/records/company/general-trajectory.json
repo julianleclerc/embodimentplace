@@ -1,0 +1,51 @@
+{
+  "id": 906,
+  "type": "company",
+  "slug": "general-trajectory",
+  "name": "General Trajectory",
+  "summary": "Building general-purpose AI for the physical world.",
+  "body": "General Trajectory is using AI to solve the world's most important problems, from autonomous defense to scientific R&D. Y Combinator Winter 2025 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://www.ycombinator.com/companies/general-trajectory",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.generaltrajectory.com/"
+    },
+    "image": {
+      "v": "/logos/general-trajectory.png",
+      "fit": "contain",
+      "src": "https://www.generaltrajectory.com/favicon-light.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.ycombinator.com/companies/general-trajectory",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/general-trajectory",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, CA, United States",
+          "lat": 34.053692,
+          "lon": -118.242768,
+          "src": "https://www.ycombinator.com/companies/general-trajectory"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

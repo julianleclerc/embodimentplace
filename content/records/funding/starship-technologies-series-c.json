@@ -1,0 +1,28 @@
+{
+  "id": 3516,
+  "type": "funding",
+  "slug": "starship-technologies-series-c",
+  "name": "Starship Technologies Series C",
+  "summary": "Raised $50M in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-10-15",
+      "src": "https://finance.yahoo.com/news/starship-technologies-raises-50m-series-130500240.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://finance.yahoo.com/news/starship-technologies-raises-50m-series-130500240.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 50,
+      "src": "https://finance.yahoo.com/news/starship-technologies-raises-50m-series-130500240.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-10-15"
+}

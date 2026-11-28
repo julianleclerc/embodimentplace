@@ -1,0 +1,51 @@
+{
+  "id": 1041,
+  "type": "company",
+  "slug": "cartken",
+  "name": "Cartken",
+  "summary": "Cartken is an AI-powered robotics company automating material flow across complex industrial sites with autonomous robots that operate seamlessly indoors and outdoors.",
+  "body": "Our robots enable building-to-building transport, eliminating manual handoffs and reducing non-value-added movement in manufacturing, warehousing, and logistics environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://cartken.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cartken.com/"
+    },
+    "image": {
+      "v": "/logos/cartken.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/63cee399b1ef775ba444e177/6419e6ae5539db262e231c7d_Cartken%20Webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Oakland",
+      "src": "https://www.linkedin.com/company/gocartken",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/gocartken",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Oakland, CA, United States",
+          "lat": 37.804456,
+          "lon": -122.271356,
+          "src": "https://www.linkedin.com/company/gocartken"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

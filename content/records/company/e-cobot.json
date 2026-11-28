@@ -1,0 +1,53 @@
+{
+  "id": 1601,
+  "type": "company",
+  "slug": "e-cobot",
+  "name": "E-COBOT",
+  "summary": "French robotics manufacturer and integrator founded in 2016.",
+  "body": "E-COBOT is a Nantes based company founded in 2016, specialized in cobotics and artificial intelligence​ solution. We design, manufacture and integrate on specification. We strongly believe that human is at the heart of tomorrow's industry, this is why our business core is to enhance his performance and added value.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/729-e-cobot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://e-cobot.com/"
+    },
+    "image": {
+      "v": "/logos/e-cobot.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a1dea4bb4e3cd9a7b08c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Carquefou",
+      "src": "https://fr.linkedin.com/company/e-cobot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/e-cobot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1, Rue du Tertre, Carquefou, Pays de la Loire 44470, France",
+          "lat": 47.26185,
+          "lon": -1.497598,
+          "src": "https://fr.linkedin.com/company/e-cobot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

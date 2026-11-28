@@ -1,0 +1,23 @@
+{
+  "id": 3452,
+  "type": "product",
+  "slug": "peer-rm-series",
+  "name": "Peer RM Series",
+  "summary": "Explore our RM Series robot range delivering automation solutions to optimize your operations.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/peer-rm-series.webp",
+      "src": "https://www.peerrobotics.ai/products/rm-series",
+      "orig": "https://cdn.prod.website-files.com/65eea1671e5bfcd07ee6e7d3/6adb37721ce4d20fce3fda14_img_open_graph_rm_series.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.peerrobotics.ai/products/rm-series"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

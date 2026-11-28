@@ -1,0 +1,51 @@
+{
+  "id": 1753,
+  "type": "company",
+  "slug": "lupin-dental",
+  "name": "Lupin Dental",
+  "summary": "French robotics company developing the Lupin Robotic System, a supervised automated platform for minimally invasive tooth preparation for aesthetic veneers and other…",
+  "body": "Lupin is building a new standard for aesthetic dentistry. Our digital ecosystem connects the complete treatment journey, from the first consultation to the final smile. Lupin combines digital treatment workflow, automation and robotic execution to help make treatments more predictable, efficient and reproducible.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1647-lupin-dental",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://lupindental.com/"
+    },
+    "image": {
+      "v": "/logos/lupin-dental.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a7a7867599381a34a34f.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Montpellier",
+      "src": "https://roboticsconnected.com/companies/1647-lupin-dental",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://roboticsconnected.com/companies/1647-lupin-dental",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Montpellier, France",
+          "lat": 43.611242,
+          "lon": 3.876734,
+          "src": "https://roboticsconnected.com/companies/1647-lupin-dental"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1112,
+  "type": "company",
+  "slug": "fuji-corporation",
+  "name": "Fuji Corporation",
+  "summary": "Japanese robotics manufacturer Fuji Corporation has had \"innovative spirit\" since its establishment in 1959 as Fuji Machine Manufacturing Co., Ltd., and now has over 100 service locations all over…",
+  "body": "Japanese robotics manufacturer Fuji Corporation has had \"innovative spirit\" since its establishment in 1959 as Fuji Machine Manufacturing Co., Ltd., and now has over 100 service locations all over the world.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.fuji.co.jp/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fuji.co.jp/"
+    },
+    "image": {
+      "v": "/logos/fuji-corporation.png",
+      "fit": "contain",
+      "src": "https://www.fuji.co.jp/app-files/img/symbol/apple-touch-icon.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chiryu",
+      "src": "https://jp.linkedin.com/company/fujicorporation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/fujicorporation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "19 Chausuyama, Yamamachi, Chiryu, Aichi, Japan",
+          "lat": 35.001483,
+          "lon": 137.051648,
+          "src": "https://jp.linkedin.com/company/fujicorporation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1366,
+  "type": "company",
+  "slug": "yonsei-university",
+  "name": "Yonsei University",
+  "summary": "Private university with campuses in Seoul and Incheon in South Korea.",
+  "body": "Recent robotics work includes “Wearable Robots for Rehabilitation and Assistance of Gait: A Narrative Review”. OpenAlex lists 218 robotics, humanoid, embodied-AI or manipulation papers from Yonsei University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.5535/arm.250093",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.yonsei.ac.kr/"
+    },
+    "image": {
+      "v": "/logos/yonsei-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Yonsei_University_logotype%28ko%29.png?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul",
+      "src": "https://www.wikidata.org/wiki/Q39988",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://www.wikidata.org/wiki/Q39988",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.560278,
+          "lon": 126.936944,
+          "src": "https://www.wikidata.org/wiki/Q39988"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

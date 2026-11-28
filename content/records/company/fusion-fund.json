@@ -1,0 +1,51 @@
+{
+  "id": 1199,
+  "type": "company",
+  "slug": "fusion-fund",
+  "name": "Fusion Fund",
+  "summary": "Fusion Fund invests in promising start-up companies who have technology barriers in their business models.",
+  "body": "We invest in many industries including connected industries (robotics, mobility), network technologies (connectivity, security), artificial intelligence (computer vision, NLP), and digital health/medical devices. Our sweet spot are the Seed and Pre-A rounds.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.fusionfund.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fusionfund.com/"
+    },
+    "image": {
+      "v": "/logos/fusion-fund.png",
+      "fit": "contain",
+      "src": "https://images.squarespace-cdn.com/content/v1/61428984cccb766c73716aaa/5d8933be-bf13-4fbe-aa03-b95060c2f3e6/favicon.ico?format=100w",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Palo Alto",
+      "src": "https://www.linkedin.com/company/fusion-fund",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/fusion-fund",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "550 Lytton Ave, Palo Alto, California 94301, United States",
+          "lat": 37.44986,
+          "lon": -122.159575,
+          "src": "https://www.linkedin.com/company/fusion-fund"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

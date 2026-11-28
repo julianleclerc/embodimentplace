@@ -1,0 +1,34 @@
+{
+  "id": 3240,
+  "type": "post",
+  "slug": "havocai-completes-live-gps-free-airsea-autonomy-demonstration",
+  "name": "HavocAI completes live GPS-free air–sea autonomy demonstration",
+  "summary": "The event demonstrated real-time coordination between ASVs and UAVs managed through a single command interface without GPS. Credit: DC Studio/Shutterstock.com. HavocAI, a maritime swarm autonomy ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-12-12"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "naval-technology.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.naval-technology.com/news/havocai-gps-demonstration-autonomy/"
+    },
+    "image": {
+      "v": "https://www.naval-technology.com/wp-content/uploads/sites/15/2025/12/HavocAI.jpg",
+      "fit": "cover",
+      "src": "https://www.naval-technology.com/news/havocai-gps-demonstration-autonomy/",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-12-12"
+}

@@ -1,0 +1,53 @@
+{
+  "id": 1589,
+  "type": "company",
+  "slug": "createc",
+  "name": "Createc",
+  "summary": "Designs and deploys advanced robotic systems for hazardous and challenging environments, specialising in nuclear decommissioning, defence, and transport sectors.",
+  "body": "The company builds intelligent robots equipped with sensing, imaging, and autonomous navigation capabilities. Its platform integrates emerging sensor technology with robotics and AI algorithms to enable safe inspection, maintenance, and automation tasks.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/683-createc",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://createc.co.uk/"
+    },
+    "image": {
+      "v": "/logos/createc.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4b82e8cf25ca4ce151b0.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cockermouth",
+      "src": "https://roboticsconnected.com/companies/683-createc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/683-createc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Cockermouth, United Kingdom",
+          "lat": 54.663653,
+          "lon": -3.365778,
+          "src": "https://roboticsconnected.com/companies/683-createc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

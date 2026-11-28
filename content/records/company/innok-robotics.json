@@ -1,0 +1,52 @@
+{
+  "id": 1896,
+  "type": "company",
+  "slug": "innok-robotics",
+  "name": "Innok Robotics",
+  "summary": "Builds autonomous mobile robots (AMRs) for indoor, outdoor and multiterrain use, pairing its own vehicle hardware with in-house software.",
+  "body": "Innok Robotics, based in Regenstauf (north of Regensburg), has been one of the technology and market leaders in highly innovative ‘autonomous mobile robots’ (AMRs) since 2012.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2881-innok-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.innok-robotics.de/"
+    },
+    "image": {
+      "v": "/logos/innok-robotics.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/1574194695068127232/xQC1THw7_400x400.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Regenstauf",
+      "src": "https://de.linkedin.com/company/innok-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/innok-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bahnweg 4, Regenstauf, Bayern 93128, Germany",
+          "lat": 49.116382,
+          "lon": 12.124337,
+          "src": "https://de.linkedin.com/company/innok-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

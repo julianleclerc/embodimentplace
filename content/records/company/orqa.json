@@ -1,0 +1,51 @@
+{
+  "id": 1668,
+  "type": "company",
+  "slug": "orqa",
+  "name": "Orqa",
+  "summary": "Designs and manufactures FPV and tactical drones, including its MRM1-5 multi-role tactical trainer and payload platforms.",
+  "body": "Orqa is Europe's leading drone technology company, designing and manufacturing advanced FPV and unmanned aerial systems from our headquarters in Croatia. Our fully vertically integrated operations cover everything from design to production.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1096-orqa",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://orqafpv.com/"
+    },
+    "image": {
+      "v": "/logos/orqa.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/72d5354cb88b02c906a2.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Osijek",
+      "src": "https://hr.linkedin.com/company/orqafpv",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Croatia",
+      "src": "https://hr.linkedin.com/company/orqafpv",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "J.J.Strossmayera 341, Osijek, 31 000, Croatia",
+          "lat": 45.757958,
+          "lon": 18.15163,
+          "src": "https://hr.linkedin.com/company/orqafpv"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

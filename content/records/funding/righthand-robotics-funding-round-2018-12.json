@@ -1,0 +1,23 @@
+{
+  "id": 3638,
+  "type": "funding",
+  "slug": "righthand-robotics-funding-round-2018-12",
+  "name": "RightHand Robotics funding round (2018-12)",
+  "summary": "Raised $23 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2018-12-16",
+      "src": "https://venturebeat.com/ai/righthand-robotics-raises-23-million-to-grow-its-ecommerce-solution-in-europe-and-japan/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 23,
+      "src": "https://venturebeat.com/ai/righthand-robotics-raises-23-million-to-grow-its-ecommerce-solution-in-europe-and-japan/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2018-12-16"
+}

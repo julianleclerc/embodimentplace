@@ -1,0 +1,23 @@
+{
+  "id": 3761,
+  "type": "funding",
+  "slug": "distalmotion-funding-round-2023-04",
+  "name": "Distalmotion funding round (2023-04)",
+  "summary": "Raised $150 million, led by Revival Healthcare Capital.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-04-19",
+      "src": "https://menafn.com/1106057128/Distalmotion-Raises-150-Million-For-Its-Robotic-Surgery-System",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 150,
+      "src": "https://menafn.com/1106057128/Distalmotion-Raises-150-Million-For-Its-Robotic-Surgery-System",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-04-19"
+}

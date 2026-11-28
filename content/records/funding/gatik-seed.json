@@ -1,0 +1,28 @@
+{
+  "id": 3648,
+  "type": "funding",
+  "slug": "gatik-seed",
+  "name": "Gatik Seed",
+  "summary": "Raised $4.5M in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2019-06-06",
+      "src": "https://finance.yahoo.com/news/middle-mile-av-startup-gatik-181848584.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://finance.yahoo.com/news/middle-mile-av-startup-gatik-181848584.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 4.5,
+      "src": "https://finance.yahoo.com/news/middle-mile-av-startup-gatik-181848584.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2019-06-06"
+}

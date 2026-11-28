@@ -1,0 +1,23 @@
+{
+  "id": 3577,
+  "type": "funding",
+  "slug": "horizon-robotics-ipo",
+  "name": "Horizon Robotics IPO",
+  "summary": "Closed an IPO round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-10-21",
+      "src": "https://www.reuters.com/markets/deals/chinas-horizon-robotics-set-price-shares-top-range-raise-696-mln-hong-kong-ipo-2024-10-22/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "IPO",
+      "src": "https://www.reuters.com/markets/deals/chinas-horizon-robotics-set-price-shares-top-range-raise-696-mln-hong-kong-ipo-2024-10-22/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-10-21"
+}

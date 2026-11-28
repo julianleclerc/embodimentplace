@@ -1,0 +1,45 @@
+{
+  "id": 1376,
+  "type": "company",
+  "slug": "wuhan-university",
+  "name": "Wuhan University",
+  "summary": "University in Wuhan, China.",
+  "body": "Recent robotics work includes “MotionTrans: Human VR Data Enable Motion-Level Learning for Robotic Manipulation Policies”. OpenAlex lists 229 robotics, humanoid, embodied-AI or manipulation papers from Wuhan University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/icra57385.2026.11697199",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.whu.edu.cn/"
+    },
+    "city": {
+      "v": "Wuhan",
+      "src": "https://www.wikidata.org/wiki/Q1108197",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q1108197",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Wuhan, China",
+          "lat": 30.540833,
+          "lon": 114.361111,
+          "src": "https://www.wikidata.org/wiki/Q1108197"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

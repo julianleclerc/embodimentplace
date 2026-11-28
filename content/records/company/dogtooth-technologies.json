@@ -1,0 +1,51 @@
+{
+  "id": 1469,
+  "type": "company",
+  "slug": "dogtooth-technologies",
+  "name": "Dogtooth Technologies",
+  "summary": "Manufactures intelligent robotic harvesters for soft fruit picking, using computer vision and machine learning to match human picking performance.",
+  "body": "The platform enables farm managers to forecast yield seven to fourteen days ahead and remotely adjust harvesting parameters to optimise yield and reduce waste. The company operates commercially across multiple customer sites and manufactures hundreds of robots annually.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/156-dogtooth-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dogtooth.tech/"
+    },
+    "image": {
+      "v": "/logos/dogtooth-technologies.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/e5cd040f9973b8be7146.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Melbourn",
+      "src": "https://roboticsconnected.com/companies/156-dogtooth-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/156-dogtooth-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Melbourn, United Kingdom",
+          "lat": 52.081722,
+          "lon": 0.018662,
+          "src": "https://roboticsconnected.com/companies/156-dogtooth-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

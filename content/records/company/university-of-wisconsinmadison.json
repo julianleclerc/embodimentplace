@@ -1,0 +1,51 @@
+{
+  "id": 1295,
+  "type": "company",
+  "slug": "university-of-wisconsinmadison",
+  "name": "University of Wisconsin–Madison",
+  "summary": "Public research university in Madison, Wisconsin, USA.",
+  "body": "Robotics: Robotics at the UW-Madison &#8211; The UW-Madison Robotics Group &#8211; UW–Madison.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://robotics.wisc.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://wisc.edu/"
+    },
+    "image": {
+      "v": "/logos/university-of-wisconsinmadison.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal_of_the_University_of_Wisconsin.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Madison",
+      "src": "https://www.wikidata.org/wiki/Q838330",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q838330",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Madison, United States",
+          "lat": 43.075278,
+          "lon": -89.404167,
+          "src": "https://www.wikidata.org/wiki/Q838330"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

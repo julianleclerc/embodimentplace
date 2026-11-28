@@ -1,0 +1,28 @@
+{
+  "id": 3856,
+  "type": "funding",
+  "slug": "hyfix-seed",
+  "name": "HYFIX Seed",
+  "summary": "Raised $15M in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-04-15",
+      "src": "https://www.prnewswire.com/news-releases/hyfix-announces-15m-seed-round-to-build-american-made-chips-powering-the-next-generation-of-drones-and-robots-302743129.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.prnewswire.com/news-releases/hyfix-announces-15m-seed-round-to-build-american-made-chips-powering-the-next-generation-of-drones-and-robots-302743129.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 15,
+      "src": "https://www.prnewswire.com/news-releases/hyfix-announces-15m-seed-round-to-build-american-made-chips-powering-the-next-generation-of-drones-and-robots-302743129.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-04-15"
+}

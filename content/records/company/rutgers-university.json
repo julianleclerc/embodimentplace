@@ -1,0 +1,58 @@
+{
+  "id": 1296,
+  "type": "company",
+  "slug": "rutgers-university",
+  "name": "Rutgers University",
+  "summary": "Multi-campus public research university in New Jersey, United States.",
+  "body": "Recent robotics work includes “Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics”. OpenAlex lists 91 robotics, humanoid, embodied-AI or manipulation papers from Rutgers, The State University of New Jersey since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/iccv51701.2025.00653",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rutgers.edu/"
+    },
+    "image": {
+      "v": "/logos/rutgers-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rutgers_University_with_the_state_university_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New Brunswick",
+      "src": "https://www.wikidata.org/wiki/Q499451",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q499451",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "New Brunswick, United States",
+          "lat": 40.501667,
+          "lon": -74.448056,
+          "src": "https://www.wikidata.org/wiki/Q499451"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 39.9,
+      "faculty": 10,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3945,
+  "type": "funding",
+  "slug": "neuracore-pre-seed",
+  "name": "Neuracore Pre-seed",
+  "summary": "Raised $3 million in a Pre-seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-29",
+      "src": "https://pulse2.com/neuracore-3-million/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-seed",
+      "src": "https://pulse2.com/neuracore-3-million/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 3,
+      "src": "https://pulse2.com/neuracore-3-million/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-29"
+}

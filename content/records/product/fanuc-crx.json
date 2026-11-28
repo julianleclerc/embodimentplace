@@ -25,9 +25,16 @@
       "v": 10,
       "src": "https://crx.fanucamerica.com/",
       "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/fanuc-crx.webp",
+      "src": "https://crx.fanucamerica.com/",
+      "orig": "https://cdn.craft.cloud/de5c9867-3359-4b96-a477-341c1d3661b3/assets/hero/CRX-ROBOTS-FACTORY-2.jpg?fit=cover&format=webp&height=720&width=1440&s=qFxMzMxAcZKyPBWRZk3jw1e47x2-uaSnbzEfJS1aHEE",
+      "fit": "contain",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-24 06:05:09",
+  "updated": "2026-11-28 03:05:16",
   "feed_at": "2026-11-22"
 }

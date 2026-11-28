@@ -1,0 +1,34 @@
+{
+  "id": 3337,
+  "type": "post",
+  "slug": "cad-to-robot-inbolt-and-robodk-tackle-different-stages-of-the-automation-workflow",
+  "name": "CAD to Robot: Inbolt and RoboDK Tackle Different Stages of the Automation Workflow",
+  "summary": "Inbolt aims to bridge the gap between robot simulation and production with runtime vision that adapts CAD-derived trajectories in real time. RoboDK, by contrast, focuses on streamlining programming ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-09-20"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "machinedesign.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.machinedesign.com/markets/robotics/video/55403813/cad-to-robot-inbolt-and-robodk-tackle-different-stages-of-the-automation-workflow"
+    },
+    "image": {
+      "v": "https://img.machinedesign.com/files/base/ebm/machinedesign/image/2026/09/6aa1997a77a64e9132cd4020-inbolt_thumbnail.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630",
+      "fit": "cover",
+      "src": "https://www.machinedesign.com/markets/robotics/video/55403813/cad-to-robot-inbolt-and-robodk-tackle-different-stages-of-the-automation-workflow",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-09-20"
+}

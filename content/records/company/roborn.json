@@ -1,0 +1,51 @@
+{
+  "id": 993,
+  "type": "company",
+  "slug": "roborn",
+  "name": "Roborn",
+  "summary": "Remote-controlled 5G humanoid robots (ME Series), plus service robots for schools, buildings and health care.",
+  "body": "Hong Kong tech company specializing in AI Robotics, Video Analytics and Sensors. Roborn uses motion control system as its core technology, together with 5G, AI, IoT and Cloud to drive and develop comprehensive robotics products and solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://hk.linkedin.com/company/roborn",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://roborn.com/"
+    },
+    "image": {
+      "v": "/logos/roborn.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=roborn.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hong Kong",
+      "src": "https://hk.linkedin.com/company/roborn",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Hong Kong",
+      "src": "https://hk.linkedin.com/company/roborn",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Units 811 and 812, 8/F, Core F, Cyberport 3, 100 Cyberport Road, Hong Kong, Hong Kong",
+          "lat": 22.259675,
+          "lon": 114.132624,
+          "src": "https://hk.linkedin.com/company/roborn"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

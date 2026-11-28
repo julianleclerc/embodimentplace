@@ -1,0 +1,51 @@
+{
+  "id": 1006,
+  "type": "company",
+  "slug": "io-intelligence",
+  "name": "IO Intelligence",
+  "summary": "IO empowers physical AI providing the data and infrastructure for training and deploying robotics and embodied AI",
+  "body": "IO-AI provides real-world robotics and embodied AI data solutions. Scalable, high-quality, and customizable training data for cutting-edge physical AI.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://io-ai.tech/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://io-ai.tech/"
+    },
+    "image": {
+      "v": "/logos/io-intelligence.png",
+      "fit": "contain",
+      "src": "https://io-ai.tech/apple-icon.png?apple-icon.3vo2yrszusw19.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://cn.linkedin.com/company/io-ai-tech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/io-ai-tech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "5th Floor, Building C1, China Merchants Wisdom Park, No. 459 Qiaokai Road, Fenghuang Subdistrict, Guangming District, Shenzhen, China",
+          "lat": 22.751687,
+          "lon": 113.930006,
+          "src": "https://cn.linkedin.com/company/io-ai-tech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

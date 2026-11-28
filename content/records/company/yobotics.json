@@ -1,0 +1,51 @@
+{
+  "id": 938,
+  "type": "company",
+  "slug": "yobotics",
+  "name": "Yobotics",
+  "summary": "Maker of legged, bio-inspired robots.",
+  "body": "Headquartered in Jinan, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://yobotics.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://yobotics.cn/"
+    },
+    "image": {
+      "v": "/logos/yobotics.png",
+      "fit": "contain",
+      "src": "https://yobotics.cn/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Jinan",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Jinan, China",
+          "lat": 36.651975,
+          "lon": 117.113848,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

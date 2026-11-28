@@ -1,0 +1,51 @@
+{
+  "id": 1911,
+  "type": "company",
+  "slug": "sabanto",
+  "name": "Sabanto",
+  "summary": "Makes an aftermarket autonomy retrofit kit that converts existing tractors into autonomous machines for field operations such as mowing, roto-tilling, rolling, aerating…",
+  "body": "We are insanely devoted to building never-before-attempted, head-turning agriculture solutions to make the next generation farmer.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2999-sabanto",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://sabantoag.com/"
+    },
+    "image": {
+      "v": "/logos/sabanto.png",
+      "fit": "contain",
+      "src": "https://sabantoag.com/wp-content/uploads/2023/07/cropped-sabanto-favicon-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chicago",
+      "src": "https://www.linkedin.com/company/sabanto",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/sabanto",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "965 W Chicago Ave, Chicago, Illinois 60642, United States",
+          "lat": 41.89605,
+          "lon": -87.65205,
+          "src": "https://www.linkedin.com/company/sabanto"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

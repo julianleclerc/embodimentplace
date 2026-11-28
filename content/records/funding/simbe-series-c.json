@@ -1,0 +1,28 @@
+{
+  "id": 3690,
+  "type": "funding",
+  "slug": "simbe-series-c",
+  "name": "Simbe Series C",
+  "summary": "Raised $50 million in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-10-23",
+      "src": "https://menafn.com/1108815000/Simbe-Raises-50-Million-In-Series-C-Funding-Led-By-Growth-Equity-At-Goldman-Sachs-Alternatives",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://menafn.com/1108815000/Simbe-Raises-50-Million-In-Series-C-Funding-Led-By-Growth-Equity-At-Goldman-Sachs-Alternatives",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 50,
+      "src": "https://menafn.com/1108815000/Simbe-Raises-50-Million-In-Series-C-Funding-Led-By-Growth-Equity-At-Goldman-Sachs-Alternatives",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-10-23"
+}

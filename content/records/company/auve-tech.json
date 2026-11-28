@@ -1,0 +1,51 @@
+{
+  "id": 1522,
+  "type": "company",
+  "slug": "auve-tech",
+  "name": "Auve Tech",
+  "summary": "Manufactures autonomous electric shuttles for last-mile and closed-environment transport.",
+  "body": "Auve Tech is an autonomous transport company developing self-driving mobility solutions for airports, campuses, cities, and industrial environments. Our mission is to make transportation safer, smarter, and more efficient through autonomous technology.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/249-auve-tech",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.auve.tech/"
+    },
+    "image": {
+      "v": "/logos/auve-tech.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/648028ea3517d61249bf.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tallinn",
+      "src": "https://ee.linkedin.com/company/auve-tech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Estonia",
+      "src": "https://ee.linkedin.com/company/auve-tech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Järvevana tee 11, Tallinn, Harju County, Estonia",
+          "lat": 59.402769,
+          "lon": 24.732111,
+          "src": "https://ee.linkedin.com/company/auve-tech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

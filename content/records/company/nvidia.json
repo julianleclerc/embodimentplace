@@ -9,10 +9,18 @@
     "roles": {
       "v": [
         "Model lab",
-        "Compute"
+        "Compute",
+        "Software developer"
       ],
       "src": "https://www.sdxcentral.com/news/nvidia-announces-isaac-gr00t-n1-the-worlds-first-open-humanoid-robot-foundation-model-and-simulation-frameworks-to-speed-robot-development/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Software developer",
+          "src": "https://developer.nvidia.com/isaac",
+          "asof": "2026-11"
+        }
+      ]
     },
     "country": {
       "v": "United States"
@@ -52,6 +60,6 @@
     }
   },
   "created": "2026-11-16 21:16:16",
-  "updated": "2026-11-17 16:05:00",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": "2026-11-16"
 }

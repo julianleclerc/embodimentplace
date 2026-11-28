@@ -1,0 +1,51 @@
+{
+  "id": 1208,
+  "type": "company",
+  "slug": "cathay-innovation",
+  "name": "Cathay Innovation",
+  "summary": "Cathay Innovation is a multistage venture capital firm, affiliated to Cathay Capital, investing in founders building transformative businesses across Europe, North America, Asia, Latin America and…",
+  "body": "Cathay Innovation is a multistage venture capital firm, affiliated to Cathay Capital, investing in founders building transformative businesses across Europe, North America, Asia, Latin America and Africa.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://cathayinnovation.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cathayinnovation.com/"
+    },
+    "image": {
+      "v": "/logos/cathay-innovation.png",
+      "fit": "contain",
+      "src": "https://cathayinnovation.com/wp-content/uploads/2020/07/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Paris",
+      "src": "https://www.linkedin.com/company/cathay-innovation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://www.linkedin.com/company/cathay-innovation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "52 rue d’Anjou, Paris, 75008, France",
+          "lat": 48.873032,
+          "lon": 2.322351,
+          "src": "https://www.linkedin.com/company/cathay-innovation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

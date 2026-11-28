@@ -1,0 +1,28 @@
+{
+  "id": 3454,
+  "type": "product",
+  "slug": "pollen-reachy-2",
+  "name": "Pollen Reachy 2",
+  "summary": "Reachy 2, a humanoid robot from Pollen Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/pollen-reachy-2.webp",
+      "src": "https://pollen-robotics.com/",
+      "orig": "https://pollen-robotics.com/assets/og/og-home.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://pollen-robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://pollen-robotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

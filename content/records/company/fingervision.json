@@ -1,0 +1,45 @@
+{
+  "id": 1255,
+  "type": "company",
+  "slug": "fingervision",
+  "name": "FingerVision",
+  "summary": "We are a university-launched start-up, whose core technology is the concept of “estimating tactile sensation based on an image (captured by a camera)”.",
+  "body": "By using our FingerVision Sensors, the robot can perceive “multimodal” tactile sensation, such as force and slip distributions. This technology enables robots to manipulate objects as a human hand does.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.fingervision.jp/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fingervision.jp/"
+    },
+    "city": {
+      "v": "Koto",
+      "src": "https://jp.linkedin.com/company/fingervision",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/fingervision",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2-4-14, Koto, Tokyo 1350016, Japan",
+          "lat": 35.672775,
+          "lon": 139.816962,
+          "src": "https://jp.linkedin.com/company/fingervision"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

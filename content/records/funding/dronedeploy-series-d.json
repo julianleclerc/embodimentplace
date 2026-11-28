@@ -1,0 +1,28 @@
+{
+  "id": 3955,
+  "type": "funding",
+  "slug": "dronedeploy-series-d",
+  "name": "DroneDeploy Series D",
+  "summary": "Raised $35 million in a Series D round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2019-11-12",
+      "src": "https://venturebeat.com/ai/dronedeploy-raises-35-million-drone-logistics-management-analytics-tools/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series D",
+      "src": "https://venturebeat.com/ai/dronedeploy-raises-35-million-drone-logistics-management-analytics-tools/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 35,
+      "src": "https://venturebeat.com/ai/dronedeploy-raises-35-million-drone-logistics-management-analytics-tools/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2019-11-12"
+}

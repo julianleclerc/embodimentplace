@@ -1,0 +1,28 @@
+{
+  "id": 3469,
+  "type": "product",
+  "slug": "lg-electronics-cloid",
+  "name": "LG Electronics CLOiD",
+  "summary": "CLOiD, a humanoid robot from LG Electronics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/lg-electronics-cloid.webp",
+      "src": "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/",
+      "orig": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/press-setting-image-desktop-tablet-cloid.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

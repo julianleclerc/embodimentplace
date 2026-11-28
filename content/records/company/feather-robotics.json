@@ -1,0 +1,53 @@
+{
+  "id": 1801,
+  "type": "company",
+  "slug": "feather-robotics",
+  "name": "Feather Robotics",
+  "summary": "US humanoid robotics company based in East Palo Alto, California, founded in 2025 by Hoa Mai and Parsa Bakhtiari.",
+  "body": "Feather is building a general-purpose robotics platform for Physical AI companies and manufacturing integrators to successfully deploy and scale their labor solutions. Our hardware ecosystem is designed to enable profitable business models for our partners.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1996-feather-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://feather.dev/"
+    },
+    "image": {
+      "v": "/logos/feather-robotics.png",
+      "fit": "contain",
+      "src": "https://feather.dev/icon.svg?icon.2oe1zdvz-8cn5.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "East Palo Alto",
+      "src": "https://roboticsconnected.com/companies/1996-feather-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1996-feather-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "East Palo Alto, United States",
+          "lat": 37.468827,
+          "lon": -122.141075,
+          "src": "https://roboticsconnected.com/companies/1996-feather-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

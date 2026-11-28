@@ -1,0 +1,51 @@
+{
+  "id": 1854,
+  "type": "company",
+  "slug": "beewise",
+  "name": "Beewise",
+  "summary": "Builds the BeeHome, an autonomous robotic beehive that combines computer vision, AI and robotics to monitor and treat bee colonies remotely.",
+  "body": "Beekeepers use it to reduce colony loss and improve hive health, while growers buy guaranteed pollination services. The company also runs a Bees for Buildings programme, letting campuses and property owners support bee conservation and measure nature impact.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2439-beewise",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://beewise.ag/"
+    },
+    "image": {
+      "v": "/logos/beewise.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/1770895614953525248/j2vwc9lf_400x400.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Ramon",
+      "src": "https://roboticsconnected.com/companies/2439-beewise",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2439-beewise",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Ramon, United States",
+          "lat": 37.764802,
+          "lon": -121.954439,
+          "src": "https://roboticsconnected.com/companies/2439-beewise"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

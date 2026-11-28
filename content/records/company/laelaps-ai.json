@@ -1,0 +1,51 @@
+{
+  "id": 1573,
+  "type": "company",
+  "slug": "laelaps-ai",
+  "name": "Laelaps AI",
+  "summary": "Builds autonomous robotic security agents and visual intelligence systems for critical asset protection.",
+  "body": "Laelaps’ complete field intelligence system integrates autonomous embodied agents, video monitoring agents and sensing systems with an intelligent control layer to significantly enhance humans’ ability to secure and maintain critical assets, from manufacturing sites to military bases.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/634-laelaps-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://laelaps.ai/"
+    },
+    "image": {
+      "v": "/logos/laelaps-ai.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/7e59bf44-996c-423f-813c-3319da4ffe8f.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zürich",
+      "src": "https://ch.linkedin.com/company/laelaps-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/laelaps-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bederstrasse 49, Zürich, 8002, Switzerland",
+          "lat": 47.363809,
+          "lon": 8.529122,
+          "src": "https://ch.linkedin.com/company/laelaps-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

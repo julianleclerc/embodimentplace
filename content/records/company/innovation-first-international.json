@@ -1,0 +1,51 @@
+{
+  "id": 1797,
+  "type": "company",
+  "slug": "innovation-first-international",
+  "name": "Innovation First International",
+  "summary": "Designs control systems, electronics and robotics kits.",
+  "body": "Innovation First International was founded on the belief that innovation very early in the design process is necessary to produce simple and elegant product designs.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/1975-innovation-first-international",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://innovationfirst.com/"
+    },
+    "image": {
+      "v": "/logos/innovation-first-international.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/8063e1d71359a116b1f1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Greenville",
+      "src": "https://www.linkedin.com/company/innovation-first-inc.",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/innovation-first-inc.",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "6725 W. FM 1570, Greenville, Texas 75402, United States",
+          "lat": 33.138449,
+          "lon": -96.110807,
+          "src": "https://www.linkedin.com/company/innovation-first-inc."
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

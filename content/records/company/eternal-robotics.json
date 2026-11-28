@@ -1,0 +1,52 @@
+{
+  "id": 1907,
+  "type": "company",
+  "slug": "eternal-robotics",
+  "name": "Eternal Robotics",
+  "summary": "Builds AI-powered computer vision and robotics systems for industrial operations.",
+  "body": "Eternal Robotics is a pioneering technology solutions provider at the forefront of innovation in robotics, artificial intelligence (AI), and automation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2995-eternal-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://eternalrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/eternal-robotics.png",
+      "fit": "contain",
+      "src": "https://eternalrobotics.com/wp-content/uploads/2023/09/Eternal-Robotics-List-Icon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hyderabad",
+      "src": "https://in.linkedin.com/company/eternal-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/eternal-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Raghavendra Colony, Kondapur, Hyderabad, Telangana, Hyderabad, Telangana 500084, India",
+          "lat": 17.471985,
+          "lon": 78.362273,
+          "src": "https://in.linkedin.com/company/eternal-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1952,
+  "type": "company",
+  "slug": "mabo-engineering-automation",
+  "name": "Mabo Engineering & Automation",
+  "summary": "Designs, builds and services AGVs and autonomous mobile robots for intralogistics.",
+  "body": "With over 35 years of experience Mabo Engineering & Automation offers customized solution for every logistical challenge. Mabo Engineering & Automation supports and integrates automation projects and specializes in automated guided vehicles (AGVs).",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3366-mabo-engineering-and-automation",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mabo-automation.com/"
+    },
+    "image": {
+      "v": "/logos/mabo-engineering-automation.png",
+      "fit": "contain",
+      "src": "https://mabo-automation.com/wp-content/uploads/2026/08/cropped-logo-centered-large-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Lier",
+      "src": "https://be.linkedin.com/company/mabo-automation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Belgium",
+      "src": "https://be.linkedin.com/company/mabo-automation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mallekotstraat 43a, Lier, 2500, Belgium",
+          "lat": 51.145667,
+          "lon": 4.557086,
+          "src": "https://be.linkedin.com/company/mabo-automation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

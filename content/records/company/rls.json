@@ -1,0 +1,51 @@
+{
+  "id": 992,
+  "type": "company",
+  "slug": "rls",
+  "name": "RLS",
+  "summary": "Magnetic rotary and linear encoders (position sensors), torque sensors and magnetic sensor chips.",
+  "body": "We design, produce and supply advanced rotary and linear motion sensors to meet growing global market demands. Our experience and knowledge combined with innovative ideas enable us to offer custom product solutions to match customer's needs.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.rls.si/eng",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rls.si/"
+    },
+    "image": {
+      "v": "/logos/rls.png",
+      "fit": "contain",
+      "src": "https://www.rls.si/images/rls-logo-1.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Komenda",
+      "src": "https://si.linkedin.com/company/rls-encoders",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Slovenia",
+      "src": "https://si.linkedin.com/company/rls-encoders",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Poslovna cona Žeje pri Komendi, Pod vrbami 2, Komenda, SI-1218, Slovenia",
+          "lat": 46.188074,
+          "lon": 14.518786,
+          "src": "https://si.linkedin.com/company/rls-encoders"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

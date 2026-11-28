@@ -1,0 +1,51 @@
+{
+  "id": 1697,
+  "type": "company",
+  "slug": "nachi-fujikoshi",
+  "name": "Nachi-Fujikoshi",
+  "summary": "Japanese manufacturer that describes itself as a robot-centred general machinery maker, spanning cutting tools, machine tools, robots, bearings, hydraulic equipment and…",
+  "body": "Its robot business dates back to 1968, and the company has supplied industrial robots across many fields for over five decades. Its robot line includes handling, palletising, spot and seam welding, heavy-load transfer and glass substrate transfer, plus collaborative robots under the COPARO MZS series.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1264-nachi-fujikoshi",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.nachi-fujikoshi.co.jp/"
+    },
+    "image": {
+      "v": "/logos/nachi-fujikoshi.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/1264/1791737163605.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Toyama",
+      "src": "https://roboticsconnected.com/companies/1264-nachi-fujikoshi",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://roboticsconnected.com/companies/1264-nachi-fujikoshi",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Toyama, Japan",
+          "lat": 36.646802,
+          "lon": 137.218353,
+          "src": "https://roboticsconnected.com/companies/1264-nachi-fujikoshi"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1467,
+  "type": "company",
+  "slug": "cron-ai",
+  "name": "Cron AI",
+  "summary": "Develops senseEDGE, a deep learning platform that enhances 3D sensor perception for autonomous systems and smart infrastructure.",
+  "body": "Cron AI is a deep tech company specialising in 3D sensor perception. At the forefront of our innovation lies senseEDGE, an innovative deep learning first perception platform.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/154-cron-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cronai.ai/"
+    },
+    "image": {
+      "v": "/logos/cron-ai.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a5a77471028ab0bb4bf6.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://uk.linkedin.com/company/cronai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/cronai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "4-6 Canfield Place, Finchley Road, London, NW6 3BT, London, England NW6 3BT, United Kingdom",
+          "lat": 51.548339,
+          "lon": -0.177393,
+          "src": "https://uk.linkedin.com/company/cronai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

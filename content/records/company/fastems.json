@@ -1,0 +1,52 @@
+{
+  "id": 1743,
+  "type": "company",
+  "slug": "fastems",
+  "name": "Fastems",
+  "summary": "Finnish provider of CNC automation systems for metalworking, combining pallet and part handling, robotic finishing cells and tool data management under its Manufacturing…",
+  "body": "Fastems is the leading supplier of CNC automation solutions for variable batch production, also known as high-mix, low-volume manufacturing. We’re an open integrator with over 40 years and 4000 installations of experience with 90+ machine tool brands.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1627-fastems",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fastems.com/"
+    },
+    "image": {
+      "v": "/logos/fastems.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/f1ed74516666ff0464cc.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tampere",
+      "src": "https://fi.linkedin.com/company/fastems",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Finland",
+      "src": "https://fi.linkedin.com/company/fastems",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tuotekatu 4, Tampere, 33840, Finland",
+          "lat": 61.459811,
+          "lon": 23.785612,
+          "src": "https://fi.linkedin.com/company/fastems"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

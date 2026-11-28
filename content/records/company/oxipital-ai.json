@@ -1,0 +1,51 @@
+{
+  "id": 1782,
+  "type": "company",
+  "slug": "oxipital-ai",
+  "name": "Oxipital AI",
+  "summary": "Formerly Soft Robotics, is based in Bedford, Massachusetts.",
+  "body": "Its V-CORTX platform is a visual AI system for quality inspection and robot guidance, built on synthetic data so customers need no image labelling. The platform offers no-code tools, pre-trained object models and live web dashboards, and it is aimed at food manufacturers and machine builders.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1913-oxipital-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.oxipitalai.com/"
+    },
+    "image": {
+      "v": "/logos/oxipital-ai.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1993403f810c3acce396.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bedford",
+      "src": "https://roboticsconnected.com/companies/1913-oxipital-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1913-oxipital-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bedford, United States",
+          "lat": 40.027145,
+          "lon": -78.523745,
+          "src": "https://roboticsconnected.com/companies/1913-oxipital-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

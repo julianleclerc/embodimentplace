@@ -1,0 +1,53 @@
+{
+  "id": 1851,
+  "type": "company",
+  "slug": "elvio-robotics",
+  "name": "Elvio Robotics",
+  "summary": "Offers turnkey automation systems for hospitals.",
+  "body": "Elvio Robotics is a Munich-based technology company developing turnkey automation systems for hospitals. We combine robotics, software, and infrastructure and process integrations in one central system — from individual use cases to the autonomous hospital.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/2408-elvio-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.elviorobotics.com/"
+    },
+    "image": {
+      "v": "/logos/elvio-robotics.png",
+      "fit": "contain",
+      "src": "https://elviorobotics.com/favicon/apple-icon-180x180.png?v=20261010",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://roboticsconnected.com/companies/2408-elvio-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/2408-elvio-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://roboticsconnected.com/companies/2408-elvio-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

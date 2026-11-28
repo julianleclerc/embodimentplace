@@ -1,0 +1,51 @@
+{
+  "id": 1824,
+  "type": "company",
+  "slug": "drift",
+  "name": "Drift",
+  "summary": "Sim-based evaluation platform and AI developer tool for robotics engineers.",
+  "body": "Engineers describe a robot, world or task in natural language, and the agent generates ROS workspaces, robot description files and world files, then launches simulations in Gazebo, MuJoCo or Isaac Sim. It works across the operating system, terminal, ROS graph and simulator at once, with planning, replanning and autonomous debugging built in.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2058-drift",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.godrift.ai/"
+    },
+    "image": {
+      "v": "/logos/drift.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4d60280ee030a5ae8422.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://roboticsconnected.com/companies/2058-drift",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2058-drift",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://roboticsconnected.com/companies/2058-drift"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

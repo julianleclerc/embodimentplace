@@ -1,0 +1,51 @@
+{
+  "id": 1712,
+  "type": "company",
+  "slug": "platform-aerospace",
+  "name": "Platform Aerospace",
+  "summary": "Service-Disabled Veteran-Owned Small Business based in Hollywood, Maryland, that designs and builds ultra-long endurance unmanned aircraft.",
+  "body": "Platform Aerospace specializes in manufacturing, aviation modification and prototyping, and cutting-edge aerial ISR products, namely VANILLA UNMANNED UAS. Platform is AS9100D and ISO 9001:2015 certified and is a registered service-disabled veteran-owned small business (SDVOSB)",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1324-platform-aerospace",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.platformaerospace.com/"
+    },
+    "image": {
+      "v": "/logos/platform-aerospace.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/shapes/ea744a_35cc741fe8d3434e876b17cca68c95ca.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hollywood",
+      "src": "https://www.linkedin.com/company/platformaero",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/platformaero",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "43960 Airport View Drive, Hollywood, MD 20636, United States",
+          "lat": 38.319182,
+          "lon": -76.553082,
+          "src": "https://www.linkedin.com/company/platformaero"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

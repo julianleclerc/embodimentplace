@@ -1,0 +1,26 @@
+{
+  "id": 2167,
+  "type": "lab",
+  "slug": "minnesota-robotics-institute",
+  "name": "Minnesota Robotics Institute",
+  "summary": "UMN's robotics institute, with a robotics MS.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Field robots",
+        "Medical robots"
+      ],
+      "src": "https://cse.umn.edu/mnri",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cse.umn.edu/mnri",
+      "src": "https://cse.umn.edu/mnri",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

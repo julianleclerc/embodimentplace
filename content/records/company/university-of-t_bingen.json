@@ -1,0 +1,51 @@
+{
+  "id": 1328,
+  "type": "company",
+  "slug": "university-of-tübingen",
+  "name": "University of Tübingen",
+  "summary": "Public research university in Tübingen, Germany.",
+  "body": "Recent robotics work includes “Natural Multimodal Fusion-Based Human–Robot Interaction: Application With Voice and Deictic Posture via Large Language Model”. OpenAlex lists 58 robotics, humanoid, embodied-AI or manipulation papers from University of Tübingen since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/mra.2025.3543957",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.uni-tuebingen.de/"
+    },
+    "image": {
+      "v": "/logos/university-of-tübingen.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.uni-tuebingen.de&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tübingen",
+      "src": "https://www.wikidata.org/wiki/Q153978",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://www.wikidata.org/wiki/Q153978",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tübingen, Germany",
+          "lat": 48.525,
+          "lon": 9.058889,
+          "src": "https://www.wikidata.org/wiki/Q153978"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1360,
+  "type": "company",
+  "slug": "kyoto-university",
+  "name": "Kyoto University",
+  "summary": "National university located in Kyoto, Japan.",
+  "body": "Recent robotics work includes “Defining Global Benchmarks for Robotic Liver Resections: An International Multicenter Study”. OpenAlex lists 216 robotics, humanoid, embodied-AI or manipulation papers from Kyoto University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1097/sla.0000000000006852",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://kyoto-u.ac.jp/"
+    },
+    "image": {
+      "v": "/logos/kyoto-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto_University_emblem.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sakyō-ku",
+      "src": "https://www.wikidata.org/wiki/Q336264",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://www.wikidata.org/wiki/Q336264",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Sakyō-ku, Japan",
+          "lat": 35.026212,
+          "lon": 135.780842,
+          "src": "https://www.wikidata.org/wiki/Q336264"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

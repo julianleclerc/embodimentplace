@@ -1,0 +1,51 @@
+{
+  "id": 1310,
+  "type": "company",
+  "slug": "dartmouth-college",
+  "name": "Dartmouth College",
+  "summary": "Private university in Hanover, New Hampshire, US.",
+  "body": "Recent robotics work includes “Modular shape-changing tensegrity-blocks enable self-assembling robotic structures”. OpenAlex lists 40 robotics, humanoid, embodied-AI or manipulation papers from Dartmouth College since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1038/s41467-025-60982-0",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://home.dartmouth.edu/"
+    },
+    "image": {
+      "v": "/logos/dartmouth-college.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dartmouth_College_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hanover",
+      "src": "https://www.wikidata.org/wiki/Q49116",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q49116",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hanover, United States",
+          "lat": 43.703333,
+          "lon": -72.288333,
+          "src": "https://www.wikidata.org/wiki/Q49116"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

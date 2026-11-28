@@ -1,0 +1,51 @@
+{
+  "id": 1014,
+  "type": "company",
+  "slug": "blue-ocean-robotics",
+  "name": "Blue Ocean Robotics",
+  "summary": "Blue Ocean Robotics develops, produces and sells professional service robots primarily in pharma, hospitality, construction and agriculture.",
+  "body": "We develop, produce and sell professional service robots in various industries such as pharmaceutical, hospitality, and other global markets.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.blue-ocean-robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.blue-ocean-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/blue-ocean-robotics.png",
+      "fit": "contain",
+      "src": "https://www.blue-ocean-robotics.com/hubfs/UVD%20Robots%20white_Logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Odense",
+      "src": "https://dk.linkedin.com/company/blue-ocean-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/blue-ocean-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Svendborgvej 226, Odense, Syddanmark 5260, Denmark",
+          "lat": 55.346803,
+          "lon": 10.416844,
+          "src": "https://dk.linkedin.com/company/blue-ocean-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 2024,
+  "type": "company",
+  "slug": "neros",
+  "name": "Neros",
+  "summary": "Builds low-cost military drones at scale.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://news.ycombinator.com/item?id=45882818",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.neros.tech/"
+    },
+    "image": {
+      "v": "/logos/neros.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6a7dba4345e62074a8b5ad52/6a8c426baed0b5596b807147_Neros%20webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.linkedin.com/company/neros-tech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/neros-tech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, United States",
+          "lat": 34.053692,
+          "lon": -118.242768,
+          "src": "https://www.linkedin.com/company/neros-tech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1118,
+  "type": "company",
+  "slug": "may-mobility",
+  "name": "May Mobility",
+  "summary": "Transforming cities and rural areas through AV transit and technology.",
+  "body": "May Mobility is a leader in autonomous vehicle technology development and deployment. Y Combinator Summer 2017 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://maymobility.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://maymobility.com/"
+    },
+    "image": {
+      "v": "/logos/may-mobility.png",
+      "fit": "contain",
+      "src": "https://maymobility.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ann Arbor",
+      "src": "https://www.linkedin.com/company/maymobility",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/maymobility",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "650 Avis Drive, Ann Arbor, MI 48108, United States",
+          "lat": 42.281372,
+          "lon": -83.748462,
+          "src": "https://www.linkedin.com/company/maymobility"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

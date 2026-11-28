@@ -1,0 +1,51 @@
+{
+  "id": 1354,
+  "type": "company",
+  "slug": "university-of-genoa",
+  "name": "University of Genoa",
+  "summary": "University in Genoa, Italy.",
+  "body": "Recent robotics work includes “A survey on imitation learning for contact-rich tasks in robotics”. OpenAlex lists 236 robotics, humanoid, embodied-AI or manipulation papers from University of Genoa since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1177/02783649261417694",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://unige.it/"
+    },
+    "image": {
+      "v": "/logos/university-of-genoa.png",
+      "fit": "contain",
+      "src": "https://unige.it/themes/custom/unige_theme/images/logo_orizzontale_WHITE.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Genoa",
+      "src": "https://www.wikidata.org/wiki/Q593321",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Italy",
+      "src": "https://www.wikidata.org/wiki/Q593321",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Genoa, Italy",
+          "lat": 44.414853,
+          "lon": 8.926621,
+          "src": "https://www.wikidata.org/wiki/Q593321"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 2201,
+  "type": "lab",
+  "slug": "computational-robotics-lab",
+  "name": "Computational Robotics Lab",
+  "summary": "Computational design and control of robots.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Simulation",
+        "Legged locomotion"
+      ],
+      "src": "https://crl.ethz.ch/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://crl.ethz.ch/",
+      "src": "https://crl.ethz.ch/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Stelian Coros",
+      "src": "https://crl.ethz.ch/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

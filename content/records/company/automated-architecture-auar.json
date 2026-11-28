@@ -1,0 +1,51 @@
+{
+  "id": 1550,
+  "type": "company",
+  "slug": "automated-architecture-auar",
+  "name": "Automated Architecture (AUAR)",
+  "summary": "Deploys robotic micro-factories that build timber building components on site.",
+  "body": "AUAR is the manufacturing partner for homebuilders. We deploy robotic MicroFactories on-site, producing wall, floor and roof panels faster, with less waste and at lower cost. The MicroFactory moves with the builder's pipeline, delivering the output of a factory with 0 CapEx, no lead times, and no labour risk.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/337-automated-architecture-auar",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://auar.io/"
+    },
+    "image": {
+      "v": "/logos/automated-architecture-auar.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/bfde4ed5-3e11-4304-a74b-db4e9ae58d72.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bristol",
+      "src": "https://roboticsconnected.com/companies/337-automated-architecture-auar",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/337-automated-architecture-auar",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bristol, United Kingdom",
+          "lat": 51.443014,
+          "lon": -2.581662,
+          "src": "https://roboticsconnected.com/companies/337-automated-architecture-auar"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

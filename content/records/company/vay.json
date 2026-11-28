@@ -1,0 +1,51 @@
+{
+  "id": 1269,
+  "type": "company",
+  "slug": "vay",
+  "name": "Vay",
+  "summary": "Vay's door-to-door car rental service is live in central Las Vegas, Nevada!",
+  "body": "Experience the convenience of by-the-minute rental cars delivered driverlessly to your location. Download the \"Vay Rent Cars by the Minute\" app and take a ride today! https://vay.onelink.me/BXfV/3n0ectu7 Vay develops automotive-grade technology for remote driving.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://vay.io/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vay.io/"
+    },
+    "image": {
+      "v": "/logos/vay.png",
+      "fit": "contain",
+      "src": "https://vay.io/wp-content/smush-webp/2025/07/vay-icon.png.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Berlin",
+      "src": "https://de.linkedin.com/company/vaytechnology",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/vaytechnology",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mariendorfer Damm 1, Berlin, 12099, Germany",
+          "lat": 52.45374,
+          "lon": 13.38556,
+          "src": "https://de.linkedin.com/company/vaytechnology"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

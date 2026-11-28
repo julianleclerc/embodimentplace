@@ -1,0 +1,51 @@
+{
+  "id": 1700,
+  "type": "company",
+  "slug": "scott-technology",
+  "name": "Scott Technology",
+  "summary": "Builds and commissions automated manufacturing and materials handling systems for global food, appliance, mining and logistics customers.",
+  "body": "Its brands include Alvey palletising, BladeStop meat processing automation, Rocklabs mining sample preparation and Transbotics automated guided vehicles. Core offerings span appliance production lines, automated lamb and beef boning and grading, palletising, AGVs and Maestro+ warehouse control software.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1269-scott-technology",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://scottautomation.com/"
+    },
+    "image": {
+      "v": "/logos/scott-technology.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/3316dae751d7081ee360.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dunedin",
+      "src": "https://roboticsconnected.com/companies/1269-scott-technology",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "New Zealand",
+      "src": "https://roboticsconnected.com/companies/1269-scott-technology",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Dunedin, New Zealand",
+          "lat": -45.874098,
+          "lon": 170.503576,
+          "src": "https://roboticsconnected.com/companies/1269-scott-technology"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,46 @@
+{
+  "id": 2095,
+  "type": "company",
+  "slug": "queensland-university-of-technology",
+  "name": "Queensland University of Technology",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.qut.edu.au/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.qut.edu.au/"
+    },
+    "city": {
+      "v": "Brisbane"
+    },
+    "country": {
+      "v": "Australia"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Brisbane, Australia",
+          "lat": -27.4772,
+          "lon": 153.028
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 41.2,
+      "faculty": 20,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

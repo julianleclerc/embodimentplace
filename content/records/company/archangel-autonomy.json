@@ -1,0 +1,51 @@
+{
+  "id": 1443,
+  "type": "company",
+  "slug": "archangel-autonomy",
+  "name": "Archangel Autonomy",
+  "summary": "Builds edge AI systems for human-machine teaming in defence and security.",
+  "body": "Its core products include Argonaut, an AI camera system for threat detection; Xnaut, a navigation platform enabling autonomous drone flight without GPS; and Skybase, satellite image processing with AI. The company targets law enforcement, first responders, NGOs, wildlife rangers, and military operators globally.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/107-archangel-autonomy",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.archangelautonomy.com/"
+    },
+    "image": {
+      "v": "/logos/archangel-autonomy.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9f24d7247e1cc2a73d66.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Oxford",
+      "src": "https://roboticsconnected.com/companies/107-archangel-autonomy",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/107-archangel-autonomy",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Oxford, United Kingdom",
+          "lat": 51.752013,
+          "lon": -1.25785,
+          "src": "https://roboticsconnected.com/companies/107-archangel-autonomy"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

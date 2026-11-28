@@ -1,0 +1,51 @@
+{
+  "id": 1314,
+  "type": "company",
+  "slug": "university-of-central-florida",
+  "name": "University of Central Florida",
+  "summary": "Public university in Orange County, Florida, United States.",
+  "body": "Robotics: Robotics | University of Central Florida.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.ucf.edu/robotics/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.ucf.edu/"
+    },
+    "image": {
+      "v": "/logos/university-of-central-florida.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.ucf.edu&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Orlando",
+      "src": "https://www.wikidata.org/wiki/Q143451",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q143451",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Orlando, United States",
+          "lat": 28.6016,
+          "lon": -81.2005,
+          "src": "https://www.wikidata.org/wiki/Q143451"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

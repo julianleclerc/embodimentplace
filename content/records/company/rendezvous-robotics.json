@@ -1,0 +1,51 @@
+{
+  "id": 1997,
+  "type": "company",
+  "slug": "rendezvous-robotics",
+  "name": "Rendezvous Robotics",
+  "summary": "Builds self-assembling spacecraft and robotic infrastructure for orbit.",
+  "body": "Rendezvous Robotics builds space infrastructure using modular, autonomous systems that assemble in orbit. Its patented TESSERAE technology enables scalable, reconfigurable, and resilient infrastructure in space — serving national security, commercial and civil markets.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.rdvrobotics.com/news/rendezvous-robotics-seed-round-announcement/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rdvrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/rendezvous-robotics.png",
+      "fit": "contain",
+      "src": "https://www.rdvrobotics.com/wp-content/uploads/2026/10/rdv-site-icon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Golden",
+      "src": "https://www.linkedin.com/company/rendezvous-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/rendezvous-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Golden, Colorado, United States",
+          "lat": 39.754635,
+          "lon": -105.22058,
+          "src": "https://www.linkedin.com/company/rendezvous-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

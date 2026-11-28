@@ -1,0 +1,51 @@
+{
+  "id": 1637,
+  "type": "company",
+  "slug": "zenadrone",
+  "name": "ZenaDrone",
+  "summary": "Drone subsidiary of ZenaTech, a Nasdaq-listed group, and builds the ZenaDrone 1000, a heavy-lift autonomous UAV with AI flight software, multispectral sensors and a…",
+  "body": "ZenaDrone, a wholly owned subsidiary of ZenaTech, develops and manufactures autonomous business drone solutions that can incorporate machine learning software, AI, predictive modeling, and other software and hardware innovations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/994-zenadrone",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.zenadrone.com/"
+    },
+    "image": {
+      "v": "/logos/zenadrone.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/294e891c080ae59ef873.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Naperville",
+      "src": "https://roboticsconnected.com/companies/994-zenadrone",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/994-zenadrone",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Naperville, United States",
+          "lat": 41.77287,
+          "lon": -88.147928,
+          "src": "https://roboticsconnected.com/companies/994-zenadrone"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

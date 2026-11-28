@@ -1,0 +1,28 @@
+{
+  "id": 3739,
+  "type": "funding",
+  "slug": "verve-motion-series-b",
+  "name": "Verve Motion Series B",
+  "summary": "Raised $20 million in a Series B round, led by Safar Partners.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-12-13",
+      "src": "https://www.prnewswire.com/news-releases/verve-motion-raises-20-million-in-series-b-financing-302013975.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.prnewswire.com/news-releases/verve-motion-raises-20-million-in-series-b-financing-302013975.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 20,
+      "src": "https://www.prnewswire.com/news-releases/verve-motion-raises-20-million-in-series-b-financing-302013975.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-12-13"
+}

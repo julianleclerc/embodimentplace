@@ -1,0 +1,28 @@
+{
+  "id": 3468,
+  "type": "product",
+  "slug": "minerva-humanoids-roger",
+  "name": "Minerva Humanoids Roger",
+  "summary": "Meet Roger, the humanoid robot built for demanding work in industrial and public safety environments.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/minerva-humanoids-roger.webp",
+      "src": "https://www.minervahumanoids.com/",
+      "orig": "https://www.minervahumanoids.com/assets/share-home-v1.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.minervahumanoids.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.minervahumanoids.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

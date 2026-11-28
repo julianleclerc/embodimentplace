@@ -1,0 +1,51 @@
+{
+  "id": 1833,
+  "type": "company",
+  "slug": "neuralink",
+  "name": "Neuralink",
+  "summary": "Neurotechnology company developing implantable brain-computer interfaces (BCIs) that let people with paralysis communicate and interact using only their thoughts.",
+  "body": "Neuralink is a neurotechnology company building a generalized input/output platform for the brain. Our work has the potential to restore autonomy to those with unmet medical needs and fundamentally transform how humans interact with the world.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2146-neuralink",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://neuralink.com/"
+    },
+    "image": {
+      "v": "/logos/neuralink.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/006d2e40e642fef0a781.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Fremont",
+      "src": "https://roboticsconnected.com/companies/2146-neuralink",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2146-neuralink",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Fremont, United States",
+          "lat": 37.54827,
+          "lon": -121.988571,
+          "src": "https://roboticsconnected.com/companies/2146-neuralink"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

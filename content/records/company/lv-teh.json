@@ -1,0 +1,51 @@
+{
+  "id": 1733,
+  "type": "company",
+  "slug": "lv-teh",
+  "name": "LV-TEH",
+  "summary": "Designs and builds military unmanned ground vehicles and robotic platforms.",
+  "body": "The character of war is changing. It is becoming unmanned, attritable, and won by the side that fields affordable mass and keeps iterating. LV-TEH builds the ground side of that shift.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1425-lv-teh",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://lvteh.lv/"
+    },
+    "image": {
+      "v": "/logos/lv-teh.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/dd1ecb0a46e9e49807d5.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Riga",
+      "src": "https://roboticsconnected.com/companies/1425-lv-teh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Latvia",
+      "src": "https://roboticsconnected.com/companies/1425-lv-teh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Riga, Latvia",
+          "lat": 56.949398,
+          "lon": 24.105185,
+          "src": "https://roboticsconnected.com/companies/1425-lv-teh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

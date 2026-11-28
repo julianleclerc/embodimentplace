@@ -1,0 +1,23 @@
+{
+  "id": 3875,
+  "type": "funding",
+  "slug": "beewise-funding-round-2020-07",
+  "name": "Beewise funding round (2020-07)",
+  "summary": "Raised $10 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2020-07-13",
+      "src": "https://venturebeat.com/ai/beewise-raises-10-million-to-automate-beehive-monitoring-and-harvesting/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 10,
+      "src": "https://venturebeat.com/ai/beewise-raises-10-million-to-automate-beehive-monitoring-and-harvesting/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2020-07-13"
+}

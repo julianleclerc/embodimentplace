@@ -1,0 +1,28 @@
+{
+  "id": 3483,
+  "type": "funding",
+  "slug": "enact-intelligence-pre-seed",
+  "name": "Enact Intelligence Pre-seed",
+  "summary": "Raised $30M in a Pre-seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-10-22",
+      "src": "https://www.unite.ai/enact-intelligence-raises-30m-pre-seed-for-force-and-touch-robot-dexterity/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-seed",
+      "src": "https://www.unite.ai/enact-intelligence-raises-30m-pre-seed-for-force-and-touch-robot-dexterity/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 30,
+      "src": "https://www.unite.ai/enact-intelligence-raises-30m-pre-seed-for-force-and-touch-robot-dexterity/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-10-22"
+}

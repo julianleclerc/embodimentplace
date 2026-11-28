@@ -1,0 +1,51 @@
+{
+  "id": 1368,
+  "type": "company",
+  "slug": "ulsan-national-institute-of-science-and-technology",
+  "name": "Ulsan National Institute of Science and Technology",
+  "summary": "Research university in Ulsan, South Korea.",
+  "body": "Robotics: Robotics and Rehabilitation Engineering Lab.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://robotics.unist.ac.kr/robotics/index.do",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.unist.ac.kr/"
+    },
+    "image": {
+      "v": "/logos/ulsan-national-institute-of-science-and-technology.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Unist_logo.png?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ulsan",
+      "src": "https://www.wikidata.org/wiki/Q484108",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://www.wikidata.org/wiki/Q484108",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ulsan, South Korea",
+          "lat": 35.573,
+          "lon": 129.19,
+          "src": "https://www.wikidata.org/wiki/Q484108"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

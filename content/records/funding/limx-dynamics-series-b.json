@@ -1,0 +1,28 @@
+{
+  "id": 3484,
+  "type": "funding",
+  "slug": "limx-dynamics-series-b",
+  "name": "LimX Dynamics Series B",
+  "summary": "Raised $200 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-02-02",
+      "src": "https://technode.com/2026/02/03/limx-dynamics-raises-200-million-in-series-b-to-scale-humanoid-robotics/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://technode.com/2026/02/03/limx-dynamics-raises-200-million-in-series-b-to-scale-humanoid-robotics/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 200,
+      "src": "https://technode.com/2026/02/03/limx-dynamics-raises-200-million-in-series-b-to-scale-humanoid-robotics/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-02-02"
+}

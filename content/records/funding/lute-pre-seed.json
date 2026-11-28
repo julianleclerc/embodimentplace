@@ -1,0 +1,28 @@
+{
+  "id": 3616,
+  "type": "funding",
+  "slug": "lute-pre-seed",
+  "name": "Lute Pre-seed",
+  "summary": "Raised $20 million in a Pre-seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-26",
+      "src": "https://roboticsandautomationnews.com/2026/11/26/lute-raises-20-million-to-give-robots-a-sense-of-touch/107756/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-seed",
+      "src": "https://roboticsandautomationnews.com/2026/11/26/lute-raises-20-million-to-give-robots-a-sense-of-touch/107756/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 20,
+      "src": "https://roboticsandautomationnews.com/2026/11/26/lute-raises-20-million-to-give-robots-a-sense-of-touch/107756/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-26"
+}

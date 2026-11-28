@@ -1,0 +1,51 @@
+{
+  "id": 1450,
+  "type": "company",
+  "slug": "assetcool",
+  "name": "AssetCool",
+  "summary": "Develops photonic coatings and modular Capacity-1 robotic systems to passively cool overhead power lines and increase conductor ampacity.",
+  "body": "AssetCool is a UK deep-tech company delivering robotic grid upgrades that provide the fastest speed-to-power available today.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/121-assetcool",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.assetcool.com/"
+    },
+    "image": {
+      "v": "/logos/assetcool.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4437258fd506823acf7b.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Batley",
+      "src": "https://uk.linkedin.com/company/assetcool",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/assetcool",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "AssetCool, Terawatt-1, Unit A1, Batley, England WF17 6GH, United Kingdom",
+          "lat": 53.716564,
+          "lon": -1.636386,
+          "src": "https://uk.linkedin.com/company/assetcool"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

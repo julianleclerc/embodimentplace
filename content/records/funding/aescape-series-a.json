@@ -1,0 +1,28 @@
+{
+  "id": 3520,
+  "type": "funding",
+  "slug": "aescape-series-a",
+  "name": "Aescape Series A",
+  "summary": "Raised $30M in a Series A round, led by Valor Siren.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-11-16",
+      "src": "https://www.streetinsider.com/Business+Wire/Aescape+Announces+%2430M+Series+A+to+Transform+the+Massage+Therapy+Experience/20863000.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.streetinsider.com/Business+Wire/Aescape+Announces+%2430M+Series+A+to+Transform+the+Massage+Therapy+Experience/20863000.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 30,
+      "src": "https://www.streetinsider.com/Business+Wire/Aescape+Announces+%2430M+Series+A+to+Transform+the+Massage+Therapy+Experience/20863000.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-11-16"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1542,
+  "type": "company",
+  "slug": "voltrac",
+  "name": "Voltrac",
+  "summary": "Manufactures Thor, a fully electric, autonomous unmanned ground vehicle (UGV) purpose-built for agricultural operations and frontline logistics.",
+  "body": "Voltrac builds autonomous electrified vehicles for agriculture and defense logistics. Voltrac was incorporated in 2024, was founded by Thomas Hubregtsen and Fran Infante, and is backed by Foodlabs and Antler.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/290-voltrac",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://voltrac.eu/"
+    },
+    "image": {
+      "v": "/logos/voltrac.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/1fb97efd-6d41-4b26-922b-ca692d465922.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Valencia",
+      "src": "https://es.linkedin.com/company/voltrac",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Spain",
+      "src": "https://es.linkedin.com/company/voltrac",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Calle Villa de Madrid, 26 b, Valencia, Valencian Community 46988, Spain",
+          "lat": 39.51081,
+          "lon": -0.460875,
+          "src": "https://es.linkedin.com/company/voltrac"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

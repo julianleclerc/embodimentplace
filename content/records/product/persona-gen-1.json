@@ -1,0 +1,28 @@
+{
+  "id": 3453,
+  "type": "product",
+  "slug": "persona-gen-1",
+  "name": "Persona Gen 1",
+  "summary": "Gen 1, a humanoid robot from Persona AI.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/persona-gen-1.webp",
+      "src": "https://persona.ai/",
+      "orig": "https://persona.ai/wp-content/uploads/humanoid-background-mobile-1-624x351.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://persona.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://persona.ai/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

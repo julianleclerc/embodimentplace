@@ -1,0 +1,52 @@
+{
+  "id": 1708,
+  "type": "company",
+  "slug": "pomo-robotics",
+  "name": "POMO Robotics",
+  "summary": "Scottish robotic system integrator and Industry 4.0 solutions provider.",
+  "body": "It supplies collaborative and industrial robots from partners such as Universal Robots, Yaskawa, JAKA and Dobot, alongside custom end-of-arm tooling, pedestals and system integration. The company also offers automation solutions, digital twinning, IIoT services and turnkey derisking work, from concept design and prototyping through to final build.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1317-pomo-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.pomorobotics.com/"
+    },
+    "image": {
+      "v": "/logos/pomo-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/e2d59369c48b679465c5.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Glasgow",
+      "src": "https://roboticsconnected.com/companies/1317-pomo-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/1317-pomo-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Glasgow, United Kingdom",
+          "lat": 55.861155,
+          "lon": -4.250169,
+          "src": "https://roboticsconnected.com/companies/1317-pomo-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

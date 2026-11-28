@@ -1,0 +1,40 @@
+{
+  "id": 2068,
+  "type": "product",
+  "slug": "tesollo-dg-5f",
+  "name": "Tesollo DG-5F",
+  "summary": "Five-finger hand with 20 joints for humanoids and research.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://www.therobotreport.com/tesollo-unveils-dexterous-robot-hand-for-humanoids/",
+      "asof": "2026-11"
+    },
+    "h_kind": {
+      "v": "Dexterous hand",
+      "src": "https://www.therobotreport.com/tesollo-unveils-dexterous-robot-hand-for-humanoids/",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 20,
+      "src": "https://www.therobotreport.com/tesollo-unveils-dexterous-robot-hand-for-humanoids/",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://www.therobotreport.com/tesollo-unveils-dexterous-robot-hand-for-humanoids/",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/tesollo-dg-5f.webp",
+      "src": "https://www.therobotreport.com/tesollo-unveils-dexterous-robot-hand-for-humanoids/",
+      "orig": "https://www.therobotreport.com/wp-content/uploads/2025/02/tesollo-humanoid-gripper.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

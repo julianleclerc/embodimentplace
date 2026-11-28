@@ -1,0 +1,28 @@
+{
+  "id": 3466,
+  "type": "product",
+  "slug": "zeroth-m1",
+  "name": "Zeroth M1",
+  "summary": "M1, a humanoid robot from Zeroth.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/zeroth-m1.webp",
+      "src": "https://www.zeroth0.com/",
+      "orig": "https://www.zeroth0.com/cdn/shop/files/m1v2-hero-bg.webp?v=9427574492251337491",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.zeroth0.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.zeroth0.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

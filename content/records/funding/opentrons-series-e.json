@@ -1,0 +1,28 @@
+{
+  "id": 3665,
+  "type": "funding",
+  "slug": "opentrons-series-e",
+  "name": "Opentrons Series E",
+  "summary": "Raised $40M in a Series E round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-10-29",
+      "src": "https://www.businesswire.com/news/home/20261029104545/en/Opentrons-Announces-%2440M-Series-E-Round-to-Standardize-AI-Driven-Science-on-Its-Robots",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series E",
+      "src": "https://www.businesswire.com/news/home/20261029104545/en/Opentrons-Announces-%2440M-Series-E-Round-to-Standardize-AI-Driven-Science-on-Its-Robots",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 40,
+      "src": "https://www.businesswire.com/news/home/20261029104545/en/Opentrons-Announces-%2440M-Series-E-Round-to-Standardize-AI-Driven-Science-on-Its-Robots",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-10-29"
+}

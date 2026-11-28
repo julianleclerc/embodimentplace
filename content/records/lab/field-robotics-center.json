@@ -1,0 +1,26 @@
+{
+  "id": 2106,
+  "type": "lab",
+  "slug": "field-robotics-center",
+  "name": "Field Robotics Center",
+  "summary": "Robots for mining, agriculture, space and outdoor work.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Field robots",
+        "Autonomous driving"
+      ],
+      "src": "https://frc.ri.cmu.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://frc.ri.cmu.edu/",
+      "src": "https://frc.ri.cmu.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

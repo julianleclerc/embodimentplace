@@ -1,0 +1,51 @@
+{
+  "id": 1123,
+  "type": "company",
+  "slug": "stack-av",
+  "name": "Stack AV",
+  "summary": "Stack is developing revolutionary AI and advanced autonomous systems designed to enhance safety, reliability, and efficiency of modern operations.",
+  "body": "Stack AV - Revolutionizing Transportation Through AI",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://stackav.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://stackav.com/"
+    },
+    "image": {
+      "v": "/logos/stack-av.png",
+      "fit": "contain",
+      "src": "https://stackav.com/_next/static/media/Stack_Primary_Horizontal_White_RGB_.6e03a8bb.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/stackav",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/stackav",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pittsburgh, PA, United States",
+          "lat": 40.440697,
+          "lon": -80.002567,
+          "src": "https://www.linkedin.com/company/stackav"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

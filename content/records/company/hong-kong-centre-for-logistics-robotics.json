@@ -1,0 +1,51 @@
+{
+  "id": 1406,
+  "type": "company",
+  "slug": "hong-kong-centre-for-logistics-robotics",
+  "name": "Hong Kong Centre for Logistics Robotics",
+  "summary": "Facility in Hong Kong, Hong Kong.",
+  "body": "Recent robotics work includes “Data-driven Visual Servoing of Flexible Continuum Robots in Constrained Environments”. OpenAlex lists 10 robotics, humanoid, embodied-AI or manipulation papers from Hong Kong Centre for Logistics Robotics since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://doi.org/10.1109/iros60139.2025.11246163",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hkclr.hk/"
+    },
+    "image": {
+      "v": "/logos/hong-kong-centre-for-logistics-robotics.png",
+      "fit": "contain",
+      "src": "https://www.hkclr.hk/hkclr_logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hong Kong",
+      "src": "https://www.wikidata.org/wiki/Q137795929",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Hong Kong",
+      "src": "https://www.wikidata.org/wiki/Q137795929",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hong Kong, Hong Kong",
+          "lat": 22.281833,
+          "lon": 114.158283,
+          "src": "https://www.wikidata.org/wiki/Q137795929"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

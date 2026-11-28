@@ -1,0 +1,52 @@
+{
+  "id": 1860,
+  "type": "company",
+  "slug": "rivas-robotics",
+  "name": "Rivas Robotics",
+  "summary": "The trading name of Hurtado & Rivas SL, is a Valencia-based industrial automation and robotics firm with close to 60 years of experience.",
+  "body": "Rivas Robotics es la División de Robótica y Automatización Industrial de Grupo Hurtado Rivas. Empresa con más de 50 años de trayectoria radicada en Valencia (España). Especialistas en diseño y construcción de proyectos de automatización y robótica industrial. Soluciones 'llave en mano'​ para múltiples sectores.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/2448-rivas-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://rivasrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/rivas-robotics.png",
+      "fit": "contain",
+      "src": "https://rivasrobotics.com/wp-content/uploads/2024/04/cropped-cropped-favicon-192x192-1-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Picassent",
+      "src": "https://es.linkedin.com/company/rivas-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Spain",
+      "src": "https://es.linkedin.com/company/rivas-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Polígono Industrial Suzi, Picassent, Valencia 4220, Spain",
+          "lat": 39.363519,
+          "lon": -0.461179,
+          "src": "https://es.linkedin.com/company/rivas-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

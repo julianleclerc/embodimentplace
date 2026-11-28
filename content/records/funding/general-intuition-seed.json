@@ -1,0 +1,28 @@
+{
+  "id": 3603,
+  "type": "funding",
+  "slug": "general-intuition-seed",
+  "name": "General Intuition Seed",
+  "summary": "Raised $134m in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-10-16",
+      "src": "https://www.pocketgamer.biz/general-intuition-raises-134m-to-train-ai-agents-using-gameplay-videos/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.pocketgamer.biz/general-intuition-raises-134m-to-train-ai-agents-using-gameplay-videos/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 134,
+      "src": "https://www.pocketgamer.biz/general-intuition-raises-134m-to-train-ai-agents-using-gameplay-videos/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-10-16"
+}

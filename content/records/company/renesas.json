@@ -1,0 +1,52 @@
+{
+  "id": 1097,
+  "type": "company",
+  "slug": "renesas",
+  "name": "Renesas",
+  "summary": "Renesas is an embedded semiconductor solution provider driven by its Purpose “To Make Our Lives Easier.” As a leader in embedded processing, analog, mixed-signal and power solutions, we combine our…",
+  "body": "Renesas is a global company providing high-performance semiconductors and embedded solutions enabling innovation in automotive, industrial, and connected technologies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute",
+        "Supplier"
+      ],
+      "src": "https://www.renesas.com/en",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.renesas.com/"
+    },
+    "image": {
+      "v": "/logos/renesas.png",
+      "fit": "contain",
+      "src": "https://www.renesas.com/themes/kachow/src/components/common/images/renesas-logo-blue.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Koto-ku, Toyosu",
+      "src": "https://jp.linkedin.com/company/renesas",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/renesas",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "TOYOSU FORESIA, 3-2-24, Koto-ku, Toyosu, Tokyo 135-0061, Japan",
+          "lat": 35.652646,
+          "lon": 139.799351,
+          "src": "https://jp.linkedin.com/company/renesas"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

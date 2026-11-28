@@ -1,0 +1,43 @@
+{
+  "id": 1289,
+  "type": "company",
+  "slug": "arizona-state-university",
+  "name": "Arizona State University",
+  "summary": "Public university in Tempe, Arizona, US.",
+  "body": "Recent robotics work includes “Service robots in healthcare: Toward a healthcare service robot acceptance model (sRAM)”. OpenAlex lists 179 robotics, humanoid, embodied-AI or manipulation papers from Arizona State University since January 2025.",
+  "data": {
+    "roles": {
+      "v": "University"
+    },
+    "website": {
+      "v": "https://www.asu.edu/"
+    },
+    "image": {
+      "v": "/logos/arizona-state-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arizona_State_University_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tempe",
+      "src": "https://www.wikidata.org/wiki/Q670897",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": "[object Object]"
+    },
+    "rank_csr": {
+      "v": 25.5,
+      "faculty": 14,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

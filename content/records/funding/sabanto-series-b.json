@@ -1,0 +1,23 @@
+{
+  "id": 3881,
+  "type": "funding",
+  "slug": "sabanto-series-b",
+  "name": "Sabanto Series B",
+  "summary": "Closed a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-07-14",
+      "src": "https://www.prnewswire.com/news-releases/sabanto-and-leaps-by-bayer-announce-oversubscribed-series-b-financing-to-scale-autonomous-technology-for-row-crop-farming-302824458.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.prnewswire.com/news-releases/sabanto-and-leaps-by-bayer-announce-oversubscribed-series-b-financing-to-scale-autonomous-technology-for-row-crop-farming-302824458.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-07-14"
+}

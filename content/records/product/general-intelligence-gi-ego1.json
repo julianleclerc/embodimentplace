@@ -1,0 +1,28 @@
+{
+  "id": 3426,
+  "type": "product",
+  "slug": "general-intelligence-gi-ego1",
+  "name": "General Intelligence GI Ego1",
+  "summary": "GI Ego1, a teleoperation and data-capture system from General Intelligence Labs.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/general-intelligence-gi-ego1.webp",
+      "src": "https://www.gilabs.xyz/products/ego1",
+      "orig": "https://www.gilabs.xyz/products/ego1/light/hero-three-quarter.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Teleoperation",
+      "src": "https://www.gilabs.xyz/products/ego1",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.gilabs.xyz/products/ego1"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 2138,
+  "type": "lab",
+  "slug": "existential-robotics-lab",
+  "name": "Existential Robotics Lab",
+  "summary": "Mapping, planning and learning for autonomous robots.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Perception",
+        "Planning"
+      ],
+      "src": "https://existentialrobotics.org/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://existentialrobotics.org/",
+      "src": "https://existentialrobotics.org/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Nikolay Atanasov",
+      "src": "https://existentialrobotics.org/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1114,
+  "type": "company",
+  "slug": "twinny",
+  "name": "Twinny",
+  "summary": "Korean maker of autonomous mobile robots for logistics and factory automation.",
+  "body": "Headquartered in Daejeon, South Korea.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://twinny.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://twinny.ai/"
+    },
+    "image": {
+      "v": "/logos/twinny.png",
+      "fit": "contain",
+      "src": "https://twinny.ai/assets/img/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Daejeon",
+      "src": "https://twinny.ai/en/contact",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://twinny.ai/en/contact",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "90 Gajeongbuk-ro, Yuseong-gu, Daejeon, South Korea",
+          "lat": 36.391886,
+          "lon": 127.361863,
+          "src": "https://twinny.ai/en/contact"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

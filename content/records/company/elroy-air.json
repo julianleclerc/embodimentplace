@@ -1,0 +1,51 @@
+{
+  "id": 1650,
+  "type": "company",
+  "slug": "elroy-air",
+  "name": "Elroy Air",
+  "summary": "US developer of autonomous heavy-cargo drones for defence, rapid response and commercial logistics.",
+  "body": "Elroy Air is a U.S.-based technology company redefining how critical cargo moves. Chaparral, our autonomous heavy-cargo drone, was designed for the missions that can't wait — defense resupply, commercial logistics, and rapid response.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1033-elroy-air",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://elroyair.com/"
+    },
+    "image": {
+      "v": "/logos/elroy-air.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/78c113171a18810c1c3e.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Byron",
+      "src": "https://www.linkedin.com/company/elroy-air",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/elroy-air",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "440 Eagle Ct, Byron, California 94514, United States",
+          "lat": 37.867148,
+          "lon": -121.638006,
+          "src": "https://www.linkedin.com/company/elroy-air"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

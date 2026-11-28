@@ -1,0 +1,51 @@
+{
+  "id": 1183,
+  "type": "company",
+  "slug": "furhat-robotics",
+  "name": "Furhat Robotics",
+  "summary": "Furhat Robotics is robotics startup building social humanoid robots for research and innovation.",
+  "body": "Furhat Robotics is a humanoid robotics and conversational AI company, building the next generation of humanoid social robots with with human-level conversational and social skills.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.furhatrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.furhatrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/furhat-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/66b323f041094f01cd836ea9/6735408e85046c471d33e6b5_furhat_favicon2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Stockholm",
+      "src": "https://se.linkedin.com/company/furhat-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Sweden",
+      "src": "https://se.linkedin.com/company/furhat-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Torsgatan 39, Stockholm, Stockholm County 11362, Sweden",
+          "lat": 59.34028,
+          "lon": 18.038356,
+          "src": "https://se.linkedin.com/company/furhat-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

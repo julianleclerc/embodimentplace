@@ -1,0 +1,28 @@
+{
+  "id": 2916,
+  "type": "post",
+  "slug": "arx-robotics-links-ugv-to-british-armys-asgard-targeting-network",
+  "name": "ARX Robotics links UGV to British Army’s ASGARD targeting network",
+  "summary": "The integration sent vehicle-generated sensor data into ASGARD, helping to make the Army’s targeting process 10 times faster.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-25"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "msn.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.msn.com/en-us/news/other/arx-robotics-links-ugv-to-british-army-s-asgard-targeting-network/ar-AA2iekXB"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-25"
+}

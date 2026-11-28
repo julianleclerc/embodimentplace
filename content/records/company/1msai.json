@@ -1,0 +1,52 @@
+{
+  "id": 1407,
+  "type": "company",
+  "slug": "1msai",
+  "name": "1ms.ai",
+  "summary": "Open-source AI platform for robotics, dedicated to making advanced tools accessible to anyone.",
+  "body": "They develop dora-rs, a robotics development framework, alongside wonnx and OpenArm projects. The company partners with leading institutions including BAAI in Beijing, Hugging Face in Paris, and CentraleSupélec in Saclay.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/19-1ms-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://1ms.ai/"
+    },
+    "image": {
+      "v": "/logos/1msai.png",
+      "fit": "contain",
+      "src": "https://1ms.ai/img/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Paris",
+      "src": "https://roboticsconnected.com/companies/19-1ms-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://roboticsconnected.com/companies/19-1ms-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Paris, France",
+          "lat": 48.853495,
+          "lon": 2.348391,
+          "src": "https://roboticsconnected.com/companies/19-1ms-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

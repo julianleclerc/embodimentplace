@@ -1,0 +1,51 @@
+{
+  "id": 1933,
+  "type": "company",
+  "slug": "plaif",
+  "name": "PLAIF",
+  "summary": "Builds AI-powered dual-arm robots that solve assembly and fastening tasks on production lines, a stage of automation that has resisted conventional robotics.",
+  "body": "PLAiF | Planning AI for a Better World 🚀 We create a better world by bringing Physical AI to the Physical World.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3259-plaif",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://plaif.com/"
+    },
+    "image": {
+      "v": "/logos/plaif.png",
+      "fit": "contain",
+      "src": "https://cdn.imweb.me/thumbnail/20241204/7ffe782f15d37.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seongnam-si",
+      "src": "https://roboticsconnected.com/companies/3259-plaif",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://roboticsconnected.com/companies/3259-plaif",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seongnam-si, South Korea",
+          "lat": 37.420156,
+          "lon": 127.126209,
+          "src": "https://roboticsconnected.com/companies/3259-plaif"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1429,
+  "type": "company",
+  "slug": "robosoft",
+  "name": "Robosoft",
+  "summary": "C++ state machine library for ROS2 applications.",
+  "body": "The company provides SMACC2 Runtime Analyzer (RTA) for visualizing and debugging state machines in robotics applications, with support for both ROS1 and ROS2. They also offer engineering services supporting the SMACC toolchain.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/73-robosoft",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robosoft.ai/"
+    },
+    "image": {
+      "v": "/logos/robosoft.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d1f6d12bfd71222ada05.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Thousand Oaks",
+      "src": "https://roboticsconnected.com/companies/73-robosoft",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/73-robosoft",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Thousand Oaks, United States",
+          "lat": 34.170561,
+          "lon": -118.837594,
+          "src": "https://roboticsconnected.com/companies/73-robosoft"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

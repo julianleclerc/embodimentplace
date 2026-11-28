@@ -1,0 +1,52 @@
+{
+  "id": 1795,
+  "type": "company",
+  "slug": "fenka-robotics",
+  "name": "FENKA Robotics",
+  "summary": "Berlin-based full-service robotics integrator that deploys autonomous service robots to address the skilled labour shortage in the service industry.",
+  "body": "FENKA Robotics widmet sich dem Kampf gegen den Fachkräftemangel in der Serviceindustrie mithilfe des Einsatzes von innovativen Robotiklösungen. Im Bereich der professionellen Gebäudereinigung bieten wir herstellerunabhängig und mit umfänglichen Serviceangebot überzeugende Lösungen für Ihre individuellen Bedürfnisse.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1971-fenka-robotics-gmbh",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fenka.de/"
+    },
+    "image": {
+      "v": "/logos/fenka-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/952464946651975959f9.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Berlin",
+      "src": "https://de.linkedin.com/company/fenkarobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/fenkarobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Herderstraße 15, Berlin, BE 10625, Germany",
+          "lat": 52.510335,
+          "lon": 13.316679,
+          "src": "https://de.linkedin.com/company/fenkarobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

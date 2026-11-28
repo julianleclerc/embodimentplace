@@ -1,0 +1,51 @@
+{
+  "id": 1762,
+  "type": "company",
+  "slug": "bow-robotics",
+  "name": "Bow Robotics",
+  "summary": "Based in West Chester, Ohio, is a robot repair and robotics services provider.",
+  "body": "Bow Robotics (formerly Bow Automation, LLC) is a top tier parts, service and repair company specializing in ABB robotic systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1730-bow-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bowrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/bow-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/03132d0f832cb120d4be.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "West Chester",
+      "src": "https://www.linkedin.com/company/bowrobotic",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/bowrobotic",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "9914 Crescent Park Dr, West Chester, Ohio 45069, United States",
+          "lat": 39.305357,
+          "lon": -84.420001,
+          "src": "https://www.linkedin.com/company/bowrobotic"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

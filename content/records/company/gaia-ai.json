@@ -1,0 +1,51 @@
+{
+  "id": 1843,
+  "type": "company",
+  "slug": "gaia-ai",
+  "name": "Gaia AI",
+  "summary": "Builds AI-powered forest data tools that combine sensor technology with perception AI.",
+  "body": "Its backpack-mounted data collection system, paired with a mobile app and web platform, lets foresters run digital check cruises with objective, real-time metrics. The company serves forest managers, consulting foresters, government land managers such as USFS regions, and carbon project developers.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2337-gaia-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.gaia-ai.eco/"
+    },
+    "image": {
+      "v": "/logos/gaia-ai.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/637c9717dbf1e3678d92683b/67bc430a9fc4e91319c563b6_Touch%20Icon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Somerville",
+      "src": "https://roboticsconnected.com/companies/2337-gaia-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2337-gaia-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Somerville, United States",
+          "lat": 42.387597,
+          "lon": -71.099497,
+          "src": "https://roboticsconnected.com/companies/2337-gaia-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

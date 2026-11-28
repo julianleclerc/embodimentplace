@@ -1,0 +1,51 @@
+{
+  "id": 1831,
+  "type": "company",
+  "slug": "ubica-robotics",
+  "name": "Ubica Robotics",
+  "summary": "Builds autonomous scan robots that create a digital twin of brick-and-mortar retail stores.",
+  "body": "Helping retailers see, understand, and optimize their stores - through autonomous robots creating digital twins for smater decisions. As Spin-Off from a EU Reseach Project we develop, produce and sell autonomous robots for generating digital twins of brick-and-mortar retail stores.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2140-ubica-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ubica-robotics.eu/"
+    },
+    "image": {
+      "v": "/logos/ubica-robotics.png",
+      "fit": "contain",
+      "src": "https://ubica-robotics.eu/wp-content/uploads/2022/08/fav-logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bremen",
+      "src": "https://de.linkedin.com/company/ubica-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/ubica-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Konsul-Smidt-Str. 20, Bremen, 28217, Germany",
+          "lat": 53.090425,
+          "lon": 8.773854,
+          "src": "https://de.linkedin.com/company/ubica-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

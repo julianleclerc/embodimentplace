@@ -1,0 +1,23 @@
+{
+  "id": 3932,
+  "type": "funding",
+  "slug": "auterion-funding-round-2018-09",
+  "name": "Auterion funding round (2018-09)",
+  "summary": "Raised $10 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2018-09-04",
+      "src": "https://venturebeat.com/entrepreneur/auterion-raises-10-million-for-open-source-drone-operating-system/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 10,
+      "src": "https://venturebeat.com/entrepreneur/auterion-raises-10-million-for-open-source-drone-operating-system/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2018-09-04"
+}

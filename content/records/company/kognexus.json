@@ -1,0 +1,51 @@
+{
+  "id": 1540,
+  "type": "company",
+  "slug": "kognexus",
+  "name": "Kognexus",
+  "summary": "Builds high-performance motion system platforms for robotics companies.",
+  "body": "The company develops resilient actuators and drives designed to simplify and accelerate robot development from prototype to production scale. The system integrates motors, drives, sensors, encoders, brakes, and control electronics into a cohesive architecture.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/287-kognexus",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://kognexus.com/"
+    },
+    "image": {
+      "v": "/logos/kognexus.png",
+      "fit": "contain",
+      "src": "https://kognexus.com/logos/light_up42|airbus.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://roboticsconnected.com/companies/287-kognexus",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/287-kognexus",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://roboticsconnected.com/companies/287-kognexus"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

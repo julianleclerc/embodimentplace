@@ -1,0 +1,51 @@
+{
+  "id": 1060,
+  "type": "company",
+  "slug": "verve-motion",
+  "name": "Verve Motion",
+  "summary": "Wearable robotics for hardworking humans: Verve Motion's SafeLift exosuit is a lightweight, one-size fits most wearable robotic backpack, that powers and protects workers doing the heavy lifting, by…",
+  "body": "Verve Motion's SafeLift™ exosuit is a wearable robot helps prevent injuries for workers engaged in repetitive lifting to support a safe and productive workforce.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://vervemotion.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vervemotion.com/"
+    },
+    "image": {
+      "v": "/logos/verve-motion.png",
+      "fit": "contain",
+      "src": "https://vervemotion.com/wp-content/uploads/2025/02/Pasted-Graphic-24.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cambridge",
+      "src": "https://www.linkedin.com/company/verve-motion",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/verve-motion",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "9 Camp Street, Cambridge, MA 02140, United States",
+          "lat": 42.398616,
+          "lon": -71.130228,
+          "src": "https://www.linkedin.com/company/verve-motion"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

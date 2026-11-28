@@ -1,0 +1,51 @@
+{
+  "id": 1511,
+  "type": "company",
+  "slug": "tinymobilerobots",
+  "name": "TinyMobileRobots",
+  "summary": "Develops autonomous mobile robots for sports field line marking and infrastructure surveying.",
+  "body": "At TinyMobileRobots, we develop and manufacture precision line marking robots. Today, our machines are deployed and operating across the globe.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/227-tinymobilerobots",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://tinymobilerobots.com/"
+    },
+    "image": {
+      "v": "/logos/tinymobilerobots.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/2cbd3a53a3b896c93bc6.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Malling",
+      "src": "https://dk.linkedin.com/company/tinymobilerobots",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/tinymobilerobots",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Sofienlystvej 9, Malling, Midtjylland 8340, Denmark",
+          "lat": 56.041694,
+          "lon": 10.192219,
+          "src": "https://dk.linkedin.com/company/tinymobilerobots"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

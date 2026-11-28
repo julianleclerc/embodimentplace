@@ -1,0 +1,52 @@
+{
+  "id": 1444,
+  "type": "company",
+  "slug": "arix-technologies",
+  "name": "ARIX Technologies",
+  "summary": "Develops proprietary pipe-crawling robots for Corrosion Under Insulation (CUI) detection in oil and gas infrastructure.",
+  "body": "ARIX replaces sampling-based inspection with full-circuit robotic inspection delivered as a managed service.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/111-arix-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.arix-tech.com/"
+    },
+    "image": {
+      "v": "/logos/arix-technologies.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/0c4038bda26b00c461a4.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Houston",
+      "src": "https://roboticsconnected.com/companies/111-arix-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/111-arix-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Houston, United States",
+          "lat": 29.758938,
+          "lon": -95.367697,
+          "src": "https://roboticsconnected.com/companies/111-arix-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

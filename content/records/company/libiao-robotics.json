@@ -1,0 +1,51 @@
+{
+  "id": 1755,
+  "type": "company",
+  "slug": "libiao-robotics",
+  "name": "LIBIAO ROBOTICS",
+  "summary": "Builds intelligent sorting robots and flexible sorting systems for logistics.",
+  "body": "Robot sorting solution innovator, Zhejiang LiBiao Robot Co., Ltd. (hereinafter referred to as \"Libiao\") creates the world's first portable, modular, automated unit sorting system. We seek to integrate logistics automation with R&D, production and sales of intelligent equipment.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1650-libiao-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://libiaorobot.com/"
+    },
+    "image": {
+      "v": "/logos/libiao-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/011c435a02b140595b25.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hangzhou",
+      "src": "https://cn.linkedin.com/company/libiaorobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/libiaorobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "No.96 Changda Rd, Linping District, Hangzhou, Zhejiang 310000, China",
+          "lat": 30.421705,
+          "lon": 120.294653,
+          "src": "https://cn.linkedin.com/company/libiaorobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1073,
+  "type": "company",
+  "slug": "micro1",
+  "name": "Micro1",
+  "summary": "Data lab building real-world RL environments and expert human data to train models and agents.",
+  "body": "We're building the infrastructure for advancing intelligence through expert human data, real-world training environments, and contextual evaluations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.micro1.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.micro1.ai/"
+    },
+    "image": {
+      "v": "/logos/micro1.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6a04bd23eb9d40f76dac1249/6a04bd23eb9d40f76dac1ebd_favicon%20(1).png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco Bay Area",
+      "src": "https://www.linkedin.com/company/micro1",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/micro1",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco Bay Area, CA, United States",
+          "lat": 37.788497,
+          "lon": -122.355847,
+          "src": "https://www.linkedin.com/company/micro1"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

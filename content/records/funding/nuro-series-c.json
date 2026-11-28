@@ -1,0 +1,23 @@
+{
+  "id": 3645,
+  "type": "funding",
+  "slug": "nuro-series-c",
+  "name": "Nuro Series C",
+  "summary": "Closed a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2021-03-24",
+      "src": "https://www.streetinsider.com/Business+Wire/Nuro+Announces+New+Investors+in+Series+C+Financing/18173894.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://www.streetinsider.com/Business+Wire/Nuro+Announces+New+Investors+in+Series+C+Financing/18173894.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2021-03-24"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1174,
+  "type": "company",
+  "slug": "mecademic",
+  "name": "Mecademic",
+  "summary": "Mecademic is a game changer for companies and institutions executing Industry 4.0 strategies.",
+  "body": "Our industrial robots boost productivity, reduce costs and improve the quality of our customers’ products and operations. We optimize quality and reduce costs by helping our customers automate their operations requiring precision tasks and delicate manipulations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://mecademic.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mecademic.com/"
+    },
+    "image": {
+      "v": "/logos/mecademic.png",
+      "fit": "contain",
+      "src": "https://mecademic.com/wp-content/uploads/2024/04/cropped-mecalogo-black.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Montreal",
+      "src": "https://ca.linkedin.com/company/mecademic",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/mecademic",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1300 Rue St-Patrick, Montreal, Quebec H3K 1A4, Canada",
+          "lat": 45.488322,
+          "lon": -73.557621,
+          "src": "https://ca.linkedin.com/company/mecademic"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

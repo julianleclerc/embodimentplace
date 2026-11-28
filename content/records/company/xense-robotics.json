@@ -1,0 +1,51 @@
+{
+  "id": 1011,
+  "type": "company",
+  "slug": "xense-robotics",
+  "name": "Xense Robotics",
+  "summary": "Xense Robotics builds a complete haptic perception technology ecosystem based on its core technologies, supported by high-precision sensing, intelligent algorithms, and simulation verification, to…",
+  "body": "Xense Robotics builds a complete haptic perception technology ecosystem based on its core technologies, supported by high-precision sensing, intelligent algorithms, and simulation verification, to empower the robotics and intelligent manufacturing industries.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://xenserobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://xenserobotics.com/"
+    },
+    "image": {
+      "v": "/logos/xense-robotics.png",
+      "fit": "contain",
+      "src": "https://xenserobotics.com/static/index/en/images/logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "上海",
+      "src": "https://cn.linkedin.com/company/xense-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/xense-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "闵行区, 上海, China",
+          "lat": 31.114767,
+          "lon": 121.376943,
+          "src": "https://cn.linkedin.com/company/xense-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1497,
+  "type": "company",
+  "slug": "recycleye",
+  "name": "Recycleye",
+  "summary": "Develops AI-powered robotic sorting systems for waste management.",
+  "body": "The company combines computer vision, machine learning and robotics to enable automated waste sorting with greater accuracy than manual picking. Its main products are QualiBot®, a computer vision-powered 6-axis robotic arm, and QuantiSort® 2.0, an optical sorter for processing waste streams.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/207-recycleye",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://recycleye.com/"
+    },
+    "image": {
+      "v": "/logos/recycleye.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/927a228ce25baf35c7c7.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/207-recycleye",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/207-recycleye",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/207-recycleye"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

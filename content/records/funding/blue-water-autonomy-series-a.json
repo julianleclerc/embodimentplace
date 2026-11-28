@@ -1,0 +1,28 @@
+{
+  "id": 3868,
+  "type": "funding",
+  "slug": "blue-water-autonomy-series-a",
+  "name": "Blue Water Autonomy Series A",
+  "summary": "Raised $50 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-08-25",
+      "src": "https://pulse2.com/blue-water-autonomy-50-million-series-a-raised-to-propel-u-s-maritime-innovation/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://pulse2.com/blue-water-autonomy-50-million-series-a-raised-to-propel-u-s-maritime-innovation/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 50,
+      "src": "https://pulse2.com/blue-water-autonomy-50-million-series-a-raised-to-propel-u-s-maritime-innovation/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-08-25"
+}

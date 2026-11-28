@@ -1,0 +1,28 @@
+{
+  "id": 3937,
+  "type": "funding",
+  "slug": "augmentus-series-a",
+  "name": "Augmentus Series A",
+  "summary": "Raised USD 5M in a Series A round, led by Sierra Ventures.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-11-13",
+      "src": "https://www.prnewswire.com/news-releases/augmentus-raises-oversubscribed-usd-5m-series-a-round-to-bring-no-code-robotics-to-the-world-301984601.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.prnewswire.com/news-releases/augmentus-raises-oversubscribed-usd-5m-series-a-round-to-bring-no-code-robotics-to-the-world-301984601.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 5,
+      "src": "https://www.prnewswire.com/news-releases/augmentus-raises-oversubscribed-usd-5m-series-a-round-to-bring-no-code-robotics-to-the-world-301984601.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-11-13"
+}

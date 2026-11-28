@@ -1,0 +1,52 @@
+{
+  "id": 1995,
+  "type": "company",
+  "slug": "sunrise-robotics",
+  "name": "Sunrise Robotics",
+  "summary": "Modular dual-arm robotic cells trained in simulation for high-mix manufacturing.",
+  "body": "Sunrise Robotics revolutionizes manufacturing with intelligent, autonomous robotic cells that enhance flexibility, scalability, and efficiency.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://tech.eu/2025/06/13/sunrise-robotics-emerges-from-stealth-with-85m-to-democratise-factory-automation/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://sunriserobotics.co/"
+    },
+    "image": {
+      "v": "/logos/sunrise-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/67e67a3943ac99a246534eba/67e688b6ec2228c421d9d326_webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ljubljana",
+      "src": "https://fortune.com/2025/06/13/sunrise-robotics-seed-funding-8-5-million-plural-industrial-robots/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Slovenia",
+      "src": "https://fortune.com/2025/06/13/sunrise-robotics-seed-funding-8-5-million-plural-industrial-robots/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ljubljana, Slovenia",
+          "lat": 46.050027,
+          "lon": 14.506929,
+          "src": "https://fortune.com/2025/06/13/sunrise-robotics-seed-funding-8-5-million-plural-industrial-robots/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

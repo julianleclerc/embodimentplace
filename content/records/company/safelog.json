@@ -1,0 +1,51 @@
+{
+  "id": 1016,
+  "type": "company",
+  "slug": "safelog",
+  "name": "SAFELOG",
+  "summary": "Since 1996, we have been passionately working on the development and intelligent linking of innovative logistics systems.",
+  "body": "Starting with our first patent for a pick-by-light solution, which we have been continuously developing for over 25 years now, we have established ourselves on the market with various products in the field of intralogistics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.safelog.de/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.safelog.de/"
+    },
+    "image": {
+      "v": "/logos/safelog.png",
+      "fit": "contain",
+      "src": "https://www.safelog.de/wp-content/uploads/2023/08/cropped-SAFELOG_Icon_512x512-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Markt Schwaben",
+      "src": "https://de.linkedin.com/company/safelog-gmbh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/safelog-gmbh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Henleinstr. 4, Markt Schwaben, Bavaria 85570, Germany",
+          "lat": 48.193459,
+          "lon": 11.852148,
+          "src": "https://de.linkedin.com/company/safelog-gmbh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

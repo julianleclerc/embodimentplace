@@ -1,0 +1,53 @@
+{
+  "id": 1799,
+  "type": "company",
+  "slug": "analog",
+  "name": "Analog",
+  "summary": "Builds Ana, a neural agent designed to sense spaces, remember context and direct robots, alongside Hive, a control platform for deploying physical intelligence in busy…",
+  "body": "Analog is a company born from the belief that intelligence belongs in the real world. The company is building a living fabric of physical intelligence that connects people, places, and things into one continuously learning and self-reinforcing world model.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Model lab"
+      ],
+      "src": "https://roboticsconnected.com/companies/1993-analog",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://analog.io/"
+    },
+    "image": {
+      "v": "/logos/analog.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/f742e651a9c163de83f1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Abu Dhabi",
+      "src": "https://roboticsconnected.com/companies/1993-analog",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Arab Emirates",
+      "src": "https://roboticsconnected.com/companies/1993-analog",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Abu Dhabi, United Arab Emirates",
+          "lat": 24.453835,
+          "lon": 54.377401,
+          "src": "https://roboticsconnected.com/companies/1993-analog"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

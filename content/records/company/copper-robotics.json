@@ -1,0 +1,52 @@
+{
+  "id": 1586,
+  "type": "company",
+  "slug": "copper-robotics",
+  "name": "Copper Robotics",
+  "summary": "Develops Copper, a Rust-based open-source operating system for physical AI and autonomous robots.",
+  "body": "Empowering Creators to Bring up the Next Breed of Smart Robots",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/673-copper-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.copper-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/copper-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/ff3cea928467d4d58211.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://roboticsconnected.com/companies/673-copper-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/673-copper-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, United States",
+          "lat": 30.264926,
+          "lon": -97.747409,
+          "src": "https://roboticsconnected.com/companies/673-copper-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

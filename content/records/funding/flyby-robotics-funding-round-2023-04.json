@@ -1,0 +1,23 @@
+{
+  "id": 3829,
+  "type": "funding",
+  "slug": "flyby-robotics-funding-round-2023-04",
+  "name": "Flyby Robotics funding round (2023-04)",
+  "summary": "Raised $4M, led by Mac Venture Capital.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-04-07",
+      "src": "https://www.qsrmagazine.com/news/flyby-robotics-secures-4m-funding/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 4,
+      "src": "https://www.qsrmagazine.com/news/flyby-robotics-secures-4m-funding/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-04-07"
+}

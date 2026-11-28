@@ -1,0 +1,23 @@
+{
+  "id": 3427,
+  "type": "product",
+  "slug": "gento-marvin-pro",
+  "name": "GENTO Marvin Pro",
+  "summary": "Marvin Pro, a robot from GENTO Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/gento-marvin-pro.webp",
+      "src": "https://gentorobotics.ai/products/marvin-pro/",
+      "orig": "https://gentorobotics.ai/wp-content/uploads/tmp/webp/products/5594fd1188d5658bad73ca8eab7b72a4.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gentorobotics.ai/products/marvin-pro/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

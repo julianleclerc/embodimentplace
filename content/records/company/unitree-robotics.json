@@ -8,10 +8,18 @@
   "data": {
     "roles": {
       "v": [
-        "Robot maker"
+        "Robot maker",
+        "Supplier"
       ],
       "src": "https://www.unitree.com/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Supplier",
+          "src": "https://www.unitree.com/",
+          "asof": "2026-11"
+        }
+      ]
     },
     "country": {
       "v": "China",
@@ -63,6 +71,6 @@
     }
   },
   "created": "2026-11-16 21:16:16",
-  "updated": "2026-11-17 16:05:00",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": "2026-11-16"
 }

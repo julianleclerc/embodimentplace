@@ -1,0 +1,51 @@
+{
+  "id": 1660,
+  "type": "company",
+  "slug": "farmdroid",
+  "name": "FarmDroid",
+  "summary": "Danish maker of autonomous, solar-powered field robots that seed and weed row crops.",
+  "body": "FarmDroid is the world’s first fully automatic robot that can take care of both sowing and weeding. With FarmDroid we help farmers and plant breeders reduce their costs of manual labor, and since the robot runs wholly on solar power, we even do it in a CO2-neutral and ecological way.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1067-farmdroid",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://farmdroid.com/"
+    },
+    "image": {
+      "v": "/logos/farmdroid.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d5de21318d07a0b2df47.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Vejen",
+      "src": "https://dk.linkedin.com/company/farmdroid",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/farmdroid",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Industrisvinget 5, Vejen, Syddanmark 6600, Denmark",
+          "lat": 55.472247,
+          "lon": 9.1654,
+          "src": "https://dk.linkedin.com/company/farmdroid"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

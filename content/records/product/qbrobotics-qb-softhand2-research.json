@@ -1,0 +1,23 @@
+{
+  "id": 3456,
+  "type": "product",
+  "slug": "qbrobotics-qb-softhand2-research",
+  "name": "qbrobotics qb SoftHand2 Research",
+  "summary": "The qb SoftHand2 Research is the stronger, smarter and more versatile evolution of qb SoftHand Research. Discover more.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/qbrobotics-qb-softhand2-research.webp",
+      "src": "https://qbrobotics.com/product/qb-softhand-2-research/",
+      "orig": "https://qbrobotics.com/wp-content/uploads/2022/05/Pulsante_w.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://qbrobotics.com/product/qb-softhand-2-research/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

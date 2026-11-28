@@ -1,0 +1,52 @@
+{
+  "id": 1050,
+  "type": "company",
+  "slug": "ocado-technology",
+  "name": "Ocado Technology",
+  "summary": "We’re Ocado Group - a global, technology business redefining ecommerce, fulfilment and logistics in online grocery and distribution industries.",
+  "body": "Our cutting-edge, proprietary technology spanning AI, Robotics, Data Science, Cloud and more, enables our partners and customers to win in their markets, develop a competitive advantage and offer an unparalleled customer proposition.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://www.ocadogroup.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ocadogroup.com/"
+    },
+    "image": {
+      "v": "/logos/ocado-technology.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/667974bf1bf45146cf81ef19/6a2aa581385ee9c88e3312e9_Ocado-Group-new-logo-favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hatfield",
+      "src": "https://uk.linkedin.com/company/ocadogroup",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/ocadogroup",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Building 1 & 2, Trident Place, Hatfield, Hertfordshire AL10 9UL, United Kingdom",
+          "lat": 51.768079,
+          "lon": -0.237147,
+          "src": "https://uk.linkedin.com/company/ocadogroup"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

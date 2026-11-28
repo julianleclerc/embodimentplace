@@ -1,0 +1,52 @@
+{
+  "id": 1973,
+  "type": "company",
+  "slug": "april-robotics",
+  "name": "April Robotics",
+  "summary": "Zurich-based startup teaching robots fine manipulation by recording skilled human hand work.",
+  "body": "April Robotics is pioneering human-to-robot skill transfer for dexterous manipulation. Our foundation models learn dexterity directly from human demonstrations and turn it into deployable robot skill, making intricate manufacturing work both achievable and affordable.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/4400-april-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.aprilrobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/april-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6ace9e4282a9724bd7ff202b/6acfa0d4784dec695ebd5831_april-icon-512.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zürich",
+      "src": "https://ch.linkedin.com/company/april-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/april-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Löwenstrasse 12, Zürich, 8001, Switzerland",
+          "lat": 47.373576,
+          "lon": 8.535168,
+          "src": "https://ch.linkedin.com/company/april-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

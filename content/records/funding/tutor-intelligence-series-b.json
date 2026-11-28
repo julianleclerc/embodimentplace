@@ -1,0 +1,28 @@
+{
+  "id": 3481,
+  "type": "funding",
+  "slug": "tutor-intelligence-series-b",
+  "name": "Tutor Intelligence Series B",
+  "summary": "Raised $75 million in a Series B round, led by Andreessen Horowitz.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-02",
+      "src": "https://finance.yahoo.com/technology/ai/articles/tutor-intelligence-raises-75-million-160000524.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://finance.yahoo.com/technology/ai/articles/tutor-intelligence-raises-75-million-160000524.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 75,
+      "src": "https://finance.yahoo.com/technology/ai/articles/tutor-intelligence-raises-75-million-160000524.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-02"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 960,
+  "type": "company",
+  "slug": "cyan-robotics",
+  "name": "Cyan Robotics",
+  "summary": "Two-legged character robots: the Orca I humanoid and the 80 cm plush-covered Amoo, plus the Dino OS software that runs them.",
+  "body": "Headquartered in Shanghai, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.cyanborg.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.cyanborg.com/"
+    },
+    "image": {
+      "v": "/logos/cyan-robotics.png",
+      "fit": "contain",
+      "src": "https://www.cyanborg.com/logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

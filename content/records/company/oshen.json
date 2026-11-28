@@ -1,0 +1,52 @@
+{
+  "id": 1491,
+  "type": "company",
+  "slug": "oshen",
+  "name": "Oshen",
+  "summary": "Develops C-Star, a metre-long autonomous unmanned surface vessel powered by wind and solar energy for ocean monitoring and marine data collection.",
+  "body": "Founded in 2022 by Imperial College engineers Anahita Laverack and Ciaran Dowds, the Plymouth-based company builds self-orchestrating robotic swarms that operate at sea for over six months, gathering meteorological and acoustic data via satellite links. Oshen serves government and research customers including NOAA, the Royal Navy and the UK Met Office.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/198-oshen",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://oshendata.com/"
+    },
+    "image": {
+      "v": "/logos/oshen.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/f717d0cdee6a22efad91.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Plymouth",
+      "src": "https://roboticsconnected.com/companies/198-oshen",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/198-oshen",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Plymouth, United Kingdom",
+          "lat": 50.371392,
+          "lon": -4.142455,
+          "src": "https://roboticsconnected.com/companies/198-oshen"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

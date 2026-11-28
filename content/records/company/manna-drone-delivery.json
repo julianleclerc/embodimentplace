@@ -1,0 +1,52 @@
+{
+  "id": 1665,
+  "type": "company",
+  "slug": "manna-drone-delivery",
+  "name": "Manna Drone Delivery",
+  "summary": "Irish-founded autonomous drone delivery company that flies food, groceries, medicine and everyday essentials directly to customers' gardens.",
+  "body": "Its drones and flight software are designed and built in Dublin, and each delivery is lowered on a tether in about three minutes. Manna runs a mesh network of small bases linked by short hops, with one pilot able to supervise several aircraft through its Manna OS platform.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1090-manna-drone-delivery",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.manna.aero/"
+    },
+    "image": {
+      "v": "/logos/manna-drone-delivery.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/41c3def658ae8b3f2689.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dublin",
+      "src": "https://roboticsconnected.com/companies/1090-manna-drone-delivery",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Ireland",
+      "src": "https://roboticsconnected.com/companies/1090-manna-drone-delivery",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Dublin, Ireland",
+          "lat": 53.349379,
+          "lon": -6.260559,
+          "src": "https://roboticsconnected.com/companies/1090-manna-drone-delivery"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

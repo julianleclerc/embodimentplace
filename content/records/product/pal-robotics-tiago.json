@@ -20,9 +20,16 @@
       "v": 3,
       "src": "https://pal-robotics.com/robot/tiago/",
       "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/pal-robotics-tiago.webp",
+      "src": "https://pal-robotics.com/robot/tiago/",
+      "orig": "https://pal-robotics.com/wp-content/uploads/2024/04/TIAGo-Robot.webp",
+      "fit": "contain",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-24 06:05:09",
+  "updated": "2026-11-28 03:05:16",
   "feed_at": "2026-11-22"
 }

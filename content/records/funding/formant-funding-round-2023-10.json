@@ -1,0 +1,23 @@
+{
+  "id": 3911,
+  "type": "funding",
+  "slug": "formant-funding-round-2023-10",
+  "name": "Formant funding round (2023-10)",
+  "summary": "Raised $21 million, led by BMW i Ventures.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-10-17",
+      "src": "https://pulse2.com/formant-21-million-funding/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 21,
+      "src": "https://pulse2.com/formant-21-million-funding/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-10-17"
+}

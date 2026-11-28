@@ -1,0 +1,45 @@
+{
+  "id": 1146,
+  "type": "company",
+  "slug": "agrobot",
+  "name": "Agrobot",
+  "summary": "Agrobot is a company engaged in the business of agricultural robots.",
+  "body": "Working along with global leading farmers, the Agrobot has successfully developed the first robot for gently harvest strawberries, no matter where and how they are grown.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.agrobot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.agrobot.com/"
+    },
+    "city": {
+      "v": "La Palma del Condado",
+      "src": "https://es.linkedin.com/company/agrobot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Spain",
+      "src": "https://es.linkedin.com/company/agrobot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Calle Bodega Soriano N11, La Palma del Condado, Huelva 21700, Spain",
+          "lat": 37.363077,
+          "lon": -6.545498,
+          "src": "https://es.linkedin.com/company/agrobot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

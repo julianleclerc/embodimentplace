@@ -1,0 +1,52 @@
+{
+  "id": 1636,
+  "type": "company",
+  "slug": "huayan-robotics",
+  "name": "Huayan Robotics",
+  "summary": "Shenzhen-based maker of collaborative robots, listed on the Hong Kong Stock Exchange (1021.HK).",
+  "body": "Huayan Robotics, formerly known as Han’s Robot, originated from Han’s Laser. To embark on a new journey of global expansion, the company officially rebranded as \"Huayan Robotics\" in 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/993-huayan-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.huayan-robotics.net/"
+    },
+    "image": {
+      "v": "/logos/huayan-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5792cdf1a9190088bf7a.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://cn.linkedin.com/company/huayanrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/huayanrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "601, Building No. 3, Han's Global Manufacturing Center, No. 12, Chongqing Road, Heping Community, Fuhai Street, Bao'an District, Shenzhen, Guangdong 518057, China",
+          "lat": 22.559853,
+          "lon": 113.879033,
+          "src": "https://cn.linkedin.com/company/huayanrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

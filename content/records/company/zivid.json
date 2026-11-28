@@ -1,0 +1,53 @@
+{
+  "id": 1962,
+  "type": "company",
+  "slug": "zivid",
+  "name": "Zivid",
+  "summary": "Oslo-based maker of industrial 3D colour cameras and software for robotic vision.",
+  "body": "Zivid is a pure-play provider of structured light-based industrial 3D vision cameras for autonomous industrial robot cells, cobot cells, and other industrial automation systems. The company's primary hardware products are the Zivid 3, Zivid 2+ R-series, Zivid 2+ and Zivid 2 3D color cameras.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Supplier",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/3496-zivid",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.zivid.com/"
+    },
+    "image": {
+      "v": "/logos/zivid.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/1861024708411490304/XaEiDwux_400x400.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Oslo",
+      "src": "https://no.linkedin.com/company/zividlabs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://no.linkedin.com/company/zividlabs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Gjerdrumsvei 10A, Oslo, 0484, Norway",
+          "lat": 59.953917,
+          "lon": 10.764002,
+          "src": "https://no.linkedin.com/company/zividlabs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

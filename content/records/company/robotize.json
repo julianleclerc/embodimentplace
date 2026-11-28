@@ -1,0 +1,52 @@
+{
+  "id": 1500,
+  "type": "company",
+  "slug": "robotize",
+  "name": "Robotize",
+  "summary": "Manufactures autonomous mobile robots (AMRs) for automated internal material transport in factories, warehouses, and distribution centres.",
+  "body": "Robotize manufactures advanced Autonomous Mobile Robots (AMRs) and related accessories (e.g., Lift and Conveyor Stations) for the fully automated and safe internal material transport within factories, warehouses and DCs.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/212-robotize",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotize.com/"
+    },
+    "image": {
+      "v": "/logos/robotize.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a3cb46c545a7c2b3521c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kongens Lyngby",
+      "src": "https://dk.linkedin.com/company/robotize-aps",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/robotize-aps",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Maglebjergvej 5B, Kongens Lyngby, Copenhagen 2800, Denmark",
+          "lat": 55.686724,
+          "lon": 12.570072,
+          "src": "https://dk.linkedin.com/company/robotize-aps"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

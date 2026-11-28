@@ -1,0 +1,51 @@
+{
+  "id": 1556,
+  "type": "company",
+  "slug": "blue-river-technology",
+  "name": "Blue River Technology",
+  "summary": "Builds intelligent agricultural machinery using computer vision and machine learning.",
+  "body": "We’re Blue River, a team of innovators driven to radically change agriculture by creating intelligent machinery. We empower our customers to implement more sustainable solutions: optimize chemical use, reimagine routine processes, and improve yields year after year.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/351-blue-river-technology",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bluerivertechnology.com/"
+    },
+    "image": {
+      "v": "/logos/blue-river-technology.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/22d3105e219ace06da04.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Clara",
+      "src": "https://www.linkedin.com/company/bluerivertech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/bluerivertech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3303 Scott Blvd, Santa Clara, California 95054, United States",
+          "lat": 37.380692,
+          "lon": -121.979275,
+          "src": "https://www.linkedin.com/company/bluerivertech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

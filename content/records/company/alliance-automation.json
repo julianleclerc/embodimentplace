@@ -1,0 +1,52 @@
+{
+  "id": 1681,
+  "type": "company",
+  "slug": "alliance-automation",
+  "name": "Alliance Automation",
+  "summary": "Builds and integrates turnkey robotic systems for manufacturers, with a focus on 6-axis robotic waterjet cutting, router trimming, dispensing and material handling.",
+  "body": "Its work centres on industrial robots from Yaskawa Motoman, Fanuc, ABB and Kuka. The company also stocks replacement waterjet coils and parts, refurbishes ageing robotic waterjet cells, and offers programming, installation and maintenance services.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1230-alliance-automation",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.allianceautomationllc.com/"
+    },
+    "image": {
+      "v": "/logos/alliance-automation.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5b45f109e25cf4e1631a.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Van Wert",
+      "src": "https://roboticsconnected.com/companies/1230-alliance-automation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1230-alliance-automation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Van Wert, United States",
+          "lat": 40.801465,
+          "lon": -84.600988,
+          "src": "https://roboticsconnected.com/companies/1230-alliance-automation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

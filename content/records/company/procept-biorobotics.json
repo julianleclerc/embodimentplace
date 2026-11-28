@@ -1,0 +1,51 @@
+{
+  "id": 1699,
+  "type": "company",
+  "slug": "procept-biorobotics",
+  "name": "PROCEPT BioRobotics",
+  "summary": "Develops the HYDROS and AquaBeam robotic systems, which deliver Aquablation therapy for benign prostatic hyperplasia (BPH).",
+  "body": "PROCEPT BioRobotics is a surgical robotics company focused on advancing patient care by developing transformative solutions in urology. PROCEPT BioRobotics manufactures the AQUABEAM® and HYDROS™ Robotic Systems. The HYDROS Robotic System is the only AI-Powered, robotic technology that delivers Aquablation therapy.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1267-procept-biorobotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.procept-biorobotics.com/"
+    },
+    "image": {
+      "v": "/logos/procept-biorobotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/b07deeecf86399a6d684.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Jose",
+      "src": "https://www.linkedin.com/company/procept-corporation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/procept-corporation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "150 Baytech Dr, San Jose, California 95134, United States",
+          "lat": 37.420669,
+          "lon": -121.953439,
+          "src": "https://www.linkedin.com/company/procept-corporation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1059,
+  "type": "company",
+  "slug": "ekso-bionics",
+  "name": "Ekso Bionics",
+  "summary": "Ekso Bionics' mission is to improve health and quality of life with advanced robotics designed to enhance, amplify and restore human function.",
+  "body": "Ekso Bionics is headquartered in San Rafael, California International Offices: Ekso Bionics Europe GmbH An der Pönt 47 40885 Ratingen +49 (0) 2102-305 7390",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://eksobionics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://eksobionics.com/"
+    },
+    "image": {
+      "v": "/logos/ekso-bionics.png",
+      "fit": "contain",
+      "src": "https://eksobionics.com/icons/icon-512x512.png?v=aa305f02b7db129e1b4ce8564f936e40",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Rafael",
+      "src": "https://www.linkedin.com/company/eksobionics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/eksobionics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "101 Glacier Pt, San Rafael, California 94901, United States",
+          "lat": 37.950138,
+          "lon": -122.490019,
+          "src": "https://www.linkedin.com/company/eksobionics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

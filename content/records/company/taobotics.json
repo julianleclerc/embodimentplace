@@ -1,0 +1,51 @@
+{
+  "id": 887,
+  "type": "company",
+  "slug": "taobotics",
+  "name": "Taobotics",
+  "summary": "Autonomous robots for retails.",
+  "body": "Y Combinator Winter 2019 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://taobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://taobotics.com/"
+    },
+    "image": {
+      "v": "/logos/taobotics.png",
+      "fit": "contain",
+      "src": "https://taobotics.com/assets/wp-content/uploads/cropped-%E6%9C%9D%E9%97%BB%E9%81%93logo_%E6%A0%87%E7%AD%BE-192x192.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "SHENZHEN",
+      "src": "https://cn.linkedin.com/company/taobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/taobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2 YUEXING 3RD ST, SHENZHEN, GUANGDONG 518057, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://cn.linkedin.com/company/taobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

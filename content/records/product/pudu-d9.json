@@ -1,0 +1,28 @@
+{
+  "id": 3455,
+  "type": "product",
+  "slug": "pudu-d9",
+  "name": "Pudu D9",
+  "summary": "D9, a humanoid robot from Pudu Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/pudu-d9.webp",
+      "src": "https://www.pudurobotics.com/en",
+      "orig": "https://cdn.pudutech.com/pudu_d9_running_stadium_2026_11_0526dedcfc.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.pudurobotics.com/en",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.pudurobotics.com/en"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

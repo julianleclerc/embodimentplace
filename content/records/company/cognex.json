@@ -1,0 +1,51 @@
+{
+  "id": 1946,
+  "type": "company",
+  "slug": "cognex",
+  "name": "Cognex",
+  "summary": "Publicly traded machine vision company best known for industrial barcode readers, vision sensors, vision software and 3D vision systems.",
+  "body": "For over 40 years, Cognex has been making advanced machine vision easy, paving the way for manufacturing and distribution companies to get faster, smarter, and more efficient through automation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/3292-cognex",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.cognex.com/"
+    },
+    "image": {
+      "v": "/logos/cognex.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/1617559560482439170/_wi2uF6y_400x400.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Natick",
+      "src": "https://www.linkedin.com/company/cognex-corporation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/cognex-corporation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1 Vision Drive, Natick, MA 01760, United States",
+          "lat": 42.302092,
+          "lon": -71.355861,
+          "src": "https://www.linkedin.com/company/cognex-corporation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

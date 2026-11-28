@@ -1,0 +1,28 @@
+{
+  "id": 3877,
+  "type": "funding",
+  "slug": "maven-robotics-series-a",
+  "name": "Maven Robotics Series A",
+  "summary": "Raised $100M in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-09-10",
+      "src": "https://menafn.com/1111647950/Maven-Robotics-Raises-100M-Series-A-For-The-Worlds-First-General-Purpose-Robotics-System-For-Industrial-Work",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://menafn.com/1111647950/Maven-Robotics-Raises-100M-Series-A-For-The-Worlds-First-General-Purpose-Robotics-System-For-Industrial-Work",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 100,
+      "src": "https://menafn.com/1111647950/Maven-Robotics-Raises-100M-Series-A-For-The-Worlds-First-General-Purpose-Robotics-System-For-Industrial-Work",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-09-10"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1758,
+  "type": "company",
+  "slug": "saronic-technologies",
+  "name": "Saronic Technologies",
+  "summary": "Builds autonomous surface vessels for naval and maritime forces, with a portfolio spanning the Corsair, Mirage and Marauder platforms.",
+  "body": "Saronic is building cutting-edge unmanned surface vehicles that enable maritime security and domain awareness by combining best-in-class hardware, software and artificial intelligence into one scalable, fully integrated platform.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1721-saronic-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.saronic.com/"
+    },
+    "image": {
+      "v": "/logos/saronic-technologies.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1e1f13ad74c13e5604c1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://roboticsconnected.com/companies/1721-saronic-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1721-saronic-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Austin, United States",
+          "lat": 30.264926,
+          "lon": -97.747409,
+          "src": "https://roboticsconnected.com/companies/1721-saronic-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

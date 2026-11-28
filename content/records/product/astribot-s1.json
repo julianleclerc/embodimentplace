@@ -1,0 +1,28 @@
+{
+  "id": 3413,
+  "type": "product",
+  "slug": "astribot-s1",
+  "name": "Astribot S1",
+  "summary": "S1, a humanoid robot from Astribot.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/astribot-s1.webp",
+      "src": "https://www.astribot.com/",
+      "orig": "https://www.astribot.com/_nuxt/index-s5-img.B1659DoH.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.astribot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.astribot.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

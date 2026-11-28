@@ -1,0 +1,51 @@
+{
+  "id": 1913,
+  "type": "company",
+  "slug": "beyond-vision",
+  "name": "Beyond Vision",
+  "summary": "Portuguese drone manufacturer founded in 2013 and based in Alverca do Ribatejo, near Lisbon.",
+  "body": "Beyond Vision is a leading European company in dual-use advanced unmanned aerial vehicle (UAV) technology and Artificial Intelligence (AI) algorithms, seeking to bring to life a new generation of autonomous systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3004-beyond-vision",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.beyond-vision.com/"
+    },
+    "image": {
+      "v": "/logos/beyond-vision.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6a502aa846e101406340c550/6a5536043f2c23fa9145cf17_bv-simbolo-cor.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Alverca do Ribatejo",
+      "src": "https://pt.linkedin.com/company/beyondvision-join-the-future",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Portugal",
+      "src": "https://pt.linkedin.com/company/beyondvision-join-the-future",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rua da Beyond Vision, Alverca do Ribatejo, Lisboa 2615-153, Portugal",
+          "lat": 38.893525,
+          "lon": -9.039614,
+          "src": "https://pt.linkedin.com/company/beyondvision-join-the-future"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

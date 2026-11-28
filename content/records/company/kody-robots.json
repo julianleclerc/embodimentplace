@@ -1,0 +1,52 @@
+{
+  "id": 1972,
+  "type": "company",
+  "slug": "kody-robots",
+  "name": "Kody Robots",
+  "summary": "Indian robotics company, powered by Kody Technolab Limited, that engineers autonomous robots for demanding, high-traffic environments.",
+  "body": "Its systems combine sensors, vision and AI to navigate and execute tasks with precision. The product line includes Odigo, an advertising robot, Dasher, a serving robot, Vulcan, an autonomous cleaning robot, and Spilot and ForkOn for logistics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/4296-kody-robots",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://kodyrobots.com/"
+    },
+    "image": {
+      "v": "/logos/kody-robots.png",
+      "fit": "contain",
+      "src": "https://kodyrobots.com/wp-content/uploads/2026/06/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ahmedabad",
+      "src": "https://roboticsconnected.com/companies/4296-kody-robots",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://roboticsconnected.com/companies/4296-kody-robots",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ahmedabad, India",
+          "lat": 23.021537,
+          "lon": 72.580057,
+          "src": "https://roboticsconnected.com/companies/4296-kody-robots"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,26 @@
+{
+  "id": 2209,
+  "type": "lab",
+  "slug": "merlin-lab",
+  "name": "MERLIN Lab",
+  "summary": "Mechatronics and robotics for medicine and industry.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Medical robots",
+        "Manipulation"
+      ],
+      "src": "https://www.merlin.polimi.it/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.merlin.polimi.it/",
+      "src": "https://www.merlin.polimi.it/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1881,
+  "type": "company",
+  "slug": "reblade",
+  "name": "Reblade",
+  "summary": "Develops drone-based and automated robotic systems for repairing leading edge erosion on wind turbine blades.",
+  "body": "We are currently open for delivering drone-based leading edge erosion repair technology to repair campaigns planned and executed in 2026 and 2027. Our automated and drone-based solution is designed for onshore and offshore wind, as well for ease of use by regular service teams.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2727-reblade",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://reblade.dk/"
+    },
+    "image": {
+      "v": "/logos/reblade.png",
+      "fit": "contain",
+      "src": "https://reblade.dk/assets/favicon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mørke",
+      "src": "https://dk.linkedin.com/company/reblade",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/reblade",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Industrivej 8, Mørke, Middle Jutland 8544, Denmark",
+          "lat": 56.334562,
+          "lon": 10.377531,
+          "src": "https://dk.linkedin.com/company/reblade"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

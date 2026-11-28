@@ -1,0 +1,51 @@
+{
+  "id": 2090,
+  "type": "company",
+  "slug": "university-of-california-berkeley",
+  "name": "University of California, Berkeley",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.berkeley.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.berkeley.edu/"
+    },
+    "city": {
+      "v": "Berkeley"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Berkeley, United States",
+          "lat": 37.8719,
+          "lon": -122.2585
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 76.4,
+      "faculty": 23,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 11,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

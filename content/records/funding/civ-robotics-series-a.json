@@ -1,0 +1,28 @@
+{
+  "id": 3730,
+  "type": "funding",
+  "slug": "civ-robotics-series-a",
+  "name": "Civ Robotics Series A",
+  "summary": "Raised $7.5 million in a Series A round, led by AlleyCorp.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-06-30",
+      "src": "https://menafn.com/1109748092/Civ-Robotics-Raises-75-Million-To-Accelerate-Robot-Powered-Construction-Surveying",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://menafn.com/1109748092/Civ-Robotics-Raises-75-Million-To-Accelerate-Robot-Powered-Construction-Surveying",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 7.5,
+      "src": "https://menafn.com/1109748092/Civ-Robotics-Raises-75-Million-To-Accelerate-Robot-Powered-Construction-Surveying",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-06-30"
+}

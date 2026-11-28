@@ -1,0 +1,51 @@
+{
+  "id": 892,
+  "type": "company",
+  "slug": "yummy-future",
+  "name": "Yummy Future",
+  "summary": "We build robotic workforces for the food & beverage industry.",
+  "body": "We amplify worker produtivity by10X. Restaurants and food retail businesses require high volume and consistency, yet many business owners struggle to achieve this. Y Combinator Summer 2019 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://yummy-future.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://yummy-future.com/"
+    },
+    "image": {
+      "v": "/logos/yummy-future.png",
+      "fit": "contain",
+      "src": "https://yummy-future.com/assets/apple-touch-icon.png?v=3",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Champaign",
+      "src": "https://www.linkedin.com/company/yummy-future-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/yummy-future-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "60 Hazelwood Dr, Champaign, Illinois 61820, United States",
+          "lat": 40.091147,
+          "lon": -88.240179,
+          "src": "https://www.linkedin.com/company/yummy-future-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

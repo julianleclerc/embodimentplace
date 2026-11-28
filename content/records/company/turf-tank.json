@@ -1,0 +1,51 @@
+{
+  "id": 1965,
+  "type": "company",
+  "slug": "turf-tank",
+  "name": "Turf Tank",
+  "summary": "Builds autonomous line marking robots that paint sports fields, parking lots and other surfaces.",
+  "body": "At Turf Tank, we make robots that paint lines on sports fields – it's that simple. Every field, whether it's at a small local school or a professional stadium, deserves to look its best. That's why we've made our technology accessible to facilities of all sizes through flexible subscriptions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3506-turf-tank",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://turftank.com/"
+    },
+    "image": {
+      "v": "/logos/turf-tank.png",
+      "fit": "contain",
+      "src": "https://turftank.com/wp-content/uploads/2020/05/favicon-1.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Svenstrup",
+      "src": "https://dk.linkedin.com/company/turf-tank-eu",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/turf-tank-eu",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Lansen 15, Svenstrup, North Jutland 9230, Denmark",
+          "lat": 56.958163,
+          "lon": 9.859237,
+          "src": "https://dk.linkedin.com/company/turf-tank-eu"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

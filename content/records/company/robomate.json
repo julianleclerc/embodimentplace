@@ -1,0 +1,51 @@
+{
+  "id": 1966,
+  "type": "company",
+  "slug": "robomate",
+  "name": "Robomate",
+  "summary": "New Zealand robotics company best known for robot mowers, robot vacuums and pool cleaners, sold mainly under partner brands such as Mammotion, Dreame and Yarbo.",
+  "body": "It started in an Auckland garage in 2018 and is founder-led by Lachlan Murray. The company supplies residential customers across New Zealand and runs a commercial mowing service for councils, schools, golf courses and sports fields.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3570-robomate",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robomate.co.nz/"
+    },
+    "image": {
+      "v": "/logos/robomate.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/29e1bda0-c688-4241-92f8-c4ad1edf8447.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Auckland",
+      "src": "https://roboticsconnected.com/companies/3570-robomate",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "New Zealand",
+      "src": "https://roboticsconnected.com/companies/3570-robomate",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Auckland, New Zealand",
+          "lat": -36.852095,
+          "lon": 174.76318,
+          "src": "https://roboticsconnected.com/companies/3570-robomate"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

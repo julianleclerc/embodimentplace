@@ -1,0 +1,51 @@
+{
+  "id": 1887,
+  "type": "company",
+  "slug": "dafang-ai",
+  "name": "DaFang AI",
+  "summary": "Singapore-registered maker of autonomous building construction robots, with engineering and manufacturing operations in Dongguan, China.",
+  "body": "DAFANG AI PTE. LTD focus to design, develop, and manufacture building construction AI Robots, which based on intelligent construction, low-speed self-driving, and machine vision, providing automation building surface finishing services to customers.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2787-dafang-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dafang.ai/"
+    },
+    "image": {
+      "v": "/logos/dafang-ai.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/1502126718928429059/8aj6mybe_400x400.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://roboticsconnected.com/companies/2787-dafang-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://roboticsconnected.com/companies/2787-dafang-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Singapore, Singapore",
+          "lat": 1.289918,
+          "lon": 103.851907,
+          "src": "https://roboticsconnected.com/companies/2787-dafang-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

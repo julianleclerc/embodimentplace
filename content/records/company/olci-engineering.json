@@ -1,0 +1,52 @@
+{
+  "id": 1934,
+  "type": "company",
+  "slug": "olci-engineering",
+  "name": "O.L.C.I. Engineering",
+  "summary": "Italian engineering company and a member of the EFORT Group, based in Turin.",
+  "body": "It designs and implements industrial automation processes, with the group's Systems business unit delivering integrated production lines. Its work centres on automotive manufacturing, including body-in-white welding, flexible multi-model lines with AGVs, and automated door assembly.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/3266-o-l-c-i-engineering",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.efort-overseas.com/"
+    },
+    "image": {
+      "v": "/logos/olci-engineering.png",
+      "fit": "contain",
+      "src": "https://www.efort-overseas.com/wp-content/uploads/2026/09/efort-favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Turin",
+      "src": "https://roboticsconnected.com/companies/3266-o-l-c-i-engineering",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Italy",
+      "src": "https://roboticsconnected.com/companies/3266-o-l-c-i-engineering",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Turin, Italy",
+          "lat": 45.067755,
+          "lon": 7.682489,
+          "src": "https://roboticsconnected.com/companies/3266-o-l-c-i-engineering"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

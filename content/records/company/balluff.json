@@ -1,0 +1,51 @@
+{
+  "id": 1847,
+  "type": "company",
+  "slug": "balluff",
+  "name": "Balluff",
+  "summary": "Family-owned sensor and industrial automation specialist founded in 1921 in Neuhausen auf den Fildern, near Stuttgart.",
+  "body": "We are your partner for innovative solutions in industrial automation. With our passion we improve your competitive position with speed and results.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/2344-balluff",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.balluff.com/"
+    },
+    "image": {
+      "v": "/logos/balluff.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/60b525c96685cfd45b51.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Neuhausen auf den Fildern",
+      "src": "https://roboticsconnected.com/companies/2344-balluff",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/2344-balluff",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Neuhausen auf den Fildern, Germany",
+          "lat": 48.683155,
+          "lon": 9.277676,
+          "src": "https://roboticsconnected.com/companies/2344-balluff"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

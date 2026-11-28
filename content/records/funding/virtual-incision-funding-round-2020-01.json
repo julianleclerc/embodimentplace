@@ -1,0 +1,23 @@
+{
+  "id": 3772,
+  "type": "funding",
+  "slug": "virtual-incision-funding-round-2020-01",
+  "name": "Virtual Incision funding round (2020-01)",
+  "summary": "Raised $20 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2020-01-15",
+      "src": "https://pulse2.com/virtual-incision-20-million/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 20,
+      "src": "https://pulse2.com/virtual-incision-20-million/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2020-01-15"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 2101,
+  "type": "company",
+  "slug": "university-of-california-los-angeles",
+  "name": "University of California, Los Angeles",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.ucla.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ucla.edu/"
+    },
+    "city": {
+      "v": "Los Angeles"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, United States",
+          "lat": 34.0689,
+          "lon": -118.4452
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 4.8,
+      "faculty": 8,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 24,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

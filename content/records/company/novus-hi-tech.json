@@ -1,0 +1,51 @@
+{
+  "id": 1706,
+  "type": "company",
+  "slug": "novus-hi-tech",
+  "name": "Novus Hi-Tech",
+  "summary": "Designs and builds autonomous mobile robots, robotic forklifts and ADAS driver-assistance systems.",
+  "body": "Its products include the Novus Carry AMR, the P-Mover autonomous pallet truck, video telematics for fleet safety and the Novus Aware in-cabin ADAS for OEMs. The company sells mainly to factories, warehouses and road logistics operators, along with automotive OEMs.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1310-novus-hi-tech",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://novushitech.com/"
+    },
+    "image": {
+      "v": "/logos/novus-hi-tech.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/deed6dc2450d88613a22.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Gurugram",
+      "src": "https://roboticsconnected.com/companies/1310-novus-hi-tech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://roboticsconnected.com/companies/1310-novus-hi-tech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Gurugram, India",
+          "lat": 28.464615,
+          "lon": 77.029919,
+          "src": "https://roboticsconnected.com/companies/1310-novus-hi-tech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

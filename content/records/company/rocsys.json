@@ -1,0 +1,51 @@
+{
+  "id": 1501,
+  "type": "company",
+  "slug": "rocsys",
+  "name": "Rocsys",
+  "summary": "Develops hands-free autonomous charging solutions for electric vehicle fleets using soft robotics, AI-driven computer vision, and motion planning.",
+  "body": "Rocsys is the global leader in hands-free charging and fleet service solutions for electric and autonomous vehicles.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/213-rocsys",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://rocsys.com/"
+    },
+    "image": {
+      "v": "/logos/rocsys.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1d26d73b13b9fe2b968a.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Rijswijk",
+      "src": "https://nl.linkedin.com/company/rocsys-handsfree-charging",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/rocsys-handsfree-charging",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Delftweg 65, Rijswijk, South Holland 2289 BA, Netherlands",
+          "lat": 52.034136,
+          "lon": 4.346242,
+          "src": "https://nl.linkedin.com/company/rocsys-handsfree-charging"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

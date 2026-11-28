@@ -1,0 +1,53 @@
+{
+  "id": 1544,
+  "type": "company",
+  "slug": "aira",
+  "name": "AIRA",
+  "summary": "Develops AI-powered mobile robots for manufacturing and construction environments.",
+  "body": "AIRA puts Robots to Work. We train Physical AI models on task specific data and deploy mobile, general-purpose Robots in real world manufacturing settings, supervising remotely, and supporting on site. We aim to solve the productivity challenge working directly with manufacturing customers, one task at a time.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Model lab"
+      ],
+      "src": "https://roboticsconnected.com/companies/310-aira-artificial-intelligence-real-abilities",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://aira.site/"
+    },
+    "image": {
+      "v": "/logos/aira.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d0408993434d8e70b80d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sheffield",
+      "src": "https://uk.linkedin.com/company/aira-artificial-intelligence-real-abilities",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/aira-artificial-intelligence-real-abilities",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pennine 5 B3 3 Tenter Street, Sheffield, England S1 4BY, United Kingdom",
+          "lat": 53.380663,
+          "lon": -1.470228,
+          "src": "https://uk.linkedin.com/company/aira-artificial-intelligence-real-abilities"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

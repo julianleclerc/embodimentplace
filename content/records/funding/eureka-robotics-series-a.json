@@ -1,0 +1,28 @@
+{
+  "id": 3831,
+  "type": "funding",
+  "slug": "eureka-robotics-series-a",
+  "name": "Eureka Robotics Series A",
+  "summary": "Raised USD 10.5 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-12-12",
+      "src": "https://finance.yahoo.com/news/eureka-robotics-raises-usd-10-101200843.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://finance.yahoo.com/news/eureka-robotics-raises-usd-10-101200843.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 10.5,
+      "src": "https://finance.yahoo.com/news/eureka-robotics-raises-usd-10-101200843.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-12-12"
+}

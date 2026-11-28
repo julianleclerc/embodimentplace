@@ -1,0 +1,26 @@
+{
+  "id": 2153,
+  "type": "lab",
+  "slug": "robotics-and-automation-design-lab",
+  "name": "Robotics and Automation Design Lab",
+  "summary": "Robot design and automation research.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Field robots",
+        "Manipulation"
+      ],
+      "src": "https://rad.engr.tamu.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://rad.engr.tamu.edu/",
+      "src": "https://rad.engr.tamu.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

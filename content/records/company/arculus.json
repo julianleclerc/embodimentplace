@@ -1,0 +1,52 @@
+{
+  "id": 1970,
+  "type": "company",
+  "slug": "arculus",
+  "name": "arculus",
+  "summary": "Munich-based robotics and software company, founded in 2016 and now part of Jungheinrich.",
+  "body": "arculus is a part of Jungheinrich that independently develops high-end mobile robots and software products for intralogistics automation. From mechanics to electronics and code – our engineering powerhouse has it all.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/4000-arculus",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.arculus.de/"
+    },
+    "image": {
+      "v": "/logos/arculus.png",
+      "fit": "contain",
+      "src": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_180,h_180/https://www.arculus.de/wp-content/uploads/2024/10/Element-2@3x-1.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://de.linkedin.com/company/arculus-a-jungheinrich-company",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/arculus-a-jungheinrich-company",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Balanstraße 73, Munich, Bavaria 81549, Germany",
+          "lat": 48.117131,
+          "lon": 11.603507,
+          "src": "https://de.linkedin.com/company/arculus-a-jungheinrich-company"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

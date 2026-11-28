@@ -1,0 +1,52 @@
+{
+  "id": 1526,
+  "type": "company",
+  "slug": "avular",
+  "name": "Avular",
+  "summary": "Develops autonomous mobile robots and drones designed to address labour shortages across multiple industries.",
+  "body": "Avular accelerates the creation of mobile robot applications that will shape a brighter future for all. By developing the core technology for autonomous robots and building our own drones and robots from the ground up, we developed the perfect tools to start your mobile robotic solution.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/256-avular",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://avular.com/"
+    },
+    "image": {
+      "v": "/logos/avular.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/f84c4d32cfb545aebd39.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Eindhoven",
+      "src": "https://nl.linkedin.com/company/avular",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/avular",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Achtseweg Zuid 221, Eindhoven, North Brabant 5651 GW, Netherlands",
+          "lat": 51.453482,
+          "lon": 5.448693,
+          "src": "https://nl.linkedin.com/company/avular"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

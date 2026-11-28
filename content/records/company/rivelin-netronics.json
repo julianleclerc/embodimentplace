@@ -1,0 +1,51 @@
+{
+  "id": 1499,
+  "type": "company",
+  "slug": "rivelin-netronics",
+  "name": "Rivelin Netronics",
+  "summary": "Builds the r1000 microfactory, an 8-axis robot platform that automates post-processing and finishing of metal additive manufacturing parts.",
+  "body": "Rivelin makes the building blocks. Customers, OEM partners and integrators build the factories. Skilled hands are retiring with no one behind them. Modular robotic building blocks keep precision manufacturing local and re-toolable overnight.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/209-rivelin-netronics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rivelinrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/rivelin-netronics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/c01b6b872b3e8a7e1977.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sheffield",
+      "src": "https://uk.linkedin.com/company/rivelin-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/rivelin-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Neepsend Triangle, 1 Burton Road, Sheffield, Yorkshire S3 8BW, United Kingdom",
+          "lat": 53.3917,
+          "lon": -1.473542,
+          "src": "https://uk.linkedin.com/company/rivelin-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

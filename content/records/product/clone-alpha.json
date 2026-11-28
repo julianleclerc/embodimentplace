@@ -1,0 +1,28 @@
+{
+  "id": 3416,
+  "type": "product",
+  "slug": "clone-alpha",
+  "name": "Clone Alpha",
+  "summary": "Alpha, a humanoid robot from Clone Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/clone-alpha.webp",
+      "src": "https://www.clonerobotics.com/",
+      "orig": "https://www.clonerobotics.com/_ipx/f_webp&q_80&s_3840x2160/assets/img/home/welcome_poster.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.clonerobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.clonerobotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

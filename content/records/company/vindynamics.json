@@ -1,0 +1,52 @@
+{
+  "id": 1678,
+  "type": "company",
+  "slug": "vindynamics",
+  "name": "VinDynamics",
+  "summary": "Vietnamese humanoid robotics company founded in 2025 as a Vingroup subsidiary.",
+  "body": "At VinDynamics, we design safe, intelligent, and affordable humanoid robots to assist in everyday life - robots for everyone. VinDynamics proudly backed by Vingroup, Vietnam’s largest technology conglomerate.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/1218-vindynamics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vindynamics.net/"
+    },
+    "image": {
+      "v": "/logos/vindynamics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a3d8ba3f94b9941c1833.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hanoi",
+      "src": "https://roboticsconnected.com/companies/1218-vindynamics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Vietnam",
+      "src": "https://roboticsconnected.com/companies/1218-vindynamics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hanoi, Vietnam",
+          "lat": 21.028333,
+          "lon": 105.854041,
+          "src": "https://roboticsconnected.com/companies/1218-vindynamics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 1513,
+  "type": "company",
+  "slug": "wheelme",
+  "name": "wheel.me",
+  "summary": "Develops autonomous wheel systems that retrofit existing carts and racking equipment into self-driving material handling robots.",
+  "body": "wheel.me is a Norwegian robotics and IoT company that offers a pioneering approach to indoor mobility. Specializing in autonomous wheels, we transform existing infrastructure into self-driving robots, helping businesses enhance efficiency and productivity on their automation journeys.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/237-wheel-me",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.wheel.me/"
+    },
+    "city": {
+      "v": "Oslo",
+      "src": "https://no.linkedin.com/company/wheel-me",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://no.linkedin.com/company/wheel-me",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Karenslyst allé 57, Oslo, 0277, Norway",
+          "lat": 59.921385,
+          "lon": 10.677334,
+          "src": "https://no.linkedin.com/company/wheel-me"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1214,
+  "type": "company",
+  "slug": "speedinvest",
+  "name": "Speedinvest",
+  "summary": "It takes more than capital to build real-world, cutting-edge technologies and companies that last.",
+  "body": "That’s why we commit the full power of our sector-focused investment teams and global network of customers, talent, top-tier follow-on investors, industry leaders, and experienced entrepreneurs to help you scale smarter and faster.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.speedinvest.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.speedinvest.com/"
+    },
+    "image": {
+      "v": "/logos/speedinvest.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/68cd2f88ff7e8ea4589bdc82/6a857b47c05554c7602a5755_Speedinvest_favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Wien",
+      "src": "https://at.linkedin.com/company/speedinvest",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Austria",
+      "src": "https://at.linkedin.com/company/speedinvest",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Praterstraße 1, Wien, 1020, Austria",
+          "lat": 48.21272,
+          "lon": 16.37979,
+          "src": "https://at.linkedin.com/company/speedinvest"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

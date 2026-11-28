@@ -1,0 +1,23 @@
+{
+  "id": 3585,
+  "type": "funding",
+  "slug": "contactile-funding-round-2022-05",
+  "name": "Contactile funding round (2022-05)",
+  "summary": "Raised US$2.5 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-05-04",
+      "src": "https://www.prnewswire.com/news-releases/contactile-raises-us2-5-million-to-accelerate-development-of-tactile-sensor-technology-for-robotic-dexterity-301536115.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 2.5,
+      "src": "https://www.prnewswire.com/news-releases/contactile-raises-us2-5-million-to-accelerate-development-of-tactile-sensor-technology-for-robotic-dexterity-301536115.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-05-04"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3688,
+  "type": "funding",
+  "slug": "simbe-funding-round-2019-09",
+  "name": "Simbe funding round (2019-09)",
+  "summary": "Raised $26 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2019-09-11",
+      "src": "https://venturebeat.com/business/simbe-robotics-raises-26-million-for-autonomous-inventory-robots/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 26,
+      "src": "https://venturebeat.com/business/simbe-robotics-raises-26-million-for-autonomous-inventory-robots/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2019-09-11"
+}

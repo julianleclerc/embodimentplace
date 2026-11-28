@@ -10,9 +10,16 @@
       "v": "Humanoid",
       "src": "https://sanctuary.ai/news/sanctuary-ai-unveils-the-next-generation-of-ai-robotics/",
       "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/sanctuary-ai-phoenix.webp",
+      "src": "https://sanctuary.ai/news/sanctuary-ai-unveils-the-next-generation-of-ai-robotics/",
+      "orig": "https://sanctuary.ai/wp-content/uploads/2024/12/03_sanctuary_ai_phoenix_gen_7_back_not_a_render-1024x681.webp",
+      "fit": "contain",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-22 03:05:17",
+  "updated": "2026-11-28 03:05:16",
   "feed_at": "2026-11-22"
 }

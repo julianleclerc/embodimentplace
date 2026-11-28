@@ -1,0 +1,28 @@
+{
+  "id": 3420,
+  "type": "product",
+  "slug": "devanthro-robody",
+  "name": "Devanthro Robody",
+  "summary": "Robody, a humanoid robot from Devanthro.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/devanthro-robody.webp",
+      "src": "https://www.devanthro.com/",
+      "orig": "https://www.devanthro.com/wp-content/uploads/1763117733107-e1765438728976.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.devanthro.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.devanthro.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

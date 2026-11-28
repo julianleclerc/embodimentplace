@@ -1,0 +1,45 @@
+{
+  "id": 1046,
+  "type": "company",
+  "slug": "dexai-robotics",
+  "name": "Dexai Robotics",
+  "summary": "Dexai Robotics aims to revolutionize the food industry by improving the lives of kitchen staff everywhere, enabling them to focus on what matters: creating amazing culinary experiences for customers.",
+  "body": "Dexai’s collaborative robot, Alfred offers an affordable, fast, and accurate kitchen addition to autonomously prepare delicious recipes.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.linkedin.com/company/dexai-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dexai.com/"
+    },
+    "city": {
+      "v": "Greater Boston Area",
+      "src": "https://www.linkedin.com/company/dexai-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/dexai-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "444 Somerville Ave, Greater Boston Area, Massachusetts 02143, United States",
+          "lat": 42.358253,
+          "lon": -71.096627,
+          "src": "https://www.linkedin.com/company/dexai-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

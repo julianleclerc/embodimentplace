@@ -1,0 +1,51 @@
+{
+  "id": 1496,
+  "type": "company",
+  "slug": "reach-industries",
+  "name": "Reach Industries",
+  "summary": "Develops LUMI, a visual AI copilot designed to augment laboratory scientists and improve research efficiency.",
+  "body": "At Reach Industries, we are an early stage start-up with a mission to augment scientists and make labs more efficient, so they can better and faster tackle world challenges. Our intelligent platform, Lumi™, leverages Computer vision, Voice and Machine Learning to capture and analyse operational data.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/206-reach-industries",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://reach.industries/"
+    },
+    "image": {
+      "v": "/logos/reach-industries.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/92a1475e660e184ae40d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bristol",
+      "src": "https://uk.linkedin.com/company/reachindustries",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/reachindustries",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "14 Wootton Road, Bristol, England BS4 4AL, United Kingdom",
+          "lat": 51.453461,
+          "lon": -2.544494,
+          "src": "https://uk.linkedin.com/company/reachindustries"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3659,
+  "type": "funding",
+  "slug": "zipline-funding-round-2026-11",
+  "name": "Zipline funding round (2026-11)",
+  "summary": "Raised $1.5 billion.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-09",
+      "src": "https://africa.businessinsider.com/local/markets/after-us-restrictions-pushed-it-to-launch-in-rwanda-zipline-raises-dollar15-billion/mkp485q",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1500,
+      "src": "https://africa.businessinsider.com/local/markets/after-us-restrictions-pushed-it-to-launch-in-rwanda-zipline-raises-dollar15-billion/mkp485q",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-09"
+}

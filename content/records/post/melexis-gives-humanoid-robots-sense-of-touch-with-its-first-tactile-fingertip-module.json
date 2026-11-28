@@ -1,0 +1,34 @@
+{
+  "id": 3318,
+  "type": "post",
+  "slug": "melexis-gives-humanoid-robots-sense-of-touch-with-its-first-tactile-fingertip-module",
+  "name": "Melexis Gives Humanoid Robots Sense of Touch with Its First Tactile Fingertip Module",
+  "summary": "Melexis introduces the MLX90901 Tactile Fingertip Module, bringing true 3D force sensing (normal & shear) to humanoid robotic hands.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-15"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "azosensors.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.azosensors.com/news.aspx?newsID=17005"
+    },
+    "image": {
+      "v": "https://www.azosensors.com/images/news/ImageForNews_17005_17948090473734410.jpg",
+      "fit": "cover",
+      "src": "https://www.azosensors.com/news.aspx?newsID=17005",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-15"
+}

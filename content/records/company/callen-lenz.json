@@ -1,0 +1,52 @@
+{
+  "id": 1463,
+  "type": "company",
+  "slug": "callen-lenz",
+  "name": "Callen-Lenz",
+  "summary": "Develops, and manufactures uncrewed aerial systems (UAS) and associated avionics in-house, delivering operationally proven capabilities for defence, security, and energy…",
+  "body": "Callen-Lenz is a market-leading UK SME providing operationally proven technological solutions, including bespoke aircraft, rapid prototyping, upgrades, software, and avionics, as well as complementary technical consultancy for crewed and uncrewed aviation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/148-callen-lenz",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.callenlenz.com/"
+    },
+    "image": {
+      "v": "/logos/callen-lenz.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/5e744c451d59ae876ac5.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Salisbury",
+      "src": "https://roboticsconnected.com/companies/148-callen-lenz",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/148-callen-lenz",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Salisbury, United Kingdom",
+          "lat": 51.069061,
+          "lon": -1.795413,
+          "src": "https://roboticsconnected.com/companies/148-callen-lenz"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

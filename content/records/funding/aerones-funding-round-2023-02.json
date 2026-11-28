@@ -1,0 +1,23 @@
+{
+  "id": 3712,
+  "type": "funding",
+  "slug": "aerones-funding-round-2023-02",
+  "name": "Aerones funding round (2023-02)",
+  "summary": "Raised $ 30 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-02-12",
+      "src": "https://www.jeccomposites.com/news/spotted-by-jec/aerones-raises-30-million-to-scale-its-robot-enabled-services-and-drive-efficiencies-in-the-wind-turbine-maintenance-market/?news_type=announcement,business,product-technology&end_use_application=equipment-and-machinery,renewable-energy&tax_product=robots-automation",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 30,
+      "src": "https://www.jeccomposites.com/news/spotted-by-jec/aerones-raises-30-million-to-scale-its-robot-enabled-services-and-drive-efficiencies-in-the-wind-turbine-maintenance-market/?news_type=announcement,business,product-technology&end_use_application=equipment-and-machinery,renewable-energy&tax_product=robots-automation",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-02-12"
+}

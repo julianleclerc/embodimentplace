@@ -1,0 +1,45 @@
+{
+  "id": 1333,
+  "type": "company",
+  "slug": "university-of-zurich",
+  "name": "University of Zurich",
+  "summary": "Public research university in Zurich, Switzerland.",
+  "body": "Recent robotics work includes “The Reality Gap in Robotics: Challenges, Solutions, and Best Practices”. OpenAlex lists 121 robotics, humanoid, embodied-AI or manipulation papers from University of Zurich since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1146/annurev-control-031924-100130",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.uzh.ch/"
+    },
+    "city": {
+      "v": "Zurich",
+      "src": "https://www.wikidata.org/wiki/Q206702",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://www.wikidata.org/wiki/Q206702",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zurich, Switzerland",
+          "lat": 47.374722,
+          "lon": 8.548333,
+          "src": "https://www.wikidata.org/wiki/Q206702"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

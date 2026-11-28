@@ -1,0 +1,51 @@
+{
+  "id": 926,
+  "type": "company",
+  "slug": "yijiahe",
+  "name": "Yijiahe",
+  "summary": "Chinese robotics company making surgical and cleaning robots; listed on the Shanghai main board.",
+  "body": "Headquartered in Nanjing, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.yijiahe.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.yijiahe.com/"
+    },
+    "image": {
+      "v": "/logos/yijiahe.png",
+      "fit": "contain",
+      "src": "https://www.yijiahe.com/wp-content/themes/chinatheme/uploads/icon-logo-152.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Nanjing",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Nanjing, China",
+          "lat": 32.043828,
+          "lon": 118.778863,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

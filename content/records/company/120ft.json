@@ -1,0 +1,52 @@
+{
+  "id": 1848,
+  "type": "company",
+  "slug": "120ft",
+  "name": "120ft",
+  "summary": "Builds modular, containerised microfactories in which humanoid robots assemble, inspect and pack products.",
+  "body": "120ft Factory AB provides local robotic assembly, inspection and packing in modular container factories. Small production runs from 100 units, built in Stockholm. Customers keep their product designs and existing component suppliers.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2347-120ft",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://120ft.com/"
+    },
+    "image": {
+      "v": "/logos/120ft.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/6a4b73c7d2b31981e425a995/6a4e0832aeb19e3981110cd7_favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ladugårdsgärdet",
+      "src": "https://se.linkedin.com/company/120ft",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Sweden",
+      "src": "https://se.linkedin.com/company/120ft",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tullvaktsvägen 21, Ladugårdsgärdet, Stockholm County 115 27, Sweden",
+          "lat": 59.339595,
+          "lon": 18.119011,
+          "src": "https://se.linkedin.com/company/120ft"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

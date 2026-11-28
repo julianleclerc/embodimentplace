@@ -1,0 +1,51 @@
+{
+  "id": 1312,
+  "type": "company",
+  "slug": "north-carolina-state-university",
+  "name": "North Carolina State University",
+  "summary": "Public research university in Raleigh, North Carolina, United States.",
+  "body": "Recent robotics work includes “Autonomous catalysis research with human–AI–robot collaboration”. OpenAlex lists 81 robotics, humanoid, embodied-AI or manipulation papers from North Carolina State University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1038/s41929-025-01430-6",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ncsu.edu/"
+    },
+    "image": {
+      "v": "/logos/north-carolina-state-university.png",
+      "fit": "contain",
+      "src": "https://cdn.ncsu.edu/brand-assets/favicons/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "North Carolina",
+      "src": "https://www.wikidata.org/wiki/Q1132346",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q1132346",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "North Carolina, United States",
+          "lat": 35.787222,
+          "lon": -78.670556,
+          "src": "https://www.wikidata.org/wiki/Q1132346"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

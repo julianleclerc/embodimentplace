@@ -1,0 +1,51 @@
+{
+  "id": 1391,
+  "type": "company",
+  "slug": "indian-institute-of-technology-madras",
+  "name": "Indian Institute of Technology Madras",
+  "summary": "Autonomous public engineering and research institution located in Chennai, Tamil Nadu.",
+  "body": "Recent robotics work includes “Deep Networks and Sensor Fusion for Personal Care Robot Tasks—A Review”. OpenAlex lists 72 robotics, humanoid, embodied-AI or manipulation papers from Indian Institute of Technology Madras since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/jsen.2025.3530007",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.iitm.ac.in/"
+    },
+    "image": {
+      "v": "/logos/indian-institute-of-technology-madras.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/IIT_Madras_Logo_%28Black_and_White%29.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chennai",
+      "src": "https://www.wikidata.org/wiki/Q858662",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://www.wikidata.org/wiki/Q858662",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Chennai, India",
+          "lat": 12.991667,
+          "lon": 80.233889,
+          "src": "https://www.wikidata.org/wiki/Q858662"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3462,
+  "type": "product",
+  "slug": "shadow-robot-company-dex-ee",
+  "name": "Shadow Robot Company DEX-EE",
+  "summary": "DEX-EE, a robotic hand from Shadow Robot Company.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/shadow-robot-company-dex-ee.webp",
+      "src": "https://shadowrobot.com/dex-ee_series/",
+      "orig": "https://shadowrobot.com/wp-content/uploads/2025/11/Chiral-3-e1763653110759-1536x1152.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://shadowrobot.com/dex-ee_series/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://shadowrobot.com/dex-ee_series/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 893,
+  "type": "company",
+  "slug": "somatic",
+  "name": "Somatic",
+  "summary": "Bathroom cleaning robots for office buildings.",
+  "body": "Video: https://www.youtube.com/watch?v=XCY2-eDQ-X0 Y Combinator Winter 2020 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://getsomatic.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://getsomatic.com/"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://www.linkedin.com/company/somatic",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/somatic",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "346 W 72nd St, New York, 10023, United States",
+          "lat": 40.780352,
+          "lon": -73.986009,
+          "src": "https://www.linkedin.com/company/somatic"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

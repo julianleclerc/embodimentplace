@@ -1,0 +1,51 @@
+{
+  "id": 1506,
+  "type": "company",
+  "slug": "tekever",
+  "name": "Tekever",
+  "summary": "Operates autonomous unmanned aerial systems for intelligence, surveillance, reconnaissance, and electronic warfare missions.",
+  "body": "Leading the future of AI-driven autonomy across civil and defence missions. Quick facts about TEKEVER: Founded in 2001 Expertise in Software, Electronics, Communication and Aerospace 1300+ Talented people Contact: General enquiries: info@tekever.com Recruitment: jobs@tekever.com Media: media@tekever.com",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/221-tekever",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tekever.com/"
+    },
+    "image": {
+      "v": "/logos/tekever.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/db6cf54433888e0d8f4f.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Lisbon",
+      "src": "https://pt.linkedin.com/company/tekever",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Portugal",
+      "src": "https://pt.linkedin.com/company/tekever",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Largo do Duque de Cadaval 17, 1200-160 Lisboa, Lisbon, 1350-352, Portugal",
+          "lat": 38.750976,
+          "lon": -9.152182,
+          "src": "https://pt.linkedin.com/company/tekever"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

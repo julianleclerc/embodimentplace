@@ -1,0 +1,52 @@
+{
+  "id": 1017,
+  "type": "company",
+  "slug": "ek-automation",
+  "name": "E&K Automation",
+  "summary": "Evolf vermogensadvies is een onafhankelijke beleggingsonderneming die in september 2014 is opgericht.",
+  "body": "Wij zijn een beleggingsonderneming die vermogende en ondernemende families begeleidt. Om vermogen te beschermen, overzicht te behouden, bestuurbaarheid en continuïteit te borgen en ook om netwerken en contacten te delen.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://ek-robotics.com/de/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ek-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/ek-automation.png",
+      "fit": "contain",
+      "src": "https://ek-robotics.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Eindhoven",
+      "src": "https://nl.linkedin.com/company/e",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/e",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Eindhoven, Noord-Brabant, Netherlands",
+          "lat": 51.439265,
+          "lon": 5.478633,
+          "src": "https://nl.linkedin.com/company/e"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

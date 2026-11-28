@@ -1,0 +1,51 @@
+{
+  "id": 900,
+  "type": "company",
+  "slug": "shinkei-systems",
+  "name": "Shinkei Systems",
+  "summary": "Robots for longer-lasting, better-tasting fish at scale.",
+  "body": "1.2B lbs of fish are caught everyday yet as little as 1 in 3 fish make it to a plate — most of this waste arises because fish are suffocated on boats or electrocuted on farms. Y Combinator Winter 2022 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://shinkei.systems/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://shinkei.systems/"
+    },
+    "image": {
+      "v": "/logos/shinkei-systems.png",
+      "fit": "contain",
+      "src": "https://shinkei.systems/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.ycombinator.com/companies/shinkei-systems",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/shinkei-systems",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, CA, United States",
+          "lat": 34.053692,
+          "lon": -118.242768,
+          "src": "https://www.ycombinator.com/companies/shinkei-systems"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 2152,
+  "type": "lab",
+  "slug": "pracsys-lab",
+  "name": "PRACSYS Lab",
+  "summary": "Motion planning and manipulation.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Planning",
+        "Manipulation"
+      ],
+      "src": "https://pracsys.cs.rutgers.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://pracsys.cs.rutgers.edu/",
+      "src": "https://pracsys.cs.rutgers.edu/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Kostas E. Bekris",
+      "src": "https://pracsys.cs.rutgers.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

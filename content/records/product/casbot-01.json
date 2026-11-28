@@ -1,0 +1,28 @@
+{
+  "id": 3470,
+  "type": "product",
+  "slug": "casbot-01",
+  "name": "CASBOT 01",
+  "summary": "CASBOT 01, a humanoid robot from CASBOT.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/casbot-01.webp",
+      "src": "https://casbot.tech/",
+      "orig": "https://casbot.tech/images/index/casbot_02.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://casbot.tech/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://casbot.tech/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 2173,
+  "type": "lab",
+  "slug": "humanoid-robots-lab",
+  "name": "Humanoid Robots Lab",
+  "summary": "Navigation and planning for humanoids.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Humanoids",
+        "Planning"
+      ],
+      "src": "https://www.hrl.uni-bonn.de/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hrl.uni-bonn.de/",
+      "src": "https://www.hrl.uni-bonn.de/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Maren Bennewitz",
+      "src": "https://www.hrl.uni-bonn.de/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

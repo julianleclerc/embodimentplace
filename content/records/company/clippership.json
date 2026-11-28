@@ -1,0 +1,51 @@
+{
+  "id": 1581,
+  "type": "company",
+  "slug": "clippership",
+  "name": "Clippership",
+  "summary": "Designs and deploys autonomous, wind-powered cargo vessels for maritime freight transport.",
+  "body": "...",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/663-clippership",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://clippership.co/"
+    },
+    "image": {
+      "v": "/logos/clippership.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4083a6080ab4779e0dbc.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "South San Francisco",
+      "src": "https://roboticsconnected.com/companies/663-clippership",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/663-clippership",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "South San Francisco, United States",
+          "lat": 37.65354,
+          "lon": -122.416866,
+          "src": "https://roboticsconnected.com/companies/663-clippership"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3432,
+  "type": "product",
+  "slug": "humanoid-hmnd-01",
+  "name": "Humanoid HMND 01",
+  "summary": "HMND 01, a humanoid robot from Humanoid.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/humanoid-hmnd-01.webp",
+      "src": "https://thehumanoid.ai/hmnd-01-alpha-goes-to-work-humanoid-completes-automotive-manufacturing-logistics-poc-with-sap-and-martur-fompak/",
+      "orig": "https://thehumanoid.ai/wp-content/uploads/2026/03/MF-SAP_Still_1.1.4-2.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://thehumanoid.ai/hmnd-01-alpha-goes-to-work-humanoid-completes-automotive-manufacturing-logistics-poc-with-sap-and-martur-fompak/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://thehumanoid.ai/hmnd-01-alpha-goes-to-work-humanoid-completes-automotive-manufacturing-logistics-poc-with-sap-and-martur-fompak/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1832,
+  "type": "company",
+  "slug": "hadrian-automation",
+  "name": "Hadrian Automation",
+  "summary": "US advanced manufacturing company based in Torrance, California, building highly automated factories for defence, aerospace and industrial customers.",
+  "body": "Hadrian is building autonomous factories to reindustrialize America. By combining AI, advanced software, robotics, and full-stack manufacturing, we help aerospace and defense companies build rockets, satellites, aircraft, ships, and other mission-critical systems up to 10x faster and at significantly lower cost.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2141-hadrian-automation",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hadrian.co/"
+    },
+    "image": {
+      "v": "/logos/hadrian-automation.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/bebd8c2e234043cd5b69.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Torrance",
+      "src": "https://roboticsconnected.com/companies/2141-hadrian-automation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2141-hadrian-automation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Torrance, United States",
+          "lat": 33.837139,
+          "lon": -118.341361,
+          "src": "https://roboticsconnected.com/companies/2141-hadrian-automation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

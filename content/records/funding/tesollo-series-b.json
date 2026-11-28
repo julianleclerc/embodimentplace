@@ -1,0 +1,23 @@
+{
+  "id": 3571,
+  "type": "funding",
+  "slug": "tesollo-series-b",
+  "name": "Tesollo Series B",
+  "summary": "Closed a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-08-03",
+      "src": "https://pulse2.com/tesollo-begins-ipo-process-and-completes-series-b-financing/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://pulse2.com/tesollo-begins-ipo-process-and-completes-series-b-financing/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-08-03"
+}

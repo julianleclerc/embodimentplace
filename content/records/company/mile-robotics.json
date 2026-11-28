@@ -1,0 +1,51 @@
+{
+  "id": 2030,
+  "type": "company",
+  "slug": "mile-robotics",
+  "name": "Mile Robotics",
+  "summary": "Turns human decisions in immersive games and simulations into robot training data.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2122177875247808740",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.milelabs.co/"
+    },
+    "image": {
+      "v": "/logos/mile-robotics.png",
+      "fit": "contain",
+      "src": "https://www.milelabs.co/images/brand/logo-mark-white.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Manchester",
+      "src": "https://www.linkedin.com/company/mile-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.linkedin.com/company/mile-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Manchester, United Kingdom",
+          "lat": 53.442462,
+          "lon": -2.232455,
+          "src": "https://www.linkedin.com/company/mile-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

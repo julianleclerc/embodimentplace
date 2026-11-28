@@ -1,0 +1,28 @@
+{
+  "id": 3418,
+  "type": "product",
+  "slug": "dataa-cloud-ginger",
+  "name": "Dataa Cloud Ginger",
+  "summary": "Cloud Ginger, a humanoid robot from Dataa Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/dataa-cloud-ginger.webp",
+      "src": "https://www.dataarobotics.com/en/product-44.html",
+      "orig": "https://www.dataarobotics.com/en/Uploads/44/655c7e767b797.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.dataarobotics.com/en/product-44.html",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.dataarobotics.com/en/product-44.html"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

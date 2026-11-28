@@ -1,0 +1,52 @@
+{
+  "id": 2053,
+  "type": "company",
+  "slug": "roboblackbox",
+  "name": "Roboblackbox",
+  "summary": "Tamper-evident flight-data recorder and independent operating record for robot fleets.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Software developer"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2102156069485072837",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://roboblackbox.com/"
+    },
+    "image": {
+      "v": "/logos/roboblackbox.png",
+      "fit": "contain",
+      "src": "https://roboblackbox.com/media/logo/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seattle",
+      "src": "https://x.com/StealthCoSpy/status/2102156069485072837",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://x.com/StealthCoSpy/status/2102156069485072837",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seattle, Washington, United States",
+          "lat": 47.603832,
+          "lon": -122.330062,
+          "src": "https://x.com/StealthCoSpy/status/2102156069485072837"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

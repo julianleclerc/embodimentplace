@@ -1,0 +1,51 @@
+{
+  "id": 1791,
+  "type": "company",
+  "slug": "mach-industries",
+  "name": "Mach Industries",
+  "summary": "Huntington Beach, California defence manufacturer building unmanned aerial systems and the production capacity to make them at scale.",
+  "body": "Mach Industries is a defense manufacturing company that develops and produces unmanned aerospace and defense systems, along with the infrastructure required to manufacture them at scale.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1961-mach-industries",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://machindustries.com/"
+    },
+    "image": {
+      "v": "/logos/mach-industries.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9c4b9418b74ac43e7e12.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Huntington Beach",
+      "src": "https://roboticsconnected.com/companies/1961-mach-industries",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1961-mach-industries",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Huntington Beach, United States",
+          "lat": 33.678334,
+          "lon": -118.000016,
+          "src": "https://roboticsconnected.com/companies/1961-mach-industries"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1471,
+  "type": "company",
+  "slug": "earth-rover",
+  "name": "Earth Rover",
+  "summary": "Develops autonomous weeding and scouting robots for agriculture using light-based weed elimination technology.",
+  "body": "We are an agritech start-up pioneer in the use of concentrated light for weed control.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/160-earth-rover",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.earthrover.farm/"
+    },
+    "image": {
+      "v": "/logos/earth-rover.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/95fb57360629262d2202.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Edgmond",
+      "src": "https://uk.linkedin.com/company/earth-rover",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/earth-rover",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Poultry Drive, Edgmond, Newport TF10 8JZ, United Kingdom",
+          "lat": 52.790768,
+          "lon": -2.427502,
+          "src": "https://uk.linkedin.com/company/earth-rover"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

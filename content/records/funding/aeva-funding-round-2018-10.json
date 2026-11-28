@@ -1,0 +1,23 @@
+{
+  "id": 3968,
+  "type": "funding",
+  "slug": "aeva-funding-round-2018-10",
+  "name": "Aeva funding round (2018-10)",
+  "summary": "Raised $45 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2018-10-01",
+      "src": "https://venturebeat.com/business/aeva-raises-45-million-for-autonomous-car-sensors-that-can-measure-velocity",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 45,
+      "src": "https://venturebeat.com/business/aeva-raises-45-million-for-autonomous-car-sensors-that-can-measure-velocity",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2018-10-01"
+}

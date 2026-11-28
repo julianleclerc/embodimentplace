@@ -1,0 +1,51 @@
+{
+  "id": 1949,
+  "type": "company",
+  "slug": "sick",
+  "name": "SICK",
+  "summary": "Waldkirch-based industrial sensor manufacturer founded in 1946, best known for machine vision, safety sensors, and code readers used in factory and logistics automation.",
+  "body": "SICK is a leading global technology company for intelligent sensor solutions and integrated solutions in industrial automation. Innovative technologies set benchmarks and make industrial processes more efficient, safer, and more sustainable – in both logistics and manufacturing operations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/3295-sick",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sick.com/"
+    },
+    "image": {
+      "v": "/logos/sick.png",
+      "fit": "contain",
+      "src": "https://www.sick.com/assets/icons/custom/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Waldkirch",
+      "src": "https://de.linkedin.com/company/sicksensorintelligence",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/sicksensorintelligence",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Erwin-Sick-Str. 1, Waldkirch, 79183, Germany",
+          "lat": 48.08897,
+          "lon": 7.949476,
+          "src": "https://de.linkedin.com/company/sicksensorintelligence"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

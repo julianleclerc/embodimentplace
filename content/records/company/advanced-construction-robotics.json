@@ -1,0 +1,51 @@
+{
+  "id": 1139,
+  "type": "company",
+  "slug": "advanced-construction-robotics",
+  "name": "Advanced Construction Robotics",
+  "summary": "A leading provider of robotic equipment, ACR is transforming the construction industry by filling the skilled labor gap and increasing overall productivity.",
+  "body": "Our robots give construction firms the ability to consistently meet growing demand, reduce scheduling risks and improve safety.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://constructionrobots.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://constructionrobots.com/"
+    },
+    "image": {
+      "v": "/logos/advanced-construction-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/693dcb2dcf07a35645333596/693dcbebe871add4d2899cd1_favicon-256.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/advanced-construction-construction-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/advanced-construction-construction-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "., Pittsburgh, Pennsylvania ., United States",
+          "lat": 40.440697,
+          "lon": -80.002567,
+          "src": "https://www.linkedin.com/company/advanced-construction-construction-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

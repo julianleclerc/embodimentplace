@@ -1,0 +1,51 @@
+{
+  "id": 1844,
+  "type": "company",
+  "slug": "inker-robotics",
+  "name": "Inker Robotics",
+  "summary": "Thrissur, Kerala-based company that runs a robotics education ecosystem rather than selling industrial robots.",
+  "body": "INKER ROBOTICS - Anybody Can Build A Robot Anybody can build a Robot. Sounds preposterous, doesn’t it? But for us at Inker Robotics, it’s our ideology.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2338-inker-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://inkerrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/inker-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/099636530789013c45e4.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Thrissur",
+      "src": "https://in.linkedin.com/company/inkerrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/inkerrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shoranur Road, Thrissur, Kerala 680008, India",
+          "lat": 10.528321,
+          "lon": 76.211913,
+          "src": "https://in.linkedin.com/company/inkerrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3492,
+  "type": "funding",
+  "slug": "bear-robotics-series-b",
+  "name": "Bear Robotics Series B",
+  "summary": "Raised $81M in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-03-14",
+      "src": "https://www.businesswire.com/news/home/20220315005074/en/Bear-Robotics-Raises-%2481M-Series-B-to-Scale-Up-Mobile-Robots-in-the-Hospitality-Market",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.businesswire.com/news/home/20220315005074/en/Bear-Robotics-Raises-%2481M-Series-B-to-Scale-Up-Mobile-Robots-in-the-Hospitality-Market",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 81,
+      "src": "https://www.businesswire.com/news/home/20220315005074/en/Bear-Robotics-Raises-%2481M-Series-B-to-Scale-Up-Mobile-Robots-in-the-Hospitality-Market",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-03-14"
+}

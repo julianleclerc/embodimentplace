@@ -1,0 +1,51 @@
+{
+  "id": 1659,
+  "type": "company",
+  "slug": "exrobotics",
+  "name": "ExRobotics",
+  "summary": "Builds explosion-proof autonomous inspection robots for hazardous industrial sites.",
+  "body": "ExRobotics is an industry leader in autonomous inspection robotics for hazardous industrial environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1063-exrobotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.exrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/exrobotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d647a95b6cad70c6a8ed.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Delft",
+      "src": "https://nl.linkedin.com/company/exrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/exrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Delftechpark 26, Delft, Zuid-Holland 2628 XH, Netherlands",
+          "lat": 51.996925,
+          "lon": 4.385073,
+          "src": "https://nl.linkedin.com/company/exrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 2691,
+  "type": "post",
+  "slug": "noitom-robotics-releases-hiphi-hand-precision-hand-capture-data-used-to-train-nvidia-egohand-and-demonstrates-real-time-hand-reconstruction-at-corl-2026",
+  "name": "Noitom Robotics Releases HiPHI-Hand, Precision Hand Capture Data Used to Train NVIDIA EgoHand, and Demonstrates Real-Time Hand Reconstruction at CoRL 2026",
+  "summary": "Sub-millimeter hand ground truth with synchronized first-person video comes to Hugging Face under the same research ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-09"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "freep.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.freep.com/press-release/story/269440/noitom-robotics-releases-hiphi-hand-precision-hand-capture-data-used-to-train-nvidia-egohand-and-demonstrates-real-time-hand-reconstruction-at-corl-2026/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-09"
+}

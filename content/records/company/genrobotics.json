@@ -1,0 +1,51 @@
+{
+  "id": 1170,
+  "type": "company",
+  "slug": "genrobotics",
+  "name": "Genrobotics",
+  "summary": "We are GenRobotic Innovations, a deep-tech company founded in 2015, committed to solving critical social challenges through advanced robotics and AI.",
+  "body": "Our journey began with a college project developing a wearable exoskeleton, and we've since evolved to create impactful solutions that enhance safety and transform lives.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://genrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://genrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/genrobotics.png",
+      "fit": "contain",
+      "src": "https://genrobotics.com/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Trivandrum",
+      "src": "https://in.linkedin.com/company/genrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/genrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Technopark Campus, Phase 1, Trivandrum, Kerala 695581, India",
+          "lat": 8.548682,
+          "lon": 76.886612,
+          "src": "https://in.linkedin.com/company/genrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

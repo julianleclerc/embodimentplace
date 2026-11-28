@@ -1,0 +1,51 @@
+{
+  "id": 1872,
+  "type": "company",
+  "slug": "siléane",
+  "name": "Siléane",
+  "summary": "Builds adaptive robots combining vision, artificial intelligence and automation.",
+  "body": "Siléane was created in 2002. We are specialists of robotics and vision. We automate the human gestures in any given situation with a view to improving productivity within industrial, environmental, or food industry applications.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2636-sileane",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sileane.com/"
+    },
+    "image": {
+      "v": "/logos/siléane.png",
+      "fit": "contain",
+      "src": "https://www.sileane.com/wp-content/uploads/2024/02/cropped-DoubleVirgule-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Saint Étienne",
+      "src": "https://fr.linkedin.com/company/sileane",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/sileane",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "17 Rue Descartes, Saint Étienne, Loire 42000, France",
+          "lat": 45.450837,
+          "lon": 4.416446,
+          "src": "https://fr.linkedin.com/company/sileane"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

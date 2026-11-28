@@ -1,0 +1,51 @@
+{
+  "id": 2099,
+  "type": "company",
+  "slug": "eth-zurich",
+  "name": "ETH Zurich",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://ethz.ch/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ethz.ch/"
+    },
+    "city": {
+      "v": "Zurich"
+    },
+    "country": {
+      "v": "Switzerland"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zurich, Switzerland",
+          "lat": 47.3763,
+          "lon": 8.5477
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 19,
+      "faculty": 11,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 6,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

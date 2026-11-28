@@ -1,0 +1,51 @@
+{
+  "id": 1738,
+  "type": "company",
+  "slug": "posha",
+  "name": "Posha",
+  "summary": "San Francisco-based AI and robotics company building a countertop robot chef for home kitchens.",
+  "body": "The appliance uses a built-in camera and onboard intelligence to detect cooking stages, add ingredients at the right moment, manage heat and stir automatically. Users pick from more than 1,000 recipes, load fresh ingredients and let the machine cook.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1517-posha",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.posha.com/"
+    },
+    "image": {
+      "v": "/logos/posha.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9e01f7adc13cf415b2c4.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://roboticsconnected.com/companies/1517-posha",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1517-posha",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://roboticsconnected.com/companies/1517-posha"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

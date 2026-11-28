@@ -35,9 +35,16 @@
       "v": "IP54",
       "src": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa",
       "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/kuka-lbr-iiwa.webp",
+      "src": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/lbr-iiwa",
+      "orig": "https://www.kuka.com/-/media/kuka-corporate/images/products/robots/lbr-iiwa/lbr_iiwa_flansch.jpg?rev=c8f2a9873e5b4bfdb163984acb13d14b&w=1400&hash=84893A7EA50D6AE08F00110553AFF3CC",
+      "fit": "contain",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-22 03:05:17",
-  "updated": "2026-11-24 06:05:09",
+  "updated": "2026-11-28 03:05:16",
   "feed_at": "2026-11-22"
 }

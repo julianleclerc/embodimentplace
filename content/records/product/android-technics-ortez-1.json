@@ -1,0 +1,23 @@
+{
+  "id": 3412,
+  "type": "product",
+  "slug": "android-technics-ortez-1",
+  "name": "Android Technics Ortez 1",
+  "summary": "Ortez 1, a robot from Android Technics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/android-technics-ortez-1.webp",
+      "src": "https://npo-at.com/en/product/ortez-1/",
+      "orig": "https://npo-at.com/wp-content/uploads/2025/12/ortez-1.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://npo-at.com/en/product/ortez-1/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

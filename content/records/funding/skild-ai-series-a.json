@@ -1,0 +1,28 @@
+{
+  "id": 3546,
+  "type": "funding",
+  "slug": "skild-ai-series-a",
+  "name": "Skild AI Series A",
+  "summary": "Raised $300M in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-07-08",
+      "src": "https://www.businesswire.com/news/home/20240709306400/en/5678441/Skild-AI-Raises-300M-Series-A-To-Build-A-Scalable-AI-Foundation-Model-For-Robotics",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.businesswire.com/news/home/20240709306400/en/5678441/Skild-AI-Raises-300M-Series-A-To-Build-A-Scalable-AI-Foundation-Model-For-Robotics",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 300,
+      "src": "https://www.businesswire.com/news/home/20240709306400/en/5678441/Skild-AI-Raises-300M-Series-A-To-Build-A-Scalable-AI-Foundation-Model-For-Robotics",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-07-08"
+}

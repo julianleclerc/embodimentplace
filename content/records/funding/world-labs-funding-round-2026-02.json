@@ -1,0 +1,23 @@
+{
+  "id": 3547,
+  "type": "funding",
+  "slug": "world-labs-funding-round-2026-02",
+  "name": "World Labs funding round (2026-02)",
+  "summary": "Raised $1 billion.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-02-18",
+      "src": "https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-202957884.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1000,
+      "src": "https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-202957884.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-02-18"
+}

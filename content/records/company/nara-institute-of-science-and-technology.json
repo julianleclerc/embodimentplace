@@ -1,0 +1,51 @@
+{
+  "id": 1364,
+  "type": "company",
+  "slug": "nara-institute-of-science-and-technology",
+  "name": "Nara Institute of Science and Technology",
+  "summary": "Higher education institution in Nara Prefecture, Japan.",
+  "body": "Recent robotics work includes “Reinforcement Learning of Multi-robot Task Allocation for Multi-object Transportation with Infeasible Tasks”. OpenAlex lists 58 robotics, humanoid, embodied-AI or manipulation papers from Nara Institute of Science and Technology since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/sii59315.2025.10870902",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.naist.jp/"
+    },
+    "image": {
+      "v": "/logos/nara-institute-of-science-and-technology.png",
+      "fit": "contain",
+      "src": "https://www.naist.jp/mt-static/support/theme_static/naist_jp_main/images/naist-logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ikoma",
+      "src": "https://www.wikidata.org/wiki/Q843253",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://www.wikidata.org/wiki/Q843253",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ikoma, Japan",
+          "lat": 34.732222,
+          "lon": 135.7325,
+          "src": "https://www.wikidata.org/wiki/Q843253"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

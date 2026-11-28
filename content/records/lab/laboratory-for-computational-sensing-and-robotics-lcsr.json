@@ -1,0 +1,26 @@
+{
+  "id": 2174,
+  "type": "lab",
+  "slug": "laboratory-for-computational-sensing-and-robotics-lcsr",
+  "name": "Laboratory for Computational Sensing and Robotics (LCSR)",
+  "summary": "Medical robotics leader, with a robotics master's.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Medical robots",
+        "Perception"
+      ],
+      "src": "https://lcsr.jhu.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://lcsr.jhu.edu/",
+      "src": "https://lcsr.jhu.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

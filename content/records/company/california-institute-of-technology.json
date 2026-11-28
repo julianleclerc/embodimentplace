@@ -1,0 +1,51 @@
+{
+  "id": 2093,
+  "type": "company",
+  "slug": "california-institute-of-technology",
+  "name": "California Institute of Technology",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.caltech.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.caltech.edu/"
+    },
+    "city": {
+      "v": "Pasadena"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pasadena, United States",
+          "lat": 34.1377,
+          "lon": -118.1253
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 46.2,
+      "faculty": 9,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 18,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

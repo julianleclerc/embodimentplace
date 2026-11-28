@@ -1,0 +1,28 @@
+{
+  "id": 3461,
+  "type": "product",
+  "slug": "robotis-worker",
+  "name": "ROBOTIS Worker",
+  "summary": "Worker, a humanoid robot from ROBOTIS.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/robotis-worker.webp",
+      "src": "https://robotis.us/",
+      "orig": "https://robotis.us/cdn/shop/files/AI-Worker-img.webp?v=1785503290",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://robotis.us/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotis.us/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

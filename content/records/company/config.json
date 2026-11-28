@@ -1,0 +1,52 @@
+{
+  "id": 1010,
+  "type": "company",
+  "slug": "config",
+  "name": "Config",
+  "summary": "We build the data infrastructure and technology that enables general-purpose robotic bimanual manipulation.",
+  "body": "Config builds the data infrastructure and technology that enable general-purpose bimanual robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://config.inc/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://config.inc/"
+    },
+    "image": {
+      "v": "/logos/config.png",
+      "fit": "contain",
+      "src": "https://config.inc/favicon.ico?favicon.0bfrw977efpzb.ico?dpl=dpl_F33jYmC2DjhF7J9GnmP4ZQFjKd3m",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Jose",
+      "src": "https://www.linkedin.com/company/config-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/config-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Jose, California, United States",
+          "lat": 37.336166,
+          "lon": -121.890591,
+          "src": "https://www.linkedin.com/company/config-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

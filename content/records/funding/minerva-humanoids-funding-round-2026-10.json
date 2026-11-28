@@ -1,0 +1,23 @@
+{
+  "id": 3482,
+  "type": "funding",
+  "slug": "minerva-humanoids-funding-round-2026-10",
+  "name": "Minerva Humanoids funding round (2026-10)",
+  "summary": "Raised $10 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-10-06",
+      "src": "https://menafn.com/1111776220/Minerva-Humanoids-Raises-10-Million-For-Hazardous-Work-Robots",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 10,
+      "src": "https://menafn.com/1111776220/Minerva-Humanoids-Raises-10-Million-For-Hazardous-Work-Robots",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-10-06"
+}

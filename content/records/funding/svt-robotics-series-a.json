@@ -1,0 +1,28 @@
+{
+  "id": 3612,
+  "type": "funding",
+  "slug": "svt-robotics-series-a",
+  "name": "SVT Robotics Series A",
+  "summary": "Raised $25 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2021-11-17",
+      "src": "https://www.streetinsider.com/Globe+Newswire/SVT+Robotics+Announces+%2425+Million+in+Series+A+Funding+Round+Led+by+Tiger+Global/19233540.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.streetinsider.com/Globe+Newswire/SVT+Robotics+Announces+%2425+Million+in+Series+A+Funding+Round+Led+by+Tiger+Global/19233540.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 25,
+      "src": "https://www.streetinsider.com/Globe+Newswire/SVT+Robotics+Announces+%2425+Million+in+Series+A+Funding+Round+Led+by+Tiger+Global/19233540.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2021-11-17"
+}

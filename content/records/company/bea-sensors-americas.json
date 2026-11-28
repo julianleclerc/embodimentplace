@@ -1,0 +1,51 @@
+{
+  "id": 1531,
+  "type": "company",
+  "slug": "bea-sensors-americas",
+  "name": "BEA Sensors Americas",
+  "summary": "Manufactures laser and microwave sensors for automatic door systems, access control, and industrial automation.",
+  "body": "BEA is a leading manufacturer of sensing solutions for automatic doors systems. The company’s US headquarters was founded in 1987 . BEA also has offices in the Belgium, Japan and China and our products can be found across the globe.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/263-bea-sensors-americas",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://us.beasensors.com/"
+    },
+    "image": {
+      "v": "/logos/bea-sensors-americas.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a5c46a3c64121122bf73.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/bea-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/bea-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "100 Enterprise Drive, Pittsburgh, PA 15275, United States",
+          "lat": 40.440697,
+          "lon": -80.002567,
+          "src": "https://www.linkedin.com/company/bea-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

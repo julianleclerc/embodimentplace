@@ -1,0 +1,52 @@
+{
+  "id": 1859,
+  "type": "company",
+  "slug": "robospecies-technologies",
+  "name": "RoboSpecies Technologies",
+  "summary": "Indian edtech company that sets up turnkey robotics, coding, AI, STEM and tinkering labs in schools.",
+  "body": "As an organization committed to advancing the technical development of our country, RoboSpecies is proud to offer a comprehensive robotic learning program designed to educate young children in the field of robot building and programming.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/2447-robospecies-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robospecies.com/"
+    },
+    "image": {
+      "v": "/logos/robospecies-technologies.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/0377341e-fe5d-44d4-ba14-dc8120afe367.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Noida",
+      "src": "https://in.linkedin.com/company/robospecies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/robospecies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "D-66,First Floor, Noida, U.P. 201301, India",
+          "lat": -33.358163,
+          "lon": -70.740907,
+          "src": "https://in.linkedin.com/company/robospecies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

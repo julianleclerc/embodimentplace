@@ -1,0 +1,51 @@
+{
+  "id": 1612,
+  "type": "company",
+  "slug": "zeabuz",
+  "name": "Zeabuz",
+  "summary": "Develops autonomous maritime navigation systems for commercial and defence vessels.",
+  "body": "Driven by our mission to empower effective and resilient maritime operations, Zeabuz delivers intelligent navigation, automation, and autonomy solutions for commercial and defence operators.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/840-zeabuz",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.zeabuz.com/"
+    },
+    "image": {
+      "v": "/logos/zeabuz.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/2eebab986b6df83c901a.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Trondheim",
+      "src": "https://no.linkedin.com/company/zeabuz",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://no.linkedin.com/company/zeabuz",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Skippergata 14, Trondheim, Trøndelag 7042, Norway",
+          "lat": 63.439939,
+          "lon": 10.417741,
+          "src": "https://no.linkedin.com/company/zeabuz"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

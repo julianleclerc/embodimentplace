@@ -1,0 +1,46 @@
+{
+  "id": 2015,
+  "type": "company",
+  "slug": "vanar-robots",
+  "name": "Vanar Robots",
+  "summary": "Builds the Vanar Generation 1 humanoid, with in-house actuators and tendon-driven hands, for industrial work.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://x.com/TheHumanoidHub/status/2083011991313260736",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.vanarrobots.com/"
+    },
+    "city": {
+      "v": "Mumbai",
+      "src": "https://www.linkedin.com/company/vanar-robots",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://www.linkedin.com/company/vanar-robots",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mumbai, Maharashtra, India",
+          "lat": 19.054999,
+          "lon": 72.869203,
+          "src": "https://www.linkedin.com/company/vanar-robots"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

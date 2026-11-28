@@ -1,0 +1,52 @@
+{
+  "id": 1742,
+  "type": "company",
+  "slug": "vir-innovations",
+  "name": "Vir Innovations",
+  "summary": "Hyderabad-based product development company founded in 2021.",
+  "body": "We are a product development company headquartered in Hyderabad, specializing in defence technology and the Internet of Things (IoT). Our primary focus is on developing advanced systems in the fields of computer vision, robotics, and fire control systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1623-vir-innovations",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.virinnovations.in/"
+    },
+    "image": {
+      "v": "/logos/vir-innovations.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9c813dff90dc0c27f41b.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hyderabad",
+      "src": "https://in.linkedin.com/company/virinnovations",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/virinnovations",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Vir Innovations Pvt. Ltd., V.V.S Crest, Plot No. 8-2-438/7, Road No. – 4, Banjara Hills, Hyderabad - 500034, Hyderabad, Telangana 500034, India",
+          "lat": 17.360589,
+          "lon": 78.474061,
+          "src": "https://in.linkedin.com/company/virinnovations"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

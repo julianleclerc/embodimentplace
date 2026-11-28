@@ -1,0 +1,51 @@
+{
+  "id": 1449,
+  "type": "company",
+  "slug": "ascent-aerosystems",
+  "name": "Ascent AeroSystems",
+  "summary": "Manufactures portable, rugged small unmanned aerial systems with a distinctive coaxial vehicle configuration.",
+  "body": "The company's platforms, including the Sprite, Helius and NX30 models, are simpler to operate and more durable than typical multi-rotor drones. The company serves defence, logistics, agriculture and inspection sectors.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/119-ascent-aerosystems",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robinsonheli.com/"
+    },
+    "image": {
+      "v": "/logos/ascent-aerosystems.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/0113027d727a51b0e829.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Wilmington",
+      "src": "https://roboticsconnected.com/companies/119-ascent-aerosystems",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/119-ascent-aerosystems",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Wilmington, United States",
+          "lat": 39.738331,
+          "lon": -75.552747,
+          "src": "https://roboticsconnected.com/companies/119-ascent-aerosystems"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

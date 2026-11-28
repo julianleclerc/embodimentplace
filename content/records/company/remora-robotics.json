@@ -1,0 +1,52 @@
+{
+  "id": 1676,
+  "type": "company",
+  "slug": "remora-robotics",
+  "name": "Remora Robotics",
+  "summary": "Builds a patented, fully autonomous submarine robot that cleans and inspects fish farming pens.",
+  "body": "Remora is building the infrastructure autonomous aquaculture runs on, globally.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/1200-remora-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://remorarobotics.no/"
+    },
+    "image": {
+      "v": "/logos/remora-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/18149e1121d12ff4e017.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Stavanger",
+      "src": "https://no.linkedin.com/company/remora-robotics-as",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://no.linkedin.com/company/remora-robotics-as",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Dusavikveien 39, Stavanger, Norway 4007, Norway",
+          "lat": 59.906793,
+          "lon": 10.761016,
+          "src": "https://no.linkedin.com/company/remora-robotics-as"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

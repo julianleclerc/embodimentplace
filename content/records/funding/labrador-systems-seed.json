@@ -1,0 +1,28 @@
+{
+  "id": 3726,
+  "type": "funding",
+  "slug": "labrador-systems-seed",
+  "name": "Labrador Systems Seed",
+  "summary": "Raised $3.1M in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-01-04",
+      "src": "https://www.prnewswire.com/news-releases/labrador-systems-raises-additional-3-1m-in-seed-funding-301453173.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.prnewswire.com/news-releases/labrador-systems-raises-additional-3-1m-in-seed-funding-301453173.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 3.1,
+      "src": "https://www.prnewswire.com/news-releases/labrador-systems-raises-additional-3-1m-in-seed-funding-301453173.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-01-04"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3755,
+  "type": "funding",
+  "slug": "ecorobotix-funding-round-2025-10",
+  "name": "Ecorobotix funding round (2025-10)",
+  "summary": "Raised $150M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-10-12",
+      "src": "https://www.thestar.com/globenewswire/ecorobotix-secures-150m-to-accelerate-ai-powered-plant-by-plant-care-unveiling-new-innovation-at/article_0c961441-5011-5575-b6c6-e9776670ed1c.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 150,
+      "src": "https://www.thestar.com/globenewswire/ecorobotix-secures-150m-to-accelerate-ai-powered-plant-by-plant-care-unveiling-new-innovation-at/article_0c961441-5011-5575-b6c6-e9776670ed1c.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-10-12"
+}

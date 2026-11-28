@@ -1,0 +1,51 @@
+{
+  "id": 1577,
+  "type": "company",
+  "slug": "centre-for-robotics-and-assembly",
+  "name": "Centre for Robotics and Assembly",
+  "summary": "The Centre for Robotics and Assembly at Cranfield University is a research and teaching hub that develops advanced robotic and assembly systems for industrial…",
+  "body": "The Centre for Robotics and Assembly brings together a group of leading experts with diverse skill sets to solve multi-faceted and complex problems. Our research and teaching spans robotics, automation, industrial psychology, human factors, and driver behaviour.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://roboticsconnected.com/companies/650-centre-for-robotics-and-assembly",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.cranfield.ac.uk/"
+    },
+    "image": {
+      "v": "/logos/centre-for-robotics-and-assembly.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/88eaf846a1afdc793829.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cranfield",
+      "src": "https://uk.linkedin.com/company/cranfieldrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/cranfieldrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "College Rd, Cranfield, Wharley End, Bedford, Cranfield, Bedfordshire MK43 0AL, United Kingdom",
+          "lat": 52.072882,
+          "lon": -0.602071,
+          "src": "https://uk.linkedin.com/company/cranfieldrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

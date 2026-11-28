@@ -1,0 +1,28 @@
+{
+  "id": 3421,
+  "type": "product",
+  "slug": "dexforce-w1",
+  "name": "Dexforce W1",
+  "summary": "W1, a humanoid robot from Dexforce.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/dexforce-w1.webp",
+      "src": "https://dexforce.com/products/W1",
+      "orig": "https://static.dexforce.com/product/w1pro/w1-redesign-solution-retail-c995d02adb77.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://dexforce.com/products/W1",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dexforce.com/products/W1"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

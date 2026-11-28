@@ -1,0 +1,28 @@
+{
+  "id": 3886,
+  "type": "funding",
+  "slug": "syncere-pre-seed",
+  "name": "Syncere Pre-seed",
+  "summary": "Raised $11M in a Pre-seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-03",
+      "src": "https://thenextweb.com/news/syncere-lume-robot-lamp-11m-a16z",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-seed",
+      "src": "https://thenextweb.com/news/syncere-lume-robot-lamp-11m-a16z",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 11,
+      "src": "https://thenextweb.com/news/syncere-lume-robot-lamp-11m-a16z",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-03"
+}

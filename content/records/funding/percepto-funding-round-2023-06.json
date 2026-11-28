@@ -1,0 +1,23 @@
+{
+  "id": 3748,
+  "type": "funding",
+  "slug": "percepto-funding-round-2023-06",
+  "name": "Percepto funding round (2023-06)",
+  "summary": "Raised $67 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-06-12",
+      "src": "https://www.reuters.com/business/aerospace-defense/israels-percepto-gets-us-faa-waiver-drone-use-raises-67-mln-2023-06-12/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 67,
+      "src": "https://www.reuters.com/business/aerospace-defense/israels-percepto-gets-us-faa-waiver-drone-use-raises-67-mln-2023-06-12/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-06-12"
+}

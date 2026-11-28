@@ -1,0 +1,46 @@
+{
+  "id": 2096,
+  "type": "company",
+  "slug": "university-of-bonn",
+  "name": "University of Bonn",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.uni-bonn.de/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.uni-bonn.de/"
+    },
+    "city": {
+      "v": "Bonn"
+    },
+    "country": {
+      "v": "Germany"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bonn, Germany",
+          "lat": 50.7339,
+          "lon": 7.1022
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 33.9,
+      "faculty": 7,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

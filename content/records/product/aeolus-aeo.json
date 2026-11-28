@@ -1,0 +1,28 @@
+{
+  "id": 3407,
+  "type": "product",
+  "slug": "aeolus-aeo",
+  "name": "Aeolus aeo",
+  "summary": "aeo is a multi-talented robot that helps people around the world increase productivity and everyday convenience.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/aeolus-aeo.webp",
+      "src": "https://www.aeolusbot.com/solutions/UV-C_Disinfection",
+      "orig": "https://www.aeolusbot.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FJAS_3157.a3dfa4bb.png&w=750&q=75",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.aeolusbot.com/solutions/UV-C_Disinfection",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.aeolusbot.com/solutions/UV-C_Disinfection"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

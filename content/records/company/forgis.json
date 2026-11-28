@@ -1,0 +1,51 @@
+{
+  "id": 1721,
+  "type": "company",
+  "slug": "forgis",
+  "name": "Forgis",
+  "summary": "Zurich-based industrial software company founded in 2025 by Federico Martelli, Camilla Mazzoleni and Riccardo Maggioni.",
+  "body": "Forging the next industrial revolution, Forgis makes Western manufacturing competitive by bringing industrial intelligence to the factories. We are based in Zurich, CH. (formerly Xelerit) Building the brain that makes manufacturing plant intelligent",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1359-forgis",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.forgis.com/"
+    },
+    "image": {
+      "v": "/logos/forgis.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/184d5a43aa91002d7b7d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Schlieren",
+      "src": "https://ch.linkedin.com/company/forgisai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/forgisai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zürcherstrasse 39, Schlieren, Zurich 8952, Switzerland",
+          "lat": 47.399374,
+          "lon": 8.454273,
+          "src": "https://ch.linkedin.com/company/forgisai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,26 @@
+{
+  "id": 2206,
+  "type": "lab",
+  "slug": "robotics-research-centre",
+  "name": "Robotics Research Centre",
+  "summary": "NTU's robotics research centre.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Field robots",
+        "Manipulation"
+      ],
+      "src": "https://www.ntu.edu.sg/rrc",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ntu.edu.sg/rrc",
+      "src": "https://www.ntu.edu.sg/rrc",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

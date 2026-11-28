@@ -1,0 +1,23 @@
+{
+  "id": 3891,
+  "type": "funding",
+  "slug": "peppermint-robotics-pre-series-b",
+  "name": "Peppermint Robotics Pre-Series B",
+  "summary": "Raised ₹100 Crore in a Pre-Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-03",
+      "src": "https://www.ciol.com/funding-acquistion-merger/peppermint-robotics-raises-100-crore-to-expand-global-operations-12781828",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-Series B",
+      "src": "https://www.ciol.com/funding-acquistion-merger/peppermint-robotics-raises-100-crore-to-expand-global-operations-12781828",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-03"
+}

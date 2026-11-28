@@ -1,0 +1,18 @@
+{
+  "id": 3485,
+  "type": "funding",
+  "slug": "galbot-funding-round-2025-12",
+  "name": "Galbot funding round (2025-12)",
+  "summary": "Raised over $300 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-12-19",
+      "src": "https://pulse2.com/galbot-over-300-million-funding/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-12-19"
+}

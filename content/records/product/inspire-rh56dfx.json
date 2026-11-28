@@ -1,0 +1,45 @@
+{
+  "id": 2065,
+  "type": "product",
+  "slug": "inspire-rh56dfx",
+  "name": "Inspire RH56DFX",
+  "summary": "Compact five-finger hand with 12 joints driven by 6 linear actuators, common on humanoids.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://humanoid.guide/product/rh56dfx/",
+      "asof": "2026-11"
+    },
+    "h_kind": {
+      "v": "Dexterous hand",
+      "src": "https://humanoid.guide/product/rh56dfx/",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 12,
+      "src": "https://humanoid.guide/product/rh56dfx/",
+      "asof": "2026-11"
+    },
+    "active_dof": {
+      "v": 6,
+      "src": "https://humanoid.guide/product/rh56dfx/",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://humanoid.guide/product/rh56dfx/",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/inspire-rh56dfx.webp",
+      "src": "https://humanoid.guide/product/rh56dfx/",
+      "orig": "https://humanoid.guide/wp-content/uploads/2026/10/RH56DFX-dextereous-hand-by-Inspire-Robots-at-Humanoid-Guide-600x600.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

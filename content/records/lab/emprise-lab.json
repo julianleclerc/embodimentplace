@@ -1,0 +1,31 @@
+{
+  "id": 2151,
+  "type": "lab",
+  "slug": "emprise-lab",
+  "name": "EmPRISE Lab",
+  "summary": "Robots that help people with daily living.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Assistive robots",
+        "Manipulation"
+      ],
+      "src": "https://emprise.cs.cornell.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://emprise.cs.cornell.edu/",
+      "src": "https://emprise.cs.cornell.edu/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Tapomayukh Bhattacharjee",
+      "src": "https://emprise.cs.cornell.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

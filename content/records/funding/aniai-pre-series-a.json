@@ -1,0 +1,28 @@
+{
+  "id": 3797,
+  "type": "funding",
+  "slug": "aniai-pre-series-a",
+  "name": "Aniai Pre-Series A",
+  "summary": "Raised $12 million in a Pre-Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-01-24",
+      "src": "https://www.prnewswire.com/news-releases/aniai-closes-12-million-pre-series-a-funding-to-accelerate-production-of-its-robotic-kitchen-solution-302042687.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-Series A",
+      "src": "https://www.prnewswire.com/news-releases/aniai-closes-12-million-pre-series-a-funding-to-accelerate-production-of-its-robotic-kitchen-solution-302042687.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 12,
+      "src": "https://www.prnewswire.com/news-releases/aniai-closes-12-million-pre-series-a-funding-to-accelerate-production-of-its-robotic-kitchen-solution-302042687.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-01-24"
+}

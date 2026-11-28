@@ -1,0 +1,51 @@
+{
+  "id": 1182,
+  "type": "company",
+  "slug": "keyi-tech",
+  "name": "Keyi Tech",
+  "summary": "We are an innovative robotics company founded on the idea that consumer robotics play an important role in family life now and in the future.",
+  "body": "We dreamed of a better robot that people of all ages and creeds could learn from and grow with.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://keyirobot.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://keyirobot.com/"
+    },
+    "image": {
+      "v": "/logos/keyi-tech.png",
+      "fit": "contain",
+      "src": "https://cdn.shopify.com/oxygen-v2/50995/88764/183249/5195864/assets/favicon-D2yAu5BH.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dover",
+      "src": "https://www.linkedin.com/company/loonaofficial",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/loonaofficial",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "8 The Green, Dover, Delaware 19901, United States",
+          "lat": 39.156124,
+          "lon": -75.523457,
+          "src": "https://www.linkedin.com/company/loonaofficial"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

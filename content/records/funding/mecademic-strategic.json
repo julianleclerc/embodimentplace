@@ -1,0 +1,23 @@
+{
+  "id": 3778,
+  "type": "funding",
+  "slug": "mecademic-strategic",
+  "name": "Mecademic Strategic",
+  "summary": "Closed a Strategic round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-02-18",
+      "src": "https://www.prnewswire.com/de/pressemitteilungen/mecademic-secures-strategic-funding-to-drive-global-expansion-302691572.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Strategic",
+      "src": "https://www.prnewswire.com/de/pressemitteilungen/mecademic-secures-strategic-funding-to-drive-global-expansion-302691572.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-02-18"
+}

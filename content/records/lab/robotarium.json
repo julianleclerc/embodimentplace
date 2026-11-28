@@ -1,0 +1,26 @@
+{
+  "id": 2117,
+  "type": "lab",
+  "slug": "robotarium",
+  "name": "Robotarium",
+  "summary": "A remotely accessible swarm robotics testbed.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Multi-robot",
+        "Control"
+      ],
+      "src": "https://www.robotarium.gatech.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robotarium.gatech.edu/",
+      "src": "https://www.robotarium.gatech.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1409,
+  "type": "company",
+  "slug": "adamo",
+  "name": "Adamo",
+  "summary": "Provides managed teleoperation and low-latency software solutions for robotics companies.",
+  "body": "The platform delivers glass-to-glass latency as low as 40ms with universal robot compatibility and multi-path network bonding. The service includes fully managed, 24/7 professional teleoperator coverage for robot fleets.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/23-adamo",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://adamohq.com/"
+    },
+    "image": {
+      "v": "/logos/adamo.png",
+      "fit": "contain",
+      "src": "https://adamohq.com/icon.svg?icon.105_c0e3~n26v.svg?dpl=dpl_6kLWYtPb964NhzXoR2x22RvfKhXq",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://roboticsconnected.com/companies/23-adamo",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/23-adamo",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://roboticsconnected.com/companies/23-adamo"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

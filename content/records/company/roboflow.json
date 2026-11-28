@@ -1,0 +1,51 @@
+{
+  "id": 1072,
+  "type": "company",
+  "slug": "roboflow",
+  "name": "Roboflow",
+  "summary": "Roboflow creates software-as-a-service products to make building with computer vision easy.",
+  "body": "Over 1,000,000 developers use Roboflow to manage image data, annotate and label datasets, apply preprocessing and augmentations, convert annotation file formats, train a computer vision model in one-click, and deploy models via API or to the edge. https://roboflow.com",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboflow.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://roboflow.com/"
+    },
+    "image": {
+      "v": "/logos/roboflow.png",
+      "fit": "contain",
+      "src": "https://roboflow.com/apple-icon.png?apple-icon.44hzu8-ttqbmn.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Remote",
+      "src": "https://www.linkedin.com/company/roboflow-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/roboflow-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Remote, United States",
+          "lat": 43.005946,
+          "lon": -123.892591,
+          "src": "https://www.linkedin.com/company/roboflow-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

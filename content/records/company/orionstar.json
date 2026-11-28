@@ -1,0 +1,52 @@
+{
+  "id": 930,
+  "type": "company",
+  "slug": "orionstar",
+  "name": "OrionStar",
+  "summary": "OrionStar is a global leader in Large Language Model Empowered Service Robotics, founded in 2016.",
+  "body": "Leveraging cutting-edge AgentOS and advanced voice-interaction technology, we develop robots to streamline repetitive tasks and facilitate human-robot collaboration in hospitality and warehousing logistics scenarios.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ],
+      "src": "https://en.orionstar.com",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://en.orionstar.com/"
+    },
+    "image": {
+      "v": "/logos/orionstar.png",
+      "fit": "contain",
+      "src": "https://www.orionstar.com/res/orics/down/ow001_20250415_0ca391f892bffa66c8ad90c8835657bf.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://cn.linkedin.com/company/orionstar",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/orionstar",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "No.7 Sanjianfang South Lane,  Chaoyang District, Beijing, 100024, China",
+          "lat": 39.92045,
+          "lon": 116.436911,
+          "src": "https://cn.linkedin.com/company/orionstar"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

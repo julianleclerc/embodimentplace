@@ -1,0 +1,51 @@
+{
+  "id": 889,
+  "type": "company",
+  "slug": "sorting-robotics",
+  "name": "Sorting Robotics",
+  "summary": "We create automation technology for the cannabis industry.",
+  "body": "Y Combinator Winter 2019 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.sortingrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sortingrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/sorting-robotics.png",
+      "fit": "contain",
+      "src": "https://www.sortingrobotics.com/logos/sri-symbol-blue-192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.linkedin.com/company/sortingrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/sortingrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "6837 Hayvenhurst Ave, Los Angeles, California 91406, United States",
+          "lat": 34.19471,
+          "lon": -118.492484,
+          "src": "https://www.linkedin.com/company/sortingrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

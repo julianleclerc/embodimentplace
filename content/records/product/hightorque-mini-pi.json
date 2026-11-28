@@ -1,0 +1,28 @@
+{
+  "id": 3431,
+  "type": "product",
+  "slug": "hightorque-mini-pi",
+  "name": "HighTorque Mini Pi+",
+  "summary": "Mini Pi+, a humanoid robot from HighTorque Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/hightorque-mini-pi.webp",
+      "src": "https://www.hightorquerobotics.com/",
+      "orig": "https://cdn.hightorquerobotics.com/wp-content/uploads/2026/05/Group-1000002098.png?orientation=landscape&width=1358&height=800",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.hightorquerobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hightorquerobotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

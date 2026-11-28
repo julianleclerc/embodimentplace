@@ -1,0 +1,28 @@
+{
+  "id": 3666,
+  "type": "funding",
+  "slug": "anybotics-series-a",
+  "name": "ANYbotics Series A",
+  "summary": "Raised $22M in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2020-12-03",
+      "src": "https://ca.finance.yahoo.com/news/anybotics-swiss-company-behind-quadrupedal-140431773.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://ca.finance.yahoo.com/news/anybotics-swiss-company-behind-quadrupedal-140431773.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 22,
+      "src": "https://ca.finance.yahoo.com/news/anybotics-swiss-company-behind-quadrupedal-140431773.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2020-12-03"
+}

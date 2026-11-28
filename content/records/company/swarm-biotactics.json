@@ -1,0 +1,52 @@
+{
+  "id": 1670,
+  "type": "company",
+  "slug": "swarm-biotactics",
+  "name": "Swarm Biotactics",
+  "summary": "Develops bio-robotic systems built on fully controllable living insects, which it calls cyborg swarms.",
+  "body": "We build Physical AI at biological scale. Swarm Biotactics pioneers a new era of robotics, integrating biology with advanced engineering to create bio-robots for mission-critical applications.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1106-swarm-biotactics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.swarm-biotactics.com/"
+    },
+    "image": {
+      "v": "/logos/swarm-biotactics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/440c28f7dbeb3217591d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kassel",
+      "src": "https://roboticsconnected.com/companies/1106-swarm-biotactics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/1106-swarm-biotactics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kassel, Germany",
+          "lat": 51.315783,
+          "lon": 9.497848,
+          "src": "https://roboticsconnected.com/companies/1106-swarm-biotactics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

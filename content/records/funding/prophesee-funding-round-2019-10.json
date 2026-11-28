@@ -1,0 +1,23 @@
+{
+  "id": 3615,
+  "type": "funding",
+  "slug": "prophesee-funding-round-2019-10",
+  "name": "Prophesee funding round (2019-10)",
+  "summary": "Raised $28M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2019-10-29",
+      "src": "https://www.prnewswire.com/news-releases/prophesee-closes-28m-in-funding-to-accelerate-and-expand-commercialization-of-breakthrough-event-based-machine-vision-solution-300947209.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 28,
+      "src": "https://www.prnewswire.com/news-releases/prophesee-closes-28m-in-funding-to-accelerate-and-expand-commercialization-of-breakthrough-event-based-machine-vision-solution-300947209.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2019-10-29"
+}

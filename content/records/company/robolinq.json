@@ -1,0 +1,51 @@
+{
+  "id": 1906,
+  "type": "company",
+  "slug": "robolinq",
+  "name": "Robolinq",
+  "summary": "Distribution and deployment partner that brings service robots from leading manufacturers to businesses across Europe.",
+  "body": "Robolinq is the strategic distribution partner for service robot manufacturers seeking to enter or scale in the DACH and Central & Eastern European markets. One partnership. 12 countries. 200+ million end-users.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2994-robolinq",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robolinq.io/"
+    },
+    "image": {
+      "v": "/logos/robolinq.png",
+      "fit": "contain",
+      "src": "https://robolinq.io/favicon-64.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://roboticsconnected.com/companies/2994-robolinq",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/2994-robolinq",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://roboticsconnected.com/companies/2994-robolinq"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

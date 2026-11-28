@@ -1,0 +1,51 @@
+{
+  "id": 1744,
+  "type": "company",
+  "slug": "metamorphosis",
+  "name": "metamorphosis",
+  "summary": "Develops an AI-based, trackerless navigation platform for orthopaedic and spine surgery.",
+  "body": "We develop trackerless navigation for minimally invasive orthopaedic and spinal procedures, based on automated intraoperative 3D registration from a single X-ray image.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1628-metamorphosis-gmbh",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://metamorphosis.ai/"
+    },
+    "image": {
+      "v": "/logos/metamorphosis.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/ba09a965d879689d5b87.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Paderborn",
+      "src": "https://de.linkedin.com/company/metamorphosis-gmbh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/metamorphosis-gmbh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Technologiepark 9, Paderborn, North Rhine-Westphalia 33100, Germany",
+          "lat": 51.701071,
+          "lon": 8.762496,
+          "src": "https://de.linkedin.com/company/metamorphosis-gmbh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

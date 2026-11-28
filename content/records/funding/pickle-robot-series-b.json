@@ -1,0 +1,28 @@
+{
+  "id": 3674,
+  "type": "funding",
+  "slug": "pickle-robot-series-b",
+  "name": "Pickle Robot Series B",
+  "summary": "Raised $50 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-11-19",
+      "src": "https://www.streetinsider.com/Globe+Newswire/Pickle+Robot+Closes+%2450+Million+Series+B+Funding+and+Secures+New+Orders+for+30%2B+Unload+Robots/24007886.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.streetinsider.com/Globe+Newswire/Pickle+Robot+Closes+%2450+Million+Series+B+Funding+and+Secures+New+Orders+for+30%2B+Unload+Robots/24007886.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 50,
+      "src": "https://www.streetinsider.com/Globe+Newswire/Pickle+Robot+Closes+%2450+Million+Series+B+Funding+and+Secures+New+Orders+for+30%2B+Unload+Robots/24007886.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-11-19"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3430,
+  "type": "product",
+  "slug": "hexagon-aeon",
+  "name": "Hexagon AEON",
+  "summary": "Multipurpose by design, AEON tackles manipulation, inspection & reality capture in manufacturing, aerospace, transportation, warehousing & logistics",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/hexagon-aeon.webp",
+      "src": "https://robotics.hexagon.com/product/",
+      "orig": "https://robotics.hexagon.com/wp-content/uploads/2026/10/humanoid-robotics-at-bmw-group-plant.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://robotics.hexagon.com/product/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.hexagon.com/product/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1688,
+  "type": "company",
+  "slug": "bluepath-robotics",
+  "name": "Bluepath Robotics",
+  "summary": "Istanbul-based manufacturer of autonomous mobile robots (AMRs) and fleet management software, designing and building both hardware and software in-house.",
+  "body": "At Bluepath Robotics, we help manufacturers transform the way materials move through factories and warehouses. Built on the engineering heritage of Ford Otosan, we develop both our hardware and software in-house, combining industrial expertise with advanced robotics technologies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1244-bluepath-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://bluepathrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/bluepath-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/11a2883ed86f4b165b48.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "İstanbul",
+      "src": "https://tr.linkedin.com/company/bluepathrobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Turkey",
+      "src": "https://tr.linkedin.com/company/bluepathrobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Teknopark Bulvarı, İstanbul, 34906, Turkey",
+          "lat": 40.918109,
+          "lon": 29.311702,
+          "src": "https://tr.linkedin.com/company/bluepathrobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

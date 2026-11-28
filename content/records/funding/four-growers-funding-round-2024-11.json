@@ -1,0 +1,23 @@
+{
+  "id": 3716,
+  "type": "funding",
+  "slug": "four-growers-funding-round-2024-11",
+  "name": "Four Growers funding round (2024-11)",
+  "summary": "Raised $9M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-11-22",
+      "src": "https://www.post-gazette.com/business/tech-news/2024/11/22/four-growers-agtech/stories/202411210132/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 9,
+      "src": "https://www.post-gazette.com/business/tech-news/2024/11/22/four-growers-agtech/stories/202411210132/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-11-22"
+}

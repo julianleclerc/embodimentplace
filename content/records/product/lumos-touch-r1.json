@@ -1,0 +1,28 @@
+{
+  "id": 3439,
+  "type": "product",
+  "slug": "lumos-touch-r1",
+  "name": "Lumos Touch R1",
+  "summary": "Lumos Touch R1, a robot arm from Lumos.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/lumos-touch-r1.webp",
+      "src": "https://www.lumosbot.tech/products/touch",
+      "orig": "https://delivery.lumosbot.tech/www/lumos-website/images/products/touch/front.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Arm",
+      "src": "https://www.lumosbot.tech/products/touch",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lumosbot.tech/products/touch"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

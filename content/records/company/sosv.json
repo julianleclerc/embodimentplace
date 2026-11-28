@@ -1,0 +1,51 @@
+{
+  "id": 1196,
+  "type": "company",
+  "slug": "sosv",
+  "name": "SOSV",
+  "summary": "SOSV is the most active deep tech venture capital firm globally, investing at pre-seed (or at startup inception) supporting visionary founders intent on making a profound impact on human and…",
+  "body": "SOSV is the most active deep tech venture capital firm globally, investing at pre-seed (or at startup inception) supporting visionary founders intent on making a profound impact on human and planetary health.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://sosv.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://sosv.com/"
+    },
+    "image": {
+      "v": "/logos/sosv.png",
+      "fit": "contain",
+      "src": "https://sosv.com/wp-content/uploads/2022/05/cropped-sosv-favicon-300x300.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Princeton",
+      "src": "https://www.linkedin.com/company/sosv",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/sosv",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "174 Nassau Street, #3000, Princeton, New Jersey 08542, United States",
+          "lat": 40.349695,
+          "lon": -74.659738,
+          "src": "https://www.linkedin.com/company/sosv"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

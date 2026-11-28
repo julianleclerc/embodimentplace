@@ -1,0 +1,28 @@
+{
+  "id": 3773,
+  "type": "funding",
+  "slug": "virtual-incision-series-c",
+  "name": "Virtual Incision Series C",
+  "summary": "Raised $46M in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2021-11-29",
+      "src": "https://www.bioworld.com/articles/513849-virtual-incision-raises-46m-in-series-c-financing-round?v=preview",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://www.bioworld.com/articles/513849-virtual-incision-raises-46m-in-series-c-financing-round?v=preview",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 46,
+      "src": "https://www.bioworld.com/articles/513849-virtual-incision-raises-46m-in-series-c-financing-round?v=preview",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2021-11-29"
+}

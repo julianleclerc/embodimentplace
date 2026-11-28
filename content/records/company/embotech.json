@@ -1,0 +1,51 @@
+{
+  "id": 1634,
+  "type": "company",
+  "slug": "embotech",
+  "name": "Embotech",
+  "summary": "Zurich-based Swiss company spun out of ETH Zurich in 2013, developing safety-certified Level 4 autonomous driving systems for industrial logistics.",
+  "body": "Embotech is a global leader in safety-certified Level 4 autonomous driving solutions for industrial logistics and the first company world-wide to hold multiple TÜV-certified Level 4 solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/986-embotech",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://embotech.ai/"
+    },
+    "image": {
+      "v": "/logos/embotech.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/62c1dc45dbf30259a0d8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Stadtkreis 5 Industriequartier",
+      "src": "https://ch.linkedin.com/company/embotech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/embotech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hardturmstrasse 11, Stadtkreis 5 Industriequartier, Zurich 8005, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042,
+          "src": "https://ch.linkedin.com/company/embotech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

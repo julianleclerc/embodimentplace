@@ -1,0 +1,23 @@
+{
+  "id": 3446,
+  "type": "product",
+  "slug": "neobotix-rox-diff",
+  "name": "Neobotix ROX-Diff",
+  "summary": "ROX-Diff, a robot from Neobotix.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/neobotix-rox-diff.webp",
+      "src": "https://neobotix-robots.com/en/products/mobile-robots/mobile-robot-rox/rox-diff/index.html",
+      "orig": "https://neobotix-robots.com/media/images/produkte/Basisplattformen/ROX/Fahrwerk_ROX-Diff_HQ.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://neobotix-robots.com/en/products/mobile-robots/mobile-robot-rox/rox-diff/index.html"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

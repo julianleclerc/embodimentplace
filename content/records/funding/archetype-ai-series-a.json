@@ -1,0 +1,28 @@
+{
+  "id": 3602,
+  "type": "funding",
+  "slug": "archetype-ai-series-a",
+  "name": "Archetype AI Series A",
+  "summary": "Raised $35M in a Series A round, led by IAG Capital Partners.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-20",
+      "src": "https://finance.yahoo.com/news/archetype-ai-raises-35m-scale-140000583.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://finance.yahoo.com/news/archetype-ai-raises-35m-scale-140000583.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 35,
+      "src": "https://finance.yahoo.com/news/archetype-ai-raises-35m-scale-140000583.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-20"
+}

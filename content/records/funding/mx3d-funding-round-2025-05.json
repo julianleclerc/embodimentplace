@@ -1,0 +1,18 @@
+{
+  "id": 3890,
+  "type": "funding",
+  "slug": "mx3d-funding-round-2025-05",
+  "name": "MX3D funding round (2025-05)",
+  "summary": "Raised €7M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-05-16",
+      "src": "https://www.3dprintingindustry.com/news/mx3d-raises-e7m-to-expand-metal-3d-printing-globally-239581/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-05-16"
+}

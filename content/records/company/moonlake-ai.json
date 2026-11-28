@@ -1,0 +1,52 @@
+{
+  "id": 1977,
+  "type": "company",
+  "slug": "moonlake-ai",
+  "name": "Moonlake AI",
+  "summary": "World models and real-to-sim infrastructure for physical and embodied AI.",
+  "body": "World models and simulation infrastructure for physical AI.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab",
+        "Software developer"
+      ],
+      "src": "https://humano.one/companies/moonlake-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://moonlakeai.com/"
+    },
+    "image": {
+      "v": "/logos/moonlake-ai.png",
+      "fit": "contain",
+      "src": "https://moonlakeai.com/apple-icon.png?apple-icon.33g01nbl2d653.png?dpl=dpl_79DyrxdcYWuNq89sHCnaZ623yGoE",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.linkedin.com/company/moonlake-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/moonlake-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, CA, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.linkedin.com/company/moonlake-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1335,
+  "type": "company",
+  "slug": "university-college-london",
+  "name": "University College London",
+  "summary": "Public research university in London, England, United Kingdom.",
+  "body": "Recent robotics work includes “Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models”. OpenAlex lists 369 robotics, humanoid, embodied-AI or manipulation papers from University College London since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.48550/arxiv.2504.11054",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ucl.ac.uk/"
+    },
+    "image": {
+      "v": "/logos/university-college-london.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/UCL_Crest.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bloomsbury",
+      "src": "https://www.wikidata.org/wiki/Q193196",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.wikidata.org/wiki/Q193196",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bloomsbury, United Kingdom",
+          "lat": 51.524722,
+          "lon": -0.133611,
+          "src": "https://www.wikidata.org/wiki/Q193196"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

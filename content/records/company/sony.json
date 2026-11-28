@@ -8,10 +8,24 @@
   "data": {
     "roles": {
       "v": [
-        "Robot maker"
+        "Robot maker",
+        "Supplier",
+        "Entertainment"
       ],
       "src": "https://www.sony.com/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Supplier",
+          "src": "https://www.sony-semicon.com/en/",
+          "asof": "2026-11"
+        },
+        {
+          "role": "Entertainment",
+          "src": "https://us.aibo.com/",
+          "asof": "2026-11"
+        }
+      ]
     },
     "website": {
       "v": "https://www.sony.com/"
@@ -46,6 +60,6 @@
     }
   },
   "created": "2026-11-25 22:05:10",
-  "updated": "2026-11-25 22:05:10",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": "2026-11-25"
 }

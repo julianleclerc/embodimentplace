@@ -1,0 +1,51 @@
+{
+  "id": 2098,
+  "type": "company",
+  "slug": "university-of-toronto",
+  "name": "University of Toronto",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.utoronto.ca/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.utoronto.ca/"
+    },
+    "city": {
+      "v": "Toronto"
+    },
+    "country": {
+      "v": "Canada"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Toronto, Canada",
+          "lat": 43.6629,
+          "lon": -79.3957
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 30.1,
+      "faculty": 11,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 38,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

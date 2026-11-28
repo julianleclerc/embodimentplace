@@ -1,0 +1,63 @@
+{
+  "id": 1334,
+  "type": "company",
+  "slug": "katholieke-universiteit-leuven",
+  "name": "Katholieke Universiteit Leuven",
+  "summary": "University since 1968 with its main campus in Leuven, Belgium.",
+  "body": "Recent robotics work includes “Physical control: A new avenue to achieve intelligence in soft robotics”. OpenAlex lists 168 robotics, humanoid, embodied-AI or manipulation papers from KU Leuven since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1126/scirobotics.adw7660",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.kuleuven.be/"
+    },
+    "image": {
+      "v": "/logos/katholieke-universiteit-leuven.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/KU_Leuven_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Leuven",
+      "src": "https://www.wikidata.org/wiki/Q833670",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Belgium",
+      "src": "https://www.wikidata.org/wiki/Q833670",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Leuven, Belgium",
+          "lat": 50.877963,
+          "lon": 4.700294,
+          "src": "https://www.wikidata.org/wiki/Q833670"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 0.4,
+      "faculty": 2,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 31,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

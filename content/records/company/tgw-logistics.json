@@ -1,0 +1,51 @@
+{
+  "id": 1265,
+  "type": "company",
+  "slug": "tgw-logistics",
+  "name": "TGW Logistics",
+  "summary": "TGW Logistics is a foundation-owned company headquartered in Austria and a global leader in warehouse automation and warehouse logistics.",
+  "body": "As a trusted systems integrator with more than 50 years of experience, we deliver end-to-end services: designing, implementing, and maintaining fulfillment centers powered by mechatronics, robotics, and advanced software solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator"
+      ],
+      "src": "https://www.tgw-group.com/us/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tgw-group.com/"
+    },
+    "image": {
+      "v": "/logos/tgw-logistics.png",
+      "fit": "contain",
+      "src": "https://www.tgw-group.com/_assets/0f99b295b92c88ae982e4831f7caa0fa/Icons/Favicons/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Marchtrenk",
+      "src": "https://at.linkedin.com/company/tgw-group",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Austria",
+      "src": "https://at.linkedin.com/company/tgw-group",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ludwig Szinicz Straße 3, Marchtrenk, Oberösterreich 4614, Austria",
+          "lat": 48.187404,
+          "lon": 14.099496,
+          "src": "https://at.linkedin.com/company/tgw-group"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3532,
+  "type": "funding",
+  "slug": "trener-series-a",
+  "name": "Trener Series A",
+  "summary": "Raised $32 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-02-10",
+      "src": "https://pulse2.com/trener-robotics-32-million-series-a/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://pulse2.com/trener-robotics-32-million-series-a/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 32,
+      "src": "https://pulse2.com/trener-robotics-32-million-series-a/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-02-10"
+}

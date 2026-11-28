@@ -1,0 +1,51 @@
+{
+  "id": 1975,
+  "type": "company",
+  "slug": "faraday-future",
+  "name": "Faraday Future",
+  "summary": "EV maker that moved into embodied AI in 2026 with full-size humanoid robots.",
+  "body": "Explore FF EAI Robotics: humanoid robots, athletic companions, intelligent quadruped robots, and EAI platform solutions for education, security patrol, reception, events, and research.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://humano.one/companies/faraday-future",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ff.com/"
+    },
+    "image": {
+      "v": "/logos/faraday-future.png",
+      "fit": "contain",
+      "src": "https://genesis-cdn.ff.com/ff-favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Gardena",
+      "src": "https://www.linkedin.com/company/faradayfuture",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/faradayfuture",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "18455 S. Figueroa St., Gardena, CA 90248, United States",
+          "lat": 33.863477,
+          "lon": -118.282594,
+          "src": "https://www.linkedin.com/company/faradayfuture"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

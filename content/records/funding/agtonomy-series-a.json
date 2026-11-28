@@ -1,0 +1,28 @@
+{
+  "id": 3525,
+  "type": "funding",
+  "slug": "agtonomy-series-a",
+  "name": "Agtonomy Series A",
+  "summary": "Raised $32.8M in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-10-16",
+      "src": "https://finance.yahoo.com/news/agtonomy-closes-32-8m-series-154500621.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://finance.yahoo.com/news/agtonomy-closes-32-8m-series-154500621.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 32.8,
+      "src": "https://finance.yahoo.com/news/agtonomy-closes-32-8m-series-154500621.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-10-16"
+}

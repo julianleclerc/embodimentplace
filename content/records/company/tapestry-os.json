@@ -1,0 +1,51 @@
+{
+  "id": 2042,
+  "type": "company",
+  "slug": "tapestry-os",
+  "name": "Tapestry OS",
+  "summary": "Open-source operating system that coordinates robot swarms, drone fleets and sensor networks.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2086814835296084229",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://tapestry-os.com/"
+    },
+    "image": {
+      "v": "/logos/tapestry-os.png",
+      "fit": "contain",
+      "src": "https://tapestry-os.com/images/tapestry-logo-transparent.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mountain View",
+      "src": "https://www.linkedin.com/company/tapestry-os",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/tapestry-os",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Mountain View, California, United States",
+          "lat": 37.389389,
+          "lon": -122.08321,
+          "src": "https://www.linkedin.com/company/tapestry-os"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

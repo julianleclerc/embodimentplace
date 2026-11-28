@@ -1,0 +1,28 @@
+{
+  "id": 3626,
+  "type": "funding",
+  "slug": "path-robotics-series-e",
+  "name": "Path Robotics Series E",
+  "summary": "Raised $300M in a Series E round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-10",
+      "src": "https://siliconangle.com/2026/11/10/industrial-automation-startup-path-robotics-raises-300m-in-funding/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series E",
+      "src": "https://siliconangle.com/2026/11/10/industrial-automation-startup-path-robotics-raises-300m-in-funding/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 300,
+      "src": "https://siliconangle.com/2026/11/10/industrial-automation-startup-path-robotics-raises-300m-in-funding/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-10"
+}

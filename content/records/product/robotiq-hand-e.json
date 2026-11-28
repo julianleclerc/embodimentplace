@@ -1,0 +1,33 @@
+{
+  "id": 2062,
+  "type": "product",
+  "slug": "robotiq-hand-e",
+  "name": "Robotiq Hand-E",
+  "summary": "Electric parallel gripper with a 50 mm stroke for precise assembly and machine tending.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://robotiq.com/products/adaptive-grippers",
+      "asof": "2026-11"
+    },
+    "h_kind": {
+      "v": "Parallel gripper",
+      "src": "https://robotiq.com/products/adaptive-grippers",
+      "asof": "2026-11"
+    },
+    "payload_kg": {
+      "v": 5,
+      "src": "https://robotiq.com/products/adaptive-grippers",
+      "asof": "2026-11"
+    },
+    "status": {
+      "v": "Commercial",
+      "src": "https://robotiq.com/products/adaptive-grippers",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-27 22:05:17",
+  "feed_at": "2026-11-27"
+}

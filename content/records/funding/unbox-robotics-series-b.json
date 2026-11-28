@@ -1,0 +1,28 @@
+{
+  "id": 3774,
+  "type": "funding",
+  "slug": "unbox-robotics-series-b",
+  "name": "Unbox Robotics Series B",
+  "summary": "Raised US$28 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-01-21",
+      "src": "https://www.prnewswire.com/news-releases/unbox-robotics-secures-us28-million-in-series-b-fundraise-led-by-icici-venture-302665476.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.prnewswire.com/news-releases/unbox-robotics-secures-us28-million-in-series-b-fundraise-led-by-icici-venture-302665476.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 28,
+      "src": "https://www.prnewswire.com/news-releases/unbox-robotics-secures-us28-million-in-series-b-fundraise-led-by-icici-venture-302665476.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-01-21"
+}

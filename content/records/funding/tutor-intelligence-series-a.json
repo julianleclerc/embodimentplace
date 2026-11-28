@@ -1,0 +1,28 @@
+{
+  "id": 3480,
+  "type": "funding",
+  "slug": "tutor-intelligence-series-a",
+  "name": "Tutor Intelligence Series A",
+  "summary": "Raised $34 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-12-01",
+      "src": "https://finance.yahoo.com/news/tutor-intelligence-raises-34-million-140000721.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://finance.yahoo.com/news/tutor-intelligence-raises-34-million-140000721.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 34,
+      "src": "https://finance.yahoo.com/news/tutor-intelligence-raises-34-million-140000721.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-12-01"
+}

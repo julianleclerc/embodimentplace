@@ -1,0 +1,51 @@
+{
+  "id": 923,
+  "type": "company",
+  "slug": "maya-labs",
+  "name": "Maya Labs",
+  "summary": "Building self-programming machines.",
+  "body": "Applied research lab on a mission to build machines which can program themselves to do any task. Y Combinator Summer 2022 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://mayalabs.io/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mayalabs.io/"
+    },
+    "image": {
+      "v": "/logos/maya-labs.png",
+      "fit": "contain",
+      "src": "https://mayalabs.io/images/favicon/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bengaluru",
+      "src": "https://www.ycombinator.com/companies/maya-labs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://www.ycombinator.com/companies/maya-labs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bengaluru, KA, India",
+          "lat": 12.976794,
+          "lon": 77.590082,
+          "src": "https://www.ycombinator.com/companies/maya-labs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

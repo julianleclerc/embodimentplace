@@ -1,0 +1,51 @@
+{
+  "id": 1878,
+  "type": "company",
+  "slug": "one-off-robotics",
+  "name": "One Off Robotics",
+  "summary": "Builds robotic metal additive manufacturing systems, including the Monarc production wire arc additive manufacturing platform and the field-deployable Nomad system.",
+  "body": "One-Off Robotics is a Chattanooga, Tennessee based advanced equipment manufacturer designing and building the world’s most innovative Robotic Metal Additive Manufacturing systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2723-one-off-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://oneoffrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/one-off-robotics.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/b0de489d-4173-4f21-842b-b45231e7977b.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Chattanooga",
+      "src": "https://roboticsconnected.com/companies/2723-one-off-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2723-one-off-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Chattanooga, United States",
+          "lat": 35.045722,
+          "lon": -85.309488,
+          "src": "https://roboticsconnected.com/companies/2723-one-off-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

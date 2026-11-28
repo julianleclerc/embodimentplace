@@ -1,0 +1,28 @@
+{
+  "id": 3790,
+  "type": "funding",
+  "slug": "gideon-series-a",
+  "name": "Gideon Series A",
+  "summary": "Raised $31 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2021-06-08",
+      "src": "https://www.prnewswire.com/news-releases/gideon-brothers-raises-31-million-series-a-to-expand-its-portfolio-of-ai--3d-vision-autonomous-mobile-robots-301307461.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.prnewswire.com/news-releases/gideon-brothers-raises-31-million-series-a-to-expand-its-portfolio-of-ai--3d-vision-autonomous-mobile-robots-301307461.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 31,
+      "src": "https://www.prnewswire.com/news-releases/gideon-brothers-raises-31-million-series-a-to-expand-its-portfolio-of-ai--3d-vision-autonomous-mobile-robots-301307461.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2021-06-08"
+}

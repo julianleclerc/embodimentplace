@@ -1,0 +1,51 @@
+{
+  "id": 1566,
+  "type": "company",
+  "slug": "calvary-robotics",
+  "name": "Calvary Robotics",
+  "summary": "Manufactures robotic platforms, automated production systems, and precision assembly solutions.",
+  "body": "The company specialises in system integration and custom automation for high-precision manufacturing environments. Calvary serves diverse sectors including medical devices, life sciences, automotive, electronics assembly, food and beverage packaging, and renewable energy.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/380-calvary-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://invioautomation.com/"
+    },
+    "image": {
+      "v": "/logos/calvary-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/df9cd6d8627c1c3030d7.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Webster",
+      "src": "https://roboticsconnected.com/companies/380-calvary-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/380-calvary-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Webster, United States",
+          "lat": 32.050618,
+          "lon": -84.54731,
+          "src": "https://roboticsconnected.com/companies/380-calvary-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

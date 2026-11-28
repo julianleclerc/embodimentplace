@@ -1,0 +1,28 @@
+{
+  "id": 3444,
+  "type": "product",
+  "slug": "mirsee-mh3",
+  "name": "Mirsee MH3",
+  "summary": "MH3, a humanoid robot from Mirsee Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/mirsee-mh3.webp",
+      "src": "https://mirsee.com/",
+      "orig": "https://mirsee.com/media/july22/DSC01161.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://mirsee.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mirsee.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3472,
+  "type": "product",
+  "slug": "reflex-qr",
+  "name": "Reflex QR",
+  "summary": "QR, a humanoid robot from Reflex Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/reflex-qr.webp",
+      "src": "https://www.reflexrobotics.com/",
+      "orig": "https://www.reflexrobotics.com/Reflex_Web_Link_Image_V6.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.reflexrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.reflexrobotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

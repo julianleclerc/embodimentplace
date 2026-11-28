@@ -1,0 +1,51 @@
+{
+  "id": 1054,
+  "type": "company",
+  "slug": "fizyr",
+  "name": "Fizyr",
+  "summary": "Deep-learning vision software for robotic picking, depalletizing and trailer unloading.",
+  "body": "Our deep learning algorithms give robots the ability to see, understand, and act in real time — handling unknown objects of any shape, size, color, or material with up to 99% accuracy.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.fizyr.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fizyr.com/"
+    },
+    "image": {
+      "v": "/logos/fizyr.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/689b3dab8b9c5a86271992a9/68af03d6e55738f6a74f9704_webclip%20fiz.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Delft",
+      "src": "https://nl.linkedin.com/company/fizyr",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Netherlands",
+      "src": "https://nl.linkedin.com/company/fizyr",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Molengraaffsingel 10, Delft, South Holland 2629 JD, Netherlands",
+          "lat": 51.993145,
+          "lon": 4.385823,
+          "src": "https://nl.linkedin.com/company/fizyr"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

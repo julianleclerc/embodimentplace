@@ -1,0 +1,28 @@
+{
+  "id": 2655,
+  "type": "post",
+  "slug": "three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models",
+  "name": "Three studies from Meta and AMI Labs back Yann LeCun's bet on JEPA world models over large language models",
+  "summary": "Yann LeCun is pushing forward with his alternative to language models through his startup AMI Labs. The JEPA architecture aims to give machines an internal world model that captures cause and effect.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-27"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "the-decoder.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

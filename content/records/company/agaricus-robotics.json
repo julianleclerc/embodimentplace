@@ -1,0 +1,51 @@
+{
+  "id": 1519,
+  "type": "company",
+  "slug": "agaricus-robotics",
+  "name": "Agaricus Robotics",
+  "summary": "Develops a dual-arm autonomous mushroom harvesting robot that picks, trims, packs and weighs mushrooms directly from farm beds.",
+  "body": "The system integrates fully with standard UK and EU Dutch racking production systems used across 90% of global mushroom farms. The company addresses labour shortages in mushroom farming, a sector worth approximately £450m in the UK alone.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/244-agaricus-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://agaricusrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/agaricus-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/35e523c139ba2878dbc2.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Lincoln",
+      "src": "https://roboticsconnected.com/companies/244-agaricus-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/244-agaricus-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Lincoln, United Kingdom",
+          "lat": 53.229354,
+          "lon": -0.540482,
+          "src": "https://roboticsconnected.com/companies/244-agaricus-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

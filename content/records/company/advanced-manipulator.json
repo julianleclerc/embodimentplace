@@ -1,0 +1,51 @@
+{
+  "id": 1718,
+  "type": "company",
+  "slug": "advanced-manipulator",
+  "name": "Advanced Manipulator",
+  "summary": "Designs and builds industrial manipulator arms, lift assists and torque reaction arms for material handling on the factory floor.",
+  "body": "Advanced Manipulator Specialists Inc. is a company based out of 123 Memorial Dr Nw, Hoffman, MN, United States.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1341-advanced-manipulator",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://advancedmanipulator.com/"
+    },
+    "image": {
+      "v": "/logos/advanced-manipulator.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/6818fa7208704217ddf8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hoffman",
+      "src": "https://www.linkedin.com/company/advanced-manipulator-specialists-inc-",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/advanced-manipulator-specialists-inc-",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "123 Memorial Dr Nw, Hoffman, MN 56339, United States",
+          "lat": 45.829404,
+          "lon": -95.791994,
+          "src": "https://www.linkedin.com/company/advanced-manipulator-specialists-inc-"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

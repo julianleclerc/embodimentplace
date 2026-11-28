@@ -1,0 +1,51 @@
+{
+  "id": 1347,
+  "type": "company",
+  "slug": "aalto-university",
+  "name": "Aalto University",
+  "summary": "Finnish university.",
+  "body": "Recent robotics work includes “Video-Language Critic: Transferable Reward Functions for Language-Conditioned Robotics”. OpenAlex lists 77 robotics, humanoid, embodied-AI or manipulation papers from Aalto University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.48550/arxiv.2405.19988",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.aalto.fi/"
+    },
+    "image": {
+      "v": "/logos/aalto-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aalto-yliopiston_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Espoo",
+      "src": "https://www.wikidata.org/wiki/Q300980",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Finland",
+      "src": "https://www.wikidata.org/wiki/Q300980",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Espoo, Finland",
+          "lat": 60.186111,
+          "lon": 24.828611,
+          "src": "https://www.wikidata.org/wiki/Q300980"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

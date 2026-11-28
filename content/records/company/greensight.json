@@ -1,0 +1,51 @@
+{
+  "id": 1785,
+  "type": "company",
+  "slug": "greensight",
+  "name": "GreenSight",
+  "summary": "Boston-based company combining robotics, drones and analytics, built on a platform of robotic mowers, soil sensors and drone scouting.",
+  "body": "Its TurfCloud software brings turf management tools into one free platform for golf courses and sports fields. It was founded in 2015 by former golf superintendents and says it was the first company to develop a drone specifically for turf monitoring.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1921-greensight",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.greensightag.com/"
+    },
+    "image": {
+      "v": "/logos/greensight.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/07888ad6d7d5a6ab682d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boston",
+      "src": "https://roboticsconnected.com/companies/1921-greensight",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1921-greensight",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Boston, United States",
+          "lat": 42.358834,
+          "lon": -71.05783,
+          "src": "https://roboticsconnected.com/companies/1921-greensight"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

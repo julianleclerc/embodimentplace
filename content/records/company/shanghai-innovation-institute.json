@@ -1,0 +1,51 @@
+{
+  "id": 1403,
+  "type": "company",
+  "slug": "shanghai-innovation-institute",
+  "name": "Shanghai Innovation Institute",
+  "summary": "Research institute in Shanghai, China.",
+  "body": "Recent robotics work includes “World Action Models: The Next Frontier in Embodied AI”. OpenAlex lists 111 robotics, humanoid, embodied-AI or manipulation papers from Shanghai Innovation Institute since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://doi.org/10.48550/arxiv.2605.12090",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sii.edu.cn/"
+    },
+    "image": {
+      "v": "/logos/shanghai-innovation-institute.png",
+      "fit": "contain",
+      "src": "https://www.sii.edu.cn/_upload/tpl/00/09/9/template9/images/logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://www.wikidata.org/wiki/Q140928767",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q140928767",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015,
+          "src": "https://www.wikidata.org/wiki/Q140928767"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

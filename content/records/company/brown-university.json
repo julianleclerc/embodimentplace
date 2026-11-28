@@ -1,0 +1,58 @@
+{
+  "id": 1277,
+  "type": "company",
+  "slug": "brown-university",
+  "name": "Brown University",
+  "summary": "Private university in Providence, Rhode Island, United States.",
+  "body": "Recent robotics work includes “Multi-Robot Motion Planning with Diffusion Models”. OpenAlex lists 110 robotics, humanoid, embodied-AI or manipulation papers from Brown University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.48550/arxiv.2410.03072",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.brown.edu/"
+    },
+    "image": {
+      "v": "/logos/brown-university.png",
+      "fit": "contain",
+      "src": "https://www.brown.edu/themes/custom/brown/static/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Providence",
+      "src": "https://www.wikidata.org/wiki/Q49114",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q49114",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Providence, United States",
+          "lat": 41.826111,
+          "lon": -71.403056,
+          "src": "https://www.wikidata.org/wiki/Q49114"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 24,
+      "faculty": 8,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

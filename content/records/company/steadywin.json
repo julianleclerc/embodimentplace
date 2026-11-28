@@ -1,0 +1,45 @@
+{
+  "id": 1252,
+  "type": "company",
+  "slug": "steadywin",
+  "name": "Steadywin",
+  "summary": "Maker of robot joint motors, power grippers and exoskeleton motors.",
+  "body": "Headquartered in Nanchang, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://steadywin.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://steadywin.cn/"
+    },
+    "city": {
+      "v": "Nanchang",
+      "src": "https://www.steadywin.cn/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.steadywin.cn/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Jiayan Road, Honggutan District, Nanchang, Jiangxi, China",
+          "lat": 28.647212,
+          "lon": 116.034848,
+          "src": "https://www.steadywin.cn/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3930,
+  "type": "funding",
+  "slug": "safeai-series-b",
+  "name": "SafeAI Series B",
+  "summary": "Raised $38 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-12-14",
+      "src": "https://finance.yahoo.com/news/safeai-raises-38-million-series-141500700.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://finance.yahoo.com/news/safeai-raises-38-million-series-141500700.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 38,
+      "src": "https://finance.yahoo.com/news/safeai-raises-38-million-series-141500700.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-12-14"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1061,
+  "type": "company",
+  "slug": "dephy",
+  "name": "Dephy",
+  "summary": "Dephy is a bionic footwear and apparel company pioneering the world’s first powered ankle wearable device with our flagship product - the Dephy Sidekick.",
+  "body": "The Sidekick combines a decade of bionics expertise with a human-first design to deliver natural, adaptive support that empowers people to walk farther and faster with less discomfort and fatigue.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://dephy.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dephy.com/"
+    },
+    "image": {
+      "v": "/logos/dephy.png",
+      "fit": "contain",
+      "src": "https://dephy.com/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boxborough",
+      "src": "https://www.linkedin.com/company/dephy",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/dephy",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "80 Central St., Boxborough, MA 01719, United States",
+          "lat": 42.498049,
+          "lon": -71.476783,
+          "src": "https://www.linkedin.com/company/dephy"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

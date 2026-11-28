@@ -1,0 +1,51 @@
+{
+  "id": 1969,
+  "type": "company",
+  "slug": "motion2machine",
+  "name": "Motion2Machine",
+  "summary": "Human demonstrations and real-world sensor data for teams training robots and Physical AI models.",
+  "body": "Motion2Machine provides managed real-world data collection for teams building robots and Physical AI models. We help turn buyer-defined requirements into human demonstrations and sensor data captured from real work, in real workplaces. You define the tasks, environments, data requirements and acceptance criteria.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3717-motion2machine",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://motion2machine.com/"
+    },
+    "image": {
+      "v": "/logos/motion2machine.png",
+      "fit": "contain",
+      "src": "https://motion2machine.com/favicons/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Dubai",
+      "src": "https://ae.linkedin.com/company/motion2machine",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Arab Emirates",
+      "src": "https://ae.linkedin.com/company/motion2machine",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ifza Business Park, DDP, PO Box 342001, Dubai, United Arab Emirates",
+          "lat": 25.097897,
+          "lon": 55.156315,
+          "src": "https://ae.linkedin.com/company/motion2machine"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

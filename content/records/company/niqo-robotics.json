@@ -1,0 +1,51 @@
+{
+  "id": 1273,
+  "type": "company",
+  "slug": "niqo-robotics",
+  "name": "Niqo Robotics",
+  "summary": "Niqo Robotics (Formerly Tartan Aerial Sense Tech Private Limited) is a climate-smart deep tech company in agriculture.",
+  "body": "Niqo believes that an AI-powered revolution will play a pivotal role in scaling climate-smart cultivation practices to secure the world's food future.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://niqorobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://niqorobotics.com/"
+    },
+    "image": {
+      "v": "/logos/niqo-robotics.png",
+      "fit": "contain",
+      "src": "https://niqorobotics.com/wp-content/uploads/niqo-logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bangalore",
+      "src": "https://in.linkedin.com/company/niqorobotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/niqorobotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1074-A, 11th Main Rd, 8th cross, HAL 2nd Stage, Appareddipalya, Indiranagar, Bangalore, Karnataka 560038, India",
+          "lat": 12.981068,
+          "lon": 77.644364,
+          "src": "https://in.linkedin.com/company/niqorobotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

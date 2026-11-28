@@ -1,0 +1,51 @@
+{
+  "id": 1363,
+  "type": "company",
+  "slug": "keio-university",
+  "name": "Keio University",
+  "summary": "Private university in Tokyo, Japan.",
+  "body": "Recent robotics work includes “Machine learning-enhanced soft robotic system inspired by rectal functions to investigate fecal incontinence”. OpenAlex lists 191 robotics, humanoid, embodied-AI or manipulation papers from Keio University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1631/bdm.2400152",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.keio.ac.jp/ja/"
+    },
+    "image": {
+      "v": "/logos/keio-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Keio_University_logo%2C_ja_and_en_3.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://www.wikidata.org/wiki/Q815432",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://www.wikidata.org/wiki/Q815432",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.649167,
+          "lon": 139.742778,
+          "src": "https://www.wikidata.org/wiki/Q815432"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

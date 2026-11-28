@@ -1,0 +1,51 @@
+{
+  "id": 1790,
+  "type": "company",
+  "slug": "cyngn",
+  "name": "Cyngn",
+  "summary": "Builds autonomous mobile robots for industrial material handling, centred on its DriveMod Tugger, which tows up to 12,000 lbs of carts along pre-mapped routes.",
+  "body": "Automate your material handling and repetitive workflows with our Autonomous Tuggers and Forklifts.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1960-cyngn",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.cyngn.com/"
+    },
+    "image": {
+      "v": "/logos/cyngn.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/971e831723504a02c3c1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mountain View",
+      "src": "https://www.linkedin.com/company/cyngn",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/cyngn",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1344 Terra Bella Ave, Mountain View, California 94043, United States",
+          "lat": 37.410606,
+          "lon": -122.083239,
+          "src": "https://www.linkedin.com/company/cyngn"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

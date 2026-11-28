@@ -1,0 +1,51 @@
+{
+  "id": 1605,
+  "type": "company",
+  "slug": "edge-case",
+  "name": "Edge Case",
+  "summary": "Builds a DevSafeOps platform for continuous safety validation of autonomous systems and robotics.",
+  "body": "Edge Case is the trusted technical partner for companies pushing the boundaries of frontier technology. We help innovators in autonomous vehicles, robotics, aerospace, oil & gas, and supply chain build and scale safer, more reliable systems — from prototype to global deployment.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/736-edge-case",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ecr.ai/"
+    },
+    "image": {
+      "v": "/logos/edge-case.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/880e8a1ffa4c58ad7a68.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/edge-case-technology",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/edge-case-technology",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2555 Smallman Street, Pittsburgh, Pennsylvania 15222, United States",
+          "lat": 40.45537,
+          "lon": -79.980039,
+          "src": "https://www.linkedin.com/company/edge-case-technology"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

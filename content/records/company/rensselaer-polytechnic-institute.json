@@ -1,0 +1,51 @@
+{
+  "id": 1302,
+  "type": "company",
+  "slug": "rensselaer-polytechnic-institute",
+  "name": "Rensselaer Polytechnic Institute",
+  "summary": "Private research university in Troy, New York.",
+  "body": "Recent robotics work includes “IK-Geo: Unified robot inverse kinematics using subproblem decomposition”. OpenAlex lists 32 robotics, humanoid, embodied-AI or manipulation papers from Rensselaer Polytechnic Institute since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1016/j.mechmachtheory.2025.105971",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.rpi.edu/"
+    },
+    "image": {
+      "v": "/logos/rensselaer-polytechnic-institute.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rensselaer_Polytechnic_Institute_Logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Troy",
+      "src": "https://www.wikidata.org/wiki/Q49211",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q49211",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Troy, United States",
+          "lat": 42.729014,
+          "lon": -73.676728,
+          "src": "https://www.wikidata.org/wiki/Q49211"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

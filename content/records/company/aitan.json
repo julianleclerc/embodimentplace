@@ -1,0 +1,51 @@
+{
+  "id": 1615,
+  "type": "company",
+  "slug": "aitan",
+  "name": "AITAN",
+  "summary": "Develops edge AI robotic weapon systems and autonomous drone platforms for military and defence applications.",
+  "body": "The company unifies drones, sensors and autonomous systems through a vendor-agnostic command layer, AI autonomy toolkits and an SDK for domestically developed models. Formerly known as eyesAtop, AITAN was founded in 2015 and rebuilt under new leadership in 2023.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/846-aitan",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://eyesatop.io/"
+    },
+    "image": {
+      "v": "/logos/aitan.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/788262114ec26ce13902.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ramat Gan",
+      "src": "https://roboticsconnected.com/companies/846-aitan",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://roboticsconnected.com/companies/846-aitan",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Ramat Gan, Israel",
+          "lat": 32.068687,
+          "lon": 34.824681,
+          "src": "https://roboticsconnected.com/companies/846-aitan"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

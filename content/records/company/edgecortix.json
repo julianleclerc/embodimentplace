@@ -1,0 +1,51 @@
+{
+  "id": 1104,
+  "type": "company",
+  "slug": "edgecortix",
+  "name": "EdgeCortix",
+  "summary": "EdgeCortix is an Edge Artificial Intelligence (AI) Platform company, pioneering the future of the connected intelligent edge.",
+  "body": "It was founded in 2019 with the radical idea of taking a software first approach, while designing an artificial intelligence specific runtime reconfigurable processor from the ground up using a technique called \"hardware & software co-exploration\".",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute"
+      ],
+      "src": "https://www.edgecortix.com/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.edgecortix.com/"
+    },
+    "image": {
+      "v": "/logos/edgecortix.png",
+      "fit": "contain",
+      "src": "https://www.edgecortix.com/hubfs/edgecortix-blue-white-icon-1024.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Ginza",
+      "src": "https://jp.linkedin.com/company/edgecortix",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/edgecortix",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "GINZA SIX 13F, 6-10-1, Ginza, Ginza, Tokyo 104-0061, Japan",
+          "lat": 35.672895,
+          "lon": 139.763095,
+          "src": "https://jp.linkedin.com/company/edgecortix"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

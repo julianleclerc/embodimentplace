@@ -1,0 +1,52 @@
+{
+  "id": 1261,
+  "type": "company",
+  "slug": "syrius-robotics",
+  "name": "Syrius Robotics",
+  "summary": "Maker of AI-driven autonomous mobile robots for warehouses.",
+  "body": "Headquartered in Shenzhen, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://www.syriustechnology.com:443/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.syriustechnology.com:443/"
+    },
+    "image": {
+      "v": "/logos/syrius-robotics.png",
+      "fit": "contain",
+      "src": "https://www.syriustechnology.com/hubfs/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://og.mhi.org/members/106538",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://og.mhi.org/members/106538",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Room 401, Block D, Building 7, Shenzhen International Innovation Valley, Dashi 1st Road, Xili Subdistrict, Nanshan District, Shenzhen, Guangdong, China",
+          "lat": 22.536014,
+          "lon": 113.925622,
+          "src": "https://og.mhi.org/members/106538"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

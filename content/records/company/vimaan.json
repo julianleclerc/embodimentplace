@@ -1,0 +1,51 @@
+{
+  "id": 1739,
+  "type": "company",
+  "slug": "vimaan",
+  "name": "Vimaan",
+  "summary": "Builds AI-powered computer vision systems that automate inventory capture across warehouses and distribution centres.",
+  "body": "Vimaan is redefining warehouse inventory operations with AI-powered computer vision. For years, inventory visibility in warehouses and distribution centers has depended on manual counting, scanning, and verification, a slow, error-prone process that absorbs labor hours and never fully closes the accuracy gap.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1524-vimaan",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vimaan.ai/"
+    },
+    "image": {
+      "v": "/logos/vimaan.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/ae140efb-daf8-453d-8a1a-253cb4654fc1.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Jose",
+      "src": "https://www.linkedin.com/company/vimaan-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/vimaan-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "176 Component Drive, San Jose, California 95131, United States",
+          "lat": 37.384093,
+          "lon": -121.922284,
+          "src": "https://www.linkedin.com/company/vimaan-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

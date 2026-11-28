@@ -1,0 +1,51 @@
+{
+  "id": 932,
+  "type": "company",
+  "slug": "youibot",
+  "name": "Youibot",
+  "summary": "Youibot is a global leading embodied AI company.",
+  "body": "We are committed to advancing intelligent transformation for global industrial customers through mobile manipulation robots and helping our customers achieve stable, flexible and highly efficient production.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://cn.linkedin.com/company/youibot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://youibot.com/"
+    },
+    "image": {
+      "v": "/logos/youibot.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=youibot.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hefei",
+      "src": "https://cn.linkedin.com/company/youibot",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/youibot",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Building 3, Northwest corner of Xianghe Road and Guanli Road intersection, Hefei, Anhui, China",
+          "lat": 31.866568,
+          "lon": 117.281428,
+          "src": "https://cn.linkedin.com/company/youibot"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

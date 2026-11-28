@@ -1,0 +1,23 @@
+{
+  "id": 3668,
+  "type": "funding",
+  "slug": "anybotics-funding-round-2024-12",
+  "name": "ANYbotics funding round (2024-12)",
+  "summary": "Raised $60M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-12-12",
+      "src": "https://siliconangle.com/2024/12/12/ai-robotics-inspection-outfit-anybotics-raises-60m-drive-expansion/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 60,
+      "src": "https://siliconangle.com/2024/12/12/ai-robotics-inspection-outfit-anybotics-raises-60m-drive-expansion/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-12-12"
+}

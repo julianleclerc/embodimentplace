@@ -1,0 +1,52 @@
+{
+  "id": 999,
+  "type": "company",
+  "slug": "stmicroelectronics",
+  "name": "STMicroelectronics",
+  "summary": "Microcontrollers, MEMS motion sensors, optical sensors and power chips.",
+  "body": "ST is a global semiconductor leader delivering intelligent and energy-efficient products and solutions that power the electronics at the heart of everyday life.",
+  "data": {
+    "roles": {
+      "v": [
+        "Compute",
+        "Supplier"
+      ],
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.st.com/"
+    },
+    "image": {
+      "v": "/logos/stmicroelectronics.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.st.com&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Geneva",
+      "src": "https://ch.linkedin.com/company/stmicroelectronics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/stmicroelectronics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "39, Chemin du Champ des Filles, Geneva, Switzerland CH 1228 Plan-Les-Ouates, Switzerland",
+          "lat": 46.168091,
+          "lon": 6.104902,
+          "src": "https://ch.linkedin.com/company/stmicroelectronics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

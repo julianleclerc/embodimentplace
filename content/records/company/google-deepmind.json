@@ -8,10 +8,18 @@
   "data": {
     "roles": {
       "v": [
-        "Model lab"
+        "Model lab",
+        "Software developer"
       ],
       "src": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Software developer",
+          "src": "https://mujoco.org/",
+          "asof": "2026-11"
+        }
+      ]
     },
     "country": {
       "v": "United Kingdom"
@@ -44,6 +52,6 @@
     }
   },
   "created": "2026-11-16 21:16:16",
-  "updated": "2026-11-17 16:05:00",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": "2026-11-16"
 }

@@ -9,10 +9,24 @@
     "roles": {
       "v": [
         "Robot maker",
-        "Software developer"
+        "Software developer",
+        "Integrator",
+        "Supplier"
       ],
       "src": "https://vention.com/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Integrator",
+          "src": "https://vention.com/",
+          "asof": "2026-11"
+        },
+        {
+          "role": "Supplier",
+          "src": "https://vention.com/",
+          "asof": "2026-11"
+        }
+      ]
     },
     "website": {
       "v": "https://vention.com/"
@@ -47,6 +61,6 @@
     }
   },
   "created": "2026-11-26 02:05:08",
-  "updated": "2026-11-26 02:05:08",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": "2026-11-26"
 }

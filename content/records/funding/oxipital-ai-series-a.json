@@ -1,0 +1,23 @@
+{
+  "id": 3966,
+  "type": "funding",
+  "slug": "oxipital-ai-series-a",
+  "name": "Oxipital AI Series A",
+  "summary": "Closed a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-07-08",
+      "src": "https://finance.yahoo.com/technology/ai/articles/oxipital-ai-closes-series-following-141500275.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://finance.yahoo.com/technology/ai/articles/oxipital-ai-closes-series-following-141500275.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-07-08"
+}

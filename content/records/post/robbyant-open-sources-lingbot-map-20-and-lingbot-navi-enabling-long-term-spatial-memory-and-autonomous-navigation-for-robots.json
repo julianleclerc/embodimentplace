@@ -1,0 +1,28 @@
+{
+  "id": 2405,
+  "type": "post",
+  "slug": "robbyant-open-sources-lingbot-map-20-and-lingbot-navi-enabling-long-term-spatial-memory-and-autonomous-navigation-for-robots",
+  "name": "Robbyant Open-Sources LingBot-Map 2.0 and LingBot-Navi, Enabling Long-Term Spatial Memory and Autonomous Navigation for Robots",
+  "summary": "New models reduce long-distance mapping drift by nearly 85% and reduce the need for redundant exploration across tasks, advancing Robbyant’s universal embodied AI brain. Robbyant, an embodied AI ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-27"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "afp.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.afp.com/en/infos/robbyant-open-sources-lingbot-map-20-and-lingbot-navi-enabling-long-term-spatial-memory-and"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

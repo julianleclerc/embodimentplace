@@ -1,0 +1,27 @@
+{
+  "id": 2184,
+  "type": "lab",
+  "slug": "utias",
+  "name": "UTIAS",
+  "summary": "Institute for Aerospace Studies, home to several robotics labs.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Aerial robots",
+        "Space robots",
+        "Field robots"
+      ],
+      "src": "https://www.utias.utoronto.ca/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.utias.utoronto.ca/",
+      "src": "https://www.utias.utoronto.ca/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

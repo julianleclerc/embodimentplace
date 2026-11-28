@@ -1,0 +1,23 @@
+{
+  "id": 3840,
+  "type": "funding",
+  "slug": "orqa-seed",
+  "name": "Orqa Seed",
+  "summary": "Closed a Seed round, led by Lightspeed Venture Partners.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-12-17",
+      "src": "https://www.businesswire.com/news/home/20241218271586/en/Orqa-Secures-5.8m%E2%82%AC-in-Seed-Funding-led-by-Lightspeed-Venture-Partners-to-Accelerate-Development-and-Production-of-Next-Gen-Autonomous-Drone-Solutions-for-Defense-and-Enterprise-Markets/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.businesswire.com/news/home/20241218271586/en/Orqa-Secures-5.8m%E2%82%AC-in-Seed-Funding-led-by-Lightspeed-Venture-Partners-to-Accelerate-Development-and-Production-of-Next-Gen-Autonomous-Drone-Solutions-for-Defense-and-Enterprise-Markets/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-12-17"
+}

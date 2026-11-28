@@ -1,0 +1,53 @@
+{
+  "id": 1893,
+  "type": "company",
+  "slug": "bigwave-robotics",
+  "name": "BIGWAVE ROBOTICS",
+  "summary": "Seoul-based industrial physical AI company that positions itself as a system integrator for factory and logistics automation.",
+  "body": "My Robot Solution (MRS) is the largest robotics automation solution platform in Korea. You can select the best robotics solution from the largest solution database, and get a free consultation from robotics experts.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2871-bigwave-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://bigwaverobotics.com/"
+    },
+    "image": {
+      "v": "/logos/bigwave-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.imweb.me/thumbnail/20250108/07b21f125815a.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seoul",
+      "src": "https://roboticsconnected.com/companies/2871-bigwave-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "South Korea",
+      "src": "https://roboticsconnected.com/companies/2871-bigwave-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seoul, South Korea",
+          "lat": 37.566679,
+          "lon": 126.978291,
+          "src": "https://roboticsconnected.com/companies/2871-bigwave-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

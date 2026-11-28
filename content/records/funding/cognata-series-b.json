@@ -1,0 +1,28 @@
+{
+  "id": 3943,
+  "type": "funding",
+  "slug": "cognata-series-b",
+  "name": "Cognata Series B",
+  "summary": "Raised $18.5M in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2018-10-17",
+      "src": "https://www.prnewswire.com/news-releases/cognata-raises-18-5m-in-series-b-round-to-accelerate-expansion-of-its-autonomous-vehicles-simulation-platform-business-300731850.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.prnewswire.com/news-releases/cognata-raises-18-5m-in-series-b-round-to-accelerate-expansion-of-its-autonomous-vehicles-simulation-platform-business-300731850.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 18.5,
+      "src": "https://www.prnewswire.com/news-releases/cognata-raises-18-5m-in-series-b-round-to-accelerate-expansion-of-its-autonomous-vehicles-simulation-platform-business-300731850.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2018-10-17"
+}

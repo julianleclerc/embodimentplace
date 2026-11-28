@@ -1,0 +1,30 @@
+{
+  "id": 2071,
+  "type": "product",
+  "slug": "sunday-skill-capture-glove",
+  "name": "Sunday Skill Capture Glove",
+  "summary": "Glove that records how people do household chores, used to train Sunday's Memo home robot.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Teleoperation",
+      "src": "https://www.eweek.com/news/sunday-memo-home-robot/",
+      "asof": "2026-11"
+    },
+    "dc_kind": {
+      "v": "Data glove",
+      "src": "https://www.eweek.com/news/sunday-memo-home-robot/",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/sunday-skill-capture-glove.webp",
+      "src": "https://www.eweek.com/news/sunday-memo-home-robot/",
+      "orig": "https://cdn.eweek.com/149b06cc6e01f6f676bbc2b20f79babd.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

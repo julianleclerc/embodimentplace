@@ -1,0 +1,51 @@
+{
+  "id": 2050,
+  "type": "company",
+  "slug": "mytron-labs",
+  "name": "MyTron Labs",
+  "summary": "Supplies large-scale egocentric multimodal datasets to robotics AI labs.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2107999444633370943",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mytronlabs.com/"
+    },
+    "image": {
+      "v": "/logos/mytron-labs.png",
+      "fit": "contain",
+      "src": "https://mytronlabs.com/logo-grey.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://www.linkedin.com/company/my-tron-labs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://www.linkedin.com/company/my-tron-labs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Singapore",
+          "lat": 1.289918,
+          "lon": 103.851907,
+          "src": "https://www.linkedin.com/company/my-tron-labs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

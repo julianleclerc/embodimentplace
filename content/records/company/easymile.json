@@ -1,0 +1,51 @@
+{
+  "id": 1604,
+  "type": "company",
+  "slug": "easymile",
+  "name": "EasyMile",
+  "summary": "Develops autonomous-driving software that powers industrial-grade vehicles for heavy-duty operations.",
+  "body": "TLD Robotics develops fully driverless vehicles and software for airport and industrial operations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/734-easymile",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://easymile.com/"
+    },
+    "image": {
+      "v": "/logos/easymile.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/f922641719726c4e663d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Toulouse",
+      "src": "https://fr.linkedin.com/company/easymile",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/easymile",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "21, Boulevard de la Marquette, Toulouse, 31000, France",
+          "lat": 43.614289,
+          "lon": 1.433161,
+          "src": "https://fr.linkedin.com/company/easymile"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

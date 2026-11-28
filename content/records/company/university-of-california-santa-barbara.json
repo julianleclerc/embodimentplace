@@ -1,0 +1,51 @@
+{
+  "id": 1292,
+  "type": "company",
+  "slug": "university-of-california-santa-barbara",
+  "name": "University of California, Santa Barbara",
+  "summary": "Public university near Goleta, California, United States and part of the University of California system.",
+  "body": "Recent robotics work includes “Material-like robotic collectives with spatiotemporal control of strength and shape”. OpenAlex lists 44 robotics, humanoid, embodied-AI or manipulation papers from University of California, Santa Barbara since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1126/science.ads7942",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ucsb.edu/"
+    },
+    "image": {
+      "v": "/logos/university-of-california-santa-barbara.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_California%2C_Santa_Barbara_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Barbara",
+      "src": "https://www.wikidata.org/wiki/Q263064",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q263064",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Santa Barbara, United States",
+          "lat": 34.416323,
+          "lon": -119.846392,
+          "src": "https://www.wikidata.org/wiki/Q263064"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

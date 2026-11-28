@@ -1,0 +1,23 @@
+{
+  "id": 3409,
+  "type": "product",
+  "slug": "agilox-one",
+  "name": "AGILOX ONE",
+  "summary": "AGILOX ONE, a robot from Agilox.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/agilox-one.webp",
+      "src": "https://www.agilox.net/en/product/agilox-one/",
+      "orig": "https://www.agilox.net/media/agilox-one_480x380_web2.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.agilox.net/en/product/agilox-one/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 972,
+  "type": "company",
+  "slug": "waveshare",
+  "name": "Waveshare",
+  "summary": "Development boards, displays, sensors and servo driver boards for makers and engineers.",
+  "body": "Founded in 2006, Waveshare is headquartered in Shenzhen, China, with additional offices in HK. Waveshare's product range is extensive, covering multiple areas such as microcontrollers, development boards, displays, sensors, wireless communication, and more.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.waveshare.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.waveshare.com/"
+    },
+    "image": {
+      "v": "/logos/waveshare.png",
+      "fit": "contain",
+      "src": "https://www.waveshare.com/media/eternal/venedor/default/logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

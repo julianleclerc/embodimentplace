@@ -1,0 +1,51 @@
+{
+  "id": 1901,
+  "type": "company",
+  "slug": "electrans-technologies",
+  "name": "Electrans Technologies",
+  "summary": "Designs hybrid-electric drive and autonomous-ready vehicle systems for commercial trucking.",
+  "body": "We build robotics, vehicle interface technology, and autonomous infrastructure that simplify how commercial vehicles connect, operate, and move through industrial environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2901-electrans-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://electranstech.com/"
+    },
+    "image": {
+      "v": "/logos/electrans-technologies.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/6716a3a4-d8dc-41c3-85f5-ad0188e02251.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Oakville",
+      "src": "https://ca.linkedin.com/company/electrans-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/electrans-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2109 Wyecroft Rd, Oakville, Ontario L6L 5L7, Canada",
+          "lat": 43.418831,
+          "lon": -79.725276,
+          "src": "https://ca.linkedin.com/company/electrans-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

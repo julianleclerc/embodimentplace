@@ -1,0 +1,23 @@
+{
+  "id": 3578,
+  "type": "funding",
+  "slug": "daimon-robotics-angel",
+  "name": "Daimon Robotics Angel",
+  "summary": "Raised over RMB 100 million in an Angel round, led by China Merchants Venture.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-08-15",
+      "src": "https://finance.yahoo.com/news/daimon-robotics-secures-over-rmb-170000798.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Angel",
+      "src": "https://finance.yahoo.com/news/daimon-robotics-secures-over-rmb-170000798.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-08-15"
+}

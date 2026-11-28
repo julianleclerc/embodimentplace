@@ -1,0 +1,51 @@
+{
+  "id": 1663,
+  "type": "company",
+  "slug": "delair",
+  "name": "Delair",
+  "summary": "Toulouse-Labège, France based maker of fixed-wing and VTOL drones, founded in 2011 and formerly known as Delair-Tech.",
+  "body": "Delair is a leading provider of drone-based high performance solutions that enable enterprises to monitor and collect, their physical assets from the air before they digitize them and turn the collected data into valuable business insights.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1081-delair",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://delair.aero/"
+    },
+    "image": {
+      "v": "/logos/delair.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/78e08edefbb9482ad86e.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Toulouse-Labège",
+      "src": "https://fr.linkedin.com/company/delair-tech",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/delair-tech",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "676, Rue Max Planck, Toulouse-Labège, Midi-Pyrénées 31670, France",
+          "lat": 43.545697,
+          "lon": 1.512482,
+          "src": "https://fr.linkedin.com/company/delair-tech"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

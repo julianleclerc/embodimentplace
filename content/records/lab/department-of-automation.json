@@ -1,0 +1,26 @@
+{
+  "id": 2136,
+  "type": "lab",
+  "slug": "department-of-automation",
+  "name": "Department of Automation",
+  "summary": "Control, perception and intelligent systems research.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Control",
+        "Perception"
+      ],
+      "src": "https://www.au.tsinghua.edu.cn/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.au.tsinghua.edu.cn/",
+      "src": "https://www.au.tsinghua.edu.cn/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

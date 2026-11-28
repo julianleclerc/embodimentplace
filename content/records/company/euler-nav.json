@@ -1,0 +1,52 @@
+{
+  "id": 1656,
+  "type": "company",
+  "slug": "euler-nav",
+  "name": "EULER-NAV",
+  "summary": "Navigation sensor brand of AMS Advanced Air Mobility Sensors UG, based in Munich.",
+  "body": "Offering safe sensing and navigation for delivery drones and air taxis. Product portfolio includes a miniature Baro-Inertial AHRS and a tiny GNSS-aided inertial navigation system. We aim to provide our customers with the highest level of convenience.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/1053-euler-nav",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://euler-nav.com/"
+    },
+    "image": {
+      "v": "/logos/euler-nav.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/7ca939c6ca39a9c15a8a.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://roboticsconnected.com/companies/1053-euler-nav",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/1053-euler-nav",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://roboticsconnected.com/companies/1053-euler-nav"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

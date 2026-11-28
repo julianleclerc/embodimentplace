@@ -1,0 +1,51 @@
+{
+  "id": 2094,
+  "type": "company",
+  "slug": "university-of-edinburgh",
+  "name": "University of Edinburgh",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.ed.ac.uk/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ed.ac.uk/"
+    },
+    "city": {
+      "v": "Edinburgh"
+    },
+    "country": {
+      "v": "United Kingdom"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Edinburgh, United Kingdom",
+          "lat": 55.9445,
+          "lon": -3.1892
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 44.7,
+      "faculty": 18,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 94,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

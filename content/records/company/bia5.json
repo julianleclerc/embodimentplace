@@ -1,0 +1,51 @@
+{
+  "id": 1535,
+  "type": "company",
+  "slug": "bia5",
+  "name": "BIA5",
+  "summary": "Manufactures and deploys ground robotics platforms, chiefly unmanned ground vehicles (UGVs) for military, law enforcement and private security agencies.",
+  "body": "BIA5 specialise in the design, manufacture, supply and support of electronic systems for military, Fire and Emergency Services, mining and hazardous environments, law enforcement and private security agencies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/271-bia5",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://bia5.com/"
+    },
+    "image": {
+      "v": "/logos/bia5.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/78f14318438514e34ac3.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Murarrie",
+      "src": "https://au.linkedin.com/company/bia5-pty-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://au.linkedin.com/company/bia5-pty-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "8 Metroplex Ave, Murarrie, Queensland 4172, Australia",
+          "lat": -27.455982,
+          "lon": 153.099523,
+          "src": "https://au.linkedin.com/company/bia5-pty-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 2139,
+  "type": "lab",
+  "slug": "advanced-robotics-and-controls-lab",
+  "name": "Advanced Robotics and Controls Lab",
+  "summary": "Surgical robots and control.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Medical robots",
+        "Control"
+      ],
+      "src": "https://www.ucsdarclab.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ucsdarclab.com/",
+      "src": "https://www.ucsdarclab.com/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Michael Yip",
+      "src": "https://www.ucsdarclab.com/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

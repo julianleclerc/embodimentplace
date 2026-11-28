@@ -1,0 +1,52 @@
+{
+  "id": 1260,
+  "type": "company",
+  "slug": "forwardx-robotics",
+  "name": "ForwardX Robotics",
+  "summary": "ForwardX Robotics is a global leader in vision-based autonomous intralogistics.",
+  "body": "We deliver industrial-grade automation for warehousing and manufacturing environments. Built on deep expertise in computer vision and robotics software, ForwardX offers a full portfolio of AMRs and autonomous forklifts.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://www.forwardx.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.forwardx.com/"
+    },
+    "image": {
+      "v": "/logos/forwardx-robotics.png",
+      "fit": "contain",
+      "src": "https://www.forwardx.com/wp-content/uploads/2023/01/logo-606_228.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "California",
+      "src": "https://www.linkedin.com/company/forwardx-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/forwardx-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "California, California, United States",
+          "lat": 38.297486,
+          "lon": -76.493365,
+          "src": "https://www.linkedin.com/company/forwardx-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -8,10 +8,18 @@
   "data": {
     "roles": {
       "v": [
-        "Robot maker"
+        "Robot maker",
+        "Model lab"
       ],
       "src": "https://roboligent.com/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Model lab",
+          "src": "https://roboligent.com/",
+          "asof": "2026-11"
+        }
+      ]
     },
     "website": {
       "v": "https://roboligent.com/"
@@ -46,6 +54,6 @@
     }
   },
   "created": "2026-11-26 02:05:08",
-  "updated": "2026-11-26 02:05:08",
+  "updated": "2026-11-27 22:05:09",
   "feed_at": "2026-11-26"
 }

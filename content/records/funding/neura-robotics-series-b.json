@@ -1,0 +1,23 @@
+{
+  "id": 3477,
+  "type": "funding",
+  "slug": "neura-robotics-series-b",
+  "name": "NEURA Robotics Series B",
+  "summary": "Raised €120 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-01-15",
+      "src": "https://finance.yahoo.com/news/neura-robotics-secures-120-million-225900558.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://finance.yahoo.com/news/neura-robotics-secures-120-million-225900558.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-01-15"
+}

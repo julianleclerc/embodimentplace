@@ -1,0 +1,28 @@
+{
+  "id": 3436,
+  "type": "product",
+  "slug": "lanxin-vb2",
+  "name": "Lanxin VB2",
+  "summary": "VB2, a humanoid robot from Lanxin Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/lanxin-vb2.webp",
+      "src": "https://www.lanxinrobotics.com/humanoid-robots/vb2-2/",
+      "orig": "https://lanxinrobotics.com/wp-content/uploads/2025/08/VB2.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.lanxinrobotics.com/humanoid-robots/vb2-2/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lanxinrobotics.com/humanoid-robots/vb2-2/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1836,
+  "type": "company",
+  "slug": "wingxpand",
+  "name": "WingXpand",
+  "summary": "Builds a family of smart autonomous robots for air, land and water, all sharing a common AI core called xPAIR.",
+  "body": "WingXpand is expanding what’s possible with autonomous systems through a family of smart robots built to adapt. From the air to the ground and the water, our Universal Smart Autonomous System gives defense, public safety, agriculture and other industries the intelligence and flexibility to take on complex missions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2152-wingxpand",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.wingxpand.com/"
+    },
+    "image": {
+      "v": "/logos/wingxpand.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/deacb0e3e11b38f0e9a9.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Saint Louis",
+      "src": "https://roboticsconnected.com/companies/2152-wingxpand",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2152-wingxpand",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Saint Louis, United States",
+          "lat": 38.625406,
+          "lon": -90.190009,
+          "src": "https://roboticsconnected.com/companies/2152-wingxpand"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

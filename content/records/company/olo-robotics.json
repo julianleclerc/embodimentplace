@@ -1,0 +1,51 @@
+{
+  "id": 1516,
+  "type": "company",
+  "slug": "olo-robotics",
+  "name": "OLO Robotics",
+  "summary": "Develops browser-based software that simplifies robot development and deployment for mainstream developers and domain experts.",
+  "body": "Robotics is full of possibility. The kind that reshapes industries. Redefines efficiency. Even reimagines what it means for people to live, move and connect. But for too long this potential has remained locked away. Stuck behind hardware and software complexity. Siloed systems. Complicated processes.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/240-olo-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://olo-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/olo-robotics.png",
+      "fit": "contain",
+      "src": "https://olo-robotics.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sheffield",
+      "src": "https://uk.linkedin.com/company/olo-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/olo-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1 Concourse Way, Sheffield, England, United Kingdom",
+          "lat": 53.380359,
+          "lon": -1.462143,
+          "src": "https://uk.linkedin.com/company/olo-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

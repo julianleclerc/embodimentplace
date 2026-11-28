@@ -1,0 +1,51 @@
+{
+  "id": 1748,
+  "type": "company",
+  "slug": "ds-automotion",
+  "name": "DS AUTOMOTION",
+  "summary": "Builds driverless transport systems and autonomous mobile robots, with roots in automated guided vehicles stretching back to 1984.",
+  "body": "DS AUTOMOTION GmbH, headquartered in Linz, is a leading global supplier of automated guided vehicles and autonomous mobile robotics. The company has specialized in the development and production of automation solutions for a wide variety of applications and industries since 1984.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1634-ds-automotion",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ds-automotion.com/"
+    },
+    "image": {
+      "v": "/logos/ds-automotion.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/e3524f97443bff6d24db.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Linz",
+      "src": "https://at.linkedin.com/company/ds-automotion-gmbh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Austria",
+      "src": "https://at.linkedin.com/company/ds-automotion-gmbh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Lunzerstraße 60, Linz, Oberösterreich 4030, Austria",
+          "lat": 48.264256,
+          "lon": 14.340454,
+          "src": "https://at.linkedin.com/company/ds-automotion-gmbh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

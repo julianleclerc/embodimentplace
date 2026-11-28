@@ -1,0 +1,35 @@
+{
+  "id": 2075,
+  "type": "product",
+  "slug": "zoox-robotaxi",
+  "name": "Zoox Robotaxi",
+  "summary": "Purpose-built bidirectional robotaxi with no steering wheel, carrying public riders in Las Vegas.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Automotive",
+      "src": "https://zoox.com",
+      "asof": "2026-11"
+    },
+    "av_kind": {
+      "v": "Robotaxi",
+      "src": "https://zoox.com",
+      "asof": "2026-11"
+    },
+    "sae_level": {
+      "v": "Level 4",
+      "src": "https://zoox.com",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/zoox-robotaxi.webp",
+      "src": "https://zoox.com/",
+      "orig": "https://zoox.com/assets/1772650418-sf-202408-zoox-robotaxi-sf-skyline-16x9.png?auto=compress&fit=crop&fm=jpg&h=630&q=90&w=1200",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

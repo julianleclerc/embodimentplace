@@ -1,0 +1,28 @@
+{
+  "id": 3445,
+  "type": "product",
+  "slug": "muks-spaceo",
+  "name": "Muks Spaceo",
+  "summary": "Spaceo, a humanoid robot from Muks Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/muks-spaceo.webp",
+      "src": "https://muksrobotics.com/",
+      "orig": "https://framerusercontent.com/images/EkWHKKsgwp6XVdHTK58R1njm0.png?width=1049&height=839",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://muksrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://muksrobotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

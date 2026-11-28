@@ -1,0 +1,23 @@
+{
+  "id": 3929,
+  "type": "funding",
+  "slug": "inceptio-technology-funding-round-2022-02",
+  "name": "Inceptio Technology funding round (2022-02)",
+  "summary": "Raised US$188 million, led by Sequoia Capital China.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-02-28",
+      "src": "https://www.wlns.com/business/press-releases/cision/20220228CN75166/inceptio-technology-completes-us188-million-in-financing-led-by-sequoia-capital-china-and-legend-capital/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 188,
+      "src": "https://www.wlns.com/business/press-releases/cision/20220228CN75166/inceptio-technology-completes-us188-million-in-financing-led-by-sequoia-capital-china-and-legend-capital/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-02-28"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1727,
+  "type": "company",
+  "slug": "paddington-robotics",
+  "name": "Paddington Robotics",
+  "summary": "London-based company building autonomous robots that operate in unstructured, human environments.",
+  "body": "Bridging the gap between the digital world and the physical world, between product and research - solving AI + Robotics, whilst solving real world problems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1375-paddington-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://paddington-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/paddington-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/36bad58264921cfc096d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/1375-paddington-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/1375-paddington-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/1375-paddington-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

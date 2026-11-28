@@ -1,0 +1,51 @@
+{
+  "id": 2100,
+  "type": "company",
+  "slug": "university-of-oxford",
+  "name": "University of Oxford",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.ox.ac.uk/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ox.ac.uk/"
+    },
+    "city": {
+      "v": "Oxford"
+    },
+    "country": {
+      "v": "United Kingdom"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Oxford, United Kingdom",
+          "lat": 51.7548,
+          "lon": -1.2544
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 16.1,
+      "faculty": 12,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 8,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

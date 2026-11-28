@@ -1,0 +1,51 @@
+{
+  "id": 1057,
+  "type": "company",
+  "slug": "husarion",
+  "name": "Husarion",
+  "summary": "Husarion offers mobile robotic development platforms, software assets and connectivity solutions that allow users to build autonomous systems based on ROS & ROS 2 easily and efficiently.",
+  "body": "For over a decade, the Husarion team of engineers and developers has been delivering world-class robotics products and services to university, research and commercial clients.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://husarion.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://husarion.com/"
+    },
+    "image": {
+      "v": "/logos/husarion.png",
+      "fit": "contain",
+      "src": "https://husarion.com/img/husarion-logo.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kraków",
+      "src": "https://pl.linkedin.com/company/husarion",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Poland",
+      "src": "https://pl.linkedin.com/company/husarion",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "ul. Prądnicka, Kraków, Małopolska 31-202, Poland",
+          "lat": 50.061947,
+          "lon": 19.936856,
+          "src": "https://pl.linkedin.com/company/husarion"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

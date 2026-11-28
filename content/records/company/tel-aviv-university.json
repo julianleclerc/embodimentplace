@@ -1,0 +1,51 @@
+{
+  "id": 1356,
+  "type": "company",
+  "slug": "tel-aviv-university",
+  "name": "Tel Aviv University",
+  "summary": "University in Tel Aviv, Israel.",
+  "body": "Recent robotics work includes “A mechanical route for cooperative transport in autonomous robotic swarms”. OpenAlex lists 85 robotics, humanoid, embodied-AI or manipulation papers from Tel Aviv University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1038/s41467-025-61896-7",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tau.ac.il/"
+    },
+    "image": {
+      "v": "/logos/tel-aviv-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tel_Aviv_university_logo_-_Hebrew.png?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tel Aviv",
+      "src": "https://www.wikidata.org/wiki/Q319239",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://www.wikidata.org/wiki/Q319239",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tel Aviv, Israel",
+          "lat": 32.1125,
+          "lon": 34.805,
+          "src": "https://www.wikidata.org/wiki/Q319239"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

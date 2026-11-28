@@ -1,0 +1,51 @@
+{
+  "id": 1982,
+  "type": "company",
+  "slug": "sanhua-intelligent-controls",
+  "name": "Sanhua Intelligent Controls",
+  "summary": "Thermal-controls group making linear and rotary actuator assemblies for humanoid robots.",
+  "body": "全球制冷家电、新能源汽车热管理领域的行业领军企业",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://humano.one/companies/sanhua-intelligent-controls",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://zjshc.com/"
+    },
+    "image": {
+      "v": "/logos/sanhua-intelligent-controls.png",
+      "fit": "contain",
+      "src": "https://zjshc.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shaoxing",
+      "src": "https://www.zjshc.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.zjshc.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shaoxing, Zhejiang, China",
+          "lat": 29.999243,
+          "lon": 120.576854,
+          "src": "https://www.zjshc.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

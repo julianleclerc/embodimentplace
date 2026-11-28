@@ -1,0 +1,51 @@
+{
+  "id": 1574,
+  "type": "company",
+  "slug": "sensmore",
+  "name": "Sensmore",
+  "summary": "Develops physical AI systems that automate large mobile machinery, particularly haul trucks and loaders used in mining and construction.",
+  "body": "sensmore is a Berlin/Potsdam-based robotics startup delivering production-proven automation for the industries where the world’s raw materials are extracted, moved, and processed.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/639-sensmore",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sensmore.ai/"
+    },
+    "image": {
+      "v": "/logos/sensmore.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1f58c37e55b04eedf8c7.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Berlin",
+      "src": "https://roboticsconnected.com/companies/639-sensmore",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/639-sensmore",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Berlin, Germany",
+          "lat": 52.517389,
+          "lon": 13.395131,
+          "src": "https://roboticsconnected.com/companies/639-sensmore"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

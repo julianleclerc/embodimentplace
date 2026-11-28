@@ -1,0 +1,51 @@
+{
+  "id": 1386,
+  "type": "company",
+  "slug": "hong-kong-polytechnic-university",
+  "name": "Hong Kong Polytechnic University",
+  "summary": "Public university in Hong Kong.",
+  "body": "Recent robotics work includes “Human-in-the-Loop Robot Learning for Smart Manufacturing: A Human-Centric Perspective”. OpenAlex lists 517 robotics, humanoid, embodied-AI or manipulation papers from Hong Kong Polytechnic University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/tase.2025.3528051",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://polyu.edu.hk/"
+    },
+    "image": {
+      "v": "/logos/hong-kong-polytechnic-university.png",
+      "fit": "contain",
+      "src": "https://polyu.edu.hk/-/media/department/home/setting/favicon.ico?rev=3645ae56c1674f7ba7ff351ec16123df&amp;hash=362CCC9C57A3CEBB5D28EEA507E98503",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hong Kong",
+      "src": "https://www.wikidata.org/wiki/Q1187271",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q1187271",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hong Kong, China",
+          "lat": 22.305,
+          "lon": 114.18,
+          "src": "https://www.wikidata.org/wiki/Q1187271"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

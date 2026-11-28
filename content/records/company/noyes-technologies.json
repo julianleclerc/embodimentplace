@@ -1,0 +1,51 @@
+{
+  "id": 1629,
+  "type": "company",
+  "slug": "noyes-technologies",
+  "name": "Noyes Technologies",
+  "summary": "Develops NoyesStorage, an automated warehouse system for compact spaces of 15 to 250 square metres using mobile robots and smart storage technology.",
+  "body": "As Noyes, we strive to enable automation for everyone. Our simple but sophisticated automated nano warehouse, NoyesStorage, flexibly adapts to your needs. The modular design enables a perfect fit to any floor plan - starting from 10 sqm.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/872-noyes-technologies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://noyes-tech.com/"
+    },
+    "image": {
+      "v": "/logos/noyes-technologies.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/f1dc93c56e9476711249.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://roboticsconnected.com/companies/872-noyes-technologies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/872-noyes-technologies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://roboticsconnected.com/companies/872-noyes-technologies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

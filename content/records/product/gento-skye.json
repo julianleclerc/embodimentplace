@@ -1,0 +1,23 @@
+{
+  "id": 3429,
+  "type": "product",
+  "slug": "gento-skye",
+  "name": "Gento Skye",
+  "summary": "Gento Skye, a robot from GENTO Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/gento-skye.webp",
+      "src": "https://gentorobotics.ai/products/gento-skye/",
+      "orig": "https://gentorobotics.ai/wp-content/uploads/tmp/webp/products/ee7fe75d08e77b715ff1c7b7ed09c3f0.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gentorobotics.ai/products/gento-skye/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

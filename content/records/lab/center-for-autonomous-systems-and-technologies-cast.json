@@ -1,0 +1,27 @@
+{
+  "id": 2142,
+  "type": "lab",
+  "slug": "center-for-autonomous-systems-and-technologies-cast",
+  "name": "Center for Autonomous Systems and Technologies (CAST)",
+  "summary": "Caltech's autonomy centre with a large flight arena.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Aerial robots",
+        "Legged locomotion",
+        "Field robots"
+      ],
+      "src": "https://cast.caltech.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cast.caltech.edu/",
+      "src": "https://cast.caltech.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

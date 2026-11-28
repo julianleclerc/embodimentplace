@@ -1,0 +1,45 @@
+{
+  "id": 1045,
+  "type": "company",
+  "slug": "photoneo",
+  "name": "Photoneo",
+  "summary": "Photoneo, now part of Zebra Technologies, is a leading provider of industrial 3D vision, AI-powered automation solutions & robotic intelligence software.",
+  "body": "Since the foundation in 2013 the company’s mission was to give vision and intelligence to robots all over the world so they can see and understand with a clear goal - to automate monotonous and risky tasks by employing vision-guided robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.photoneo.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.photoneo.com/"
+    },
+    "city": {
+      "v": "Bratislava",
+      "src": "https://sk.linkedin.com/company/photoneo",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Slovakia",
+      "src": "https://sk.linkedin.com/company/photoneo",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Plynarenska 6, Bratislava, 821 09, Slovakia",
+          "lat": 48.143304,
+          "lon": 17.140881,
+          "src": "https://sk.linkedin.com/company/photoneo"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

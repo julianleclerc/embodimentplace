@@ -1,0 +1,52 @@
+{
+  "id": 1651,
+  "type": "company",
+  "slug": "enabled-robotics",
+  "name": "Enabled Robotics",
+  "summary": "Danish company based in Odense, building Mobile Cobots: autonomous mobile robots combined with collaborative robotic arms.",
+  "body": "Since 2016 Enabled Robotics has been on a mission to address labor shortage and reduce the cost of automation for companies by letting robots take care of strenuous, meticulous and repetitive workload and free humans for more complex tasks.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1036-enabled-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.enabled-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/enabled-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9ac2d4b97228f718aed2.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Odense",
+      "src": "https://dk.linkedin.com/company/enabled-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/enabled-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Agerhatten 27A, Odense, South Denmark 5220, Denmark",
+          "lat": 41.720889,
+          "lon": -80.698352,
+          "src": "https://dk.linkedin.com/company/enabled-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

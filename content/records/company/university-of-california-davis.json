@@ -1,0 +1,51 @@
+{
+  "id": 1293,
+  "type": "company",
+  "slug": "university-of-california-davis",
+  "name": "University of California, Davis",
+  "summary": "Public university in the Davis, California area; part of the University of California system.",
+  "body": "Recent robotics work includes “Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation”. OpenAlex lists 86 robotics, humanoid, embodied-AI or manipulation papers from University of California, Davis since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/icra55743.2025.11128253",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ucdavis.edu/"
+    },
+    "image": {
+      "v": "/logos/university-of-california-davis.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_University_of_California_Davis.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Davis",
+      "src": "https://www.wikidata.org/wiki/Q129421",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q129421",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Davis, United States",
+          "lat": 38.54,
+          "lon": -121.75,
+          "src": "https://www.wikidata.org/wiki/Q129421"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

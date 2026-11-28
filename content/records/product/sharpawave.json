@@ -1,0 +1,35 @@
+{
+  "id": 2069,
+  "type": "product",
+  "slug": "sharpawave",
+  "name": "SharpaWave",
+  "summary": "Human-scale dexterous hand with 22 degrees of freedom and fingertip tactile sensing.",
+  "body": "",
+  "data": {
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://www.sharpa.com",
+      "asof": "2026-11"
+    },
+    "h_kind": {
+      "v": "Dexterous hand",
+      "src": "https://www.sharpa.com",
+      "asof": "2026-11"
+    },
+    "dof": {
+      "v": 22,
+      "src": "https://www.sharpa.com",
+      "asof": "2026-11"
+    },
+    "image": {
+      "v": "/products/sharpawave.webp",
+      "src": "https://www.sharpa.com/",
+      "orig": "https://www.sharpa.com/cdn/shop/t/53/assets/sharpa-nav-product-fallback.png?v=178235694775404050771790560473",
+      "fit": "contain",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:17",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

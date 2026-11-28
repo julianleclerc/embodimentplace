@@ -1,0 +1,51 @@
+{
+  "id": 1381,
+  "type": "company",
+  "slug": "tongji-university",
+  "name": "Tongji University",
+  "summary": "University located in Shanghai, China.",
+  "body": "Recent robotics work includes “Multi-agent embodied AI: advances and future directions”. OpenAlex lists 537 robotics, humanoid, embodied-AI or manipulation papers from Tongji University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1007/s11432-025-4820-4",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tongji.edu.cn/"
+    },
+    "image": {
+      "v": "/logos/tongji-university.png",
+      "fit": "contain",
+      "src": "https://www.tongji.edu.cn/images/logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://www.wikidata.org/wiki/Q16947",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q16947",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.2827,
+          "lon": 121.506632,
+          "src": "https://www.wikidata.org/wiki/Q16947"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

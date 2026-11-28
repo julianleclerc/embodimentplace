@@ -1,0 +1,51 @@
+{
+  "id": 1903,
+  "type": "company",
+  "slug": "sky-tag-robotics",
+  "name": "Sky-Tag Robotics",
+  "summary": "Penang-based automation solutions provider founded in 2005, operating as SKY-TAG Robotics Sdn Bhd.",
+  "body": "We specialise in providing high-end Automated Manufacturing Machinery in terms of functionality precision, quality services, cost-effectiveness and timely delivery.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2938-sky-tag-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.sky-tag.com/"
+    },
+    "image": {
+      "v": "/logos/sky-tag-robotics.png",
+      "fit": "contain",
+      "src": "https://www.sky-tag.com/wp-content/uploads/2018/07/sky-tag-favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bandar Cassia",
+      "src": "https://my.linkedin.com/company/sky-tag-robotics-sdn-bhd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Malaysia",
+      "src": "https://my.linkedin.com/company/sky-tag-robotics-sdn-bhd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "No.5, Jalan Cassia Selatan 3/2, Bandar Cassia, Penang 14100, Malaysia",
+          "lat": 5.254309,
+          "lon": 100.438141,
+          "src": "https://my.linkedin.com/company/sky-tag-robotics-sdn-bhd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

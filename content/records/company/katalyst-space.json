@@ -1,0 +1,52 @@
+{
+  "id": 1643,
+  "type": "company",
+  "slug": "katalyst-space",
+  "name": "Katalyst Space",
+  "summary": "Flagstaff, Arizona aerospace company building robotic spacecraft for satellite servicing and space domain awareness.",
+  "body": "At Katalyst Space Technologies, our goal is to fundamentally shake up how the satellite industry works. We’re a R&D team focused on next-gen satellite and mission designs that break through the long cycle times, rigid architectures, and inflexibility in mission planning that dominates the space industry.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/1011-katalyst-space",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.katalystspace.com/"
+    },
+    "image": {
+      "v": "/logos/katalyst-space.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/4bb979e742e8c72c4bbc.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Flagstaff",
+      "src": "https://roboticsconnected.com/companies/1011-katalyst-space",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1011-katalyst-space",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Flagstaff, United States",
+          "lat": 35.198752,
+          "lon": -111.651822,
+          "src": "https://roboticsconnected.com/companies/1011-katalyst-space"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

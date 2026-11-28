@@ -1,0 +1,23 @@
+{
+  "id": 3448,
+  "type": "product",
+  "slug": "neobotix-rox-argo",
+  "name": "Neobotix ROX-Argo",
+  "summary": "ROX-Argo, a robot from Neobotix.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/neobotix-rox-argo.webp",
+      "src": "https://neobotix-robots.com/en/products/mobile-robots/mobile-robot-rox/rox-argo/index.html",
+      "orig": "https://neobotix-robots.com/media/_processed_/c/6/csm_Fahrwerk_ROX-Argo-Duo_HQ_24babf1843.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://neobotix-robots.com/en/products/mobile-robots/mobile-robot-rox/rox-argo/index.html"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

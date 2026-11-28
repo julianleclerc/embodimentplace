@@ -1,0 +1,28 @@
+{
+  "id": 3816,
+  "type": "funding",
+  "slug": "astroscale-series-e",
+  "name": "Astroscale Series E",
+  "summary": "Raised $51 million in a Series E round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2020-10-13",
+      "src": "https://uk.finance.yahoo.com/news/astroscale-raises-51-million-series-134228613.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series E",
+      "src": "https://uk.finance.yahoo.com/news/astroscale-raises-51-million-series-134228613.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 51,
+      "src": "https://uk.finance.yahoo.com/news/astroscale-raises-51-million-series-134228613.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2020-10-13"
+}

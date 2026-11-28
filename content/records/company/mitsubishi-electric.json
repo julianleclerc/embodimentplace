@@ -1,0 +1,51 @@
+{
+  "id": 1488,
+  "type": "company",
+  "slug": "mitsubishi-electric",
+  "name": "Mitsubishi Electric",
+  "summary": "Diversified Japanese industrial manufacturer with significant robotics and factory automation operations.",
+  "body": "They design and manufacture MELFA industrial robots and ASSISTA collaborative robots, along with control systems, drives, and vision technology. The company positions itself around e-F@ctory smart manufacturing, delivering integrated automation solutions for factories through IoT connectivity and systems integration.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/192-mitsubishi-electric",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mitsubishielectric.com/fa/"
+    },
+    "image": {
+      "v": "/logos/mitsubishi-electric.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/230d1120-672b-42bc-8a56-e7563c341d20.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://roboticsconnected.com/companies/192-mitsubishi-electric",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://roboticsconnected.com/companies/192-mitsubishi-electric",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.67686,
+          "lon": 139.763895,
+          "src": "https://roboticsconnected.com/companies/192-mitsubishi-electric"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

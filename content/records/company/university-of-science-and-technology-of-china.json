@@ -1,0 +1,45 @@
+{
+  "id": 1371,
+  "type": "company",
+  "slug": "university-of-science-and-technology-of-china",
+  "name": "University of Science and Technology of China",
+  "summary": "University in Hefei, China.",
+  "body": "Recent robotics work includes “A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand”. OpenAlex lists 502 robotics, humanoid, embodied-AI or manipulation papers from University of Science and Technology of China since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1021/jacs.4c17738",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ustc.edu.cn/"
+    },
+    "city": {
+      "v": "Hefei",
+      "src": "https://www.wikidata.org/wiki/Q1074103",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q1074103",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hefei, China",
+          "lat": 31.841667,
+          "lon": 117.258889,
+          "src": "https://www.wikidata.org/wiki/Q1074103"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

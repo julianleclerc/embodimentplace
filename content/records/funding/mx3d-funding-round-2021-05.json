@@ -1,0 +1,18 @@
+{
+  "id": 3889,
+  "type": "funding",
+  "slug": "mx3d-funding-round-2021-05",
+  "name": "MX3D funding round (2021-05)",
+  "summary": "Raised €2.25 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2021-05-03",
+      "src": "https://www.engineering.com/mx3d-raises-e2-25-million-for-launch-of-robotic-metal-3d-printer/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2021-05-03"
+}

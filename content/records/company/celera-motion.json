@@ -1,0 +1,51 @@
+{
+  "id": 1093,
+  "type": "company",
+  "slug": "celera-motion",
+  "name": "Celera Motion",
+  "summary": "Novanta is a leading global supplier of core technology solutions that give medical, life science, and advanced industrial original equipment manufacturers a competitive advantage.",
+  "body": "We combine deep proprietary expertise and competencies in precision medicine, precision manufacturing, robotics and automation, and advanced surgery with a proven ability to solve complex technical challenges.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://novanta.com/robotics-automation/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://novanta.com/"
+    },
+    "image": {
+      "v": "/logos/celera-motion.png",
+      "fit": "contain",
+      "src": "https://novanta.com/wp-content/uploads/sites/19/2026/02/cropped-novanta-logo.png?quality=85&#038;strip=all&#038;w=192",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Bedford",
+      "src": "https://www.linkedin.com/company/novanta-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/novanta-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "125 Middlesex Turnpike,, Bedford, Massachusetts 01730, United States",
+          "lat": 42.516436,
+          "lon": -71.241799,
+          "src": "https://www.linkedin.com/company/novanta-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

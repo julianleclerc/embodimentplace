@@ -1,0 +1,63 @@
+{
+  "id": 1299,
+  "type": "company",
+  "slug": "texas-am-university",
+  "name": "Texas A&M University",
+  "summary": "Public research university in College Station, Texas, United States.",
+  "body": "Recent robotics work includes “A Review of Artificial Intelligence, Algorithms, and Robots Through the Lens of Stakeholder Theory”. OpenAlex lists 237 robotics, humanoid, embodied-AI or manipulation papers from Texas A&M University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1177/01492063241311855",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tamu.edu/"
+    },
+    "image": {
+      "v": "/logos/texas-am-university.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas_A%26M_University_logo.svg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "College Station",
+      "src": "https://www.wikidata.org/wiki/Q49212",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.wikidata.org/wiki/Q49212",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "College Station, United States",
+          "lat": 30.610369,
+          "lon": -96.344056,
+          "src": "https://www.wikidata.org/wiki/Q49212"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 39.1,
+      "faculty": 13,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 39,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

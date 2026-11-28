@@ -1,0 +1,26 @@
+{
+  "id": 2128,
+  "type": "lab",
+  "slug": "stanford-ai-lab-sail",
+  "name": "Stanford AI Lab (SAIL)",
+  "summary": "Stanford's AI lab, home to many robotics groups.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Perception"
+      ],
+      "src": "https://ai.stanford.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ai.stanford.edu/",
+      "src": "https://ai.stanford.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

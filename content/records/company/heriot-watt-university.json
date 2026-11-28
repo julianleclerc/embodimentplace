@@ -1,0 +1,51 @@
+{
+  "id": 1341,
+  "type": "company",
+  "slug": "heriot-watt-university",
+  "name": "Heriot-Watt University",
+  "summary": "University in Edinburgh, Scotland, UK.",
+  "body": "Recent robotics work includes “Stonefish: Supporting Machine Learning Research in Marine Robotics”. OpenAlex lists 107 robotics, humanoid, embodied-AI or manipulation papers from Heriot-Watt University since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/icra55743.2025.11127421",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hw.ac.uk/"
+    },
+    "image": {
+      "v": "/logos/heriot-watt-university.png",
+      "fit": "contain",
+      "src": "https://www.hw.ac.uk/_Z8mtzw_86eaba1f-4e5d-475c-a613-a4902caa239c/static/icon/favicon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "City of Edinburgh",
+      "src": "https://www.wikidata.org/wiki/Q1610024",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.wikidata.org/wiki/Q1610024",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "City of Edinburgh, United Kingdom",
+          "lat": 55.909362,
+          "lon": -3.320113,
+          "src": "https://www.wikidata.org/wiki/Q1610024"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

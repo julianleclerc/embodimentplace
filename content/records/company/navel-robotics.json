@@ -1,0 +1,51 @@
+{
+  "id": 1185,
+  "type": "company",
+  "slug": "navel-robotics",
+  "name": "Navel Robotics",
+  "summary": "Social robot \"Navel\" for care settings.",
+  "body": "I.e. we are working on making AI and Robotics intuitively accessible to everyone, integrating state of the art technologies in a way that is suitable for everyday life and thus touching people's hearts and bringing about positivity.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://navelrobotics.com/en/navel-the-new-empathy-robot-for-good-care/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://navelrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/navel-robotics.png",
+      "fit": "contain",
+      "src": "https://navelrobotics.com/wp-content/uploads/2018/10/cropped-navelrobotics_icon-1-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "München",
+      "src": "https://de.linkedin.com/company/navel-robotics-gmbh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/navel-robotics-gmbh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Agnes-Pockels-Bogen 1, München, Bayern 80992, Germany",
+          "lat": 48.173958,
+          "lon": 11.532226,
+          "src": "https://de.linkedin.com/company/navel-robotics-gmbh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

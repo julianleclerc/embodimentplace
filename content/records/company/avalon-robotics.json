@@ -1,0 +1,51 @@
+{
+  "id": 1525,
+  "type": "company",
+  "slug": "avalon-robotics",
+  "name": "Avalon Robotics",
+  "summary": "Automation consulting firm based in Nampa, Idaho.",
+  "body": "Avalon Robotics is dedicated to revolutionizing the construction industry by developing cutting-edge robotic solutions that prioritize safety, efficiency, and precision on every job site. We aim to transform traditional practices through innovation, making construction environments safer and more productive for all.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/252-avalon-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://avalonrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/avalon-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/99f3ba6d05e0ed8f78b1.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Nampa",
+      "src": "https://roboticsconnected.com/companies/252-avalon-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/252-avalon-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Nampa, United States",
+          "lat": 43.578038,
+          "lon": -116.561689,
+          "src": "https://roboticsconnected.com/companies/252-avalon-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

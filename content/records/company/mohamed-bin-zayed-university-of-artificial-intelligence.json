@@ -1,0 +1,58 @@
+{
+  "id": 1400,
+  "type": "company",
+  "slug": "mohamed-bin-zayed-university-of-artificial-intelligence",
+  "name": "Mohamed bin Zayed University of Artificial Intelligence",
+  "summary": "Graduate-level, a research-based academic institution in Abu Dhabi.",
+  "body": "Recent robotics work includes “Human-in-the-Loop Robot Learning for Smart Manufacturing: A Human-Centric Perspective”. OpenAlex lists 141 robotics, humanoid, embodied-AI or manipulation papers from Mohamed bin Zayed University of Artificial Intelligence since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://doi.org/10.1109/tase.2025.3528051",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mbzuai.ac.ae/"
+    },
+    "image": {
+      "v": "/logos/mohamed-bin-zayed-university-of-artificial-intelligence.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=mbzuai.ac.ae&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Abu Dhabi",
+      "src": "https://www.wikidata.org/wiki/Q79048705",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Arab Emirates",
+      "src": "https://www.wikidata.org/wiki/Q79048705",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Abu Dhabi, United Arab Emirates",
+          "lat": 24.432778,
+          "lon": 54.618056,
+          "src": "https://www.wikidata.org/wiki/Q79048705"
+        }
+      ],
+      "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 62.5,
+      "faculty": 26,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1270,
+  "type": "company",
+  "slug": "imagry",
+  "name": "Imagry",
+  "summary": "Imagry is pioneering Generative Autonomy: real-time intelligence that drives machines in the physical world.",
+  "body": "Our AI-centric platform, Imagry Cortex™, delivers vision-based autonomy without HD maps, LiDAR, or the cloud. Unlike rule-based systems, Cortex learns from experience and adapts to any road, vehicle, or condition, just like a human, only better.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://imagry.co/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://imagry.co/"
+    },
+    "image": {
+      "v": "/logos/imagry.png",
+      "fit": "contain",
+      "src": "https://imagry.co/wp-content/uploads/2023/03/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Jose",
+      "src": "https://www.linkedin.com/company/imagry",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/imagry",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1630 Old Oakland Rd, San Jose, California 95131, United States",
+          "lat": 37.381216,
+          "lon": -121.895246,
+          "src": "https://www.linkedin.com/company/imagry"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

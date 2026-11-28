@@ -1,0 +1,23 @@
+{
+  "id": 3826,
+  "type": "funding",
+  "slug": "remote-robotic-funding-round-2025-11",
+  "name": "Remote Robotic funding round (2025-11)",
+  "summary": "Raised $41M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-12",
+      "src": "https://www.mddionline.com/robotics/intuitive-backed-remote-robotic-surgery-company-raises-41m",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 41,
+      "src": "https://www.mddionline.com/robotics/intuitive-backed-remote-robotic-surgery-company-raises-41m",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-12"
+}

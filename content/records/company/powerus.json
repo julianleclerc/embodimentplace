@@ -1,0 +1,51 @@
+{
+  "id": 1936,
+  "type": "company",
+  "slug": "powerus",
+  "name": "Powerus",
+  "summary": "Builds and scales unified autonomous systems for defence, ISR, wildfire response, agriculture, critical infrastructure and maritime missions.",
+  "body": "Powerus is a US-owned defense and autonomy company focused on building and scaling real-world capability, not concepts. We design, develop, and deploy unmanned systems that perform where it matters, combining advanced engineering with rapid execution and reliable delivery.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3269-powerus",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.power.us/"
+    },
+    "image": {
+      "v": "/logos/powerus.png",
+      "fit": "contain",
+      "src": "https://power.us/favicon.png?v=3",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Rock Hill",
+      "src": "https://roboticsconnected.com/companies/3269-powerus",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/3269-powerus",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rock Hill, United States",
+          "lat": 34.924867,
+          "lon": -81.025078,
+          "src": "https://roboticsconnected.com/companies/3269-powerus"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

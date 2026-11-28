@@ -1,0 +1,18 @@
+{
+  "id": 3917,
+  "type": "funding",
+  "slug": "opteran-funding-round-2020-11",
+  "name": "Opteran funding round (2020-11)",
+  "summary": "Raised £2.1m.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2020-11-25",
+      "src": "https://www.theengineer.co.uk/content/news/opteran-secures-21m-to-solve-autonomy-in-robotics",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2020-11-25"
+}

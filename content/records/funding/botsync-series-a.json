@@ -1,0 +1,23 @@
+{
+  "id": 3793,
+  "type": "funding",
+  "slug": "botsync-series-a",
+  "name": "Botsync Series A",
+  "summary": "Closed a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-01-13",
+      "src": "https://www.prnewswire.com/in/news-releases/robotics-startup-botsync-secures-additional-series-a-funding-from-sginnovate-302660626.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.prnewswire.com/in/news-releases/robotics-startup-botsync-secures-additional-series-a-funding-from-sginnovate-302660626.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-01-13"
+}

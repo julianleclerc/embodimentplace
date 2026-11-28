@@ -1,0 +1,28 @@
+{
+  "id": 3625,
+  "type": "funding",
+  "slug": "standard-bots-series-c",
+  "name": "Standard Bots Series C",
+  "summary": "Raised $200 million in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-06-10",
+      "src": "https://www.msn.com/en-us/money/news/standard-bots-raises-200-million-at-1-billion-valuation-to-scale-ai-native-industrial-robots/ar-AA25kdxP",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://www.msn.com/en-us/money/news/standard-bots-raises-200-million-at-1-billion-valuation-to-scale-ai-native-industrial-robots/ar-AA25kdxP",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 200,
+      "src": "https://www.msn.com/en-us/money/news/standard-bots-raises-200-million-at-1-billion-valuation-to-scale-ai-native-industrial-robots/ar-AA25kdxP",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-06-10"
+}

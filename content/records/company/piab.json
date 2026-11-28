@@ -1,0 +1,51 @@
+{
+  "id": 1084,
+  "type": "company",
+  "slug": "piab",
+  "name": "Piab",
+  "summary": "Piab is evolving automation through progressive gripping, lifting, and moving solutions and has done so since 1951.",
+  "body": "We believe in an automated world where no resources are wasted, and no humans are injured. With annual sales of ~2 billion SEK, 1000 employees, and a global presence in more than 100 countries, we help our customers improve their operations for the better on a daily basis.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.piab.com/en-us",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.piab.com/"
+    },
+    "image": {
+      "v": "/logos/piab.png",
+      "fit": "contain",
+      "src": "https://www.piab.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Danderyd",
+      "src": "https://se.linkedin.com/company/piab",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Sweden",
+      "src": "https://se.linkedin.com/company/piab",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "P.O. Box 146, 182 12 Danderyd, Danderyd, Stockholm 18232, Sweden",
+          "lat": 59.404365,
+          "lon": 18.03585,
+          "src": "https://se.linkedin.com/company/piab"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

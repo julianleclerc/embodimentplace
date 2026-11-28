@@ -1,0 +1,28 @@
+{
+  "id": 3862,
+  "type": "funding",
+  "slug": "sunflower-labs-series-b",
+  "name": "Sunflower Labs Series B",
+  "summary": "Raised $16 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-04",
+      "src": "https://pulse2.com/sunflower-labs-16-million-series-b-raised-to-advance-autonomous-security-drones/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://pulse2.com/sunflower-labs-16-million-series-b-raised-to-advance-autonomous-security-drones/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 16,
+      "src": "https://pulse2.com/sunflower-labs-16-million-series-b-raised-to-advance-autonomous-security-drones/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-04"
+}

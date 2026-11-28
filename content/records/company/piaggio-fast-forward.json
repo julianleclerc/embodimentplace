@@ -1,0 +1,51 @@
+{
+  "id": 1784,
+  "type": "company",
+  "slug": "piaggio-fast-forward",
+  "name": "Piaggio Fast Forward",
+  "summary": "Boston-based robotics company founded in 2015 and owned by the Piaggio Group, the Italian maker of Vespa scooters.",
+  "body": "Boston-based company Piaggio Fast Forward Inc. (PFF) was founded in 2015 by the Piaggio Group (the Italian manufacturer that created the iconic Vespa scooter).",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1920-piaggio-fast-forward",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://piaggiofastforward.com/"
+    },
+    "image": {
+      "v": "/logos/piaggio-fast-forward.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/137d6a7659ffd9639093.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Boston",
+      "src": "https://www.linkedin.com/company/piaggiofastforward",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/piaggiofastforward",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "52 Roland St, Boston, Massachusetts, United States",
+          "lat": 42.381413,
+          "lon": -71.079563,
+          "src": "https://www.linkedin.com/company/piaggiofastforward"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

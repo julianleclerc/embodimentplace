@@ -1,0 +1,23 @@
+{
+  "id": 3962,
+  "type": "funding",
+  "slug": "reliable-robotics-funding-round-2026-04",
+  "name": "Reliable Robotics funding round (2026-04)",
+  "summary": "Raised $160M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-04-21",
+      "src": "https://finance.yahoo.com/sectors/technology/articles/reliable-robotics-announces-160m-investment-130000745.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 160,
+      "src": "https://finance.yahoo.com/sectors/technology/articles/reliable-robotics-announces-160m-investment-130000745.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-04-21"
+}

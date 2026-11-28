@@ -1,0 +1,28 @@
+{
+  "id": 2617,
+  "type": "post",
+  "slug": "when-one-robot-learns-can-a-thousand-others-follow",
+  "name": "When One Robot Learns, Can a Thousand Others Follow?",
+  "summary": "Egocentric videos remain an important source of training data for robots. But researchers are looking beyond this approach, exploring how robots can learn from third-person demonstrations and the ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-25"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "unite.ai"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.unite.ai/robot-learning-from-humans-and-other-robots/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-25"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1187,
+  "type": "company",
+  "slug": "temi",
+  "name": "Temi",
+  "summary": "Maker of temi autonomous service robots for healthcare, hospitality, retail and delivery.",
+  "body": "Founded in 2015, temi offers 24/7 engagement-efficient robots with an open Android SDK to integrate apps and any AI worldwide.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.robotemi.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robotemi.com/"
+    },
+    "image": {
+      "v": "/logos/temi.png",
+      "fit": "contain",
+      "src": "https://www.robotemi.com/wp-content/uploads/2017/08/250-250-profile-pic.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://www.linkedin.com/company/robotemi",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/robotemi",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "New York, NY 10013, United States",
+          "lat": 40.712728,
+          "lon": -74.006015,
+          "src": "https://www.linkedin.com/company/robotemi"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

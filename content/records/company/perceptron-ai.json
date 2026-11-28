@@ -1,0 +1,45 @@
+{
+  "id": 1003,
+  "type": "company",
+  "slug": "perceptron-ai",
+  "name": "Perceptron AI",
+  "summary": "We build frontier multimodal models and solutions, adapted to your domain, data, and hardware.",
+  "body": "Perceptron builds physical AI models that help machines perceive, reason & act. Explore visual intelligence for robotics, infrastructure, & more.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://www.perceptron.inc/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.perceptron.inc/"
+    },
+    "city": {
+      "v": "Bellevue",
+      "src": "https://www.linkedin.com/company/perceptron-ai-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/perceptron-ai-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Bellevue, Washington, United States",
+          "lat": 47.614422,
+          "lon": -122.192337,
+          "src": "https://www.linkedin.com/company/perceptron-ai-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

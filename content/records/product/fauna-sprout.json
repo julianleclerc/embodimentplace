@@ -1,0 +1,28 @@
+{
+  "id": 3425,
+  "type": "product",
+  "slug": "fauna-sprout",
+  "name": "Fauna Sprout",
+  "summary": "Introducing Sprout Creator Edition, a friendly and capable humanoid platform for developers built with safety at its core. View full specs.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/fauna-sprout.webp",
+      "src": "https://faunarobotics.com/product",
+      "orig": "https://cdn.prod.website-files.com/6931911db0300aa6e7e3fc81/6977dacdd03d5536b819ee4d_fauna_social_3.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://faunarobotics.com/product",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://faunarobotics.com/product"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1891,
+  "type": "company",
+  "slug": "servo-robot",
+  "name": "SERVO-ROBOT",
+  "summary": "Builds 3D laser-vision and sensing systems that guide industrial welding robots.",
+  "body": "For over 40 years, SERVO-ROBOT has been producing robotic laser vision and sensing systems for welding and robotic automated manufacturing.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/2867-servo-robot",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://servo-robot.com/"
+    },
+    "image": {
+      "v": "/logos/servo-robot.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/6eba2a1f-8f38-4e64-ba6d-f4d78ff6cc5c.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Saint-Bruno-de-Montarville",
+      "src": "https://ca.linkedin.com/company/servo-robot-inc-",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://ca.linkedin.com/company/servo-robot-inc-",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1370 Hocquart, Saint-Bruno-de-Montarville, Québec J3V 6E1, Canada",
+          "lat": 45.520573,
+          "lon": -73.358863,
+          "src": "https://ca.linkedin.com/company/servo-robot-inc-"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

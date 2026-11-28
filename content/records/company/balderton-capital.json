@@ -1,0 +1,51 @@
+{
+  "id": 1211,
+  "type": "company",
+  "slug": "balderton-capital",
+  "name": "Balderton Capital",
+  "summary": "Balderton is a multistage venture firm with 25 years of experience supporting Europe’s best founders from Seed to IPO.",
+  "body": "We have both early and growth funds and invest across the technology sector.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.balderton.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.balderton.com/"
+    },
+    "image": {
+      "v": "/logos/balderton-capital.png",
+      "fit": "contain",
+      "src": "https://www.balderton.com/wp-content/uploads/2018/05/cropped-favicon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://uk.linkedin.com/company/balderton",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/balderton",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "28 Britannia Street, London, WC1X 9JF, United Kingdom",
+          "lat": 51.529868,
+          "lon": -0.118362,
+          "src": "https://uk.linkedin.com/company/balderton"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

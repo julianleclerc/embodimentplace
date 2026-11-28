@@ -1,0 +1,51 @@
+{
+  "id": 1505,
+  "type": "company",
+  "slug": "synaos",
+  "name": "SYNAOS",
+  "summary": "Cloud-native intralogistics platform for orchestrating mixed fleets of AGVs, AMRs, forklifts, and human operators within factories and warehouses.",
+  "body": "SYNAOS is a leading provider of intralogistics software, orchestrating material flows in factories and warehouses. The SYNAOS Intralogistics Platform seamlessly integrates mobile robots, IoT devices, manual vehicles, and human workers on the shop floor.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/220-synaos",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.synaos.com/"
+    },
+    "image": {
+      "v": "/logos/synaos.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/3846e7ef3ca285859be8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hannover",
+      "src": "https://de.linkedin.com/company/synaos",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/synaos",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Goseriede 4, Hannover, Niedersachsen 30159, Germany",
+          "lat": 52.377377,
+          "lon": 9.732914,
+          "src": "https://de.linkedin.com/company/synaos"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

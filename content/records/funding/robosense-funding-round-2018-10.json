@@ -1,0 +1,23 @@
+{
+  "id": 3588,
+  "type": "funding",
+  "slug": "robosense-funding-round-2018-10",
+  "name": "RoboSense funding round (2018-10)",
+  "summary": "Raised US$45m.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2018-10-11",
+      "src": "https://www.scmp.com/tech/innovation/article/2168036/chinese-lidar-maker-robosense-raises-us45m-biggest-fundraising-round",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 45,
+      "src": "https://www.scmp.com/tech/innovation/article/2168036/chinese-lidar-maker-robosense-raises-us45m-biggest-fundraising-round",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2018-10-11"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 2116,
+  "type": "lab",
+  "slug": "institute-for-robotics-and-intelligent-machines-irim",
+  "name": "Institute for Robotics and Intelligent Machines (IRIM)",
+  "summary": "Georgia Tech's robotics research institute and home of its Robotics PhD.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Field robots",
+        "Human-robot interaction"
+      ],
+      "src": "https://robotics.gatech.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://robotics.gatech.edu/",
+      "src": "https://robotics.gatech.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3433,
+  "type": "product",
+  "slug": "inmoov-hand-i2",
+  "name": "InMoov Hand i2",
+  "summary": "Hand i2, a robotic hand from InMoov.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/inmoov-hand-i2.webp",
+      "src": "https://inmoov.fr/hand-i2/?doing_wp_cron=1795832438.4976620674133300781250",
+      "orig": "https://inmoov.fr/wp-content/uploads/2025/07/IMG_2741.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Hand / gripper",
+      "src": "https://inmoov.fr/hand-i2/?doing_wp_cron=1795832438.4976620674133300781250",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://inmoov.fr/hand-i2/?doing_wp_cron=1795832438.4976620674133300781250"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

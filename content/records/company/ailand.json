@@ -1,0 +1,51 @@
+{
+  "id": 1777,
+  "type": "company",
+  "slug": "ailand",
+  "name": "AI.Land",
+  "summary": "Agricultural technology provider run by Landhouz GmbH, based in Germany.",
+  "body": "Automation and digitalization for agricultural sectors, especially crop and animal production. We offer innovative solutions in the fields of R&D, product development, systems engineering, and design, as well as services with a focus on robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1830-ai-land",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://a-i.land/"
+    },
+    "image": {
+      "v": "/logos/ailand.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/0b68f6135752185f0711.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Krefeld",
+      "src": "https://de.linkedin.com/company/ai-land-gmbh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/ai-land-gmbh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Vorderorbroich 35, Krefeld, NRW 47839, Germany",
+          "lat": 51.388344,
+          "lon": 6.499236,
+          "src": "https://de.linkedin.com/company/ai-land-gmbh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

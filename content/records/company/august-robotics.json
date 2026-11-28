@@ -1,0 +1,52 @@
+{
+  "id": 1622,
+  "type": "company",
+  "slug": "august-robotics",
+  "name": "August Robotics",
+  "summary": "Builds autonomous robot fleets for construction, exhibitions, and industrial workflows.",
+  "body": "August Robotics is a global robotics platform company building autonomous robot fleets for construction, industrial, and large-scale infrastructure environments.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/862-august-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://augustrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/august-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/2a0d97000dced3117a03.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Las Vegas",
+      "src": "https://www.linkedin.com/company/august-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/august-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "4650 s Arville St, Las Vegas, Nevada 89103, United States",
+          "lat": 36.167426,
+          "lon": -115.148413,
+          "src": "https://www.linkedin.com/company/august-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3681,
+  "type": "funding",
+  "slug": "andromeda-funding-round-2025-09",
+  "name": "Andromeda funding round (2025-09)",
+  "summary": "Raised $23 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-09-08",
+      "src": "https://www.smartcompany.com.au/startupsmart/andromeda-raises-23-million-robot-abi-grace-brown-us-expansion/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 23,
+      "src": "https://www.smartcompany.com.au/startupsmart/andromeda-raises-23-million-robot-abi-grace-brown-us-expansion/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-09-08"
+}

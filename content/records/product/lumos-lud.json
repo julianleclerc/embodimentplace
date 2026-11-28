@@ -1,0 +1,28 @@
+{
+  "id": 3440,
+  "type": "product",
+  "slug": "lumos-lud",
+  "name": "Lumos LUD",
+  "summary": "Lumos LUD, a legged robot from Lumos.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/lumos-lud.webp",
+      "src": "https://www.lumosbot.tech/products/lud",
+      "orig": "https://delivery.lumosbot.tech/www/lumos-website/images/products/lud/front.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Quadruped",
+      "src": "https://www.lumosbot.tech/products/lud",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lumosbot.tech/products/lud"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

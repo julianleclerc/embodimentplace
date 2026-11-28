@@ -1,0 +1,51 @@
+{
+  "id": 1928,
+  "type": "company",
+  "slug": "apexwell-motor",
+  "name": "Apexwell Motor",
+  "summary": "Manufactures NEMA stepper motors, high-torque brushless DC motors, closed-loop motion solutions and integrated motor drivers.",
+  "body": "Changzhou Apexwell Motor Technology Co., Ltd. is a manufacturer of NEMA stepper motors, brushless DC (BLDC) motors, closed-loop motion solutions, and integrated motor drivers for OEM equipment and industrial automation.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/3106-apexwell-motor",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.apexwellmotor.com/"
+    },
+    "image": {
+      "v": "/logos/apexwell-motor.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/6e90f2f0-3055-4492-87ed-ba5bdbdec8c2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Changzhou",
+      "src": "https://cn.linkedin.com/company/apexwell-motor-technology",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/apexwell-motor-technology",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "26 Huayang S Rd, Changzhou, Jiangsu 213025, China",
+          "lat": 31.812262,
+          "lon": 119.969154,
+          "src": "https://cn.linkedin.com/company/apexwell-motor-technology"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

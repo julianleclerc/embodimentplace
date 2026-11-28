@@ -1,0 +1,51 @@
+{
+  "id": 1051,
+  "type": "company",
+  "slug": "robominds",
+  "name": "Robominds",
+  "summary": "Smart Robotics – for everyone.",
+  "body": "We are passionate about robotics innovations that will move you forward. ‘Making robots smart’ is our vision, mission and everyday business – at the best possible level. We don’t ask “Does it work?” but “How does it work?”.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.robominds.de/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robominds.de/"
+    },
+    "image": {
+      "v": "/logos/robominds.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/63d95f379c76123e0888ad52/63d95f379c7612e13f88ad15_fav-256.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://de.linkedin.com/company/robominds-gmbh",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/robominds-gmbh",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Wilhelmine-Reichard Straße 7, Munich, Bavaria 80935, Germany",
+          "lat": 48.190483,
+          "lon": 11.547897,
+          "src": "https://de.linkedin.com/company/robominds-gmbh"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

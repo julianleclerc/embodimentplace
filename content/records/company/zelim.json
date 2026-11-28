@@ -1,0 +1,51 @@
+{
+  "id": 1515,
+  "type": "company",
+  "slug": "zelim",
+  "name": "Zelim",
+  "summary": "Develops AI-enabled maritime safety and security systems for offshore operations.",
+  "body": "Zelim is an Edinburgh-headquartered maritime technology company enhancing safety and security at sea through advanced AI detection and monitoring systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/239-zelim",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.zelim.com/"
+    },
+    "image": {
+      "v": "/logos/zelim.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/6adcb5c031987b877ee4.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Edinburgh",
+      "src": "https://uk.linkedin.com/company/zelimmarine",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/zelimmarine",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Argyle House, 3 Lady Lawson Street, Edinburgh, EH3 3DR, United Kingdom",
+          "lat": 55.946704,
+          "lon": -3.200997,
+          "src": "https://uk.linkedin.com/company/zelimmarine"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

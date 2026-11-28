@@ -1,0 +1,52 @@
+{
+  "id": 1809,
+  "type": "company",
+  "slug": "aeva",
+  "name": "Aeva",
+  "summary": "Builds FMCW 4D LiDAR sensors that measure range and velocity at the same time, along with onboard perception software built on its own X1 processor.",
+  "body": "Aeva’s mission is to bring the next wave of perception to a broad range of applications from automated driving, manufacturing automation and smart infrastructure, to robotics and consumer devices.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/2011-aeva",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.aeva.com/"
+    },
+    "image": {
+      "v": "/logos/aeva.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/25fb4c7d1c2bfb04cd53.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Mountain View",
+      "src": "https://www.linkedin.com/company/aevainc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/aevainc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "555 Ellis St, Mountain View, California, United States",
+          "lat": 37.401419,
+          "lon": -122.050961,
+          "src": "https://www.linkedin.com/company/aevainc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

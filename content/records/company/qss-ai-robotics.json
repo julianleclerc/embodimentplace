@@ -1,0 +1,45 @@
+{
+  "id": 991,
+  "type": "company",
+  "slug": "qss-ai-robotics",
+  "name": "QSS AI & Robotics",
+  "summary": "Saudi-made humanoid robots, drones and AI software.",
+  "body": "Headquartered in Riyadh, Saudi Arabia.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://qss.sa/"
+    },
+    "city": {
+      "v": "Riyadh",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Saudi Arabia",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Riyadh, Saudi Arabia",
+          "lat": 24.638916,
+          "lon": 46.71601,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

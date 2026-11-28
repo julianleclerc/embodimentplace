@@ -1,0 +1,45 @@
+{
+  "id": 1207,
+  "type": "company",
+  "slug": "source-code-capital",
+  "name": "Source Code Capital",
+  "summary": "Chinese venture firm investing across AI and robotics, smart manufacturing and other sectors.",
+  "body": "Headquartered in Beijing, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://sourcecodecap.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://sourcecodecap.com/"
+    },
+    "city": {
+      "v": "Beijing",
+      "src": "https://www.sourcecodecap.com/",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.sourcecodecap.com/",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "北京市朝阳区广顺南大街8号院1号楼利星行中心 (Lee Gardens Center, Building 1, 8 Guangshun South Street, Chaoyang District), Beijing, China",
+          "lat": 39.92045,
+          "lon": 116.436911,
+          "src": "https://www.sourcecodecap.com/"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

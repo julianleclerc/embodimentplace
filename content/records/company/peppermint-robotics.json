@@ -1,0 +1,51 @@
+{
+  "id": 1955,
+  "type": "company",
+  "slug": "peppermint-robotics",
+  "name": "Peppermint Robotics",
+  "summary": "Manufactures autonomous floor-cleaning and material-handling robots for commercial and industrial spaces.",
+  "body": "Its range includes the SD4X mid-size scrubber, the compact SD2X scrubber and the VC2X commercial vacuum robot, each built around a five-sensor safety array. The company was founded in 2019 out of IIT Bombay's SINE incubator and is based in Pune, India, with an Austin, Texas presence.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3401-peppermint-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.peppermintrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/peppermint-robotics.png",
+      "fit": "contain",
+      "src": "https://pbs.twimg.com/profile_images/1627940034279260160/CPr6ecWI_400x400.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pune",
+      "src": "https://roboticsconnected.com/companies/3401-peppermint-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://roboticsconnected.com/companies/3401-peppermint-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pune, India",
+          "lat": 18.521374,
+          "lon": 73.854507,
+          "src": "https://roboticsconnected.com/companies/3401-peppermint-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

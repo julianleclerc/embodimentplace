@@ -1,0 +1,51 @@
+{
+  "id": 901,
+  "type": "company",
+  "slug": "lucid-bots",
+  "name": "Lucid Bots",
+  "summary": "Drones that clean and paint up to 8x faster.",
+  "body": "At Lucid, we are a B2B robotics company for dull, dirty, and dangerous jobs, starting with exterior cleaning and painting, an industry with a 200% annual turnover rate. Y Combinator Summer 2019 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.lucidbots.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lucidbots.com/"
+    },
+    "image": {
+      "v": "/logos/lucid-bots.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/686d25226fc10a1821f7b2d7/6877145f14c135b0ac9a4757_lb_25_web_assets__webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Charlotte",
+      "src": "https://www.linkedin.com/company/lucid-bots",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/lucid-bots",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "6601-A Northpark Blvd., Charlotte, North Carolina 28216, United States",
+          "lat": 35.31309,
+          "lon": -80.851162,
+          "src": "https://www.linkedin.com/company/lucid-bots"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

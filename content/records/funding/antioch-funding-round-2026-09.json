@@ -1,0 +1,23 @@
+{
+  "id": 3979,
+  "type": "funding",
+  "slug": "antioch-funding-round-2026-09",
+  "name": "Antioch funding round (2026-09)",
+  "summary": "Raised $32M, led by Greylock.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-09-08",
+      "src": "https://www.newswire.com/view/content/antioch-raises-32m-to-bring-software-speed-to-physical-ai-development",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 32,
+      "src": "https://www.newswire.com/view/content/antioch-raises-32m-to-bring-software-speed-to-physical-ai-development",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-09-08"
+}

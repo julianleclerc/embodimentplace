@@ -1,0 +1,51 @@
+{
+  "id": 1256,
+  "type": "company",
+  "slug": "pressure-profile-systems",
+  "name": "Pressure Profile Systems",
+  "summary": "Capturing the sense of touch: PPS is a world-leading capacitive tactile sensing and pressure mapping company, designing and manufacturing highly sensitive, repeatable solutions for advanced research…",
+  "body": "Capturing the sense of touch: PPS is a world-leading capacitive tactile sensing and pressure mapping company, designing and manufacturing highly sensitive, repeatable solutions for advanced research and product development.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://pressureprofile.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://pressureprofile.com/"
+    },
+    "image": {
+      "v": "/logos/pressure-profile-systems.png",
+      "fit": "contain",
+      "src": "https://images.squarespace-cdn.com/content/v1/5b6af56a96d455ed3c06b55a/71f3d61b-3fd8-4144-8f0e-56eab5b97721/favicon.ico?format=100w",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hawthorne, CA 90250",
+      "src": "https://www.linkedin.com/company/pressureprofile",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/pressureprofile",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "5500 W Rosecrans, Ave., Hawthorne, CA 90250, California 90250, United States",
+          "lat": 34.070878,
+          "lon": -118.44685,
+          "src": "https://www.linkedin.com/company/pressureprofile"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

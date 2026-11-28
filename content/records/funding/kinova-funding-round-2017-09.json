@@ -1,0 +1,23 @@
+{
+  "id": 3669,
+  "type": "funding",
+  "slug": "kinova-funding-round-2017-09",
+  "name": "Kinova funding round (2017-09)",
+  "summary": "Raised $25 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2017-09-28",
+      "src": "https://www.wsj.com/articles/funding-snapshot-canadian-robotics-company-kinova-raises-25-million-1506621376",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 25,
+      "src": "https://www.wsj.com/articles/funding-snapshot-canadian-robotics-company-kinova-raises-25-million-1506621376",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2017-09-28"
+}

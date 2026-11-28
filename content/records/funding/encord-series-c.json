@@ -1,0 +1,28 @@
+{
+  "id": 3593,
+  "type": "funding",
+  "slug": "encord-series-c",
+  "name": "Encord Series C",
+  "summary": "Raised $60m in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-02-26",
+      "src": "https://www.finanznachrichten.de/nachrichten-2026-02/67807627-encord-secures-dollar-60m-series-c-to-scale-ai-native-data-infrastructure-as-physical-ai-hits-inflection-point-008.htm",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://www.finanznachrichten.de/nachrichten-2026-02/67807627-encord-secures-dollar-60m-series-c-to-scale-ai-native-data-infrastructure-as-physical-ai-hits-inflection-point-008.htm",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 60,
+      "src": "https://www.finanznachrichten.de/nachrichten-2026-02/67807627-encord-secures-dollar-60m-series-c-to-scale-ai-native-data-infrastructure-as-physical-ai-hits-inflection-point-008.htm",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-02-26"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3706,
+  "type": "funding",
+  "slug": "cynlr-seed",
+  "name": "CynLr Seed",
+  "summary": "Closed a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2019-08-06",
+      "src": "https://inc42.com/buzz/cynlr-raises-seed-funding-to-work-towards-replacing-manual-labour/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://inc42.com/buzz/cynlr-raises-seed-funding-to-work-towards-replacing-manual-labour/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2019-08-06"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1518,
+  "type": "company",
+  "slug": "abyss-solutions",
+  "name": "Abyss Solutions",
+  "summary": "Builds autonomous inspection systems powered by robotics and AI to assess the condition of critical infrastructure assets.",
+  "body": "The company deploys drones, LiDAR, and 360-degree imaging to capture asset data with sub-millimetre precision, then uses machine learning to detect and classify corrosion, coating breakdown, and anomalies. It offers ABYSS Fabric, a platform that consolidates inspection data into unified operational records for pressure systems, coatings, facilities, and structural integrity management.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/242-abyss-solutions",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://abyssfabric.com/"
+    },
+    "image": {
+      "v": "/logos/abyss-solutions.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/70243aca31ed1e52e0f2.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sydney",
+      "src": "https://roboticsconnected.com/companies/242-abyss-solutions",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://roboticsconnected.com/companies/242-abyss-solutions",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Sydney, Australia",
+          "lat": -33.869844,
+          "lon": 151.208285,
+          "src": "https://roboticsconnected.com/companies/242-abyss-solutions"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1767,
+  "type": "company",
+  "slug": "autonomique",
+  "name": "Autonomique",
+  "summary": "Builds hardware-agnostic physical AI software that lets industrial robots perceive, reason, plan and manipulate objects with high dexterity.",
+  "body": "Autonomique is building at the forefront of Physical AI. Our robotics intelligence framework enables robots to understand their environment, adapt to change, and perform complex real-world tasks. For jobs: https://www.autonomique.ai/join-us Our bi-manual robots are already tackling critical tasks in manufacturing.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1739-autonomique",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.autonomique.ai/"
+    },
+    "image": {
+      "v": "/logos/autonomique.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/2df80be960e2f7cbfb96.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Menlo Park",
+      "src": "https://roboticsconnected.com/companies/1739-autonomique",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1739-autonomique",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Menlo Park, United States",
+          "lat": 37.451967,
+          "lon": -122.177992,
+          "src": "https://roboticsconnected.com/companies/1739-autonomique"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

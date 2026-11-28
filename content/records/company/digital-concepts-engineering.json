@@ -1,0 +1,51 @@
+{
+  "id": 1597,
+  "type": "company",
+  "slug": "digital-concepts-engineering",
+  "name": "Digital Concepts Engineering",
+  "summary": "Specialises in designing, developing and producing robotic control systems and uncrewed ground vehicles.",
+  "body": "Since 2017, Digital Concepts Engineering have been developing and deploying solutions directly related to the conversion of vehicles and platforms to remote control, and are regarded as global leaders in Uncrewed Vehicle technology.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/713-digital-concepts-engineering",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://dconcepts.co.uk/"
+    },
+    "image": {
+      "v": "/logos/digital-concepts-engineering.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/05f9a9eb2c567af5be66.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hinckley",
+      "src": "https://uk.linkedin.com/company/digital-concepts-engineering-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/digital-concepts-engineering-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Unit 4, The Boathouse, Hinckley, Leicestershire LE10 3BY, United Kingdom",
+          "lat": 52.541059,
+          "lon": -1.372938,
+          "src": "https://uk.linkedin.com/company/digital-concepts-engineering-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

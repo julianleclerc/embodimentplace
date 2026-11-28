@@ -1,0 +1,51 @@
+{
+  "id": 1771,
+  "type": "company",
+  "slug": "sunflower-labs",
+  "name": "Sunflower Labs",
+  "summary": "Builds the Beehive, a fully autonomous, AI-powered drone security system for commercial, industrial and residential properties.",
+  "body": "Sunflower Labs builds an autonomous security drone system for commercial, industrial and high-end residential properties. The Sunflower Beehive System is a unique drone-in-a-box solution built to be fully autonomous from the ground up.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1809-sunflower-labs",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://sunflower-labs.com/"
+    },
+    "image": {
+      "v": "/logos/sunflower-labs.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/ee93c356a281dcf15a79.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Carlos",
+      "src": "https://roboticsconnected.com/companies/1809-sunflower-labs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/1809-sunflower-labs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Carlos, United States",
+          "lat": 37.504936,
+          "lon": -122.261823,
+          "src": "https://roboticsconnected.com/companies/1809-sunflower-labs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

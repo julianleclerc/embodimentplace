@@ -1,0 +1,34 @@
+{
+  "id": 3316,
+  "type": "post",
+  "slug": "haply-robotics-haptic-interface-for-robotics",
+  "name": "Haply Robotics: haptic interface for robotics",
+  "summary": "The Canadian company Haply Robotics develops haptic interfaces for device control that transfer position, movement, and forces in multiple degrees of freedom from the hand to electronics. In practice, ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-01-06"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "heise.de"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.heise.de/en/news/Haply-Robotics-haptic-interface-for-robotics-11132059.html"
+    },
+    "image": {
+      "v": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/0/0/5/0/7/7/Hapley_2-fd613e2beadc3eac.jpg?func=bound&height=1200&org_if_sml=1&q=85&width=1200",
+      "fit": "cover",
+      "src": "https://www.heise.de/en/news/Haply-Robotics-haptic-interface-for-robotics-11132059.html",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-01-06"
+}

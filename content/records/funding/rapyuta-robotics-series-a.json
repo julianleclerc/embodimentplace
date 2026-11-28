@@ -1,0 +1,28 @@
+{
+  "id": 3705,
+  "type": "funding",
+  "slug": "rapyuta-robotics-series-a",
+  "name": "Rapyuta Robotics Series A",
+  "summary": "Raised $51m in a Series A round, led by Goldman.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-04-20",
+      "src": "https://www.arabnews.com/business/japans-rapyuta-robotics-raises-51m-in-a-round-led-by-goldman-2067151",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.arabnews.com/business/japans-rapyuta-robotics-raises-51m-in-a-round-led-by-goldman-2067151",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 51,
+      "src": "https://www.arabnews.com/business/japans-rapyuta-robotics-raises-51m-in-a-round-led-by-goldman-2067151",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-04-20"
+}

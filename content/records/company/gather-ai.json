@@ -1,0 +1,52 @@
+{
+  "id": 1135,
+  "type": "company",
+  "slug": "gather-ai",
+  "name": "Gather AI",
+  "summary": "Gather AI is the Physical AI platform for logistics.",
+  "body": "We give the companies that run the world's warehouses a continuous, accurate picture of what is happening on the floor across every facility, the intelligence to understand what it means, and the workflows to act on it.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://gather.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gather.ai/"
+    },
+    "image": {
+      "v": "/logos/gather-ai.png",
+      "fit": "contain",
+      "src": "https://framerusercontent.com/images/U6suckuBUyRh328SSV5taQweneM.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/gather-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/gather-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1138 River Ave, Pittsburgh, Pennsylvania 15212, United States",
+          "lat": 40.455781,
+          "lon": -79.988156,
+          "src": "https://www.linkedin.com/company/gather-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

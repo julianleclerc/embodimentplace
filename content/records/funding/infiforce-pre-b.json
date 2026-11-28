@@ -1,0 +1,23 @@
+{
+  "id": 3511,
+  "type": "funding",
+  "slug": "infiforce-pre-b",
+  "name": "INFIFORCE Pre-B",
+  "summary": "Closed a Pre-B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-20",
+      "src": "https://autonews.gasgoo.com/articles/news/seeds-infiforce-completes-pre-b-funding-round-worth-tens-of-millions-of-yuan-2123785143374041089",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-B",
+      "src": "https://autonews.gasgoo.com/articles/news/seeds-infiforce-completes-pre-b-funding-round-worth-tens-of-millions-of-yuan-2123785143374041089",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-20"
+}

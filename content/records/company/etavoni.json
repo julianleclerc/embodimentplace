@@ -1,0 +1,52 @@
+{
+  "id": 1655,
+  "type": "company",
+  "slug": "etavoni",
+  "name": "Etavoni",
+  "summary": "UK automation specialist based in Radstock, Somerset, founded in 2004.",
+  "body": "Since our start in 2004, Etavoni has emerged as a frontrunner in providing tailored and bespoke industrial automation integration solutions. Harnessing our in-house skills, we craft top-quality, UK-made conveyors, palletisers, depalletisers, and robotic systems.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1052-etavoni",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://etavoni.com/"
+    },
+    "image": {
+      "v": "/logos/etavoni.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/1052/1791741614209.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Radstock",
+      "src": "https://roboticsconnected.com/companies/1052-etavoni",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/1052-etavoni",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Radstock, United Kingdom",
+          "lat": 51.291949,
+          "lon": -2.447623,
+          "src": "https://roboticsconnected.com/companies/1052-etavoni"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 896,
+  "type": "company",
+  "slug": "encord",
+  "name": "Encord",
+  "summary": "The data layer for physical AI.",
+  "body": "Encord is the data layer for physical AI. We're how the world's most ambitious AI teams turn messy, multimodal data into production systems - from humanoid robots to autonomous vehicles to smart infrastructure. Y Combinator Winter 2021 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://encord.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://encord.com/"
+    },
+    "image": {
+      "v": "/logos/encord.png",
+      "fit": "contain",
+      "src": "https://encord.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://www.ycombinator.com/companies/encord",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.ycombinator.com/companies/encord",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, England, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://www.ycombinator.com/companies/encord"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

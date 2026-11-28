@@ -1,0 +1,28 @@
+{
+  "id": 3882,
+  "type": "funding",
+  "slug": "parallel-systems-series-b",
+  "name": "Parallel Systems Series B",
+  "summary": "Raised $38 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-04-11",
+      "src": "https://www.wsj.com/articles/parallel-systems-maker-of-self-powered-railcars-lands-38-million-f493043b",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.wsj.com/articles/parallel-systems-maker-of-self-powered-railcars-lands-38-million-f493043b",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 38,
+      "src": "https://www.wsj.com/articles/parallel-systems-maker-of-self-powered-railcars-lands-38-million-f493043b",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-04-11"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3504,
+  "type": "funding",
+  "slug": "roboparty-pre-a",
+  "name": "RoboParty Pre-A",
+  "summary": "Closed a Pre-A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-07-15",
+      "src": "https://autonews.gasgoo.com/articles/news/seeds-roboparty-raises-nearly-500-million-yuan-catl-exclusively-leads-pre-a-round-2077393070516568065",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Pre-A",
+      "src": "https://autonews.gasgoo.com/articles/news/seeds-roboparty-raises-nearly-500-million-yuan-catl-exclusively-leads-pre-a-round-2077393070516568065",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-07-15"
+}

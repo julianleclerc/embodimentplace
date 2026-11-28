@@ -1,0 +1,51 @@
+{
+  "id": 1431,
+  "type": "company",
+  "slug": "amp-sortation",
+  "name": "Amp Sortation",
+  "summary": "AI-powered waste sortation and recycling automation (formerly AMP Robotics).",
+  "body": "The company designs and manufactures proprietary robotic systems including the Delta sortation arm, Vision AI platform, and Jet air-jet technology. AMP ONE is their flagship facility-scale solution processing 10K–1M+ tonnes annually for material recovery facilities worldwide.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/88-amp-sortation",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ampsortation.com/"
+    },
+    "image": {
+      "v": "/logos/amp-sortation.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/68cf663a92360d655662.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Louisville",
+      "src": "https://roboticsconnected.com/companies/88-amp-sortation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/88-amp-sortation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Louisville, United States",
+          "lat": 38.254238,
+          "lon": -85.759407,
+          "src": "https://roboticsconnected.com/companies/88-amp-sortation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

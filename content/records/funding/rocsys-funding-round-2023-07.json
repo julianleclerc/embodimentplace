@@ -1,0 +1,23 @@
+{
+  "id": 3809,
+  "type": "funding",
+  "slug": "rocsys-funding-round-2023-07",
+  "name": "Rocsys funding round (2023-07)",
+  "summary": "Raised $36M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-07-11",
+      "src": "https://siliconangle.com/2023/07/11/rocsys-raises-36m-grow-ai-powered-robotic-electric-vehicle-charging-solution/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 36,
+      "src": "https://siliconangle.com/2023/07/11/rocsys-raises-36m-grow-ai-powered-robotic-electric-vehicle-charging-solution/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-07-11"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1091,
+  "type": "company",
+  "slug": "moog",
+  "name": "Moog",
+  "summary": "We work on some of the world’s most exciting technical projects, creating products that challenge the limits of what’s possible, from cutting-edge medical technology to space vehicles.",
+  "body": "Our formula includes one simple, surprising low-tech element that makes us stand out from everyone else: Trust. We trust each other to work hard and do the right thing. We give people credit for their ideas. We take pride in sticking with a problem until it’s solved.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.moog.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.moog.com/"
+    },
+    "image": {
+      "v": "/logos/moog.png",
+      "fit": "contain",
+      "src": "https://www.moog.com/content/dam/sites/moog/images/logos/Moog_logo_white_1450.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "East Aurora",
+      "src": "https://www.linkedin.com/company/moog",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/moog",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "400 Jamison Rd., East Aurora, NY 14052, United States",
+          "lat": 42.803174,
+          "lon": -78.646394,
+          "src": "https://www.linkedin.com/company/moog"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

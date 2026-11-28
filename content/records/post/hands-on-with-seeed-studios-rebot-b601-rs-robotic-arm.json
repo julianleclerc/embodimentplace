@@ -1,0 +1,34 @@
+{
+  "id": 3284,
+  "type": "post",
+  "slug": "hands-on-with-seeed-studios-rebot-b601-rs-robotic-arm",
+  "name": "Hands-On with Seeed Studio's reBot B601-RS Robotic Arm",
+  "summary": "Nikodem Bartnik put imitation learning to work on the Seeed Studio reBot B601-RS, a $2,200 open source robotic arm with some serious muscle.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-27"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "hackster.io"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.hackster.io/news/hands-on-with-seeed-studio-s-rebot-b601-rs-robotic-arm-0a03fb0fc6d0"
+    },
+    "image": {
+      "v": "https://hackster.imgix.net/uploads/attachments/2031115/_qKAdTte9Jw.blob?auto=compress%2Cformat&w=600&h=450&fit=min",
+      "fit": "cover",
+      "src": "https://www.hackster.io/news/hands-on-with-seeed-studio-s-rebot-b601-rs-robotic-arm-0a03fb0fc6d0",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-27"
+}

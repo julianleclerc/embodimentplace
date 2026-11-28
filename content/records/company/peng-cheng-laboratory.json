@@ -1,0 +1,51 @@
+{
+  "id": 1377,
+  "type": "company",
+  "slug": "peng-cheng-laboratory",
+  "name": "Peng Cheng Laboratory",
+  "summary": "Artificial intelligence research institute in Shenzhen, China.",
+  "body": "Recent robotics work includes “Aligning Cyber Space With Physical World: A Comprehensive Survey on Embodied AI”. OpenAlex lists 78 robotics, humanoid, embodied-AI or manipulation papers from Peng Cheng Laboratory since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://doi.org/10.1109/tmech.2025.3574943",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://www.pcl.ac.cn/"
+    },
+    "image": {
+      "v": "/logos/peng-cheng-laboratory.png",
+      "fit": "contain",
+      "src": "https://www.google.com/s2/favicons?domain=www.pcl.ac.cn&sz=256",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://www.wikidata.org/wiki/Q82316555",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q82316555",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://www.wikidata.org/wiki/Q82316555"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

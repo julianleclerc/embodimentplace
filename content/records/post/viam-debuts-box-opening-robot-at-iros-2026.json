@@ -1,0 +1,34 @@
+{
+  "id": 3269,
+  "type": "post",
+  "slug": "viam-debuts-box-opening-robot-at-iros-2026",
+  "name": "Viam Debuts Box-Opening Robot at IROS 2026",
+  "summary": "Trained on 125 teleoperated demonstrations collected in about five hours, BoxBot pairs image-based visual servoing with an open source VLA, no custom architecture required, on one data path built on ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-09-22"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "morningstar.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.morningstar.com/news/pr-newswire/20260922ny53986/viam-debuts-box-opening-robot-at-iros-2026"
+    },
+    "image": {
+      "v": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+      "fit": "cover",
+      "src": "https://www.morningstar.com/news/pr-newswire/20260922ny53986/viam-debuts-box-opening-robot-at-iros-2026",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-09-22"
+}

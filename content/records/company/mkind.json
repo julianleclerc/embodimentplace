@@ -1,0 +1,51 @@
+{
+  "id": 1541,
+  "type": "company",
+  "slug": "mkind",
+  "name": "mkind",
+  "summary": "Develops AI-native industrial robots designed for high-mix manufacturing tasks.",
+  "body": "mkind is an early-stage robotics startup on a mission to automate the hardest, most painful manual industrial tasks. We build fully flexible, intelligent robotic work cells for surface finishing, welding, and coating. We are a small, focused team moving fast and building things that matter in the physical world.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/288-mkind",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mkind.ai/"
+    },
+    "image": {
+      "v": "/logos/mkind.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/d0f75e12ae5082a3c910.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Munich",
+      "src": "https://roboticsconnected.com/companies/288-mkind",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/288-mkind",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Munich, Germany",
+          "lat": 48.137108,
+          "lon": 11.575382,
+          "src": "https://roboticsconnected.com/companies/288-mkind"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1930,
+  "type": "company",
+  "slug": "fp-robotics",
+  "name": "F&P Robotics",
+  "summary": "Builds collaborative robots and autonomous mobile platforms that pair AI software with mechatronics.",
+  "body": "F&P Robotics brings AI into the physical world. We are a Swiss robotics company developing intelligent robotic systems that combine AI, robotics and human-centered design.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3177-f-and-p-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fp-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/fp-robotics.png",
+      "fit": "contain",
+      "src": "https://www.fp-robotics.com/wp-content/uploads/2025/05/fp-logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Glattbrugg ZH",
+      "src": "https://ch.linkedin.com/company/fp-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/fp-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rohrstrasse 36, Glattbrugg ZH, 8152, Switzerland",
+          "lat": 47.436361,
+          "lon": 8.562805,
+          "src": "https://ch.linkedin.com/company/fp-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

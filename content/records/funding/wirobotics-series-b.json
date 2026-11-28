@@ -1,0 +1,23 @@
+{
+  "id": 3505,
+  "type": "funding",
+  "slug": "wirobotics-series-b",
+  "name": "WIRobotics Series B",
+  "summary": "Raised approximately KRW 100 billion in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-05-15",
+      "src": "https://www.prnewswire.com/apac/news-releases/wirobotics-secures-approximately-krw-100-billion-usd-68-million-series-b-funding-302769221.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.prnewswire.com/apac/news-releases/wirobotics-secures-approximately-krw-100-billion-usd-68-million-series-b-funding-302769221.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-05-15"
+}

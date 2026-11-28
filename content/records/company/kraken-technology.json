@@ -1,0 +1,51 @@
+{
+  "id": 1482,
+  "type": "company",
+  "slug": "kraken-technology",
+  "name": "Kraken Technology",
+  "summary": "Manufactures autonomous uncrewed surface vessels (USVs) for maritime operations.",
+  "body": "Kraken Technology Group (founded 2021) designs and manufactures low‑cost, high‑performance autonomous surface and subsurface vessels using scalable composite manufacturing, advanced powertrains and MOSA-based control systems for defence, security, infrastructure, commercial and aid missions worldwide.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/183-kraken-technology",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://krakentechnology.com/"
+    },
+    "image": {
+      "v": "/logos/kraken-technology.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/8a2b3a3eb6e07057297e.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "London",
+      "src": "https://roboticsconnected.com/companies/183-kraken-technology",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/183-kraken-technology",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "London, United Kingdom",
+          "lat": 51.507446,
+          "lon": -0.127765,
+          "src": "https://roboticsconnected.com/companies/183-kraken-technology"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

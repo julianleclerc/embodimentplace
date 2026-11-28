@@ -1,0 +1,51 @@
+{
+  "id": 1456,
+  "type": "company",
+  "slug": "attabotics",
+  "name": "Attabotics",
+  "summary": "Developed automated storage and retrieval systems for fulfilment centres, featuring proprietary 3D mobile robots operating within a modular cube-based storage structure…",
+  "body": "Not all cube-based automation is created equal. Attabotics is a fundamentally different approach to robotic storage and fulfillment—built to use the full warehouse cube, not simply automate the space around or above inventory.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/127-attabotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://attabotics.com/"
+    },
+    "image": {
+      "v": "/logos/attabotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/0ee3d341a13018bae18d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Calgary",
+      "src": "https://roboticsconnected.com/companies/127-attabotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Canada",
+      "src": "https://roboticsconnected.com/companies/127-attabotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Calgary, Canada",
+          "lat": 51.045606,
+          "lon": -114.057541,
+          "src": "https://roboticsconnected.com/companies/127-attabotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

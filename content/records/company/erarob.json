@@ -1,0 +1,51 @@
+{
+  "id": 1766,
+  "type": "company",
+  "slug": "erarob",
+  "name": "ERAROB",
+  "summary": "Istanbul-based company offering industrial robotic solutions tailored to customer production lines.",
+  "body": "Erarob Robot Teknolojileri, robotik inovasyonlara öncülük eden bir teknoloji şirketidir. Müşterilere özel robotik çözümler geliştiren firmamız, endüstri standartlarını aşan projelerle sektördeki lider konumunu korumaktadır.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1737-erarob",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://erarob.com/"
+    },
+    "image": {
+      "v": "/logos/erarob.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/9eb307eef2d042e76e6c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "İstanbul",
+      "src": "https://tr.linkedin.com/company/erarob-robot-teknolojileri",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Turkey",
+      "src": "https://tr.linkedin.com/company/erarob-robot-teknolojileri",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "İSTİM Sanayi Sitesi, İstasyon Mah., Yarış Çıkmazı Sok., İstanbul, Tuzla 34940, Turkey",
+          "lat": 40.957205,
+          "lon": 29.41282,
+          "src": "https://tr.linkedin.com/company/erarob-robot-teknolojileri"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

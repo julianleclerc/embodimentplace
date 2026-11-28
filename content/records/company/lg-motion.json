@@ -1,0 +1,53 @@
+{
+  "id": 1814,
+  "type": "company",
+  "slug": "lg-motion",
+  "name": "LG Motion",
+  "summary": "UK electro-mechanical motion systems manufacturer based in Basingstoke, Hampshire.",
+  "body": "LG Motion are the motion control and cobot technology specialists based in the UK. We delivering quality design and experienced manufacturing with a personal, professional service to science institutes and leading machine manufacturers.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/2029-lg-motion-ltd",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.lg-motion.co.uk/"
+    },
+    "image": {
+      "v": "/logos/lg-motion.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/6121552dc9921f5fdbcf.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Basingstoke",
+      "src": "https://uk.linkedin.com/company/lg-motion",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/lg-motion",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Brunel House, Basingstoke, Hampshire RG21 6XR, United Kingdom",
+          "lat": 51.262826,
+          "lon": -1.086198,
+          "src": "https://uk.linkedin.com/company/lg-motion"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

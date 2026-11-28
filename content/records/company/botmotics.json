@@ -1,0 +1,51 @@
+{
+  "id": 1861,
+  "type": "company",
+  "slug": "botmotics",
+  "name": "Botmotics",
+  "summary": "Spanish robotics and artificial intelligence company that combines autonomous robots, sensors, data analytics and IoT into what it calls an operational intelligence…",
+  "body": "Botmotics is a technology company focused on Service Robotics, Artificial Intelligence, and Actionable Data solutions. We help businesses transform operations through intelligent automation, smart robotic systems, and data-driven decision-making.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2449-botmotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://botmotics.com/"
+    },
+    "image": {
+      "v": "/logos/botmotics.png",
+      "fit": "contain",
+      "src": "https://botmotics.com/wp-content/uploads/2026/07/favicon-botmotics.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Madrid",
+      "src": "https://es.linkedin.com/company/botmotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Spain",
+      "src": "https://es.linkedin.com/company/botmotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Paseo de la Castellana 149, Madrid, Madrid, Community of Madrid, Spain",
+          "lat": 40.46032,
+          "lon": -3.690473,
+          "src": "https://es.linkedin.com/company/botmotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

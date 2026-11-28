@@ -1,0 +1,51 @@
+{
+  "id": 984,
+  "type": "company",
+  "slug": "lx-robotics",
+  "name": "LX Robotics",
+  "summary": "The FlexHand V1 soft bionic hand, for AI, robotics and prosthetics.",
+  "body": "LXRobotics helps mobile robotics teams bridge the gap between embedded firmware and robotics software.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://lxrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://lxrobotics.com/"
+    },
+    "image": {
+      "v": "/logos/lx-robotics.png",
+      "fit": "contain",
+      "src": "https://lxrobotics.com/images/lxrobotics-logo_hu_7b2ccfdc775dee00.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hong Kong",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hong Kong, China",
+          "lat": 22.349236,
+          "lon": 114.185778,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

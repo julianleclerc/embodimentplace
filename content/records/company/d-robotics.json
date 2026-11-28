@@ -8,10 +8,18 @@
   "data": {
     "roles": {
       "v": [
-        "Compute"
+        "Compute",
+        "Supplier"
       ],
       "src": "https://en.d-robotics.cc/",
-      "asof": "2026-11"
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Supplier",
+          "src": "https://roboticsconnected.com/companies/695-d-robotics",
+          "asof": "2026-11"
+        }
+      ]
     },
     "website": {
       "v": "https://en.d-robotics.cc/"
@@ -46,6 +54,6 @@
     }
   },
   "created": "2026-11-26 02:05:08",
-  "updated": "2026-11-26 02:05:08",
+  "updated": "2026-11-27 22:05:12",
   "feed_at": "2026-11-26"
 }

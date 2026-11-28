@@ -1,0 +1,23 @@
+{
+  "id": 3478,
+  "type": "funding",
+  "slug": "neura-robotics-series-c",
+  "name": "NEURA Robotics Series C",
+  "summary": "Announced up to $1.4 billion in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-06-10",
+      "src": "https://markets.financialcontent.com/prnews.pre/article/bizwire-2026-6-10-neura-robotics-announces-record-series-c-of-up-to-14-billion-to-accelerate-the-worlds-leading-physical-ai-platform",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://markets.financialcontent.com/prnews.pre/article/bizwire-2026-6-10-neura-robotics-announces-record-series-c-of-up-to-14-billion-to-accelerate-the-worlds-leading-physical-ai-platform",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-06-10"
+}

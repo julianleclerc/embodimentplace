@@ -1,0 +1,28 @@
+{
+  "id": 3736,
+  "type": "funding",
+  "slug": "brightpick-series-b",
+  "name": "Brightpick Series B",
+  "summary": "Raised $19 million in a Series B round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-01-16",
+      "src": "https://www.logisticsmgmt.com/article/photoneo_brightpick_group_raises_additional_19_million_to_complete_40_milli",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.logisticsmgmt.com/article/photoneo_brightpick_group_raises_additional_19_million_to_complete_40_milli",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 19,
+      "src": "https://www.logisticsmgmt.com/article/photoneo_brightpick_group_raises_additional_19_million_to_complete_40_milli",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-01-16"
+}

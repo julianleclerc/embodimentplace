@@ -1,0 +1,51 @@
+{
+  "id": 1685,
+  "type": "company",
+  "slug": "devadros-automata",
+  "name": "Devadros Automata",
+  "summary": "Robotics and IoT company based in Nagpur, India, building human-assistive systems for people facing mobility challenges.",
+  "body": "Devadros™ was created from a simple observation: robotics has mostly been designed for tasks, not for people. Advanced machines repeat instructions, but everyday life is dynamic, unpredictable, and deeply human.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1239-devadros-automata",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.devadros.com/"
+    },
+    "image": {
+      "v": "/logos/devadros-automata.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/86fed1644f1a4581d01b.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Nagpur",
+      "src": "https://in.linkedin.com/company/devadros-automata-private-limited",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/devadros-automata-private-limited",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Besa-Manish Nagar, Nagpur, Maharashtra 440037, India",
+          "lat": 21.081541,
+          "lon": 79.081971,
+          "src": "https://in.linkedin.com/company/devadros-automata-private-limited"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

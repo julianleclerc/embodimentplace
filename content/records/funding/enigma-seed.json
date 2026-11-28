@@ -1,0 +1,28 @@
+{
+  "id": 3622,
+  "type": "funding",
+  "slug": "enigma-seed",
+  "name": "Enigma Seed",
+  "summary": "Raised $71M in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-07-27",
+      "src": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 71,
+      "src": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-07-27"
+}

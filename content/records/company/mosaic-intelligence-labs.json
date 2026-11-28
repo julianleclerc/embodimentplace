@@ -1,0 +1,52 @@
+{
+  "id": 1988,
+  "type": "company",
+  "slug": "mosaic-intelligence-labs",
+  "name": "Mosaic Intelligence Labs",
+  "summary": "Building intelligent surgical robots that sense and navigate blood vessels.",
+  "body": "The future of surgery starts with perception. Mosaic Intelligence Labs builds embodied intelligence and robotics to push the frontiers of surgery. Our mission is to expand the success, scope and scalability of surgery, starting from what can be treated from inside the vascular system.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ],
+      "src": "https://www.businesswire.com/news/home/20261110289756/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mosaicintelligence.xyz/"
+    },
+    "image": {
+      "v": "/logos/mosaic-intelligence-labs.png",
+      "fit": "contain",
+      "src": "https://mosaicintelligence.xyz/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://www.linkedin.com/company/mosaic-intelligence-labs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/mosaic-intelligence-labs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://www.linkedin.com/company/mosaic-intelligence-labs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1590,
+  "type": "company",
+  "slug": "cuby",
+  "name": "Cuby",
+  "summary": "Full-stack technology company developing scalable hardware and software systems for process improvement in new home construction.",
+  "body": "WHAT IS IT _ Cuby is a full-stack technology company that develops scalable hardware and software systems for process improvement and automation in new home construction. MISSION / VISION _ Cuby's mission is to empower others to build a better physical world.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/688-cuby",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://cubytechnologies.com/"
+    },
+    "image": {
+      "v": "/logos/cuby.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a0009c8022af416280cf.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "New York",
+      "src": "https://www.linkedin.com/company/buildwithcuby",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/buildwithcuby",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "101 Avenue OF THE Americas, New York, 10013, United States",
+          "lat": 40.723378,
+          "lon": -74.005497,
+          "src": "https://www.linkedin.com/company/buildwithcuby"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

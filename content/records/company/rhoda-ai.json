@@ -1,0 +1,51 @@
+{
+  "id": 1167,
+  "type": "company",
+  "slug": "rhoda-ai",
+  "name": "Rhoda AI",
+  "summary": "Building at the frontier of embodied intelligence.",
+  "body": "We’re currently in stealth and working with select partners as we prepare for public launch. If you’re excited about hard problems, first-principles thinking, and building category-defining systems, we’d love to hear from you.",
+  "data": {
+    "roles": {
+      "v": [
+        "Model lab"
+      ],
+      "src": "https://www.rhoda.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.rhoda.ai/"
+    },
+    "image": {
+      "v": "/logos/rhoda-ai.png",
+      "fit": "contain",
+      "src": "https://www.rhoda.ai/assets/images/logo/favicon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Palo Alto",
+      "src": "https://www.linkedin.com/company/rhoda-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/rhoda-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Palo Alto, United States",
+          "lat": 37.444329,
+          "lon": -122.159847,
+          "src": "https://www.linkedin.com/company/rhoda-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1418,
+  "type": "company",
+  "slug": "flock-safety",
+  "name": "Flock Safety",
+  "summary": "Manufactures drones, licence plate readers, and video surveillance systems designed for law enforcement and public safety.",
+  "body": "Their Drone as First Responder platform uses machine learning to support real-time crime response and emergency operations. The company operates a new 100,000-square-foot manufacturing facility in Georgia to produce domestically manufactured drones, with operations expanding across security, retail, construction, and community safety sectors.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/45-flock-safety",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.flocksafety.com/"
+    },
+    "image": {
+      "v": "/logos/flock-safety.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/6d154d65b2947c9b46d8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Atlanta",
+      "src": "https://roboticsconnected.com/companies/45-flock-safety",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/45-flock-safety",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Atlanta, United States",
+          "lat": 33.754466,
+          "lon": -84.389815,
+          "src": "https://roboticsconnected.com/companies/45-flock-safety"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1984,
+  "type": "company",
+  "slug": "zhaowei-machinery-and-electronics",
+  "name": "Zhaowei Machinery & Electronics",
+  "summary": "Micro motor and gearbox maker supplying finger-joint drives and its own dexterous hand.",
+  "body": "ZHAOWEI (Dual-listed: 003021.SZ | 02692.HK) is a global leader in the design, development, and manufacturing of precision micro-drive systems. We empower the world's most innovative companies by delivering fully integrated micro-drive modules (Motor + Gearbox + Controller) tailored for demanding applications.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Robot maker"
+      ],
+      "src": "https://humano.one/companies/zhaowei-machinery-and-electronics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.zwgearbox.com/"
+    },
+    "image": {
+      "v": "/logos/zhaowei-machinery-and-electronics.png",
+      "fit": "contain",
+      "src": "https://www.zwgearbox.com/uploads/2610/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://cn.linkedin.com/company/zwgearbox",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://cn.linkedin.com/company/zwgearbox",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Office Building 62, Yanhu Road, Yanchuan Community Yanluo Street, Bao'an District, Shenzhen, Guangdong 518105, China",
+          "lat": 22.559853,
+          "lon": 113.879033,
+          "src": "https://cn.linkedin.com/company/zwgearbox"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

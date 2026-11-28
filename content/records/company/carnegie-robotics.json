@@ -1,0 +1,52 @@
+{
+  "id": 1572,
+  "type": "company",
+  "slug": "carnegie-robotics",
+  "name": "Carnegie Robotics",
+  "summary": "Manufactures ruggedised autonomous systems, stereo cameras, and edge-compute devices for harsh environments.",
+  "body": "Since 2010, Carnegie Robotics (CRL) has been creating full-stack autonomous systems, and producing cutting-edge stereo cameras and sensors that power robotic technologies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/391-carnegie-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://carnegierobotics.com/"
+    },
+    "image": {
+      "v": "/logos/carnegie-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/998a9f8a5bbaf8a6a107.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/carnegie-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/carnegie-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "4501 Hatfield St, Pittsburgh, PA 15201, United States",
+          "lat": 40.474524,
+          "lon": -79.96222,
+          "src": "https://www.linkedin.com/company/carnegie-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

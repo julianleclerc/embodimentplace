@@ -1,0 +1,23 @@
+{
+  "id": 3582,
+  "type": "funding",
+  "slug": "xynova-angel",
+  "name": "Xynova Angel",
+  "summary": "Raised over US$13 million in an Angel round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-12-26",
+      "src": "https://finance.sina.com.cn/cj/2025-12-26/doc-inheayzm8149389.shtml",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Angel",
+      "src": "https://finance.sina.com.cn/cj/2025-12-26/doc-inheayzm8149389.shtml",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-12-26"
+}

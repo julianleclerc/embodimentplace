@@ -1,0 +1,51 @@
+{
+  "id": 1857,
+  "type": "company",
+  "slug": "maven-robotics",
+  "name": "Maven Robotics",
+  "summary": "Santa Clara startup building general-purpose autonomous robots for industrial work.",
+  "body": "Maven Robotics is building the world’s leading general-purpose AI robots.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2444-maven-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mavenrobotics.ai/"
+    },
+    "image": {
+      "v": "/logos/maven-robotics.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/67f7e2da985ab558fd99b78c/67f7e2da985ab558fd99b7b2_Webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Clara",
+      "src": "https://roboticsconnected.com/companies/2444-maven-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2444-maven-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Santa Clara, United States",
+          "lat": 37.233325,
+          "lon": -121.684635,
+          "src": "https://roboticsconnected.com/companies/2444-maven-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3450,
+  "type": "product",
+  "slug": "noetix-n2",
+  "name": "Noetix N2",
+  "summary": "N2, a humanoid robot from Noetix Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/noetix-n2.webp",
+      "src": "https://www.noetixrobotics.com/",
+      "orig": "https://image.noetixrobotics.com/pc/home_bumi_banner.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.noetixrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.noetixrobotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

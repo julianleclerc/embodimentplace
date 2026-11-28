@@ -1,0 +1,23 @@
+{
+  "id": 3899,
+  "type": "funding",
+  "slug": "crewline-funding-round-2026-04",
+  "name": "Crewline funding round (2026-04)",
+  "summary": "Raised $7.1 million, led by Initialized Capital.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-04-25",
+      "src": "https://pulse2.com/crewline-ai-7-1-million-raised-to-automate-construction-equipment-starting-with-autonomous-rollers/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 7.1,
+      "src": "https://pulse2.com/crewline-ai-7-1-million-raised-to-automate-construction-equipment-starting-with-autonomous-rollers/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-04-25"
+}

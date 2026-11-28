@@ -1,0 +1,52 @@
+{
+  "id": 1548,
+  "type": "company",
+  "slug": "applied-integration",
+  "name": "Applied Integration",
+  "summary": "UK-based systems integrator specialising in industrial automation, robotics and control systems.",
+  "body": "Applied Integration is one of the UK’s leading independent systems integrators, delivering cutting edge solutions to 21st Century industry.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/324-applied-integration",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://appliedintegration.co.uk/"
+    },
+    "image": {
+      "v": "/logos/applied-integration.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/34f613ab468abd46f21d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Stokesley",
+      "src": "https://uk.linkedin.com/company/applied-integration-uk-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://uk.linkedin.com/company/applied-integration-uk-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1 Ellerbeck Way, Stokesley, England TS9 5JZ, United Kingdom",
+          "lat": 54.463531,
+          "lon": -1.176529,
+          "src": "https://uk.linkedin.com/company/applied-integration-uk-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

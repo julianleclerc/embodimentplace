@@ -1,0 +1,51 @@
+{
+  "id": 2021,
+  "type": "company",
+  "slug": "voltair",
+  "name": "Voltair",
+  "summary": "Builds fixed-wing drones that recharge on power lines to inspect electric utility assets.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://news.ycombinator.com/item?id=47442452",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://voltairlabs.com/"
+    },
+    "image": {
+      "v": "/logos/voltair.png",
+      "fit": "contain",
+      "src": "https://voltairlabs.com/assets/img/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pullman",
+      "src": "https://www.linkedin.com/company/voltair-labs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/voltair-labs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Pullman, Washington, United States",
+          "lat": 46.729582,
+          "lon": -117.179936,
+          "src": "https://www.linkedin.com/company/voltair-labs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

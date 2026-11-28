@@ -1,0 +1,45 @@
+{
+  "id": 1380,
+  "type": "company",
+  "slug": "shenyang-institute-of-automation",
+  "name": "Shenyang Institute of Automation",
+  "summary": "Research institute in China.",
+  "body": "Recent robotics work includes “Soft Robotic Fish Actuated by Bionic Muscle With Embedded Sensing for Self-Adaptive Multiple Modes Swimming”. OpenAlex lists 202 robotics, humanoid, embodied-AI or manipulation papers from Shenyang Institute of Automation since January 2025.",
+  "data": {
+    "roles": {
+      "v": [
+        "Research lab"
+      ],
+      "src": "https://doi.org/10.1109/tro.2025.3532520",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "http://english.sia.cas.cn/"
+    },
+    "city": {
+      "v": "Shenyang",
+      "src": "https://www.wikidata.org/wiki/Q7494343",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.wikidata.org/wiki/Q7494343",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenyang, China",
+          "lat": 41.797473,
+          "lon": 123.456567,
+          "src": "https://www.wikidata.org/wiki/Q7494343"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

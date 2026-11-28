@@ -1,0 +1,23 @@
+{
+  "id": 3781,
+  "type": "funding",
+  "slug": "exyn-technologies-strategic",
+  "name": "Exyn Technologies Strategic",
+  "summary": "Closed a Strategic round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-07-03",
+      "src": "https://www.newswire.com/news/exyn-technologies-announces-additional-funding-to-support-strategic-22376099",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Strategic",
+      "src": "https://www.newswire.com/news/exyn-technologies-announces-additional-funding-to-support-strategic-22376099",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-07-03"
+}

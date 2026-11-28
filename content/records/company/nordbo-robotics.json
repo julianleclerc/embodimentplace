@@ -1,0 +1,52 @@
+{
+  "id": 1058,
+  "type": "company",
+  "slug": "nordbo-robotics",
+  "name": "Nordbo Robotics",
+  "summary": "Nordbo Robotics builds standardized robotic cells for surface processing in industrial production.",
+  "body": "Our primary focus is automated deburring and grinding of aluminum cast parts for foundries and automotive Tier-2/Tier-3 suppliers, delivered as repeatable, productized robotic cells.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://www.nordbo-robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.nordbo-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/nordbo-robotics.png",
+      "fit": "contain",
+      "src": "https://nordbo-221e3.kxcdn.com/web/image/website/6/favicon?unique=4a8f236",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Odense",
+      "src": "https://dk.linkedin.com/company/nordbo-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Denmark",
+      "src": "https://dk.linkedin.com/company/nordbo-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Noatunvej 2, Odense, 5000, Denmark",
+          "lat": 55.42153,
+          "lon": 10.380479,
+          "src": "https://dk.linkedin.com/company/nordbo-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

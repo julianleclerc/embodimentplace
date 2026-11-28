@@ -1,0 +1,28 @@
+{
+  "id": 3660,
+  "type": "funding",
+  "slug": "clearpath-robotics-series-a",
+  "name": "Clearpath Robotics Series A",
+  "summary": "Raised $14 million in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2015-03-18",
+      "src": "https://betakit.com/clearpath-raises-14-million-series-a-from-rre-inovia/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://betakit.com/clearpath-raises-14-million-series-a-from-rre-inovia/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 14,
+      "src": "https://betakit.com/clearpath-raises-14-million-series-a-from-rre-inovia/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2015-03-18"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3513,
+  "type": "funding",
+  "slug": "anyverse-dynamics-angel",
+  "name": "Anyverse Dynamics Angel",
+  "summary": "Closed an Angel round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-04-27",
+      "src": "https://autonews.gasgoo.com/articles/news/seeds-anyverse-dynamics-closes-new-financing-round-angel-series-total-exceeds-200-million-2048737489152458753",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Angel",
+      "src": "https://autonews.gasgoo.com/articles/news/seeds-anyverse-dynamics-closes-new-financing-round-angel-series-total-exceeds-200-million-2048737489152458753",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-04-27"
+}

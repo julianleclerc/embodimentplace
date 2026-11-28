@@ -1,0 +1,51 @@
+{
+  "id": 1410,
+  "type": "company",
+  "slug": "6-river-systems",
+  "name": "6 River Systems",
+  "summary": "Develops collaborative autonomous mobile robots (AMRs) for warehouse fulfilment operations.",
+  "body": "Founded in Waltham, Mass. in 2015, 6 River Systems is a leading wall-to-wall fulfillment solutions provider and part of UK-based technology company Ocado Group. The company strives to make warehouses more efficient with flexible, human-first and innovative products that deliver immediate value.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/30-6-river-systems",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://6river.com/"
+    },
+    "image": {
+      "v": "/logos/6-river-systems.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/21409490e3456d975506.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Waltham",
+      "src": "https://www.linkedin.com/company/6-river-systems",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/6-river-systems",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "307 Waverley Oaks Rd, Waltham, Massachusetts 02452, United States",
+          "lat": 42.38442,
+          "lon": -71.205144,
+          "src": "https://www.linkedin.com/company/6-river-systems"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

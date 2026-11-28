@@ -1,0 +1,51 @@
+{
+  "id": 1796,
+  "type": "company",
+  "slug": "near-earth-autonomy",
+  "name": "Near Earth Autonomy",
+  "summary": "Builds the Captain autonomous pilot system, a safety-critical autopilot that lets aircraft fly missions with reduced or no onboard crew.",
+  "body": "Creating a future where autonomous flight is safe and accessible.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1972-near-earth-autonomy",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.nearearth.aero/"
+    },
+    "image": {
+      "v": "/logos/near-earth-autonomy.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a07ef8d490a252f4f7d8.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/near-earth-autonomy",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/near-earth-autonomy",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "150 N Lexington St, Pittsburgh, Pennsylvania 15208, United States",
+          "lat": 40.449207,
+          "lon": -79.898738,
+          "src": "https://www.linkedin.com/company/near-earth-autonomy"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

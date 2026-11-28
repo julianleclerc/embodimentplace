@@ -1,0 +1,51 @@
+{
+  "id": 2027,
+  "type": "company",
+  "slug": "rigyd",
+  "name": "Rigyd",
+  "summary": "Generates physics-accurate, simulation-ready 3D assets and worlds for robot training.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://news.ycombinator.com/item?id=47864502",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://rigyd.com/"
+    },
+    "image": {
+      "v": "/logos/rigyd.png",
+      "fit": "contain",
+      "src": "https://rigyd.com/assets/favicon-192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Los Angeles",
+      "src": "https://www.linkedin.com/company/artlabs-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/artlabs-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Los Angeles, California, United States",
+          "lat": 34.053692,
+          "lon": -118.242768,
+          "src": "https://www.linkedin.com/company/artlabs-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1950,
+  "type": "company",
+  "slug": "node-robotics",
+  "name": "NODE Robotics",
+  "summary": "Develops mobile robot software and complete mobile robot systems for industrial intralogistics.",
+  "body": "NODE Robotics focuses on making mobile robot automation easy to use, with a clear emphasis on three principles: easy to integrate, easy to operate, and easy to adapt. This approach reduces complexity across deployment, operation, and scaling.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3363-node-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://node-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/node-robotics.png",
+      "fit": "contain",
+      "src": "https://node-robotics.com/typo3temp/assets/_processed_/7/d/csm_project_touch_icon_big_1fa79545f9.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Stuttgart",
+      "src": "https://roboticsconnected.com/companies/3363-node-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/3363-node-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Stuttgart, Germany",
+          "lat": 48.778449,
+          "lon": 9.180013,
+          "src": "https://roboticsconnected.com/companies/3363-node-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1396,
+  "type": "company",
+  "slug": "university-of-new-south-wales",
+  "name": "University of New South Wales",
+  "summary": "Public research university in Kensington, Sydney, Australia.",
+  "body": "Robotics: Robotics autonomous systems | Mechanical and Manufacturing Engineering - UNSW Sydney.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.unsw.edu.au/engineering/our-schools/mechanical-and-manufacturing-engineering/our-research/research-groups/robotics-autonomous-systems",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.unsw.edu.au/"
+    },
+    "image": {
+      "v": "/logos/university-of-new-south-wales.png",
+      "fit": "contain",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/UNSW_Canberra_Logo_-_Lanscape.jpg?width=512",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Kensington",
+      "src": "https://www.wikidata.org/wiki/Q734764",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://www.wikidata.org/wiki/Q734764",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Kensington, Australia",
+          "lat": -33.916921,
+          "lon": 151.232514,
+          "src": "https://www.wikidata.org/wiki/Q734764"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

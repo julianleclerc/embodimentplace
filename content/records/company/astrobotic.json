@@ -1,0 +1,51 @@
+{
+  "id": 1451,
+  "type": "company",
+  "slug": "astrobotic",
+  "name": "Astrobotic",
+  "summary": "Space robotics company designing and manufacturing autonomous lunar landers and rovers.",
+  "body": "Astrobotic is at the forefront of advancing space exploration and technology development. Our expertise spans a wide range of technologies, including suborbital rockets, orbital spacecraft, lunar spacecraft, and surface infrastructure.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/122-astrobotic",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.astrobotic.com/"
+    },
+    "image": {
+      "v": "/logos/astrobotic.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/29abd52fe379052bfaac.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Pittsburgh",
+      "src": "https://www.linkedin.com/company/astrobotic",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/astrobotic",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1016 N. Lincoln Ave, Pittsburgh, Pennsylvania 15233, United States",
+          "lat": 40.450327,
+          "lon": -80.020113,
+          "src": "https://www.linkedin.com/company/astrobotic"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

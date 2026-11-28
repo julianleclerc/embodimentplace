@@ -1,0 +1,51 @@
+{
+  "id": 1986,
+  "type": "company",
+  "slug": "nexdata",
+  "name": "Nexdata",
+  "summary": "Data vendor offering robot data collection, annotation and embodied-AI datasets.",
+  "body": "Nexdata provides top-notch training data solutions and serves as your reliable partner. With an extensive array of off-the-shelf datasets and flexible data collection and annotation services, our mission revolves around unleashing AI’ s full potential and expediting the AI industry’ s growth.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://humano.one/companies/nexdata",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.nexdata.ai/"
+    },
+    "image": {
+      "v": "/logos/nexdata.png",
+      "fit": "contain",
+      "src": "https://www.nexdata.ai/nexdata/static/image/favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Singapore",
+      "src": "https://sg.linkedin.com/company/nexdata-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Singapore",
+      "src": "https://sg.linkedin.com/company/nexdata-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "60 Paya Lebar Road, Singapore, 409051, Singapore",
+          "lat": 1.319078,
+          "lon": 103.892871,
+          "src": "https://sg.linkedin.com/company/nexdata-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

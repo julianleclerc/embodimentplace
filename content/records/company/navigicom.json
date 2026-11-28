@@ -1,0 +1,51 @@
+{
+  "id": 2041,
+  "type": "company",
+  "slug": "navigicom",
+  "name": "Navigicom",
+  "summary": "Builds low-cost, compact navigation systems for delivery and other drones.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2086980921568231652",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.navigicom.com/"
+    },
+    "image": {
+      "v": "/logos/navigicom.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/media/4b4375_b1696214a56244bd9336c52376f2f741~mv2.png/v1/crop/x_182,y_316,w_1533,h_441/fill/w_190,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20FILES.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Yokneam Illit",
+      "src": "https://www.navigicom.com/contact",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://www.navigicom.com/contact",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2 Carmel St, Yokneam Illit, Israel",
+          "lat": 32.64806,
+          "lon": 35.094355,
+          "src": "https://www.navigicom.com/contact"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

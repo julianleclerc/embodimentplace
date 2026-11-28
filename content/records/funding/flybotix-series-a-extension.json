@@ -1,0 +1,23 @@
+{
+  "id": 3880,
+  "type": "funding",
+  "slug": "flybotix-series-a-extension",
+  "name": "Flybotix Series A Extension",
+  "summary": "Raised close to USD 10M in a Series A Extension round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-09-09",
+      "src": "https://www.suasnews.com/2025/09/flybotix-secures-close-to-usd-10m-in-series-a-extension-financing-to-accelerate-growth-in-drone-based-confined-space-inspections-market/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A Extension",
+      "src": "https://www.suasnews.com/2025/09/flybotix-secures-close-to-usd-10m-in-series-a-extension-financing-to-accelerate-growth-in-drone-based-confined-space-inspections-market/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-09-09"
+}

@@ -1,0 +1,59 @@
+{
+  "id": 973,
+  "type": "company",
+  "slug": "advanced-navigation",
+  "name": "Advanced Navigation",
+  "summary": "Navigation and motion sensors, such as IMUs, GNSS receivers and inertial navigation systems.",
+  "body": "Advanced Navigation is a global leader in navigation and autonomous systems. By leveraging capabilities in software-enhanced hardware, every solution delivers unrivaled capabilities and exceptional performance across land, air, sea and space applications where GPS is unreliable.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Robot maker"
+      ],
+      "src": "https://www.advancednavigation.com/",
+      "asof": "2026-11",
+      "more": [
+        {
+          "role": "Robot maker",
+          "src": "https://roboticsconnected.com/companies/26-advanced-navigation",
+          "asof": "2026-11"
+        }
+      ]
+    },
+    "website": {
+      "v": "https://www.advancednavigation.com/"
+    },
+    "image": {
+      "v": "/logos/advanced-navigation.png",
+      "fit": "contain",
+      "src": "https://www.advancednavigation.com/wp-content/uploads/2024/09/cropped-favicon-300-192x192.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sydney",
+      "src": "https://au.linkedin.com/company/advanced-navigation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://au.linkedin.com/company/advanced-navigation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "255 George St, Sydney, New South Wales 2000, Australia",
+          "lat": -33.863719,
+          "lon": 151.207075,
+          "src": "https://au.linkedin.com/company/advanced-navigation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

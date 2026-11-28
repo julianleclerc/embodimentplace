@@ -1,0 +1,51 @@
+{
+  "id": 881,
+  "type": "company",
+  "slug": "double-robotics",
+  "name": "Double Robotics",
+  "summary": "Maker of the Double telepresence robot for hybrid offices.",
+  "body": "Double Robotics is the creator of Double, the world’s leading telepresence robot. We help telecommuters feel more connected to their colleagues by giving them a physical presence wherever they need to be. Y Combinator Summer 2012 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.doublerobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.doublerobotics.com/"
+    },
+    "image": {
+      "v": "/logos/double-robotics.png",
+      "fit": "contain",
+      "src": "https://www.doublerobotics.com/img2/standard/logo-double-robotics-mark-512.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Burlingame",
+      "src": "https://www.linkedin.com/company/double-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/double-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "828 Airport Blvd., Burlingame, CA 94010, United States",
+          "lat": 37.591857,
+          "lon": -122.350142,
+          "src": "https://www.linkedin.com/company/double-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

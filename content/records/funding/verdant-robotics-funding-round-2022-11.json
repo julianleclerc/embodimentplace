@@ -1,0 +1,23 @@
+{
+  "id": 3756,
+  "type": "funding",
+  "slug": "verdant-robotics-funding-round-2022-11",
+  "name": "Verdant Robotics funding round (2022-11)",
+  "summary": "Raised $46.5 million.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-11-29",
+      "src": "https://www.agriculture.com/technology/robotics/verdant-robotics-raises-465-million-to-fund-autonomous-precision-farming",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 46.5,
+      "src": "https://www.agriculture.com/technology/robotics/verdant-robotics-raises-465-million-to-fund-autonomous-precision-farming",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-11-29"
+}

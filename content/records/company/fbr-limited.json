@@ -1,0 +1,51 @@
+{
+  "id": 1692,
+  "type": "company",
+  "slug": "fbr-limited",
+  "name": "FBR Limited",
+  "summary": "Designs, prototypes and deploys stabilised long-boom robots that work outdoors and at large scale.",
+  "body": "FBR specializes in designing, prototyping, and deploying stabilized long-boom robotics to help industries tackle complex challenges and achieve sustainable growth.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1256-fbr-limited",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fbr.com.au/"
+    },
+    "image": {
+      "v": "/logos/fbr-limited.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/21684feeb2e75fa5a8d9.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "High Wycombe",
+      "src": "https://au.linkedin.com/company/fbr-ltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://au.linkedin.com/company/fbr-ltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "88 Sultana Rd W, High Wycombe, Western Australia 6057, Australia",
+          "lat": -31.961176,
+          "lon": 116.00182,
+          "src": "https://au.linkedin.com/company/fbr-ltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

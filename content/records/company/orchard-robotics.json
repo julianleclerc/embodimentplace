@@ -1,0 +1,51 @@
+{
+  "id": 1940,
+  "type": "company",
+  "slug": "orchard-robotics",
+  "name": "Orchard Robotics",
+  "summary": "Builds tractor-mounted camera hardware and farm software.",
+  "body": "We're a team of engineers, researchers, and farmers on a mission to revolutionize one of Earth's most important industries – agriculture. At Orchard, we're securing America’s food supply by building the AI farmer that automates our nation’s farms.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3279-orchard-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.orchard.ai/"
+    },
+    "image": {
+      "v": "/logos/orchard-robotics.png",
+      "fit": "contain",
+      "src": "https://www.orchard-robotics.com/apple-icon.png?apple-icon.0ja6jqx34fo2i.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Seattle",
+      "src": "https://roboticsconnected.com/companies/3279-orchard-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/3279-orchard-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Seattle, United States",
+          "lat": 47.603832,
+          "lon": -122.330062,
+          "src": "https://roboticsconnected.com/companies/3279-orchard-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

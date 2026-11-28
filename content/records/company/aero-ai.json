@@ -1,0 +1,51 @@
+{
+  "id": 1417,
+  "type": "company",
+  "slug": "aero-ai",
+  "name": "AERO AI",
+  "summary": "Combines drone and LiDAR data acquisition with AI-powered 3D visualisation and analysis tools.",
+  "body": "AERO AI is dedicated to transforming how we perceive and interact with our environment through innovative geospatial technologies. Our mission is to empower organizations and communities with advanced aerial intelligence and geospatial insights, enabling them to make informed decisions and drive meaningful change.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/44-aero-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://aeroai.io/"
+    },
+    "image": {
+      "v": "/logos/aero-ai.png",
+      "fit": "contain",
+      "src": "https://aeroai.io/assests/images/aeroai-logo-icon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Las Vegas",
+      "src": "https://www.linkedin.com/company/aero-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/aero-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "8400 West Sunset Road Suite 300, Las Vegas, Nevada 89113, United States",
+          "lat": 36.167426,
+          "lon": -115.148413,
+          "src": "https://www.linkedin.com/company/aero-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

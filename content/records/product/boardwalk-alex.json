@@ -1,0 +1,28 @@
+{
+  "id": 3414,
+  "type": "product",
+  "slug": "boardwalk-alex",
+  "name": "Boardwalk Alex",
+  "summary": "Alex, a humanoid robot from Boardwalk Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/boardwalk-alex.webp",
+      "src": "https://boardwalkrobotics.com/",
+      "orig": "https://boardwalkrobotics.com/_assets/8526b09be45391271bfe.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://boardwalkrobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://boardwalkrobotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

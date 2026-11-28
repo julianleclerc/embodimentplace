@@ -1,0 +1,51 @@
+{
+  "id": 1939,
+  "type": "company",
+  "slug": "isee",
+  "name": "ISEE",
+  "summary": "Autonomous driving technology company spun out of MIT research, building AI and engineering for autonomous yard trucks.",
+  "body": "ISEE is an autonomous driving technology company, spun out of MIT, whose humanistic, AI-powered, self-driving yard trucks are modernizing the global supply chain for the world’s leading companies.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/3277-isee",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.isee.ai/"
+    },
+    "image": {
+      "v": "/logos/isee.png",
+      "fit": "contain",
+      "src": "https://isee.ai/dist/static/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cambridge",
+      "src": "https://www.linkedin.com/company/isee-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/isee-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "501 Massachusetts Ave, Cambridge, Massachusetts, United States",
+          "lat": 42.3643,
+          "lon": -71.101496,
+          "src": "https://www.linkedin.com/company/isee-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

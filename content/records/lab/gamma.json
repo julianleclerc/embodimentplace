@@ -1,0 +1,31 @@
+{
+  "id": 2135,
+  "type": "lab",
+  "slug": "gamma",
+  "name": "GAMMA",
+  "summary": "Geometric algorithms, navigation and simulation.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Autonomous driving",
+        "Simulation"
+      ],
+      "src": "https://gamma.umd.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gamma.umd.edu/",
+      "src": "https://gamma.umd.edu/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Dinesh Manocha",
+      "src": "https://gamma.umd.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

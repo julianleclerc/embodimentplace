@@ -1,0 +1,52 @@
+{
+  "id": 1839,
+  "type": "company",
+  "slug": "luna-technologies",
+  "name": "Luna Technologies",
+  "summary": "Indian industrial automation supplier known for bearings, pneumatics, motors, controllers and drives.",
+  "body": "Luna Technologies is a Leading name in Factory Automation Products, Linear Motion Products, Industrial Components, Bearings, Pneumatics, Motors, Controllers that Drives Indian Industries. We're focused on driving ongoing Safety, Innovation, Efficiency, Reliability and Productivity.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Supplier"
+      ],
+      "src": "https://roboticsconnected.com/companies/2328-luna-technologies-pvt-ltd",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://luna.co.in/"
+    },
+    "image": {
+      "v": "/logos/luna-technologies.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/beb12936d5f1439d4af0.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Navi Mumbai",
+      "src": "https://in.linkedin.com/company/lunatechnologiespvtltd",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "India",
+      "src": "https://in.linkedin.com/company/lunatechnologiespvtltd",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Thane Belapur Road, Navi Mumbai, Maharashtra 400708, India",
+          "lat": 19.176592,
+          "lon": 72.997673,
+          "src": "https://in.linkedin.com/company/lunatechnologiespvtltd"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

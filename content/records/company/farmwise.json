@@ -1,0 +1,51 @@
+{
+  "id": 1152,
+  "type": "company",
+  "slug": "farmwise",
+  "name": "FarmWise",
+  "summary": "At FarmWise we believe that farming can be done at the plant level at scale leveraging the diversity of biological systems.",
+  "body": "Our team wants to enable farmers and ag equipment makers to reinvent farming operations with machines that can perceive, understand and act at the plant level in real-time.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://farmwise.io/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://farmwise.io/"
+    },
+    "image": {
+      "v": "/logos/farmwise.png",
+      "fit": "contain",
+      "src": "https://farmwise.io/assets/images/favicon.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Santa Clara",
+      "src": "https://www.linkedin.com/company/farmwise",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/farmwise",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "3030 Olcott St, Santa Clara, California 95054, United States",
+          "lat": 37.376623,
+          "lon": -121.967408,
+          "src": "https://www.linkedin.com/company/farmwise"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

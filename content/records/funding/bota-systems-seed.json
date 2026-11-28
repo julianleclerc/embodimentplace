@@ -1,0 +1,28 @@
+{
+  "id": 3597,
+  "type": "funding",
+  "slug": "bota-systems-seed",
+  "name": "Bota Systems Seed",
+  "summary": "Raised $2.5m in a Seed round, led by Marathon Venture Capital.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-10-04",
+      "src": "https://www.theengineer.co.uk/content/news/bota-systems-raises-25m-to-help-give-robots-sense-of-touch",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.theengineer.co.uk/content/news/bota-systems-raises-25m-to-help-give-robots-sense-of-touch",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 2.5,
+      "src": "https://www.theengineer.co.uk/content/news/bota-systems-raises-25m-to-help-give-robots-sense-of-touch",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-10-04"
+}

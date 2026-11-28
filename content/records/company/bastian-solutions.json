@@ -1,0 +1,52 @@
+{
+  "id": 1529,
+  "type": "company",
+  "slug": "bastian-solutions",
+  "name": "Bastian Solutions",
+  "summary": "Combines Bastian Solutions, Vanderlande's warehouse business and viastore to deliver integrated warehouse automation.",
+  "body": "Bastian Solutions, a Toyota Automated Logistics company, is a trusted supply chain integration partner committed to providing their clients a competitive advantage by designing and delivering world-class distribution and production solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/261-bastian-solutions",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://toyota-automated-logistics.com/"
+    },
+    "image": {
+      "v": "/logos/bastian-solutions.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/dee6802cbf942535254e.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Carmel",
+      "src": "https://www.linkedin.com/company/bastian-solutions",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/bastian-solutions",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "10585 North Meridian St., Carmel, IN 46290, United States",
+          "lat": 39.940673,
+          "lon": -86.156728,
+          "src": "https://www.linkedin.com/company/bastian-solutions"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

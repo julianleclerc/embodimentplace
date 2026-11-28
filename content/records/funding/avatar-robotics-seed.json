@@ -1,0 +1,28 @@
+{
+  "id": 3683,
+  "type": "funding",
+  "slug": "avatar-robotics-seed",
+  "name": "Avatar Robotics Seed",
+  "summary": "Raised $6.5 million in a Seed round, led by AlleyCorp.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-08-05",
+      "src": "https://www.nasdaq.com/press-release/avatar-robotics-raises-65-million-seed-build-unlimited-industrial-workforce-2026-08",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.nasdaq.com/press-release/avatar-robotics-raises-65-million-seed-build-unlimited-industrial-workforce-2026-08",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 6.5,
+      "src": "https://www.nasdaq.com/press-release/avatar-robotics-raises-65-million-seed-build-unlimited-industrial-workforce-2026-08",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-08-05"
+}

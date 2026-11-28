@@ -1,0 +1,23 @@
+{
+  "id": 3715,
+  "type": "funding",
+  "slug": "corvus-robotics-funding-round-2026-08",
+  "name": "Corvus Robotics funding round (2026-08)",
+  "summary": "Raised $20M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-08-25",
+      "src": "https://www.bizjournals.com/sanjose/news/2026/08/25/corvus-robotics-mohammed-kabir-ceo.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 20,
+      "src": "https://www.bizjournals.com/sanjose/news/2026/08/25/corvus-robotics-mohammed-kabir-ceo.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-08-25"
+}

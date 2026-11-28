@@ -1,0 +1,27 @@
+{
+  "id": 2210,
+  "type": "lab",
+  "slug": "tu-delft-robotics-institute",
+  "name": "TU Delft Robotics Institute",
+  "summary": "Delft's robotics institute and MSc Robotics.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Aerial robots",
+        "Autonomous driving"
+      ],
+      "src": "https://www.tudelft.nl/robotics-institute",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.tudelft.nl/robotics-institute",
+      "src": "https://www.tudelft.nl/robotics-institute",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

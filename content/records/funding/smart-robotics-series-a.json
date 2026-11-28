@@ -1,0 +1,23 @@
+{
+  "id": 3842,
+  "type": "funding",
+  "slug": "smart-robotics-series-a",
+  "name": "Smart Robotics Series A",
+  "summary": "Raised €10 million in a Series A round, led by Rotterdamse.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-04-26",
+      "src": "https://pulse2.com/smart-robotics-e10-million-series-a-raised-to-scale-ai-driven-robotic-pick-and-place-technology-across-europe/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://pulse2.com/smart-robotics-e10-million-series-a-raised-to-scale-ai-driven-robotic-pick-and-place-technology-across-europe/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-04-26"
+}

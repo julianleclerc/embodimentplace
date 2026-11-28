@@ -43,9 +43,16 @@
         }
       ],
       "asof": "2026-11"
+    },
+    "rank_csr": {
+      "v": 34.8,
+      "faculty": 18,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-26 02:05:08",
-  "updated": "2026-11-26 02:05:08",
+  "updated": "2026-11-28 03:05:10",
   "feed_at": "2026-11-26"
 }

@@ -1,0 +1,51 @@
+{
+  "id": 1877,
+  "type": "company",
+  "slug": "dynamic-creatures",
+  "name": "Dynamic Creatures",
+  "summary": "Designs mobile, interactive character robots for hospitality and entertainment venues.",
+  "body": "Dynamic Creatures designs and builds interactive character robots for the world’s leading entertainment and hospitality brands.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2719-dynamic-creatures",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.dynamiccreatures.com/"
+    },
+    "image": {
+      "v": "/logos/dynamic-creatures.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/media/6b0b63_8297d508ea9a421ba5e07b713ce3c038%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/6b0b63_8297d508ea9a421ba5e07b713ce3c038%7Emv2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cambridge",
+      "src": "https://www.linkedin.com/company/dynamiccreatures",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/dynamiccreatures",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "130 Bishop Allen Drive, Cambridge, MA 02139, United States",
+          "lat": 42.366437,
+          "lon": -71.103593,
+          "src": "https://www.linkedin.com/company/dynamiccreatures"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

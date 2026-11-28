@@ -1,0 +1,23 @@
+{
+  "id": 3515,
+  "type": "funding",
+  "slug": "dexmal-strategic",
+  "name": "Dexmal Strategic",
+  "summary": "Closed a Strategic round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-06-05",
+      "src": "https://autonews.gasgoo.com/articles/market-industry/dexmal-merges-with-atomix-and-secures-strategic-financing-2062874271171555329",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Strategic",
+      "src": "https://autonews.gasgoo.com/articles/market-industry/dexmal-merges-with-atomix-and-secures-strategic-financing-2062874271171555329",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-06-05"
+}

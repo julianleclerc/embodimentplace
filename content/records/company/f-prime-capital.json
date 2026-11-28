@@ -1,0 +1,51 @@
+{
+  "id": 1192,
+  "type": "company",
+  "slug": "f-prime-capital",
+  "name": "F-Prime Capital",
+  "summary": "F-Prime enables companies to turn their boldest ambitions into world-changing breakthroughs in life sciences, technology, healthtech + services, and crypto.",
+  "body": "Our legacy spans over 50 years, built on the belief that the best investors share the same entrepreneurial spirit of the founders they back—and that conviction still guides us today.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.fprimecapital.com/portfolio/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.fprimecapital.com/"
+    },
+    "image": {
+      "v": "/logos/f-prime-capital.png",
+      "fit": "contain",
+      "src": "https://www.fprimecapital.com/wp-content/themes/fprime/img/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Cambridge",
+      "src": "https://www.linkedin.com/company/f-prime-capital-partners",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/f-prime-capital-partners",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "One Main Street, Cambridge, MA 02142, United States",
+          "lat": 42.36227,
+          "lon": -71.083197,
+          "src": "https://www.linkedin.com/company/f-prime-capital-partners"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

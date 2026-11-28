@@ -1,0 +1,51 @@
+{
+  "id": 1869,
+  "type": "company",
+  "slug": "hmi-mbs",
+  "name": "HMi-MBS",
+  "summary": "French company based in Saint-Martin-d'Abbat, Loiret, with over twenty years of experience in industrial automation.",
+  "body": "Qui sommes-nous ? Nous sommes une société avec plus de vingt ans d’expérience qui s’appuie, avant tout, sur la passion et la motivation de ses équipes pour vous proposer des solutions innovantes. En tant qu’Experts, nous vous assistons pour construire votre entreprise du futur.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2552-hmi-mbs",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.hmi-mbs.fr/"
+    },
+    "image": {
+      "v": "/logos/hmi-mbs.png",
+      "fit": "contain",
+      "src": "https://www.hmi-mbs.fr/wp-content/uploads/2024/09/icone-HMI-MBS-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Saint-Martin-d’Abbat",
+      "src": "https://fr.linkedin.com/company/hmi-mbs",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/hmi-mbs",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "27, Route de Rochevreux, Saint-Martin-d’Abbat, Centre-Val de Loire 45110, France",
+          "lat": 47.863956,
+          "lon": 2.276429,
+          "src": "https://fr.linkedin.com/company/hmi-mbs"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

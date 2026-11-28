@@ -1,0 +1,52 @@
+{
+  "id": 1558,
+  "type": "company",
+  "slug": "bluewhite",
+  "name": "Bluewhite",
+  "summary": "Builds AI-powered autonomous solutions for off-road and tactical applications.",
+  "body": "Bluewhite built a hardware-agnostic autonomy and physical AI stack capable of transforming conventional heavy machinery and robotics platforms into highly intelligent, fully autonomous fleets",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/353-bluewhite",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bluewhite.ai/"
+    },
+    "image": {
+      "v": "/logos/bluewhite.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/bddf86f46346d5bd999d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tel Aviv",
+      "src": "https://il.linkedin.com/company/bluewhite",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://il.linkedin.com/company/bluewhite",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "116 Menachem Begin rd., Tel Aviv, 6701310, Israel",
+          "lat": 32.0853,
+          "lon": 34.781806,
+          "src": "https://il.linkedin.com/company/bluewhite"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

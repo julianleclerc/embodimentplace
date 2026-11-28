@@ -1,0 +1,18 @@
+{
+  "id": 3884,
+  "type": "funding",
+  "slug": "eternalag-funding-round-2026-03",
+  "name": "eternal.ag funding round (2026-03)",
+  "summary": "Raised €8M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-03-19",
+      "src": "https://thenextweb.com/news/eternal-ag-greenhouse-robot-8m-funding",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-03-19"
+}

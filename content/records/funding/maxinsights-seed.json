@@ -1,0 +1,28 @@
+{
+  "id": 3560,
+  "type": "funding",
+  "slug": "maxinsights-seed",
+  "name": "Maxinsights Seed",
+  "summary": "Raised $30 million in a Seed round, led by Peak XV.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-10-22",
+      "src": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 30,
+      "src": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-10-22"
+}

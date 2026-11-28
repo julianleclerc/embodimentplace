@@ -1,0 +1,52 @@
+{
+  "id": 1486,
+  "type": "company",
+  "slug": "maritime-robotics",
+  "name": "Maritime Robotics",
+  "summary": "Develops autonomous uncrewed surface vessels and maritime autonomy systems for ocean space operations.",
+  "body": "We are a global leader and pioneer in advanced maritime drones (USVs) and maritime autonomy. Since our inception in 2005, we have experienced significant growth, especially in the last two years.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/189-maritime-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.maritimerobotics.com/"
+    },
+    "image": {
+      "v": "/logos/maritime-robotics.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/2c94afd6-36c4-455c-9c03-3c5601a310f1.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Trondheim",
+      "src": "https://no.linkedin.com/company/maritime-robotics-as",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Norway",
+      "src": "https://no.linkedin.com/company/maritime-robotics-as",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Brattørkaia 13B, Trondheim, Sør-Trøndelag 7010, Norway",
+          "lat": 63.433196,
+          "lon": 10.401583,
+          "src": "https://no.linkedin.com/company/maritime-robotics-as"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

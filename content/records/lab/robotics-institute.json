@@ -1,0 +1,32 @@
+{
+  "id": 2105,
+  "type": "lab",
+  "slug": "robotics-institute",
+  "name": "Robotics Institute",
+  "summary": "One of the largest university robotics departments, with its own Robotics degrees.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Field robots",
+        "Manipulation"
+      ],
+      "src": "https://www.ri.cmu.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ri.cmu.edu/",
+      "src": "https://www.ri.cmu.edu/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Matthew Johnson-Roberson",
+      "src": "https://www.ri.cmu.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

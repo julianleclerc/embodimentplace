@@ -1,0 +1,51 @@
+{
+  "id": 1095,
+  "type": "company",
+  "slug": "moons-electric",
+  "name": "Moons' Electric",
+  "summary": "Motion control maker (stepper and servo motors, drives).",
+  "body": "Headquartered in Shanghai, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.moonsindustries.com:443/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.moonsindustries.com:443/"
+    },
+    "image": {
+      "v": "/logos/moons-electric.png",
+      "fit": "contain",
+      "src": "https://d2nlp3g45tnwoj.cloudfront.net/staticpic/logo.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://www.moonsindustries.com/about-us/contact-us",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://www.moonsindustries.com/about-us/contact-us",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Building 7, Lane 88, Minbei Road, Minhang District, Shanghai 201107, China",
+          "lat": 31.219669,
+          "lon": 121.284214,
+          "src": "https://www.moonsindustries.com/about-us/contact-us"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3467,
+  "type": "product",
+  "slug": "neura-4ne1",
+  "name": "NEURA 4NE1",
+  "summary": "4NE1, a humanoid robot from NEURA Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/neura-4ne1.webp",
+      "src": "https://neura-robotics.com/",
+      "orig": "https://neura-robotics.com/wp-content/uploads/2026/01/NEURA_4NE1_Gen3.5-full.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://neura-robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://neura-robotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

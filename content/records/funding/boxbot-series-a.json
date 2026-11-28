@@ -1,0 +1,28 @@
+{
+  "id": 3817,
+  "type": "funding",
+  "slug": "boxbot-series-a",
+  "name": "Boxbot Series A",
+  "summary": "Raised $12M in a Series A round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-09-17",
+      "src": "https://www.businesswire.com/news/home/20230918812917/en/Boxbot-Raises-12M-Series-A-Led-by-Playground-Global-to-Help-Last-Mile-Carriers-Increase-Productivity-at-Significantly-Lower-Cost",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series A",
+      "src": "https://www.businesswire.com/news/home/20230918812917/en/Boxbot-Raises-12M-Series-A-Led-by-Playground-Global-to-Help-Last-Mile-Carriers-Increase-Productivity-at-Significantly-Lower-Cost",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 12,
+      "src": "https://www.businesswire.com/news/home/20230918812917/en/Boxbot-Raises-12M-Series-A-Led-by-Playground-Global-to-Help-Last-Mile-Carriers-Increase-Productivity-at-Significantly-Lower-Cost",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-09-17"
+}

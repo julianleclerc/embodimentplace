@@ -1,0 +1,51 @@
+{
+  "id": 1609,
+  "type": "company",
+  "slug": "harmattan-ai",
+  "name": "Harmattan AI",
+  "summary": "Develops vertically integrated autonomous defence systems for military applications, including layered air-defence solutions, coordinated autonomous ISR and strike UAVs…",
+  "body": "Harmattan AI is redefining how forces are built and deployed, shaping a future where autonomous robots fight as one across the full spectrum of operations. Autonomy multiplies both mass and capability, unlocking a new scale of force.",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/837-harmattan-ai",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://harmattan.ai/"
+    },
+    "image": {
+      "v": "/logos/harmattan-ai.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/2275d2a4c00f94aec6c6.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Paris",
+      "src": "https://roboticsconnected.com/companies/837-harmattan-ai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://roboticsconnected.com/companies/837-harmattan-ai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Paris, France",
+          "lat": 48.853495,
+          "lon": 2.348391,
+          "src": "https://roboticsconnected.com/companies/837-harmattan-ai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 2010,
+  "type": "company",
+  "slug": "closer",
+  "name": "Closer",
+  "summary": "Japanese AI robotics company automating food manufacturing and logistics lines with collaborative robots.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://www.close-r.com/en/news/preseriesaround-251216",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.close-r.com/en"
+    },
+    "image": {
+      "v": "/logos/closer.png",
+      "fit": "contain",
+      "src": "https://www.close-r.com/favicon.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tsukuba",
+      "src": "https://jp.linkedin.com/company/closer-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://jp.linkedin.com/company/closer-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1-1-1 Tennodai, Tsukuba, Ibaraki, Japan",
+          "lat": 36.118975,
+          "lon": 140.095725,
+          "src": "https://jp.linkedin.com/company/closer-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

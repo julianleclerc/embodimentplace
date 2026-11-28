@@ -1,0 +1,28 @@
+{
+  "id": 3580,
+  "type": "funding",
+  "slug": "proception-seed",
+  "name": "Proception Seed",
+  "summary": "Raised $11 million in a Seed round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-07-23",
+      "src": "https://www.msn.com/en-us/money/general/proception-closes-11-million-seed-round-after-settling-tesla-lawsuit/ar-AA26S9iP",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Seed",
+      "src": "https://www.msn.com/en-us/money/general/proception-closes-11-million-seed-round-after-settling-tesla-lawsuit/ar-AA26S9iP",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 11,
+      "src": "https://www.msn.com/en-us/money/general/proception-closes-11-million-seed-round-after-settling-tesla-lawsuit/ar-AA26S9iP",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-07-23"
+}

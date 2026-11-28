@@ -1,0 +1,23 @@
+{
+  "id": 3428,
+  "type": "product",
+  "slug": "gento-marvin",
+  "name": "GENTO Marvin",
+  "summary": "Marvin, a robot from GENTO Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/gento-marvin.webp",
+      "src": "https://gentorobotics.ai/products/marvin/",
+      "orig": "https://gentorobotics.ai/wp-content/uploads/tmp/webp/products/9ad7b05e09b80e276794760d0352beff.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://gentorobotics.ai/products/marvin/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

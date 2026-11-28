@@ -1,0 +1,52 @@
+{
+  "id": 1804,
+  "type": "company",
+  "slug": "xtend",
+  "name": "XTEND",
+  "summary": "Building an AI-driven operating system, XOS, for autonomous robots and drones used in high-risk environments.",
+  "body": "XTEND builds AI-native, software-led Physical AI for defense and security, delivering XOS — a human-guided autonomous operating system that links operators, platforms, sensors and payloads. With over 10,000 systems deployed, XTEND enables mission-critical autonomy while keeping operators in command and control.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/2001-xtend",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://xtend.me/"
+    },
+    "image": {
+      "v": "/logos/xtend.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/1da05fb7736f316e3ee5.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tampa",
+      "src": "https://roboticsconnected.com/companies/2001-xtend",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/2001-xtend",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tampa, United States",
+          "lat": 27.944985,
+          "lon": -82.458311,
+          "src": "https://roboticsconnected.com/companies/2001-xtend"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3871,
+  "type": "funding",
+  "slug": "forterra-series-c",
+  "name": "Forterra Series C",
+  "summary": "Raised $238 million in a Series C round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-11-11",
+      "src": "https://pulse2.com/forterra-238-million-series-c-to-expand-leadership-in-defense-autonomy-and-interoperable-mission-systems/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series C",
+      "src": "https://pulse2.com/forterra-238-million-series-c-to-expand-leadership-in-defense-autonomy-and-interoperable-mission-systems/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 238,
+      "src": "https://pulse2.com/forterra-238-million-series-c-to-expand-leadership-in-defense-autonomy-and-interoperable-mission-systems/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-11-11"
+}

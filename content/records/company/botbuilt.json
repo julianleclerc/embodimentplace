@@ -1,0 +1,52 @@
+{
+  "id": 898,
+  "type": "company",
+  "slug": "botbuilt",
+  "name": "BotBuilt",
+  "summary": "We use robots to build houses.",
+  "body": "BotBuilt is creating flexible robotic systems to solve the housing crisis. Our cutting-edge software and cost-efficient hardware allow us to improve the world by providing beautiful construction, safer job sites, and sustainable building techniques. Y Combinator Winter 2021 company.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator"
+      ],
+      "src": "https://botbuilt.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://botbuilt.com/"
+    },
+    "image": {
+      "v": "/logos/botbuilt.png",
+      "fit": "contain",
+      "src": "https://botbuilt.com/wp-content/uploads/2024/07/Botbuilt-favicon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Southern Pines",
+      "src": "https://www.ycombinator.com/companies/botbuilt",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.ycombinator.com/companies/botbuilt",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Southern Pines, NC, United States",
+          "lat": 35.174047,
+          "lon": -79.392254,
+          "src": "https://www.ycombinator.com/companies/botbuilt"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

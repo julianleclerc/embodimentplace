@@ -1,0 +1,34 @@
+{
+  "id": 3386,
+  "type": "post",
+  "slug": "apera-vue-952-adds-programmable-robot-pathing-and-diagnostics",
+  "name": "Apera Vue 9.52 adds programmable robot pathing and diagnostics",
+  "summary": "Apera AI announced the release of Apera Vue 9.52 and performance updates to Apera Forge. The January 2026 update adds features related to robot motion configuration, diagnostics and simulation and ...",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-02-02"
+    },
+    "origin": {
+      "v": "Repost"
+    },
+    "source_site": {
+      "v": "engineering.com"
+    },
+    "kind": {
+      "v": "News"
+    },
+    "link": {
+      "v": "https://www.engineering.com/apera-vue-9-52-adds-programmable-robot-pathing-and-diagnostics/"
+    },
+    "image": {
+      "v": "https://www.engineering.com/wp-content/uploads/2026/02/Apera_Vue_Programmable_Autopilo_by_Apera_AI.jpg",
+      "fit": "cover",
+      "src": "https://www.engineering.com/apera-vue-9-52-adds-programmable-robot-pathing-and-diagnostics/",
+      "auto": "og"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-02-02"
+}

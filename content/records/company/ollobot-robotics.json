@@ -1,0 +1,51 @@
+{
+  "id": 1772,
+  "type": "company",
+  "slug": "ollobot-robotics",
+  "name": "Ollobot Robotics",
+  "summary": "Hong Kong-registered companion-robot brand, with engineering and operations linked to Shenzhen, that makes OlloNi, a cyber pet for the home.",
+  "body": "The robot uses vision, microphone arrays and emotion recognition to learn family routines and build a personality over time. The company unveiled OlloNi at CES 2026 and later showcased the OlloNi SS1 at IFA 2026.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1810-ollobot-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ollobot.com/"
+    },
+    "image": {
+      "v": "/logos/ollobot-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/0fea5f52b855bc1ef307.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hong Kong",
+      "src": "https://roboticsconnected.com/companies/1810-ollobot-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Hong Kong",
+      "src": "https://roboticsconnected.com/companies/1810-ollobot-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hong Kong, Hong Kong",
+          "lat": 22.281833,
+          "lon": 114.158283,
+          "src": "https://roboticsconnected.com/companies/1810-ollobot-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

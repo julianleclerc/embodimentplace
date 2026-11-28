@@ -1,0 +1,51 @@
+{
+  "id": 1909,
+  "type": "company",
+  "slug": "flybotix",
+  "name": "Flybotix",
+  "summary": "Builds the ASIO X, a drone designed for inspecting confined spaces such as sewers, penstocks, tunnels and tanks.",
+  "body": "Flybotix | Redefining Industrial Inspection with Collision-Tolerant Drones Flybotix is a pioneering Swiss startup specializing in the development of collision-tolerant drones for industrial inspection applications.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2997-flybotix",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.flybotix.com/"
+    },
+    "image": {
+      "v": "/logos/flybotix.png",
+      "fit": "contain",
+      "src": "https://www.flybotix.com/wp-content/uploads/2024/06/cropped-FAVICON-180x180.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Renens",
+      "src": "https://ch.linkedin.com/company/flybotix",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/flybotix",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rue de Lausanne 64, Renens, Vaud 1020, Switzerland",
+          "lat": 46.532061,
+          "lon": 6.592358,
+          "src": "https://ch.linkedin.com/company/flybotix"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

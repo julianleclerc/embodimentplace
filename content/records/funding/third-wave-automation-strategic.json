@@ -1,0 +1,23 @@
+{
+  "id": 3746,
+  "type": "funding",
+  "slug": "third-wave-automation-strategic",
+  "name": "Third Wave Automation Strategic",
+  "summary": "Closed a Strategic round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2023-02-15",
+      "src": "https://www.streetinsider.com/PRNewswire/Third+Wave+Automation+Announces+Strategic+Investment+from+Qualcomm+Ventures+and+Zebra+Technologies/21229513.html",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Strategic",
+      "src": "https://www.streetinsider.com/PRNewswire/Third+Wave+Automation+Announces+Strategic+Investment+from+Qualcomm+Ventures+and+Zebra+Technologies/21229513.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2023-02-15"
+}

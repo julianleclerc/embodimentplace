@@ -1,0 +1,53 @@
+{
+  "id": 1749,
+  "type": "company",
+  "slug": "driveblocks",
+  "name": "driveblocks",
+  "summary": "Munich-based software and AI specialist developing autonomy and perception systems for off-road vehicles.",
+  "body": "driveblocks GmbH is a Munich-based software company developing autonomy and driver-assistance software for off-road vehicles in agriculture, construction, and defense. Off-road operation imposes constraints that differ fundamentally from on-road driving.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer",
+        "Integrator"
+      ],
+      "src": "https://roboticsconnected.com/companies/1635-driveblocks",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.driveblocks.ai/"
+    },
+    "image": {
+      "v": "/logos/driveblocks.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/31ea1336329b15eccd5c.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "München",
+      "src": "https://de.linkedin.com/company/driveblocks",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/driveblocks",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Am Kartoffelgarten 14, München, Bavaria 81671, Germany",
+          "lat": 48.123412,
+          "lon": 11.607486,
+          "src": "https://de.linkedin.com/company/driveblocks"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

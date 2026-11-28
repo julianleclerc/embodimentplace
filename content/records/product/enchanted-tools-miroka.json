@@ -1,0 +1,28 @@
+{
+  "id": 3423,
+  "type": "product",
+  "slug": "enchanted-tools-miroka",
+  "name": "Enchanted Tools Mirokaï",
+  "summary": "The Mirokaï envisions a world where autonomous robotic characters become trusted, useful, and loved companions in everyday life.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/enchanted-tools-miroka.webp",
+      "src": "https://enchanted.tools/robot/",
+      "orig": "https://images.prismic.io/enchanted-tools/KgH5as6wolUBfiM9_Miroka_Newdesign_buy.png?auto=format%2Ccompress&rect=352%2C360%2C3098%2C2065&w=3872&h=2581",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://enchanted.tools/robot/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://enchanted.tools/robot/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

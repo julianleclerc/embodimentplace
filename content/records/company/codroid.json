@@ -1,0 +1,51 @@
+{
+  "id": 963,
+  "type": "company",
+  "slug": "codroid",
+  "name": "Codroid",
+  "summary": "ESTUN spin-off building full-stack embodied-AI robots for industrial manufacturing.",
+  "body": "Headquartered in Nanjing, China.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.codroid.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.codroid.ai/"
+    },
+    "image": {
+      "v": "/logos/codroid.png",
+      "fit": "contain",
+      "src": "https://www.codroid.ai/wp-content/uploads/2025/03/icon-logo-152-1-300x300.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Nanjing",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Nanjing, China",
+          "lat": 32.043828,
+          "lon": 118.778863,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

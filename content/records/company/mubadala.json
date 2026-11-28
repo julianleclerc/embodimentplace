@@ -1,0 +1,45 @@
+{
+  "id": 1219,
+  "type": "company",
+  "slug": "mubadala",
+  "name": "Mubadala",
+  "summary": "Mubadala Investment Company is a global, sovereign investor with an entrepreneurial mindset and a mandate to create sustainable returns for Abu Dhabi.",
+  "body": "Together, we build upon the legacy of the late Sheikh Zayed bin Sultan Al Nahyan, who envisioned a free, stable and dignified life for the people of this country.",
+  "data": {
+    "roles": {
+      "v": [
+        "Investor"
+      ],
+      "src": "https://www.mubadala.com/en",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.mubadala.com/"
+    },
+    "city": {
+      "v": "Abu Dhabi",
+      "src": "https://ae.linkedin.com/company/mubadala",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Arab Emirates",
+      "src": "https://ae.linkedin.com/company/mubadala",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "(4th) Road & Mohamed Bin Khalifa (15th) Street, Abu Dhabi, 45005, United Arab Emirates",
+          "lat": 24.453835,
+          "lon": 54.377401,
+          "src": "https://ae.linkedin.com/company/mubadala"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

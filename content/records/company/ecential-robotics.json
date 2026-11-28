@@ -1,0 +1,51 @@
+{
+  "id": 1664,
+  "type": "company",
+  "slug": "ecential-robotics",
+  "name": "eCential Robotics",
+  "summary": "Sells an open, unified robotic surgery platform for bone surgery.",
+  "body": "eCential Robotics is a Grenoble-based company specialized in surgical robotics. It develops and markets a unique system unifying 2D/3D robotic imaging, real-time navigation and surgical robotics.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1083-ecential-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.ecential-robotics.com/"
+    },
+    "image": {
+      "v": "/logos/ecential-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/b060f08d5fc0635da349.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Gières (Grenoble)",
+      "src": "https://fr.linkedin.com/company/ecential-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "France",
+      "src": "https://fr.linkedin.com/company/ecential-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "2, Avenue de Vignate, Gières (Grenoble), Auvergne-Rhône-Alpes, France 38610, France",
+          "lat": 45.187391,
+          "lon": 5.781314,
+          "src": "https://fr.linkedin.com/company/ecential-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

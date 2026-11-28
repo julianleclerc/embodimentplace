@@ -1,0 +1,23 @@
+{
+  "id": 3972,
+  "type": "funding",
+  "slug": "orchard-robotics-funding-round-2025-09",
+  "name": "Orchard Robotics funding round (2025-09)",
+  "summary": "Raised $22M, led by Quiet Capital.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-09-03",
+      "src": "https://finance.yahoo.com/news/orchard-robotics-raises-22m-build-164500768.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 22,
+      "src": "https://finance.yahoo.com/news/orchard-robotics-raises-22m-build-164500768.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-09-03"
+}

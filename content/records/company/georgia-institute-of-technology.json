@@ -1,0 +1,51 @@
+{
+  "id": 2089,
+  "type": "company",
+  "slug": "georgia-institute-of-technology",
+  "name": "Georgia Institute of Technology",
+  "summary": "",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://www.gatech.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.gatech.edu/"
+    },
+    "city": {
+      "v": "Atlanta"
+    },
+    "country": {
+      "v": "United States"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Atlanta, United States",
+          "lat": 33.7756,
+          "lon": -84.3963
+        }
+      ]
+    },
+    "rank_csr": {
+      "v": 82.6,
+      "faculty": 30,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
+    },
+    "rank_qs_mech": {
+      "v": 17,
+      "src": "https://www.topuniversities.com/university-subject-rankings/mechanical-aeronautical-manufacturing-engineering/2025",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 03:05:10",
+  "feed_at": "2026-11-28"
+}

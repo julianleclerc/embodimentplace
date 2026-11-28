@@ -1,0 +1,51 @@
+{
+  "id": 1155,
+  "type": "company",
+  "slug": "distalmotion",
+  "name": "Distalmotion",
+  "summary": "Distalmotion is a global MedTech company with a mission to empower access to the benefits of robotic surgery by simplifying operations with its DEXTER robot.",
+  "body": "The company aims to broaden access to robotic surgery for more surgeons and sites of care globally, including hospital outpatient departments (HOPDs) and ambulatory surgical centers (ASCs), to increase the number of patients who benefit from best-in-class minimally invasive care.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.distalmotion.com:443/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.distalmotion.com:443/"
+    },
+    "image": {
+      "v": "/logos/distalmotion.png",
+      "fit": "contain",
+      "src": "https://www.distalmotion.com:443/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Epalinges",
+      "src": "https://ch.linkedin.com/company/distalmotion",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/distalmotion",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Route de la Corniche 3b, Epalinges, Vaud 1066, Switzerland",
+          "lat": 46.542099,
+          "lon": 6.66128,
+          "src": "https://ch.linkedin.com/company/distalmotion"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

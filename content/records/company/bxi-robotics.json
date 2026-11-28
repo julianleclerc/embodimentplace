@@ -1,0 +1,53 @@
+{
+  "id": 959,
+  "type": "company",
+  "slug": "bxi-robotics",
+  "name": "BXI Robotics",
+  "summary": "BXI Robotics produces Humanoid Robots & Advanced Joint Motors used on embodies.",
+  "body": "BXI Robotics develops Elf 3 research humanoids, 25–150 N·m joint actuators and teleoperation platforms, with custom robot design and OEM/ODM integration.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Integrator",
+        "Supplier"
+      ],
+      "src": "https://www.bxirobotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.bxirobotics.com/"
+    },
+    "image": {
+      "v": "/logos/bxi-robotics.png",
+      "fit": "contain",
+      "src": "https://www.bxirobotics.com/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

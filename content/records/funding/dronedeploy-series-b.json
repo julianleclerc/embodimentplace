@@ -1,0 +1,28 @@
+{
+  "id": 3953,
+  "type": "funding",
+  "slug": "dronedeploy-series-b",
+  "name": "DroneDeploy Series B",
+  "summary": "Raised $20 million in a Series B round, led by Scale Venture Partners.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2016-08-28",
+      "src": "https://www.aero-news.net/index.cfm?do=main.textpost&id=A59CF116-AA36-48AF-9D29-EBAA94AD7948",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series B",
+      "src": "https://www.aero-news.net/index.cfm?do=main.textpost&id=A59CF116-AA36-48AF-9D29-EBAA94AD7948",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 20,
+      "src": "https://www.aero-news.net/index.cfm?do=main.textpost&id=A59CF116-AA36-48AF-9D29-EBAA94AD7948",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2016-08-28"
+}

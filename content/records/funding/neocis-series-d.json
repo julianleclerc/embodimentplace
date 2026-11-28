@@ -1,0 +1,28 @@
+{
+  "id": 3765,
+  "type": "funding",
+  "slug": "neocis-series-d",
+  "name": "Neocis Series D",
+  "summary": "Raised $72 million in a Series D round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2020-10-07",
+      "src": "https://venturebeat.com/ai/neocis-raises-72-million-for-its-dental-surgery-robot/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series D",
+      "src": "https://venturebeat.com/ai/neocis-raises-72-million-for-its-dental-surgery-robot/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 72,
+      "src": "https://venturebeat.com/ai/neocis-raises-72-million-for-its-dental-surgery-robot/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2020-10-07"
+}

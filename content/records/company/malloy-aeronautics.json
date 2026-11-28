@@ -1,0 +1,51 @@
+{
+  "id": 1484,
+  "type": "company",
+  "slug": "malloy-aeronautics",
+  "name": "Malloy Aeronautics",
+  "summary": "British drone and eVTOL manufacturer specialising in heavy lift autonomous aerial vehicles.",
+  "body": "After building the world's first Hoverbike in 2009, we are crafting the next VTOL aircraft generation. We build heavy lift drones capable of delivering rapid response aid, equipment and ultimately people over buildings, rivers and mountains, autonomously at the push of a button.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/187-malloy-aeronautics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.malloyaeronautics.com/"
+    },
+    "image": {
+      "v": "/logos/malloy-aeronautics.png",
+      "fit": "contain",
+      "src": "https://icons.duckduckgo.com/ip3/malloyaeronautics.com.ico",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Beaconsfield",
+      "src": "https://roboticsconnected.com/companies/187-malloy-aeronautics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/187-malloy-aeronautics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Beaconsfield, United Kingdom",
+          "lat": 51.608288,
+          "lon": -0.657123,
+          "src": "https://roboticsconnected.com/companies/187-malloy-aeronautics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

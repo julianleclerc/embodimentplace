@@ -1,0 +1,28 @@
+{
+  "id": 3459,
+  "type": "product",
+  "slug": "realman-realbot",
+  "name": "RealMan RealBOT",
+  "summary": "RealBOT, a humanoid robot from RealMan Robotics.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/realman-realbot.webp",
+      "src": "https://www.realman-robotics.com/",
+      "orig": "https://www.realman-robotics.com/prop/robot-1.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.realman-robotics.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.realman-robotics.com/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

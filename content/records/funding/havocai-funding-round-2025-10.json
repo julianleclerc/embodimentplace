@@ -1,0 +1,23 @@
+{
+  "id": 3895,
+  "type": "funding",
+  "slug": "havocai-funding-round-2025-10",
+  "name": "HavocAI funding round (2025-10)",
+  "summary": "Raised $85M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2025-10-09",
+      "src": "https://finance.yahoo.com/news/havocai-raises-85m-sell-autonomous-160000899.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 85,
+      "src": "https://finance.yahoo.com/news/havocai-raises-85m-sell-autonomous-160000899.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2025-10-09"
+}

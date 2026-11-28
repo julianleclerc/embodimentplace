@@ -1,0 +1,23 @@
+{
+  "id": 3694,
+  "type": "funding",
+  "slug": "monarch-tractor-funding-round-2024-07",
+  "name": "Monarch Tractor funding round (2024-07)",
+  "summary": "Raised $133M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2024-07-22",
+      "src": "https://techcrunch.com/2024/07/22/monarch-tractor-ceo-says-133m-raise-will-help-it-escape-quite-a-challenging-time/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 133,
+      "src": "https://techcrunch.com/2024/07/22/monarch-tractor-ceo-says-133m-raise-will-help-it-escape-quite-a-challenging-time/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2024-07-22"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1063,
+  "type": "company",
+  "slug": "eprosima",
+  "name": "eProsima",
+  "summary": "The Middleware Experts eProsima provides insight to develop your distributed systems recommending you the right DDS middleware products and supporting you in all the stages of the development.",
+  "body": "Specialized on high performance middleware, robotics, and AI",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.eprosima.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.eprosima.com/"
+    },
+    "image": {
+      "v": "/logos/eprosima.png",
+      "fit": "contain",
+      "src": "https://www.eprosima.com/images/logos/eprosima/logo-eprosima-white.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tres Cantos",
+      "src": "https://es.linkedin.com/company/eprosima",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Spain",
+      "src": "https://es.linkedin.com/company/eprosima",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Plaza de la Encina, Tres Cantos, Comunidad de Madrid 28760, Spain",
+          "lat": 40.595308,
+          "lon": -3.708287,
+          "src": "https://es.linkedin.com/company/eprosima"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

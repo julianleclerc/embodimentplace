@@ -1,0 +1,51 @@
+{
+  "id": 1070,
+  "type": "company",
+  "slug": "kognic",
+  "name": "Kognic",
+  "summary": "Kognic provides the most productive annotation platform for autonomy data.",
+  "body": "We help customers integrate scalable, cost-efficient human feedback into their data pipelines — so they can train and validate autonomous systems that are safe, reliable, and aligned with human expectations.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.kognic.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.kognic.com/"
+    },
+    "image": {
+      "v": "/logos/kognic.png",
+      "fit": "contain",
+      "src": "https://www.kognic.com/hubfs/kognic-icon-black.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Gothenburg",
+      "src": "https://se.linkedin.com/company/kognic",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Sweden",
+      "src": "https://se.linkedin.com/company/kognic",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Lindholmspiren 7, Gothenburg, Vastra Gotaland County 417 56, Sweden",
+          "lat": 57.7064,
+          "lon": 11.941018,
+          "src": "https://se.linkedin.com/company/kognic"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1705,
+  "type": "company",
+  "slug": "omnicell",
+  "name": "Omnicell",
+  "summary": "Healthcare technology company focused on medication management across hospitals, clinics and specialty pharmacies.",
+  "body": "Omnicell is transforming pharmacy and nursing care through outcomes-centric solutions designed to optimize clinical and business outcomes across all settings of care.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/1307-omnicell",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.omnicell.com/"
+    },
+    "image": {
+      "v": "/logos/omnicell.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/14489f7714b65c97b13f.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Fort Worth",
+      "src": "https://www.linkedin.com/company/omnicell",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/omnicell",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "4220 North Fwy, Fort Worth, Texas 76137, United States",
+          "lat": 32.816828,
+          "lon": -97.311611,
+          "src": "https://www.linkedin.com/company/omnicell"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

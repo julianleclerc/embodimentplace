@@ -1,0 +1,51 @@
+{
+  "id": 1673,
+  "type": "company",
+  "slug": "voliro",
+  "name": "Voliro",
+  "summary": "Zurich-based aerial robotics company spun off from ETH Zurich's Autonomous Systems Lab in 2019.",
+  "body": "Voliro builds advanced aerial robots that don't just fly and see - they touch. Born out of ETH Zurich's Autonomous Systems Lab, Voliro has pioneered a new category in industrial inspection: contact-based drone inspection.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1110-voliro",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://voliro.com/"
+    },
+    "image": {
+      "v": "/logos/voliro.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/cc7da1a252f5013d5a2f.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zurich",
+      "src": "https://ch.linkedin.com/company/voliro-ch",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://ch.linkedin.com/company/voliro-ch",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Förrlibuckstrasse 150, Zurich, ZH 8005, Switzerland",
+          "lat": 47.392279,
+          "lon": 8.511507,
+          "src": "https://ch.linkedin.com/company/voliro-ch"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3463,
+  "type": "product",
+  "slug": "vinmotion-motion-2",
+  "name": "VinMotion Motion 2",
+  "summary": "Motion 2, VinMotion’s flagship humanoid for reception, manufacturing, patrolling and healthcare: photos and the full Basic, Advanced and Ultra specification.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/vinmotion-motion-2.webp",
+      "src": "https://vinmotion.net/en/products/motion-2/",
+      "orig": "https://vinmotion.net/images/products/motion2-main.webp",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://vinmotion.net/en/products/motion-2/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://vinmotion.net/en/products/motion-2/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

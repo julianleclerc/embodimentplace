@@ -1,0 +1,52 @@
+{
+  "id": 1490,
+  "type": "company",
+  "slug": "nucleus-robotics",
+  "name": "Nucleus Robotics",
+  "summary": "Develops a humanoid labour platform offering robots for hire on factory floors at €25–€45 per hour, targeting intralogistics tasks such as parts picking, loading, and…",
+  "body": "The company combines humanoid robotics with proprietary physical AI and world models, featuring multi-modal learning from vision, depth sensing, proprioception and human corrections. It operates a fleet management operating system with telemetry, live video feeds and digital safety controls.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker",
+        "Model lab"
+      ],
+      "src": "https://roboticsconnected.com/companies/197-nucleus-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://nucleuslab.ai/"
+    },
+    "image": {
+      "v": "/logos/nucleus-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a9188bd07bb76d1e6f58.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Gütersloh",
+      "src": "https://roboticsconnected.com/companies/197-nucleus-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://roboticsconnected.com/companies/197-nucleus-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Gütersloh, Germany",
+          "lat": 51.916662,
+          "lon": 8.404328,
+          "src": "https://roboticsconnected.com/companies/197-nucleus-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

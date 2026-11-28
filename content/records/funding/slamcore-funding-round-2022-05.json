@@ -1,0 +1,23 @@
+{
+  "id": 3854,
+  "type": "funding",
+  "slug": "slamcore-funding-round-2022-05",
+  "name": "Slamcore funding round (2022-05)",
+  "summary": "Raised $16M.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2022-05-02",
+      "src": "https://venturebeat.com/ai/slamcore-which-brings-spatial-awareness-to-machines-raises-16m/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 16,
+      "src": "https://venturebeat.com/ai/slamcore-which-brings-spatial-awareness-to-machines-raises-16m/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2022-05-02"
+}

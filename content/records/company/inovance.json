@@ -1,0 +1,46 @@
+{
+  "id": 928,
+  "type": "company",
+  "slug": "inovance",
+  "name": "Inovance",
+  "summary": "At Inovance, we believe technology should increase productivity while supporting a more sustainable future for people and the planet.",
+  "body": "Founded in 2003, We has spent more than 20 years helping manufacturers improve productivity, efficiency, and sustainability through advanced automation and digitalization solutions.",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier",
+        "Robot maker"
+      ],
+      "src": "https://cn.linkedin.com/company/inovance",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.inovance.com/"
+    },
+    "city": {
+      "v": "Shenzhen",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shenzhen, China",
+          "lat": 22.544574,
+          "lon": 114.054543,
+          "src": "https://zeeklog.com/2026nian-wo-zheng-li-liao-zhong-guo-200-duo-jia-ji-qi-ren-ju-shen-zhi-neng-gong-si-ming-dan-6"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

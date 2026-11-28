@@ -1,0 +1,51 @@
+{
+  "id": 2059,
+  "type": "company",
+  "slug": "sceneme",
+  "name": "SceneMe",
+  "summary": "Builds a consent-based repository of indoor scene and object data for robotics and physical AI.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://x.com/StealthCoSpy/status/2109841581071052887",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://sceneme.io/"
+    },
+    "image": {
+      "v": "/logos/sceneme.png",
+      "fit": "contain",
+      "src": "https://sceneme.io/wp-content/uploads/2026/11/cropped-iFoHEoJwGPOWUXkFHxzGuPNxl3s-192x192.avif",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Zurich",
+      "src": "https://www.linkedin.com/company/sceneme",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Switzerland",
+      "src": "https://www.linkedin.com/company/sceneme",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Zurich, Switzerland",
+          "lat": 47.374449,
+          "lon": 8.541042,
+          "src": "https://www.linkedin.com/company/sceneme"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

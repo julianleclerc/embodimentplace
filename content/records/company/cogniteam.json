@@ -1,0 +1,51 @@
+{
+  "id": 1068,
+  "type": "company",
+  "slug": "cogniteam",
+  "name": "Cogniteam",
+  "summary": "Cogniteam is a startup company in the field of Robotics and AIoT.",
+  "body": "Our goal is to become a world leader in robotics and AIoT markets, in particular in products requiring high levels of autonomy and intelligence. We welcome opportunities to partner with others in these emerging markets.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://www.cogniteam.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.cogniteam.com/"
+    },
+    "image": {
+      "v": "/logos/cogniteam.png",
+      "fit": "contain",
+      "src": "https://www.cogniteam.com/wp-content/uploads/2024/08/cropped-favicon-192x192.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Petach Tiqva",
+      "src": "https://il.linkedin.com/company/cogniteam",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Israel",
+      "src": "https://il.linkedin.com/company/cogniteam",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hasivim 18, Oren building, Petach Tiqva, Israel, Israel",
+          "lat": 32.102118,
+          "lon": 34.849982,
+          "src": "https://il.linkedin.com/company/cogniteam"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

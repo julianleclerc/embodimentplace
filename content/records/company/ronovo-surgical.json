@@ -1,0 +1,51 @@
+{
+  "id": 1968,
+  "type": "company",
+  "slug": "ronovo-surgical",
+  "name": "Ronovo Surgical",
+  "summary": "Develops the Carina surgical robotics platform.",
+  "body": "The system is built around a modular architecture, with mobile, smaller-footprint patient carts that can be configured for urological, thoracic, gynaecological and general surgery. The company aims to make robot-assisted surgery more affordable and easier to adopt across hospitals, targeting cost-effective, multi-specialty procedure coverage.",
+  "data": {
+    "roles": {
+      "v": [
+        "Software developer"
+      ],
+      "src": "https://roboticsconnected.com/companies/3705-ronovo-surgical",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://ronovosurgical.com/"
+    },
+    "image": {
+      "v": "/logos/ronovo-surgical.png",
+      "fit": "contain",
+      "src": "https://media.brand.dev/ee30711b-ed44-41a1-ace7-b9ec3bf64c22.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Shanghai",
+      "src": "https://roboticsconnected.com/companies/3705-ronovo-surgical",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "China",
+      "src": "https://roboticsconnected.com/companies/3705-ronovo-surgical",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Shanghai, China",
+          "lat": 31.231271,
+          "lon": 121.470015,
+          "src": "https://roboticsconnected.com/companies/3705-ronovo-surgical"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

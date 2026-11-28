@@ -1,0 +1,51 @@
+{
+  "id": 1614,
+  "type": "company",
+  "slug": "aurelius-systems",
+  "name": "Aurelius Systems",
+  "summary": "Develops autonomous directed-energy laser systems for counter-unmanned aerial system defence.",
+  "body": "AI-powered defense systems for the growing UAS drone threat. At Aurelius, we are shaping the future of defense with autonomous, unmanned directed-energy laser systems that can protect our soil and our allies against Unmanned Aircraft Systems (UAS) drones at scale.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/844-aurelius-systems",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.aureliussystems.com/"
+    },
+    "image": {
+      "v": "/logos/aurelius-systems.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/8b585edd81de02b05008.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "San Francisco",
+      "src": "https://roboticsconnected.com/companies/844-aurelius-systems",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://roboticsconnected.com/companies/844-aurelius-systems",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "San Francisco, United States",
+          "lat": 37.787936,
+          "lon": -122.40752,
+          "src": "https://roboticsconnected.com/companies/844-aurelius-systems"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

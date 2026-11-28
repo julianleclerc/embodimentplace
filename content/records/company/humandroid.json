@@ -1,0 +1,51 @@
+{
+  "id": 2013,
+  "type": "company",
+  "slug": "humandroid",
+  "name": "Humandroid",
+  "summary": "Trains and deploys humanoid robots in industrial environments.",
+  "body": "",
+  "data": {
+    "roles": {
+      "v": [
+        "Integrator"
+      ],
+      "src": "https://x.com/humandroidinc/status/2079564416232669356",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.humandro-id.com/"
+    },
+    "image": {
+      "v": "/logos/humandroid.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/media/71e31b_b38982e997494e89bd65447afc3e6dcd%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/71e31b_b38982e997494e89bd65447afc3e6dcd%7Emv2.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Córdoba",
+      "src": "https://www.linkedin.com/company/humandro-id",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Argentina",
+      "src": "https://www.linkedin.com/company/humandro-id",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Avenida La Voz del Interior 8851, Córdoba, Argentina",
+          "lat": -31.310725,
+          "lon": -64.219824,
+          "src": "https://www.linkedin.com/company/humandro-id"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:15",
+  "updated": "2026-11-27 22:05:15",
+  "feed_at": "2026-11-27"
+}

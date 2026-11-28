@@ -1,0 +1,51 @@
+{
+  "id": 1584,
+  "type": "company",
+  "slug": "contoro-robotics",
+  "name": "Contoro Robotics",
+  "summary": "Builds AI-powered autonomous robots for container and trailer unloading in logistics.",
+  "body": "Contoro Robotics is an Austin-based robotics startup that is revolutionizing industrial automation with AI-powered robots, focused on automating the unloading of floor-loaded trailer and shipping containers from trucks.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/671-contoro-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.contoro.com/"
+    },
+    "image": {
+      "v": "/logos/contoro-robotics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/2c67693eb186f9e54a7d.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://www.linkedin.com/company/contoro-inc",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/contoro-inc",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1807 W Braker Ln, Austin, Texas 78758, United States",
+          "lat": 30.389712,
+          "lon": -97.705836,
+          "src": "https://www.linkedin.com/company/contoro-inc"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

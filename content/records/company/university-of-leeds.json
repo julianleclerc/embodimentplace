@@ -1,0 +1,51 @@
+{
+  "id": 1338,
+  "type": "company",
+  "slug": "university-of-leeds",
+  "name": "University of Leeds",
+  "summary": "University in Leeds, United Kingdom.",
+  "body": "Robotics: Robotics at Leeds.",
+  "data": {
+    "roles": {
+      "v": [
+        "University"
+      ],
+      "src": "https://robotics.leeds.ac.uk/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://leeds.ac.uk/"
+    },
+    "image": {
+      "v": "/logos/university-of-leeds.png",
+      "fit": "contain",
+      "src": "https://jaducdn.leeds.ac.uk/uol-ds/1.0.22/favicons/apple-touch-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Leeds",
+      "src": "https://www.wikidata.org/wiki/Q503424",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://www.wikidata.org/wiki/Q503424",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Leeds, United Kingdom",
+          "lat": 53.807222,
+          "lon": -1.551667,
+          "src": "https://www.wikidata.org/wiki/Q503424"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 3762,
+  "type": "funding",
+  "slug": "distalmotion-strategic",
+  "name": "Distalmotion Strategic",
+  "summary": "Closed a Strategic round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-01-12",
+      "src": "https://markets.financialcontent.com/prnews.pressre/article/gnwcq-2026-1-12-distalmotion-secures-strategic-investment-to-advance-asc-expansion-of-the-dexter-robotic-surgery-system",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Strategic",
+      "src": "https://markets.financialcontent.com/prnews.pressre/article/gnwcq-2026-1-12-distalmotion-secures-strategic-investment-to-advance-asc-expansion-of-the-dexter-robotic-surgery-system",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-01-12"
+}

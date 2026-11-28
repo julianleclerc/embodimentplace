@@ -1,0 +1,51 @@
+{
+  "id": 1547,
+  "type": "company",
+  "slug": "althumans",
+  "name": "AltHumans",
+  "summary": "U.S.-based online retailer specialising in humanoid robots, AI companion robots, robot dogs, and educational STEM robots.",
+  "body": "Humanoid robots for sale, shop our brand stores and buy robots for home, work and entertainment. US-based retailer seeking partnerships with robot manufacturers.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/316-althumans",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.althumans.com/"
+    },
+    "image": {
+      "v": "/logos/althumans.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/25c30cb38b95797b0aa2.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Sanford",
+      "src": "https://www.linkedin.com/company/althumans",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/althumans",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "1550 Atlantic Ave, Sanford, Florida 32771, United States",
+          "lat": 28.799978,
+          "lon": -81.3568,
+          "src": "https://www.linkedin.com/company/althumans"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

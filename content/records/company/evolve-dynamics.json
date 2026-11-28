@@ -1,0 +1,51 @@
+{
+  "id": 1474,
+  "type": "company",
+  "slug": "evolve-dynamics",
+  "name": "Evolve Dynamics",
+  "summary": "British manufacturer of uncrewed aerial systems and software for defence, security, and infrastructure sectors.",
+  "body": "Evolve Dynamics builds rugged, battle-tested uncrewed aircraft systems for defence, emergency response, and critical infrastructure. Our platforms are shaped by frontline use, engineered for contested environments, and delivered with sovereign supply chains.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/167-evolve-dynamics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.evolvedynamics.com/"
+    },
+    "image": {
+      "v": "/logos/evolve-dynamics.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/92dd63a20befe4c65046.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Guildford",
+      "src": "https://roboticsconnected.com/companies/167-evolve-dynamics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United Kingdom",
+      "src": "https://roboticsconnected.com/companies/167-evolve-dynamics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Guildford, United Kingdom",
+          "lat": 51.235607,
+          "lon": -0.573206,
+          "src": "https://roboticsconnected.com/companies/167-evolve-dynamics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1683,
+  "type": "company",
+  "slug": "intech-robotics-automation",
+  "name": "Intech Robotics & Automation",
+  "summary": "Robotics and automation arm of Intech Group, a Vietnamese engineering conglomerate.",
+  "body": "It integrates industrial robots such as six-axis arms, delta robots and SCARA units from international partners, and builds its own AGV, AMR and load-handling robots with in-house navigation software. The company also offers AI-based vision for defect inspection and automatic sorting, alongside cloud dashboards for real-time monitoring.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/1236-intech-robotics-and-automation",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://intechrobotics.vn/"
+    },
+    "image": {
+      "v": "/logos/intech-robotics-automation.png",
+      "fit": "contain",
+      "src": "https://roboticsconnected.com/media/logos/ingested/a3a0814c16e1a0a333c4.webp",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Hanoi",
+      "src": "https://roboticsconnected.com/companies/1236-intech-robotics-and-automation",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Vietnam",
+      "src": "https://roboticsconnected.com/companies/1236-intech-robotics-and-automation",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Hanoi, Vietnam",
+          "lat": 21.028333,
+          "lon": 105.854041,
+          "src": "https://roboticsconnected.com/companies/1236-intech-robotics-and-automation"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

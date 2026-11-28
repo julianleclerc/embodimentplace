@@ -1,0 +1,28 @@
+{
+  "id": 3473,
+  "type": "funding",
+  "slug": "agile-robots-series-f",
+  "name": "Agile Robots Series F",
+  "summary": "Raised $500 million in a Series F round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-11-12",
+      "src": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/germanys-agile-robots-raises-500-million-from-softbank-nvidia-at-85-billion-valuation/",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series F",
+      "src": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/germanys-agile-robots-raises-500-million-from-softbank-nvidia-at-85-billion-valuation/",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 500,
+      "src": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/germanys-agile-robots-raises-500-million-from-softbank-nvidia-at-85-billion-valuation/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-12"
+}

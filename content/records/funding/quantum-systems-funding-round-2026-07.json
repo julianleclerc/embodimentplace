@@ -1,0 +1,23 @@
+{
+  "id": 3749,
+  "type": "funding",
+  "slug": "quantum-systems-funding-round-2026-07",
+  "name": "Quantum Systems funding round (2026-07)",
+  "summary": "Raised $1.2bn.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-07-02",
+      "src": "https://finance.yahoo.com/technology/articles/german-drone-maker-quantum-systems-130433398.html",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1200,
+      "src": "https://finance.yahoo.com/technology/articles/german-drone-maker-quantum-systems-130433398.html",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-07-02"
+}

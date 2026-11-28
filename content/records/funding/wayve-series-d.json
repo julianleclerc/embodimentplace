@@ -1,0 +1,28 @@
+{
+  "id": 3556,
+  "type": "funding",
+  "slug": "wayve-series-d",
+  "name": "Wayve Series D",
+  "summary": "Raised $1.2 billion in a Series D round.",
+  "body": "",
+  "data": {
+    "date": {
+      "v": "2026-02-24",
+      "src": "https://auto.economictimes.indiatimes.com/news/auto-technology/uk-self-driving-startup-wayve-raises-1-2-billion-from-investors-including-mercedes-stellantis/128770342",
+      "asof": "2026-11"
+    },
+    "round": {
+      "v": "Series D",
+      "src": "https://auto.economictimes.indiatimes.com/news/auto-technology/uk-self-driving-startup-wayve-raises-1-2-billion-from-investors-including-mercedes-stellantis/128770342",
+      "asof": "2026-11"
+    },
+    "amount_usd_m": {
+      "v": 1200,
+      "src": "https://auto.economictimes.indiatimes.com/news/auto-technology/uk-self-driving-startup-wayve-raises-1-2-billion-from-investors-including-mercedes-stellantis/128770342",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-02-24"
+}

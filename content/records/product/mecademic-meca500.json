@@ -1,0 +1,28 @@
+{
+  "id": 3442,
+  "type": "product",
+  "slug": "mecademic-meca500",
+  "name": "Mecademic Meca500",
+  "summary": "Enhance your automation with the Meca500 robot arm. This compact 6-axis arm offers unmatched precision and flexibility for efficient and accurate operations.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/mecademic-meca500.webp",
+      "src": "https://mecademic.com/industrial-robots-mecademic/meca500-industrial-robot-arm/",
+      "orig": "https://mecademic.com/wp-content/uploads/2024/08/two-meca500-robots-facing-each-other-clean-1200x675.jpg",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Arm",
+      "src": "https://mecademic.com/industrial-robots-mecademic/meca500-industrial-robot-arm/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://mecademic.com/industrial-robots-mecademic/meca500-industrial-robot-arm/"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

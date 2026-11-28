@@ -1,0 +1,51 @@
+{
+  "id": 1125,
+  "type": "company",
+  "slug": "avride",
+  "name": "Avride",
+  "summary": "Avride is a leading developer in the autonomous vehicle and delivery robot industry.",
+  "body": "Our dynamic team, composed of a few hundred engineers develops and operates autonomous cars and delivery robots across the globe, shaping the future of mobility and logistics. At Avride, we are committed to making the roads safer and more accessible for everyone.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://www.avride.ai/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.avride.ai/"
+    },
+    "image": {
+      "v": "/logos/avride.png",
+      "fit": "contain",
+      "src": "https://cdn.prod.website-files.com/650dd89f9d632d99c3f3ec7a/651be142800b2e42a196f14f_avride%20webclip.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Austin",
+      "src": "https://www.linkedin.com/company/avrideai",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "United States",
+      "src": "https://www.linkedin.com/company/avrideai",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "8605 Cross Park Drive, Austin, TX 78754, United States",
+          "lat": 30.341593,
+          "lon": -97.676325,
+          "src": "https://www.linkedin.com/company/avrideai"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

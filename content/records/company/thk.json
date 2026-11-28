@@ -1,0 +1,51 @@
+{
+  "id": 970,
+  "type": "company",
+  "slug": "thk",
+  "name": "THK",
+  "summary": "LM Guide linear guides, ball splines, ball screws and other linear motion parts.",
+  "body": "THK, Linear Motion, LM Guides, Linear bearing, Linear Guide, Ball Splines, Ball Screws, electric actuators, mechatronics products, automobile parts, seismic isolation systems",
+  "data": {
+    "roles": {
+      "v": [
+        "Supplier"
+      ],
+      "src": "https://www.thk.com/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.thk.com/"
+    },
+    "image": {
+      "v": "/logos/thk.png",
+      "fit": "contain",
+      "src": "https://www.thk.com/sites/default/files/theme/global/resources/images/common/header-logo.jpg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Tokyo",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Japan",
+      "src": "https://robodienst.com/companies",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Tokyo, Japan",
+          "lat": 35.67686,
+          "lon": 139.763895,
+          "src": "https://robodienst.com/companies"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:09",
+  "updated": "2026-11-27 22:05:09",
+  "feed_at": "2026-11-27"
+}

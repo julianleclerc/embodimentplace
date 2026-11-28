@@ -1,0 +1,28 @@
+{
+  "id": 3460,
+  "type": "product",
+  "slug": "robbyant-r2",
+  "name": "Robbyant R2",
+  "summary": "ROBBYANT R2: a robot platform for real indoor scenarios with full‑range reach, omnidirectional chassis, torque feedback, and swappable dual batteries.",
+  "body": "",
+  "data": {
+    "image": {
+      "v": "/products/robbyant-r2-humanoid-robot.webp",
+      "src": "https://www.robbyant.com/product/R2",
+      "orig": "https://mdn.alipayobjects.com/huamei_u94ywh/afts/img/fkaZRp3UjWwAAAAAgBAAAAgADkxfAQFr/original.png",
+      "fit": "contain",
+      "asof": "2026-11"
+    },
+    "category": {
+      "v": "Humanoid",
+      "src": "https://www.robbyant.com/product/R2",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.robbyant.com/product/R2"
+    }
+  },
+  "created": "2026-11-28 03:05:16",
+  "updated": "2026-11-28 03:05:16",
+  "feed_at": "2026-11-28"
+}

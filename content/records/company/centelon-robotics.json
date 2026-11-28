@@ -1,0 +1,51 @@
+{
+  "id": 1876,
+  "type": "company",
+  "slug": "centelon-robotics",
+  "name": "Centelon Robotics",
+  "summary": "Designs and deploys intelligent automation systems that sense, learn and act, combining IoT sensing, robotics and software.",
+  "body": "It is part of the wider Centelon Group, a diversified technology enterprise with a presence in Australia and India. Its product line includes Cento, a humanoid robot for customer engagement and citizen services, along with smart waste rovers, automated guided vehicles such as the CL200 AGV, and an IoT ecosystem of pre-configured sensors.",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2654-centelon-robotics",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://centelonrobotics.tech/"
+    },
+    "image": {
+      "v": "/logos/centelon-robotics.png",
+      "fit": "contain",
+      "src": "https://centelonrobotics.tech/wp-content/uploads/2025/08/Centelonrobotics-fav-icon.png",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Melbourne",
+      "src": "https://roboticsconnected.com/companies/2654-centelon-robotics",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Australia",
+      "src": "https://roboticsconnected.com/companies/2654-centelon-robotics",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Melbourne, Australia",
+          "lat": -37.814245,
+          "lon": 144.963173,
+          "src": "https://roboticsconnected.com/companies/2654-centelon-robotics"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

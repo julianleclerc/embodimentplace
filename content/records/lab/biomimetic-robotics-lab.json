@@ -1,0 +1,31 @@
+{
+  "id": 2110,
+  "type": "lab",
+  "slug": "biomimetic-robotics-lab",
+  "name": "Biomimetic Robotics Lab",
+  "summary": "Dynamic legged robots such as the MIT Mini Cheetah.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Legged locomotion",
+        "Actuators"
+      ],
+      "src": "https://biomimetics.mit.edu/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://biomimetics.mit.edu/",
+      "src": "https://biomimetics.mit.edu/",
+      "asof": "2026-11"
+    },
+    "lead_text": {
+      "v": "Sangbae Kim",
+      "src": "https://biomimetics.mit.edu/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}

@@ -33,9 +33,16 @@
           "lon": -122.308056
         }
       ]
+    },
+    "rank_csr": {
+      "v": 32.7,
+      "faculty": 18,
+      "src": "https://csrankings.org/#/fromyear/2016/toyear/2026/index?robotics&world",
+      "data": "https://github.com/emeryberger/CSrankings",
+      "asof": "2026-11"
     }
   },
   "created": "2026-11-17 16:05:00",
-  "updated": "2026-11-25 03:05:08",
+  "updated": "2026-11-28 03:05:10",
   "feed_at": null
 }

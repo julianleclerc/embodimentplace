@@ -1,0 +1,51 @@
+{
+  "id": 1852,
+  "type": "company",
+  "slug": "prefiro",
+  "name": "Prefiro",
+  "summary": "Karlsruhe-based agtech start-up building ASPIRO, a selective harvesting machine for green asparagus.",
+  "body": "Asparagus cost up to 25 euros per kilo this season! This is because, like most specialty crops and vegetables, it is harvested exclusively by hand. At Prefiro, we are the first to automate these processes!",
+  "data": {
+    "roles": {
+      "v": [
+        "Robot maker"
+      ],
+      "src": "https://roboticsconnected.com/companies/2415-prefiro",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://www.prefiro.de/"
+    },
+    "image": {
+      "v": "/logos/prefiro.png",
+      "fit": "contain",
+      "src": "https://static.wixstatic.com/shapes/648689_faf848a4d8524a3f85a0aaba7b165e27.svg",
+      "asof": "2026-11"
+    },
+    "city": {
+      "v": "Karlsruhe",
+      "src": "https://de.linkedin.com/company/prefiroprecisionfarming",
+      "asof": "2026-11"
+    },
+    "country": {
+      "v": "Germany",
+      "src": "https://de.linkedin.com/company/prefiroprecisionfarming",
+      "asof": "2026-11"
+    },
+    "locations": {
+      "v": [
+        {
+          "kind": "HQ",
+          "address": "Rintheimer Straße, Karlsruhe, Baden-Württemberg 76131, Germany",
+          "lat": 49.010908,
+          "lon": 8.424196,
+          "src": "https://de.linkedin.com/company/prefiroprecisionfarming"
+        }
+      ],
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-27 22:05:12",
+  "updated": "2026-11-27 22:05:12",
+  "feed_at": "2026-11-27"
+}

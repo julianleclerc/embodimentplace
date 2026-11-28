@@ -1,0 +1,26 @@
+{
+  "id": 2137,
+  "type": "lab",
+  "slug": "institute-for-interdisciplinary-information-sciences",
+  "name": "Institute for Interdisciplinary Information Sciences",
+  "summary": "Home of several embodied AI and robot learning groups.",
+  "body": "",
+  "data": {
+    "focus": {
+      "v": [
+        "Robot learning",
+        "Embodied AI"
+      ],
+      "src": "https://iiis.tsinghua.edu.cn/en/",
+      "asof": "2026-11"
+    },
+    "website": {
+      "v": "https://iiis.tsinghua.edu.cn/en/",
+      "src": "https://iiis.tsinghua.edu.cn/en/",
+      "asof": "2026-11"
+    }
+  },
+  "created": "2026-11-28 03:05:10",
+  "updated": "2026-11-28 07:05:09",
+  "feed_at": "2026-11-28"
+}
